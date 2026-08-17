@@ -10,11 +10,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Link
       href={project.url}
-      className="group block bg-surface-secondary overflow-hidden hover:bg-surface-primary transition-colors"
+      className="group bg-surface-primary border border-surface-secondary/80 overflow-hidden hover:border-accent/50 transition-quick shadow-xl flex flex-col justify-between"
     >
       <div className="space-y-4">
-        {/* Project Image */}
-        <div className="aspect-video bg-surface-primary relative overflow-hidden">
+        {/* 16:9 Project Image */}
+        <div className="aspect-video bg-background relative overflow-hidden border-b border-surface-secondary/60">
           {project.image ? (
             <Image
               src={project.image}
@@ -24,8 +24,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center bg-surface-secondary">
-              <span className="text-text-secondary text-sm uppercase tracking-wider">
+            <div className="absolute inset-0 flex items-center justify-center bg-surface-secondary/40">
+              <span className="font-mono text-xs uppercase tracking-widest text-text-secondary">
                 {project.name}
               </span>
             </div>
@@ -36,14 +36,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="p-6 space-y-3">
           {/* Category and Status */}
           <div className="flex items-center justify-between">
-            <span className="text-xs uppercase tracking-wider text-text-secondary">
+            <span className="font-mono text-[10px] uppercase tracking-wider text-accent">
               {project.category}
             </span>
             <span
-              className={`text-xs uppercase tracking-wider ${
+              className={`font-mono text-[9px] uppercase tracking-wider px-2 py-0.5 border ${
                 project.status === "active"
-                  ? "text-green-500"
-                  : "text-accent"
+                  ? "border-emerald-500/40 text-emerald-400 bg-emerald-500/10"
+                  : "border-accent/40 text-accent bg-accent/10"
               }`}
             >
               {project.status === "active" ? "Active" : "In Development"}
@@ -51,32 +51,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
 
           {/* Project Name */}
-          <h3 className="font-serif text-display-lg text-text-primary group-hover:text-accent transition-colors">
+          <h3 className="font-display text-xl text-text-primary group-hover:text-accent transition-colors">
             {project.name}
           </h3>
 
           {/* Project Description */}
-          <p className="text-text-secondary text-body-sm">
+          <p className="font-sans text-xs sm:text-sm text-text-secondary/90 font-light leading-relaxed">
             {project.description}
           </p>
-
-          {/* Arrow Indicator */}
-          <div className="pt-2">
-            <svg
-              className="w-5 h-5 text-accent transform group-hover:translate-x-2 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </div>
         </div>
+      </div>
+
+      {/* Arrow Indicator */}
+      <div className="p-6 pt-0 mt-4 border-t border-surface-secondary/40 flex items-center justify-between font-mono text-xs text-accent">
+        <span>VIEW MANDATE</span>
+        <span className="transform group-hover:translate-x-1 transition-transform">→</span>
       </div>
     </Link>
   );

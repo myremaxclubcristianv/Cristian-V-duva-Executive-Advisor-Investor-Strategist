@@ -21,32 +21,37 @@ export default function ExpertiseBlock({
   reverse = false,
 }: ExpertiseBlockProps) {
   return (
-    <section className="py-12 bg-transparent relative z-10 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+    <section className="py-20 md:py-28 px-6 md:px-16 lg:px-24">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-center">
         {/* Text side */}
-        <div className={`md:col-span-6 ${reverse ? 'md:order-last' : ''} space-y-6 bg-background/40 backdrop-blur-md border border-surface-secondary/60 p-8 rounded-sm shadow-xl`}> 
-          <p className="font-mono text-xs uppercase tracking-widest text-accent">
-            PRACTICE AREA · {number}
-          </p>
-          <h3 className="font-display text-2xl sm:text-3xl md:text-4xl text-text-primary leading-tight">
-            {title}
-          </h3>
-          <p className="text-text-secondary/90 font-light text-sm sm:text-base leading-relaxed">
+        <div className={`md:col-span-6 ${reverse ? 'md:order-last' : ''} space-y-6 bg-surface-primary border border-surface-secondary/80 p-8 md:p-12 shadow-2xl`}> 
+          <div className="space-y-2">
+            <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
+              <span>PRACTICE AREA</span>
+              <span className="w-6 h-[1px] bg-accent/40" />
+              <span>{number}</span>
+            </div>
+            <h3 className="font-display text-3xl sm:text-4xl text-text-primary leading-tight">
+              {title}
+            </h3>
+          </div>
+          <p className="font-sans text-sm sm:text-base text-text-secondary/90 font-light leading-relaxed">
             {description}
           </p>
           {ctaLabel && ctaHref && (
-            <div className="pt-2">
+            <div className="pt-4 border-t border-surface-secondary/60">
               <Link
                 href={ctaHref}
-                className="inline-block px-6 py-3 bg-accent text-background font-mono text-xs font-semibold uppercase tracking-wider hover:bg-accent/90 transition-quick shadow-lg"
+                className="inline-block px-7 py-3.5 bg-accent text-background font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-accent/90 transition-quick shadow-xl"
               >
                 {ctaLabel}
               </Link>
             </div>
           )}
         </div>
+
         {/* Image side */}
-        <div className="md:col-span-6 relative aspect-[16/10] w-full rounded-sm overflow-hidden border border-surface-secondary/60 shadow-xl group">
+        <div className="md:col-span-6 relative aspect-video w-full overflow-hidden border border-surface-secondary/80 shadow-2xl group bg-background">
           <Image
             src={imageSrc}
             alt={title}
@@ -55,7 +60,6 @@ export default function ExpertiseBlock({
             className="object-cover transition-quick group-hover:scale-105"
             priority={!reverse}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
         </div>
       </div>
     </section>

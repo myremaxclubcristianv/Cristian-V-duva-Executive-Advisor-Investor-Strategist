@@ -1,44 +1,34 @@
 import { getFeaturedProjects } from "@/lib/projects";
 import ProjectCard from "./ProjectCard";
-import Link from "next/link";
 
 export default function ProjectsSection() {
   const projects = getFeaturedProjects();
 
   return (
-    <section className="py-section-lg sm:py-section-xl bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-8 sm:space-y-12">
-          {/* Section Header */}
-          <div className="text-center space-y-3 sm:space-y-4">
-            <p className="text-accent uppercase tracking-wider text-xs sm:text-sm">
-              Ventures
-            </p>
-            <h2 className="font-serif text-display-lg sm:text-display-xl text-text-primary">
-              Featured Projects
+    <section className="py-24 md:py-32 px-6 md:px-16 lg:px-24">
+      <div className="max-w-7xl mx-auto space-y-12">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-surface-secondary/70 pb-6">
+          <div className="space-y-2">
+            <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
+              <span>ACTIVE MANDATES</span>
+              <span className="w-6 h-[1px] bg-accent/40" />
+              <span>OVERVIEW</span>
+            </div>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-text-primary leading-[1.08] tracking-tight">
+              Featured Initiatives
             </h2>
-            <p className="max-w-2xl mx-auto text-text-secondary text-body-md sm:text-body-lg px-4">
-              Strategic initiatives across real estate, technology, and
-              business intelligence.
-            </p>
           </div>
+          <div className="font-mono text-xs text-text-secondary/80 uppercase tracking-widest">
+            DIRECT PORTFOLIO
+          </div>
+        </div>
 
-          {/* Projects Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-
-          {/* CTA */}
-          <div className="text-center pt-8">
-            <Link
-              href="/ventures"
-              className="inline-block px-8 py-4 border border-text-secondary text-text-primary font-medium hover:border-text-primary hover:text-text-primary transition-colors"
-            >
-              View All Ventures
-            </Link>
-          </div>
+        {/* Projects Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </div>
       </div>
     </section>

@@ -1,22 +1,8 @@
 // app/api/verify-youtube/route.ts
 
-/**
- * Server‑side endpoint that verifies a YouTube `videoId` belongs to the official
- * Cristian Văduva channel.
- *
- * The verification uses the YouTube Data API `videos.list` method to fetch the
- * video's `snippet.channelId` and compares it against the official channel ID
- * defined in `lib/youtubeConfig.ts`.
- *
- * • In **development** (when `process.env.NODE_ENV !== "production"`) and the
- *   API key is missing, the endpoint returns `isValid: true` to avoid breaking the
- *   dev experience.
- * • In **production**, missing credentials or any error results in
- *   `isValid: false` (fail‑closed).
- */
-
 import { NextResponse } from "next/server";
 import { OFFICIAL_YOUTUBE_CHANNEL_ID } from "@/lib/youtubeConfig";
+import { fetchOfficialYouTubeVideos } from "@/lib/youtubeAuto";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -28,35 +14,45 @@ export async function GET(request: Request) {
 
   const apiKey = process.env.YOUTUBE_API_KEY;
 
-  // Development fallback – check discovered official channel videos when API key is not provided.
+  // Fallback – check discovered official channel videos whitelist when API key is not provided.
   if (!apiKey) {
-    if (process.env.NODE_ENV !== "production") {
-      const { fetchOfficialYouTubeVideos } = await import("@/lib/youtubeAuto");
+    try {
       const officialVideos = await fetchOfficialYouTubeVideos();
       const isOfficial = officialVideos.some((v) => v.youtubeId === videoId);
-      return NextResponse.json({ isValid: isOfficial });
+      return NextResponse.json({ isValid: isOfficial }, { status: 200 });
+    } catch {
+      return NextResponse.json({ isValid: false }, { status: 200 });
     }
-    // Production must fail closed.
-    return NextResponse.json({ isValid: false }, { status: 500 });
   }
 
   const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`;
 
   try {
     const resp = await fetch(apiUrl);
-    if (!resp.ok) throw new Error("YouTube API error");
+    if (!resp.ok) {
+      // API request failed, fallback to official list verification
+      const officialVideos = await fetchOfficialYouTubeVideos();
+      const isOfficial = officialVideos.some((v) => v.youtubeId === videoId);
+      return NextResponse.json({ isValid: isOfficial }, { status: 200 });
+    }
     const data = await resp.json();
     const items = data.items;
     if (!items || items.length === 0) {
-      return NextResponse.json({ isValid: false });
+      return NextResponse.json({ isValid: false }, { status: 200 });
     }
-    const channelId = items[0].snippet.channelId as string;
+    const channelId = items[0].snippet?.channelId as string;
     const isValid = OFFICIAL_YOUTUBE_CHANNEL_ID
       ? channelId === OFFICIAL_YOUTUBE_CHANNEL_ID
       : false;
-    return NextResponse.json({ isValid });
+    return NextResponse.json({ isValid }, { status: 200 });
   } catch {
-    // Any failure – fail closed.
-    return NextResponse.json({ isValid: false }, { status: 500 });
+    // Fail-closed fallback to verified channel whitelist
+    try {
+      const officialVideos = await fetchOfficialYouTubeVideos();
+      const isOfficial = officialVideos.some((v) => v.youtubeId === videoId);
+      return NextResponse.json({ isValid: isOfficial }, { status: 200 });
+    } catch {
+      return NextResponse.json({ isValid: false }, { status: 200 });
+    }
   }
 }

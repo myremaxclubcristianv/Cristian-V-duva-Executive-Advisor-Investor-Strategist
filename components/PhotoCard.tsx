@@ -10,18 +10,18 @@ interface PhotoCardProps {
   onClick?: () => void;
 }
 
-export default function PhotoCard({ photo, size = "medium", onClick }: PhotoCardProps) {
+export default function PhotoCard({ photo, size = "large", onClick }: PhotoCardProps) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const sizeClasses = {
     small: "aspect-square",
-    medium: photo.aspectRatio === "portrait" ? "aspect-[3/4]" : "aspect-[4/3]",
-    large: photo.aspectRatio === "portrait" ? "aspect-[3/4]" : "aspect-[16/9]",
+    medium: "aspect-[4/3]",
+    large: "aspect-video",
   };
 
   return (
     <div
-      className={`relative w-full ${sizeClasses[size]} bg-surface-secondary overflow-hidden cursor-pointer group`}
+      className={`relative w-full ${sizeClasses[size]} bg-surface-primary border border-surface-secondary/80 overflow-hidden cursor-pointer group shadow-xl hover:border-accent/50 transition-quick`}
       onClick={onClick}
     >
       {!isLoaded && (
@@ -40,9 +40,10 @@ export default function PhotoCard({ photo, size = "medium", onClick }: PhotoCard
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
       />
       {photo.title && (
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="absolute bottom-0 left-0 right-0 p-4">
-            <p className="text-text-primary font-serif text-body-sm">{photo.title}</p>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+          <div className="p-6 w-full space-y-1">
+            <span className="font-mono text-[10px] text-accent uppercase tracking-widest block">EXHIBIT</span>
+            <p className="text-text-primary font-display text-lg sm:text-xl leading-tight">{photo.title}</p>
           </div>
         </div>
       )}

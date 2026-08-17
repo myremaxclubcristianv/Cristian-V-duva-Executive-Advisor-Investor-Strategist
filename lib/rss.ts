@@ -1,3 +1,5 @@
+import { cleanText } from "./cleanText";
+
 export interface NewsItem {
   id: string;
   title: string;
@@ -49,5 +51,11 @@ export const mockNewsData: NewsItem[] = [
 ];
 
 export async function getLatestNews(): Promise<NewsItem[]> {
-  return mockNewsData;
+  return mockNewsData.map((item) => ({
+    ...item,
+    title: cleanText(item.title),
+    excerpt: cleanText(item.excerpt),
+    source: cleanText(item.source),
+    category: cleanText(item.category) as NewsItem["category"],
+  }));
 }

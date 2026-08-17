@@ -1,5 +1,6 @@
 import { parseStringPromise } from 'xml2js';
 import { OFFICIAL_YOUTUBE_CHANNEL_ID } from './youtubeConfig';
+import { cleanText } from './cleanText';
 
 export type VideoCategory =
   | "REAL ESTATE"
@@ -51,22 +52,22 @@ export async function fetchOfficialYouTubeVideos(): Promise<Video[]> {
         // Strict channel validation - Fail-Closed
         if (entryChannelId !== channelId || !youtubeId) return;
 
-        const title = (entry.title as string[])?.[0] ?? 'Untitled Video';
-        const description = ((entry['media:group'] as Record<string, unknown>[])?.[0]?.['media:description'] as string[])?.[0] ?? '';
+        const rawTitle = (entry.title as string[])?.[0] ?? 'Untitled Video';
+        const rawDescription = ((entry['media:group'] as Record<string, unknown>[])?.[0]?.['media:description'] as string[])?.[0] ?? '';
         const published = (entry.published as string[])?.[0] ?? '';
         const channelTitle = ((entry['author'] as Record<string, unknown>[])?.[0]?.['name'] as string[])?.[0] ?? '';
 
         videoMap.set(youtubeId, {
           id: youtubeId,
           videoId: youtubeId,
-          title,
-          description,
+          title: cleanText(rawTitle),
+          description: cleanText(rawDescription),
           youtubeId,
           category: "REAL ESTATE",
           publishedDate: published,
           thumbnail: getYouTubeThumbnail(youtubeId, "hq"),
           channelId: entryChannelId,
-          channelTitle,
+          channelTitle: cleanText(channelTitle),
           youtubeUrl: `https://www.youtube.com/watch?v=${youtubeId}`,
           embedUrl: `https://www.youtube.com/embed/${youtubeId}`
         });
@@ -116,7 +117,7 @@ export async function fetchOfficialYouTubeVideos(): Promise<Video[]> {
                   videoMap.set(youtubeId, {
                     id: youtubeId,
                     videoId: youtubeId,
-                    title: contentTitle,
+                    title: cleanText(contentTitle),
                     description: '',
                     youtubeId,
                     category: "REAL ESTATE",

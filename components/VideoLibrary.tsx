@@ -3,12 +3,17 @@
 import { useState } from "react";
 import { getAllVideos, getAllShorts } from "@/lib/videos";
 import VideoEmbed from "./VideoEmbed";
+import { cleanText } from "@/lib/cleanText";
 
-export default function VideoLibrary() {
+interface VideoLibraryProps {
+  filterType?: "all" | "video" | "short";
+}
+
+export default function VideoLibrary({ filterType = "all" }: VideoLibraryProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
-  const [selectedType, setSelectedType] = useState<"all" | "video" | "short">("all");
+  const [selectedType, setSelectedType] = useState<"all" | "video" | "short">(filterType);
 
-  const categories = ["all", "Executive", "Real Estate", "Business", "Luxury Real Estate", "Investments", "Market Intelligence", "Travel", "Lifestyle", "Interviews", "Shorts"];
+  const categories = ["all", "Executive", "Real Estate", "Business", "Luxury Real Estate", "Investments", "Market Intelligence"];
 
   const allVideos = getAllVideos();
   const allShorts = getAllShorts();
@@ -25,120 +30,143 @@ export default function VideoLibrary() {
   const shortCount = displayedVideos.filter(v => v.type === "short").length;
 
   return (
-    <section className="py-section-lg sm:py-section-xl bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-8 sm:space-y-12">
-          {/* Section Header */}
-          <div className="text-center space-y-3 sm:space-y-4">
-            <p className="text-accent uppercase tracking-wider text-xs sm:text-sm">
-              Media Library
-            </p>
-            <h2 className="font-serif text-display-lg sm:text-display-xl text-text-primary">
-              Video Archive
+    <section className="py-24 md:py-32 px-6 md:px-16 lg:px-24">
+      <div className="max-w-7xl mx-auto space-y-12">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-surface-secondary/70 pb-6">
+          <div className="space-y-2">
+            <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
+              <span>OFFICIAL BROADCASTS</span>
+              <span className="w-6 h-[1px] bg-accent/40" />
+              <span>YOUTUBE VAULT</span>
+            </div>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-text-primary leading-[1.08] tracking-tight">
+              Broadcast Archive
             </h2>
-            <p className="max-w-2xl mx-auto text-text-secondary text-body-md sm:text-body-lg px-4">
-              Executive insights, property tours, market analysis, and quick updates.
-            </p>
+          </div>
+          <div className="font-mono text-xs text-text-secondary/80 uppercase tracking-widest">
+            {videoCount} BROADCASTS · {shortCount} SHORTS
+          </div>
+        </div>
+
+        {/* Filters */}
+        <div className="space-y-4">
+          {/* Format Type Filters */}
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => setSelectedType("all")}
+              className={`px-4 py-2 font-mono text-[11px] uppercase tracking-wider transition-quick ${
+                selectedType === "all"
+                  ? "bg-accent text-background font-semibold"
+                  : "border border-surface-secondary/80 text-text-secondary/90 hover:border-accent hover:text-accent bg-surface-primary/50"
+              }`}
+            >
+              All Formats ({allVideos.length + allShorts.length})
+            </button>
+            <button
+              onClick={() => setSelectedType("video")}
+              className={`px-4 py-2 font-mono text-[11px] uppercase tracking-wider transition-quick ${
+                selectedType === "video"
+                  ? "bg-accent text-background font-semibold"
+                  : "border border-surface-secondary/80 text-text-secondary/90 hover:border-accent hover:text-accent bg-surface-primary/50"
+              }`}
+            >
+              Long-Form ({allVideos.length})
+            </button>
+            <button
+              onClick={() => setSelectedType("short")}
+              className={`px-4 py-2 font-mono text-[11px] uppercase tracking-wider transition-quick ${
+                selectedType === "short"
+                  ? "bg-accent text-background font-semibold"
+                  : "border border-surface-secondary/80 text-text-secondary/90 hover:border-accent hover:text-accent bg-surface-primary/50"
+              }`}
+            >
+              Executive Shorts ({allShorts.length})
+            </button>
           </div>
 
-          {/* Filters */}
-          <div className="space-y-4">
-            {/* Type Filter */}
-            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 px-4">
+          {/* Category Filters */}
+          <div className="flex flex-wrap gap-2 pt-1">
+            {categories.map((category) => (
               <button
-                onClick={() => setSelectedType("all")}
-                className={`px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm uppercase tracking-wider transition-colors ${
-                  selectedType === "all"
-                    ? "bg-accent text-background"
-                    : "border border-surface-primary text-text-secondary hover:border-text-primary hover:text-text-primary"
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider transition-quick ${
+                  selectedCategory === category
+                    ? "border border-accent text-accent bg-accent/10 font-semibold"
+                    : "border border-surface-secondary/60 text-text-secondary/70 hover:border-text-secondary hover:text-text-primary bg-transparent"
                 }`}
               >
-                All ({videoCount + shortCount})
+                {category === "all" ? "All Categories" : category}
               </button>
-              <button
-                onClick={() => setSelectedType("video")}
-                className={`px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm uppercase tracking-wider transition-colors ${
-                  selectedType === "video"
-                    ? "bg-accent text-background"
-                    : "border border-surface-primary text-text-secondary hover:border-text-primary hover:text-text-primary"
-                }`}
-              >
-                Videos ({videoCount})
-              </button>
-              <button
-                onClick={() => setSelectedType("short")}
-                className={`px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm uppercase tracking-wider transition-colors ${
-                  selectedType === "short"
-                    ? "bg-accent text-background"
-                    : "border border-surface-primary text-text-secondary hover:border-text-primary hover:text-text-primary"
-                }`}
-              >
-                Shorts ({shortCount})
-              </button>
-            </div>
-
-            {/* Category Filter */}
-            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 px-4">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  className={`px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm uppercase tracking-wider transition-colors ${
-                    selectedCategory === category
-                      ? "bg-accent text-background"
-                      : "border border-surface-primary text-text-secondary hover:border-text-primary hover:text-text-primary"
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
+            ))}
           </div>
+        </div>
 
-          {/* Videos Grid */}
-          {displayedVideos.length > 0 ? (
-            <div className={`grid gap-4 sm:gap-6 ${
-              selectedType === "short" || selectedCategory === "Shorts"
-                ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
-                : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-            }`}>
-              {displayedVideos.map((video) => (
-                <div key={video.id} className="space-y-2 sm:space-y-3">
-                  <VideoEmbed
-                    youtubeUrl={video.youtubeUrl}
-                    title={video.title}
-                    thumbnail={video.thumbnail}
-                    isShort={video.type === "short"}
-                    className="w-full"
-                  />
+        {/* Videos Grid */}
+        {displayedVideos.length > 0 ? (
+          <div className={`grid gap-8 ${
+            selectedType === "short" || selectedCategory === "Shorts"
+              ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
+              : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          }`}>
+            {displayedVideos.map((video) => (
+              <article
+                key={video.id}
+                className="bg-surface-primary border border-surface-secondary/80 p-5 space-y-4 shadow-xl hover:border-accent/40 transition-quick flex flex-col justify-between group"
+              >
+                <div className="space-y-4">
+                  <div className="border border-surface-secondary/60 overflow-hidden bg-background">
+                    <VideoEmbed
+                      youtubeUrl={video.youtubeUrl}
+                      title={cleanText(video.title)}
+                      thumbnail={video.thumbnail}
+                      isShort={video.type === "short"}
+                      className="w-full"
+                    />
+                  </div>
+
                   {video.title && (
-                    <div>
-                      <h3 className="font-serif text-body-sm sm:text-display-md text-text-primary line-clamp-2">
-                        {video.title}
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between font-mono text-[10px] text-accent">
+                        <span className="uppercase tracking-widest">{video.category || "BRIEFING"}</span>
+                        {video.publishedAt && <span className="text-text-secondary/60">{video.publishedAt}</span>}
+                      </div>
+
+                      <h3 className="font-display text-lg sm:text-xl text-text-primary group-hover:text-accent transition-colors leading-snug line-clamp-2">
+                        {cleanText(video.title)}
                       </h3>
+
                       {video.description && (
-                        <p className="text-text-secondary text-body-sm mt-1 line-clamp-2">
-                          {video.description}
-                        </p>
-                      )}
-                      {video.publishedAt && (
-                        <p className="text-text-secondary text-xs mt-1">
-                          {video.publishedAt}
+                        <p className="font-sans text-xs text-text-secondary/90 line-clamp-2 leading-relaxed font-light">
+                          {cleanText(video.description)}
                         </p>
                       )}
                     </div>
                   )}
                 </div>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-12">
-              <p className="text-text-secondary text-body-md sm:text-body-lg">
-                No videos available in this category yet.
-              </p>
-            </div>
-          )}
-        </div>
+
+                <div className="pt-3 border-t border-surface-secondary/50 flex items-center justify-between font-mono text-[11px]">
+                  <span className="text-text-secondary/70">YouTube Official</span>
+                  <a
+                    href={video.youtubeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent uppercase tracking-widest hover:underline"
+                  >
+                    WATCH ↗
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-16 bg-surface-primary border border-surface-secondary/60 p-8">
+            <p className="font-mono text-sm text-text-secondary uppercase tracking-wider">
+              No broadcasts available in this category yet.
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );

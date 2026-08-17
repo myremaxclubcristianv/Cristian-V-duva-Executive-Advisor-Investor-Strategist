@@ -6,103 +6,137 @@ export default function ContactSection() {
   const featuredForms = getFeaturedForms();
   const whatsappLink = getSocialByPlatform("whatsapp");
   const linktreeLink = getSocialByPlatform("linktree");
+  const telegramLink = getSocialByPlatform("telegram");
 
   return (
-    <section className="py-section-lg sm:py-section-xl bg-surface-primary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-8 sm:space-y-12">
-          {/* Section Header */}
-          <div className="text-center space-y-3 sm:space-y-4">
-            <p className="text-accent uppercase tracking-wider text-xs sm:text-sm">
-              Contact
-            </p>
-            <h2 className="font-serif text-display-lg sm:text-display-xl text-text-primary">
-              Start a Conversation
-            </h2>
-            <p className="max-w-2xl mx-auto text-text-secondary text-body-md sm:text-body-lg px-4">
-              Private consultations and strategic advisory engagements.
-            </p>
+    <section className="py-24 md:py-32 px-6 md:px-16 lg:px-24 border-b border-surface-secondary/40">
+      <div className="max-w-6xl mx-auto space-y-16">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          {/* Left Column: Direct Inquiries & Desk Info */}
+          <div className="lg:col-span-6 space-y-8">
+            <div className="space-y-3">
+              <span className="font-mono text-xs text-accent uppercase tracking-widest">
+                DIRECT CHANNELS
+              </span>
+              <h2 className="font-display text-3xl sm:text-4xl text-text-primary leading-tight">
+                The Executive Desk
+              </h2>
+              <p className="font-sans text-sm sm:text-base text-text-secondary/90 font-light leading-relaxed">
+                Direct engagement for investors, property principals, and institutional partners requiring discreet private consultation.
+              </p>
+            </div>
+
+            {/* Direct Email Card */}
+            <div className="bg-surface-primary border border-surface-secondary/80 p-6 sm:p-8 space-y-3 shadow-xl">
+              <span className="font-mono text-[10px] uppercase tracking-widest text-text-secondary/70 block">
+                CONFIDENTIAL EMAIL
+              </span>
+              <a
+                href={`mailto:${contactInfo.email}`}
+                className="font-display text-xl sm:text-2xl text-text-primary hover:text-accent transition-colors block break-all"
+              >
+                {contactInfo.email}
+              </a>
+              <p className="font-sans text-xs text-text-secondary/80 font-light pt-1">
+                Monitored directly by the executive advisory team.
+              </p>
+            </div>
+
+            {/* Instant Messaging Channels */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {whatsappLink && (
+                <a
+                  href={whatsappLink.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-surface-primary border border-surface-secondary/80 p-5 space-y-2 hover:border-accent/40 transition-quick group block shadow-lg"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-accent">WHATSAPP</span>
+                    <span className="text-accent group-hover:translate-x-1 transition-transform">↗</span>
+                  </div>
+                  <span className="font-display text-base text-text-primary block">Private Desk</span>
+                  <span className="font-sans text-xs text-text-secondary/80 font-light block">Direct line for active mandates</span>
+                </a>
+              )}
+
+              {telegramLink && (
+                <a
+                  href={telegramLink.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-surface-primary border border-surface-secondary/80 p-5 space-y-2 hover:border-accent/40 transition-quick group block shadow-lg"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-accent">TELEGRAM</span>
+                    <span className="text-accent group-hover:translate-x-1 transition-transform">↗</span>
+                  </div>
+                  <span className="font-display text-base text-text-primary block">Capital Channel</span>
+                  <span className="font-sans text-xs text-text-secondary/80 font-light block">Dispatches & macro briefings</span>
+                </a>
+              )}
+            </div>
           </div>
 
-          {/* Contact Card */}
-          <div className="max-w-2xl mx-auto px-4">
-            <div className="bg-surface-secondary p-6 sm:p-8 md:p-12 space-y-6 sm:space-y-8">
-              {/* Email */}
-              <div className="space-y-3 sm:space-y-4">
-                <p className="text-text-secondary uppercase tracking-wider text-xs sm:text-sm">
-                  Email
+          {/* Right Column: Structured Inquiry Dossiers */}
+          <div className="lg:col-span-6 space-y-6">
+            <div className="bg-surface-primary border border-surface-secondary/80 p-8 space-y-6 shadow-2xl">
+              <div className="space-y-2 border-b border-surface-secondary/60 pb-5">
+                <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
+                  STRUCTURED INQUIRY
+                </span>
+                <h3 className="font-display text-2xl text-text-primary">
+                  Request Private Consultation
+                </h3>
+                <p className="font-sans text-xs sm:text-sm text-text-secondary/90 font-light leading-relaxed">
+                  Select a specialized service dossier below to initiate a private consultation briefing.
                 </p>
-                <a
-                  href={`mailto:${contactInfo.email}`}
-                  className="font-serif text-display-md sm:text-display-lg text-text-primary hover:text-accent transition-colors break-all"
-                >
-                  {contactInfo.email}
-                </a>
               </div>
 
-              {/* WhatsApp */}
-              {whatsappLink && (
-                <div className="space-y-3 sm:space-y-4">
-                  <p className="text-text-secondary uppercase tracking-wider text-xs sm:text-sm">
-                    WhatsApp
-                  </p>
-                  <a
-                    href={whatsappLink.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-4 sm:px-6 py-2 sm:py-3 border border-surface-primary text-text-primary hover:border-accent hover:text-accent transition-colors text-xs sm:text-sm uppercase tracking-wider"
-                  >
-                    Message on WhatsApp
-                  </a>
-                </div>
-              )}
-
-              {/* Forms */}
+              {/* Service Form Links */}
               {featuredForms.length > 0 && (
-                <div className="space-y-3 sm:space-y-4">
-                  <p className="text-text-secondary uppercase tracking-wider text-xs sm:text-sm">
-                    Services
-                  </p>
-                  <div className="space-y-2 sm:space-y-3">
-                    {featuredForms.map((form) => (
-                      <a
-                        key={form.id}
-                        href={form.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block px-4 sm:px-6 py-2 sm:py-3 border border-surface-primary text-text-primary hover:border-accent hover:text-accent transition-colors text-xs sm:text-sm uppercase tracking-wider"
-                      >
+                <div className="space-y-3">
+                  {featuredForms.map((form) => (
+                    <a
+                      key={form.id}
+                      href={form.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center justify-between p-4 border border-surface-secondary/70 bg-background/50 hover:border-accent/60 hover:bg-background transition-quick"
+                    >
+                      <span className="font-sans text-xs uppercase tracking-wider text-text-primary group-hover:text-accent transition-colors font-medium">
                         {form.name}
-                      </a>
-                    ))}
-                  </div>
+                      </span>
+                      <span className="text-accent font-mono text-xs group-hover:translate-x-1 transition-transform">
+                        ACCESS →
+                      </span>
+                    </a>
+                  ))}
                 </div>
               )}
 
-              {/* Linktree */}
               {linktreeLink && (
-                <div className="space-y-3 sm:space-y-4">
-                  <p className="text-text-secondary uppercase tracking-wider text-xs sm:text-sm">
-                    Quick Links
-                  </p>
-                  <a
-                    href={linktreeLink.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-4 sm:px-6 py-2 sm:py-3 border border-surface-primary text-text-primary hover:border-accent hover:text-accent transition-colors text-xs sm:text-sm uppercase tracking-wider"
-                  >
-                    Linktree
-                  </a>
-                </div>
+                <a
+                  href={linktreeLink.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between p-4 border border-surface-secondary/70 bg-background/50 hover:border-accent/60 hover:bg-background transition-quick"
+                >
+                  <span className="font-sans text-xs uppercase tracking-wider text-text-primary group-hover:text-accent transition-colors font-medium">
+                    Complete Executive Linktree Hub
+                  </span>
+                  <span className="text-accent font-mono text-xs group-hover:translate-x-1 transition-transform">
+                    OPEN ↗
+                  </span>
+                </a>
               )}
 
-              {/* Primary CTA */}
-              <div className="pt-3 sm:pt-4">
+              <div className="pt-2">
                 <a
-                  href={`mailto:${contactInfo.email}`}
-                  className="inline-block w-full text-center px-6 sm:px-8 py-3 sm:py-4 bg-accent text-background font-medium hover:bg-accent/90 transition-colors"
+                  href={`mailto:${contactInfo.email}?subject=Private%20Consultation%20Inquiry%20-%20Cristian%20Vaduva`}
+                  className="block w-full text-center px-8 py-4 bg-accent text-background font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-accent/90 transition-quick shadow-xl"
                 >
-                  Request Private Consultation
+                  REQUEST PRIVATE CONSULTATION
                 </a>
               </div>
             </div>

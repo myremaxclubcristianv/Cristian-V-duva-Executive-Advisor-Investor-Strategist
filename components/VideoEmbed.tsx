@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface VideoEmbedProps {
   youtubeUrl: string;
@@ -18,6 +19,7 @@ export default function VideoEmbed({
   thumbnail,
 }: VideoEmbedProps) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [imgSrc, setImgSrc] = useState<string | null>(null);
 
   const extractVideoId = (url: string): string | null => {
     const patterns = [
@@ -38,28 +40,46 @@ export default function VideoEmbed({
   if (!videoId) {
     return (
       <div className={`bg-surface-secondary aspect-video flex items-center justify-center ${className}`}>
-        <p className="text-text-secondary">Invalid YouTube URL</p>
+        <p className="text-text-secondary font-mono text-xs">Invalid Video Source</p>
       </div>
     );
   }
 
-  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
-  const thumbnailUrl = thumbnail || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
+  const defaultThumbnail = thumbnail || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+  const currentThumbnail = imgSrc || defaultThumbnail;
   const aspectRatio = isShort ? "aspect-[9/16]" : "aspect-video";
 
   return (
-    <div className={`relative w-full ${className}`}>
-      <div className={`${aspectRatio} bg-surface-secondary`}>
+    <div className={`relative w-full overflow-hidden ${className}`}>
+      <div className={`${aspectRatio} bg-black/90 relative`}>
         {!isLoaded ? (
-          <div
-            className="absolute inset-0 bg-cover bg-center cursor-pointer group"
-            style={{ backgroundImage: `url(${thumbnailUrl})` }}
+          <button
+            type="button"
+            className="absolute inset-0 w-full h-full cursor-pointer group focus:outline-none focus-visible:ring-2 focus-visible:ring-accent overflow-hidden"
             onClick={() => setIsLoaded(true)}
+            aria-label={`Play ${title}`}
           >
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors flex items-center justify-center">
-              <div className="w-16 h-16 bg-accent/90 rounded-full flex items-center justify-center group-hover:bg-accent transition-colors">
+            <Image
+              src={currentThumbnail}
+              alt={title}
+              fill
+              unoptimized
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              onError={() => {
+                // Graceful fallback to i.ytimg or standard quality if maxres or hq fails
+                if (!imgSrc || imgSrc.includes("hqdefault")) {
+                  setImgSrc(`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`);
+                }
+              }}
+            />
+            {/* Cinematic dark scrim overlay */}
+            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/15 transition-colors flex items-center justify-center">
+              {/* Prominent centered play button */}
+              <div className="w-14 h-14 bg-accent/90 flex items-center justify-center group-hover:bg-accent group-hover:scale-110 transition-all shadow-2xl rounded-sm">
                 <svg
-                  className="w-8 h-8 text-background ml-1"
+                  className="w-6 h-6 text-background ml-0.5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -67,14 +87,14 @@ export default function VideoEmbed({
                 </svg>
               </div>
             </div>
-          </div>
+          </button>
         ) : (
           <iframe
             src={embedUrl}
             title={title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className="w-full h-full"
+            className="w-full h-full border-0"
             loading="lazy"
           />
         )}

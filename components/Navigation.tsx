@@ -2,16 +2,18 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
   const toggleBtnRef = useRef<HTMLButtonElement>(null);
+  const pathname = usePathname();
 
   // Scroll listener
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 40);
+    const handleScroll = () => setIsScrolled(window.scrollY > 30);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -62,7 +64,7 @@ export default function Navigation() {
 
   const navLinks = [
     { href: "/about", label: "About", number: "01" },
-    { href: "/real-estate/properties", label: "Real Estate", number: "02" },
+    { href: "/real-estate", label: "Real Estate", number: "02" },
     { href: "/real-estate/market", label: "Intelligence", number: "03" },
     { href: "/media", label: "Media", number: "04" },
     { href: "/insights", label: "Journal", number: "05" },
@@ -72,11 +74,11 @@ export default function Navigation() {
 
   return (
     <>
-      {/* Desktop navigation - Whisper quiet, disappears into architecture */}
+      {/* Desktop navigation - Whisper quiet editorial navbar */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-background/85 backdrop-blur-md border-b border-surface-secondary/40 py-4 shadow-2xl"
+            ? "bg-background/90 backdrop-blur-md border-b border-surface-secondary/60 py-4 shadow-2xl"
             : "bg-transparent py-6"
         }`}
         aria-label="Primary Navigation"
@@ -91,16 +93,24 @@ export default function Navigation() {
               <span>Cristian Văduva</span>
             </Link>
 
-            <div className="hidden md:flex items-center gap-7 lg:gap-9">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-text-secondary/75 hover:text-accent transition-quick font-mono text-[10px] uppercase tracking-[0.25em]"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="hidden md:flex items-center gap-7 lg:gap-8">
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`font-mono text-[10px] uppercase tracking-[0.25em] transition-quick relative py-1 ${
+                      isActive ? "text-accent font-semibold" : "text-text-secondary/80 hover:text-accent"
+                    }`}
+                  >
+                    {link.label}
+                    {isActive && (
+                      <span className="absolute bottom-0 left-0 right-0 h-[1px] bg-accent" />
+                    )}
+                  </Link>
+                );
+              })}
               <Link
                 href="/contact"
                 className="px-4 py-2 border border-accent/40 text-accent font-mono text-[10px] font-medium uppercase tracking-[0.25em] hover:bg-accent hover:text-background transition-quick"
@@ -151,21 +161,26 @@ export default function Navigation() {
 
         {/* Navigation Links */}
         <nav className="flex-1 flex flex-col justify-center px-8 py-6 space-y-4 overflow-y-auto">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={closeMenu}
-              className="group flex items-baseline justify-between py-2 border-b border-surface-secondary/30 text-text-primary hover:text-accent transition-colors"
-            >
-              <span className="text-2xl font-display tracking-tight group-hover:translate-x-1 transition-transform">
-                {link.label}
-              </span>
-              <span className="font-mono text-[10px] text-text-secondary/50 uppercase tracking-widest">
-                {link.number}
-              </span>
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={closeMenu}
+                className={`group flex items-baseline justify-between py-2 border-b border-surface-secondary/30 transition-colors ${
+                  isActive ? "text-accent" : "text-text-primary hover:text-accent"
+                }`}
+              >
+                <span className="text-2xl font-display tracking-tight group-hover:translate-x-1 transition-transform">
+                  {link.label}
+                </span>
+                <span className="font-mono text-[10px] text-text-secondary/50 uppercase tracking-widest">
+                  {link.number}
+                </span>
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Bottom CTAs & Metadata */}

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import CookieConsent from "@/components/CookieConsent";
+import VisitorIntelligenceProvider from "@/components/VisitorIntelligenceProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -123,6 +125,8 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col overflow-x-hidden bg-background text-text-primary">
         {children}
+        <CookieConsent />
+        <VisitorIntelligenceProvider />
       </body>
     </html>
   );

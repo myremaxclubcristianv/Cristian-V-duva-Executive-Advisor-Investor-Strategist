@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getLatestNews } from "@/lib/rss";
 import { fetchOfficialYouTubeVideos } from "@/lib/youtubeAuto";
 import { getOriginalInsights } from "@/lib/insights";
+import { cleanText } from "@/lib/cleanText";
 
 export default async function ExecutiveDesk() {
   const [news, videos, insights] = await Promise.all([
@@ -51,10 +52,10 @@ export default async function ExecutiveDesk() {
               {latestNews ? (
                 <div className="space-y-2">
                   <h3 className="font-display text-lg sm:text-xl text-text-primary leading-snug">
-                    {latestNews.title}
+                    {cleanText(latestNews.title)}
                   </h3>
                   <p className="text-xs sm:text-sm text-text-secondary/90 line-clamp-3 leading-relaxed font-light">
-                    {latestNews.excerpt}
+                    {cleanText(latestNews.excerpt)}
                   </p>
                 </div>
               ) : (
@@ -64,7 +65,7 @@ export default async function ExecutiveDesk() {
 
             {latestNews && (
               <div className="pt-3 border-t border-surface-secondary/60 flex items-center justify-between font-mono text-[11px]">
-                <span className="text-text-secondary/70">{latestNews.source}</span>
+                <span className="text-text-secondary/70">{cleanText(latestNews.source)}</span>
                 <a
                   href={latestNews.originalUrl}
                   target="_blank"
@@ -88,7 +89,7 @@ export default async function ExecutiveDesk() {
               {latestVideo ? (
                 <div className="space-y-2">
                   <h3 className="font-display text-lg sm:text-xl text-text-primary leading-snug">
-                    {latestVideo.title}
+                    {cleanText(latestVideo.title)}
                   </h3>
                   <p className="text-xs sm:text-sm text-text-secondary/90 line-clamp-3 leading-relaxed font-light">
                     Official commentary and strategic briefing from Cristian Văduva.
@@ -123,10 +124,10 @@ export default async function ExecutiveDesk() {
               {latestInsight ? (
                 <div className="space-y-2">
                   <h3 className="font-display text-lg sm:text-xl text-text-primary leading-snug">
-                    {latestInsight.title}
+                    {cleanText(latestInsight.title)}
                   </h3>
                   <p className="text-xs sm:text-sm text-text-secondary/90 line-clamp-3 leading-relaxed font-light">
-                    {latestInsight.excerpt}
+                    {cleanText(latestInsight.excerpt)}
                   </p>
                 </div>
               ) : (
@@ -136,7 +137,7 @@ export default async function ExecutiveDesk() {
 
             {latestInsight && (
               <div className="pt-3 border-t border-surface-secondary/60 flex items-center justify-between font-mono text-[11px]">
-                <span className="text-text-secondary/70">By Cristian Văduva</span>
+                <span className="text-text-secondary/70">By {cleanText(latestInsight.author)}</span>
                 <Link
                   href="/insights"
                   className="text-accent uppercase tracking-widest hover:underline"

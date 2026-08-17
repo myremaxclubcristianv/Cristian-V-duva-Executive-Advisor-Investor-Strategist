@@ -5,37 +5,41 @@ export default function EcosystemSection() {
   const projects = getFeaturedProjects();
 
   return (
-    <section className="relative py-24 bg-transparent border-t border-surface-secondary/30 relative z-10 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 space-y-12">
+    <section className="py-24 md:py-32 px-6 md:px-16 lg:px-24">
+      <div className="max-w-7xl mx-auto space-y-12">
         {/* Section Header */}
-        <div className="text-center space-y-3">
-          <p className="font-mono text-xs uppercase tracking-widest text-accent font-medium">
-            VENTURES & INFRASTRUCTURE
-          </p>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-text-primary">
-            The Executive Ecosystem
-          </h2>
-          <p className="max-w-2xl mx-auto text-text-secondary/90 font-light text-sm sm:text-base">
-            An integrated network of specialized vehicles focused on real estate, advisory, technology, and capital intelligence.
-          </p>
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-surface-secondary/70 pb-6">
+          <div className="space-y-2">
+            <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
+              <span>ACTIVE VEHICLES</span>
+              <span className="w-6 h-[1px] bg-accent/40" />
+              <span>PORTFOLIO</span>
+            </div>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-text-primary leading-[1.08] tracking-tight">
+              Specialized Entities & Ventures
+            </h2>
+          </div>
+          <div className="font-mono text-xs text-text-secondary/80 uppercase tracking-widest">
+            EUROPEAN JURISDICTIONS
+          </div>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <Link
               key={project.id}
               href={project.url}
-              className="group block bg-background/40 backdrop-blur-md border border-surface-secondary/60 p-7 hover:border-accent/50 transition-quick rounded-sm shadow-xl flex flex-col justify-between"
+              className="group bg-surface-primary border border-surface-secondary/80 p-8 hover:border-accent/50 transition-quick shadow-xl flex flex-col justify-between"
             >
               <div className="space-y-4">
                 {/* Project Status */}
                 <div className="flex items-center justify-between">
-                  <span className="font-mono text-[11px] uppercase tracking-wider text-text-secondary">
+                  <span className="font-mono text-[11px] uppercase tracking-wider text-accent">
                     {project.category}
                   </span>
                   <span
-                    className={`font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full border ${
+                    className={`font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 border ${
                       project.status === "active"
                         ? "border-emerald-500/40 text-emerald-400 bg-emerald-500/10"
                         : "border-accent/40 text-accent bg-accent/10"
@@ -51,7 +55,7 @@ export default function EcosystemSection() {
                 </h3>
 
                 {/* Project Description */}
-                <p className="text-text-secondary/90 text-sm font-light leading-relaxed">
+                <p className="font-sans text-text-secondary/90 text-sm font-light leading-relaxed">
                   {project.description}
                 </p>
               </div>
@@ -63,16 +67,6 @@ export default function EcosystemSection() {
               </div>
             </Link>
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="text-center pt-4">
-          <Link
-            href="/ecosystem"
-            className="inline-block px-8 py-3.5 border border-surface-secondary/80 bg-background/30 backdrop-blur-sm text-text-primary text-xs font-mono uppercase tracking-widest hover:border-accent hover:text-accent transition-quick"
-          >
-            EXPLORE COMPLETE ECOSYSTEM →
-          </Link>
         </div>
       </div>
     </section>

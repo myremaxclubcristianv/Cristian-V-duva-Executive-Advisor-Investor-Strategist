@@ -10,26 +10,36 @@ export default function FeaturedShorts() {
   }
 
   return (
-    <section className="py-section-lg sm:py-section-xl bg-surface-primary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-8 sm:space-y-12">
-          {/* Section Header */}
-          <div className="text-center space-y-3 sm:space-y-4">
-            <p className="text-accent uppercase tracking-wider text-xs sm:text-sm">
-              Shorts
-            </p>
-            <h2 className="font-serif text-display-lg sm:text-display-xl text-text-primary">
-              Quick Insights
+    <section className="py-24 md:py-32 px-6 md:px-16 lg:px-24">
+      <div className="max-w-7xl mx-auto space-y-12">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-surface-secondary/70 pb-6">
+          <div className="space-y-2">
+            <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
+              <span>EXECUTIVE SHORTS</span>
+              <span className="w-6 h-[1px] bg-accent/40" />
+              <span>BRIEFINGS</span>
+            </div>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-text-primary leading-[1.08] tracking-tight">
+              Rapid Market Dispatches
             </h2>
-            <p className="max-w-2xl mx-auto text-text-secondary text-body-md sm:text-body-lg px-4">
-              Market updates, property tips, and quick analysis.
-            </p>
           </div>
+          <Link
+            href="/media"
+            className="font-mono text-xs uppercase tracking-widest text-accent hover:underline"
+          >
+            VIEW ALL SHORTS →
+          </Link>
+        </div>
 
-          {/* Shorts Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-            {featuredShorts.slice(0, 6).map((short) => (
-              <div key={short.id} className="space-y-2">
+        {/* Shorts Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+          {featuredShorts.slice(0, 4).map((short) => (
+            <div
+              key={short.id}
+              className="bg-surface-primary border border-surface-secondary/80 p-3 space-y-3 shadow-lg hover:border-accent/40 transition-quick group"
+            >
+              <div className="border border-surface-secondary/60 overflow-hidden bg-background">
                 <VideoEmbed
                   youtubeUrl={short.youtubeUrl}
                   title={short.title}
@@ -37,24 +47,14 @@ export default function FeaturedShorts() {
                   isShort={true}
                   className="w-full"
                 />
-                {short.title && (
-                  <h3 className="font-serif text-body-sm text-text-primary line-clamp-2">
-                    {short.title}
-                  </h3>
-                )}
               </div>
-            ))}
-          </div>
-
-          {/* CTA */}
-          <div className="text-center pt-4 sm:pt-8">
-            <Link
-              href="/media"
-              className="inline-block px-6 sm:px-8 py-3 sm:py-4 border border-text-secondary text-text-primary font-medium hover:border-text-primary hover:text-text-primary transition-colors"
-            >
-              View All Shorts
-            </Link>
-          </div>
+              {short.title && (
+                <h3 className="font-sans text-xs text-text-primary group-hover:text-accent transition-colors line-clamp-2 font-light">
+                  {short.title}
+                </h3>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>
