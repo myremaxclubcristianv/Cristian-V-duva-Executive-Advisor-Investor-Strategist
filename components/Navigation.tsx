@@ -84,7 +84,9 @@ export default function Navigation() {
             {/* Executive Brand Mark */}
             <Link
               href="/"
-              className="text-text-primary font-display text-base sm:text-xl tracking-tight hover:text-accent transition-quick flex items-center gap-2.5 group"
+              className={`text-text-primary font-display text-base sm:text-xl tracking-tight hover:text-accent transition-all duration-300 flex items-center gap-2.5 group ${
+                isScrolled ? "opacity-100" : "opacity-0 sm:opacity-100"
+              }`}
               aria-label="Cristian Văduva - Home"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-accent group-hover:scale-125 transition-transform" />

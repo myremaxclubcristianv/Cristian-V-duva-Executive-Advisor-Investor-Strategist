@@ -10,15 +10,17 @@ export default function ContactSection() {
   const telegramLink = getSocialByPlatform("telegram");
 
   return (
-    <section className="responsive-py px-4 sm:px-6 md:px-12 lg:px-24 border-b border-white/10">
+    <section id="scene-work" className="responsive-py px-4 sm:px-6 md:px-12 lg:px-24 border-b border-white/10">
       <div className="max-w-6xl mx-auto space-y-12 sm:space-y-16">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          {/* Left Column: Direct Channels & Desk Info */}
+          {/* Left Column: Direct Channels & Monograph */}
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-3">
-              <span className="font-mono text-xs text-accent uppercase tracking-widest font-medium">
-                DIRECT CHANNELS
-              </span>
+              <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
+                <span>06 / 06</span>
+                <span className="w-6 h-[1px] bg-accent/40" />
+                <span>CONTACT</span>
+              </div>
               <h2 className="font-display text-display-lg-fluid text-text-primary">
                 The Executive Desk
               </h2>
@@ -27,9 +29,9 @@ export default function ContactSection() {
               </p>
             </div>
 
-            {/* Direct Email Card */}
-            <div className="bg-surface-primary/90 border border-white/10 p-6 sm:p-8 space-y-3 shadow-xl">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-text-secondary/70 block font-medium">
+            {/* Direct Email Link */}
+            <div className="py-6 border-y border-white/10 space-y-2">
+              <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-semibold block">
                 CONFIDENTIAL EMAIL
               </span>
               <a
@@ -50,13 +52,13 @@ export default function ContactSection() {
                   href={whatsappLink.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-surface-primary/90 border border-white/10 p-5 space-y-2 hover:border-accent/40 transition-quick group block shadow-lg touch-active min-h-[96px]"
+                  className="p-5 border border-white/10 hover:border-accent transition-quick group block touch-active min-h-[96px]"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-medium">WHATSAPP</span>
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-semibold">WHATSAPP</span>
                     <span className="text-accent group-hover:translate-x-1 transition-transform">↗</span>
                   </div>
-                  <span className="font-display text-base text-text-primary block">Private Desk</span>
+                  <span className="font-display text-base text-text-primary block pt-1">Private Desk</span>
                   <span className="font-sans text-xs text-text-secondary/80 font-light block">Direct line for active mandates</span>
                 </a>
               )}
@@ -66,13 +68,13 @@ export default function ContactSection() {
                   href={telegramLink.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-surface-primary/90 border border-white/10 p-5 space-y-2 hover:border-accent/40 transition-quick group block shadow-lg touch-active min-h-[96px]"
+                  className="p-5 border border-white/10 hover:border-accent transition-quick group block touch-active min-h-[96px]"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-medium">TELEGRAM</span>
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-semibold">TELEGRAM</span>
                     <span className="text-accent group-hover:translate-x-1 transition-transform">↗</span>
                   </div>
-                  <span className="font-display text-base text-text-primary block">Capital Channel</span>
+                  <span className="font-display text-base text-text-primary block pt-1">Capital Channel</span>
                   <span className="font-sans text-xs text-text-secondary/80 font-light block">Dispatches & macro briefings</span>
                 </a>
               )}
@@ -85,17 +87,14 @@ export default function ContactSection() {
             <PrivateConsultationForm />
 
             {/* External Service Dossiers (Jotform Links) */}
-            <div className="bg-surface-primary/90 border border-white/10 p-6 sm:p-8 space-y-6 shadow-2xl">
-              <div className="space-y-2 border-b border-white/10 pb-4">
-                <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-medium">
+            <div className="py-6 border-t border-white/10 space-y-6">
+              <div className="space-y-2">
+                <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-semibold">
                   EXTERNAL DOSSIERS
                 </span>
                 <h3 className="font-display text-xl text-text-primary">
                   Specialized Service Applications
                 </h3>
-                <p className="font-sans text-xs text-text-secondary/90 font-light leading-relaxed">
-                  Select a structured dossier below for property acquisitions, asset protection, or club membership.
-                </p>
               </div>
 
               {/* Service Form Links (Jotform) */}
@@ -107,13 +106,13 @@ export default function ContactSection() {
                       href={form.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center justify-between p-4 border border-white/10 bg-background/50 hover:border-accent/60 hover:bg-background transition-quick touch-active min-h-[48px]"
+                      className="group flex items-center justify-between p-4 border border-white/10 hover:border-accent transition-quick touch-active min-h-[48px]"
                     >
                       <span className="font-sans text-xs uppercase tracking-wider text-text-primary group-hover:text-accent transition-colors font-medium">
                         {form.name}
                       </span>
                       <span className="text-accent font-mono text-xs group-hover:translate-x-1 transition-transform">
-                        ACCESS dossier ↗
+                        ACCESS DOSSIER ↗
                       </span>
                     </a>
                   ))}
@@ -125,7 +124,7 @@ export default function ContactSection() {
                   href={linktreeLink.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between p-4 border border-white/10 bg-background/50 hover:border-accent/60 hover:bg-background transition-quick touch-active min-h-[48px]"
+                  className="group flex items-center justify-between p-4 border border-white/10 hover:border-accent transition-quick touch-active min-h-[48px]"
                 >
                   <span className="font-sans text-xs uppercase tracking-wider text-text-primary group-hover:text-accent transition-colors font-medium">
                     Complete Executive Linktree Hub

@@ -5,8 +5,8 @@ import { useRef, useEffect, useState } from "react";
 import * as THREE from "three";
 
 /**
- * Architectural Sculpture Component
- * Dark stone and brushed metal geometric planes with studio lighting.
+ * Atmospheric Architectural Sculpture Component
+ * Subtle dark stone and brushed metal geometric planes floating as a tertiary background layer.
  */
 function ArchitecturalSculpture() {
   const meshGroupRef = useRef<THREE.Group>(null);
@@ -26,46 +26,45 @@ function ArchitecturalSculpture() {
     const progress = Math.min(1, Math.max(0, scrollYRef.current / maxScroll));
     const t = state.clock.getElapsedTime();
 
-    meshGroupRef.current.position.y = -progress * 2.2;
-    meshGroupRef.current.position.z = progress * 5;
-    meshGroupRef.current.rotation.y = Math.sin(progress * Math.PI * 1.5) * 0.14 + Math.sin(t * 0.1) * 0.02;
-    meshGroupRef.current.rotation.x = Math.cos(progress * Math.PI) * 0.08;
+    meshGroupRef.current.position.y = -progress * 1.8;
+    meshGroupRef.current.position.z = progress * 4;
+    meshGroupRef.current.rotation.y = Math.sin(progress * Math.PI) * 0.08 + Math.sin(t * 0.05) * 0.01;
+    meshGroupRef.current.rotation.x = Math.cos(progress * Math.PI) * 0.04;
   });
 
   return (
-    <group ref={meshGroupRef} position={[2.0, 0.1, 0]} scale={[0.85, 0.85, 0.85]}>
-      {/* Studio Lighting */}
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[12, 18, 14]} intensity={2.2} color="#E6D5C0" />
-      <directionalLight position={[-14, -10, -12]} intensity={0.6} color="#A1A1A1" />
-      <pointLight position={[0, 5, 8]} intensity={1.2} color="#E6D5C0" />
+    <group ref={meshGroupRef} position={[2.4, 0.2, 0]} scale={[0.75, 0.75, 0.75]}>
+      {/* Studio Key Light */}
+      <ambientLight intensity={0.4} />
+      <directionalLight position={[10, 15, 12]} intensity={1.5} color="#E6D5C0" />
+      <directionalLight position={[-12, -8, -10]} intensity={0.3} color="#888888" />
 
       {/* Main Monolithic Slabs */}
       <mesh position={[0, 0, 0]} rotation={[0.4, 0.5, 0.2]}>
-        <boxGeometry args={[2.5, 4.4, 0.2]} />
+        <boxGeometry args={[2.2, 4.0, 0.15]} />
         <meshStandardMaterial
-          color="#1A1A1A"
-          roughness={0.25}
-          metalness={0.8}
+          color="#141414"
+          roughness={0.4}
+          metalness={0.7}
         />
       </mesh>
 
-      <mesh position={[-0.85, -0.65, 0.65]} rotation={[-0.3, 0.8, -0.2]}>
-        <boxGeometry args={[1.9, 3.4, 0.15]} />
+      <mesh position={[-0.8, -0.6, 0.5]} rotation={[-0.3, 0.8, -0.2]}>
+        <boxGeometry args={[1.6, 3.0, 0.12]} />
         <meshStandardMaterial
-          color="#121212"
-          roughness={0.35}
-          metalness={0.65}
+          color="#0E0E0E"
+          roughness={0.5}
+          metalness={0.5}
         />
       </mesh>
 
-      {/* Champagne Accent Metallic Edge */}
-      <mesh position={[0.95, 0.75, -0.3]} rotation={[0.2, -0.4, 0.5]}>
-        <boxGeometry args={[1.3, 2.8, 0.09]} />
+      {/* Champagne Accent Edge */}
+      <mesh position={[0.85, 0.7, -0.3]} rotation={[0.2, -0.4, 0.5]}>
+        <boxGeometry args={[1.1, 2.4, 0.08]} />
         <meshStandardMaterial
           color="#E6D5C0"
-          roughness={0.18}
-          metalness={0.9}
+          roughness={0.25}
+          metalness={0.85}
         />
       </mesh>
     </group>
@@ -87,7 +86,7 @@ export default function SpatialCanvas() {
   if (!mounted || prefersReducedMotion) return null;
 
   return (
-    <div className="fixed inset-0 z-1 pointer-events-none opacity-90 select-none overflow-hidden">
+    <div className="fixed inset-0 z-0 pointer-events-none opacity-35 select-none overflow-hidden">
       <Canvas
         camera={{ position: [0, 0, 9], fov: 50 }}
         dpr={[1, 1.5]}

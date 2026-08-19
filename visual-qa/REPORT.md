@@ -1,7 +1,7 @@
 # Visual QA Pipeline Report
 
 **Target URL:** `http://localhost:3009`
-**Generated At:** `2026-08-19T18:22:56.700Z`
+**Generated At:** `2026-08-19T19:18:24.910Z`
 **Total Screenshots Captured:** `19`
 **Screenshot Location:** `visual-qa/`
 
@@ -11,16 +11,16 @@
 
 | Viewport | Horizontal Overflow | Interactive Touch Target Audit (<44px) |
 | :--- | :--- | :--- |
-| mobile_320x844 | ✅ CLEAN | 37 elements |
-| mobile_360x800 | ✅ CLEAN | 37 elements |
-| mobile_375x812 | ✅ CLEAN | 37 elements |
-| mobile_390x844 | ✅ CLEAN | 37 elements |
-| mobile_412x915 | ✅ CLEAN | 37 elements |
-| mobile_430x932 | ✅ CLEAN | 37 elements |
-| tablet_768x1024 | ✅ CLEAN | 43 elements |
-| tablet_1024x1366 | ✅ CLEAN | 44 elements |
-| desktop_1440x900 | ✅ CLEAN | 44 elements |
-| desktop_1728x1117 | ✅ CLEAN | 44 elements |
+| mobile_320x844 | ✅ CLEAN | 38 elements |
+| mobile_360x800 | ✅ CLEAN | 38 elements |
+| mobile_375x812 | ✅ CLEAN | 38 elements |
+| mobile_390x844 | ✅ CLEAN | 38 elements |
+| mobile_412x915 | ✅ CLEAN | 38 elements |
+| mobile_430x932 | ✅ CLEAN | 38 elements |
+| tablet_768x1024 | ✅ CLEAN | 44 elements |
+| tablet_1024x1366 | ✅ CLEAN | 45 elements |
+| desktop_1440x900 | ✅ CLEAN | 45 elements |
+| desktop_1728x1117 | ✅ CLEAN | 45 elements |
 
 ---
 

@@ -35,9 +35,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/exterior.png",
     alt: "Hillside Private Residence Exterior at Dusk",
     tone: {
-      brightness: 0.85,
-      contrast: 1.08,
-      vignette: "from-background/95 via-background/60 to-background/40",
+      brightness: 0.95,
+      contrast: 1.05,
+      vignette: "from-background/80 via-background/20 to-transparent",
     },
     camera: {
       enterScale: 1.00,
@@ -56,9 +56,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/living.png",
     alt: "Grand Double-Height Living Room with Architectural Glazing",
     tone: {
-      brightness: 0.82,
-      contrast: 1.08,
-      vignette: "from-background/95 via-background/65 to-background/45",
+      brightness: 0.92,
+      contrast: 1.05,
+      vignette: "from-background/80 via-background/25 to-transparent",
     },
     camera: {
       enterScale: 1.08,
@@ -77,9 +77,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/office.png",
     alt: "Executive Private Office in Dark Walnut and Marble",
     tone: {
-      brightness: 0.80,
-      contrast: 1.10,
-      vignette: "from-background/95 via-background/70 to-background/50",
+      brightness: 0.90,
+      contrast: 1.08,
+      vignette: "from-background/85 via-background/30 to-transparent",
     },
     camera: {
       enterScale: 1.06,
@@ -98,9 +98,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/library.png",
     alt: "Floor-to-Ceiling Private Archive & Study",
     tone: {
-      brightness: 0.82,
-      contrast: 1.08,
-      vignette: "from-background/95 via-background/65 to-background/45",
+      brightness: 0.92,
+      contrast: 1.05,
+      vignette: "from-background/80 via-background/25 to-transparent",
     },
     camera: {
       enterScale: 1.05,
@@ -119,9 +119,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/command.png",
     alt: "Capital Command and High-Level Market Intelligence Suite",
     tone: {
-      brightness: 0.78,
-      contrast: 1.12,
-      vignette: "from-background/95 via-background/70 to-background/55",
+      brightness: 0.88,
+      contrast: 1.10,
+      vignette: "from-background/85 via-background/35 to-transparent",
     },
     camera: {
       enterScale: 1.02,
@@ -140,9 +140,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/gallery.png",
     alt: "Luxury Real Estate Exhibition and Art Gallery",
     tone: {
-      brightness: 0.82,
-      contrast: 1.08,
-      vignette: "from-background/95 via-background/65 to-background/45",
+      brightness: 0.92,
+      contrast: 1.05,
+      vignette: "from-background/80 via-background/25 to-transparent",
     },
     camera: {
       enterScale: 1.07,
@@ -161,9 +161,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/cinema.png",
     alt: "Private Home Cinema and Executive Broadcast Lounge",
     tone: {
-      brightness: 0.78,
-      contrast: 1.12,
-      vignette: "from-background/95 via-background/70 to-background/50",
+      brightness: 0.88,
+      contrast: 1.10,
+      vignette: "from-background/85 via-background/35 to-transparent",
     },
     camera: {
       enterScale: 1.05,
@@ -182,9 +182,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/terrace.png",
     alt: "Cliffside Infinity Terrace Overlooking the Horizon at Dusk",
     tone: {
-      brightness: 0.85,
-      contrast: 1.08,
-      vignette: "from-background/95 via-background/60 to-background/40",
+      brightness: 0.95,
+      contrast: 1.05,
+      vignette: "from-background/80 via-background/20 to-transparent",
     },
     camera: {
       enterScale: 1.01,
@@ -308,7 +308,7 @@ export default function ResidenceViewport() {
 
   return (
     <div
-      className="fixed inset-0 z-0 pointer-events-none overflow-hidden bg-background select-none opacity-60"
+      className="fixed inset-0 z-0 pointer-events-none overflow-hidden bg-background select-none opacity-85"
       aria-hidden="true"
     >
       {RESIDENCE_SCENES.map((scene, idx) => {
@@ -357,13 +357,13 @@ export default function ResidenceViewport() {
               }}
             />
 
-            {/* Dark vignette gradient overlay for high contrast text readability */}
+            {/* Atmospheric lighting gradient overlay tailored to architectural room */}
             <div
               className={`absolute inset-0 bg-gradient-to-t ${scene.tone.vignette}`}
             />
 
-            {/* Solid dark contrast overlay */}
-            <div className="absolute inset-0 bg-black/40" />
+            {/* Natural subtle image mask */}
+            <div className="absolute inset-0 bg-black/15" />
           </div>
         );
       })}

@@ -77,7 +77,7 @@ export default function PrivateConsultationForm() {
 
   if (status === "success") {
     return (
-      <div className="bg-surface-primary border border-accent/50 p-6 sm:p-10 space-y-6 shadow-2xl text-left animate-fade-in">
+      <div className="border border-accent/50 p-6 sm:p-10 space-y-6 text-left animate-fade-in bg-background/50">
         <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
           <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
           <span>CONFIDENTIAL DESK</span>
@@ -104,7 +104,7 @@ export default function PrivateConsultationForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-surface-primary border border-white/10 p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-2xl text-left"
+      className="border border-white/10 p-6 sm:p-8 space-y-5 sm:space-y-6 text-left bg-background/40 backdrop-blur-xs"
     >
       <div className="space-y-2 border-b border-white/10 pb-4 sm:pb-5">
         <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-semibold block">
@@ -157,7 +157,7 @@ export default function PrivateConsultationForm() {
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             placeholder="Executive Name"
-            className="w-full bg-background border border-white/10 px-4 py-3.5 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/50 transition-quick min-h-[48px]"
+            className="w-full bg-background border border-white/10 px-4 py-3.5 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none focus:border-accent transition-quick min-h-[48px]"
           />
         </div>
 
@@ -174,7 +174,7 @@ export default function PrivateConsultationForm() {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               placeholder="name@company.com"
-              className="w-full bg-background border border-white/10 px-4 py-3.5 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/50 transition-quick min-h-[48px]"
+              className="w-full bg-background border border-white/10 px-4 py-3.5 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none focus:border-accent transition-quick min-h-[48px]"
             />
           </div>
 
@@ -188,7 +188,7 @@ export default function PrivateConsultationForm() {
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               placeholder="+43 / +40 ..."
-              className="w-full bg-background border border-white/10 px-4 py-3.5 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/50 transition-quick min-h-[48px]"
+              className="w-full bg-background border border-white/10 px-4 py-3.5 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none focus:border-accent transition-quick min-h-[48px]"
             />
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function PrivateConsultationForm() {
             required
             value={formData.interest}
             onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
-            className="w-full bg-background border border-white/10 px-4 py-3.5 text-base sm:text-sm text-text-primary focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/50 transition-quick min-h-[48px]"
+            className="w-full bg-background border border-white/10 px-4 py-3.5 text-base sm:text-sm text-text-primary focus:outline-none focus:border-accent transition-quick min-h-[48px]"
           >
             {INTEREST_OPTIONS.map((opt) => (
               <option key={opt} value={opt} className="bg-surface-primary text-text-primary">
@@ -225,7 +225,7 @@ export default function PrivateConsultationForm() {
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             placeholder="Brief description of project requirements or strategic inquiry..."
-            className="w-full bg-background border border-white/10 px-4 py-3.5 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/50 transition-quick resize-none"
+            className="w-full bg-background border border-white/10 px-4 py-3.5 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none focus:border-accent transition-quick resize-none"
           />
         </div>
       </div>

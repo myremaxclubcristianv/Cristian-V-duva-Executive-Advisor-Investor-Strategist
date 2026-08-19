@@ -13,20 +13,20 @@ export default function ExecutiveProfile() {
       id="scene-live"
       className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-transparent py-24 sm:py-32 md:py-44 px-4 sm:px-6 md:px-12 lg:px-24"
     >
-      <div className="max-w-7xl mx-auto w-full space-y-10 sm:space-y-14 my-auto">
-        {/* Scene Indicator */}
+      <div className="max-w-7xl mx-auto w-full space-y-12 sm:space-y-16 my-auto">
+        {/* Scene Marker */}
         <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
-          <span>02 / 08</span>
+          <span>02 / 06</span>
           <span className="w-6 h-[1px] bg-accent/40" />
           <span>THE ADVISOR</span>
         </div>
 
-        {/* Editorial Monograph Grid */}
-        <div className="grid lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-20 items-start">
-          {/* Left Column: Statement & Biography */}
+        {/* Magazine Editorial Spread */}
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-20 items-start">
+          {/* Left Column: Monograph Statement */}
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-1">
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent font-medium block">
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent font-semibold block">
                 EXECUTIVE MONOGRAPH
               </span>
               <h2 className="font-display text-xl sm:text-2xl uppercase tracking-tight text-text-primary">
@@ -34,7 +34,7 @@ export default function ExecutiveProfile() {
               </h2>
             </div>
 
-            <blockquote className="font-display text-display-lg-fluid text-text-primary tracking-tight">
+            <blockquote className="font-display text-display-lg-fluid text-text-primary tracking-tight leading-[1.15]">
               {biography.shortDescription}
             </blockquote>
 
@@ -43,34 +43,34 @@ export default function ExecutiveProfile() {
             </p>
           </div>
 
-          {/* Right Column: Strategic Disciplines Monograph */}
+          {/* Right Column: Strategic Disciplines Index */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="border-t border-accent/40 pt-4">
+            <div className="border-b border-white/10 pb-4">
               <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent font-semibold block">
                 STRATEGIC DISCIPLINES
               </span>
             </div>
 
-            <div className="space-y-4 pt-1">
+            <div className="space-y-6 pt-2">
               {disciplines.map((d) => (
                 <div
                   key={d.number}
-                  className="py-3 border-b border-white/10 flex items-start justify-between gap-4 group"
+                  className="py-2 border-b border-white/10 space-y-1.5 group"
                 >
-                  <div className="space-y-1">
-                    <div className="flex items-center gap-2">
-                      <span className="font-mono text-[10px] text-accent font-medium">{d.number}</span>
-                      <span className="font-mono text-xs uppercase tracking-wider text-text-primary font-medium group-hover:text-accent transition-colors">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <span className="font-mono text-xs text-accent font-semibold">{d.number}</span>
+                      <span className="font-mono text-xs uppercase tracking-wider text-text-primary font-semibold group-hover:text-accent transition-colors">
                         {d.title}
                       </span>
                     </div>
-                    <p className="font-sans text-xs text-text-secondary/80 font-light pl-6">
-                      {d.desc}
-                    </p>
+                    <span className="font-mono text-xs text-accent/60 group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
                   </div>
-                  <span className="font-mono text-xs text-accent/40 group-hover:translate-x-1 transition-transform pt-0.5">
-                    →
-                  </span>
+                  <p className="font-sans text-xs text-text-secondary/80 font-light pl-7">
+                    {d.desc}
+                  </p>
                 </div>
               ))}
             </div>
