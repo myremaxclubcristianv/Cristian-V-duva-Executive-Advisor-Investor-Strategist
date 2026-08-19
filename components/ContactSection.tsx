@@ -10,56 +10,56 @@ export default function ContactSection() {
   const telegramLink = getSocialByPlatform("telegram");
 
   return (
-    <section id="scene-work" className="responsive-py px-4 sm:px-6 md:px-12 lg:px-24 border-b border-white/10">
+    <section id="scene-work" className="responsive-py px-4 sm:px-6 md:px-12 lg:px-24 bg-[#F3F0EA] text-[#080808] border-b border-[#D8D2C8]">
       <div className="max-w-6xl mx-auto space-y-12 sm:space-y-16">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          {/* Left Column: Direct Channels & Monograph */}
+          {/* Left Column: Direct Desk & Monograph */}
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-3">
-              <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
+              <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-[#8C8983] font-semibold">
                 <span>06 / 06</span>
-                <span className="w-6 h-[1px] bg-accent/40" />
+                <span className="w-6 h-[1px] bg-[#8C8983]/40" />
                 <span>CONTACT</span>
               </div>
-              <h2 className="font-display text-display-lg-fluid text-text-primary">
+              <h2 className="font-display text-display-lg-fluid text-[#080808]">
                 The Executive Desk
               </h2>
-              <p className="font-sans text-sm sm:text-base text-text-secondary/90 font-light leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-[#171717] font-light leading-relaxed">
                 Direct engagement for investors, property principals, and institutional partners requiring discreet private consultation.
               </p>
             </div>
 
-            {/* Direct Email Link */}
-            <div className="py-6 border-y border-white/10 space-y-2">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-semibold block">
+            {/* Confidential Email Line */}
+            <div className="py-6 border-y border-[#D8D2C8] space-y-2">
+              <span className="font-mono text-[10px] uppercase tracking-widest text-[#CDB99F] font-semibold block">
                 CONFIDENTIAL EMAIL
               </span>
               <a
                 href={`mailto:${contactInfo.email}`}
-                className="font-display text-xl sm:text-2xl text-text-primary hover:text-accent transition-colors block break-all"
+                className="font-display text-xl sm:text-2xl text-[#080808] hover:text-[#CDB99F] transition-colors block break-all"
               >
                 {contactInfo.email}
               </a>
-              <p className="font-sans text-xs text-text-secondary/80 font-light pt-1">
+              <p className="font-sans text-xs text-[#8C8983] font-light pt-1">
                 Monitored directly by the executive advisory team.
               </p>
             </div>
 
-            {/* Instant Messaging Channels */}
+            {/* Direct Messaging Channels */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {whatsappLink && (
                 <a
                   href={whatsappLink.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-5 border border-white/10 hover:border-accent transition-quick group block touch-active min-h-[96px]"
+                  className="p-5 border border-[#D8D2C8] hover:border-[#CDB99F] transition-quick group block touch-active min-h-[96px]"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-semibold">WHATSAPP</span>
-                    <span className="text-accent group-hover:translate-x-1 transition-transform">↗</span>
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-[#CDB99F] font-semibold">WHATSAPP</span>
+                    <span className="text-[#CDB99F] group-hover:translate-x-1 transition-transform">↗</span>
                   </div>
-                  <span className="font-display text-base text-text-primary block pt-1">Private Desk</span>
-                  <span className="font-sans text-xs text-text-secondary/80 font-light block">Direct line for active mandates</span>
+                  <span className="font-display text-base text-[#080808] block pt-1">Private Desk</span>
+                  <span className="font-sans text-xs text-[#8C8983] font-light block">Direct line for active mandates</span>
                 </a>
               )}
 
@@ -68,36 +68,34 @@ export default function ContactSection() {
                   href={telegramLink.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-5 border border-white/10 hover:border-accent transition-quick group block touch-active min-h-[96px]"
+                  className="p-5 border border-[#D8D2C8] hover:border-[#CDB99F] transition-quick group block touch-active min-h-[96px]"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-semibold">TELEGRAM</span>
-                    <span className="text-accent group-hover:translate-x-1 transition-transform">↗</span>
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-[#CDB99F] font-semibold">TELEGRAM</span>
+                    <span className="text-[#CDB99F] group-hover:translate-x-1 transition-transform">↗</span>
                   </div>
-                  <span className="font-display text-base text-text-primary block pt-1">Capital Channel</span>
-                  <span className="font-sans text-xs text-text-secondary/80 font-light block">Dispatches & macro briefings</span>
+                  <span className="font-display text-base text-[#080808] block pt-1">Capital Channel</span>
+                  <span className="font-sans text-xs text-[#8C8983] font-light block">Dispatches & macro briefings</span>
                 </a>
               )}
             </div>
           </div>
 
-          {/* Right Column: Intake Desk & External Dossiers */}
+          {/* Right Column: Stationery Intake Desk Form */}
           <div className="lg:col-span-6 space-y-8">
-            {/* Native Private Intake Desk Form */}
             <PrivateConsultationForm />
 
-            {/* External Service Dossiers (Jotform Links) */}
-            <div className="py-6 border-t border-white/10 space-y-6">
-              <div className="space-y-2">
-                <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-semibold">
+            {/* External Service Applications (Jotform) */}
+            <div className="py-6 border-t border-[#D8D2C8] space-y-6">
+              <div className="space-y-1">
+                <span className="font-mono text-[10px] uppercase tracking-widest text-[#CDB99F] font-semibold block">
                   EXTERNAL DOSSIERS
                 </span>
-                <h3 className="font-display text-xl text-text-primary">
+                <h3 className="font-display text-xl text-[#080808]">
                   Specialized Service Applications
                 </h3>
               </div>
 
-              {/* Service Form Links (Jotform) */}
               {featuredForms.length > 0 && (
                 <div className="space-y-3">
                   {featuredForms.map((form) => (
@@ -106,12 +104,12 @@ export default function ContactSection() {
                       href={form.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center justify-between p-4 border border-white/10 hover:border-accent transition-quick touch-active min-h-[48px]"
+                      className="group flex items-center justify-between p-4 border border-[#D8D2C8] hover:border-[#CDB99F] transition-quick touch-active min-h-[48px]"
                     >
-                      <span className="font-sans text-xs uppercase tracking-wider text-text-primary group-hover:text-accent transition-colors font-medium">
+                      <span className="font-sans text-xs uppercase tracking-wider text-[#080808] group-hover:text-[#CDB99F] transition-colors font-medium">
                         {form.name}
                       </span>
-                      <span className="text-accent font-mono text-xs group-hover:translate-x-1 transition-transform">
+                      <span className="text-[#CDB99F] font-mono text-xs group-hover:translate-x-1 transition-transform">
                         ACCESS DOSSIER ↗
                       </span>
                     </a>
@@ -124,12 +122,12 @@ export default function ContactSection() {
                   href={linktreeLink.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between p-4 border border-white/10 hover:border-accent transition-quick touch-active min-h-[48px]"
+                  className="group flex items-center justify-between p-4 border border-[#D8D2C8] hover:border-[#CDB99F] transition-quick touch-active min-h-[48px]"
                 >
-                  <span className="font-sans text-xs uppercase tracking-wider text-text-primary group-hover:text-accent transition-colors font-medium">
+                  <span className="font-sans text-xs uppercase tracking-wider text-[#080808] group-hover:text-[#CDB99F] transition-colors font-medium">
                     Complete Executive Linktree Hub
                   </span>
-                  <span className="text-accent font-mono text-xs group-hover:translate-x-1 transition-transform">
+                  <span className="text-[#CDB99F] font-mono text-xs group-hover:translate-x-1 transition-transform">
                     OPEN ↗
                   </span>
                 </a>
