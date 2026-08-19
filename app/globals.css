@@ -2,12 +2,16 @@
 
 :root {
   --background: #050505;
-  --foreground: #F5F5F5;
+  --foreground: #F5F3EF;
   --surface-primary: #0B0B0B;
   --surface-secondary: #111111;
-  --text-primary: #F5F5F5;
+  --surface-tertiary: #151515;
+  --text-primary: #F5F3EF;
   --text-secondary: #A1A1A1;
+  --text-tertiary: #6E6E6E;
   --accent: #E6D5C0;
+  --accent-muted: rgba(230, 213, 192, 0.12);
+  --border-rule: rgba(255, 255, 255, 0.08);
 }
 
 @theme inline {
@@ -15,9 +19,13 @@
   --color-foreground: var(--foreground);
   --color-surface-primary: var(--surface-primary);
   --color-surface-secondary: var(--surface-secondary);
+  --color-surface-tertiary: var(--surface-tertiary);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
   --color-accent: var(--accent);
+  --color-accent-muted: var(--accent-muted);
+  --color-border-rule: var(--border-rule);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
   --font-display: var(--font-playfair);
@@ -31,6 +39,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -39,6 +48,7 @@ body {
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 img {
@@ -56,19 +66,74 @@ button {
   cursor: pointer;
 }
 
-/* Custom 12‑column grid utility */
-.grid-12 {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 1rem;
+/* ==========================================================================
+   Editorial Fluid Typography Scale
+   ========================================================================== */
+
+/* Hero Cover Title - Clamp 2.25rem (320px) to 5.5rem (1440px) */
+.text-hero-fluid {
+  font-size: clamp(2.25rem, 5.8vw + 0.5rem, 5.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
 }
 
-/* Micro‑interaction transition utility */
+/* Display Section Title XL - Clamp 1.85rem to 3.85rem */
+.text-display-xl-fluid {
+  font-size: clamp(1.85rem, 4.2vw + 0.5rem, 3.85rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+/* Display Section Title LG - Clamp 1.4rem to 2.65rem */
+.text-display-lg-fluid {
+  font-size: clamp(1.4rem, 3.2vw + 0.25rem, 2.65rem);
+  line-height: 1.14;
+  letter-spacing: -0.015em;
+}
+
+/* Technical Monospace Eyebrow */
+.text-eyebrow-fluid {
+  font-size: clamp(0.65rem, 0.9vw + 0.4rem, 0.75rem);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+/* Editorial Monograph Paragraph */
+.text-body-lead-fluid {
+  font-size: clamp(0.95rem, 1.25vw + 0.5rem, 1.15rem);
+  line-height: 1.68;
+}
+
+/* ==========================================================================
+   Architectural Rules & Spacing Infrastructure
+   ========================================================================== */
+
+.safe-pb {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+}
+
+.safe-pt {
+  padding-top: max(1.5rem, env(safe-area-inset-top));
+}
+
+.responsive-px {
+  padding-left: clamp(1rem, 4.5vw, 6rem);
+  padding-right: clamp(1rem, 4.5vw, 6rem);
+}
+
+.responsive-py {
+  padding-top: clamp(4.5rem, 8.5vw, 9.5rem);
+  padding-bottom: clamp(4.5rem, 8.5vw, 9.5rem);
+}
+
+.border-architectural {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
 .transition-quick {
-  transition: all 150ms ease-in-out;
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Hero typography */
-.text-hero-xl {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+.touch-active:active {
+  transform: scale(0.98);
 }

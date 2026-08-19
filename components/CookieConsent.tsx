@@ -4,7 +4,7 @@ import { useState, useEffect, useSyncExternalStore, useCallback } from "react";
 import Link from "next/link";
 
 interface CookiePreferences {
-  necessary: boolean; // Always true
+  necessary: boolean;
   preferences: boolean;
   analytics: boolean;
   marketing: boolean;
@@ -32,7 +32,6 @@ export default function CookieConsent() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [preferences, setPreferences] = useState<CookiePreferences>(defaultPreferences);
 
-  // Initialize from storage once mounted
   useEffect(() => {
     if (!isHydrated) return;
     const stored = localStorage.getItem(STORAGE_KEY);
@@ -42,7 +41,6 @@ export default function CookieConsent() {
     }
   }, [isHydrated]);
 
-  // Listen for custom trigger to reopen preferences from footer
   useEffect(() => {
     const handleReopen = () => {
       if (typeof window !== "undefined") {
@@ -100,53 +98,47 @@ export default function CookieConsent() {
 
   return (
     <>
-      {/* Initial Bottom Consent Banner */}
+      {/* Compact Floating Privacy Bar */}
       {isOpen && !isModalOpen && (
         <aside
           role="region"
           aria-label="Cookie and Privacy Notice"
-          className="fixed bottom-0 left-0 right-0 z-50 p-4 sm:p-6 bg-surface-primary/95 backdrop-blur-xl border-t border-surface-secondary/80 shadow-2xl transition-transform duration-300"
+          className="fixed bottom-3 left-3 right-3 sm:left-auto sm:right-6 sm:bottom-6 z-40 max-w-md bg-surface-primary/95 backdrop-blur-2xl border border-white/10 p-4 shadow-2xl transition-all duration-300 rounded-sm"
         >
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-            <div className="space-y-2 max-w-3xl">
-              <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-accent font-semibold">
-                <span>PRIVACY & TRANSPARENCY</span>
-                <span className="w-4 h-[1px] bg-accent/40" />
-                <span>COOKIE NOTICE</span>
-              </div>
-              <p className="font-sans text-xs sm:text-sm text-text-secondary/90 font-light leading-relaxed">
-                We use strictly necessary technical storage to ensure platform integrity and remember your preferences. No non-essential advertising trackers are deployed without explicit consent. Read our{" "}
-                <Link href="/cookies" className="text-accent underline hover:text-text-primary">
-                  Cookie Policy
-                </Link>{" "}
-                and{" "}
-                <Link href="/privacy" className="text-accent underline hover:text-text-primary">
-                  Privacy Policy
-                </Link>.
-              </p>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between font-mono text-[9px] uppercase tracking-widest text-accent font-semibold">
+              <span>PRIVACY & TRANSPARENCY</span>
+              <button
+                type="button"
+                onClick={() => setIsOpen(false)}
+                className="text-text-secondary hover:text-text-primary p-1 text-xs"
+                aria-label="Dismiss banner"
+              >
+                ✕
+              </button>
             </div>
+            
+            <p className="font-sans text-[11px] sm:text-xs text-text-secondary/90 font-light leading-relaxed">
+              We use strictly necessary technical storage to ensure security and functionality. Read our{" "}
+              <Link href="/cookies" className="text-accent underline hover:text-text-primary">
+                Cookie Policy
+              </Link>.
+            </p>
 
-            <div className="flex flex-wrap items-center gap-3 w-full lg:w-auto">
+            <div className="flex items-center gap-2 pt-1">
               <button
                 type="button"
                 onClick={handleAcceptAll}
-                className="flex-1 lg:flex-none px-6 py-3 bg-accent text-background font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-accent/90 transition-quick text-center"
+                className="flex-1 py-2 px-3 bg-accent text-background font-mono text-[10px] font-semibold uppercase tracking-wider hover:bg-accent/90 transition-quick text-center min-h-[36px]"
               >
                 Accept All
               </button>
               <button
                 type="button"
                 onClick={handleRejectNonEssential}
-                className="flex-1 lg:flex-none px-5 py-3 border border-surface-secondary/80 bg-background/50 text-text-primary font-mono text-xs uppercase tracking-[0.2em] hover:border-accent hover:text-accent transition-quick text-center"
+                className="flex-1 py-2 px-3 border border-white/15 bg-background/50 text-text-primary font-mono text-[10px] uppercase tracking-wider hover:border-accent hover:text-accent transition-quick text-center min-h-[36px]"
               >
                 Reject Non-Essential
-              </button>
-              <button
-                type="button"
-                onClick={() => setIsModalOpen(true)}
-                className="w-full sm:w-auto px-4 py-3 text-text-secondary hover:text-text-primary font-mono text-xs uppercase tracking-widest transition-quick text-center underline"
-              >
-                Customize
               </button>
             </div>
           </div>
@@ -161,8 +153,8 @@ export default function CookieConsent() {
           aria-labelledby="cookie-modal-title"
           className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6"
         >
-          <div className="relative max-w-2xl w-full bg-surface-primary border border-surface-secondary/80 p-6 sm:p-10 space-y-8 shadow-2xl max-h-[90vh] overflow-y-auto">
-            <div className="flex items-start justify-between border-b border-surface-secondary/60 pb-5">
+          <div className="relative max-w-2xl w-full bg-surface-primary border border-white/15 p-6 sm:p-10 space-y-8 shadow-2xl max-h-[90vh] overflow-y-auto">
+            <div className="flex items-start justify-between border-b border-white/10 pb-5">
               <div className="space-y-1">
                 <span className="font-mono text-[10px] text-accent uppercase tracking-widest block">
                   DATA GOVERNANCE
@@ -187,7 +179,7 @@ export default function CookieConsent() {
 
             <div className="space-y-5">
               {/* Category 1: Strictly Necessary */}
-              <div className="p-4 border border-surface-secondary/70 bg-background/50 space-y-2">
+              <div className="p-4 border border-white/10 bg-background/50 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="font-display text-base text-text-primary">1. Strictly Necessary Technologies</span>
                   <span className="font-mono text-[10px] uppercase tracking-wider text-accent bg-accent/10 px-2 py-0.5 border border-accent/30">
@@ -200,7 +192,7 @@ export default function CookieConsent() {
               </div>
 
               {/* Category 2: Functional & Preferences */}
-              <div className="p-4 border border-surface-secondary/70 bg-background/50 space-y-2">
+              <div className="p-4 border border-white/10 bg-background/50 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="font-display text-base text-text-primary">2. Preference & Accessibility Storage</span>
                   <label className="relative inline-flex items-center cursor-pointer">
@@ -221,7 +213,7 @@ export default function CookieConsent() {
               </div>
 
               {/* Category 3: Analytics & Diagnostics */}
-              <div className="p-4 border border-surface-secondary/70 bg-background/50 space-y-2">
+              <div className="p-4 border border-white/10 bg-background/50 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="font-display text-base text-text-primary">3. Anonymous Analytics & Diagnostics</span>
                   <label className="relative inline-flex items-center cursor-pointer">
@@ -242,7 +234,7 @@ export default function CookieConsent() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-surface-secondary/60">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-white/10">
               <button
                 type="button"
                 onClick={handleSaveCustom}
@@ -253,7 +245,7 @@ export default function CookieConsent() {
               <button
                 type="button"
                 onClick={handleAcceptAll}
-                className="w-full sm:w-auto px-6 py-3.5 border border-surface-secondary/80 text-text-secondary hover:text-text-primary font-mono text-xs uppercase tracking-widest transition-quick"
+                className="w-full sm:w-auto px-6 py-3.5 border border-white/15 text-text-secondary hover:text-text-primary font-mono text-xs uppercase tracking-widest transition-quick"
               >
                 Accept All
               </button>

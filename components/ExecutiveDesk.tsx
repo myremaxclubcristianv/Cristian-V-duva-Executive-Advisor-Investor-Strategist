@@ -18,33 +18,33 @@ export default async function ExecutiveDesk() {
   return (
     <section
       id="scene-work"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-transparent py-32 md:py-44 px-6 md:px-16 lg:px-24"
+      className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-transparent py-24 sm:py-32 md:py-44 px-4 sm:px-6 md:px-12 lg:px-24"
     >
-      <div className="max-w-7xl mx-auto w-full space-y-12 my-auto">
+      <div className="max-w-7xl mx-auto w-full space-y-8 sm:space-y-12 my-auto">
         {/* Header - Editorial & Intimate */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-surface-secondary/70 pb-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-surface-secondary/70 pb-6">
           <div className="space-y-2">
             <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
               <span>03 / 08</span>
               <span className="w-6 h-[1px] bg-accent/40" />
               <span>WORK</span>
             </div>
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-text-primary leading-[1.08] tracking-tight">
+            <h2 className="font-display text-display-lg-fluid text-text-primary tracking-tight">
               The Executive Desk
             </h2>
           </div>
 
-          <div className="font-mono text-xs text-text-secondary/80 tracking-wider">
+          <div className="font-mono text-[10px] sm:text-xs text-text-secondary/80 tracking-wider">
             INTELLIGENCE STREAM · {new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" }).toUpperCase()}
           </div>
         </div>
 
-        {/* 3 Editorial Channels - Pure Editorial Columns, Zero Box UI */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14">
+        {/* 3 Editorial Channels - Pure Monograph Columns */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14">
           {/* CHANNEL 1: MARKET */}
           <div className="space-y-4 flex flex-col justify-between border-t border-accent/40 pt-5">
             <div className="space-y-3">
-              <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-accent">
+              <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-accent font-medium">
                 <span>01 · MARKET</span>
                 <span className="text-text-secondary/60">DISPATCH</span>
               </div>
@@ -70,7 +70,7 @@ export default async function ExecutiveDesk() {
                   href={latestNews.originalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent uppercase tracking-widest hover:underline"
+                  className="text-accent uppercase tracking-widest hover:underline touch-active min-h-[36px] flex items-center"
                 >
                   SOURCE ↗
                 </a>
@@ -81,7 +81,7 @@ export default async function ExecutiveDesk() {
           {/* CHANNEL 2: MEDIA */}
           <div className="space-y-4 flex flex-col justify-between border-t border-accent/40 pt-5">
             <div className="space-y-3">
-              <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-accent">
+              <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-accent font-medium">
                 <span>02 · MEDIA</span>
                 <span className="text-text-secondary/60">BROADCAST</span>
               </div>
@@ -105,7 +105,7 @@ export default async function ExecutiveDesk() {
                 <span className="text-text-secondary/70">YouTube Official</span>
                 <Link
                   href="/media/videos"
-                  className="text-accent uppercase tracking-widest hover:underline"
+                  className="text-accent uppercase tracking-widest hover:underline touch-active min-h-[36px] flex items-center"
                 >
                   WATCH BRIEFING →
                 </Link>
@@ -116,7 +116,7 @@ export default async function ExecutiveDesk() {
           {/* CHANNEL 3: INSIGHTS */}
           <div className="space-y-4 flex flex-col justify-between border-t border-accent/40 pt-5">
             <div className="space-y-3">
-              <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-accent">
+              <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-accent font-medium">
                 <span>03 · INSIGHTS</span>
                 <span className="text-text-secondary/60">MEMO</span>
               </div>
@@ -140,7 +140,7 @@ export default async function ExecutiveDesk() {
                 <span className="text-text-secondary/70">By {cleanText(latestInsight.author)}</span>
                 <Link
                   href="/insights"
-                  className="text-accent uppercase tracking-widest hover:underline"
+                  className="text-accent uppercase tracking-widest hover:underline touch-active min-h-[36px] flex items-center"
                 >
                   READ PERSPECTIVE →
                 </Link>

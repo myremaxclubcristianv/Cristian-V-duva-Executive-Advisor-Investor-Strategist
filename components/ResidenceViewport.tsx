@@ -17,11 +17,11 @@ export interface ResidenceScene {
     vignette: string;
   };
   camera: {
-    enterScale: number; // Scale when entering from previous scene
-    focusScale: number; // Scale at 100% focus
-    exitScale: number;  // Scale when leaving to next scene
-    panX: number;       // Camera horizontal drift percentage
-    panY: number;       // Camera vertical drift percentage
+    enterScale: number;
+    focusScale: number;
+    exitScale: number;
+    panX: number;
+    panY: number;
   };
 }
 
@@ -35,9 +35,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/exterior.png",
     alt: "Hillside Private Residence Exterior at Dusk",
     tone: {
-      brightness: 0.98,
-      contrast: 1.06,
-      vignette: "from-background/90 via-background/25 to-transparent",
+      brightness: 0.85,
+      contrast: 1.08,
+      vignette: "from-background/95 via-background/60 to-background/40",
     },
     camera: {
       enterScale: 1.00,
@@ -56,9 +56,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/living.png",
     alt: "Grand Double-Height Living Room with Architectural Glazing",
     tone: {
-      brightness: 0.94,
-      contrast: 1.05,
-      vignette: "from-background/90 via-background/30 to-transparent",
+      brightness: 0.82,
+      contrast: 1.08,
+      vignette: "from-background/95 via-background/65 to-background/45",
     },
     camera: {
       enterScale: 1.08,
@@ -77,9 +77,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/office.png",
     alt: "Executive Private Office in Dark Walnut and Marble",
     tone: {
-      brightness: 0.90,
-      contrast: 1.08,
-      vignette: "from-background/90 via-background/40 to-transparent",
+      brightness: 0.80,
+      contrast: 1.10,
+      vignette: "from-background/95 via-background/70 to-background/50",
     },
     camera: {
       enterScale: 1.06,
@@ -98,9 +98,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/library.png",
     alt: "Floor-to-Ceiling Private Archive & Study",
     tone: {
-      brightness: 0.92,
-      contrast: 1.05,
-      vignette: "from-background/90 via-background/35 to-transparent",
+      brightness: 0.82,
+      contrast: 1.08,
+      vignette: "from-background/95 via-background/65 to-background/45",
     },
     camera: {
       enterScale: 1.05,
@@ -119,9 +119,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/command.png",
     alt: "Capital Command and High-Level Market Intelligence Suite",
     tone: {
-      brightness: 0.88,
+      brightness: 0.78,
       contrast: 1.12,
-      vignette: "from-background/90 via-background/45 to-transparent",
+      vignette: "from-background/95 via-background/70 to-background/55",
     },
     camera: {
       enterScale: 1.02,
@@ -140,9 +140,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/gallery.png",
     alt: "Luxury Real Estate Exhibition and Art Gallery",
     tone: {
-      brightness: 0.94,
-      contrast: 1.06,
-      vignette: "from-background/90 via-background/30 to-transparent",
+      brightness: 0.82,
+      contrast: 1.08,
+      vignette: "from-background/95 via-background/65 to-background/45",
     },
     camera: {
       enterScale: 1.07,
@@ -161,9 +161,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/cinema.png",
     alt: "Private Home Cinema and Executive Broadcast Lounge",
     tone: {
-      brightness: 0.86,
-      contrast: 1.10,
-      vignette: "from-background/90 via-background/45 to-transparent",
+      brightness: 0.78,
+      contrast: 1.12,
+      vignette: "from-background/95 via-background/70 to-background/50",
     },
     camera: {
       enterScale: 1.05,
@@ -182,9 +182,9 @@ export const RESIDENCE_SCENES: ResidenceScene[] = [
     src: "/residence/terrace.png",
     alt: "Cliffside Infinity Terrace Overlooking the Horizon at Dusk",
     tone: {
-      brightness: 0.98,
-      contrast: 1.05,
-      vignette: "from-background/80 via-background/20 to-transparent",
+      brightness: 0.85,
+      contrast: 1.08,
+      vignette: "from-background/95 via-background/60 to-background/40",
     },
     camera: {
       enterScale: 1.01,
@@ -232,7 +232,6 @@ export default function ResidenceViewport() {
     if (totalScroll <= 0) return;
 
     const sceneCount = RESIDENCE_SCENES.length;
-    
     const sectionElements = RESIDENCE_SCENES.map((s) =>
       document.getElementById(s.sectionId)
     );
@@ -309,34 +308,28 @@ export default function ResidenceViewport() {
 
   return (
     <div
-      className="fixed inset-0 z-0 pointer-events-none overflow-hidden bg-background select-none"
+      className="fixed inset-0 z-0 pointer-events-none overflow-hidden bg-background select-none opacity-60"
       aria-hidden="true"
     >
       {RESIDENCE_SCENES.map((scene, idx) => {
-        // Distance from current camera position: negative when scene is ahead, positive when behind
         const dist = currentProgress - idx;
         const absDist = Math.abs(dist);
 
         const isVisible = absDist < 1.12;
         if (!isVisible) return null;
 
-        // Smooth cosine crossfade
         const rawWeight = Math.max(0, 1 - absDist);
         const opacity = Math.sin((rawWeight * Math.PI) / 2);
 
-        // Three-point camera scale calculation (enter -> focus -> exit)
         let currentScale = scene.camera.focusScale;
         if (dist < 0) {
-          // Approaching from above: enterScale -> focusScale
           const factor = Math.min(1, Math.abs(dist));
           currentScale = scene.camera.focusScale + (scene.camera.enterScale - scene.camera.focusScale) * factor;
         } else {
-          // Leaving to below: focusScale -> exitScale
           const factor = Math.min(1, dist);
           currentScale = scene.camera.focusScale + (scene.camera.exitScale - scene.camera.focusScale) * factor;
         }
 
-        // Camera Pan Drift
         const currentPanX = prefersReducedMotion ? 0 : scene.camera.panX * dist;
         const currentPanY = prefersReducedMotion ? 0 : scene.camera.panY * dist;
         const effectiveScale = prefersReducedMotion ? 1.0 : currentScale;
@@ -364,13 +357,13 @@ export default function ResidenceViewport() {
               }}
             />
 
-            {/* Atmospheric lighting gradient overlay tailored to architectural room */}
+            {/* Dark vignette gradient overlay for high contrast text readability */}
             <div
               className={`absolute inset-0 bg-gradient-to-t ${scene.tone.vignette}`}
             />
 
-            {/* Subtle photographic contrast mask */}
-            <div className="absolute inset-0 bg-black/15" />
+            {/* Solid dark contrast overlay */}
+            <div className="absolute inset-0 bg-black/40" />
           </div>
         );
       })}

@@ -8,9 +8,9 @@ export default function PrivateCTA() {
   return (
     <section
       id="scene-retreat"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-transparent py-36 md:py-48 px-6 md:px-16 lg:px-24"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-transparent py-28 sm:py-36 md:py-48 px-4 sm:px-6 md:px-12 lg:px-24"
     >
-      <div className="relative z-10 max-w-4xl mx-auto space-y-8 my-auto">
+      <div className="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-8 my-auto">
         {/* Scene Indicator */}
         <div className="flex items-center justify-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
           <span>08 / 08</span>
@@ -23,22 +23,22 @@ export default function PrivateCTA() {
           THE PANORAMIC TERRACE
         </p>
 
-        {/* Large Headline */}
-        <h2 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-text-primary leading-[1.06] tracking-tight">
+        {/* Fluid Headline */}
+        <h2 className="font-display text-display-xl-fluid text-text-primary tracking-tight">
           PRIVATE ACCESS.<br />
           <span className="text-accent italic font-normal">STRATEGIC CONVERSATION.</span>
         </h2>
 
-        {/* Minimal Supporting Copy */}
-        <p className="text-text-secondary/90 max-w-lg mx-auto text-sm sm:text-base font-light leading-relaxed">
+        {/* Supporting Narrative */}
+        <p className="text-text-secondary/90 max-w-lg mx-auto text-body-lead-fluid font-light leading-relaxed">
           For cross-border real estate acquisitions, private equity allocation, board mandates, and confidential advisory.
         </p>
 
         {/* Action CTAs */}
-        <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5">
           <Link
             href="/contact"
-            className="w-full sm:w-auto px-10 py-4 bg-accent text-background font-mono font-semibold uppercase tracking-[0.2em] text-xs sm:text-sm hover:bg-accent/90 transition-quick shadow-2xl"
+            className="w-full sm:w-auto px-8 py-4 bg-accent text-background font-mono font-semibold uppercase tracking-[0.2em] text-xs hover:bg-accent/90 transition-quick shadow-2xl touch-active min-h-[48px] flex items-center justify-center"
           >
             REQUEST PRIVATE CONSULTATION
           </Link>
@@ -46,7 +46,7 @@ export default function PrivateCTA() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto px-8 py-4 border border-text-secondary/30 bg-background/20 backdrop-blur-xs text-text-primary text-xs sm:text-sm font-mono uppercase tracking-[0.2em] hover:border-accent hover:text-accent transition-quick"
+            className="w-full sm:w-auto px-8 py-4 border border-white/20 bg-background/30 backdrop-blur-xs text-text-primary text-xs font-mono uppercase tracking-[0.2em] hover:border-accent hover:text-accent transition-quick touch-active min-h-[48px] flex items-center justify-center"
           >
             WHATSAPP PRIVATE DESK ↗
           </a>
