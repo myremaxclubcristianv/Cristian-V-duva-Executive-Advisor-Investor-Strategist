@@ -1,71 +1,169 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-interface ExpertiseBlockProps {
+interface DisciplineItem {
+  id: string;
   number: string;
   title: string;
+  subtitle: string;
   description: string;
   imageSrc: string;
-  ctaLabel?: string;
-  ctaHref?: string;
-  reverse?: boolean;
+  mandates: string[];
 }
 
-export default function ExpertiseBlock({
-  number,
-  title,
-  description,
-  imageSrc,
-  ctaLabel = "EXPLORE MANDATE →",
-  ctaHref = "/real-estate/properties",
-  reverse = false,
-}: ExpertiseBlockProps) {
+const disciplines: DisciplineItem[] = [
+  {
+    id: "capital",
+    number: "01",
+    title: "CAPITAL",
+    subtitle: "Strategic Placement & Equity Structuring",
+    description: "Bespoke advisory for private equity placement, co-investment vehicles, and credit structuring across high-performance European markets.",
+    imageSrc: "/residence/salon.png",
+    mandates: ["Private Equity Placement", "Credit Structuring", "Co-Investment Strategies"],
+  },
+  {
+    id: "real-estate",
+    number: "02",
+    title: "REAL ESTATE",
+    subtitle: "Ultra-Prime Acquisition & Portfolio Curation",
+    description: "Discreet origination and execution for off-market luxury residential assets, prime penthouses, and commercial development parcels.",
+    imageSrc: "/residence/pool.png",
+    mandates: ["Off-Market Acquisitions", "Penthouse Portfolio Curation", "Zoned Commercial Parcels"],
+  },
+  {
+    id: "risk",
+    number: "03",
+    title: "RISK",
+    subtitle: "Asset Protection & Downside Surveillance",
+    description: "Institutional governance combined with private execution to shield family wealth and preserve capital across volatile market cycles.",
+    imageSrc: "/residence/library.png",
+    mandates: ["Downside Protection", "Governance Structuring", "Market Dislocation Analysis"],
+  },
+  {
+    id: "strategy",
+    number: "04",
+    title: "STRATEGY",
+    subtitle: "Executive Board Advisory & Mandates",
+    description: "Independent strategic counsel for principals, family offices, and institutional boards navigating complex growth and transaction decisions.",
+    imageSrc: "/residence/terrace.png",
+    mandates: ["Board Representation", "Transaction Advisory", "Generational Strategy"],
+  },
+];
+
+export default function ExpertiseBlock() {
+  const [activeId, setActiveId] = useState<string>("capital");
+  const activeDiscipline = disciplines.find((d) => d.id === activeId) || disciplines[0];
+
   return (
-    <section className="responsive-py px-4 sm:px-6 md:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 md:gap-20 items-center">
-        {/* Editorial Monograph Column */}
-        <div
-          className={`md:col-span-6 ${
-            reverse ? "md:order-last" : ""
-          } space-y-6`}
-        >
-          <div className="space-y-3">
+    <section id="scene-expertise" className="responsive-py px-4 sm:px-6 md:px-12 lg:px-24 border-b border-white/10">
+      <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
+          <div className="space-y-2">
             <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
-              <span>03 / DISCIPLINES</span>
+              <span>03 / 06</span>
               <span className="w-6 h-[1px] bg-accent/40" />
-              <span>{number}</span>
+              <span>DISCIPLINES</span>
             </div>
-            <h3 className="font-display text-display-lg-fluid text-text-primary tracking-tight">
-              {title}
-            </h3>
+            <h2 className="font-display text-display-lg-fluid text-text-primary tracking-tight">
+              Strategic Practice Index
+            </h2>
           </div>
-
-          <p className="font-sans text-xs sm:text-base text-text-secondary/90 font-light leading-relaxed">
-            {description}
-          </p>
-
-          {ctaLabel && ctaHref && (
-            <div className="pt-4">
-              <Link
-                href={ctaHref}
-                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-accent hover:text-text-primary transition-quick py-2"
-              >
-                <span>{ctaLabel}</span>
-              </Link>
-            </div>
-          )}
+          <div className="font-mono text-[10px] sm:text-xs text-text-secondary/80 uppercase tracking-widest">
+            EXECUTIVE MANDATES · EUROPE
+          </div>
         </div>
 
-        {/* Uncovered Architectural Photograph */}
-        <div className="md:col-span-6 relative aspect-[16/10] w-full overflow-hidden group bg-surface-primary">
-          <Image
-            src={imageSrc}
-            alt={title}
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover transition-transform duration-700 group-hover:scale-105"
-            priority={!reverse}
-          />
+        {/* Interactive Discipline Monograph Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+          {/* Left Column: Interactive Index */}
+          <div className="lg:col-span-6 space-y-4">
+            {disciplines.map((item) => {
+              const isActive = item.id === activeId;
+              return (
+                <div
+                  key={item.id}
+                  onClick={() => setActiveId(item.id)}
+                  onMouseEnter={() => setActiveId(item.id)}
+                  className={`py-5 px-4 border-b border-white/10 cursor-pointer transition-all ${
+                    isActive ? "bg-white/5 border-l-2 border-l-accent" : "hover:bg-white/[0.02]"
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <span className={`font-mono text-sm ${isActive ? "text-accent font-semibold" : "text-text-secondary/60"}`}>
+                        {item.number}
+                      </span>
+                      <span className={`font-display text-xl sm:text-2xl ${isActive ? "text-text-primary font-medium" : "text-text-secondary/80"}`}>
+                        {item.title}
+                      </span>
+                    </div>
+                    <span className={`font-mono text-xs ${isActive ? "text-accent" : "text-text-secondary/40"}`}>
+                      {isActive ? "ACTIVE →" : "EXPLORE"}
+                    </span>
+                  </div>
+
+                  {/* Mobile Accordion Content */}
+                  {isActive && (
+                    <div className="lg:hidden pt-4 space-y-3">
+                      <p className="font-sans text-xs text-text-secondary/90 font-light leading-relaxed">
+                        {item.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 pt-1">
+                        {item.mandates.map((m) => (
+                          <span key={m} className="font-mono text-[9px] uppercase tracking-wider text-accent border border-accent/30 px-2 py-1">
+                            {m}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Right Column: Desktop Reveal Panel */}
+          <div className="hidden lg:block lg:col-span-6 space-y-6 sticky top-28">
+            <div className="relative aspect-[16/10] w-full overflow-hidden border border-white/10 bg-surface-primary">
+              <Image
+                src={activeDiscipline.imageSrc}
+                alt={activeDiscipline.title}
+                fill
+                sizes="50vw"
+                className="object-cover transition-all duration-700"
+              />
+            </div>
+
+            <div className="space-y-3 pt-2">
+              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent font-semibold block">
+                {activeDiscipline.subtitle}
+              </span>
+              <p className="font-sans text-sm text-text-secondary/90 font-light leading-relaxed">
+                {activeDiscipline.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2 pt-2">
+                {activeDiscipline.mandates.map((m) => (
+                  <span key={m} className="font-mono text-[10px] uppercase tracking-wider text-accent border border-accent/30 px-3 py-1.5">
+                    {m}
+                  </span>
+                ))}
+              </div>
+
+              <div className="pt-4">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-accent hover:text-text-primary transition-quick py-2"
+                >
+                  <span>REQUEST DISCIPLINE DOSSIER →</span>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
