@@ -1,6 +1,7 @@
 import { contactInfo } from "@/lib/content/contact";
 import { getFeaturedForms } from "@/lib/forms";
 import { getSocialByPlatform } from "@/lib/socials";
+import PrivateConsultationForm from "@/components/PrivateConsultationForm";
 
 export default function ContactSection() {
   const featuredForms = getFeaturedForms();
@@ -78,22 +79,26 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Right Column: Structured Inquiry Dossiers */}
-          <div className="lg:col-span-6 space-y-6">
+          {/* Right Column: Native Form & External Dossiers */}
+          <div className="lg:col-span-6 space-y-8">
+            {/* Native Private Consultation Form */}
+            <PrivateConsultationForm />
+
+            {/* External Service Dossiers (Jotforms) */}
             <div className="bg-surface-primary border border-surface-secondary/80 p-8 space-y-6 shadow-2xl">
               <div className="space-y-2 border-b border-surface-secondary/60 pb-5">
                 <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
-                  STRUCTURED INQUIRY
+                  EXTERNAL DOSSIERS
                 </span>
-                <h3 className="font-display text-2xl text-text-primary">
-                  Request Private Consultation
+                <h3 className="font-display text-xl text-text-primary">
+                  Specialized Service Applications
                 </h3>
-                <p className="font-sans text-xs sm:text-sm text-text-secondary/90 font-light leading-relaxed">
-                  Select a specialized service dossier below to initiate a private consultation briefing.
+                <p className="font-sans text-xs text-text-secondary/90 font-light leading-relaxed">
+                  Select a structured dossier below for property acquisitions, asset protection, or club membership.
                 </p>
               </div>
 
-              {/* Service Form Links */}
+              {/* Service Form Links (Jotform) */}
               {featuredForms.length > 0 && (
                 <div className="space-y-3">
                   {featuredForms.map((form) => (
@@ -108,7 +113,7 @@ export default function ContactSection() {
                         {form.name}
                       </span>
                       <span className="text-accent font-mono text-xs group-hover:translate-x-1 transition-transform">
-                        ACCESS →
+                        ACCESS dossier ↗
                       </span>
                     </a>
                   ))}
@@ -130,15 +135,6 @@ export default function ContactSection() {
                   </span>
                 </a>
               )}
-
-              <div className="pt-2">
-                <a
-                  href={`mailto:${contactInfo.email}?subject=Private%20Consultation%20Inquiry%20-%20Cristian%20Vaduva`}
-                  className="block w-full text-center px-8 py-4 bg-accent text-background font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-accent/90 transition-quick shadow-xl"
-                >
-                  REQUEST PRIVATE CONSULTATION
-                </a>
-              </div>
             </div>
           </div>
         </div>
