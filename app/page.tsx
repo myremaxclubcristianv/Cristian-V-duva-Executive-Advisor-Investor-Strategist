@@ -1,9 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import ExecutiveProfile from "@/components/ExecutiveProfile";
+import AuthoritySection from "@/components/AuthoritySection";
 import ExpertiseBlock from "@/components/ExpertiseBlock";
-import ExecutiveDesk from "@/components/ExecutiveDesk";
+import DecisionFramework from "@/components/DecisionFramework";
 import ProjectShowcase from "@/components/ProjectShowcase";
+import ExecutiveDesk from "@/components/ExecutiveDesk";
+import ExecutiveProfile from "@/components/ExecutiveProfile";
 import PrivateCTA from "@/components/PrivateCTA";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -19,25 +21,31 @@ export default function Home() {
       <Navigation />
 
       <main className="relative z-10 flex-1">
-        {/* 01 / 06 — ARRIVE (Architectural Cover Arrival) */}
+        {/* 01 / HERO (Arrival & Authority) */}
         <Hero />
 
-        {/* 02 / 06 — THE ADVISOR (Warm Ivory Editorial Monograph) */}
-        <ExecutiveProfile />
+        {/* 02 / AUTHORITY (Why Cristian?) */}
+        <AuthoritySection />
 
-        {/* 03 / 06 — DISCIPLINES (Interactive Strategic Practice Index) */}
+        {/* 03 / WHAT HE DOES (Disciplines Practice Index) */}
         <ExpertiseBlock />
 
-        {/* 04 / 06 — CAPITAL INTELLIGENCE (Executive Desk Stream) */}
-        <ExecutiveDesk />
+        {/* 04 / HOW HE THINKS (Decision Framework) */}
+        <DecisionFramework />
 
-        {/* 05 / 06 — SELECTED ENGAGEMENTS (Architectural Case Studies) */}
+        {/* 05 / SELECTED WORK (Architectural Case Studies) */}
         <ProjectShowcase />
 
-        {/* 06 / 06 — PRIVATE OFFICE (Emotional Climax Statement & Access) */}
+        {/* 06 / INTELLIGENCE (Market & Advisory Stream) */}
+        <ExecutiveDesk />
+
+        {/* 07 / PERSONAL PROFILE (Warm Ivory Monograph Spread) */}
+        <ExecutiveProfile />
+
+        {/* 08 / PRIVATE CONSULTATION (Commercial Climax Statement) */}
         <PrivateCTA />
 
-        {/* CONTACT DESK (Warm Ivory Stationery Intake Desk) */}
+        {/* 09 / CONTACT DESK (Stationery Intake Desk) */}
         <ContactSection />
       </main>
 
