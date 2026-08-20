@@ -1,12 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import ExecutiveProfile from "@/components/ExecutiveProfile";
+import ExpertiseBlock from "@/components/ExpertiseBlock";
 import ExecutiveDesk from "@/components/ExecutiveDesk";
-import ExecutiveJournal from "@/components/ExecutiveJournal";
-import IntelligenceBlock from "@/components/IntelligenceBlock";
-import SelectedPropertiesModule from "@/components/SelectedPropertiesModule";
-import MediaFeature from "@/components/MediaFeature";
+import ProjectShowcase from "@/components/ProjectShowcase";
 import PrivateCTA from "@/components/PrivateCTA";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ResidenceViewport from "@/components/ResidenceViewport";
 
@@ -20,32 +19,29 @@ export default function Home() {
       <Navigation />
 
       <main className="relative z-10 flex-1">
-        {/* 01 / 08 — ARRIVE (Hillside Residence & Arrival) */}
+        {/* 01 / 06 — ARRIVE (Architectural Cover Arrival) */}
         <Hero />
 
-        {/* 02 / 08 — ENTER & LIVE (Grand Double-Height Salon) */}
+        {/* 02 / 06 — THE ADVISOR (Warm Ivory Editorial Monograph) */}
         <ExecutiveProfile />
 
-        {/* 03 / 08 — WORK (Dark Walnut Executive Study & Intelligence Desk) */}
+        {/* 03 / 06 — DISCIPLINES (Interactive Strategic Practice Index) */}
+        <ExpertiseBlock />
+
+        {/* 04 / 06 — CAPITAL INTELLIGENCE (Executive Desk Stream) */}
         <ExecutiveDesk />
 
-        {/* 04 / 08 — THINK (Private Executive Library & Archive) */}
-        <ExecutiveJournal />
+        {/* 05 / 06 — SELECTED ENGAGEMENTS (Architectural Case Studies) */}
+        <ProjectShowcase />
 
-        {/* 05 / 08 — ANALYZE (Capital Intelligence Command Suite) */}
-        <IntelligenceBlock />
-
-        {/* 06 / 08 — EXHIBIT (Curated Architectural Gallery & Works) */}
-        <SelectedPropertiesModule />
-
-        {/* 07 / 08 — WATCH & MEDIA (Acoustic Broadcast Lounge) */}
-        <MediaFeature />
-
-        {/* 08 / 08 — RETREAT (Panoramic Infinity Terrace & Private Access) */}
+        {/* 06 / 06 — PRIVATE OFFICE (Emotional Climax Statement & Access) */}
         <PrivateCTA />
+
+        {/* CONTACT DESK (Warm Ivory Stationery Intake Desk) */}
+        <ContactSection />
       </main>
 
-      {/* FOOTER */}
+      {/* PUBLICATION COLOPHON FOOTER */}
       <Footer />
     </div>
   );
