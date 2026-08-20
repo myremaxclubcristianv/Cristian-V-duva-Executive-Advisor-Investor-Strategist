@@ -32,7 +32,13 @@ async function runVisualQA() {
 
   const consoleErrors: string[] = [];
   const failedRequests: string[] = [];
-  const automatedFindings: any[] = [];
+  const automatedFindings: Array<{
+    viewport: string;
+    hasHorizontalOverflow: boolean;
+    overflowAmount: number;
+    smallButtonsCount: number;
+    smallButtonsSample: string[];
+  }> = [];
   let totalScreenshots = 0;
 
   try {
@@ -164,7 +170,7 @@ async function runVisualQA() {
 
       await context.close();
     }
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("Error during Visual QA execution:", err);
   } finally {
     await browser.close();
@@ -175,7 +181,13 @@ async function runVisualQA() {
 }
 
 function generateReport(
-  findings: any[],
+  findings: Array<{
+    viewport: string;
+    hasHorizontalOverflow: boolean;
+    overflowAmount: number;
+    smallButtonsCount: number;
+    smallButtonsSample: string[];
+  }>,
   consoleErrors: string[],
   failedRequests: string[],
   totalScreenshots: number

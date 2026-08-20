@@ -70,7 +70,7 @@ export function getSupabaseAnonClient(): { client: SupabaseClient | null; error?
       },
     });
     return { client };
-  } catch (err) {
+  } catch {
     return { client: null, error: "Failed to initialize public Supabase client." };
   }
 }

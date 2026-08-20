@@ -27,27 +27,6 @@ export interface ResidenceScene {
 
 export const RESIDENCE_SCENES: ResidenceScene[] = [
   {
-    id: "arrive",
-    sectionId: "scene-arrive",
-    number: "01",
-    name: "ARRIVE",
-    subtitle: "Hillside Residence & Arrival",
-    src: "/residence/exterior.png",
-    alt: "Hillside Private Residence Exterior at Dusk",
-    tone: {
-      brightness: 0.95,
-      contrast: 1.05,
-      vignette: "from-background/80 via-background/20 to-transparent",
-    },
-    camera: {
-      enterScale: 1.00,
-      focusScale: 1.03,
-      exitScale: 1.10,
-      panX: -1.0,
-      panY: -1.5,
-    },
-  },
-  {
     id: "live",
     sectionId: "scene-live",
     number: "02",
