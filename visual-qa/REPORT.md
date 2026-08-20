@@ -1,8 +1,8 @@
 # Visual QA Pipeline Report
 
 **Target URL:** `http://localhost:3009`
-**Generated At:** `2026-08-20T16:17:32.050Z`
-**Total Screenshots Captured:** `19`
+**Generated At:** `2026-08-20T16:30:32.479Z`
+**Total Screenshots Captured:** `18`
 **Screenshot Location:** `visual-qa/`
 
 ---
@@ -17,10 +17,10 @@
 | mobile_390x844 | ✅ CLEAN | 39 elements |
 | mobile_412x915 | ✅ CLEAN | 39 elements |
 | mobile_430x932 | ✅ CLEAN | 39 elements |
-| tablet_768x1024 | ✅ CLEAN | 45 elements |
-| tablet_1024x1366 | ✅ CLEAN | 47 elements |
-| desktop_1440x900 | ✅ CLEAN | 47 elements |
-| desktop_1728x1117 | ✅ CLEAN | 47 elements |
+| tablet_768x1024 | ✅ CLEAN | 44 elements |
+| tablet_1024x1366 | ✅ CLEAN | 46 elements |
+| desktop_1440x900 | ✅ CLEAN | 46 elements |
+| desktop_1728x1117 | ✅ CLEAN | 46 elements |
 
 ---
 
