@@ -1,17 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #050505;
+  --background: #080808;
   --foreground: #F5F3EF;
-  --surface-primary: #0B0B0B;
-  --surface-secondary: #111111;
-  --surface-tertiary: #151515;
+  --surface-primary: #0D0D0D;
+  --surface-secondary: #141414;
+  --surface-tertiary: #1A1A1A;
   --text-primary: #F5F3EF;
-  --text-secondary: #A1A1A1;
-  --text-tertiary: #6E6E6E;
+  --text-secondary: #A1A09B;
+  --text-tertiary: #6E6E69;
   --accent: #E6D5C0;
   --accent-muted: rgba(230, 213, 192, 0.12);
   --border-rule: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(230, 213, 192, 0.15);
 }
 
 @theme inline {
@@ -26,6 +27,7 @@
   --color-accent: var(--accent);
   --color-accent-muted: var(--accent-muted);
   --color-border-rule: var(--border-rule);
+  --color-border-accent: var(--border-accent);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
   --font-display: var(--font-playfair);
@@ -67,46 +69,76 @@ button {
 }
 
 /* ==========================================================================
-   Editorial Fluid Typography Scale
+   Global Content Grid Axis & Spacing Standards
    ========================================================================== */
 
-/* Hero Cover Title - Clamp 2.25rem (320px) to 5.5rem (1440px) */
+.site-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .site-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.site-section {
+  position: relative;
+  width: 100%;
+  padding-top: clamp(4rem, 7vw, 7.5rem);
+  padding-bottom: clamp(4rem, 7vw, 7.5rem);
+}
+
+/* Editorial Fluid Typography Scale */
+
 .text-hero-fluid {
-  font-size: clamp(2.25rem, 5.8vw + 0.5rem, 5.5rem);
-  line-height: 1.04;
+  font-size: clamp(2.25rem, 5.2vw + 0.5rem, 4.75rem);
+  line-height: 1.05;
   letter-spacing: -0.025em;
 }
 
-/* Display Section Title XL - Clamp 1.85rem to 3.85rem */
 .text-display-xl-fluid {
-  font-size: clamp(1.85rem, 4.2vw + 0.5rem, 3.85rem);
-  line-height: 1.08;
+  font-size: clamp(1.85rem, 3.8vw + 0.5rem, 3.25rem);
+  line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
-/* Display Section Title LG - Clamp 1.4rem to 2.65rem */
 .text-display-lg-fluid {
-  font-size: clamp(1.4rem, 3.2vw + 0.25rem, 2.65rem);
-  line-height: 1.14;
+  font-size: clamp(1.35rem, 2.8vw + 0.25rem, 2.25rem);
+  line-height: 1.18;
   letter-spacing: -0.015em;
 }
 
-/* Technical Monospace Eyebrow */
 .text-eyebrow-fluid {
-  font-size: clamp(0.65rem, 0.9vw + 0.4rem, 0.75rem);
-  letter-spacing: 0.25em;
+  font-size: clamp(0.7rem, 0.75vw + 0.4rem, 0.75rem);
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
-/* Editorial Monograph Paragraph */
 .text-body-lead-fluid {
-  font-size: clamp(0.95rem, 1.25vw + 0.5rem, 1.15rem);
+  font-size: clamp(0.95rem, 1.1vw + 0.4rem, 1.125rem);
   line-height: 1.68;
 }
-
-/* ==========================================================================
-   Architectural Rules & Spacing Infrastructure
-   ========================================================================== */
 
 .safe-pb {
   padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
@@ -114,16 +146,6 @@ button {
 
 .safe-pt {
   padding-top: max(1.5rem, env(safe-area-inset-top));
-}
-
-.responsive-px {
-  padding-left: clamp(1rem, 4.5vw, 6rem);
-  padding-right: clamp(1rem, 4.5vw, 6rem);
-}
-
-.responsive-py {
-  padding-top: clamp(4.5rem, 8.5vw, 9.5rem);
-  padding-bottom: clamp(4.5rem, 8.5vw, 9.5rem);
 }
 
 .border-architectural {

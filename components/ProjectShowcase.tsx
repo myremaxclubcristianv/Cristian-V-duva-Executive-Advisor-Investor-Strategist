@@ -34,18 +34,18 @@ const slides: ProjectSlide[] = [
 
 export default function ProjectShowcase() {
   return (
-    <section id="scene-exhibit" className="responsive-py px-4 sm:px-6 md:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
+    <section id="scene-exhibit" className="site-section bg-[#080808]">
+      <div className="site-container space-y-12 sm:space-y-16">
         {/* Editorial Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
           <div className="space-y-2">
             <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
-              <span>04 / SELECTED ENGAGEMENTS</span>
+              <span>05 / SELECTED MANDATES</span>
               <span className="w-6 h-[1px] bg-accent/40" />
               <span>PRIVATE PORTFOLIO</span>
             </div>
             <h2 className="font-display text-display-lg-fluid text-text-primary tracking-tight">
-              Selected Architectural Works
+              Selected Architectural & Private Mandates
             </h2>
           </div>
           <div className="font-mono text-[10px] sm:text-xs text-text-secondary/80 uppercase tracking-widest">
@@ -61,7 +61,7 @@ export default function ProjectShowcase() {
               className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center border-b border-white/10 pb-16 sm:pb-24 group"
             >
               {/* Image Container */}
-              <div className={`lg:col-span-7 relative aspect-[16/10] w-full overflow-hidden bg-surface-primary ${
+              <div className={`lg:col-span-7 relative aspect-[16/10] w-full overflow-hidden border border-white/10 bg-[#0D0D0D] ${
                 idx % 2 === 1 ? "lg:order-last" : ""
               }`}>
                 <Image
@@ -76,7 +76,7 @@ export default function ProjectShowcase() {
               {/* Metadata & Narrative Monograph */}
               <div className="lg:col-span-5 space-y-6">
                 <div className="flex items-center gap-2 font-mono text-[10px] text-accent font-medium uppercase tracking-widest">
-                  <span>ENGAGEMENT {slide.number}</span>
+                  <span>MANDATE {slide.number}</span>
                   <span>·</span>
                   <span>{slide.category}</span>
                 </div>
@@ -101,9 +101,9 @@ export default function ProjectShowcase() {
                 <div className="pt-4">
                   <Link
                     href={slide.href}
-                    className="inline-flex items-center gap-3 font-mono text-xs text-accent uppercase tracking-widest hover:text-text-primary transition-quick py-2"
+                    className="inline-flex items-center gap-3 font-mono text-xs text-accent uppercase tracking-widest hover:text-text-primary transition-quick py-2 touch-active"
                   >
-                    <span>REQUEST PRIVATE DOSSIER</span>
+                    <span>REQUEST MANDATE DOSSIER</span>
                     <span className="transform group-hover:translate-x-1 transition-transform">→</span>
                   </Link>
                 </div>

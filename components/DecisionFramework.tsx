@@ -68,8 +68,8 @@ export default function DecisionFramework() {
   const activeStep = steps.find((s) => s.id === activeId) || steps[0];
 
   return (
-    <section className="relative bg-[#080808] text-[#F5F3EF] py-24 sm:py-32 md:py-40 px-4 sm:px-6 md:px-12 lg:px-24 border-b border-white/10">
-      <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
+    <section id="scene-analyze" className="site-section bg-[#080808] text-[#F5F3EF] border-b border-white/10">
+      <div className="site-container space-y-12 sm:space-y-16">
         {/* Section Header */}
         <div className="space-y-3 border-b border-white/10 pb-6">
           <span className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-accent font-semibold block">
@@ -85,17 +85,19 @@ export default function DecisionFramework() {
 
         {/* Interactive Framework Flow */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          {/* Left Column: Horizontal Step Index */}
+          {/* Left Column: Step Index */}
           <div className="lg:col-span-5 space-y-2">
             {steps.map((step) => {
               const isActive = step.id === activeId;
               return (
-                <div
+                <button
                   key={step.id}
+                  type="button"
                   onClick={() => setActiveId(step.id)}
                   onMouseEnter={() => setActiveId(step.id)}
-                  className={`p-4 border-b border-white/10 cursor-pointer transition-all ${
-                    isActive ? "bg-white/5 border-l-2 border-l-accent" : "hover:bg-white/[0.02]"
+                  onFocus={() => setActiveId(step.id)}
+                  className={`w-full text-left p-4 border border-white/10 transition-all cursor-pointer ${
+                    isActive ? "bg-[#141414] border-accent/40" : "bg-[#0D0D0D] hover:bg-[#141414]/60"
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -107,17 +109,17 @@ export default function DecisionFramework() {
                         {step.label}
                       </span>
                     </div>
-                    <span className={`font-mono text-xs ${isActive ? "text-accent" : "text-text-secondary/30"}`}>
+                    <span className={`font-mono text-xs ${isActive ? "text-accent font-semibold" : "text-text-secondary/30"}`}>
                       {isActive ? "ACTIVE →" : "SELECT"}
                     </span>
                   </div>
-                </div>
+                </button>
               );
             })}
           </div>
 
           {/* Right Column: Active Stage Detail Card */}
-          <div className="lg:col-span-7 p-8 sm:p-12 border border-white/10 bg-white/[0.02] space-y-6">
+          <div className="lg:col-span-7 p-8 sm:p-12 border border-white/10 bg-[#0D0D0D] space-y-6">
             <div className="flex items-center justify-between border-b border-white/10 pb-4">
               <span className="font-mono text-xs uppercase tracking-widest text-accent font-semibold">
                 STAGE {activeStep.stepNumber} · {activeStep.label}
@@ -135,7 +137,7 @@ export default function DecisionFramework() {
               {activeStep.description}
             </p>
 
-            <div className="py-4 px-5 border-l-2 border-accent bg-accent/5 space-y-1">
+            <div className="py-4 px-5 border-l-2 border-accent bg-[#141414] space-y-1">
               <span className="font-mono text-[10px] uppercase tracking-wider text-accent font-semibold block">
                 CORE DELIVERABLE
               </span>
@@ -147,7 +149,7 @@ export default function DecisionFramework() {
             <div className="pt-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-accent hover:text-text-primary transition-quick py-2"
+                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-accent hover:text-text-primary transition-quick py-2 touch-active"
               >
                 <span>REQUEST PROCESS DOSSIER →</span>
               </Link>

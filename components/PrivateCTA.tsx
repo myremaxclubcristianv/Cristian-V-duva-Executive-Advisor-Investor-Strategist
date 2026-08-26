@@ -8,9 +8,9 @@ export default function PrivateCTA() {
   return (
     <section
       id="scene-retreat"
-      className="relative min-h-[85vh] flex flex-col justify-center items-center text-center overflow-hidden bg-[#080808] text-[#F5F3EF] py-24 sm:py-32 md:py-40 px-4 sm:px-6 md:px-12 lg:px-24 border-t border-white/10"
+      className="site-section bg-[#080808] text-[#F5F3EF] border-t border-white/10 text-center"
     >
-      <div className="relative z-10 max-w-4xl mx-auto space-y-8 sm:space-y-10 my-auto">
+      <div className="site-container relative z-10 space-y-8 sm:space-y-10 my-auto">
         {/* Scene Indicator */}
         <div className="inline-flex items-center justify-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold px-4 py-1.5 border border-accent/30 bg-accent/5">
           <span>PRIVATE EXECUTIVE ACCESS</span>

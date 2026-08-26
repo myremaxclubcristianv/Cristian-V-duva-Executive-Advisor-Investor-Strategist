@@ -71,7 +71,7 @@ export default function Navigation() {
         }`}
         aria-label="Primary Executive Navigation"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+        <div className="site-container">
           <div className="flex items-center justify-between">
             {/* Executive Brand Mark (Fades in ONLY when scrolled past hero) */}
             <Link

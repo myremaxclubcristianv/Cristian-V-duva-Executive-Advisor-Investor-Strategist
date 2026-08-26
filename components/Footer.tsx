@@ -12,8 +12,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative z-10 py-12 sm:py-16 md:py-24 bg-surface-primary/95 backdrop-blur-md border-t border-white/10 text-text-secondary text-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-24 space-y-12 sm:space-y-16">
+    <footer className="relative z-10 py-12 sm:py-16 md:py-24 bg-[#080808] border-t border-white/10 text-text-secondary text-sm">
+      <div className="site-container space-y-12 sm:space-y-16">
         {/* Multi-Column Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16">
           {/* Column 1: Brand & Positioning */}

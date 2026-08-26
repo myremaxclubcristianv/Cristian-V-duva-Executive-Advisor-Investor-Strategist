@@ -1,0 +1,705 @@
+{
+  "desktop": [
+    {
+      "id": "scene-arrive",
+      "className": "relative min-h-[92vh] w-full flex flex-col justify-between overflow-hidden bg-[#080808] pt-28 sm:pt-36 md:pt-40 pb-12 sm:pb-16",
+      "height": 828,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "bgColor": "rgb(8, 8, 8)",
+      "color": "rgb(245, 243, 239)",
+      "containerMaxWidth": "768px",
+      "containerWidth": 768,
+      "containerLeft": 144,
+      "containerRight": 528,
+      "headingsCount": 2,
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "CRISTIAN VĂDUVA",
+          "fontSize": "76px",
+          "lineHeight": "79.8px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-1.9px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H2",
+          "text": "PRIVATE ADVICE.\nSTRATEGIC CAPITAL.\nLONG‑",
+          "fontSize": "48px",
+          "lineHeight": "60px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-1.2px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "buttonsCount": 1,
+      "buttons": [
+        {
+          "text": "EXPLORE MY APPROACH ↓",
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "12px",
+          "borderRadius": "0px"
+        }
+      ],
+      "imagesCount": 1,
+      "images": [
+        {
+          "tag": "IMG",
+          "width": 1440,
+          "height": 828,
+          "src": "/_next/image?url=%2Fresidence%2Foffice.png&w=3840&q=75"
+        }
+      ]
+    },
+    {
+      "id": "scene-live",
+      "className": "site-section bg-[#080808] text-[#F5F3EF] border-b border-white/10",
+      "height": 425.5625,
+      "paddingTop": "100.8px",
+      "paddingBottom": "100.8px",
+      "bgColor": "rgb(8, 8, 8)",
+      "color": "rgb(245, 243, 239)",
+      "containerMaxWidth": "none",
+      "containerWidth": 1440,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "headingsCount": 5,
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Why Cristian Văduva?",
+          "fontSize": "36px",
+          "lineHeight": "42.48px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-0.54px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "High-Ticket B2B & Capital Structuring",
+          "fontSize": "18px",
+          "lineHeight": "24.75px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "Luxury Residential & Commercial Parcels",
+          "fontSize": "18px",
+          "lineHeight": "24.75px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "Institutional Downside Surveillance",
+          "fontSize": "18px",
+          "lineHeight": "24.75px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "Independent Executive Counsel",
+          "fontSize": "18px",
+          "lineHeight": "24.75px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "buttonsCount": 0,
+      "buttons": [],
+      "imagesCount": 0,
+      "images": []
+    },
+    {
+      "id": "scene-think",
+      "className": "site-section bg-[#080808] border-b border-white/10",
+      "height": 704.0625,
+      "paddingTop": "100.8px",
+      "paddingBottom": "100.8px",
+      "bgColor": "rgb(8, 8, 8)",
+      "color": "rgb(245, 243, 239)",
+      "containerMaxWidth": "none",
+      "containerWidth": 1440,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "headingsCount": 1,
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Strategic Practice Index",
+          "fontSize": "36px",
+          "lineHeight": "42.48px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-0.54px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "buttonsCount": 4,
+      "buttons": [
+        {
+          "text": "01\nCAPITAL\nACTIVE →",
+          "bg": "rgb(20, 20, 20)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        },
+        {
+          "text": "02\nREAL ESTATE\nEXPLORE",
+          "bg": "rgb(13, 13, 13)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        },
+        {
+          "text": "03\nRISK\nEXPLORE",
+          "bg": "rgb(13, 13, 13)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        },
+        {
+          "text": "04\nSTRATEGY\nEXPLORE",
+          "bg": "rgb(13, 13, 13)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        }
+      ],
+      "imagesCount": 1,
+      "images": [
+        {
+          "tag": "IMG",
+          "width": 542,
+          "height": 338,
+          "src": "/_next/image?url=%2Fresidence%2Fsalon.png&w=3840&q=75"
+        }
+      ]
+    },
+    {
+      "id": "scene-analyze",
+      "className": "site-section bg-[#080808] text-[#F5F3EF] border-b border-white/10",
+      "height": 473.5625,
+      "paddingTop": "100.8px",
+      "paddingBottom": "100.8px",
+      "bgColor": "rgb(8, 8, 8)",
+      "color": "rgb(245, 243, 239)",
+      "containerMaxWidth": "672px",
+      "containerWidth": 672,
+      "containerLeft": 144,
+      "containerRight": 624,
+      "headingsCount": 2,
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "How I Think: The Strategic Advisory Proc",
+          "fontSize": "36px",
+          "lineHeight": "42.48px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-0.54px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "Off-Market Origination & Asymmetric Sour",
+          "fontSize": "30px",
+          "lineHeight": "36px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-0.75px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "buttonsCount": 6,
+      "buttons": [
+        {
+          "text": "01\nOPPORTUNITY\nACTIVE →",
+          "bg": "rgb(20, 20, 20)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        },
+        {
+          "text": "02\nANALYSIS\nSELECT",
+          "bg": "rgb(13, 13, 13)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        },
+        {
+          "text": "03\nRISK MITIGATION\nSELECT",
+          "bg": "rgb(13, 13, 13)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        },
+        {
+          "text": "04\nSTRUCTURE\nSELECT",
+          "bg": "rgb(13, 13, 13)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        },
+        {
+          "text": "05\nDECISION\nSELECT",
+          "bg": "rgb(13, 13, 13)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        },
+        {
+          "text": "06\nLONG-TERM VALUE\nSELECT",
+          "bg": "rgb(13, 13, 13)",
+          "color": "rgb(245, 243, 239)",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        }
+      ],
+      "imagesCount": 0,
+      "images": []
+    },
+    {
+      "id": "scene-exhibit",
+      "className": "site-section bg-[#080808]",
+      "height": 1070.21875,
+      "paddingTop": "100.8px",
+      "paddingBottom": "100.8px",
+      "bgColor": "rgb(8, 8, 8)",
+      "color": "rgb(245, 243, 239)",
+      "containerMaxWidth": "none",
+      "containerWidth": 1440,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "headingsCount": 3,
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Selected Architectural & Private Mandate",
+          "fontSize": "36px",
+          "lineHeight": "42.48px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-0.54px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "Prime Northern Bucharest Penthouse & Res",
+          "fontSize": "30px",
+          "lineHeight": "36px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-0.75px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "Strategic Commercial Development Site",
+          "fontSize": "30px",
+          "lineHeight": "36px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-0.75px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "buttonsCount": 0,
+      "buttons": [],
+      "imagesCount": 2,
+      "images": [
+        {
+          "tag": "IMG",
+          "width": 643.328125,
+          "height": 401.328125,
+          "src": "/_next/image?url=%2Fresidence%2Fgallery.png&w=3840&q=75"
+        },
+        {
+          "tag": "IMG",
+          "width": 643.328125,
+          "height": 401.328125,
+          "src": "/_next/image?url=%2Fresidence%2Foffice.png&w=3840&q=75"
+        }
+      ]
+    },
+    {
+      "id": "scene-work",
+      "className": "site-section bg-[#080808] text-[#F5F3EF] border-b border-white/10",
+      "height": 426.5625,
+      "paddingTop": "100.8px",
+      "paddingBottom": "100.8px",
+      "bgColor": "rgb(8, 8, 8)",
+      "color": "rgb(245, 243, 239)",
+      "containerMaxWidth": "none",
+      "containerWidth": 1440,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "headingsCount": 4,
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "The Executive Desk",
+          "fontSize": "36px",
+          "lineHeight": "42.48px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-0.54px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "Bucharest Prime Residential Index Shows ",
+          "fontSize": "18px",
+          "lineHeight": "24.75px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "Maybe I was just looking too far ahead.",
+          "fontSize": "18px",
+          "lineHeight": "24.75px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "Capital Allocation & Yield Preservation ",
+          "fontSize": "18px",
+          "lineHeight": "24.75px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "buttonsCount": 0,
+      "buttons": [],
+      "imagesCount": 0,
+      "images": []
+    },
+    {
+      "id": "scene-watch",
+      "className": "site-section bg-[#080808] text-[#F5F3EF] border-b border-white/10",
+      "height": 463.09375,
+      "paddingTop": "100.8px",
+      "paddingBottom": "100.8px",
+      "bgColor": "rgb(8, 8, 8)",
+      "color": "rgb(245, 243, 239)",
+      "containerMaxWidth": "none",
+      "containerWidth": 1440,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "headingsCount": 0,
+      "headings": [],
+      "buttonsCount": 0,
+      "buttons": [],
+      "imagesCount": 0,
+      "images": []
+    },
+    {
+      "id": "scene-retreat",
+      "className": "site-section bg-[#080808] text-[#F5F3EF] border-t border-white/10 text-center",
+      "height": 534.65625,
+      "paddingTop": "100.8px",
+      "paddingBottom": "100.8px",
+      "bgColor": "rgb(8, 8, 8)",
+      "color": "rgb(245, 243, 239)",
+      "containerMaxWidth": "768px",
+      "containerWidth": 768,
+      "containerLeft": 144,
+      "containerRight": 528,
+      "headingsCount": 1,
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "IMPORTANT DECISIONS\nDESERVE\nBETTER ADVIC",
+          "fontSize": "52px",
+          "lineHeight": "57.2px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-1.04px",
+          "textAlign": "center",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "buttonsCount": 0,
+      "buttons": [],
+      "imagesCount": 0,
+      "images": []
+    },
+    {
+      "id": "scene-contact",
+      "className": "site-section bg-[#080808] text-[#F5F3EF] border-b border-white/10",
+      "height": 831.09375,
+      "paddingTop": "100.8px",
+      "paddingBottom": "100.8px",
+      "bgColor": "rgb(8, 8, 8)",
+      "color": "rgb(245, 243, 239)",
+      "containerMaxWidth": "none",
+      "containerWidth": 1440,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "headingsCount": 3,
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "The Executive Desk",
+          "fontSize": "36px",
+          "lineHeight": "42.48px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "-0.54px",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "CONFIDENTIAL INQUIRY",
+          "fontSize": "24px",
+          "lineHeight": "32px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "textAlign": "left",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "tag": "H3",
+          "text": "Specialized Service Applications",
+          "fontSize": "20px",
+          "lineHeight": "28px",
+          "fontFamily": "\"Playfair Display\", \"Playfair Display Fallback\"",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "textAlign": "start",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "buttonsCount": 1,
+      "buttons": [
+        {
+          "text": "REQUEST PRIVATE CONSULTATION →",
+          "bg": "rgb(230, 213, 192)",
+          "color": "rgb(8, 8, 8)",
+          "border": "0px solid rgb(8, 8, 8)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "12px",
+          "borderRadius": "0px"
+        }
+      ],
+      "imagesCount": 0,
+      "images": []
+    },
+    {
+      "id": "section-9",
+      "className": "relative z-10 py-12 sm:py-16 md:py-24 bg-[#080808] border-t border-white/10 text-text-secondary text-sm",
+      "height": 390.5625,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "bgColor": "rgb(8, 8, 8)",
+      "color": "rgb(161, 160, 155)",
+      "containerMaxWidth": "384px",
+      "containerWidth": 240,
+      "containerLeft": 144,
+      "containerRight": 1056,
+      "headingsCount": 0,
+      "headings": [],
+      "buttonsCount": 1,
+      "buttons": [
+        {
+          "text": "COOKIE PREFERENCES",
+          "bg": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.881274 0.00987151 0.0325089 / 0.9)",
+          "border": "0px solid oklab(0.881274 0.00987151 0.0325089 / 0.9)",
+          "padding": "0px 0px 0px 0px",
+          "fontSize": "12px",
+          "borderRadius": "0px"
+        }
+      ],
+      "imagesCount": 0,
+      "images": []
+    }
+  ],
+  "mobile": [
+    {
+      "id": "scene-arrive",
+      "height": 776.46875,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "containerWidth": 358,
+      "containerLeft": 16,
+      "containerRight": 16,
+      "hasOverflow": false
+    },
+    {
+      "id": "scene-live",
+      "height": 774.96875,
+      "paddingTop": "64px",
+      "paddingBottom": "64px",
+      "containerWidth": 390,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "hasOverflow": false
+    },
+    {
+      "id": "scene-think",
+      "height": 418.96875,
+      "paddingTop": "64px",
+      "paddingBottom": "64px",
+      "containerWidth": 390,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "hasOverflow": false
+    },
+    {
+      "id": "scene-analyze",
+      "height": 625.1875,
+      "paddingTop": "64px",
+      "paddingBottom": "64px",
+      "containerWidth": 358,
+      "containerLeft": 16,
+      "containerRight": 16,
+      "hasOverflow": false
+    },
+    {
+      "id": "scene-exhibit",
+      "height": 1141.4375,
+      "paddingTop": "64px",
+      "paddingBottom": "64px",
+      "containerWidth": 390,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "hasOverflow": false
+    },
+    {
+      "id": "scene-work",
+      "height": 693.71875,
+      "paddingTop": "64px",
+      "paddingBottom": "64px",
+      "containerWidth": 390,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "hasOverflow": false
+    },
+    {
+      "id": "scene-watch",
+      "height": 630.03125,
+      "paddingTop": "64px",
+      "paddingBottom": "64px",
+      "containerWidth": 390,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "hasOverflow": false
+    },
+    {
+      "id": "scene-retreat",
+      "height": 402.890625,
+      "paddingTop": "64px",
+      "paddingBottom": "64px",
+      "containerWidth": 358,
+      "containerLeft": 16,
+      "containerRight": 16,
+      "hasOverflow": false
+    },
+    {
+      "id": "scene-contact",
+      "height": 1261.21875,
+      "paddingTop": "64px",
+      "paddingBottom": "64px",
+      "containerWidth": 390,
+      "containerLeft": 0,
+      "containerRight": 0,
+      "hasOverflow": false
+    },
+    {
+      "id": "section-9",
+      "height": 1200.71875,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "containerWidth": 358,
+      "containerLeft": 16,
+      "containerRight": 16,
+      "hasOverflow": false
+    }
+  ]
+}
