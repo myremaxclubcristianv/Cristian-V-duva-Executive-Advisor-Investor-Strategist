@@ -186,6 +186,7 @@ export function CameraDolly({ mouse }: { mouse: { x: number; y: number } }) {
 export default function SpatialRoomController({ mouse }: { mouse: { x: number; y: number } }) {
   return (
     <>
+      <fog attach="fog" args={["#080808", 4, 32]} />
       <CameraDolly mouse={mouse} />
       {ARCHITECTURAL_ROOMS.map((room) => (
         <RoomMesh key={room.id} room={room} />
