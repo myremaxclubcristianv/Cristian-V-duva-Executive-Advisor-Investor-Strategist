@@ -21,7 +21,7 @@ const disciplines: DisciplineItem[] = [
     title: "CAPITAL",
     subtitle: "Strategic Placement & Equity Structuring",
     description: "Bespoke advisory for private equity placement, co-investment vehicles, and credit structuring across high-performance European markets.",
-    imageSrc: "/residence/salon.png",
+    imageSrc: "/residence/living.png",
     mandates: ["Private Equity Placement", "Credit Structuring", "Co-Investment Strategies"],
   },
   {
