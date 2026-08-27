@@ -10,8 +10,8 @@ export default function Hero() {
       {/* FULL-BLEED EXECUTIVE ENVIRONMENT BACKGROUND */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/residence/office.png"
-          alt="Executive Private Office & Advisory Environment"
+          src="/residence/exterior.png"
+          alt="Executive Private Residence & Architectural Facade at Dusk"
           fill
           priority
           sizes="100vw"
