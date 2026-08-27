@@ -133,7 +133,17 @@ function RoomMesh({ room }: { room: RoomConfig }) {
       {/* Midground Room Texture Plane */}
       <mesh scale={room.scale}>
         <planeGeometry args={[1, 1]} />
-        <meshBasicMaterial map={texture} transparent opacity={0.68} />
+        <meshBasicMaterial map={texture} transparent opacity={0.70} />
+      </mesh>
+
+      {/* 3D Architectural Wall Depth Silhouette Pillars */}
+      <mesh position={[-room.scale[0] * 0.52, 0, 0.3]} rotation={[0, Math.PI * 0.45, 0]} scale={[1.2, room.scale[1], 1]}>
+        <planeGeometry args={[1, 1]} />
+        <meshBasicMaterial color="#0D0D0D" transparent opacity={0.4} />
+      </mesh>
+      <mesh position={[room.scale[0] * 0.52, 0, 0.3]} rotation={[0, -Math.PI * 0.45, 0]} scale={[1.2, room.scale[1], 1]}>
+        <planeGeometry args={[1, 1]} />
+        <meshBasicMaterial color="#0D0D0D" transparent opacity={0.4} />
       </mesh>
 
       {/* Foreground Architectural Framing Doorway Keyline */}
