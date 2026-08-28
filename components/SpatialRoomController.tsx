@@ -130,30 +130,50 @@ function RoomMesh({ room }: { room: RoomConfig }) {
 
   return (
     <group position={room.position} rotation={room.rotation}>
-      {/* Midground Room Texture Plane */}
+      {/* 3D Architectural Floor Slab */}
+      <mesh position={[0, -room.scale[1] * 0.48, 1]} rotation={[-Math.PI * 0.5, 0, 0]}>
+        <planeGeometry args={[room.scale[0] * 1.1, 4]} />
+        <meshStandardMaterial color="#0D0D0D" roughness={0.8} metalness={0.2} />
+      </mesh>
+
+      {/* 3D Architectural Ceiling Slab */}
+      <mesh position={[0, room.scale[1] * 0.48, 1]} rotation={[Math.PI * 0.5, 0, 0]}>
+        <planeGeometry args={[room.scale[0] * 1.1, 4]} />
+        <meshStandardMaterial color="#080808" roughness={0.9} />
+      </mesh>
+
+      {/* Midground Room Texture Backplane */}
       <mesh scale={room.scale}>
         <planeGeometry args={[1, 1]} />
-        <meshBasicMaterial map={texture} transparent opacity={0.70} />
+        <meshBasicMaterial map={texture} transparent opacity={0.72} />
       </mesh>
 
       {/* 3D Architectural Wall Depth Silhouette Pillars */}
-      <mesh position={[-room.scale[0] * 0.52, 0, 0.3]} rotation={[0, Math.PI * 0.45, 0]} scale={[1.2, room.scale[1], 1]}>
+      <mesh position={[-room.scale[0] * 0.52, 0, 0.4]} rotation={[0, Math.PI * 0.45, 0]} scale={[1.4, room.scale[1], 1]}>
         <planeGeometry args={[1, 1]} />
-        <meshBasicMaterial color="#0D0D0D" transparent opacity={0.4} />
+        <meshStandardMaterial color="#0D0D0D" roughness={0.7} />
       </mesh>
-      <mesh position={[room.scale[0] * 0.52, 0, 0.3]} rotation={[0, -Math.PI * 0.45, 0]} scale={[1.2, room.scale[1], 1]}>
+      <mesh position={[room.scale[0] * 0.52, 0, 0.4]} rotation={[0, -Math.PI * 0.45, 0]} scale={[1.4, room.scale[1], 1]}>
         <planeGeometry args={[1, 1]} />
-        <meshBasicMaterial color="#0D0D0D" transparent opacity={0.4} />
+        <meshStandardMaterial color="#0D0D0D" roughness={0.7} />
       </mesh>
 
+      {/* 3D Executive Desk Mesh for Study & Desk Rooms */}
+      {(room.id === "study" || room.id === "desk") && (
+        <mesh position={[0, -room.scale[1] * 0.35, 1.2]} scale={[4.5, 0.4, 1.8]}>
+          <boxGeometry args={[1, 1, 1]} />
+          <meshStandardMaterial color="#141414" roughness={0.4} metalness={0.3} />
+        </mesh>
+      )}
+
       {/* Foreground Architectural Framing Doorway Keyline */}
-      <mesh position={[0, 0, 0.4]} scale={[room.scale[0] * 1.02, room.scale[1] * 1.02, 1]}>
+      <mesh position={[0, 0, 0.5]} scale={[room.scale[0] * 1.02, room.scale[1] * 1.02, 1]}>
         <ringGeometry args={[0.48, 0.50, 4]} />
         <meshBasicMaterial color="#E6D5C0" transparent opacity={0.15} wireframe />
       </mesh>
 
       {/* Threshold Spatial Occlusion Portal Silhouette */}
-      <mesh position={[0, 0, 0.6]} scale={[room.scale[0] * 1.06, room.scale[1] * 1.06, 1]}>
+      <mesh position={[0, 0, 0.7]} scale={[room.scale[0] * 1.06, room.scale[1] * 1.06, 1]}>
         <ringGeometry args={[0.49, 0.53, 4]} />
         <meshBasicMaterial color="#080808" transparent opacity={0.35} />
       </mesh>
