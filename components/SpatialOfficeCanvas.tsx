@@ -76,11 +76,12 @@ export default function SpatialOfficeCanvas() {
   return (
     <div
       aria-hidden="true"
-      className="fixed inset-0 z-0 pointer-events-none select-none opacity-90"
+      className="fixed inset-0 z-0 pointer-events-none select-none opacity-100 bg-[#080808]"
     >
       <Canvas
-        camera={{ position: [0, 0, 7], fov: 60 }}
-        gl={{ alpha: true, antialias: true, powerPreference: "high-performance" }}
+        camera={{ position: [0, 1.7, 16], fov: 60 }}
+        dpr={[1, 1.5]}
+        gl={{ alpha: false, antialias: true, powerPreference: "high-performance" }}
       >
         <ambientLight intensity={0.9} />
         <pointLight position={[10, 10, 10]} intensity={1.3} color="#E6D5C0" />
@@ -91,3 +92,4 @@ export default function SpatialOfficeCanvas() {
     </div>
   );
 }
+

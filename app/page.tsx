@@ -9,7 +9,6 @@ import ExecutiveProfile from "@/components/ExecutiveProfile";
 import PrivateCTA from "@/components/PrivateCTA";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import ResidenceViewport from "@/components/ResidenceViewport";
 import SpatialOfficeCanvas from "@/components/SpatialOfficeCanvas";
 
 export default function Home() {
@@ -17,9 +16,6 @@ export default function Home() {
     <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-background">
       {/* 3D WEBGL SPATIAL CANVAS */}
       <SpatialOfficeCanvas />
-
-      {/* FULLSCREEN CINEMATIC RESIDENCE VIEWPORT */}
-      <ResidenceViewport />
 
       {/* WHISPER-QUIET LUXURY NAVIGATION */}
       <Navigation />
@@ -58,3 +54,4 @@ export default function Home() {
     </div>
   );
 }
+

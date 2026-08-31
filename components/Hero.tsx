@@ -1,25 +1,11 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Hero() {
   return (
     <section
       id="scene-arrive"
-      className="relative min-h-[92vh] w-full flex flex-col justify-between overflow-hidden bg-[#080808] pt-28 sm:pt-36 md:pt-40 pb-12 sm:pb-16"
+      className="relative min-h-[92vh] w-full flex flex-col justify-between overflow-hidden bg-transparent pt-28 sm:pt-36 md:pt-40 pb-12 sm:pb-16"
     >
-      {/* FULL-BLEED EXECUTIVE ENVIRONMENT BACKGROUND */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/residence/exterior.png"
-          alt="Executive Private Residence & Architectural Facade at Dusk"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center opacity-35 filter contrast-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/75 to-[#080808]/40" />
-      </div>
-
       {/* Hero Content Container */}
       <div className="relative z-10 w-full site-container my-auto py-6 sm:py-10 space-y-8 sm:space-y-10">
         {/* Brand & Credentials Header */}
@@ -79,3 +65,4 @@ export default function Hero() {
     </section>
   );
 }
+
