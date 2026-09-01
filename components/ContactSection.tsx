@@ -1,88 +1,98 @@
-import { contactInfo } from "@/lib/content/contact";
-import { getSocialByPlatform } from "@/lib/socials";
-import PrivateConsultationForm from "@/components/PrivateConsultationForm";
+import PrivateConsultationForm from "./PrivateConsultationForm";
+import { socialLinks } from "@/lib/socials";
 
 export default function ContactSection() {
-  const whatsappLink = getSocialByPlatform("whatsapp");
-  const telegramLink = getSocialByPlatform("telegram");
-
   return (
-    <section id="scene-contact" className="site-section bg-[#070707] text-[#F4F1EA] border-b border-white/10">
+    <section id="contact" className="site-section bg-[#F7F7F5] text-[#111111] border-b border-[#E5E5E1]">
       <div className="site-container space-y-12 sm:space-y-16">
-        {/* Editorial Split Header & Layout */}
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          {/* Left Column: Private Office Narrative & Direct Desk Channels */}
+        {/* Section Header */}
+        <div className="space-y-4 border-b border-[#E5E5E1] pb-8">
+          <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold block">
+            12 / DIRECT DESK & CONTACT
+          </span>
+          <h2 className="font-display text-4xl sm:text-6xl text-[#111111] tracking-tight leading-tight">
+            LET'S TALK ABOUT<br />
+            <span className="text-[#B89B72] italic font-normal">THE DECISION.</span>
+          </h2>
+          <p className="font-sans text-base sm:text-lg text-[#5E5E5E] font-light max-w-2xl leading-relaxed">
+            Direct mandate inquiries for real estate acquisitions, capital placement, or board engagements with complete discretion.
+          </p>
+        </div>
+
+        {/* Contact Split: Direct Desk Info + Intake Form */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          {/* Left Column: Direct Desk Details */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-[#E6D5C0] font-semibold">
-                <span>10 / PRIVATE CONSULTATION</span>
-                <span className="w-6 h-[1px] bg-[#E6D5C0]/40" />
-                <span>CONFIDENTIAL DESK</span>
+            <div className="space-y-4">
+              <h3 className="font-display text-2xl text-[#111111]">
+                Direct Desk Communication
+              </h3>
+              <p className="font-sans text-sm text-[#5E5E5E] font-light leading-relaxed">
+                Whether evaluating a high-stakes real estate acquisition, structuring international capital placement, or seeking independent advisory counsel, direct channels ensure immediate confidential response.
+              </p>
+            </div>
+
+            <div className="space-y-6 font-mono text-xs uppercase tracking-wider">
+              {/* Direct Email */}
+              <div className="space-y-1 border-b border-[#E5E5E1] pb-4">
+                <span className="text-[#B89B72] block font-semibold">DIRECT EMAIL</span>
+                <a
+                  href="mailto:cristianvaduva@duck.com"
+                  className="text-base text-[#111111] hover:text-[#B89B72] transition-colors block font-sans lowercase font-normal"
+                >
+                  cristianvaduva@duck.com
+                </a>
               </div>
-              <h2 className="font-display text-2xl sm:text-4xl text-[#F4F1EA] tracking-tight">
-                A confidential conversation about the decision ahead.
-              </h2>
-              <p className="font-sans text-sm text-[#A1A09B] font-light leading-relaxed">
-                Direct engagement for investors, property principals, and institutional partners requiring discreet private consultation.
-              </p>
+
+              {/* Direct Phone */}
+              <div className="space-y-1 border-b border-[#E5E5E1] pb-4">
+                <span className="text-[#B89B72] block font-semibold">PHONE / WHATSAPP</span>
+                <a
+                  href="https://wa.me/436509536345"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-[#111111] hover:text-[#B89B72] transition-colors block font-sans font-normal"
+                >
+                  +43 650 953 6345
+                </a>
+              </div>
+
+              {/* Telegram */}
+              <div className="space-y-1 border-b border-[#E5E5E1] pb-4">
+                <span className="text-[#B89B72] block font-semibold">TELEGRAM DESK</span>
+                <a
+                  href="https://t.me/cristianvaduva"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-[#111111] hover:text-[#B89B72] transition-colors block font-sans font-normal"
+                >
+                  @cristianvaduva
+                </a>
+              </div>
             </div>
 
-            {/* Confidential Email Line */}
-            <div className="py-6 border-y border-white/10 space-y-2">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-[#E6D5C0] font-semibold block">
-                DIRECT CONFIDENTIAL EMAIL
-              </span>
-              <a
-                href={`mailto:${contactInfo.email}`}
-                className="font-display text-xl sm:text-2xl text-[#F4F1EA] hover:text-[#E6D5C0] transition-colors block break-all"
-              >
-                {contactInfo.email}
-              </a>
-              <p className="font-sans text-xs text-[#A1A09B] font-light pt-1">
-                Monitored directly by Cristian Văduva and executive advisory team.
-              </p>
-            </div>
-
-            {/* Direct Messaging Channels */}
+            {/* Verified Social Index */}
             <div className="space-y-3 pt-2">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-[#E6D5C0] font-semibold block">
-                DIRECT SECURE CHANNELS
+              <span className="font-mono text-xs uppercase tracking-widest text-[#B89B72] font-semibold block">
+                VERIFIED SOCIAL DESKS
               </span>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {whatsappLink && (
+              <div className="flex flex-wrap gap-3">
+                {socialLinks.map((s) => (
                   <a
-                    href={whatsappLink.url}
+                    key={s.platform}
+                    href={s.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-4 border border-white/15 bg-[#0D0D0D] hover:bg-[#141414] transition-colors group block touch-active min-h-[48px]"
+                    className="font-mono text-xs uppercase tracking-wider px-3 py-2 bg-[#FFFFFF] border border-[#E5E5E1] text-[#111111] hover:border-[#B89B72] hover:text-[#B89B72] transition-colors"
                   >
-                    <div className="flex items-center justify-between">
-                      <span className="font-mono text-[10px] uppercase tracking-widest text-[#E6D5C0] font-semibold">WHATSAPP DESK</span>
-                      <span className="text-[#E6D5C0] group-hover:translate-x-1 transition-transform">↗</span>
-                    </div>
-                    <span className="font-sans text-xs text-[#A1A09B] font-light block pt-1">Direct line for active mandates</span>
+                    {s.displayName} ↗
                   </a>
-                )}
-
-                {telegramLink && (
-                  <a
-                    href={telegramLink.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-4 border border-white/15 bg-[#0D0D0D] hover:bg-[#141414] transition-colors group block touch-active min-h-[48px]"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="font-mono text-[10px] uppercase tracking-widest text-[#E6D5C0] font-semibold">TELEGRAM DESK</span>
-                      <span className="text-[#E6D5C0] group-hover:translate-x-1 transition-transform">↗</span>
-                    </div>
-                    <span className="font-sans text-xs text-[#A1A09B] font-light block pt-1">Capital & macro briefings</span>
-                  </a>
-                )}
+                ))}
               </div>
             </div>
           </div>
 
-          {/* Right Column: Intake Desk Form */}
+          {/* Right Column: Confidential Intake Form */}
           <div className="lg:col-span-7">
             <PrivateConsultationForm />
           </div>

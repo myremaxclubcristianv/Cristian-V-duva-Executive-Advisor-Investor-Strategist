@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F5F5F2;
-  --foreground: #111111;
+  --background: #F7F7F5;
+  --background-secondary: #F1F1EE;
   --surface-primary: #FFFFFF;
-  --surface-secondary: #E8E8E5;
-  --surface-tertiary: #E5E5E1;
+  --surface-secondary: #F1F1EE;
   --text-primary: #111111;
-  --text-secondary: #555555;
-  --text-tertiary: #858585;
+  --text-secondary: #5E5E5E;
+  --text-tertiary: #8A8A8A;
   --accent: #B89B72;
   --accent-muted: rgba(184, 155, 114, 0.12);
   --border-rule: #E5E5E1;
@@ -17,10 +16,10 @@
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background-secondary: var(--background-secondary);
+  --color-foreground: var(--text-primary);
   --color-surface-primary: var(--surface-primary);
   --color-surface-secondary: var(--surface-secondary);
-  --color-surface-tertiary: var(--surface-tertiary);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-tertiary: var(--text-tertiary);
@@ -31,6 +30,7 @@
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
   --font-display: var(--font-playfair);
+  --font-mono: var(--font-jetbrains);
 }
 
 * {
@@ -46,7 +46,7 @@ html {
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text-primary);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
