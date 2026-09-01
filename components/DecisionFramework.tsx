@@ -14,79 +14,79 @@ interface Step {
 
 const steps: Step[] = [
   {
-    id: "opportunity",
+    id: "define",
     stepNumber: "01",
-    label: "OPPORTUNITY",
-    title: "Off-Market Origination & Asymmetric Sourcing",
-    description: "Filtering deal flow to identify non-public opportunities where capital dislocation creates outsized risk-adjusted potential.",
-    keyAction: "Private sourcing & proprietary network intelligence",
+    label: "DEFINE",
+    title: "Mandate Clarification & Objective Framing",
+    description: "Defining exact risk parameters, capital allocation targets, and exit criteria before entering market negotiations.",
+    keyAction: "Strategic scope & principal objective alignment",
   },
   {
-    id: "analysis",
+    id: "diagnose",
     stepNumber: "02",
-    label: "ANALYSIS",
-    title: "Rigor & Valuation Under Stress Conditions",
-    description: "Stress-testing asset cash flows, legal encumbrances, and macroeconomic downside risks before capital commitment.",
-    keyAction: "Institutional financial modeling & structural review",
-  },
-  {
-    id: "risk",
-    stepNumber: "03",
-    label: "RISK MITIGATION",
-    title: "Downside Insulation & Asset Protection",
-    description: "Structuring transactions with defensive mechanisms, insurance collateral, and strict exit governance to safeguard capital.",
-    keyAction: "Collateral structuring & risk containment",
+    label: "DIAGNOSE",
+    title: "Deep Valuation & Downside Vulnerability Stress-Test",
+    description: "Stress-testing property cash flows, legal encumbrances, and macroeconomic downside risks under adverse conditions.",
+    keyAction: "Institutional diligence & structural risk analysis",
   },
   {
     id: "structure",
-    stepNumber: "04",
+    stepNumber: "03",
     label: "STRUCTURE",
-    title: "Tax, Legal & Co-Investment Architecture",
-    description: "Designing bespoke SPVs, private equity trusts, and financing structures tailored to family office and principal objectives.",
-    keyAction: "Bespoke capital & SPV architecture",
+    title: "Capital Architecture & Collateral Protection",
+    description: "Designing bespoke SPVs, private equity trusts, and financing structures tailored to family office governance requirements.",
+    keyAction: "Bespoke legal, tax & capital SPV architecture",
   },
   {
-    id: "decision",
+    id: "test",
+    stepNumber: "04",
+    label: "TEST",
+    title: "Scenario Modeling & Covenant Verification",
+    description: "Simulating liquidity pressures, interest rate fluctuations, and exit strategies to ensure complete capital protection.",
+    keyAction: "Downside scenario & covenant verification",
+  },
+  {
+    id: "execute",
     stepNumber: "05",
-    label: "DECISION",
-    title: "Uncompromising Execution & Negotiation",
-    description: "Directing high-stakes negotiations to secure optimal pricing, favorable covenants, and discreet closing timelines.",
-    keyAction: "Direct principal negotiation & execution",
+    label: "EXECUTE",
+    title: "Uncompromising Direct Negotiation & Closing",
+    description: "Directing high-stakes negotiations to secure optimal acquisition pricing, favorable covenants, and discreet closing timelines.",
+    keyAction: "Direct principal negotiation & mandate completion",
   },
   {
-    id: "value",
+    id: "review",
     stepNumber: "06",
-    label: "LONG-TERM VALUE",
-    title: "Generational Wealth & Asset Preservation",
-    description: "Active oversight and asset positioning to ensure sustained liquidity, governance compliance, and compounding capital value.",
-    keyAction: "Ongoing portfolio governance & yield preservation",
+    label: "REVIEW",
+    title: "Long-Term Oversight & Yield Governance",
+    description: "Active post-transaction oversight and portfolio positioning to ensure sustained liquidity, compliance, and wealth compounding.",
+    keyAction: "Ongoing portfolio governance & yield protection",
   },
 ];
 
 export default function DecisionFramework() {
-  const [activeId, setActiveId] = useState<string>("opportunity");
+  const [activeId, setActiveId] = useState<string>("define");
   const activeStep = steps.find((s) => s.id === activeId) || steps[0];
 
   return (
-    <section id="scene-analyze" className="site-section bg-[#080808] text-[#F5F3EF] border-b border-white/10">
+    <section id="scene-analyze" className="site-section bg-[#070707] text-[#F4F1EA] border-b border-white/10">
       <div className="site-container space-y-12 sm:space-y-16">
         {/* Section Header */}
-        <div className="space-y-3 border-b border-white/10 pb-6">
-          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-accent font-semibold block">
-            04 / DECISION FRAMEWORK
+        <div className="space-y-2 border-b border-white/10 pb-6">
+          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-[#E6D5C0] font-semibold block">
+            04 / METHODOLOGY
           </span>
-          <h2 className="font-display text-display-lg-fluid text-text-primary tracking-tight">
-            How I Think: The Strategic Advisory Process
+          <h2 className="font-display text-2xl sm:text-4xl text-[#F4F1EA] tracking-tight">
+            The Six-Stage Decision Framework
           </h2>
-          <p className="font-sans text-xs sm:text-sm text-text-secondary/80 font-light max-w-2xl leading-relaxed">
-            A disciplined 6-stage methodology designed to evaluate, structure, and protect high-ticket capital investments.
+          <p className="font-sans text-xs sm:text-sm text-[#A1A09B] font-light max-w-2xl leading-relaxed">
+            A disciplined editorial sequence designed to evaluate, structure, and protect high-ticket capital investments.
           </p>
         </div>
 
-        {/* Interactive Framework Flow */}
+        {/* 6-Stage Vertical Sequence */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          {/* Left Column: Step Index */}
-          <div className="lg:col-span-5 space-y-2">
+          {/* Left Column: Step Sequence */}
+          <div className="lg:col-span-5 space-y-0 divide-y divide-white/10 border-y border-white/10">
             {steps.map((step) => {
               const isActive = step.id === activeId;
               return (
@@ -96,52 +96,50 @@ export default function DecisionFramework() {
                   onClick={() => setActiveId(step.id)}
                   onMouseEnter={() => setActiveId(step.id)}
                   onFocus={() => setActiveId(step.id)}
-                  className={`w-full text-left p-4 border border-white/10 transition-all cursor-pointer ${
-                    isActive ? "bg-[#141414] border-accent/40" : "bg-[#0D0D0D] hover:bg-[#141414]/60"
+                  className={`w-full text-left py-4.5 px-3 transition-colors cursor-pointer flex items-center justify-between min-h-[48px] ${
+                    isActive ? "bg-[#141414] text-[#E6D5C0]" : "hover:bg-[#0D0D0D] text-[#F4F1EA]"
                   }`}
                 >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <span className={`font-mono text-xs ${isActive ? "text-accent font-semibold" : "text-text-secondary/50"}`}>
-                        {step.stepNumber}
-                      </span>
-                      <span className={`font-mono text-xs uppercase tracking-wider ${isActive ? "text-text-primary font-semibold" : "text-text-secondary/70"}`}>
-                        {step.label}
-                      </span>
-                    </div>
-                    <span className={`font-mono text-xs ${isActive ? "text-accent font-semibold" : "text-text-secondary/30"}`}>
-                      {isActive ? "ACTIVE →" : "SELECT"}
+                  <div className="flex items-center gap-4">
+                    <span className={`font-mono text-xs ${isActive ? "text-[#E6D5C0] font-semibold" : "text-[#A1A09B]"}`}>
+                      {step.stepNumber}
+                    </span>
+                    <span className={`font-mono text-xs uppercase tracking-[0.2em] ${isActive ? "text-[#F4F1EA] font-semibold" : "text-[#A1A09B]"}`}>
+                      {step.label}
                     </span>
                   </div>
+                  <span className={`font-mono text-xs ${isActive ? "text-[#E6D5C0]" : "text-white/20"}`}>
+                    {isActive ? "ACTIVE →" : "SELECT"}
+                  </span>
                 </button>
               );
             })}
           </div>
 
-          {/* Right Column: Active Stage Detail Card */}
+          {/* Right Column: Stage Detail Panel */}
           <div className="lg:col-span-7 p-8 sm:p-12 border border-white/10 bg-[#0D0D0D] space-y-6">
             <div className="flex items-center justify-between border-b border-white/10 pb-4">
-              <span className="font-mono text-xs uppercase tracking-widest text-accent font-semibold">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#E6D5C0] font-semibold">
                 STAGE {activeStep.stepNumber} · {activeStep.label}
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-wider text-text-secondary/60">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-[#A1A09B]">
                 METHODOLOGY
               </span>
             </div>
 
-            <h3 className="font-display text-2xl sm:text-3xl text-text-primary tracking-tight">
+            <h3 className="font-display text-xl sm:text-3xl text-[#F4F1EA] tracking-tight">
               {activeStep.title}
             </h3>
 
-            <p className="font-sans text-sm sm:text-base text-text-secondary/90 font-light leading-relaxed">
+            <p className="font-sans text-sm sm:text-base text-[#A1A09B] font-light leading-relaxed">
               {activeStep.description}
             </p>
 
-            <div className="py-4 px-5 border-l-2 border-accent bg-[#141414] space-y-1">
-              <span className="font-mono text-[10px] uppercase tracking-wider text-accent font-semibold block">
+            <div className="py-4 px-5 border-l-2 border-[#E6D5C0] bg-[#141414] space-y-1">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-[#E6D5C0] font-semibold block">
                 CORE DELIVERABLE
               </span>
-              <span className="font-sans text-xs sm:text-sm text-text-primary font-medium block">
+              <span className="font-sans text-xs sm:text-sm text-[#F4F1EA] font-medium block">
                 {activeStep.keyAction}
               </span>
             </div>
@@ -149,7 +147,7 @@ export default function DecisionFramework() {
             <div className="pt-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-accent hover:text-text-primary transition-quick py-2 touch-active"
+                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-[#E6D5C0] hover:text-[#F4F1EA] transition-quick py-2 touch-active min-h-[48px]"
               >
                 <span>REQUEST PROCESS DOSSIER →</span>
               </Link>

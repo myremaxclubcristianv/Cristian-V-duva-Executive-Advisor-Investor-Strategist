@@ -9,43 +9,39 @@ import ExecutiveProfile from "@/components/ExecutiveProfile";
 import PrivateCTA from "@/components/PrivateCTA";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import SpatialOfficeCanvas from "@/components/SpatialOfficeCanvas";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-background">
-      {/* 3D WEBGL SPATIAL CANVAS */}
-      <SpatialOfficeCanvas />
-
-      {/* WHISPER-QUIET LUXURY NAVIGATION */}
+    <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-[#070707] text-[#F4F1EA]">
+      {/* WHISPER-QUIET LUXURY EDITORIAL NAVIGATION */}
       <Navigation />
 
       <main className="relative z-10 flex-1">
-        {/* 01 / HERO (Arrival & Authority) */}
+        {/* 01 / HERO (Asymmetric Editorial Opening) */}
         <Hero />
 
-        {/* 02 / AUTHORITY (Why Cristian?) */}
+        {/* 02 / AUTHORITY (Institutional Decision Statement & Typographic Disciplines) */}
         <AuthoritySection />
 
-        {/* 03 / WHAT HE DOES (Disciplines Practice Index) */}
+        {/* 03 / THE PRACTICE (4 Major Advisory Disciplines) */}
         <ExpertiseBlock />
 
-        {/* 04 / HOW HE THINKS (Decision Framework) */}
+        {/* 04 / METHODOLOGY (6-Stage Decision Framework) */}
         <DecisionFramework />
 
-        {/* 05 / SELECTED WORK (Architectural Case Studies) */}
+        {/* 05 / SELECTED MANDATES (Architectural & Investment Portfolio Compositions) */}
         <ProjectShowcase />
 
-        {/* 06 / INTELLIGENCE (Market & Advisory Stream) */}
+        {/* 06 / CAPITAL & INTELLIGENCE (Institutional Research & Market Stream) */}
         <ExecutiveDesk />
 
-        {/* 07 / PERSONAL PROFILE (Warm Ivory Monograph Spread) */}
+        {/* 07 / PROFILE (Executive Monograph Biography) */}
         <ExecutiveProfile />
 
-        {/* 08 / PRIVATE CONSULTATION (Commercial Climax Statement) */}
+        {/* 08 / PHILOSOPHY (Major Visual Statement Pause) */}
         <PrivateCTA />
 
-        {/* 09 / CONTACT DESK (Stationery Intake Desk) */}
+        {/* 09 / PRIVATE CONSULTATION (Direct Confidential Intake Desk) */}
         <ContactSection />
       </main>
 
@@ -54,4 +50,3 @@ export default function Home() {
     </div>
   );
 }
-
