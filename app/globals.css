@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F7F7F5;
-  --background-secondary: #F1F1EE;
+  --background: #F6F6F3;
+  --background-secondary: #F0F0ED;
   --surface-primary: #FFFFFF;
-  --surface-secondary: #F1F1EE;
+  --surface-secondary: #F0F0ED;
   --text-primary: #111111;
-  --text-secondary: #5F5F5F;
-  --text-tertiary: #8A8A86;
+  --text-secondary: #5F5F5B;
+  --text-tertiary: #888884;
   --accent: #B89B72;
   --accent-muted: rgba(184, 155, 114, 0.12);
-  --border-rule: #E3E3DF;
+  --border-rule: #E1E1DD;
   --border-accent: rgba(184, 155, 114, 0.25);
 }
 
@@ -142,7 +142,7 @@ button {
 }
 
 .border-architectural {
-  border-color: #E3E3DF;
+  border-color: #E1E1DD;
 }
 
 .transition-quick {

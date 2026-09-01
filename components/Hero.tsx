@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[92vh] w-full flex flex-col justify-between overflow-hidden bg-[#F7F7F5] text-[#111111] pt-28 sm:pt-36 md:pt-40 pb-12 sm:pb-16 border-b border-[#E3E3DF]"
+      className="relative min-h-[92vh] w-full flex flex-col justify-between overflow-hidden bg-[#F6F6F3] text-[#111111] pt-28 sm:pt-36 md:pt-40 pb-12 sm:pb-16 border-b border-[#E1E1DD]"
     >
       {/* Hero Editorial Composition Grid */}
       <div className="relative z-10 w-full site-container my-auto py-6 sm:py-10">
@@ -40,7 +40,7 @@ export default function Hero() {
                 REAL‑WORLD VALUE.
               </h1>
 
-              <p className="font-mono text-xs sm:text-sm uppercase tracking-[0.25em] text-[#5F5F5F] font-medium pt-1">
+              <p className="font-mono text-xs sm:text-sm uppercase tracking-[0.25em] text-[#5F5F5B] font-medium pt-1">
                 EXECUTIVE ADVISOR · INVESTOR · REAL ESTATE
               </p>
             </div>
@@ -50,7 +50,7 @@ export default function Hero() {
                 Building better decisions across capital, property, and opportunity.
               </p>
 
-              <p className="font-sans text-sm sm:text-base text-[#5F5F5F] font-light leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-[#5F5F5B] font-light leading-relaxed">
                 Independent strategic advisory, high-stakes negotiation, and luxury real estate counsel for UHNW principals, family offices, and institutional boards across Europe.
               </p>
             </div>
@@ -59,7 +59,7 @@ export default function Hero() {
             <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center min-h-[48px] px-8 py-4 bg-[#111111] text-[#F7F7F5] font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-[#B89B72] hover:text-[#FFFFFF] transition-colors shadow-sm text-center touch-active"
+                className="inline-flex items-center justify-center min-h-[48px] px-8 py-4 bg-[#111111] text-[#F6F6F3] font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-[#B89B72] hover:text-[#FFFFFF] transition-colors shadow-sm text-center touch-active"
               >
                 <span>WORK WITH ME →</span>
               </Link>
@@ -75,7 +75,7 @@ export default function Hero() {
 
           {/* Right Column: Dominant Portrait Panel */}
           <div className="lg:col-span-5 space-y-3">
-            <div className="relative aspect-[4/5] w-full border border-[#E3E3DF] overflow-hidden bg-[#FFFFFF] shadow-lg group">
+            <div className="relative aspect-[4/5] w-full border border-[#E1E1DD] overflow-hidden bg-[#FFFFFF] shadow-lg group">
               {portraitSrc ? (
                 <Image
                   src={portraitSrc}
@@ -87,19 +87,22 @@ export default function Hero() {
                 />
               ) : (
                 /* Honest Editorial Placeholder when no portrait file is uploaded */
-                <div className="w-full h-full flex flex-col items-center justify-center bg-[#F1F1EE] p-8 text-center space-y-4">
+                <div className="w-full h-full flex flex-col items-center justify-center bg-[#F0F0ED] p-8 text-center space-y-4">
                   <div className="w-16 h-16 rounded-full border border-[#B89B72] flex items-center justify-center text-[#B89B72] font-display text-2xl font-semibold">
                     CV
                   </div>
                   <div className="space-y-1">
                     <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#111111] font-semibold block">
-                      PORTRAIT / ADD IMAGE
+                      PORTRAIT
                     </span>
-                    <span className="font-mono text-[10px] text-[#5F5F5F] block">
+                    <span className="font-mono text-[10px] text-[#5F5F5B] block font-semibold">
+                      PERSONAL IMAGE COMING SOON
+                    </span>
+                    <span className="font-mono text-[9px] text-[#888884] block pt-1">
                       /public/images/personal/portraits/
                     </span>
                   </div>
-                  <p className="font-sans text-xs text-[#8A8A86] font-light max-w-xs leading-relaxed">
+                  <p className="font-sans text-xs text-[#888884] font-light max-w-xs leading-relaxed">
                     Upload official headshots to automatically render portrait visual here.
                   </p>
                 </div>
@@ -111,7 +114,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-[#5F5F5F] pt-1 px-1">
+            <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-[#5F5F5B] pt-1 px-1">
               <span>LOCATIONS</span>
               <span className="text-[#111111] font-semibold">BUCHAREST · MONACO · DUBAI</span>
             </div>
@@ -120,8 +123,8 @@ export default function Hero() {
       </div>
 
       {/* Footer Bar */}
-      <div className="relative z-10 w-full site-container pt-6 border-t border-[#E3E3DF] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-        <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#5F5F5F]">
+      <div className="relative z-10 w-full site-container pt-6 border-t border-[#E1E1DD] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+        <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#5F5F5B]">
           EXECUTIVE ADVISORY · LUXURY REAL ESTATE · CAPITAL
         </div>
 
