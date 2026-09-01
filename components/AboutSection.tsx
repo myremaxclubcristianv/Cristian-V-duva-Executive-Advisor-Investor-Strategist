@@ -22,26 +22,26 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="site-chapter bg-[#FFFFFF] text-[#111111] border-b border-[#E1E1DD]">
-      <div className="site-container space-y-16">
+      <div className="site-container space-y-12">
         <div className="flex items-center justify-between border-b border-[#E1E1DD] pb-4 font-mono text-xs uppercase tracking-[0.3em]">
           <span className="text-[#B89B72] font-semibold">THE PERSON</span>
           <span className="text-[#5F5F5B]">PROFILE & ACADEMIC ARCHIVE</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Personal Editorial Monograph Frame */}
-          <div className="lg:col-span-5 space-y-3">
-            <div className="relative aspect-[4/5] w-full border border-[#E1E1DD] overflow-hidden bg-[#F6F6F3] text-[#111111] shadow-md">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          {/* Dominant Real Editorial Portrait Frame (6 Columns) */}
+          <div className="lg:col-span-6 space-y-3">
+            <div className="relative aspect-[3/4] sm:aspect-[4/5] min-h-[45vh] w-full border border-[#E1E1DD] overflow-hidden bg-[#F6F6F3] text-[#111111] shadow-lg">
               <Image
                 src={realEditorialSrc}
-                alt="Cristian Văduva — Monograph Profile"
+                alt="Cristian Văduva — Editorial Profile Monograph"
                 fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 hover:scale-105"
               />
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#111111] font-mono text-[10px] uppercase tracking-widest bg-[#FFFFFF]/90 backdrop-blur-sm px-3 py-2 border border-black/5">
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#111111] font-mono text-[10px] uppercase tracking-widest bg-[#FFFFFF]/90 backdrop-blur-sm px-3.5 py-2 border border-black/5">
                 <span>CRISTIAN VĂDUVA</span>
-                <span className="text-[#B89B72]">EDITORIAL MONOGRAPH</span>
+                <span className="text-[#B89B72]">EDITORIAL PORTRAIT</span>
               </div>
             </div>
             <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#5F5F5B] px-1">
@@ -50,28 +50,28 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Right Column: Statement & Academic Micro-Details */}
-          <div className="lg:col-span-7 space-y-8">
-            <div className="space-y-4">
+          {/* Right Column: Statement & Academic Micro-Details (6 Columns) */}
+          <div className="lg:col-span-6 space-y-6">
+            <div className="space-y-3">
               <h2 className="font-display text-3xl sm:text-5xl text-[#111111] font-normal leading-tight tracking-tight">
                 A career built across capital, real estate, risk, and international markets.
               </h2>
-              <p className="font-sans text-base sm:text-lg text-[#5F5F5B] font-light leading-relaxed pt-2 max-w-xl">
+              <p className="font-sans text-base sm:text-lg text-[#5F5F5B] font-light leading-relaxed pt-1 max-w-xl">
                 Cristian Văduva advises UHNW principals, family offices, and institutional counterparties on prime real estate acquisitions, cross-border capital structuring, and strategic negotiation across European wealth centers.
               </p>
             </div>
 
             {/* Educational Background as Visual Typographic Fragments */}
-            <div className="pt-8 border-t border-[#E1E1DD] space-y-6">
-              <div className="space-y-3">
+            <div className="pt-6 border-t border-[#E1E1DD] space-y-4">
+              <div className="space-y-2">
                 <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold block">
                   ACADEMIC DISCIPLINES
                 </span>
-                <div className="flex flex-wrap gap-2.5">
+                <div className="flex flex-wrap gap-2">
                   {["ECONOMICS", "LAW", "FINANCIAL MANAGEMENT", "ECOLOGY", "INFORMATION SECURITY"].map((field) => (
                     <span
                       key={field}
-                      className="font-mono text-xs uppercase tracking-widest px-4 py-2 bg-[#F0F0ED] border border-[#E1E1DD] text-[#111111] font-semibold"
+                      className="font-mono text-[10px] sm:text-xs uppercase tracking-widest px-3 py-1.5 bg-[#F0F0ED] border border-[#E1E1DD] text-[#111111] font-semibold"
                     >
                       {field}
                     </span>
@@ -79,15 +79,15 @@ export default function AboutSection() {
                 </div>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-2">
                 <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold block">
                   INTERNATIONAL CENTERS
                 </span>
-                <div className="flex flex-wrap gap-2.5">
+                <div className="flex flex-wrap gap-2">
                   {["MADRID", "AMIENS", "MALTA", "BUCHAREST", "MONACO", "DUBAI"].map((loc) => (
                     <span
                       key={loc}
-                      className="font-mono text-xs uppercase tracking-widest px-4 py-2 bg-[#111111] text-[#F6F6F3] font-semibold"
+                      className="font-mono text-[10px] sm:text-xs uppercase tracking-widest px-3 py-1.5 bg-[#111111] text-[#F6F6F3] font-semibold"
                     >
                       {loc}
                     </span>
