@@ -1,51 +1,59 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import AuthoritySection from "@/components/AuthoritySection";
+import AboutSection from "@/components/AboutSection";
+import EducationTimeline from "@/components/EducationTimeline";
 import ExpertiseBlock from "@/components/ExpertiseBlock";
+import RealEstateChapter from "@/components/RealEstateChapter";
 import DecisionFramework from "@/components/DecisionFramework";
-import ProjectShowcase from "@/components/ProjectShowcase";
-import ExecutiveDesk from "@/components/ExecutiveDesk";
-import ExecutiveProfile from "@/components/ExecutiveProfile";
+import MediaSection from "@/components/MediaSection";
+import SocialWall from "@/components/SocialWall";
+import LifestyleSection from "@/components/LifestyleSection";
 import PrivateCTA from "@/components/PrivateCTA";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-[#070707] text-[#F4F1EA]">
-      {/* WHISPER-QUIET LUXURY EDITORIAL NAVIGATION */}
+    <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-[#F7F7F5] text-[#111111]">
+      {/* Apple-Style Navigation Header */}
       <Navigation />
 
       <main className="relative z-10 flex-1">
-        {/* 01 / HERO (Asymmetric Editorial Opening) */}
+        {/* 01 / HERO (Personal Brand & Executive Statement Opening) */}
         <Hero />
 
-        {/* 02 / AUTHORITY (Institutional Decision Statement & Typographic Disciplines) */}
-        <AuthoritySection />
+        {/* 02 / ABOUT (The Person Behind the Professional) */}
+        <AboutSection />
 
-        {/* 03 / THE PRACTICE (4 Major Advisory Disciplines) */}
+        {/* 03 / EDUCATION & JOURNEY (Verified Academic Degrees & Career Trajectory) */}
+        <EducationTimeline />
+
+        {/* 04 / EXPERTISE (4 Practice Disciplines) */}
         <ExpertiseBlock />
 
-        {/* 04 / METHODOLOGY (6-Stage Decision Framework) */}
+        {/* 05 / REAL ESTATE & CITIES (Bucharest · Monaco · Dubai) */}
+        <RealEstateChapter />
+
+        {/* 06 / METHODOLOGY (Six-Stage Decision Framework) */}
         <DecisionFramework />
 
-        {/* 05 / SELECTED MANDATES (Architectural & Investment Portfolio Compositions) */}
-        <ProjectShowcase />
+        {/* 07 / MEDIA (Official Broadcast, YouTube, Interviews) */}
+        <MediaSection />
 
-        {/* 06 / CAPITAL & INTELLIGENCE (Institutional Research & Market Stream) */}
-        <ExecutiveDesk />
+        {/* 08 / SOCIAL WALL (Verified Platforms) */}
+        <SocialWall />
 
-        {/* 07 / PROFILE (Executive Monograph Biography) */}
-        <ExecutiveProfile />
+        {/* 09 / BEYOND BUSINESS (Lifestyle, Architecture, Moments) */}
+        <LifestyleSection />
 
-        {/* 08 / PHILOSOPHY (Major Visual Statement Pause) */}
+        {/* 10 / FINAL CTA (What's Next?) */}
         <PrivateCTA />
 
-        {/* 09 / PRIVATE CONSULTATION (Direct Confidential Intake Desk) */}
+        {/* 11 / CONTACT DESK (Direct Intake Desk) */}
         <ContactSection />
       </main>
 
-      {/* PUBLICATION COLOPHON FOOTER */}
+      {/* Apple-Style Colophon Footer */}
       <Footer />
     </div>
   );

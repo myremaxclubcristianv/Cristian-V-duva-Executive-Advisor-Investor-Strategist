@@ -12,7 +12,7 @@ export default function Navigation() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 40);
+    const handleScroll = () => setIsScrolled(window.scrollY > 30);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -53,62 +53,59 @@ export default function Navigation() {
   }, [isMenuOpen, closeMenu]);
 
   const navLinks = [
-    { href: "/about", label: "ADVISORY" },
+    { href: "/about", label: "ABOUT" },
+    { href: "/#expertise", label: "EXPERTISE" },
     { href: "/real-estate", label: "REAL ESTATE" },
-    { href: "/ecosystem", label: "CAPITAL" },
-    { href: "/real-estate/market", label: "STRATEGY" },
-    { href: "/contact", label: "CONTACT" },
+    { href: "/#investments", label: "INVESTMENTS" },
+    { href: "/media", label: "MEDIA" },
+    { href: "/#beyond-business", label: "LIFE" },
+    { href: "/gallery", label: "GALLERY" },
   ];
 
   return (
     <>
-      {/* Navbar Header */}
+      {/* Apple-Style Navigation Header */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-[#080808]/95 backdrop-blur-xl border-b border-white/10 py-3.5 shadow-2xl"
+            ? "bg-[#F7F7F5]/90 backdrop-blur-xl border-b border-black/5 py-4 shadow-sm"
             : "bg-transparent py-5 sm:py-6"
         }`}
         aria-label="Primary Executive Navigation"
       >
         <div className="site-container">
           <div className="flex items-center justify-between">
-            {/* Executive Brand Mark (Fades in ONLY when scrolled past hero) */}
+            {/* Brand Title */}
             <Link
               href="/"
-              className={`text-[#F5F3EF] font-display text-base sm:text-xl tracking-tight hover:text-accent transition-all duration-300 flex items-center gap-2.5 group ${
-                isScrolled ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-              }`}
-              aria-label="Cristian Văduva - Executive Desk"
+              className="text-[#111111] font-display text-lg sm:text-xl tracking-tight hover:text-[#B89B72] transition-colors flex items-center gap-2.5 group"
+              aria-label="Cristian Văduva - Flagship Site"
             >
-              <span className="w-2 h-2 rounded-full bg-accent group-hover:scale-125 transition-transform" />
-              <span className="font-medium tracking-tight">CRISTIAN VĂDUVA</span>
+              <span className="w-2 h-2 rounded-full bg-[#B89B72] group-hover:scale-125 transition-transform" />
+              <span className="font-semibold tracking-tight">CRISTIAN VĂDUVA</span>
             </Link>
 
             {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center gap-6 lg:gap-8">
+            <div className="hidden lg:flex items-center gap-7">
               {navLinks.map((link) => {
-                const isActive = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
+                const isActive = pathname === link.href;
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`font-mono text-[10px] uppercase tracking-[0.25em] transition-quick relative py-1 ${
-                      isActive ? "text-accent font-semibold" : "text-text-secondary/80 hover:text-accent"
+                    className={`font-mono text-xs uppercase tracking-[0.2em] transition-colors relative py-1 ${
+                      isActive ? "text-[#B89B72] font-semibold" : "text-[#6B6B6B] hover:text-[#111111]"
                     }`}
                   >
                     {link.label}
-                    {isActive && (
-                      <span className="absolute bottom-0 left-0 right-0 h-[1px] bg-accent" />
-                    )}
                   </Link>
                 );
               })}
               <Link
                 href="/contact"
-                className="px-4 py-2 border border-accent/40 text-accent font-mono text-[10px] font-medium uppercase tracking-[0.25em] hover:bg-accent hover:text-background transition-quick touch-active"
+                className="px-5 py-2.5 bg-[#111111] text-[#F7F7F5] font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-[#B89B72] hover:text-[#FFFFFF] transition-colors touch-active"
               >
-                PRIVATE CONSULTATION →
+                CONTACT →
               </Link>
             </div>
 
@@ -116,47 +113,43 @@ export default function Navigation() {
             <button
               ref={toggleBtnRef}
               onClick={() => setIsMenuOpen(true)}
-              className="md:hidden text-text-primary min-w-[48px] min-h-[48px] flex items-center justify-center p-2 -mr-2 focus:outline-none focus-visible:ring-1 focus-visible:ring-accent touch-active"
-              aria-label="Open mobile executive menu"
+              className="lg:hidden text-[#111111] min-w-[48px] min-h-[48px] flex items-center justify-center p-2 -mr-2 focus:outline-none touch-active font-mono text-xs font-semibold uppercase tracking-widest"
+              aria-label="Open mobile navigation menu"
               aria-expanded={isMenuOpen}
-              aria-controls="mobile-navigation-drawer"
             >
-              <div className="space-y-1.5 w-5">
-                <span className="block w-5 h-[1.5px] bg-text-primary transition-transform" />
-                <span className="block w-3.5 h-[1.5px] bg-accent ml-auto transition-transform" />
-              </div>
+              <span>MENU</span>
             </button>
           </div>
         </div>
       </nav>
 
-      {/* Private Executive Navigation Drawer */}
+      {/* Full-Screen Mobile Drawer */}
       <div
         id="mobile-navigation-drawer"
         ref={drawerRef}
         role="dialog"
         aria-modal="true"
-        aria-label="Executive Mobile Navigation"
-        className={`fixed inset-0 z-50 bg-[#080808]/98 backdrop-blur-2xl transition-all duration-300 ${
+        aria-label="Mobile Navigation"
+        className={`fixed inset-0 z-50 bg-[#F7F7F5]/98 backdrop-blur-2xl transition-all duration-300 ${
           isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         } flex flex-col justify-between overflow-hidden`}
       >
-        {/* Header Bar */}
-        <div className="flex justify-between items-center px-6 py-5 border-b border-white/10 pt-[max(1.25rem,env(safe-area-inset-top))]">
+        {/* Mobile Header Bar */}
+        <div className="flex justify-between items-center px-6 py-5 border-b border-black/5 pt-[max(1.25rem,env(safe-area-inset-top))]">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-accent" />
-            <span className="font-mono text-xs uppercase tracking-[0.25em] text-accent font-semibold">CRISTIAN VĂDUVA DESK</span>
+            <span className="w-2 h-2 rounded-full bg-[#B89B72]" />
+            <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#111111] font-semibold">CRISTIAN VĂDUVA</span>
           </div>
           <button
             onClick={closeMenu}
-            className="text-text-secondary hover:text-text-primary min-w-[48px] min-h-[48px] flex items-center justify-center -mr-2 text-xl focus:outline-none focus-visible:ring-1 focus-visible:ring-accent touch-active"
+            className="text-[#6B6B6B] hover:text-[#111111] min-w-[48px] min-h-[48px] flex items-center justify-center -mr-2 font-mono text-xs uppercase tracking-widest focus:outline-none touch-active"
             aria-label="Close menu"
           >
-            ✕
+            CLOSE ✕
           </button>
         </div>
 
-        {/* Navigation Links */}
+        {/* Mobile Navigation Links */}
         <nav className="flex-1 flex flex-col justify-center px-6 py-6 space-y-2 overflow-y-auto">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
@@ -165,38 +158,38 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMenu}
-                className={`group flex items-center justify-between min-h-[52px] py-3 px-3 border-b border-white/5 transition-colors touch-active ${
-                  isActive ? "text-accent font-medium" : "text-text-primary hover:text-accent"
+                className={`group flex items-center justify-between min-h-[52px] py-3.5 border-b border-black/5 transition-colors touch-active ${
+                  isActive ? "text-[#B89B72] font-semibold" : "text-[#111111] hover:text-[#B89B72]"
                 }`}
               >
-                <span className="text-xl font-display tracking-tight group-hover:translate-x-1 transition-transform">
+                <span className="text-2xl font-display tracking-tight group-hover:translate-x-1 transition-transform">
                   {link.label}
                 </span>
-                <span className="text-accent font-mono text-xs">→</span>
+                <span className="text-[#B89B72] font-mono text-xs">→</span>
               </Link>
             );
           })}
         </nav>
 
-        {/* Action CTAs */}
-        <div className="p-6 border-t border-white/10 space-y-3.5 bg-surface-primary/80 pb-[max(1.5rem,env(safe-area-inset-bottom))]">
+        {/* Mobile Action Drawer Footer */}
+        <div className="p-6 border-t border-black/5 space-y-4 bg-white/80 pb-[max(1.5rem,env(safe-area-inset-bottom))]">
           <Link
             href="/contact"
             onClick={closeMenu}
-            className="block w-full min-h-[48px] py-4 bg-accent text-background font-mono text-xs font-semibold uppercase tracking-[0.2em] text-center hover:bg-accent/90 transition-quick shadow-2xl touch-active flex items-center justify-center"
+            className="block w-full min-h-[48px] py-4 bg-[#111111] text-[#F7F7F5] font-mono text-xs font-semibold uppercase tracking-[0.2em] text-center hover:bg-[#B89B72] transition-colors shadow-sm touch-active flex items-center justify-center"
           >
-            REQUEST PRIVATE CONSULTATION →
+            START A CONVERSATION →
           </Link>
 
-          <div className="flex justify-between items-center font-mono text-[9px] uppercase tracking-widest text-text-secondary/70 pt-1">
-            <span>BUCHAREST · MONACO · EUROPE</span>
+          <div className="flex justify-between items-center font-mono text-[10px] uppercase tracking-widest text-[#6B6B6B] pt-1">
+            <span>BUCHAREST · MONACO · DUBAI</span>
             <a
               href="https://wa.me/436509536345"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-accent hover:underline flex items-center gap-1 min-h-[36px]"
+              className="text-[#B89B72] hover:underline flex items-center gap-1 min-h-[36px]"
             >
-              WHATSAPP DESK ↗
+              WHATSAPP ↗
             </a>
           </div>
         </div>

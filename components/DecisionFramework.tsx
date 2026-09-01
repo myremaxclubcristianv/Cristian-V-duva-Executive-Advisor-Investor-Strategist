@@ -68,25 +68,25 @@ export default function DecisionFramework() {
   const activeStep = steps.find((s) => s.id === activeId) || steps[0];
 
   return (
-    <section id="scene-analyze" className="site-section bg-[#070707] text-[#F4F1EA] border-b border-white/10">
+    <section id="methodology" className="site-section bg-[#F7F7F5] text-[#111111] border-b border-black/5">
       <div className="site-container space-y-12 sm:space-y-16">
         {/* Section Header */}
-        <div className="space-y-2 border-b border-white/10 pb-6">
-          <span className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-[#E6D5C0] font-semibold block">
-            04 / METHODOLOGY
+        <div className="space-y-2 border-b border-black/5 pb-6">
+          <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold block">
+            06 / METHODOLOGY
           </span>
-          <h2 className="font-display text-2xl sm:text-4xl text-[#F4F1EA] tracking-tight">
+          <h2 className="font-display text-3xl sm:text-5xl text-[#111111] tracking-tight">
             The Six-Stage Decision Framework
           </h2>
-          <p className="font-sans text-xs sm:text-sm text-[#A1A09B] font-light max-w-2xl leading-relaxed">
-            A disciplined editorial sequence designed to evaluate, structure, and protect high-ticket capital investments.
+          <p className="font-sans text-sm text-[#6B6B6B] font-light max-w-2xl leading-relaxed">
+            A disciplined institutional methodology sequence designed to evaluate, structure, and protect high-ticket capital investments.
           </p>
         </div>
 
         {/* 6-Stage Vertical Sequence */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           {/* Left Column: Step Sequence */}
-          <div className="lg:col-span-5 space-y-0 divide-y divide-white/10 border-y border-white/10">
+          <div className="lg:col-span-5 space-y-0 divide-y divide-black/5 border-y border-black/5">
             {steps.map((step) => {
               const isActive = step.id === activeId;
               return (
@@ -96,19 +96,19 @@ export default function DecisionFramework() {
                   onClick={() => setActiveId(step.id)}
                   onMouseEnter={() => setActiveId(step.id)}
                   onFocus={() => setActiveId(step.id)}
-                  className={`w-full text-left py-4.5 px-3 transition-colors cursor-pointer flex items-center justify-between min-h-[48px] ${
-                    isActive ? "bg-[#141414] text-[#E6D5C0]" : "hover:bg-[#0D0D0D] text-[#F4F1EA]"
+                  className={`w-full text-left py-4 px-3 transition-colors cursor-pointer flex items-center justify-between min-h-[48px] ${
+                    isActive ? "bg-[#FFFFFF] text-[#B89B72] font-semibold" : "hover:bg-[#FFFFFF]/60 text-[#111111]"
                   }`}
                 >
                   <div className="flex items-center gap-4">
-                    <span className={`font-mono text-xs ${isActive ? "text-[#E6D5C0] font-semibold" : "text-[#A1A09B]"}`}>
+                    <span className={`font-mono text-xs ${isActive ? "text-[#B89B72] font-semibold" : "text-[#6B6B6B]"}`}>
                       {step.stepNumber}
                     </span>
-                    <span className={`font-mono text-xs uppercase tracking-[0.2em] ${isActive ? "text-[#F4F1EA] font-semibold" : "text-[#A1A09B]"}`}>
+                    <span className={`font-mono text-xs uppercase tracking-[0.2em] ${isActive ? "text-[#111111] font-semibold" : "text-[#6B6B6B]"}`}>
                       {step.label}
                     </span>
                   </div>
-                  <span className={`font-mono text-xs ${isActive ? "text-[#E6D5C0]" : "text-white/20"}`}>
+                  <span className={`font-mono text-xs ${isActive ? "text-[#B89B72]" : "text-black/20"}`}>
                     {isActive ? "ACTIVE →" : "SELECT"}
                   </span>
                 </button>
@@ -117,29 +117,29 @@ export default function DecisionFramework() {
           </div>
 
           {/* Right Column: Stage Detail Panel */}
-          <div className="lg:col-span-7 p-8 sm:p-12 border border-white/10 bg-[#0D0D0D] space-y-6">
-            <div className="flex items-center justify-between border-b border-white/10 pb-4">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#E6D5C0] font-semibold">
+          <div className="lg:col-span-7 p-8 sm:p-12 border border-black/5 bg-[#FFFFFF] space-y-6 shadow-sm">
+            <div className="flex items-center justify-between border-b border-black/5 pb-4">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#B89B72] font-semibold">
                 STAGE {activeStep.stepNumber} · {activeStep.label}
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-wider text-[#A1A09B]">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-[#6B6B6B]">
                 METHODOLOGY
               </span>
             </div>
 
-            <h3 className="font-display text-xl sm:text-3xl text-[#F4F1EA] tracking-tight">
+            <h3 className="font-display text-2xl sm:text-3xl text-[#111111] tracking-tight">
               {activeStep.title}
             </h3>
 
-            <p className="font-sans text-sm sm:text-base text-[#A1A09B] font-light leading-relaxed">
+            <p className="font-sans text-sm sm:text-base text-[#6B6B6B] font-light leading-relaxed">
               {activeStep.description}
             </p>
 
-            <div className="py-4 px-5 border-l-2 border-[#E6D5C0] bg-[#141414] space-y-1">
-              <span className="font-mono text-[10px] uppercase tracking-wider text-[#E6D5C0] font-semibold block">
+            <div className="py-4 px-5 border-l-2 border-[#B89B72] bg-[#F7F7F5] space-y-1">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-[#B89B72] font-semibold block">
                 CORE DELIVERABLE
               </span>
-              <span className="font-sans text-xs sm:text-sm text-[#F4F1EA] font-medium block">
+              <span className="font-sans text-xs sm:text-sm text-[#111111] font-medium block">
                 {activeStep.keyAction}
               </span>
             </div>
@@ -147,7 +147,7 @@ export default function DecisionFramework() {
             <div className="pt-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-[#E6D5C0] hover:text-[#F4F1EA] transition-quick py-2 touch-active min-h-[48px]"
+                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-[#111111] hover:text-[#B89B72] transition-colors py-2 touch-active min-h-[48px]"
               >
                 <span>REQUEST PROCESS DOSSIER →</span>
               </Link>

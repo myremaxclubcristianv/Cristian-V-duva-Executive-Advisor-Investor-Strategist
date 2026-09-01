@@ -4,96 +4,87 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section
-      id="scene-arrive"
-      className="relative min-h-[95vh] w-full flex flex-col justify-between overflow-hidden bg-[#070707] text-[#F4F1EA] pt-28 sm:pt-36 md:pt-40 pb-12 sm:pb-16 border-b border-white/10"
+      id="hero"
+      className="relative min-h-[92vh] w-full flex flex-col justify-between overflow-hidden bg-[#F7F7F5] text-[#111111] pt-28 sm:pt-36 md:pt-40 pb-12 sm:pb-16 border-b border-black/5"
     >
       {/* Hero Content Grid */}
       <div className="relative z-10 w-full site-container my-auto py-6 sm:py-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Column: Asymmetric Editorial Typography */}
-          <div className="lg:col-span-6 space-y-8">
+          {/* Left Column: Personal Brand Statement */}
+          <div className="lg:col-span-7 space-y-8">
             <div className="space-y-3">
-              <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-[#E6D5C0] font-semibold">
-                <span>PRIVATE ADVISORY</span>
-                <span className="w-4 h-[1px] bg-[#E6D5C0]/40" />
-                <span>REAL ESTATE</span>
-                <span className="w-4 h-[1px] bg-[#E6D5C0]/40" />
-                <span>CAPITAL</span>
-              </div>
-
-              <h1 className="font-display text-hero-fluid text-[#F4F1EA] tracking-tight leading-[1.02]">
+              <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold block">
                 CRISTIAN VĂDUVA
+              </span>
+
+              <h1 className="font-display text-hero-fluid text-[#111111] tracking-tight font-semibold">
+                EXECUTIVE ADVISOR<br />
+                <span className="text-[#B89B72] font-normal italic">INVESTOR</span><br />
+                REAL ESTATE
               </h1>
+            </div>
 
-              <p className="font-mono text-xs sm:text-sm uppercase tracking-[0.25em] text-[#E6D5C0] font-medium">
-                EXECUTIVE ADVISOR · INVESTOR · STRATEGIST
+            <div className="space-y-4 max-w-2xl">
+              <p className="font-sans text-xl sm:text-2xl text-[#111111] font-light leading-relaxed tracking-tight">
+                Building better decisions across capital, property, and opportunity.
+              </p>
+
+              <p className="font-sans text-sm sm:text-base text-[#6B6B6B] font-light leading-relaxed">
+                Independent strategic advisory and luxury real estate counsel for principals, family offices, and institutional boards across Europe.
               </p>
             </div>
 
-            <div className="space-y-4">
-              <h2 className="font-display text-2xl sm:text-4xl md:text-5xl text-[#F4F1EA] tracking-tight leading-tight">
-                PRIVATE ADVICE.<br />
-                <span className="text-[#E6D5C0] italic font-normal">STRATEGIC CAPITAL.</span><br />
-                LONG‑TERM VALUE.
-              </h2>
-
-              <p className="font-sans text-sm sm:text-base text-[#A1A09B] font-light leading-relaxed max-w-xl">
-                Independent advisory counsel and strategic capital structuring for ultra-high-net-worth principals, family offices, and executive boards navigating complex European asset decisions.
-              </p>
-            </div>
-
-            {/* CTAs */}
+            {/* Action Buttons */}
             <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center min-h-[48px] px-8 py-4 bg-[#E6D5C0] text-[#070707] font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-[#E6D5C0]/90 transition-quick shadow-2xl gap-2 text-center touch-active"
+                className="inline-flex items-center justify-center min-h-[48px] px-8 py-4 bg-[#111111] text-[#F7F7F5] font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-[#B89B72] hover:text-[#FFFFFF] transition-colors shadow-sm text-center touch-active"
               >
-                <span>REQUEST PRIVATE CONSULTATION</span>
-                <span>→</span>
+                <span>WORK WITH ME →</span>
               </Link>
 
               <a
-                href="#scene-live"
-                className="inline-flex items-center justify-center min-h-[48px] px-6 py-3 border border-white/20 text-[#A1A09B] font-mono text-xs uppercase tracking-[0.2em] hover:text-[#E6D5C0] hover:border-[#E6D5C0] transition-quick text-center touch-active"
+                href="#about"
+                className="inline-flex items-center justify-center min-h-[48px] px-6 py-3 border border-black/15 text-[#111111] font-mono text-xs uppercase tracking-[0.2em] hover:border-[#B89B72] hover:text-[#B89B72] transition-colors text-center touch-active"
               >
-                EXPLORE THE PRACTICE ↓
+                EXPLORE MY STORY
               </a>
             </div>
           </div>
 
-          {/* Right Column: Architectural Photography Monograph Panel */}
-          <div className="lg:col-span-6">
-            <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] w-full border border-white/15 overflow-hidden bg-[#0D0D0D] group shadow-2xl">
+          {/* Right Column: Editorial Portrait Panel */}
+          <div className="lg:col-span-5 space-y-3">
+            <div className="relative aspect-[4/5] w-full border border-black/10 overflow-hidden bg-[#E8E8E5] shadow-lg group">
               <Image
-                src="/residence/exterior.png"
-                alt="Cristian Văduva Private Executive Residence"
+                src="/residence/command.png"
+                alt="Cristian Văduva — Personal Portrait"
                 fill
                 priority
-                className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 opacity-80 group-hover:scale-105"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 opacity-90 group-hover:scale-105"
+                sizes="(max-width: 1024px) 100vw, 45vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#070707] via-[#070707]/30 to-transparent" />
-              
-              <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between border-t border-white/20 pt-4">
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#F4F1EA]">
-                  ARCHITECTURAL RESIDENCE
-                </span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#E6D5C0]">
-                  BUCHAREST · MONACO
-                </span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white font-mono text-[10px] uppercase tracking-widest">
+                <span>CRISTIAN VĂDUVA</span>
+                <span className="text-[#E6D5C0]">PERSONAL FLAGSHIP</span>
               </div>
+            </div>
+
+            <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-[#6B6B6B] pt-1 px-1">
+              <span>LOCATIONS</span>
+              <span className="text-[#111111] font-semibold">BUCHAREST · MONACO · DUBAI</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom Footer Metadata Bar */}
-      <div className="relative z-10 w-full site-container pt-6 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-        <div className="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-[#A1A09B]">
-          BUCHAREST · MONACO · EUROPE
+      {/* Footer Bar */}
+      <div className="relative z-10 w-full site-container pt-6 border-t border-black/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+        <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#6B6B6B]">
+          EXECUTIVE ADVISORY · LUXURY REAL ESTATE · CAPITAL
         </div>
 
-        <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-[#E6D5C0] font-semibold">
+        <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#B89B72] font-semibold">
           DISCRETION & INDEPENDENCE GUARANTEED
         </div>
       </div>

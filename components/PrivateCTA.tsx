@@ -1,52 +1,35 @@
 import Link from "next/link";
-import { getSocialByPlatform } from "@/lib/socials";
 
 export default function PrivateCTA() {
-  const whatsapp = getSocialByPlatform("whatsapp");
-  const whatsappUrl = whatsapp ? whatsapp.url : "https://wa.me/436509536345";
-
   return (
-    <section
-      id="scene-retreat"
-      className="site-section bg-[#080808] text-[#F5F3EF] border-t border-white/10 text-center"
-    >
-      <div className="site-container relative z-10 space-y-8 sm:space-y-10 my-auto">
-        {/* Scene Indicator */}
-        <div className="inline-flex items-center justify-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold px-4 py-1.5 border border-accent/30 bg-accent/5">
-          <span>PRIVATE EXECUTIVE ACCESS</span>
-        </div>
+    <section className="site-section bg-[#FFFFFF] text-[#111111] border-b border-black/5 py-24 sm:py-32">
+      <div className="site-container text-center space-y-8 max-w-4xl">
+        <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold block">
+          11 / NEXT STEPS
+        </span>
 
-        {/* Fluid Climax Headline */}
-        <h2 className="font-display text-display-xl-fluid text-text-primary tracking-tight max-w-3xl mx-auto leading-[1.05]">
-          IMPORTANT DECISIONS<br />
-          <span className="text-accent italic font-normal">DESERVE</span><br />
-          BETTER ADVICE.
+        <h2 className="font-display text-4xl sm:text-6xl text-[#111111] tracking-tight leading-tight">
+          WHAT’S NEXT?
         </h2>
 
-        {/* Supporting Proposition */}
-        <p className="max-w-xl mx-auto font-sans text-sm sm:text-base text-text-secondary/90 font-light leading-relaxed">
-          For ultra-prime real estate acquisitions, capital allocation strategies, financial structuring, and executive board mandates.
+        <p className="font-sans text-base sm:text-xl text-[#6B6B6B] font-light leading-relaxed max-w-2xl mx-auto">
+          If the decision matters across real estate, capital placement, or strategic risk, let’s have the right conversation.
         </p>
 
-        {/* Single Primary Action CTA */}
-        <div className="pt-4 flex flex-col items-center space-y-4">
+        <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/contact"
-            className="w-full sm:w-auto px-10 py-4.5 bg-accent text-background font-mono font-semibold uppercase tracking-[0.2em] text-xs hover:bg-accent/90 transition-quick shadow-2xl touch-active min-h-[48px] flex items-center justify-center gap-2"
+            className="inline-flex items-center justify-center min-h-[52px] px-8 py-4 bg-[#111111] text-[#F7F7F5] font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-[#B89B72] hover:text-[#FFFFFF] transition-colors shadow-sm touch-active"
           >
-            <span>REQUEST PRIVATE CONSULTATION</span>
-            <span>→</span>
+            <span>START A CONVERSATION →</span>
           </Link>
-          
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-mono text-[10px] uppercase tracking-widest text-text-secondary hover:text-accent transition-colors pt-2 flex items-center gap-1.5 min-h-[36px]"
+
+          <Link
+            href="/gallery"
+            className="inline-flex items-center justify-center min-h-[52px] px-8 py-4 border border-black/15 text-[#111111] font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:border-[#B89B72] hover:text-[#B89B72] transition-colors touch-active"
           >
-            <span>DIRECT WHATSAPP DESK</span>
-            <span className="text-accent">↗</span>
-          </a>
+            <span>VIEW MY WORK →</span>
+          </Link>
         </div>
       </div>
     </section>
