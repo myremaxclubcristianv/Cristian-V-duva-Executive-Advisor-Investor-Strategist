@@ -3,23 +3,16 @@ import Image from "next/image";
 
 export default function LifestyleSection() {
   return (
-    <section id="scene-07-life" className="site-chapter bg-[#FFFFFF] text-[#111111] border-b border-[#E1E1DD]">
+    <section id="movement-06-archive" className="site-chapter bg-[#FFFFFF] text-[#111111] border-b border-[#E1E1DD]">
       <div className="site-container space-y-12">
-        <div className="flex items-center justify-between border-b border-[#E1E1DD] pb-6">
-          <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
-            SCENE 07 / PERSONAL LIFE & ARCHIVE
-          </span>
-          <Link
-            href="/gallery"
-            className="font-mono text-xs uppercase tracking-[0.2em] text-[#B89B72] hover:text-[#111111] transition-colors touch-active"
-          >
-            <span>VIEW THE ARCHIVE →</span>
-          </Link>
+        <div className="flex items-center justify-between border-b border-[#E1E1DD] pb-4 font-mono text-xs uppercase tracking-[0.3em]">
+          <span className="text-[#B89B72] font-semibold">MOVEMENT 06 / LIFE & ARCHIVE</span>
+          <span className="text-[#5F5F5B]">PHOTOGRAPHIC COLLAGE</span>
         </div>
 
-        {/* Asymmetric Photo Composition */}
+        {/* Asymmetric Photographic Collage (Zero cards) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          {/* One Large Image (65% width) */}
+          {/* Dominant Image (65% width) */}
           <div className="lg:col-span-8 space-y-3">
             <div className="relative aspect-[16/10] w-full border border-[#E1E1DD] overflow-hidden bg-[#F6F6F3] group shadow-sm">
               <Image
@@ -36,13 +29,13 @@ export default function LifestyleSection() {
             </div>
           </div>
 
-          {/* Two Smaller Images (30% width) */}
+          {/* Secondary & Smaller Images */}
           <div className="lg:col-span-4 flex flex-col justify-between gap-8">
             <div className="space-y-3">
               <div className="relative aspect-[4/3] w-full border border-[#E1E1DD] overflow-hidden bg-[#F6F6F3] group shadow-sm">
                 <Image
                   src="/residence/cinema.png"
-                  alt="Personal Media Sanctuary"
+                  alt="Private Media Sanctuary"
                   fill
                   sizes="(max-width: 1024px) 100vw, 35vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -63,10 +56,19 @@ export default function LifestyleSection() {
                 />
               </div>
               <span className="font-mono text-[10px] uppercase tracking-widest text-[#5F5F5B] block">
-                DESK WORKSPACE & STUDY
+                STUDY & WORKSPACE
               </span>
             </div>
           </div>
+        </div>
+
+        <div className="pt-6">
+          <Link
+            href="/gallery"
+            className="inline-flex items-center gap-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-[#B89B72] hover:text-[#111111] transition-colors py-2 touch-active"
+          >
+            <span>ARCHIVE →</span>
+          </Link>
         </div>
       </div>
     </section>

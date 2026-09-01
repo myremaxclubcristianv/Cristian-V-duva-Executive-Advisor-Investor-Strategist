@@ -23,13 +23,13 @@ export default function Hero() {
       id="hero"
       className="relative min-h-[100svh] w-full flex flex-col justify-between overflow-hidden bg-[#F6F6F3] text-[#111111] pt-20 sm:pt-28 pb-10 border-b border-[#E1E1DD]"
     >
-      {/* Top Metadata */}
+      {/* Top Identity Navigation Bar */}
       <div className="site-container pt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.3em] text-[#888884]">
-        <span>SCENE 01 / IDENTITY</span>
+        <span>CRISTIAN VĂDUVA</span>
         <span>BUCHAREST · MONACO · EUROPE</span>
       </div>
 
-      {/* Center Cinematic Cover Composition */}
+      {/* Movement 01 Canvas Signature & Monograph */}
       <div className="site-container my-auto py-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Brand Signature */}
@@ -62,13 +62,13 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Archival Editorial Monograph Frame */}
+          {/* Archival Monograph Frame */}
           <div className="lg:col-span-5 space-y-3">
             <div className="relative aspect-[4/5] w-full border border-[#E1E1DD] overflow-hidden bg-[#FFFFFF] shadow-xl group">
               {portraitSrc ? (
                 <Image
                   src={portraitSrc}
-                  alt="Cristian Văduva — Official Monograph"
+                  alt="Cristian Văduva — Monograph Portrait"
                   fill
                   priority
                   className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 opacity-95 group-hover:scale-105"

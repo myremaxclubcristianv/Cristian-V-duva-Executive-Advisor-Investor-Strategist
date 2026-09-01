@@ -4,7 +4,6 @@ import VisualBreathingSpace from "@/components/VisualBreathingSpace";
 import AboutSection from "@/components/AboutSection";
 import RealEstateChapter from "@/components/RealEstateChapter";
 import CapitalStrategyVisual from "@/components/CapitalStrategyVisual";
-import GeographicalSequence from "@/components/GeographicalSequence";
 import LifestyleSection from "@/components/LifestyleSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -16,28 +15,25 @@ export default function Home() {
       <Navigation />
 
       <main className="relative z-10 flex-1">
-        {/* SCENE 01 / IDENTITY */}
+        {/* MOVEMENT 01 / THE PORTRAIT */}
         <Hero />
 
-        {/* SCENE 02 / PHOTOGRAPHY */}
+        {/* MOVEMENT 02 / THE IMAGE */}
         <VisualBreathingSpace />
 
-        {/* SCENE 03 / PERSON */}
+        {/* MOVEMENT 03 / THE PERSON */}
         <AboutSection />
 
-        {/* SCENE 04 / REAL ESTATE */}
+        {/* MOVEMENT 04 / THE WORLD OF REAL ESTATE */}
         <RealEstateChapter />
 
-        {/* SCENE 05 / CAPITAL */}
+        {/* MOVEMENT 05 / THE MIND */}
         <CapitalStrategyVisual />
 
-        {/* SCENE 06 / WORLD */}
-        <GeographicalSequence />
-
-        {/* SCENE 07 & 08 / LIFE & ARCHIVE */}
+        {/* MOVEMENT 06 / LIFE & ARCHIVE */}
         <LifestyleSection />
 
-        {/* SCENE 09 / CONVERSATION */}
+        {/* MOVEMENT 07 / THE CONVERSATION */}
         <ContactSection />
       </main>
 
