@@ -6,11 +6,11 @@
   --surface-primary: #FFFFFF;
   --surface-secondary: #F1F1EE;
   --text-primary: #111111;
-  --text-secondary: #5E5E5E;
-  --text-tertiary: #8A8A8A;
+  --text-secondary: #5F5F5F;
+  --text-tertiary: #8A8A86;
   --accent: #B89B72;
   --accent-muted: rgba(184, 155, 114, 0.12);
-  --border-rule: #E5E5E1;
+  --border-rule: #E3E3DF;
   --border-accent: rgba(184, 155, 114, 0.25);
 }
 
@@ -142,7 +142,7 @@ button {
 }
 
 .border-architectural {
-  border-color: #E5E5E1;
+  border-color: #E3E3DF;
 }
 
 .transition-quick {
