@@ -5,9 +5,6 @@ import * as THREE from "three";
 
 /* ═══════════════════════════════════════════════════════════════
    WALL WITH DOORWAY — Shape + ExtrudeGeometry with rectangular hole
-   
-   Creates a physically thick wall with a proper doorway opening.
-   The extrusion gives the doorway architectural depth (reveals).
    ═══════════════════════════════════════════════════════════════ */
 
 export function WallWithDoorway({
@@ -107,7 +104,7 @@ export function DoorFrame({
 export function Desk({
   position = [0, 0, 0] as [number, number, number],
   width = 2.8,
-  surfaceHeight = 0.76,
+  surfaceHeight = 0.75,
   depth = 1.0,
   color = "#1A1410",
 }: {
@@ -140,6 +137,74 @@ export function Desk({
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   CONSOLE TABLE — Foyer entrance console
+   ═══════════════════════════════════════════════════════════════ */
+
+export function ConsoleTable({
+  position = [0, 0, 0] as [number, number, number],
+  rotation = [0, 0, 0] as [number, number, number],
+  width = 1.8,
+  height = 0.82,
+  depth = 0.42,
+  color = "#1A1410",
+}: {
+  position?: [number, number, number];
+  rotation?: [number, number, number];
+  width?: number;
+  height?: number;
+  depth?: number;
+  color?: string;
+}) {
+  return (
+    <group position={position} rotation={rotation}>
+      <mesh position={[0, height, 0]}>
+        <boxGeometry args={[width, 0.04, depth]} />
+        <meshStandardMaterial color={color} roughness={0.4} metalness={0.15} />
+      </mesh>
+      <mesh position={[-width / 2 + 0.05, height / 2, 0]}>
+        <boxGeometry args={[0.04, height, depth * 0.8]} />
+        <meshStandardMaterial color={color} roughness={0.5} />
+      </mesh>
+      <mesh position={[width / 2 - 0.05, height / 2, 0]}>
+        <boxGeometry args={[0.04, height, depth * 0.8]} />
+        <meshStandardMaterial color={color} roughness={0.5} />
+      </mesh>
+    </group>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   COFFEE TABLE — Low profile salon table
+   ═══════════════════════════════════════════════════════════════ */
+
+export function CoffeeTable({
+  position = [0, 0, 0] as [number, number, number],
+  width = 1.4,
+  height = 0.38,
+  depth = 0.7,
+  color = "#181818",
+}: {
+  position?: [number, number, number];
+  width?: number;
+  height?: number;
+  depth?: number;
+  color?: string;
+}) {
+  return (
+    <group position={position}>
+      <mesh position={[0, height, 0]}>
+        <boxGeometry args={[width, 0.04, depth]} />
+        <meshStandardMaterial color={color} roughness={0.3} metalness={0.2} />
+      </mesh>
+      <mesh position={[0, height / 2, 0]}>
+        <boxGeometry args={[width * 0.85, height * 0.9, depth * 0.85]} />
+        <meshStandardMaterial color="#0F0F0F" roughness={0.6} />
+      </mesh>
+    </group>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════
    OFFICE CHAIR — Seat + backrest + pedestal + star base
    ═══════════════════════════════════════════════════════════════ */
 
@@ -154,16 +219,16 @@ export function Chair({
 }) {
   return (
     <group position={position} rotation={rotation}>
-      <mesh position={[0, 0.46, 0]}>
+      <mesh position={[0, 0.45, 0]}>
         <boxGeometry args={[0.5, 0.06, 0.5]} />
         <meshStandardMaterial color={color} roughness={0.85} />
       </mesh>
-      <mesh position={[0, 0.76, -0.22]}>
+      <mesh position={[0, 0.75, -0.22]}>
         <boxGeometry args={[0.48, 0.55, 0.05]} />
         <meshStandardMaterial color={color} roughness={0.85} />
       </mesh>
-      <mesh position={[0, 0.23, 0]}>
-        <cylinderGeometry args={[0.035, 0.035, 0.46, 8]} />
+      <mesh position={[0, 0.22, 0]}>
+        <cylinderGeometry args={[0.035, 0.035, 0.44, 8]} />
         <meshStandardMaterial color="#2A2A2A" roughness={0.3} metalness={0.7} />
       </mesh>
       <mesh position={[0, 0.02, 0]}>
@@ -182,10 +247,10 @@ export function Bookshelf({
   position = [0, 0, 0] as [number, number, number],
   rotation = [0, 0, 0] as [number, number, number],
   width = 1.6,
-  height = 6,
+  height = 3.2,
   depth = 0.35,
   color = "#1A1410",
-  shelfCount = 6,
+  shelfCount = 5,
 }: {
   position?: [number, number, number];
   rotation?: [number, number, number];

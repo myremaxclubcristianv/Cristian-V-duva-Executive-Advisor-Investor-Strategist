@@ -7,6 +7,8 @@ import {
   WallWithDoorway,
   DoorFrame,
   Desk,
+  ConsoleTable,
+  CoffeeTable,
   Chair,
   Bookshelf,
   MonitorScreen,
@@ -18,23 +20,20 @@ import {
 } from "./architecture/Geometry";
 
 /* ═══════════════════════════════════════════════════════════════
-   ARCHITECTURAL DIMENSIONS & CLEARANCE RULES
+   HUMAN ARCHITECTURAL SCALE & CLEARANCE CONSTANTS
    
-   - Corridor Width W = 14m (X: -7.0 to +7.0)
-   - Wall Thickness WT = 0.3m
-   - Doorway Width DW = 3.6m (Door corridor X: -1.8 to +1.8)
-   - Doorway Height DH = 4.8m
-   - Camera Height CAM_H = 1.70m (Human Eye Height)
-   
-   SPATIAL CLEARANCE RULE:
-   No furniture is placed within the central doorway corridor (X: -2.0 to +2.0)
-   at room transition boundaries, preventing camera obstruction & wall clipping.
+   - Camera Eye Level CAM_H = 1.70m
+   - Standard Door Height DH = 2.40m
+   - Standard Door Width DW = 2.20m
+   - Standard Ceiling Height = 3.20m (Grand Salon = 5.0m)
+   - Corridor Width W = 12.0m (X: -6.0m to +6.0m)
+   - Central Doorway Corridor (X: -1.6m to +1.6m) kept 100% obstruction-free.
    ═══════════════════════════════════════════════════════════════ */
 
-const W = 14;
+const W = 12.0;
 const WT = 0.3;
-const DW = 3.6;
-const DH = 4.8;
+const DW = 2.2;
+const DH = 2.4;
 const CAM_H = 1.70;
 
 const PALETTE = {
@@ -50,13 +49,13 @@ const PALETTE = {
 };
 
 /* ═══════════════════════════════════════════════════════════════
-   ROOM INTERIOR — Enclosed 3D architectural room shell
+   ROOM INTERIOR — Physical 3D Enclosed Room Shell
    ═══════════════════════════════════════════════════════════════ */
 
 function RoomInterior({
   zFront,
   depth,
-  height,
+  height = 3.2,
   wallColor = PALETTE.wall,
   floorColor = PALETTE.floor,
   hasCeiling = true,
@@ -65,7 +64,7 @@ function RoomInterior({
 }: {
   zFront: number;
   depth: number;
-  height: number;
+  height?: number;
   wallColor?: string;
   floorColor?: string;
   hasCeiling?: boolean;
@@ -130,12 +129,12 @@ function RoomInterior({
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   DIVIDING WALL — Extruded 3D wall with doorway cutout
+   DIVIDING WALL — Extruded 3D wall with doorway threshold
    ═══════════════════════════════════════════════════════════════ */
 
 function DividingWall({
   z,
-  height,
+  height = 3.2,
   doorWidth = DW,
   doorHeight = DH,
   wallColor = PALETTE.wall,
@@ -143,7 +142,7 @@ function DividingWall({
   frameColor = PALETTE.champagne,
 }: {
   z: number;
-  height: number;
+  height?: number;
   doorWidth?: number;
   doorHeight?: number;
   wallColor?: string;
@@ -184,206 +183,159 @@ function DividingWall({
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   BUILDING — Unified 10-space 3D architectural building
+   BUILDING — Unified 10-space 3D architectural private residence
    ═══════════════════════════════════════════════════════════════ */
 
 function Building() {
   return (
     <>
-      {/* ═══ 01 ARRIVAL (z: 16 to 0, dusk exterior) ═══ */}
-      <mesh position={[0, -0.02, 8]} rotation={[-Math.PI / 2, 0, 0]}>
-        <planeGeometry args={[28, 24]} />
+      {/* ═══ 01 ARRIVAL (z: 14 to 0, dusk exterior, focal point: ENTRANCE) ═══ */}
+      <mesh position={[0, -0.02, 7]} rotation={[-Math.PI / 2, 0, 0]}>
+        <planeGeometry args={[24, 20]} />
         <meshStandardMaterial color={PALETTE.stone} roughness={0.85} side={THREE.DoubleSide} />
       </mesh>
-      <ArchColumn position={[-3.2, 0, 1.5]} height={7} radius={0.28} color={PALETTE.stone} />
-      <ArchColumn position={[3.2, 0, 1.5]} height={7} radius={0.28} color={PALETTE.stone} />
-      <mesh position={[0, 7.3, 1.8]}>
-        <boxGeometry args={[8.5, 0.18, 3.2]} />
+      <ArchColumn position={[-2.8, 0, 1.2]} height={4.2} radius={0.24} color={PALETTE.stone} />
+      <ArchColumn position={[2.8, 0, 1.2]} height={4.2} radius={0.24} color={PALETTE.stone} />
+      <mesh position={[0, 4.4, 1.4]}>
+        <boxGeometry args={[7.2, 0.16, 2.5]} />
         <meshStandardMaterial color={PALETTE.dark} roughness={0.8} side={THREE.DoubleSide} />
       </mesh>
-      <ArtworkPanel
-        position={[0, 4.6, 0.45]}
-        width={5.2}
-        height={3.1}
-        textureSrc="/residence/exterior.png"
-        frameColor={PALETTE.stone}
-      />
-      <pointLight position={[6, 9, 14]} intensity={1.8} color="#E6D5C0" distance={30} />
-      <pointLight position={[-6, 8, 12]} intensity={1.0} color="#D5C4AF" distance={25} />
+      <pointLight position={[5, 6, 12]} intensity={1.6} color="#E6D5C0" distance={25} />
 
-      {/* ═══ 02 FOYER (z: 0 to -10, 7h) ═══ */}
-      <RoomInterior zFront={0} depth={10} height={7}>
-        <pointLight position={[0, 6.2, -5]} intensity={1.1} color="#E6D5C0" distance={12} />
-        <pointLight position={[0, 3.0, -3]} intensity={0.4} color="#F5F3EF" distance={8} />
+      {/* ═══ 02 FOYER (z: 0 to -8, 3.8h, focal point: AXIS TOWARD SALON) ═══ */}
+      <RoomInterior zFront={0} depth={8} height={3.8}>
+        <ConsoleTable position={[-3.8, 0, -4]} width={1.6} height={0.82} depth={0.4} color={PALETTE.walnut} />
+        <ArtworkPanel position={[-3.8, 2.2, -4]} width={1.8} height={1.2} textureSrc="/residence/exterior.png" />
+        <pointLight position={[0, 3.4, -4]} intensity={1.0} color="#E6D5C0" distance={10} />
       </RoomInterior>
 
-      {/* ═══ 03 GRAND SALON (z: -10 to -24, 10h double-height) ═══ */}
-      <RoomInterior zFront={-10} depth={14} height={10}>
-        <ArtworkPanel
-          position={[0, 5.2, -23.65]}
-          width={6.2}
-          height={3.6}
-          textureSrc="/residence/living.png"
-          frameColor={PALETTE.champagne}
-        />
-        <ArchColumn position={[-5.2, 0, -14]} height={10} />
-        <ArchColumn position={[5.2, 0, -14]} height={10} />
-        <ArchColumn position={[-5.2, 0, -20]} height={10} />
-        <ArchColumn position={[5.2, 0, -20]} height={10} />
-        {/* Sofas offset from central doorway axis X: -3.2 and +3.2 */}
-        <Sofa position={[-3.2, 0, -17]} rotation={[0, Math.PI / 6, 0]} width={2.4} />
-        <Sofa position={[3.2, 0, -17]} rotation={[0, -Math.PI / 6, 0]} width={2.4} />
-        <pointLight position={[0, 9.2, -17]} intensity={1.6} color="#E6D5C0" distance={16} />
-        <pointLight position={[-4, 5.0, -15]} intensity={0.5} color="#F5F3EF" distance={10} />
+      {/* ═══ 03 GRAND SALON (z: -8 to -20, 5.0h double-height, focal point: ROOM) ═══ */}
+      <RoomInterior zFront={-8} depth={12} height={5.0}>
+        <ArchColumn position={[-4.5, 0, -12]} height={5.0} radius={0.22} />
+        <ArchColumn position={[4.5, 0, -12]} height={5.0} radius={0.22} />
+        <Sofa position={[-2.8, 0, -14]} rotation={[0, Math.PI / 6, 0]} width={2.2} />
+        <CoffeeTable position={[-2.8, 0, -12.5]} width={1.2} height={0.35} depth={0.6} />
+        <ArtworkPanel position={[0, 3.2, -19.65]} width={4.5} height={2.6} textureSrc="/residence/living.png" />
+        <pointLight position={[0, 4.5, -14]} intensity={1.4} color="#E6D5C0" distance={14} />
       </RoomInterior>
 
-      {/* ═══ 04 EXECUTIVE STUDY (z: -24 to -34, 6h walnut) ═══ */}
-      <RoomInterior zFront={-24} depth={10} height={6} wallColor={PALETTE.walnut} floorColor={PALETTE.stone}>
-        <Desk position={[0, 0, -30]} width={2.8} color={PALETTE.walnut} />
-        <Chair position={[0, 0, -28.6]} rotation={[0, Math.PI, 0]} color={PALETTE.fabric} />
-        <Chair position={[0, 0, -31.4]} color={PALETTE.fabric} />
-        <ArtworkPanel
-          position={[-6.65, 3.0, -29]}
-          rotation={[0, Math.PI / 2, 0]}
-          width={3.0}
-          height={2.0}
-          textureSrc="/residence/office.png"
-        />
-        <pointLight position={[0, 2.6, -29.6]} intensity={1.6} color="#E6D5C0" distance={6} />
-        <pointLight position={[0, 5.4, -29]} intensity={0.5} color="#D5C4AF" distance={10} />
+      {/* ═══ 04 EXECUTIVE STUDY (z: -20 to -30, 3.2h, focal point: DESK) ═══ */}
+      <RoomInterior zFront={-20} depth={10} height={3.2} wallColor={PALETTE.walnut} floorColor={PALETTE.stone}>
+        <Desk position={[0, 0, -25.5]} width={2.6} surfaceHeight={0.75} color={PALETTE.walnut} />
+        <Chair position={[0, 0, -24.2]} rotation={[0, Math.PI, 0]} color={PALETTE.fabric} />
+        <Chair position={[-0.9, 0, -26.8]} rotation={[0, Math.PI * 0.85, 0]} color={PALETTE.fabric} />
+        <Bookshelf position={[-5.65, 0, -25]} rotation={[0, Math.PI / 2, 0]} width={1.8} height={3.0} />
+        <MonitorScreen position={[0, 0.75, -25.5]} screenWidth={0.65} screenHeight={0.4} textureSrc="/residence/office.png" />
+        <ArtworkPanel position={[5.65, 2.0, -25]} rotation={[0, -Math.PI / 2, 0]} width={2.2} height={1.4} textureSrc="/residence/office.png" />
+        <pointLight position={[0, 2.2, -25.5]} intensity={1.5} color="#E6D5C0" distance={5} />
       </RoomInterior>
 
-      {/* ═══ 05 PRIVATE LIBRARY (z: -34 to -44, 8h walnut) ═══ */}
-      <RoomInterior zFront={-34} depth={10} height={8} wallColor={PALETTE.walnut}>
-        <Bookshelf position={[-6.5, 0, -37]} rotation={[0, Math.PI / 2, 0]} height={7} />
-        <Bookshelf position={[-6.5, 0, -41]} rotation={[0, Math.PI / 2, 0]} height={7} />
-        <Bookshelf position={[6.5, 0, -37]} rotation={[0, -Math.PI / 2, 0]} height={7} />
-        <Bookshelf position={[6.5, 0, -41]} rotation={[0, -Math.PI / 2, 0]} height={7} />
-        <ArtworkPanel
-          position={[0, 4.2, -43.65]}
-          width={4.2}
-          height={2.6}
-          textureSrc="/residence/library.png"
-        />
-        <pointLight position={[-4.5, 6.2, -39]} intensity={0.7} color="#E6D5C0" distance={8} />
-        <pointLight position={[4.5, 6.2, -39]} intensity={0.7} color="#E6D5C0" distance={8} />
+      {/* ═══ 05 PRIVATE LIBRARY (z: -30 to -40, 3.6h, focal point: LIBRARY WALL) ═══ */}
+      <RoomInterior zFront={-30} depth={10} height={3.6} wallColor={PALETTE.walnut}>
+        <Bookshelf position={[-5.65, 0, -33]} rotation={[0, Math.PI / 2, 0]} width={2.2} height={3.4} />
+        <Bookshelf position={[-5.65, 0, -37]} rotation={[0, Math.PI / 2, 0]} width={2.2} height={3.4} />
+        <Chair position={[3.2, 0, -35]} rotation={[0, -Math.PI / 4, 0]} color={PALETTE.fabric} />
+        <ArtworkPanel position={[0, 2.4, -39.65]} width={3.6} height={2.2} textureSrc="/residence/library.png" />
+        <pointLight position={[-3.5, 3.0, -35]} intensity={0.8} color="#E6D5C0" distance={8} />
       </RoomInterior>
 
-      {/* ═══ 06 GALLERY (z: -44 to -54, 7h clean walls) ═══ */}
-      <RoomInterior zFront={-44} depth={10} height={7} wallColor="#101010" floorColor={PALETTE.stone}>
-        <ArtworkPanel
-          position={[-6.65, 3.5, -47]}
-          rotation={[0, Math.PI / 2, 0]}
-          width={2.6}
-          height={1.8}
-          textureSrc="/residence/gallery.png"
-        />
-        <ArtworkPanel
-          position={[6.65, 3.5, -49]}
-          rotation={[0, -Math.PI / 2, 0]}
-          width={3.0}
-          height={2.0}
-          textureSrc="/residence/gallery.png"
-        />
-        <pointLight position={[-4.5, 5.8, -47]} intensity={1.0} color="#F5F3EF" distance={6} />
-        <pointLight position={[4.5, 5.8, -49]} intensity={1.0} color="#F5F3EF" distance={6} />
+      {/* ═══ 06 GALLERY (z: -40 to -50, 3.2h, focal point: ARTWORKS) ═══ */}
+      <RoomInterior zFront={-40} depth={10} height={3.2} wallColor="#101010" floorColor={PALETTE.stone}>
+        <ArtworkPanel position={[-5.65, 2.0, -43]} rotation={[0, Math.PI / 2, 0]} width={2.4} height={1.5} textureSrc="/residence/gallery.png" />
+        <ArtworkPanel position={[5.65, 2.0, -45]} rotation={[0, -Math.PI / 2, 0]} width={2.6} height={1.6} textureSrc="/residence/gallery.png" />
+        <ArtworkPanel position={[-5.65, 2.0, -47]} rotation={[0, Math.PI / 2, 0]} width={2.2} height={1.4} textureSrc="/residence/gallery.png" />
+        <pointLight position={[-3.5, 2.8, -43]} intensity={0.9} color="#F5F3EF" distance={5} />
+        <pointLight position={[3.5, 2.8, -45]} intensity={0.9} color="#F5F3EF" distance={5} />
       </RoomInterior>
 
-      {/* ═══ 07 COMMAND ROOM (z: -54 to -64, 6h dark technical) ═══ */}
-      <RoomInterior zFront={-54} depth={10} height={6} wallColor={PALETTE.dark}>
-        <Desk position={[0, 0, -59.5]} width={3.2} color={PALETTE.metal} />
-        <Chair position={[0, 0, -58.0]} rotation={[0, Math.PI, 0]} color={PALETTE.fabric} />
-        <MonitorScreen position={[-0.8, 0.76, -60.0]} textureSrc="/residence/command.png" />
-        <MonitorScreen position={[0, 0.76, -60.1]} textureSrc="/residence/command.png" />
-        <MonitorScreen position={[0.8, 0.76, -60.0]} textureSrc="/residence/command.png" />
-        <pointLight position={[0, 3.2, -59.0]} intensity={0.8} color="#8899BB" distance={7} />
+      {/* ═══ 07 COMMAND ROOM (z: -50 to -60, 3.2h, focal point: CAPITAL OFFICE WORKSTATION) ═══ */}
+      <RoomInterior zFront={-50} depth={10} height={3.2} wallColor={PALETTE.dark}>
+        <Desk position={[0, 0, -55]} width={3.0} surfaceHeight={0.75} color={PALETTE.metal} />
+        <Chair position={[0, 0, -53.8]} rotation={[0, Math.PI, 0]} color={PALETTE.fabric} />
+        <MonitorScreen position={[-0.7, 0.75, -55.5]} screenWidth={0.65} screenHeight={0.4} textureSrc="/residence/command.png" />
+        <MonitorScreen position={[0, 0.75, -55.6]} screenWidth={0.65} screenHeight={0.4} textureSrc="/residence/command.png" />
+        <MonitorScreen position={[0.7, 0.75, -55.5]} screenWidth={0.65} screenHeight={0.4} textureSrc="/residence/command.png" />
+        <pointLight position={[0, 2.5, -55]} intensity={0.8} color="#8899BB" distance={6} />
       </RoomInterior>
 
-      {/* ═══ 08 CINEMA (z: -64 to -74, 7h acoustic dark) ═══ */}
-      <RoomInterior zFront={-64} depth={10} height={7} wallColor={PALETTE.dark} floorColor={PALETTE.fabric}>
-        <LargeScreen position={[0, 0, -73.65]} width={9.6} height={5.2} textureSrc="/residence/cinema.png" />
-        <Sofa position={[-2.8, 0, -68.5]} width={2.4} />
-        <Sofa position={[2.8, 0, -68.5]} width={2.4} />
-        <pointLight position={[0, 3.2, -73.0]} intensity={0.6} color="#8090AA" distance={9} />
+      {/* ═══ 08 CINEMA (z: -60 to -70, 3.4h, focal point: SCREEN) ═══ */}
+      <RoomInterior zFront={-60} depth={10} height={3.4} wallColor={PALETTE.dark} floorColor={PALETTE.fabric}>
+        <LargeScreen position={[0, 0, -69.65]} width={8.5} height={4.6} textureSrc="/residence/cinema.png" />
+        <Sofa position={[-2.4, 0, -64.5]} width={2.2} />
+        <Sofa position={[2.4, 0, -64.5]} width={2.2} />
+        <pointLight position={[0, 2.8, -69]} intensity={0.6} color="#8090AA" distance={8} />
       </RoomInterior>
 
-      {/* ═══ 09 TERRACE (z: -74 to -84, open ceiling dusk) ═══ */}
-      <RoomInterior zFront={-74} depth={10} height={1.2} wallColor={PALETTE.wall} floorColor={PALETTE.stone} hasCeiling={false} hasSideWalls={false}>
-        <TerraceRailing position={[-W / 2, 0, -79]} rotation={[0, Math.PI / 2, 0]} length={10} />
-        <TerraceRailing position={[W / 2, 0, -79]} rotation={[0, Math.PI / 2, 0]} length={10} />
-        <TerraceRailing position={[0, 0, -83.7]} length={W} />
-        <ArtworkPanel
-          position={[0, 4.2, -87.0]}
-          width={22.0}
-          height={9.0}
-          textureSrc="/residence/terrace.png"
-          frameColor={PALETTE.dark}
-        />
-        <pointLight position={[0, 8.0, -79]} intensity={1.8} color="#E6D5C0" distance={18} />
+      {/* ═══ 09 TERRACE (z: -70 to -80, open sky dusk, focal point: HORIZON) ═══ */}
+      <RoomInterior zFront={-70} depth={10} height={1.2} wallColor={PALETTE.wall} floorColor={PALETTE.stone} hasCeiling={false} hasSideWalls={false}>
+        <TerraceRailing position={[-W / 2, 0, -75]} rotation={[0, Math.PI / 2, 0]} length={10} />
+        <TerraceRailing position={[W / 2, 0, -75]} rotation={[0, Math.PI / 2, 0]} length={10} />
+        <TerraceRailing position={[0, 0, -79.7]} length={W} />
+        <ArtworkPanel position={[0, 3.8, -83.0]} width={20.0} height={8.0} textureSrc="/residence/terrace.png" frameColor={PALETTE.dark} />
+        <pointLight position={[0, 6.0, -75]} intensity={1.6} color="#E6D5C0" distance={16} />
       </RoomInterior>
 
-      {/* ═══ 10 PRIVATE DESK (z: -84 to -94, 6h walnut) ═══ */}
-      <RoomInterior zFront={-84} depth={10} height={6} wallColor={PALETTE.walnut}>
-        <Desk position={[0, 0, -90.0]} width={2.4} color={PALETTE.walnut} />
-        <Chair position={[0, 0, -88.5]} rotation={[0, Math.PI, 0]} color={PALETTE.fabric} />
-        <Chair position={[-1.2, 0, -91.5]} rotation={[0, Math.PI * 0.85, 0]} color={PALETTE.fabric} />
-        <Chair position={[1.2, 0, -91.5]} rotation={[0, -Math.PI * 0.85, 0]} color={PALETTE.fabric} />
-        <ArtworkPanel position={[0, 3.5, -93.65]} width={2.2} height={1.6} textureSrc="/residence/office.png" />
-        <pointLight position={[0, 2.6, -89.5]} intensity={1.6} color="#E6D5C0" distance={5} />
+      {/* ═══ 10 PRIVATE DESK (z: -80 to -90, 3.2h, focal point: CONSULTATION DESK) ═══ */}
+      <RoomInterior zFront={-80} depth={10} height={3.2} wallColor={PALETTE.walnut}>
+        <Desk position={[0, 0, -85.5]} width={2.4} surfaceHeight={0.75} color={PALETTE.walnut} />
+        <Chair position={[0, 0, -84.2]} rotation={[0, Math.PI, 0]} color={PALETTE.fabric} />
+        <Chair position={[-1.1, 0, -86.8]} rotation={[0, Math.PI * 0.85, 0]} color={PALETTE.fabric} />
+        <Chair position={[1.1, 0, -86.8]} rotation={[0, -Math.PI * 0.85, 0]} color={PALETTE.fabric} />
+        <ArtworkPanel position={[0, 2.2, -89.65]} width={2.0} height={1.4} textureSrc="/residence/office.png" />
+        <pointLight position={[0, 2.2, -85.2]} intensity={1.5} color="#E6D5C0" distance={5} />
       </RoomInterior>
 
-      {/* ═══ DIVIDING WALLS WITH EXTRUDED DOORWAYS ═══ */}
-      <DividingWall z={0} height={7} doorWidth={3.6} doorHeight={5.2} wallColor={PALETTE.stone} />
-      <DividingWall z={-10} height={10} doorWidth={4.0} doorHeight={6.0} />
-      <DividingWall z={-24} height={10} />
-      <DividingWall z={-34} height={8} />
-      <DividingWall z={-44} height={8} />
-      <DividingWall z={-54} height={7} />
-      <DividingWall z={-64} height={7} />
-      <DividingWall z={-74} height={7} doorWidth={4.0} doorHeight={5.2} />
-      <DividingWall z={-84} height={6} />
-      <DividingWall z={-94} height={6} hasDoorway={false} wallColor={PALETTE.walnut} />
+      {/* ═══ THRESHOLD DIVIDING WALLS ═══ */}
+      <DividingWall z={0} height={3.8} doorWidth={DW} doorHeight={DH} wallColor={PALETTE.stone} />
+      <DividingWall z={-8} height={5.0} doorWidth={DW} doorHeight={DH} />
+      <DividingWall z={-20} height={5.0} doorWidth={DW} doorHeight={DH} />
+      <DividingWall z={-30} height={3.6} doorWidth={DW} doorHeight={DH} />
+      <DividingWall z={-40} height={3.6} doorWidth={DW} doorHeight={DH} />
+      <DividingWall z={-50} height={3.2} doorWidth={DW} doorHeight={DH} />
+      <DividingWall z={-60} height={3.4} doorWidth={DW} doorHeight={DH} />
+      <DividingWall z={-70} height={3.4} doorWidth={DW} doorHeight={DH} />
+      <DividingWall z={-80} height={3.2} doorWidth={DW} doorHeight={DH} />
+      <DividingWall z={-90} height={3.2} hasDoorway={false} wallColor={PALETTE.walnut} />
 
-      {/* Ambient Fill Light */}
       <ambientLight intensity={0.14} color="#E6D5C0" />
     </>
   );
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   CAMERA DOLLY — Spline camera trajectory at human eye level
+   CAMERA DOLLY — Human-Height Eye Level Spline Path (Y = 1.70m)
    ═══════════════════════════════════════════════════════════════ */
 
 export function CameraDolly({ mouse }: { mouse: { x: number; y: number } }) {
   const { camera } = useThree();
   const scrollRef = useRef(0);
-  const posRef = useRef(new THREE.Vector3(0, CAM_H, 16));
-  const lookRef = useRef(new THREE.Vector3(0, CAM_H, 10));
+  const posRef = useRef(new THREE.Vector3(0, CAM_H, 14));
+  const lookRef = useRef(new THREE.Vector3(0, CAM_H, 8));
 
   const cameraPath = useMemo(
     () =>
       new THREE.CatmullRomCurve3([
-        new THREE.Vector3(0, CAM_H, 16),
-        new THREE.Vector3(0, CAM_H, 8),
-        new THREE.Vector3(0, CAM_H, -2),
-        new THREE.Vector3(0, CAM_H, -7),
-        new THREE.Vector3(0, CAM_H, -14),
-        new THREE.Vector3(0, CAM_H, -20),
+        new THREE.Vector3(0, CAM_H, 14),
+        new THREE.Vector3(0, CAM_H, 7),
+        new THREE.Vector3(0, CAM_H, -1),
+        new THREE.Vector3(0, CAM_H, -5),
+        new THREE.Vector3(0, CAM_H, -11),
+        new THREE.Vector3(0, CAM_H, -16),
+        new THREE.Vector3(0, CAM_H, -22),
         new THREE.Vector3(0, CAM_H, -26),
-        new THREE.Vector3(0, CAM_H - 0.05, -30),
-        new THREE.Vector3(0, CAM_H, -37),
+        new THREE.Vector3(0, CAM_H, -32),
+        new THREE.Vector3(0, CAM_H, -36),
         new THREE.Vector3(0, CAM_H, -42),
-        new THREE.Vector3(0, CAM_H, -48),
+        new THREE.Vector3(0, CAM_H, -46),
         new THREE.Vector3(0, CAM_H, -52),
-        new THREE.Vector3(0, CAM_H, -58),
+        new THREE.Vector3(0, CAM_H, -56),
         new THREE.Vector3(0, CAM_H, -62),
-        new THREE.Vector3(0, CAM_H, -68),
+        new THREE.Vector3(0, CAM_H, -66),
         new THREE.Vector3(0, CAM_H, -72),
-        new THREE.Vector3(0, CAM_H, -78),
-        new THREE.Vector3(0, CAM_H + 0.05, -82),
-        new THREE.Vector3(0, CAM_H, -87),
-        new THREE.Vector3(0, CAM_H - 0.08, -90),
-        new THREE.Vector3(0, CAM_H - 0.12, -92),
+        new THREE.Vector3(0, CAM_H, -76),
+        new THREE.Vector3(0, CAM_H, -82),
+        new THREE.Vector3(0, CAM_H, -86),
+        new THREE.Vector3(0, CAM_H - 0.05, -88),
       ]),
     []
   );
@@ -402,8 +354,8 @@ export function CameraDolly({ mouse }: { mouse: { x: number; y: number } }) {
     const lookT = Math.min(1, t + 0.035);
     const targetLook = cameraPath.getPointAt(lookT);
 
-    const px = mouse.x * 0.15;
-    const py = mouse.y * 0.08;
+    const px = mouse.x * 0.12;
+    const py = mouse.y * 0.06;
 
     posRef.current.lerp(
       new THREE.Vector3(targetPos.x + px, targetPos.y + py, targetPos.z),
@@ -429,7 +381,7 @@ export default function SpatialRoomController({
 }) {
   return (
     <>
-      <fog attach="fog" args={["#080808", 4, 24]} />
+      <fog attach="fog" args={["#080808", 4, 22]} />
       <CameraDolly mouse={mouse} />
       <Building />
     </>
