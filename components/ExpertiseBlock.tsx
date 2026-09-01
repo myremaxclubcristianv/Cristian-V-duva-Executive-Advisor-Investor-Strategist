@@ -1,12 +1,9 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-interface DisciplineItem {
-  id: string;
+interface Chapter {
   number: string;
+  category: string;
   title: string;
   subtitle: string;
   description: string;
@@ -14,158 +11,134 @@ interface DisciplineItem {
   mandates: string[];
 }
 
-const disciplines: DisciplineItem[] = [
+const chapters: Chapter[] = [
   {
-    id: "capital",
     number: "01",
-    title: "CAPITAL",
-    subtitle: "Strategic Placement & Equity Structuring",
-    description: "Bespoke advisory for private equity placement, co-investment vehicles, and credit structuring across high-performance European markets.",
-    imageSrc: "/residence/living.png",
-    mandates: ["Private Equity Placement", "Credit Structuring", "Co-Investment Strategies"],
+    category: "PRIVATE ADVISORY",
+    title: "Independent Executive Advisory & Strategic Counsel",
+    subtitle: "HIGH-TICKET STRATEGY · BOARD COUNSEL",
+    description: "Bespoke strategic counsel for UHNW principals, family offices, and institutional boards navigating high-stakes transaction decisions and generational asset alignment.",
+    imageSrc: "/residence/office.png",
+    mandates: ["Strategic Mandates", "Board Representation", "Family Office Advisory"],
   },
   {
-    id: "real-estate",
     number: "02",
-    title: "REAL ESTATE",
-    subtitle: "Ultra-Prime Acquisition & Portfolio Curation",
-    description: "Discreet origination and execution for off-market luxury residential assets, prime penthouses, and commercial development parcels.",
-    imageSrc: "/residence/pool.png",
+    category: "REAL ESTATE",
+    title: "Ultra-Prime Property Acquisition & Portfolio Positioning",
+    subtitle: "LUXURY RESIDENTIAL · COMMERCIAL PARCELS",
+    description: "Discreet origination, valuation, and execution for off-market luxury residential assets, penthouses, and zoned commercial development parcels across key European hubs.",
+    imageSrc: "/residence/living.png",
     mandates: ["Off-Market Acquisitions", "Penthouse Portfolio Curation", "Zoned Commercial Parcels"],
   },
   {
-    id: "risk",
     number: "03",
-    title: "RISK",
-    subtitle: "Asset Protection & Downside Surveillance",
-    description: "Institutional governance combined with private execution to shield family wealth and preserve capital across volatile market cycles.",
+    category: "CAPITAL",
+    title: "Private Equity Placement & Co-Investment Architecture",
+    subtitle: "EQUITY PLACEMENT · DOWNSIDE PROTECTION",
+    description: "Combining institutional downside surveillance with private execution to structure bespoke co-investment vehicles, private equity placements, and asset-backed credit.",
     imageSrc: "/residence/library.png",
-    mandates: ["Downside Protection", "Governance Structuring", "Market Dislocation Analysis"],
+    mandates: ["Private Equity Placement", "Credit Structuring", "Co-Investment Strategies"],
   },
   {
-    id: "strategy",
     number: "04",
-    title: "STRATEGY",
-    subtitle: "Executive Board Advisory & Mandates",
-    description: "Independent strategic counsel for principals, family offices, and institutional boards navigating complex growth and transaction decisions.",
+    category: "FINANCIAL STRATEGY",
+    title: "Credit Optimization, Liquidity & Capital Structure",
+    subtitle: "FINANCIAL ARCHITECTURE · LIQUIDITY GOVERNANCE",
+    description: "Designing bespoke tax, legal, and financial structures tailored to family office governance, capital preservation, and compounding multi-generational wealth.",
     imageSrc: "/residence/terrace.png",
-    mandates: ["Board Representation", "Transaction Advisory", "Generational Strategy"],
+    mandates: ["Financial Architecture", "Liquidity Optimization", "Risk Containment"],
   },
 ];
 
 export default function ExpertiseBlock() {
-  const [activeId, setActiveId] = useState<string>("capital");
-  const activeDiscipline = disciplines.find((d) => d.id === activeId) || disciplines[0];
-
   return (
-    <section id="scene-think" className="site-section bg-[#080808] border-b border-white/10">
-      <div className="site-container space-y-12 sm:space-y-16">
+    <section id="scene-think" className="site-section bg-[#070707] text-[#F4F1EA] border-b border-white/10">
+      <div className="site-container space-y-16 sm:space-y-24">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
           <div className="space-y-2">
-            <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
-              <span>03 / 06</span>
-              <span className="w-6 h-[1px] bg-accent/40" />
-              <span>PRACTICE INDEX</span>
+            <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-[#E6D5C0] font-semibold">
+              <span>03 / THE PRACTICE</span>
+              <span className="w-6 h-[1px] bg-[#E6D5C0]/40" />
+              <span>EDITORIAL CHAPTERS</span>
             </div>
-            <h2 className="font-display text-display-lg-fluid text-text-primary tracking-tight">
-              Strategic Practice Index
+            <h2 className="font-display text-2xl sm:text-4xl text-[#F4F1EA] tracking-tight">
+              The Four Practice Disciplines
             </h2>
           </div>
-          <div className="font-mono text-[10px] sm:text-xs text-text-secondary/80 uppercase tracking-widest">
-            EXECUTIVE MANDATES · EUROPE
+          <div className="font-mono text-[10px] sm:text-xs text-[#A1A09B] uppercase tracking-widest">
+            EXECUTIVE PRACTICE · EUROPE
           </div>
         </div>
 
-        {/* Interactive Discipline Monograph Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          {/* Left Column: Interactive Index */}
-          <div className="lg:col-span-6 space-y-3">
-            {disciplines.map((item) => {
-              const isActive = item.id === activeId;
-              return (
-                <button
-                  key={item.id}
-                  type="button"
-                  onClick={() => setActiveId(item.id)}
-                  onMouseEnter={() => setActiveId(item.id)}
-                  onFocus={() => setActiveId(item.id)}
-                  className={`w-full text-left py-5 px-5 border border-white/10 transition-all cursor-pointer ${
-                    isActive ? "bg-[#141414] border-accent/40" : "bg-[#0D0D0D] hover:bg-[#141414]/60"
+        {/* 4 Alternating Editorial Chapters */}
+        <div className="space-y-20 sm:space-y-28">
+          {chapters.map((ch, idx) => {
+            const isEven = idx % 2 === 0;
+            return (
+              <article
+                key={ch.category}
+                className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center border-b border-white/10 pb-20 sm:pb-28 group"
+              >
+                {/* Image Panel (Left on even, Right on odd) */}
+                <div
+                  className={`lg:col-span-6 relative aspect-[16/10] w-full overflow-hidden border border-white/15 bg-[#0D0D0D] ${
+                    isEven ? "lg:order-first" : "lg:order-last"
                   }`}
                 >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-4">
-                      <span className={`font-mono text-sm ${isActive ? "text-accent font-semibold" : "text-text-secondary/60"}`}>
-                        {item.number}
-                      </span>
-                      <span className={`font-display text-xl sm:text-2xl ${isActive ? "text-text-primary font-medium" : "text-text-secondary/80"}`}>
-                        {item.title}
-                      </span>
+                  <Image
+                    src={ch.imageSrc}
+                    alt={ch.title}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute top-4 left-4 font-mono text-[10px] uppercase tracking-widest text-[#E6D5C0] border border-white/20 px-3 py-1 bg-[#070707]/80">
+                    CHAPTER {ch.number}
+                  </div>
+                </div>
+
+                {/* Narrative Monograph (Right on even, Left on odd) */}
+                <div className="lg:col-span-6 space-y-6">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3 font-mono text-xs text-[#E6D5C0] font-semibold">
+                      <span>{ch.number}</span>
+                      <span>·</span>
+                      <span className="uppercase tracking-[0.25em]">{ch.category}</span>
                     </div>
-                    <span className={`font-mono text-xs ${isActive ? "text-accent font-semibold" : "text-text-secondary/40"}`}>
-                      {isActive ? "ACTIVE →" : "EXPLORE"}
-                    </span>
+
+                    <h3 className="font-display text-2xl sm:text-3xl text-[#F4F1EA] tracking-tight group-hover:text-[#E6D5C0] transition-colors leading-snug">
+                      {ch.title}
+                    </h3>
                   </div>
 
-                  {/* Mobile Accordion Content */}
-                  {isActive && (
-                    <div className="lg:hidden pt-4 space-y-3">
-                      <p className="font-sans text-xs text-text-secondary/90 font-light leading-relaxed">
-                        {item.description}
-                      </p>
-                      <div className="flex flex-wrap gap-2 pt-1">
-                        {item.mandates.map((m) => (
-                          <span key={m} className="font-mono text-[9px] uppercase tracking-wider text-accent border border-accent/30 px-2 py-1 bg-accent/5">
-                            {m}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </button>
-              );
-            })}
-          </div>
+                  <p className="font-sans text-sm sm:text-base text-[#A1A09B] font-light leading-relaxed">
+                    {ch.description}
+                  </p>
 
-          {/* Right Column: Desktop Reveal Panel */}
-          <div className="hidden lg:block lg:col-span-6 space-y-6 sticky top-28">
-            <div className="relative aspect-[16/10] w-full overflow-hidden border border-white/10 bg-[#0D0D0D]">
-              <Image
-                src={activeDiscipline.imageSrc}
-                alt={activeDiscipline.title}
-                fill
-                sizes="50vw"
-                className="object-cover transition-all duration-700"
-              />
-            </div>
+                  <div className="flex flex-wrap gap-2 pt-2 border-t border-white/10">
+                    {ch.mandates.map((m) => (
+                      <span
+                        key={m}
+                        className="font-mono text-[10px] uppercase tracking-wider text-[#E6D5C0] border border-white/15 px-3 py-1 bg-[#0D0D0D]"
+                      >
+                        {m}
+                      </span>
+                    ))}
+                  </div>
 
-            <div className="space-y-3 pt-2">
-              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent font-semibold block">
-                {activeDiscipline.subtitle}
-              </span>
-              <p className="font-sans text-sm text-text-secondary/90 font-light leading-relaxed">
-                {activeDiscipline.description}
-              </p>
-
-              <div className="flex flex-wrap gap-2 pt-2">
-                {activeDiscipline.mandates.map((m) => (
-                  <span key={m} className="font-mono text-[10px] uppercase tracking-wider text-accent border border-accent/30 px-3 py-1.5 bg-accent/5">
-                    {m}
-                  </span>
-                ))}
-              </div>
-
-              <div className="pt-4">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-accent hover:text-text-primary transition-quick py-2 touch-active"
-                >
-                  <span>REQUEST DISCIPLINE DOSSIER →</span>
-                </Link>
-              </div>
-            </div>
-          </div>
+                  <div className="pt-2">
+                    <Link
+                      href="/contact"
+                      className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-[#E6D5C0] hover:text-[#F4F1EA] transition-colors py-2 touch-active min-h-[48px]"
+                    >
+                      <span>REQUEST CHAPTER DOSSIER →</span>
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
