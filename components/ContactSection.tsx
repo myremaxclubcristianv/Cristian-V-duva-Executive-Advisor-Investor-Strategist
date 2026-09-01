@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function ContactSection() {
   return (
-    <section id="movement-07-conversation" className="site-chapter bg-[#111111] text-[#F6F6F3] border-b border-[#2B2B28]">
+    <section id="contact" className="site-chapter bg-[#111111] text-[#F6F6F3] border-b border-[#2B2B28]">
       <div className="site-container space-y-12 py-12">
         <div className="space-y-4 max-w-3xl">
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold block">
-            MOVEMENT 07 / THE CONVERSATION
+            THE CONVERSATION
           </span>
           <h2 className="font-display text-5xl sm:text-7xl text-[#F6F6F3] font-semibold tracking-tight leading-none uppercase">
             LET’S TALK.

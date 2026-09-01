@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function LifestyleSection() {
   return (
-    <section id="movement-06-archive" className="site-chapter bg-[#FFFFFF] text-[#111111] border-b border-[#E1E1DD]">
+    <section id="archive" className="site-chapter bg-[#FFFFFF] text-[#111111] border-b border-[#E1E1DD]">
       <div className="site-container space-y-12">
         <div className="flex items-center justify-between border-b border-[#E1E1DD] pb-4 font-mono text-xs uppercase tracking-[0.3em]">
-          <span className="text-[#B89B72] font-semibold">MOVEMENT 06 / LIFE & ARCHIVE</span>
+          <span className="text-[#B89B72] font-semibold">LIFE & ARCHIVE</span>
           <span className="text-[#5F5F5B]">PHOTOGRAPHIC COLLAGE</span>
         </div>
 

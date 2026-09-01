@@ -35,11 +35,11 @@ const properties: PropertyVisual[] = [
 
 export default function RealEstateChapter() {
   return (
-    <section id="movement-04-real-estate" className="site-chapter bg-[#111111] text-[#F6F6F3] border-b border-[#2B2B28]">
+    <section id="real-estate" className="site-chapter bg-[#111111] text-[#F6F6F3] border-b border-[#2B2B28]">
       <div className="site-container space-y-20">
         {/* Movement Header */}
         <div className="flex items-center justify-between border-b border-[#2B2B28] pb-4 font-mono text-xs uppercase tracking-[0.3em]">
-          <span className="text-[#B89B72] font-semibold">MOVEMENT 04 / THE WORLD OF REAL ESTATE</span>
+          <span className="text-[#B89B72] font-semibold">THE WORLD OF REAL ESTATE</span>
           <span className="text-[#888884]">CONTINUOUS VISUAL CANVAS</span>
         </div>
 

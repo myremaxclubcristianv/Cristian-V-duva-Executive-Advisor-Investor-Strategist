@@ -7,10 +7,10 @@ export default function CapitalStrategyVisual() {
   ];
 
   return (
-    <section id="movement-05-mind" className="site-chapter bg-[#F6F6F3] text-[#111111] border-b border-[#E1E1DD]">
+    <section id="capital" className="site-chapter bg-[#F6F6F3] text-[#111111] border-b border-[#E1E1DD]">
       <div className="site-container space-y-16">
         <div className="flex items-center justify-between border-b border-[#E1E1DD] pb-4 font-mono text-xs uppercase tracking-[0.3em]">
-          <span className="text-[#B89B72] font-semibold">MOVEMENT 05 / THE MIND</span>
+          <span className="text-[#B89B72] font-semibold">THE MIND</span>
           <span className="text-[#5F5F5B]">TYPOGRAPHIC CAPITAL STATEMENT</span>
         </div>
 

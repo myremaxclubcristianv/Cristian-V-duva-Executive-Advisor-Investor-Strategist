@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import VisualBreathingSpace from "@/components/VisualBreathingSpace";
 import AboutSection from "@/components/AboutSection";
+import VisualBreathingSpace from "@/components/VisualBreathingSpace";
 import RealEstateChapter from "@/components/RealEstateChapter";
 import CapitalStrategyVisual from "@/components/CapitalStrategyVisual";
 import LifestyleSection from "@/components/LifestyleSection";
@@ -15,25 +15,25 @@ export default function Home() {
       <Navigation />
 
       <main className="relative z-10 flex-1">
-        {/* MOVEMENT 01 / THE PORTRAIT */}
+        {/* 01 / HERO (Cristian Văduva Digital Monograph & Signature Opening) */}
         <Hero />
 
-        {/* MOVEMENT 02 / THE IMAGE */}
-        <VisualBreathingSpace />
-
-        {/* MOVEMENT 03 / THE PERSON */}
+        {/* 02 / THE PERSON (Human Profile, Personality & Multidisciplinary Foundation) */}
         <AboutSection />
 
-        {/* MOVEMENT 04 / THE WORLD OF REAL ESTATE */}
+        {/* 03 / THE WORLD (Architectural Landscape & Visual Breathing Space) */}
+        <VisualBreathingSpace />
+
+        {/* 04 / REAL ESTATE (Bucharest · Monaco · Dubai Continuous Canvas) */}
         <RealEstateChapter />
 
-        {/* MOVEMENT 05 / THE MIND */}
+        {/* 05 / CAPITAL & MIND (Typographic Statement & Strategic Execution) */}
         <CapitalStrategyVisual />
 
-        {/* MOVEMENT 06 / LIFE & ARCHIVE */}
+        {/* 06 / LIFE & ARCHIVE (Personal Photographic Collage) */}
         <LifestyleSection />
 
-        {/* MOVEMENT 07 / THE CONVERSATION */}
+        {/* 07 / CONVERSATION (Quiet Contact Desk & Direct Intake) */}
         <ContactSection />
       </main>
 

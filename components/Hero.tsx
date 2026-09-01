@@ -23,13 +23,13 @@ export default function Hero() {
       id="hero"
       className="relative min-h-[100svh] w-full flex flex-col justify-between overflow-hidden bg-[#F6F6F3] text-[#111111] pt-20 sm:pt-28 pb-10 border-b border-[#E1E1DD]"
     >
-      {/* Top Identity Navigation Bar */}
+      {/* Identity Top Bar */}
       <div className="site-container pt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.3em] text-[#888884]">
         <span>CRISTIAN VĂDUVA</span>
         <span>BUCHAREST · MONACO · EUROPE</span>
       </div>
 
-      {/* Movement 01 Canvas Signature & Monograph */}
+      {/* Center Cinematic Portrait Canvas */}
       <div className="site-container my-auto py-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Brand Signature */}
@@ -62,7 +62,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Archival Monograph Frame */}
+          {/* Archival Monograph Frame (Personal Portrait Priority) */}
           <div className="lg:col-span-5 space-y-3">
             <div className="relative aspect-[4/5] w-full border border-[#E1E1DD] overflow-hidden bg-[#FFFFFF] shadow-xl group">
               {portraitSrc ? (
@@ -81,10 +81,10 @@ export default function Hero() {
                   </div>
                   <div className="space-y-1">
                     <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#111111] font-bold block">
-                      PORTRAIT ARCHIVE
+                      PERSONAL PORTRAIT ARCHIVE
                     </span>
                     <span className="font-mono text-[10px] text-[#5F5F5B] block font-semibold">
-                      PORTRAIT 001 · ARCHIVAL EDITORIAL FRAME
+                      EDITORIAL FRAME · AWAITING HEADSHOT UPLOAD
                     </span>
                     <span className="font-mono text-[9px] text-[#888884] block pt-1">
                       /public/images/personal/portraits/
@@ -95,7 +95,7 @@ export default function Hero() {
 
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#111111] font-mono text-[10px] uppercase tracking-widest bg-[#FFFFFF]/90 backdrop-blur-sm px-3 py-2 border border-black/5">
                 <span>CRISTIAN VĂDUVA</span>
-                <span className="text-[#B89B72]">EDITORIAL ARCHIVE</span>
+                <span className="text-[#B89B72]">EDITORIAL PORTRAIT</span>
               </div>
             </div>
           </div>

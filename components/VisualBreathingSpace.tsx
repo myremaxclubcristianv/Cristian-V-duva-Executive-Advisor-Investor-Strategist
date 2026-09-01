@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function VisualBreathingSpace() {
   return (
-    <section id="movement-02-image" className="relative w-full bg-[#111111] text-[#F6F6F3] py-12 sm:py-16 border-b border-[#2B2B28] overflow-hidden">
+    <section id="visual-breathing-space" className="relative w-full bg-[#111111] text-[#F6F6F3] py-12 sm:py-16 border-b border-[#2B2B28] overflow-hidden">
       <div className="site-container space-y-4">
         {/* Tiny Metadata Caption */}
         <div className="flex items-center justify-between font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-[#B89B72]">
           <span>BUCHAREST · PRIVATE ARCHIVE</span>
-          <span>MOVEMENT 02 / THE IMAGE</span>
+          <span>ARCHITECTURAL MONOGRAPH</span>
         </div>
 
         {/* Huge Full-Viewport Image (70-100vh) */}
