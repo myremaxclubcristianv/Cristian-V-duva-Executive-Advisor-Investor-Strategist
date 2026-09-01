@@ -92,10 +92,10 @@ export default function Hero() {
                   </div>
                   <div className="space-y-1">
                     <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#111111] font-bold block">
-                      PORTRAIT ARCHIVE
+                      PERSONAL ARCHIVE
                     </span>
                     <span className="font-mono text-[10px] text-[#5F5F5B] block font-semibold">
-                      PERSONAL IMAGE PLACEHOLDER
+                      PORTRAIT 001 · AWAITING ORIGINAL PHOTOGRAPH
                     </span>
                     <span className="font-mono text-[9px] text-[#888884] block pt-1">
                       /public/images/personal/portraits/
