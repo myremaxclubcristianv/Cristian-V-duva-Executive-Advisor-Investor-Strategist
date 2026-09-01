@@ -31,17 +31,17 @@ const moments: LifeMoment[] = [
 
 export default function LifestyleSection() {
   return (
-    <section id="beyond-business" className="site-section bg-[#F7F7F5] text-[#111111] border-b border-black/5">
+    <section id="beyond-business" className="site-section bg-[#F5F5F2] text-[#111111] border-b border-[#E5E5E1]">
       <div className="site-container space-y-12 sm:space-y-16">
         {/* Section Header */}
-        <div className="space-y-3 border-b border-black/5 pb-6">
+        <div className="space-y-3 border-b border-[#E5E5E1] pb-6">
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold block">
-            10 / PERSONAL SIDE
+            09 / PERSONAL SIDE
           </span>
-          <h2 className="font-display text-3xl sm:text-5xl text-[#111111] tracking-tight">
+          <h2 className="font-display text-3xl sm:text-5xl text-[#111111] tracking-tight font-semibold">
             BEYOND BUSINESS.
           </h2>
-          <p className="font-sans text-base text-[#6B6B6B] font-light max-w-2xl leading-relaxed">
+          <p className="font-sans text-base text-[#555555] font-light max-w-2xl leading-relaxed">
             Architecture, international travels, design, and key moments defining the personal perspective behind the advisory practice.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function LifestyleSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {moments.map((m) => (
             <div key={m.title} className="space-y-4 group">
-              <div className="relative aspect-[4/3] w-full border border-black/10 overflow-hidden bg-[#E8E8E5] shadow-sm">
+              <div className="relative aspect-[4/3] w-full border border-[#E5E5E1] overflow-hidden bg-[#FFFFFF] shadow-sm">
                 <Image
                   src={m.imageSrc}
                   alt={m.title}
@@ -72,8 +72,8 @@ export default function LifestyleSection() {
           ))}
         </div>
 
-        <div className="flex justify-between items-center pt-4 border-t border-black/5">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-[#6B6B6B]">
+        <div className="flex justify-between items-center pt-4 border-t border-[#E5E5E1]">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-[#555555]">
             AUTHENTIC PERSONAL CURATION
           </span>
           <Link
