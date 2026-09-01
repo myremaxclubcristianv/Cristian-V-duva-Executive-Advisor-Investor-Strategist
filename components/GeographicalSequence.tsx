@@ -9,14 +9,14 @@ export default function GeographicalSequence() {
   ];
 
   return (
-    <section id="geographical-sequence" className="site-chapter bg-[#111111] text-[#F6F6F3] border-b border-[#2B2B28]">
+    <section id="scene-06-world" className="site-chapter bg-[#111111] text-[#F6F6F3] border-b border-[#2B2B28]">
       <div className="site-container space-y-16">
         <div className="flex items-center justify-between border-b border-[#2B2B28] pb-6">
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
-            THE WORLD
+            SCENE 06 / GEOGRAPHICAL SPHERE
           </span>
           <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#888884]">
-            GEOGRAPHICAL SPHERE
+            WORLD CENTERS
           </span>
         </div>
 

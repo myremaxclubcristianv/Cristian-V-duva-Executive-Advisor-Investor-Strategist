@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function LifestyleSection() {
   return (
-    <section id="personal-archive" className="site-chapter bg-[#FFFFFF] text-[#111111] border-b border-[#E1E1DD]">
+    <section id="scene-07-life" className="site-chapter bg-[#FFFFFF] text-[#111111] border-b border-[#E1E1DD]">
       <div className="site-container space-y-12">
         <div className="flex items-center justify-between border-b border-[#E1E1DD] pb-6">
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
-            PERSONAL ARCHIVE
+            SCENE 07 / PERSONAL LIFE & ARCHIVE
           </span>
           <Link
             href="/gallery"
@@ -19,7 +19,7 @@ export default function LifestyleSection() {
 
         {/* Asymmetric Photo Composition */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          {/* One Giant Image */}
+          {/* One Large Image (65% width) */}
           <div className="lg:col-span-8 space-y-3">
             <div className="relative aspect-[16/10] w-full border border-[#E1E1DD] overflow-hidden bg-[#F6F6F3] group shadow-sm">
               <Image
@@ -36,7 +36,7 @@ export default function LifestyleSection() {
             </div>
           </div>
 
-          {/* Two Smaller Images */}
+          {/* Two Smaller Images (30% width) */}
           <div className="lg:col-span-4 flex flex-col justify-between gap-8">
             <div className="space-y-3">
               <div className="relative aspect-[4/3] w-full border border-[#E1E1DD] overflow-hidden bg-[#F6F6F3] group shadow-sm">

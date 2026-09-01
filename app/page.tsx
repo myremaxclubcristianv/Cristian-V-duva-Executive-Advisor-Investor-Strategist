@@ -16,28 +16,28 @@ export default function Home() {
       <Navigation />
 
       <main className="relative z-10 flex-1">
-        {/* 01 / HERO (100svh, Visual Brand Signature Opening) */}
+        {/* SCENE 01 / IDENTITY */}
         <Hero />
 
-        {/* 02 / VISUAL BREATHING SPACE (Full-Width Architectural Pause) */}
+        {/* SCENE 02 / PHOTOGRAPHY */}
         <VisualBreathingSpace />
 
-        {/* 03 / PERSONAL INTRODUCTION & VISUAL ARCHIVE FRAGMENTS */}
+        {/* SCENE 03 / PERSON */}
         <AboutSection />
 
-        {/* 04 / REAL ESTATE CINEMATIC SEQUENCE (Image -> Location -> Statement) */}
+        {/* SCENE 04 / REAL ESTATE */}
         <RealEstateChapter />
 
-        {/* 05 / CAPITAL VISUAL STATEMENT & STRATEGY EXECUTION SEQUENCE */}
+        {/* SCENE 05 / CAPITAL */}
         <CapitalStrategyVisual />
 
-        {/* 06 / GEOGRAPHICAL SPHERE (Full-Width Hub Compositions) */}
+        {/* SCENE 06 / WORLD */}
         <GeographicalSequence />
 
-        {/* 07 / PERSONAL LIFE ARCHIVE (Asymmetric Photo Composition) */}
+        {/* SCENE 07 & 08 / LIFE & ARCHIVE */}
         <LifestyleSection />
 
-        {/* 08 / PRIVATE CONVERSATION & DIRECT CONTACT DESK */}
+        {/* SCENE 09 / CONVERSATION */}
         <ContactSection />
       </main>
 

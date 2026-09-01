@@ -1,9 +1,9 @@
 export default function CapitalStrategyVisual() {
   const capitalItems = [
     { word: "VALUE", text: "Identifying true intrinsic worth beyond market sentiment and price volatility." },
-    { word: "RISK", text: "Structuring asymmetric protection to preserve principal in turbulent downturns." },
+    { word: "RISK", text: "Structuring asymmetric downside protection to preserve principal in downturns." },
     { word: "TIME", text: "Compounding generational capital with patience and long-term discipline." },
-    { word: "OPTIONALITY", text: "Maintaining liquidity to capitalize quickly on high-conviction distress." },
+    { word: "OPTIONALITY", text: "Maintaining liquidity to capitalize quickly on high-conviction market distress." },
   ];
 
   const strategySteps = [
@@ -16,13 +16,13 @@ export default function CapitalStrategyVisual() {
   ];
 
   return (
-    <section id="capital-strategy" className="site-chapter bg-[#F6F6F3] text-[#111111] border-b border-[#E1E1DD]">
+    <section id="scene-05-capital" className="site-chapter bg-[#F6F6F3] text-[#111111] border-b border-[#E1E1DD]">
       <div className="site-container space-y-24">
-        {/* Section 11: Capital Visual Statement */}
+        {/* SCENE 05 / CAPITAL TYPOGRAPHIC STATEMENT */}
         <div className="space-y-12">
           <div className="flex items-center justify-between border-b border-[#E1E1DD] pb-4">
             <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
-              CAPITAL ALLOCATION THINKING
+              SCENE 05 / CAPITAL TYPOGRAPHIC STATEMENT
             </span>
             <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#5F5F5B]">
               PRINCIPLES
@@ -43,7 +43,7 @@ export default function CapitalStrategyVisual() {
           </div>
         </div>
 
-        {/* Section 12: Strategy Sequence (Horizontal on Desktop, Vertical on Mobile) */}
+        {/* STRATEGIC EXECUTION SEQUENCE */}
         <div className="space-y-12 pt-12 border-t border-[#E1E1DD]">
           <div className="flex items-center justify-between border-b border-[#E1E1DD] pb-4">
             <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
