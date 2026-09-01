@@ -5,7 +5,7 @@ import path from "path";
 
 export default function Hero() {
   const portraitDir = path.join(process.cwd(), "public/images/personal/portraits");
-  let realPortraitSrc: string | null = null;
+  let realPortraitSrc = "/images/personal/portraits/cristian-headshot.jpg";
 
   try {
     if (fs.existsSync(portraitDir)) {
@@ -17,7 +17,7 @@ export default function Hero() {
       }
     }
   } catch {
-    realPortraitSrc = null;
+    realPortraitSrc = "/images/personal/portraits/cristian-headshot.jpg";
   }
 
   return (
@@ -25,13 +25,13 @@ export default function Hero() {
       id="hero"
       className="relative min-h-[100svh] w-full flex flex-col justify-between overflow-hidden bg-[#F6F6F3] text-[#111111] pt-20 sm:pt-28 pb-10 border-b border-[#E1E1DD]"
     >
-      {/* Identity Bar */}
+      {/* Identity Top Bar */}
       <div className="site-container pt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.3em] text-[#888884]">
         <span>CRISTIAN VĂDUVA</span>
         <span>BUCHAREST · MONACO · EUROPE</span>
       </div>
 
-      {/* Hero Canvas */}
+      {/* Center Cinematic Portrait Canvas */}
       <div className="site-container my-auto py-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Brand Signature */}
@@ -64,39 +64,22 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Real Portrait or Pure Typographic Monogram */}
+          {/* Primary Personal Monograph Frame */}
           <div className="lg:col-span-5 space-y-3">
             <div className="relative aspect-[4/5] w-full border border-[#E1E1DD] overflow-hidden bg-[#111111] text-[#F6F6F3] shadow-xl group">
-              {realPortraitSrc ? (
-                <Image
-                  src={realPortraitSrc}
-                  alt="Cristian Văduva — Personal Portrait"
-                  fill
-                  priority
-                  className="object-cover object-center opacity-95 group-hover:scale-105 transition-all duration-700"
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                />
-              ) : (
-                <div className="w-full h-full flex flex-col justify-between p-8 sm:p-10 select-none bg-[#111111]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
-                    PERSONAL PORTRAIT ARCHIVE
-                  </span>
+              <Image
+                src={realPortraitSrc}
+                alt="Cristian Văduva — Personal Executive Monograph"
+                fill
+                priority
+                className="object-cover object-center opacity-95 group-hover:scale-105 transition-all duration-700"
+                sizes="(max-width: 1024px) 100vw, 45vw"
+              />
 
-                  <div className="space-y-4 my-auto">
-                    <span className="font-display text-6xl sm:text-7xl text-[#F6F6F3] font-light tracking-tighter block leading-none">
-                      CV
-                    </span>
-                    <h2 className="font-display text-2xl text-[#F6F6F3] uppercase tracking-wider font-semibold">
-                      CRISTIAN VĂDUVA
-                    </h2>
-                  </div>
-
-                  <div className="pt-6 border-t border-[#2B2B28] flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#888884]">
-                    <span>AWAITING HEADSHOT UPLOAD</span>
-                    <span className="text-[#B89B72]">PORTRAIT / 001</span>
-                  </div>
-                </div>
-              )}
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#F6F6F3] font-mono text-[10px] uppercase tracking-widest bg-black/80 backdrop-blur-sm px-3 py-2 border border-white/10">
+                <span>CRISTIAN VĂDUVA</span>
+                <span className="text-[#B89B72]">PERSONAL PORTRAIT</span>
+              </div>
             </div>
           </div>
         </div>

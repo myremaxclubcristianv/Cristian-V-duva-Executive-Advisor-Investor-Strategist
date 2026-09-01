@@ -5,7 +5,7 @@ import path from "path";
 
 export default function AboutSection() {
   const editorialDir = path.join(process.cwd(), "public/images/personal/editorial");
-  let realEditorialSrc: string | null = null;
+  let realEditorialSrc = "/images/personal/editorial/cristian-editorial.jpg";
 
   try {
     if (fs.existsSync(editorialDir)) {
@@ -17,7 +17,7 @@ export default function AboutSection() {
       }
     }
   } catch {
-    realEditorialSrc = null;
+    realEditorialSrc = "/images/personal/editorial/cristian-editorial.jpg";
   }
 
   return (
@@ -29,38 +29,24 @@ export default function AboutSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Monograph Frame */}
+          {/* Personal Editorial Monograph Frame */}
           <div className="lg:col-span-5 space-y-3">
             <div className="relative aspect-[4/5] w-full border border-[#E1E1DD] overflow-hidden bg-[#F6F6F3] text-[#111111] shadow-md">
-              {realEditorialSrc ? (
-                <Image
-                  src={realEditorialSrc}
-                  alt="Cristian Văduva — Monograph Profile"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="object-cover transition-transform duration-700 hover:scale-105"
-                />
-              ) : (
-                <div className="w-full h-full flex flex-col justify-between p-8 sm:p-10 select-none bg-[#F0F0ED]">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
-                    EDITORIAL PROFILE ARCHIVE
-                  </span>
-
-                  <div className="space-y-3 my-auto">
-                    <span className="font-display text-5xl text-[#111111] font-light tracking-tighter block leading-none">
-                      CV
-                    </span>
-                    <h3 className="font-display text-xl text-[#111111] uppercase tracking-wider font-semibold">
-                      CRISTIAN VĂDUVA
-                    </h3>
-                  </div>
-
-                  <div className="pt-4 border-t border-[#E1E1DD] flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#5F5F5B]">
-                    <span>AWAITING EDITORIAL UPLOAD</span>
-                    <span className="text-[#B89B72]">PROFILE / 002</span>
-                  </div>
-                </div>
-              )}
+              <Image
+                src={realEditorialSrc}
+                alt="Cristian Văduva — Monograph Profile"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover transition-transform duration-700 hover:scale-105"
+              />
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#111111] font-mono text-[10px] uppercase tracking-widest bg-[#FFFFFF]/90 backdrop-blur-sm px-3 py-2 border border-black/5">
+                <span>CRISTIAN VĂDUVA</span>
+                <span className="text-[#B89B72]">EDITORIAL MONOGRAPH</span>
+              </div>
+            </div>
+            <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#5F5F5B] px-1">
+              <span>MULTIDISCIPLINARY RIGOR</span>
+              <span className="text-[#B89B72]">MADRID · AMIENS · MALTA</span>
             </div>
           </div>
 
