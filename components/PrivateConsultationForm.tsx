@@ -3,11 +3,11 @@
 import { useState, FormEvent } from "react";
 
 const INTEREST_OPTIONS = [
-  "Real Estate",
-  "Capital & Investments",
+  "Real Estate Acquisitions",
+  "Capital & Investment Placement",
   "Executive Advisory",
-  "Strategic Partnerships",
-  "Other",
+  "Strategic Partnerships & Board Counsel",
+  "General Private Inquiry",
 ] as const;
 
 export default function PrivateConsultationForm() {
@@ -15,7 +15,7 @@ export default function PrivateConsultationForm() {
     name: "",
     email: "",
     phone: "",
-    interest: "Real Estate",
+    interest: "Real Estate Acquisitions",
     message: "",
     website: "", // Honeypot
   });
@@ -63,7 +63,7 @@ export default function PrivateConsultationForm() {
           name: "",
           email: "",
           phone: "",
-          interest: "Real Estate",
+          interest: "Real Estate Acquisitions",
           message: "",
           website: "",
         });
@@ -77,23 +77,23 @@ export default function PrivateConsultationForm() {
 
   if (status === "success") {
     return (
-      <div className="border border-accent/40 p-6 sm:p-10 space-y-6 text-left animate-fade-in bg-[#0D0D0D]">
-        <div className="flex items-center gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.3em] text-accent font-semibold">
-          <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+      <div className="border border-[#B89B72]/40 p-6 sm:p-10 space-y-6 text-left bg-[#FFFFFF] shadow-sm">
+        <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
+          <span className="w-2 h-2 rounded-full bg-[#B89B72]" />
           <span>CONFIDENTIAL DESK</span>
         </div>
-        <h3 className="font-display text-2xl sm:text-3xl text-text-primary tracking-tight">
+        <h3 className="font-display text-2xl sm:text-3xl text-[#111111] tracking-tight">
           PRIVATE INQUIRY RECEIVED
         </h3>
-        <p className="font-sans text-sm sm:text-base text-text-secondary font-light leading-relaxed">
-          Thank you. Your request has been securely received by the Executive Desk.
+        <p className="font-sans text-sm sm:text-base text-[#555555] font-light leading-relaxed">
+          Thank you. Your inquiry has been securely transmitted directly to Cristian Văduva’s executive desk.
         </p>
-        <p className="font-sans text-xs text-text-secondary/70 font-light leading-relaxed border-t border-white/10 pt-4">
-          We will review your inquiry and respond directly.
+        <p className="font-sans text-xs text-[#858585] font-light leading-relaxed border-t border-[#E5E5E1] pt-4">
+          We will review your inquiry and respond directly with complete discretion.
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="pt-2 text-xs font-mono uppercase tracking-[0.2em] text-accent hover:underline block touch-active min-h-[36px]"
+          className="pt-2 text-xs font-mono uppercase tracking-[0.2em] text-[#111111] hover:text-[#B89B72] block touch-active min-h-[36px]"
         >
           Submit another inquiry →
         </button>
@@ -104,17 +104,17 @@ export default function PrivateConsultationForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="border border-white/10 p-6 sm:p-8 space-y-5 sm:space-y-6 text-left bg-[#0D0D0D]"
+      className="border border-[#E5E5E1] p-6 sm:p-8 space-y-5 sm:space-y-6 text-left bg-[#FFFFFF] shadow-sm"
     >
-      <div className="space-y-2 border-b border-white/10 pb-4 sm:pb-5">
-        <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-semibold block">
+      <div className="space-y-2 border-b border-[#E5E5E1] pb-4 sm:pb-5">
+        <span className="font-mono text-xs uppercase tracking-widest text-[#B89B72] font-semibold block">
           PRIVATE DESK
         </span>
-        <h3 className="font-display text-xl sm:text-2xl text-text-primary">
+        <h3 className="font-display text-xl sm:text-2xl text-[#111111]">
           CONFIDENTIAL INQUIRY
         </h3>
-        <p className="font-sans text-xs sm:text-sm text-text-secondary/80 font-light leading-relaxed">
-          Direct mandate inquiry for real estate acquisitions, capital advisory, or board engagements.
+        <p className="font-sans text-xs sm:text-sm text-[#555555] font-light leading-relaxed">
+          Direct inquiry for real estate acquisitions, capital placement, or board engagements.
         </p>
       </div>
 
@@ -133,22 +133,22 @@ export default function PrivateConsultationForm() {
       </div>
 
       {validationError && (
-        <div className="p-3 border border-red-900/40 bg-red-950/20 text-red-400 font-mono text-xs">
+        <div className="p-3 border border-red-200 bg-red-50 text-red-700 font-mono text-xs">
           {validationError}
         </div>
       )}
 
       {status === "error" && (
-        <div className="p-4 border border-amber-900/40 bg-amber-950/20 text-amber-300 font-sans text-xs leading-relaxed">
-          Unable to submit your inquiry at this moment. Please contact the Executive Desk directly.
+        <div className="p-4 border border-amber-200 bg-amber-50 text-amber-800 font-sans text-xs leading-relaxed">
+          Unable to transmit your inquiry at this moment. Please contact the Executive Desk directly via email or WhatsApp.
         </div>
       )}
 
       <div className="space-y-4">
         {/* Full Name */}
         <div className="space-y-1.5">
-          <label htmlFor="inquiry-name" className="block font-mono text-[11px] uppercase tracking-wider text-text-secondary">
-            Full Name <span className="text-accent">*</span>
+          <label htmlFor="inquiry-name" className="block font-mono text-xs uppercase tracking-wider text-[#555555]">
+            Full Name <span className="text-[#B89B72]">*</span>
           </label>
           <input
             id="inquiry-name"
@@ -157,15 +157,15 @@ export default function PrivateConsultationForm() {
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             placeholder="Executive Name"
-            className="w-full bg-[#141414] border-b border-white/10 focus:border-accent px-3 py-3 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none transition-quick min-h-[48px]"
+            className="w-full bg-[#F5F5F2] border-b border-[#E5E5E1] focus:border-[#B89B72] px-3 py-3 text-base sm:text-sm text-[#111111] placeholder:text-[#858585] focus:outline-none transition-colors min-h-[48px]"
           />
         </div>
 
         {/* Email & Phone Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1.5">
-            <label htmlFor="inquiry-email" className="block font-mono text-[11px] uppercase tracking-wider text-text-secondary">
-              Corporate Email <span className="text-accent">*</span>
+            <label htmlFor="inquiry-email" className="block font-mono text-xs uppercase tracking-wider text-[#555555]">
+              Email Address <span className="text-[#B89B72]">*</span>
             </label>
             <input
               id="inquiry-email"
@@ -174,12 +174,12 @@ export default function PrivateConsultationForm() {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               placeholder="name@company.com"
-              className="w-full bg-[#141414] border-b border-white/10 focus:border-accent px-3 py-3 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none transition-quick min-h-[48px]"
+              className="w-full bg-[#F5F5F2] border-b border-[#E5E5E1] focus:border-[#B89B72] px-3 py-3 text-base sm:text-sm text-[#111111] placeholder:text-[#858585] focus:outline-none transition-colors min-h-[48px]"
             />
           </div>
 
           <div className="space-y-1.5">
-            <label htmlFor="inquiry-phone" className="block font-mono text-[11px] uppercase tracking-wider text-text-secondary">
+            <label htmlFor="inquiry-phone" className="block font-mono text-xs uppercase tracking-wider text-[#555555]">
               Phone / WhatsApp
             </label>
             <input
@@ -188,25 +188,25 @@ export default function PrivateConsultationForm() {
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               placeholder="+43 / +40 ..."
-              className="w-full bg-[#141414] border-b border-white/10 focus:border-accent px-3 py-3 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none transition-quick min-h-[48px]"
+              className="w-full bg-[#F5F5F2] border-b border-[#E5E5E1] focus:border-[#B89B72] px-3 py-3 text-base sm:text-sm text-[#111111] placeholder:text-[#858585] focus:outline-none transition-colors min-h-[48px]"
             />
           </div>
         </div>
 
         {/* Area of Interest */}
         <div className="space-y-1.5">
-          <label htmlFor="inquiry-interest" className="block font-mono text-[11px] uppercase tracking-wider text-text-secondary">
-            Area of Interest <span className="text-accent">*</span>
+          <label htmlFor="inquiry-interest" className="block font-mono text-xs uppercase tracking-wider text-[#555555]">
+            Subject / Area of Interest <span className="text-[#B89B72]">*</span>
           </label>
           <select
             id="inquiry-interest"
             required
             value={formData.interest}
             onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
-            className="w-full bg-[#141414] border-b border-white/10 focus:border-accent px-3 py-3 text-base sm:text-sm text-text-primary focus:outline-none transition-quick min-h-[48px]"
+            className="w-full bg-[#F5F5F2] border-b border-[#E5E5E1] focus:border-[#B89B72] px-3 py-3 text-base sm:text-sm text-[#111111] focus:outline-none transition-colors min-h-[48px]"
           >
             {INTEREST_OPTIONS.map((opt) => (
-              <option key={opt} value={opt} className="bg-[#141414] text-text-primary">
+              <option key={opt} value={opt} className="bg-[#FFFFFF] text-[#111111]">
                 {opt}
               </option>
             ))}
@@ -215,8 +215,8 @@ export default function PrivateConsultationForm() {
 
         {/* Message */}
         <div className="space-y-1.5">
-          <label htmlFor="inquiry-message" className="block font-mono text-[11px] uppercase tracking-wider text-text-secondary">
-            Mandate Details / Message <span className="text-accent">*</span>
+          <label htmlFor="inquiry-message" className="block font-mono text-xs uppercase tracking-wider text-[#555555]">
+            Mandate Details / Message <span className="text-[#B89B72]">*</span>
           </label>
           <textarea
             id="inquiry-message"
@@ -224,8 +224,8 @@ export default function PrivateConsultationForm() {
             rows={4}
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            placeholder="Brief description of project requirements or strategic inquiry..."
-            className="w-full bg-[#141414] border-b border-white/10 focus:border-accent px-3 py-3 text-base sm:text-sm text-text-primary placeholder:text-text-secondary/40 focus:outline-none transition-quick resize-none"
+            placeholder="Brief description of property requirements or strategic inquiry..."
+            className="w-full bg-[#F5F5F2] border-b border-[#E5E5E1] focus:border-[#B89B72] px-3 py-3 text-base sm:text-sm text-[#111111] placeholder:text-[#858585] focus:outline-none transition-colors resize-none"
           />
         </div>
       </div>
@@ -234,9 +234,9 @@ export default function PrivateConsultationForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="w-full min-h-[48px] px-8 py-4 bg-accent text-background font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-accent/90 disabled:opacity-50 disabled:cursor-not-allowed transition-quick shadow-xl touch-active"
+          className="w-full min-h-[48px] px-8 py-4 bg-[#111111] text-[#F5F5F2] font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-[#B89B72] hover:text-[#FFFFFF] disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-sm touch-active"
         >
-          {status === "submitting" ? "TRANSMITTING..." : "REQUEST PRIVATE CONSULTATION →"}
+          {status === "submitting" ? "TRANSMITTING..." : "SEND PRIVATE INQUIRY →"}
         </button>
       </div>
     </form>

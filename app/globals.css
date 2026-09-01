@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F7F7F5;
+  --background: #F5F5F2;
   --foreground: #111111;
   --surface-primary: #FFFFFF;
   --surface-secondary: #E8E8E5;
-  --surface-tertiary: #E2E2DF;
+  --surface-tertiary: #E5E5E1;
   --text-primary: #111111;
-  --text-secondary: #6B6B6B;
-  --text-tertiary: #8E8E8E;
+  --text-secondary: #555555;
+  --text-tertiary: #858585;
   --accent: #B89B72;
   --accent-muted: rgba(184, 155, 114, 0.12);
-  --border-rule: rgba(0, 0, 0, 0.08);
+  --border-rule: #E5E5E1;
   --border-accent: rgba(184, 155, 114, 0.25);
 }
 
@@ -69,7 +69,7 @@ button {
 }
 
 /* ==========================================================================
-   Global Content Grid Axis & Spacing Standards (Apple Precision)
+   Global Content Grid Axis & Spacing Standards (Apple & Monocle Precision)
    ========================================================================== */
 
 .site-container {
@@ -98,8 +98,8 @@ button {
 .site-section {
   position: relative;
   width: 100%;
-  padding-top: clamp(4.5rem, 8vw, 8rem);
-  padding-bottom: clamp(4.5rem, 8vw, 8rem);
+  padding-top: clamp(4.5rem, 8vw, 8.5rem);
+  padding-bottom: clamp(4.5rem, 8vw, 8.5rem);
 }
 
 /* Editorial Fluid Typography Scale */
@@ -142,7 +142,7 @@ button {
 }
 
 .border-architectural {
-  border-color: rgba(0, 0, 0, 0.08);
+  border-color: #E5E5E1;
 }
 
 .transition-quick {
