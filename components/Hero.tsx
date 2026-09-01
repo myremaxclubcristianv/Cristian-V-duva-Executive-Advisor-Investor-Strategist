@@ -5,17 +5,17 @@ import path from "path";
 
 export default function Hero() {
   const portraitDir = path.join(process.cwd(), "public/images/personal/portraits");
-  let portraitSrc: string | null = null;
+  let portraitSrc = "/images/personal/portraits/cristian-portrait-hero.svg";
 
   try {
     if (fs.existsSync(portraitDir)) {
-      const files = fs.readdirSync(portraitDir).filter((f) => !f.startsWith("."));
+      const files = fs.readdirSync(portraitDir).filter((f) => !f.startsWith(".") && (f.endsWith(".png") || f.endsWith(".jpg") || f.endsWith(".jpeg") || f.endsWith(".webp") || f.endsWith(".svg")));
       if (files.length > 0) {
         portraitSrc = `/images/personal/portraits/${files[0]}`;
       }
     }
   } catch {
-    portraitSrc = null;
+    portraitSrc = "/images/personal/portraits/cristian-portrait-hero.svg";
   }
 
   return (
@@ -64,38 +64,19 @@ export default function Hero() {
 
           {/* Archival Monograph Frame (Personal Portrait Priority) */}
           <div className="lg:col-span-5 space-y-3">
-            <div className="relative aspect-[4/5] w-full border border-[#E1E1DD] overflow-hidden bg-[#FFFFFF] shadow-xl group">
-              {portraitSrc ? (
-                <Image
-                  src={portraitSrc}
-                  alt="Cristian Văduva — Monograph Portrait"
-                  fill
-                  priority
-                  className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 opacity-95 group-hover:scale-105"
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                />
-              ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center bg-[#F0F0ED] p-8 text-center space-y-4">
-                  <div className="w-20 h-20 rounded-full border border-[#B89B72] flex items-center justify-center text-[#B89B72] font-display text-3xl font-semibold">
-                    CV
-                  </div>
-                  <div className="space-y-1">
-                    <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#111111] font-bold block">
-                      PERSONAL PORTRAIT ARCHIVE
-                    </span>
-                    <span className="font-mono text-[10px] text-[#5F5F5B] block font-semibold">
-                      EDITORIAL FRAME · AWAITING HEADSHOT UPLOAD
-                    </span>
-                    <span className="font-mono text-[9px] text-[#888884] block pt-1">
-                      /public/images/personal/portraits/
-                    </span>
-                  </div>
-                </div>
-              )}
+            <div className="relative aspect-[4/5] w-full border border-[#E1E1DD] overflow-hidden bg-[#181816] shadow-xl group">
+              <Image
+                src={portraitSrc}
+                alt="Cristian Văduva — Personal Monograph Portrait"
+                fill
+                priority
+                className="object-cover object-center opacity-95 group-hover:scale-105 transition-all duration-700"
+                sizes="(max-width: 1024px) 100vw, 45vw"
+              />
 
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#111111] font-mono text-[10px] uppercase tracking-widest bg-[#FFFFFF]/90 backdrop-blur-sm px-3 py-2 border border-black/5">
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#F6F6F3] font-mono text-[10px] uppercase tracking-widest bg-black/80 backdrop-blur-sm px-3 py-2 border border-white/10">
                 <span>CRISTIAN VĂDUVA</span>
-                <span className="text-[#B89B72]">EDITORIAL PORTRAIT</span>
+                <span className="text-[#B89B72]">PERSONAL PORTRAIT</span>
               </div>
             </div>
           </div>

@@ -5,17 +5,17 @@ import path from "path";
 
 export default function AboutSection() {
   const editorialDir = path.join(process.cwd(), "public/images/personal/editorial");
-  let editorialSrc: string | null = null;
+  let editorialSrc = "/images/personal/editorial/cristian-editorial-portrait.svg";
 
   try {
     if (fs.existsSync(editorialDir)) {
-      const files = fs.readdirSync(editorialDir).filter((f) => !f.startsWith("."));
+      const files = fs.readdirSync(editorialDir).filter((f) => !f.startsWith(".") && (f.endsWith(".png") || f.endsWith(".jpg") || f.endsWith(".jpeg") || f.endsWith(".webp") || f.endsWith(".svg")));
       if (files.length > 0) {
         editorialSrc = `/images/personal/editorial/${files[0]}`;
       }
     }
   } catch {
-    editorialSrc = null;
+    editorialSrc = "/images/personal/editorial/cristian-editorial-portrait.svg";
   }
 
   return (
@@ -30,27 +30,13 @@ export default function AboutSection() {
           {/* Left Column: Monograph Frame */}
           <div className="lg:col-span-5 space-y-3">
             <div className="relative aspect-[4/5] w-full border border-[#E1E1DD] overflow-hidden bg-[#F6F6F3] shadow-md">
-              {editorialSrc ? (
-                <Image
-                  src={editorialSrc}
-                  alt="Cristian Văduva — Monograph Profile"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="object-cover transition-transform duration-700 hover:scale-105"
-                />
-              ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center p-8 text-center space-y-3 bg-[#F0F0ED]">
-                  <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#111111] font-semibold block">
-                    EDITORIAL ARCHIVE
-                  </span>
-                  <span className="font-mono text-[10px] text-[#5F5F5B] block">
-                    /public/images/personal/editorial/
-                  </span>
-                  <p className="font-sans text-xs text-[#888884] font-light leading-relaxed max-w-xs">
-                    Upload profile photography to render visual monograph here.
-                  </p>
-                </div>
-              )}
+              <Image
+                src={editorialSrc}
+                alt="Cristian Văduva — Monograph Profile"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover transition-transform duration-700 hover:scale-105"
+              />
             </div>
             <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#5F5F5B] px-1">
               <span>MULTIDISCIPLINARY RIGOR</span>
