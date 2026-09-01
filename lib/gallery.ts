@@ -1,6 +1,7 @@
 export type GalleryCategory =
   | "ALL"
   | "PORTRAITS"
+  | "EDITORIAL"
   | "LIFE"
   | "BUSINESS"
   | "TRAVEL"
@@ -12,7 +13,9 @@ export interface GalleryItem {
   category: Exclude<GalleryCategory, "ALL">;
   title: string;
   subtitle?: string;
-  src: string;
+  src?: string;
+  isPlaceholder?: boolean;
+  uploadPath?: string;
   caption: string;
   location?: string;
   year?: string;
@@ -23,11 +26,24 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "p1",
     category: "PORTRAITS",
-    title: "Executive Portrait Monograph",
-    subtitle: "Executive Advisory Practice",
-    src: "/residence/command.png",
-    caption: "Cristian Văduva — Executive Advisor, Investor & Strategist",
-    location: "Bucharest",
+    title: "Executive Portrait — Cristian Văduva",
+    subtitle: "Official Studio Headshots",
+    isPlaceholder: true,
+    uploadPath: "/public/images/personal/portraits/",
+    caption: "Upload official portrait photography to render here",
+    location: "Bucharest / Monaco",
+    year: "2026",
+    aspectRatio: "portrait",
+  },
+  {
+    id: "e1",
+    category: "EDITORIAL",
+    title: "Executive Profile Monograph",
+    subtitle: "Publication & Media Spread",
+    isPlaceholder: true,
+    uploadPath: "/public/images/personal/editorial/",
+    caption: "Upload editorial profile photography to render here",
+    location: "Europe",
     year: "2026",
     aspectRatio: "portrait",
   },
@@ -46,7 +62,7 @@ export const galleryItems: GalleryItem[] = [
     id: "b1",
     category: "BUSINESS",
     title: "Executive Advisory Suite",
-    subtitle: "Capital & Advisory Mandates",
+    subtitle: "Capital & Advisory Desk",
     src: "/residence/office.png",
     caption: "High-discretion private consultation desk for European principals",
     location: "Bucharest",
@@ -94,17 +110,6 @@ export const galleryItems: GalleryItem[] = [
     src: "/residence/living.png",
     caption: "Bespoke Italian craftsmanship & architectural detail",
     location: "Bucharest",
-    year: "2026",
-    aspectRatio: "landscape",
-  },
-  {
-    id: "re3",
-    category: "REAL ESTATE",
-    title: "Private Art & Architecture Gallery",
-    subtitle: "Cultural & Asset Preservation",
-    src: "/residence/gallery.png",
-    caption: "Curation of high-value tangible assets and architectural parcels",
-    location: "Monaco / Dubai",
     year: "2026",
     aspectRatio: "landscape",
   },

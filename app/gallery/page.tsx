@@ -10,6 +10,7 @@ import { galleryItems, GalleryCategory, GalleryItem } from "@/lib/gallery";
 const categories: GalleryCategory[] = [
   "ALL",
   "PORTRAITS",
+  "EDITORIAL",
   "LIFE",
   "BUSINESS",
   "TRAVEL",
@@ -57,28 +58,28 @@ export default function GalleryPage() {
   }, [selectedImageIndex, handleClose, handleNext, handlePrev]);
 
   return (
-    <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-[#F7F7F5] text-[#111111]">
+    <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-[#F5F5F2] text-[#111111]">
       <Navigation />
 
       <main className="relative z-10 flex-1 pt-28 sm:pt-36 pb-20">
         <div className="site-container space-y-12">
           {/* Header */}
-          <div className="space-y-4 border-b border-black/5 pb-8">
+          <div className="space-y-4 border-b border-[#E5E5E1] pb-8">
             <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
               <Link href="/" className="hover:underline">HOME</Link>
               <span>/</span>
-              <span>PERSONAL & PROFESSIONAL GALLERY</span>
+              <span>VISUAL ARCHIVE</span>
             </div>
             <h1 className="font-display text-4xl sm:text-6xl text-[#111111] tracking-tight">
               Photography Monograph & Archive
             </h1>
-            <p className="font-sans text-base text-[#6B6B6B] font-light max-w-2xl leading-relaxed">
-              Curated visual history covering executive engagements, real estate holdings, lifestyle moments, and international travels.
+            <p className="font-sans text-base text-[#555555] font-light max-w-2xl leading-relaxed">
+              Curated photography covering executive engagements, real estate holdings, lifestyle moments, and international travels.
             </p>
           </div>
 
           {/* Category Filter Bar */}
-          <div className="flex flex-wrap items-center gap-2 border-b border-black/5 pb-6">
+          <div className="flex flex-wrap items-center gap-2 border-b border-[#E5E5E1] pb-6">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -89,8 +90,8 @@ export default function GalleryPage() {
                 }}
                 className={`font-mono text-xs uppercase tracking-[0.2em] px-4 py-2 border transition-colors cursor-pointer min-h-[44px] ${
                   activeCategory === cat
-                    ? "bg-[#111111] text-[#F7F7F5] border-[#111111] font-semibold"
-                    : "bg-[#FFFFFF] text-[#6B6B6B] border-black/10 hover:border-[#B89B72] hover:text-[#111111]"
+                    ? "bg-[#111111] text-[#F5F5F2] border-[#111111] font-semibold"
+                    : "bg-[#FFFFFF] text-[#555555] border-[#E5E5E1] hover:border-[#B89B72] hover:text-[#111111]"
                 }`}
               >
                 {cat}
@@ -104,17 +105,28 @@ export default function GalleryPage() {
               <div
                 key={item.id}
                 onClick={() => setSelectedImageIndex(idx)}
-                className="space-y-3 cursor-pointer group p-3 bg-[#FFFFFF] border border-black/5 shadow-sm hover:border-[#B89B72]/40 transition-all"
+                className="space-y-3 cursor-pointer group p-3 bg-[#FFFFFF] border border-[#E5E5E1] shadow-sm hover:border-[#B89B72]/40 transition-all"
               >
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#E8E8E5]">
-                  <Image
-                    src={item.src}
-                    alt={item.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute top-2 left-2 bg-[#111111]/80 text-[#F7F7F5] font-mono text-[9px] uppercase tracking-widest px-2.5 py-1 backdrop-blur-sm">
+                  {item.src ? (
+                    <Image
+                      src={item.src}
+                      alt={item.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center space-y-2 bg-[#E8E8E5]">
+                      <span className="font-mono text-[10px] uppercase tracking-widest text-[#B89B72] font-semibold block">
+                        ADD PHOTO
+                      </span>
+                      <span className="font-mono text-[9px] text-[#555555] block">
+                        {item.uploadPath}
+                      </span>
+                    </div>
+                  )}
+                  <div className="absolute top-2 left-2 bg-[#111111]/80 text-[#F5F5F2] font-mono text-[9px] uppercase tracking-widest px-2.5 py-1 backdrop-blur-sm">
                     {item.category}
                   </div>
                 </div>
@@ -127,7 +139,7 @@ export default function GalleryPage() {
                   <h3 className="font-display text-lg text-[#111111] leading-snug group-hover:text-[#B89B72] transition-colors">
                     {item.title}
                   </h3>
-                  <p className="font-sans text-xs text-[#6B6B6B] font-light line-clamp-2">
+                  <p className="font-sans text-xs text-[#555555] font-light line-clamp-2">
                     {item.caption}
                   </p>
                 </div>
@@ -159,15 +171,29 @@ export default function GalleryPage() {
 
           {/* Modal Image Body */}
           <div className="relative flex-1 my-6 flex items-center justify-center">
-            <div className="relative w-full h-full max-w-5xl max-h-[75vh]">
-              <Image
-                src={currentModalItem.src}
-                alt={currentModalItem.title}
-                fill
-                sizes="100vw"
-                className="object-contain"
-              />
-            </div>
+            {currentModalItem.src ? (
+              <div className="relative w-full h-full max-w-5xl max-h-[75vh]">
+                <Image
+                  src={currentModalItem.src}
+                  alt={currentModalItem.title}
+                  fill
+                  sizes="100vw"
+                  className="object-contain"
+                />
+              </div>
+            ) : (
+              <div className="p-12 border border-white/20 bg-black/60 text-center space-y-4 max-w-md">
+                <div className="font-mono text-xs uppercase tracking-widest text-[#E6D5C0] font-semibold">
+                  PORTRAIT UPLOAD PLACEHOLDER
+                </div>
+                <p className="font-sans text-xs text-[#A1A09B] font-light">
+                  Upload portrait photo file to:
+                </p>
+                <div className="font-mono text-xs text-white bg-white/10 p-3">
+                  {currentModalItem.uploadPath}
+                </div>
+              </div>
+            )}
 
             {/* Prev / Next Controls */}
             <button

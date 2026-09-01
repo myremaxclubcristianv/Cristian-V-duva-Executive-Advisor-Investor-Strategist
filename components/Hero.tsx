@@ -1,7 +1,24 @@
 import Link from "next/link";
 import Image from "next/image";
+import fs from "fs";
+import path from "path";
 
 export default function Hero() {
+  // Check if an authentic portrait file exists in public/images/personal/portraits/
+  const portraitDir = path.join(process.cwd(), "public/images/personal/portraits");
+  let portraitSrc: string | null = null;
+
+  try {
+    if (fs.existsSync(portraitDir)) {
+      const files = fs.readdirSync(portraitDir).filter((f) => !f.startsWith("."));
+      if (files.length > 0) {
+        portraitSrc = `/images/personal/portraits/${files[0]}`;
+      }
+    }
+  } catch {
+    portraitSrc = null;
+  }
+
   return (
     <section
       id="hero"
@@ -59,18 +76,38 @@ export default function Hero() {
           {/* Right Column: Dominant Portrait Panel */}
           <div className="lg:col-span-5 space-y-3">
             <div className="relative aspect-[4/5] w-full border border-[#E5E5E1] overflow-hidden bg-[#FFFFFF] shadow-lg group">
-              <Image
-                src="/residence/command.png"
-                alt="Cristian Văduva — Executive Portrait"
-                fill
-                priority
-                className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 opacity-90 group-hover:scale-105"
-                sizes="(max-width: 1024px) 100vw, 45vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white font-mono text-[10px] uppercase tracking-widest">
+              {portraitSrc ? (
+                <Image
+                  src={portraitSrc}
+                  alt="Cristian Văduva — Official Portrait"
+                  fill
+                  priority
+                  className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 opacity-95 group-hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 45vw"
+                />
+              ) : (
+                /* Honest Editorial Placeholder when no portrait file is uploaded */
+                <div className="w-full h-full flex flex-col items-center justify-center bg-[#E8E8E5] p-8 text-center space-y-4">
+                  <div className="w-16 h-16 rounded-full border border-[#B89B72] flex items-center justify-center text-[#B89B72] font-display text-2xl font-semibold">
+                    CV
+                  </div>
+                  <div className="space-y-1">
+                    <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#111111] font-semibold block">
+                      PORTRAIT / ADD IMAGE
+                    </span>
+                    <span className="font-mono text-[10px] text-[#555555] block">
+                      /public/images/personal/portraits/
+                    </span>
+                  </div>
+                  <p className="font-sans text-xs text-[#858585] font-light max-w-xs leading-relaxed">
+                    Upload official headshots to automatically render portrait visual here.
+                  </p>
+                </div>
+              )}
+
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#111111] font-mono text-[10px] uppercase tracking-widest bg-[#FFFFFF]/90 backdrop-blur-sm px-3 py-2 border border-black/5">
                 <span>CRISTIAN VĂDUVA</span>
-                <span className="text-[#E6D5C0]">EXECUTIVE OFFICE</span>
+                <span className="text-[#B89B72]">EXECUTIVE PORTRAIT</span>
               </div>
             </div>
 
