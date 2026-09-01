@@ -23,37 +23,37 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[100svh] w-full flex flex-col justify-between overflow-hidden bg-[#F6F6F3] text-[#111111] pt-16 sm:pt-24 pb-8 border-b border-[#E1E1DD]"
+      className="relative min-h-[100svh] w-full flex flex-col justify-between overflow-hidden bg-[#F6F6F3] text-[#111111] pt-20 sm:pt-28 pb-10 border-b border-[#E1E1DD]"
     >
-      {/* Top Minimal Identity Tag */}
+      {/* Top Identity Tag */}
       <div className="site-container pt-2 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.3em] text-[#888884]">
         <span>CRISTIAN VĂDUVA</span>
         <span>BUCHAREST · MONACO · EUROPE</span>
       </div>
 
-      {/* Hero Master Canvas: Person-First Composition */}
-      <div className="site-container my-auto py-4">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          {/* Dominant Real Portrait (6 Columns on Desktop / First on Mobile) */}
-          <div className="lg:col-span-6 order-1 lg:order-2 space-y-2">
-            <div className="relative aspect-[3/4] sm:aspect-[4/5] min-h-[50vh] sm:min-h-[60vh] w-full border border-[#E1E1DD] overflow-hidden bg-[#111111] text-[#F6F6F3] shadow-2xl group">
+      {/* Main Art-Directed Monograph Hero Canvas */}
+      <div className="site-container my-auto py-6 sm:py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+          {/* Dominant Real Portrait (6 Columns Desktop / First Visual Order Mobile) */}
+          <div className="lg:col-span-6 order-1 lg:order-2">
+            <div className="relative aspect-[4/5] min-h-[50vh] sm:min-h-[60vh] w-full border border-[#E1E1DD] overflow-hidden bg-[#111111] text-[#F6F6F3] shadow-2xl group">
               <Image
                 src={realPortraitSrc}
-                alt="Cristian Văduva — Executive Monograph Portrait"
+                alt="Cristian Văduva — Monograph Portrait"
                 fill
                 priority
-                className="object-cover object-center opacity-95 group-hover:scale-105 transition-all duration-700"
+                className="object-cover object-top opacity-95 group-hover:scale-[1.03] transition-transform duration-700"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
 
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#F6F6F3] font-mono text-[10px] uppercase tracking-widest bg-black/80 backdrop-blur-sm px-4 py-2.5 border border-white/10">
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[#F6F6F3] font-mono text-[10px] uppercase tracking-widest bg-black/85 backdrop-blur-sm px-4 py-2.5 border border-white/10">
                 <span>CRISTIAN VĂDUVA</span>
                 <span className="text-[#B89B72]">PERSONAL PORTRAIT</span>
               </div>
             </div>
           </div>
 
-          {/* Minimal Supporting Typography (6 Columns on Desktop / Second on Mobile) */}
+          {/* Restrained Iconic Signature & Identity (6 Columns Desktop) */}
           <div className="lg:col-span-6 order-2 lg:order-1 space-y-6">
             <div className="space-y-3">
               <h1 className="font-display text-brand-signature text-[#111111] uppercase select-none leading-none">
@@ -66,7 +66,7 @@ export default function Hero() {
             </div>
 
             <div className="border-l-2 border-[#B89B72] pl-5 py-1 max-w-xl">
-              <p className="font-display text-xl sm:text-3xl text-[#111111] leading-tight font-normal">
+              <p className="font-display text-xl sm:text-3xl text-[#111111] leading-snug font-normal">
                 PRIVATE ADVICE.<br />
                 <span className="italic text-[#5F5F5B]">STRATEGIC CAPITAL.</span><br />
                 REAL-WORLD VALUE.
