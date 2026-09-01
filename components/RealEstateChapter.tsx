@@ -1,120 +1,105 @@
 import Image from "next/image";
 import Link from "next/link";
 
-interface CityInfo {
-  name: string;
-  role: string;
+interface CityProperty {
+  city: string;
+  country: string;
+  tagline: string;
   description: string;
   imageSrc: string;
 }
 
-const cities: CityInfo[] = [
+const cities: CityProperty[] = [
   {
-    name: "BUCHAREST",
-    role: "HOME MARKET & DOMESTIC CAPITALS",
-    description: "Prime residential penthouses, landmark architectural restorations, and zoned commercial development parcels across Bucharest’s most prestigious corridors.",
+    city: "Bucharest",
+    country: "Romania",
+    tagline: "HERĂSTRĂU & PRIMAVERII PRIME ASSETS",
+    description: "Acquisition advisory and portfolio positioning for ultra-prime residential developments and commercial land holdings.",
     imageSrc: "/residence/exterior.png",
   },
   {
-    name: "MONACO",
-    role: "MEDITERRANEAN LUXURY & PRIVATE WEALTH",
-    description: "Off-market ultra-prime penthouses, yachting holdings, and cross-border private equity placement in Monaco’s premier wealth ecosystem.",
+    city: "Monaco",
+    country: "Principality of Monaco",
+    tagline: "MEDITERRANEAN CAPITAL PLACEMENT",
+    description: "Cross-border real estate strategy, family office holdings, and private liquidity optimization on the French Riviera.",
     imageSrc: "/residence/terrace.png",
   },
   {
-    name: "DUBAI",
-    role: "INTERNATIONAL GROWTH & ASSET DIVERSIFICATION",
-    description: "High-yield commercial parcels, luxury waterfront towers, and tax-efficient capital allocation in Middle Eastern growth hubs.",
-    imageSrc: "/residence/gallery.png",
+    city: "Dubai",
+    country: "United Arab Emirates",
+    tagline: "GLOBAL PROPERTY ADVISORY",
+    description: "High-value commercial mandates, luxury residential assets, and strategic Middle Eastern capital structuring.",
+    imageSrc: "/residence/living.png",
   },
-];
-
-const services = [
-  { num: "01", title: "BUYER REPRESENTATION", desc: "Confidential acquisition origination, due diligence, and direct negotiation for private buyers." },
-  { num: "02", title: "SELLER REPRESENTATION", desc: "Targeted off-market disposition strategies protecting privacy and securing optimal valuations." },
-  { num: "03", title: "PORTFOLIO POSITIONING", desc: "Strategic asset positioning, risk hedging, and multi-asset real estate curation." },
-  { num: "04", title: "OFF-MARKET ORIGINATION", desc: "Access to unlisted penthouses, commercial development sites, and private estates." },
 ];
 
 export default function RealEstateChapter() {
   return (
-    <section id="real-estate" className="site-section bg-[#FFFFFF] text-[#111111] border-b border-black/5">
-      <div className="site-container space-y-16 sm:space-y-24">
-        {/* Editorial Section Header */}
-        <div className="space-y-4 border-b border-black/5 pb-8">
-          <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold block">
-            05 / LUXURY REAL ESTATE
+    <section id="real-estate" className="site-chapter bg-[#111111] text-[#F6F6F3] border-b border-[#2B2B28]">
+      <div className="site-container space-y-16">
+        {/* Chapter Header */}
+        <div className="flex items-center justify-between border-b border-[#2B2B28] pb-6">
+          <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
+            CHAPTER III / THE WORLD
           </span>
-          <h2 className="font-display text-3xl sm:text-5xl text-[#111111] tracking-tight leading-tight">
-            REAL ESTATE IS MORE THAN PROPERTY.<br />
-            <span className="text-[#B89B72] italic font-normal">IT IS CAPITAL IN PHYSICAL FORM.</span>
+          <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#888884]">
+            LUXURY REAL ESTATE ARCHITECTURE
+          </span>
+        </div>
+
+        {/* Section Headline */}
+        <div className="space-y-4 max-w-4xl">
+          <h2 className="font-display text-4xl sm:text-6xl text-[#F6F6F3] tracking-tight leading-none">
+            REAL ESTATE IS MORE<br />
+            <span className="text-[#B89B72] italic font-normal">THAN PROPERTY.</span>
           </h2>
-          <p className="font-sans text-base sm:text-lg text-[#6B6B6B] font-light max-w-3xl leading-relaxed">
-            Representing buyers, family offices, and private principals across prime European and international luxury real estate markets.
+          <p className="font-sans text-base sm:text-lg text-[#888884] font-light leading-relaxed max-w-2xl pt-2">
+            Real estate represents capital preservation, generational liquidity, and physical sovereignty. We advise principals across prime European and international markets.
           </p>
         </div>
 
-        {/* 3 International Cities Cinematic Grid */}
-        <div className="space-y-8">
-          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#111111] font-semibold border-b border-black/10 pb-3">
-            INTERNATIONAL ADVISORY CENTERS
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {cities.map((c) => (
-              <div key={c.name} className="space-y-4 group">
-                <div className="relative aspect-[16/10] w-full border border-black/10 overflow-hidden bg-[#E8E8E5] shadow-sm">
-                  <Image
-                    src={c.imageSrc}
-                    alt={`${c.name} Real Estate Advisory`}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute top-3 left-3 bg-[#111111] text-[#F7F7F5] font-mono text-[10px] uppercase tracking-widest px-3 py-1">
-                    {c.name}
-                  </div>
-                </div>
-
-                <div className="space-y-2 pt-1">
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-[#B89B72] font-semibold block">
-                    {c.role}
-                  </span>
-                  <p className="font-sans text-xs text-[#6B6B6B] font-light leading-relaxed">
-                    {c.description}
-                  </p>
+        {/* Cities & Properties Spread */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          {cities.map((c) => (
+            <div key={c.city} className="space-y-6 group p-6 bg-[#181818] border border-[#2B2B28] hover:border-[#B89B72]/40 transition-colors">
+              <div className="relative aspect-[4/3] w-full border border-[#2B2B28] overflow-hidden bg-black">
+                <Image
+                  src={c.imageSrc}
+                  alt={`${c.city} Real Estate Advisory`}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+                />
+                <div className="absolute top-3 left-3 bg-black/80 text-[#B89B72] font-mono text-[9px] uppercase tracking-widest px-2.5 py-1 backdrop-blur-sm border border-white/10">
+                  {c.country}
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Real Estate Advisory Services Index */}
-        <div className="space-y-8 pt-6">
-          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#111111] font-semibold border-b border-black/10 pb-3">
-            CORE REAL ESTATE MANDATES
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((s) => (
-              <div key={s.num} className="p-6 border border-black/5 bg-[#F7F7F5] space-y-3">
-                <div className="flex items-center justify-between border-b border-black/5 pb-2">
-                  <span className="font-mono text-xs text-[#B89B72] font-semibold">{s.num}</span>
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-[#6B6B6B]">MANDATE</span>
+              <div className="space-y-2">
+                <div className="font-mono text-xs uppercase tracking-widest text-[#B89B72] font-semibold">
+                  {c.city}
                 </div>
-                <h3 className="font-display text-lg text-[#111111]">{s.title}</h3>
-                <p className="font-sans text-xs text-[#6B6B6B] font-light leading-relaxed">{s.desc}</p>
+                <h3 className="font-display text-xl text-[#F6F6F3] leading-snug">
+                  {c.tagline}
+                </h3>
+                <p className="font-sans text-xs text-[#888884] font-light leading-relaxed">
+                  {c.description}
+                </p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
-        <div className="pt-4 flex justify-end">
+        {/* Section Action Bar */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6 border-t border-[#2B2B28]">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-[#888884]">
+            INDEPENDENT ACQUISITION & PORTFOLIO COUNSEL
+          </span>
           <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-[#111111] hover:text-[#B89B72] transition-colors py-2 touch-active"
+            href="/real-estate"
+            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-[#B89B72] hover:text-[#FFFFFF] transition-colors py-2 touch-active"
           >
-            <span>DISCUSS AN ACTIVE REAL ESTATE MANDATE →</span>
+            <span>EXPLORE REAL ESTATE PRACTICE →</span>
           </Link>
         </div>
       </div>

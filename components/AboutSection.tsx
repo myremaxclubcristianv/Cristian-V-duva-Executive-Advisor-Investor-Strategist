@@ -4,7 +4,6 @@ import path from "path";
 import { biography } from "@/lib/content/biography";
 
 export default function AboutSection() {
-  // Check if an editorial portrait file exists in public/images/personal/editorial/
   const editorialDir = path.join(process.cwd(), "public/images/personal/editorial");
   let editorialSrc: string | null = null;
 
@@ -20,24 +19,23 @@ export default function AboutSection() {
   }
 
   return (
-    <section id="about" className="site-section bg-[#FFFFFF] text-[#111111] border-b border-[#E5E5E1]">
-      <div className="site-container space-y-16 sm:space-y-24">
-        {/* Section Header */}
-        <div className="space-y-3 border-b border-[#E5E5E1] pb-8">
-          <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold block">
-            02 / ABOUT CRISTIAN
+    <section id="about" className="site-chapter bg-[#FFFFFF] text-[#111111] border-b border-[#E1E1DD]">
+      <div className="site-container space-y-16">
+        {/* Chapter Header */}
+        <div className="flex items-center justify-between border-b border-[#E1E1DD] pb-6">
+          <span className="font-mono text-xs uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
+            CHAPTER II / THE PERSON
           </span>
-          <h2 className="font-display text-3xl sm:text-5xl text-[#111111] tracking-tight leading-tight">
-            THE PERSON<br />
-            <span className="text-[#B89B72] italic font-normal">BEHIND THE PROFESSIONAL.</span>
-          </h2>
+          <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#5F5F5B]">
+            BIOGRAPHY & PHILOSOPHY
+          </span>
         </div>
 
-        {/* Narrative & Image Spread */}
+        {/* Narrative & Monograph Spread */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          {/* Left Column: Portrait Monograph Panel */}
+          {/* Left Column: Monograph Frame */}
           <div className="lg:col-span-5 space-y-4 sticky top-28">
-            <div className="relative aspect-[4/5] w-full border border-[#E5E5E1] overflow-hidden bg-[#F5F5F2] shadow-md">
+            <div className="relative aspect-[4/5] w-full border border-[#E1E1DD] overflow-hidden bg-[#F6F6F3] shadow-md">
               {editorialSrc ? (
                 <Image
                   src={editorialSrc}
@@ -47,37 +45,38 @@ export default function AboutSection() {
                   className="object-cover transition-transform duration-700 hover:scale-105"
                 />
               ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center p-8 text-center space-y-3 bg-[#E8E8E5]">
+                <div className="w-full h-full flex flex-col items-center justify-center p-8 text-center space-y-3 bg-[#F0F0ED]">
                   <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#111111] font-semibold block">
-                    EDITORIAL PHOTO / ADD IMAGE
+                    EDITORIAL ARCHIVE
                   </span>
-                  <span className="font-mono text-[10px] text-[#555555] block">
+                  <span className="font-mono text-[10px] text-[#5F5F5B] block">
                     /public/images/personal/editorial/
                   </span>
-                  <p className="font-sans text-xs text-[#858585] font-light leading-relaxed max-w-xs">
-                    Upload editorial portraits to render here.
+                  <p className="font-sans text-xs text-[#888884] font-light leading-relaxed max-w-xs">
+                    Upload editorial profile photography to render visual monograph here.
                   </p>
                 </div>
               )}
             </div>
-            <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#555555] px-1">
-              <span>EDITORIAL MONOGRAPH</span>
-              <span className="text-[#B89B72]">BUCHAREST · MONACO</span>
+            <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#5F5F5B] px-1">
+              <span>MULTIDISCIPLINARY RIGOR</span>
+              <span className="text-[#B89B72]">MADRID · AMIENS · MALTA</span>
             </div>
           </div>
 
           {/* Right Column: Verified Story Narrative */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
-              <h3 className="font-display text-2xl sm:text-3xl text-[#111111] tracking-tight">
-                Multidisciplinary Rigor & International Perspective
-              </h3>
-              <p className="font-sans text-base sm:text-lg text-[#555555] font-light leading-relaxed">
+              <h2 className="font-display text-3xl sm:text-5xl text-[#111111] tracking-tight leading-none font-semibold">
+                THE PERSON BEHIND<br />
+                <span className="text-[#B89B72] italic font-normal">THE DECISIONS.</span>
+              </h2>
+              <p className="font-sans text-lg sm:text-xl text-[#5F5F5B] font-light leading-relaxed pt-2">
                 {biography.shortDescription}
               </p>
             </div>
 
-            <div className="space-y-6 font-sans text-sm sm:text-base text-[#555555] font-light leading-relaxed">
+            <div className="space-y-6 font-sans text-sm sm:text-base text-[#5F5F5B] font-light leading-relaxed">
               <p>
                 Cristian Văduva is an executive advisor and investor specializing in luxury real estate, capital markets, and cross-border asset protection. He represents buyers, family offices, and institutional investors in transactions involving prime property, commercial developments, and strategic asset allocation across European hubs.
               </p>
@@ -90,7 +89,7 @@ export default function AboutSection() {
             </div>
 
             {/* Quick Credentials Summary Index */}
-            <div className="pt-6 border-t border-[#E5E5E1] grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="pt-8 border-t border-[#E1E1DD] grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="space-y-1">
                 <span className="font-mono text-xs uppercase tracking-widest text-[#B89B72] font-semibold block">DEGREES</span>
                 <span className="font-sans text-xs text-[#111111] font-medium block">Economics · Ecology · Law</span>
