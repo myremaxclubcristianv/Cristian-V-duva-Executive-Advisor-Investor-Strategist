@@ -29,14 +29,14 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Cristian Văduva — Executive Advisor · Investor · Strategist",
   description: "Bespoke advisory for ultra-prime real estate acquisitions, strategic capital allocation, and executive leadership across Europe.",
-  metadataBase: new URL("https://cristianvaduva.com"),
+  metadataBase: new URL("https://executive.cristianvaduva.com"),
   alternates: {
-    canonical: "https://cristianvaduva.com",
+    canonical: "https://executive.cristianvaduva.com/",
   },
   openGraph: {
     title: "Cristian Văduva — Executive Advisor · Investor · Strategist",
     description: "Bespoke advisory for ultra-prime real estate acquisitions, strategic capital allocation, and executive leadership across Europe.",
-    url: "https://cristianvaduva.com",
+    url: "https://executive.cristianvaduva.com/",
     siteName: "Cristian Văduva",
     type: "website",
     locale: "en_US",
@@ -73,12 +73,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://cristianvaduva.com/#person",
+      "@id": "https://executive.cristianvaduva.com/#person",
       "name": "Cristian Văduva",
       "jobTitle": "Executive Advisor · Investor · Strategist",
       "description": "Bespoke advisory for ultra-prime real estate acquisitions, strategic capital allocation, and executive leadership across Europe.",
-      "url": "https://cristianvaduva.com",
-      "image": "https://cristianvaduva.com/residence/exterior.png",
+      "url": "https://executive.cristianvaduva.com/",
+      "image": "https://executive.cristianvaduva.com/images/personal/portraits/cristian-headshot.jpg",
       "sameAs": [
         "https://linkedin.com/in/cristianvaduva",
         "https://www.youtube.com/@CristianVaduvaCV",
@@ -96,12 +96,12 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://cristianvaduva.com/#website",
-      "url": "https://cristianvaduva.com",
-      "name": "Cristian Văduva",
+      "@id": "https://executive.cristianvaduva.com/#website",
+      "url": "https://executive.cristianvaduva.com/",
+      "name": "Cristian Văduva — Executive Advisory",
       "description": "Private Digital Residence & Executive Advisory of Cristian Văduva",
       "publisher": {
-        "@id": "https://cristianvaduva.com/#person"
+        "@id": "https://executive.cristianvaduva.com/#person"
       }
     }
   ]

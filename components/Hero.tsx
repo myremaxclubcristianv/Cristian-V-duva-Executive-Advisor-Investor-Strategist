@@ -10,7 +10,7 @@ export default function Hero() {
   try {
     if (fs.existsSync(portraitDir)) {
       const files = fs.readdirSync(portraitDir).filter(
-        (f) => !f.startsWith(".") && (f.endsWith(".png") || f.endsWith(".jpg") || f.endsWith(".jpeg") || f.endsWith(".webp"))
+        (f) => !f.startsWith(".") && (f.endsWith(".png") || f.endsWith(".jpg") || f.endsWith(".jpeg") || f.endsWith(".webp") || f.endsWith(".avif"))
       );
       if (files.length > 0) {
         realPortraitSrc = `/images/personal/portraits/${files[0]}`;

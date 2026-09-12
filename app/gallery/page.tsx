@@ -117,14 +117,7 @@ export default function GalleryPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   ) : (
-                    <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center space-y-2 bg-[#E8E8E5]">
-                      <span className="font-mono text-[10px] uppercase tracking-widest text-[#B89B72] font-semibold block">
-                        ADD PHOTO
-                      </span>
-                      <span className="font-mono text-[9px] text-[#555555] block">
-                        {item.uploadPath}
-                      </span>
-                    </div>
+                    <div className="w-full h-full bg-[#E8E8E5]" />
                   )}
                   <div className="absolute top-2 left-2 bg-[#111111]/80 text-[#F5F5F2] font-mono text-[9px] uppercase tracking-widest px-2.5 py-1 backdrop-blur-sm">
                     {item.category}
@@ -182,17 +175,7 @@ export default function GalleryPage() {
                 />
               </div>
             ) : (
-              <div className="p-12 border border-white/20 bg-black/60 text-center space-y-4 max-w-md">
-                <div className="font-mono text-xs uppercase tracking-widest text-[#E6D5C0] font-semibold">
-                  PORTRAIT UPLOAD PLACEHOLDER
-                </div>
-                <p className="font-sans text-xs text-[#A1A09B] font-light">
-                  Upload portrait photo file to:
-                </p>
-                <div className="font-mono text-xs text-white bg-white/10 p-3">
-                  {currentModalItem.uploadPath}
-                </div>
-              </div>
+              <div className="w-full h-full max-w-5xl max-h-[75vh] bg-[#1a1a1a]" />
             )}
 
             {/* Prev / Next Controls */}

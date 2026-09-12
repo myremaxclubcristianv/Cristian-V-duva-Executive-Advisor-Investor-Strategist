@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy & GDPR Statement — Cristian Văduva",
   description: "Comprehensive GDPR data privacy policy explaining categories of personal data, processing purposes, legal bases, retention, and user rights.",
   alternates: {
-    canonical: "https://cristianvaduva.com/privacy",
+    canonical: "https://executive.cristianvaduva.com/privacy",
   },
 };
 

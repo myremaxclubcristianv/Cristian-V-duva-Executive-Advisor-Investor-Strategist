@@ -15,7 +15,7 @@ const properties: PropertyVisual[] = [
     country: "ROMANIA",
     title: "PRIVATE RESIDENCES & PRIME LAND",
     statement: "Selection, positioning, and acquisition representation for ultra-prime developments.",
-    imageSrc: "/residence/exterior.png",
+    imageSrc: "/residence/gallery.png",
   },
   {
     city: "MONACO",

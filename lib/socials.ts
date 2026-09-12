@@ -39,13 +39,7 @@ export const socialLinks: SocialLink[] = [
   // },
 ];
 
-export const additionalSocials: SocialLink[] = [
-  {
-    platform: "telegram-contact",
-    url: "https://t.me/CristianVaduva",
-    displayName: "Direct Message",
-  },
-];
+export const additionalSocials: SocialLink[] = [];
 
 export const getSocialByPlatform = (platform: string): SocialLink | undefined => {
   return socialLinks.find((s) => s.platform === platform);

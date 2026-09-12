@@ -35,12 +35,12 @@ export default function ContactSection() {
           </a>
 
           <a
-            href="https://t.me/cristianvaduva"
+            href="https://t.me/capitalinvestcristianvaduva"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#F6F6F3] hover:text-[#B89B72] transition-colors py-2"
           >
-            TELEGRAM: @cristianvaduva
+            TELEGRAM: @capitalinvestcristianvaduva
           </a>
         </div>
 

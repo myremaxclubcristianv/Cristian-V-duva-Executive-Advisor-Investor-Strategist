@@ -13,9 +13,7 @@ export interface GalleryItem {
   category: Exclude<GalleryCategory, "ALL">;
   title: string;
   subtitle?: string;
-  src?: string;
-  isPlaceholder?: boolean;
-  uploadPath?: string;
+  src: string;
   caption: string;
   location?: string;
   year?: string;
@@ -28,9 +26,8 @@ export const galleryItems: GalleryItem[] = [
     category: "PORTRAITS",
     title: "Executive Portrait — Cristian Văduva",
     subtitle: "Official Studio Headshots",
-    isPlaceholder: true,
-    uploadPath: "/public/images/personal/portraits/",
-    caption: "Upload official portrait photography to render here",
+    src: "/images/personal/portraits/cristian-headshot.jpg",
+    caption: "Official portrait of Cristian Văduva, Executive Advisor & Strategist",
     location: "Bucharest / Monaco",
     year: "2026",
     aspectRatio: "portrait",
@@ -40,9 +37,8 @@ export const galleryItems: GalleryItem[] = [
     category: "EDITORIAL",
     title: "Executive Profile Monograph",
     subtitle: "Publication & Media Spread",
-    isPlaceholder: true,
-    uploadPath: "/public/images/personal/editorial/",
-    caption: "Upload editorial profile photography to render here",
+    src: "/images/personal/editorial/cristian-editorial.jpg",
+    caption: "Executive editorial profile and monograph feature",
     location: "Europe",
     year: "2026",
     aspectRatio: "portrait",

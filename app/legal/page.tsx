@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Legal & Corporate Information — Cristian Văduva",
   description: "Institutional legal notice, operator identity, intellectual property, and regulatory transparency for Cristian Văduva and AiX Media platforms.",
   alternates: {
-    canonical: "https://cristianvaduva.com/legal",
+    canonical: "https://executive.cristianvaduva.com/legal",
   },
 };
 
@@ -27,7 +27,7 @@ export default function LegalPage() {
             <h2 className="font-display text-2xl text-text-primary">1. Platform Operator & Identity</h2>
           </div>
           <p className="text-sm">
-            This digital platform (<span className="text-text-primary font-mono">cristianvaduva.com</span>) and related digital channels operate as the official professional identity, executive advisory desk, and editorial media platform of <strong className="text-text-primary font-medium">Cristian Văduva</strong> (Executive Advisor · Investor · Strategist).
+            This digital platform (<span className="text-text-primary font-mono">executive.cristianvaduva.com</span>) and related digital channels operate as the official professional identity, executive advisory desk, and editorial media platform of <strong className="text-text-primary font-medium">Cristian Văduva</strong> (Executive Advisor · Investor · Strategist).
           </p>
           <div className="pt-4 border-t border-surface-secondary/60 grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-xs">
             <div>

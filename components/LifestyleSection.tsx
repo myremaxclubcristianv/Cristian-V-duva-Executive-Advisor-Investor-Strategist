@@ -16,7 +16,7 @@ export default function LifestyleSection() {
       const fullPath = path.join(process.cwd(), "public", dirRelativePath);
       if (fs.existsSync(fullPath)) {
         const files = fs.readdirSync(fullPath).filter(
-          (f) => !f.startsWith(".") && (f.endsWith(".png") || f.endsWith(".jpg") || f.endsWith(".jpeg") || f.endsWith(".webp"))
+          (f) => !f.startsWith(".") && (f.endsWith(".png") || f.endsWith(".jpg") || f.endsWith(".jpeg") || f.endsWith(".webp") || f.endsWith(".avif"))
         );
         if (files.length > 0) {
           return `${dirRelativePath}/${files[0]}`;
@@ -56,23 +56,7 @@ export default function LifestyleSection() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               ) : (
-                <div className="w-full h-full flex flex-col justify-between p-6 bg-[#F0F0ED] text-[#111111] select-none">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
-                    PERSONAL LIFESTYLE ARCHIVE
-                  </span>
-                  <div className="space-y-1 my-auto">
-                    <span className="font-display text-3xl sm:text-4xl font-light tracking-tight block">
-                      CRISTIAN VĂDUVA
-                    </span>
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-[#5F5F5B] block">
-                      LIFESTYLE & PRIVATE MONOGRAPH
-                    </span>
-                  </div>
-                  <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#888884] pt-4 border-t border-[#E1E1DD]">
-                    <span>/public/images/personal/lifestyle/</span>
-                    <span className="text-[#B89B72]">SLOT / 01</span>
-                  </div>
-                </div>
+                <div className="w-full h-full bg-[#F6F6F3]" />
               )}
             </div>
             <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#5F5F5B]">
@@ -95,18 +79,7 @@ export default function LifestyleSection() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 ) : (
-                  <div className="w-full h-full flex flex-col justify-between p-5 bg-[#F0F0ED] text-[#111111] select-none">
-                    <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
-                      TRAVEL ARCHIVE
-                    </span>
-                    <span className="font-display text-xl text-[#111111] font-light my-auto">
-                      INTERNATIONAL MONOGRAPH
-                    </span>
-                    <div className="flex items-center justify-between font-mono text-[9px] uppercase tracking-widest text-[#888884]">
-                      <span>/personal/travel/</span>
-                      <span className="text-[#B89B72]">SLOT / 02</span>
-                    </div>
-                  </div>
+                  <div className="w-full h-full bg-[#F6F6F3]" />
                 )}
               </div>
               <span className="font-mono text-[10px] uppercase tracking-widest text-[#5F5F5B] block">
@@ -126,18 +99,7 @@ export default function LifestyleSection() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 ) : (
-                  <div className="w-full h-full flex flex-col justify-between p-5 bg-[#F0F0ED] text-[#111111] select-none">
-                    <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-[#B89B72] font-semibold">
-                      BUSINESS & MEDIA
-                    </span>
-                    <span className="font-display text-xl text-[#111111] font-light my-auto">
-                      EXECUTIVE MANDATES
-                    </span>
-                    <div className="flex items-center justify-between font-mono text-[9px] uppercase tracking-widest text-[#888884]">
-                      <span>/personal/business/</span>
-                      <span className="text-[#B89B72]">SLOT / 03</span>
-                    </div>
-                  </div>
+                  <div className="w-full h-full bg-[#F6F6F3]" />
                 )}
               </div>
               <span className="font-mono text-[10px] uppercase tracking-widest text-[#5F5F5B] block">

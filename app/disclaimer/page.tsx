@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Disclaimer & Financial Notice — Cristian Văduva",
   description: "Important legal and financial disclaimer regarding editorial market perspectives, real estate valuations, and investment information.",
   alternates: {
-    canonical: "https://cristianvaduva.com/disclaimer",
+    canonical: "https://executive.cristianvaduva.com/disclaimer",
   },
 };
 
@@ -29,7 +29,7 @@ export default function DisclaimerPage() {
             Editorial Perspectives & Strategic Intelligence
           </h2>
           <p className="text-sm">
-            All materials, market statistics, yield metrics, property analyses, video commentaries, and macroeconomic dispatches published on <span className="font-mono text-text-primary">cristianvaduva.com</span> are prepared strictly for general educational and editorial informational purposes.
+            All materials, market statistics, yield metrics, property analyses, video commentaries, and macroeconomic dispatches published on <span className="font-mono text-text-primary">executive.cristianvaduva.com</span> are prepared strictly for general educational and editorial informational purposes.
           </p>
           <p className="text-sm">
             Nothing on this platform constitutes, or should be construed as, individualized financial, investment, legal, tax, or professional real estate valuation advice.

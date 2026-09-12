@@ -10,7 +10,7 @@ export default function AboutSection() {
   try {
     if (fs.existsSync(editorialDir)) {
       const files = fs.readdirSync(editorialDir).filter(
-        (f) => !f.startsWith(".") && (f.endsWith(".png") || f.endsWith(".jpg") || f.endsWith(".jpeg") || f.endsWith(".webp"))
+        (f) => !f.startsWith(".") && (f.endsWith(".png") || f.endsWith(".jpg") || f.endsWith(".jpeg") || f.endsWith(".webp") || f.endsWith(".avif"))
       );
       if (files.length > 0) {
         realEditorialSrc = `/images/personal/editorial/${files[0]}`;

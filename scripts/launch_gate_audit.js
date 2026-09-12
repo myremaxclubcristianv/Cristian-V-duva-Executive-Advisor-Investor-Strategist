@@ -51,17 +51,17 @@ async function runLaunchGate() {
 
   // 1. Check Public Domain
   console.log('--- 1. PUBLIC PRODUCTION DOMAIN CHECK ---');
-  const domainStatus = await checkHttps('cristianvaduva.com');
-  console.log('Public https://cristianvaduva.com Status:', domainStatus.reachable ? `Reachable (HTTP ${domainStatus.statusCode})` : `Offline/DNS Pending (${domainStatus.error})`);
+  const domainStatus = await checkHttps('executive.cristianvaduva.com');
+  console.log('Public https://executive.cristianvaduva.com Status:', domainStatus.reachable ? `Reachable (HTTP ${domainStatus.statusCode})` : `Offline/DNS Pending (${domainStatus.error})`);
 
   // 2. Production HTML Verification
   console.log('\n--- 2. PRODUCTION HTML VERIFICATION ---');
   const home = await checkLocal('/');
   console.log('Home status:', home.statusCode, `(${home.length} bytes)`);
 
-  const hasCanonical = home.body.includes('<link rel="canonical" href="https://cristianvaduva.com"/>') || home.body.includes('<link rel="canonical" href="https://cristianvaduva.com"');
+  const hasCanonical = home.body.includes('<link rel="canonical" href="https://executive.cristianvaduva.com/"/>') || home.body.includes('<link rel="canonical" href="https://executive.cristianvaduva.com/"');
   const hasTitle = home.body.includes('Cristian Văduva — Executive Advisor · Investor · Strategist');
-  const hasOG = home.body.includes('https://cristianvaduva.com/residence/exterior.png');
+  const hasOG = home.body.includes('https://executive.cristianvaduva.com/residence/exterior.png') || home.body.includes('/residence/exterior.png');
   const hasJsonLd = home.body.includes('application/ld+json') && home.body.includes('Cristian Văduva') && home.body.includes('Executive Advisor');
 
   console.log('Canonical verified:', hasCanonical ? 'PASS' : 'FAIL');
