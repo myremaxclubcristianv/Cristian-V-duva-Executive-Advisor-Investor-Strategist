@@ -12,10 +12,9 @@ export default function AppleHeroCadran() {
 
       <div className="site-container relative z-10 space-y-12 sm:space-y-16">
         
-        {/* Top Badges & Live Status */}
+        {/* Top Badges & Geographic Tag */}
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-xl text-xs font-mono tracking-widest text-[#B89B72] shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          <div className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-xl text-xs font-mono tracking-widest text-[#B89B72] shadow-sm">
             <span>BUCHAREST · MONACO · DUBAI</span>
           </div>
 

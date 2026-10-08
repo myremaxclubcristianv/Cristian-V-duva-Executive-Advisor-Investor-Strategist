@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { StoredPhoto } from "@/lib/photoStore";
+import { StoredPhoto, PhotoCategory, PhotoOrientation } from "@/lib/photoStore";
 import {
   Upload,
   Image as ImageIcon,
@@ -23,18 +23,20 @@ import {
   MapPin,
   Calendar,
   Grid,
+  Crown,
 } from "lucide-react";
 import { YoutubeIcon } from "@/components/icons/SocialIcons";
 
-const CATEGORIES = [
+const CATEGORIES: PhotoCategory[] = [
   "PORTRAITS",
   "REAL ESTATE",
   "BUSINESS",
   "EDITORIAL",
-  "LIFE",
+  "LIFESTYLE",
   "TRAVEL",
   "MEDIA",
-] as const;
+  "ARCHIVE",
+];
 
 export default function AdminPage() {
   const router = useRouter();
@@ -51,12 +53,13 @@ export default function AdminPage() {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [title, setTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
-  const [category, setCategory] = useState<string>("PORTRAITS");
+  const [category, setCategory] = useState<PhotoCategory>("PORTRAITS");
   const [caption, setCaption] = useState("");
   const [location, setLocation] = useState("Bucharest / Monaco");
   const [year, setYear] = useState(new Date().getFullYear().toString());
-  const [aspectRatio, setAspectRatio] = useState<"portrait" | "landscape" | "square">("landscape");
+  const [orientation, setOrientation] = useState<PhotoOrientation>("landscape");
   const [featured, setFeatured] = useState(true);
+  const [hero, setHero] = useState(false);
 
   const [uploading, setUploading] = useState(false);
   const [uploadSuccess, setUploadSuccess] = useState(false);
@@ -151,8 +154,9 @@ export default function AdminPage() {
       formData.append("caption", caption);
       formData.append("location", location);
       formData.append("year", year);
-      formData.append("aspectRatio", aspectRatio);
+      formData.append("orientation", orientation);
       formData.append("featured", featured.toString());
+      formData.append("hero", hero.toString());
 
       const res = await fetch("/api/photos", {
         method: "POST",
@@ -168,6 +172,7 @@ export default function AdminPage() {
         setTitle("");
         setSubtitle("");
         setCaption("");
+        setHero(false);
         if (fileInputRef.current) fileInputRef.current.value = "";
         // Reload photos list
         await loadPhotos();
@@ -182,7 +187,7 @@ export default function AdminPage() {
   };
 
   // Toggle Featured
-  const toggleFeatured = async (photo: StoredPhoto) => {
+  const handleToggleFeatured = async (photo: StoredPhoto) => {
     try {
       const res = await fetch(`/api/photos/${photo.id}`, {
         method: "PATCH",
@@ -199,18 +204,45 @@ export default function AdminPage() {
     }
   };
 
-  // Delete Photo
-  const handleDeletePhoto = async (id: string) => {
-    if (!confirm("Sigur doriți să ștergeți această fotografie din galerie?")) {
+  // Set as Hero (Strictly 1 active Hero)
+  const handleSetHero = async (photo: StoredPhoto) => {
+    if (photo.hero) return; // Already hero
+
+    if (!confirm(`Setați fotografia "${photo.title}" ca imagine principală HERO pe homepage? Aceasta va înlocui fotografia Hero actuală.`)) {
       return;
     }
 
     try {
-      const res = await fetch(`/api/photos/${id}`, {
+      const res = await fetch(`/api/photos/${photo.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ hero: true }),
+      });
+      if (res.ok) {
+        setPhotos((prev) =>
+          prev.map((p) => ({
+            ...p,
+            hero: p.id === photo.id,
+          }))
+        );
+      }
+    } catch (err) {
+      console.error("Error setting hero photo:", err);
+    }
+  };
+
+  // Delete Photo
+  const handleDeletePhoto = async (photo: StoredPhoto) => {
+    if (!confirm(`Sigur doriți să ștergeți fotografia "${photo.title}" din galerie și storage?`)) {
+      return;
+    }
+
+    try {
+      const res = await fetch(`/api/photos/${photo.id}`, {
         method: "DELETE",
       });
       if (res.ok) {
-        setPhotos((prev) => prev.filter((p) => p.id !== id));
+        setPhotos((prev) => prev.filter((p) => p.id !== photo.id));
       } else {
         alert("Eroare la ștergerea fotografiei.");
       }
@@ -249,6 +281,8 @@ export default function AdminPage() {
       ? photos
       : photos.filter((p) => p.category === selectedCategory);
 
+  const currentHeroPhoto = photos.find((p) => p.hero);
+
   return (
     <div className="min-h-screen bg-[#070707] text-[#F5F5F7] selection:bg-[#B89B72]/30 selection:text-white">
       <Navigation />
@@ -256,7 +290,7 @@ export default function AdminPage() {
       <main className="pt-28 sm:pt-36 pb-28">
         <div className="site-container space-y-12">
           
-          {/* Top Header / Apple Cadran Bar */}
+          {/* Top Header / Control Center Bar */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 bg-[#121212] border border-white/10 rounded-3xl p-6 sm:p-8 backdrop-blur-xl">
             <div className="space-y-2">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#B89B72]/15 border border-[#B89B72]/30 text-[#B89B72] text-[11px] font-mono tracking-widest uppercase">
@@ -267,7 +301,7 @@ export default function AdminPage() {
                 Executive Media & Architecture Studio
               </h1>
               <p className="text-sm text-neutral-400 font-light">
-                Gestionați galeria foto, încărcați imagini noi și monitorizați sincronizarea automată cu canalul YouTube.
+                Gestionați stocarea fotografiilor, definiți fotografia Hero, arhiva Featured și monitorizați sincronizarea YouTube.
               </p>
             </div>
 
@@ -301,7 +335,7 @@ export default function AdminPage() {
           {/* Quick Metrics Cadrane Bento */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             
-            {/* Cadran 1: Total Photos */}
+            {/* Cadran 1: Total Photos & Roles */}
             <div className="bg-[#121212] border border-white/10 rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between">
               <div className="flex items-center justify-between text-neutral-400">
                 <span className="text-xs font-mono uppercase tracking-wider">Fotografii în Galerie</span>
@@ -310,24 +344,40 @@ export default function AdminPage() {
               <div className="mt-4">
                 <div className="text-4xl font-semibold text-white">{photos.length}</div>
                 <div className="text-xs text-neutral-400 mt-1">
-                  {photos.filter((p) => p.featured).length} evidențiate pe homepage
+                  {photos.filter((p) => p.featured).length} marcate Featured · 1 Hero activ
                 </div>
               </div>
             </div>
 
-            {/* Cadran 2: YouTube Auto-Sync Status */}
+            {/* Cadran 2: Active Hero Photo Status */}
             <div className="bg-[#121212] border border-white/10 rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between">
               <div className="flex items-center justify-between text-neutral-400">
-                <span className="text-xs font-mono uppercase tracking-wider">YouTube Channel Live</span>
+                <span className="text-xs font-mono uppercase tracking-wider">Fotografie Hero Activă</span>
+                <Crown className="w-5 h-5 text-amber-400" />
+              </div>
+              <div className="mt-4">
+                <div className="text-sm font-semibold text-white truncate">
+                  {currentHeroPhoto?.title || "Implicită"}
+                </div>
+                <div className="text-xs text-neutral-400 mt-1 font-mono">
+                  {currentHeroPhoto?.category || "PORTRAIT"} · {currentHeroPhoto?.location || "București"}
+                </div>
+              </div>
+            </div>
+
+            {/* Cadran 3: YouTube Channel Sync Status */}
+            <div className="bg-[#121212] border border-white/10 rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between">
+              <div className="flex items-center justify-between text-neutral-400">
+                <span className="text-xs font-mono uppercase tracking-wider">YouTube Channel Sync</span>
                 <YoutubeIcon className="w-5 h-5 text-red-500" />
               </div>
               <div className="mt-4">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-4xl font-semibold text-white">
-                    {youtubeCount !== null ? youtubeCount : "..."}
+                  <span className="text-3xl font-semibold text-white">
+                    {youtubeCount !== null ? `${youtubeCount} video-uri` : "Sincronizat"}
                   </span>
                   <span className="text-xs text-green-400 font-mono flex items-center gap-1">
-                    <CheckCircle2 className="w-3 h-3" /> Auto-Sync Activ
+                    <CheckCircle2 className="w-3 h-3" /> Auto-Sync
                   </span>
                 </div>
                 <div className="text-xs text-neutral-400 mt-1 flex items-center justify-between">
@@ -338,22 +388,8 @@ export default function AdminPage() {
                     className="text-[#B89B72] hover:underline flex items-center gap-1 cursor-pointer"
                   >
                     <RefreshCw className={`w-3 h-3 ${syncingYoutube ? "animate-spin" : ""}`} />
-                    Sincronizează acum
+                    Sincronizează
                   </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Cadran 3: Ecosystem Sync */}
-            <div className="bg-[#121212] border border-white/10 rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between">
-              <div className="flex items-center justify-between text-neutral-400">
-                <span className="text-xs font-mono uppercase tracking-wider">Ecosistem Activ</span>
-                <Sparkles className="w-5 h-5 text-[#B89B72]" />
-              </div>
-              <div className="mt-4">
-                <div className="text-lg font-medium text-white truncate">cristianvaduva.com</div>
-                <div className="text-xs text-neutral-400 mt-1">
-                  AiXLuxury · Bucharest · Monaco · Dubai
                 </div>
               </div>
             </div>
@@ -368,10 +404,10 @@ export default function AdminPage() {
               </div>
               <div>
                 <h2 className="text-xl sm:text-2xl font-semibold text-white">
-                  Încărcare Fotografie Nouă
+                  Încărcare Fotografie & Atribuire Roluri
                 </h2>
                 <p className="text-xs sm:text-sm text-neutral-400">
-                  Adăugați fotografii de înaltă rezoluție în galeria oficială Cristian Văduva.
+                  Adăugați fotografii de înaltă rezoluție în storage persistent și atribuiți rolul (Hero, Featured sau Galerie).
                 </p>
               </div>
             </div>
@@ -382,7 +418,7 @@ export default function AdminPage() {
                 {/* Left: Drag & Drop / Image Preview */}
                 <div className="lg:col-span-5 space-y-4">
                   <label className="text-xs font-mono uppercase tracking-wider text-neutral-300 block">
-                    Fișier Imagine (JPG, PNG, WEBP)
+                    Fișier Imagine (JPG, PNG, WEBP, AVIF — max 25MB)
                   </label>
 
                   <div
@@ -425,7 +461,7 @@ export default function AdminPage() {
                             Faceți clic sau trageți fotografia aici
                           </p>
                           <p className="text-xs text-neutral-400">
-                            Recomandat: 1920x1080 sau rezoluție înaltă portrait
+                            Recomandat: Rezoluție înaltă, portret sau landscape
                           </p>
                         </div>
                       </div>
@@ -445,7 +481,7 @@ export default function AdminPage() {
                       type="text"
                       value={title}
                       onChange={(e) => setTitle(e.target.value)}
-                      placeholder="Ex: Cristian Văduva — Monaco Executive Portrait"
+                      placeholder="Ex: Cristian Văduva — Executive Advisory Desk"
                       required
                       className="w-full px-4 py-3 bg-black/50 border border-white/15 rounded-2xl text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-[#B89B72]"
                     />
@@ -458,7 +494,7 @@ export default function AdminPage() {
                     </label>
                     <select
                       value={category}
-                      onChange={(e) => setCategory(e.target.value)}
+                      onChange={(e) => setCategory(e.target.value as PhotoCategory)}
                       className="w-full px-4 py-3 bg-[#1A1A1A] border border-white/15 rounded-2xl text-white text-sm focus:outline-none focus:border-[#B89B72]"
                     >
                       {CATEGORIES.map((cat) => (
@@ -499,48 +535,69 @@ export default function AdminPage() {
                     />
                   </div>
 
-                  {/* Aspect Ratio */}
+                  {/* Orientation */}
                   <div className="space-y-2">
                     <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                      Format Cadran
+                      Format Orientare
                     </label>
                     <select
-                      value={aspectRatio}
-                      onChange={(e) => setAspectRatio(e.target.value as any)}
+                      value={orientation}
+                      onChange={(e) => setOrientation(e.target.value as PhotoOrientation)}
                       className="w-full px-4 py-3 bg-[#1A1A1A] border border-white/15 rounded-2xl text-white text-sm focus:outline-none focus:border-[#B89B72]"
                     >
-                      <option value="landscape">Landscape (Orizontal 16:9)</option>
-                      <option value="portrait">Portrait (Vertical 4:5)</option>
-                      <option value="square">Square (Pătrat 1:1)</option>
+                      <option value="landscape">Landscape (Orizontal)</option>
+                      <option value="portrait">Portrait (Vertical)</option>
+                      <option value="square">Square (Pătrat)</option>
                     </select>
                   </div>
 
                   {/* Caption */}
                   <div className="sm:col-span-2 space-y-2">
                     <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                      Descriere / Advisory Context
+                      Descriere / Context Editorial
                     </label>
                     <textarea
                       value={caption}
                       onChange={(e) => setCaption(e.target.value)}
                       rows={3}
-                      placeholder="Ex: Consultanță privată și tranzacții ultra-prime..."
+                      placeholder="Ex: Reprezentare privată și tranzacții ultra-prime..."
                       className="w-full px-4 py-3 bg-black/50 border border-white/15 rounded-2xl text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-[#B89B72] resize-none"
                     />
                   </div>
 
-                  {/* Featured Toggle */}
-                  <div className="sm:col-span-2 flex items-center gap-3 p-4 rounded-2xl bg-white/[0.03] border border-white/10">
-                    <input
-                      type="checkbox"
-                      id="featured-toggle"
-                      checked={featured}
-                      onChange={(e) => setFeatured(e.target.checked)}
-                      className="w-5 h-5 accent-[#B89B72] rounded cursor-pointer"
-                    />
-                    <label htmlFor="featured-toggle" className="text-sm text-neutral-200 cursor-pointer">
-                      Evidențiază pe prima pagină (Homepage Featured Cadran)
-                    </label>
+                  {/* Role Checkboxes: Featured & Hero */}
+                  <div className="sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    
+                    {/* Featured Checkbox */}
+                    <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/[0.03] border border-white/10">
+                      <input
+                        type="checkbox"
+                        id="featured-toggle"
+                        checked={featured}
+                        onChange={(e) => setFeatured(e.target.checked)}
+                        className="w-5 h-5 accent-[#B89B72] rounded cursor-pointer"
+                      />
+                      <label htmlFor="featured-toggle" className="text-xs text-neutral-200 cursor-pointer">
+                        <span className="font-semibold block text-white">★ Featured Archive</span>
+                        <span>Apare în secțiunea vizuală homepage</span>
+                      </label>
+                    </div>
+
+                    {/* Hero Checkbox */}
+                    <div className="flex items-center gap-3 p-4 rounded-2xl bg-amber-500/[0.05] border border-amber-500/20">
+                      <input
+                        type="checkbox"
+                        id="hero-toggle"
+                        checked={hero}
+                        onChange={(e) => setHero(e.target.checked)}
+                        className="w-5 h-5 accent-amber-500 rounded cursor-pointer"
+                      />
+                      <label htmlFor="hero-toggle" className="text-xs text-neutral-200 cursor-pointer">
+                        <span className="font-semibold block text-amber-300">👑 Setează ca Imagine Hero</span>
+                        <span>Devine fotografia principală (max 1)</span>
+                      </label>
+                    </div>
+
                   </div>
 
                 </div>
@@ -550,7 +607,7 @@ export default function AdminPage() {
               {uploadSuccess && (
                 <div className="p-4 rounded-2xl bg-green-500/10 border border-green-500/30 text-green-400 text-sm flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5" />
-                  <span>Fotografia a fost încărcată cu succes și publicată în galerie!</span>
+                  <span>Fotografia a fost încărcată cu succes în storage și publicată!</span>
                 </div>
               )}
 
@@ -570,19 +627,19 @@ export default function AdminPage() {
                 {uploading ? (
                   <>
                     <span className="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin" />
-                    <span>Se încarcă fotografia...</span>
+                    <span>Se încarcă în storage...</span>
                   </>
                 ) : (
                   <>
                     <Upload className="w-4 h-4" />
-                    <span>Publică Fotografia în Galerie</span>
+                    <span>Încarcă & Salvează Fotografia</span>
                   </>
                 )}
               </button>
             </form>
           </div>
 
-          {/* SECTION 2: PHOTO MANAGER & GALLERY GRID */}
+          {/* SECTION 2: PHOTO MANAGER & ROLES GRID */}
           <div className="bg-[#121212] border border-white/10 rounded-3xl p-6 sm:p-10 space-y-8 backdrop-blur-xl">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
               <div className="flex items-center gap-3">
@@ -591,10 +648,10 @@ export default function AdminPage() {
                 </div>
                 <div>
                   <h2 className="text-xl sm:text-2xl font-semibold text-white">
-                    Galeria Activă ({filteredPhotos.length})
+                    Galeria Activă & Gestiune Roluri ({filteredPhotos.length})
                   </h2>
                   <p className="text-xs sm:text-sm text-neutral-400">
-                    Administrați fotografiile active, marcați-le ca favorite sau ștergeți-le.
+                    Definiți fotografia principală Hero, marcați elementele Featured sau ștergeți imagini.
                   </p>
                 </div>
               </div>
@@ -633,7 +690,11 @@ export default function AdminPage() {
                 {filteredPhotos.map((photo) => (
                   <div
                     key={photo.id}
-                    className="bg-[#181818] border border-white/10 rounded-3xl overflow-hidden flex flex-col justify-between group hover:border-[#B89B72]/50 transition-all shadow-xl"
+                    className={`bg-[#181818] border rounded-3xl overflow-hidden flex flex-col justify-between group transition-all shadow-xl ${
+                      photo.hero
+                        ? "border-amber-500/80 ring-2 ring-amber-500/20"
+                        : "border-white/10 hover:border-[#B89B72]/50"
+                    }`}
                   >
                     <div className="relative aspect-[16/10] w-full bg-black overflow-hidden">
                       <Image
@@ -648,12 +709,20 @@ export default function AdminPage() {
                         </span>
                       </div>
 
-                      {photo.featured && (
-                        <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-[#B89B72] text-black text-[10px] font-mono font-semibold flex items-center gap-1">
-                          <Star className="w-3 h-3 fill-black" />
-                          Featured
-                        </div>
-                      )}
+                      <div className="absolute top-3 right-3 flex flex-col gap-1 items-end">
+                        {photo.hero && (
+                          <div className="px-2.5 py-1 rounded-full bg-amber-500 text-black text-[10px] font-mono font-semibold flex items-center gap-1 shadow-md">
+                            <Crown className="w-3 h-3 fill-black" />
+                            HERO ACTIV
+                          </div>
+                        )}
+                        {photo.featured && (
+                          <div className="px-2.5 py-1 rounded-full bg-[#B89B72] text-black text-[10px] font-mono font-semibold flex items-center gap-1 shadow-md">
+                            <Star className="w-3 h-3 fill-black" />
+                            Featured
+                          </div>
+                        )}
+                      </div>
                     </div>
 
                     <div className="p-5 space-y-3 flex-1 flex flex-col justify-between">
@@ -677,26 +746,47 @@ export default function AdminPage() {
                         </div>
                       </div>
 
+                      {/* Action Bar: Hero Toggle, Featured Toggle, Delete */}
                       <div className="pt-4 border-t border-white/10 flex items-center justify-between gap-2">
+                        
+                        {/* Set as Hero Button */}
                         <button
-                          onClick={() => toggleFeatured(photo)}
+                          onClick={() => handleSetHero(photo)}
+                          disabled={photo.hero}
+                          className={`px-3 py-2 rounded-xl text-xs font-mono uppercase flex items-center gap-1.5 transition-colors cursor-pointer ${
+                            photo.hero
+                              ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 cursor-default"
+                              : "bg-white/5 hover:bg-amber-500/10 text-neutral-400 hover:text-amber-300 border border-white/5"
+                          }`}
+                          title="Setează ca imagine Hero"
+                        >
+                          <Crown className={`w-3.5 h-3.5 ${photo.hero ? "fill-amber-400" : ""}`} />
+                          <span>{photo.hero ? "Hero Activ" : "Setează Hero"}</span>
+                        </button>
+
+                        {/* Featured Toggle Button */}
+                        <button
+                          onClick={() => handleToggleFeatured(photo)}
                           className={`px-3 py-2 rounded-xl text-xs font-mono uppercase flex items-center gap-1.5 transition-colors cursor-pointer ${
                             photo.featured
                               ? "bg-[#B89B72]/20 text-[#B89B72] border border-[#B89B72]/30"
                               : "bg-white/5 hover:bg-white/10 text-neutral-400 hover:text-white"
                           }`}
+                          title="Comută prezența în Featured Archive"
                         >
                           <Star className={`w-3.5 h-3.5 ${photo.featured ? "fill-[#B89B72]" : ""}`} />
-                          <span>{photo.featured ? "Pe Homepage" : "Fă Featured"}</span>
+                          <span>{photo.featured ? "Featured" : "Fă Featured"}</span>
                         </button>
 
+                        {/* Delete Button */}
                         <button
-                          onClick={() => handleDeletePhoto(photo.id)}
+                          onClick={() => handleDeletePhoto(photo)}
                           className="p-2 rounded-xl bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/20 transition-colors cursor-pointer"
                           title="Șterge fotografia"
                         >
                           <Trash2 className="w-4 h-4" />
                         </button>
+
                       </div>
                     </div>
                   </div>

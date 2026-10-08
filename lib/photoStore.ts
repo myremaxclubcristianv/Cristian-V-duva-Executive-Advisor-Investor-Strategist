@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { getSupabaseAdminClient } from "@/lib/supabase";
 
 export type PhotoCategory =
   | "PORTRAITS"
@@ -27,20 +28,23 @@ export interface StoredPhoto {
   year?: string;
   aspectRatio?: PhotoOrientation;
   orientation?: PhotoOrientation;
-  featured?: boolean;
-  sort_order?: number;
+  featured: boolean;
+  hero: boolean;
+  sort_order: number;
   createdAt: string;
 }
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const PHOTOS_FILE = path.join(DATA_DIR, "photos.json");
+const SUPABASE_BUCKET_NAME = "executive-photos";
 
-// Initial high-resolution photos catalog for Cristian Văduva
+// Initial verified high-resolution archive for Cristian Văduva
 const INITIAL_PHOTOS: StoredPhoto[] = [
   {
-    id: "photo-cv-1",
+    id: "photo-cv-hero",
     src: "/residence/office.png",
     public_url: "/residence/office.png",
+    storage_path: "residence/office.png",
     alt: "Cristian Văduva — Executive Advisory Desk",
     category: "BUSINESS",
     title: "Executive Advisory Desk",
@@ -51,6 +55,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     aspectRatio: "landscape",
     orientation: "landscape",
     featured: true,
+    hero: true, // EXPLICIT DEFAULT HERO
     sort_order: 1,
     createdAt: new Date().toISOString(),
   },
@@ -58,6 +63,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     id: "photo-cv-2",
     src: "/residence/exterior.png",
     public_url: "/residence/exterior.png",
+    storage_path: "residence/exterior.png",
     alt: "Herăstrău Prime Residence Architecture",
     category: "REAL ESTATE",
     title: "Herăstrău Prime Residence",
@@ -68,6 +74,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     aspectRatio: "landscape",
     orientation: "landscape",
     featured: true,
+    hero: false,
     sort_order: 2,
     createdAt: new Date().toISOString(),
   },
@@ -75,6 +82,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     id: "photo-cv-3",
     src: "/residence/terrace.png",
     public_url: "/residence/terrace.png",
+    storage_path: "residence/terrace.png",
     alt: "Monaco & Riviera Executive Strategy",
     category: "TRAVEL",
     title: "Monaco Riviera Placement",
@@ -85,6 +93,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     aspectRatio: "landscape",
     orientation: "landscape",
     featured: true,
+    hero: false,
     sort_order: 3,
     createdAt: new Date().toISOString(),
   },
@@ -92,6 +101,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     id: "photo-cv-4",
     src: "/residence/library.png",
     public_url: "/residence/library.png",
+    storage_path: "residence/library.png",
     alt: "Market Intelligence & Research Library",
     category: "LIFESTYLE",
     title: "Institutional Research Library",
@@ -102,6 +112,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     aspectRatio: "landscape",
     orientation: "landscape",
     featured: true,
+    hero: false,
     sort_order: 4,
     createdAt: new Date().toISOString(),
   },
@@ -109,6 +120,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     id: "photo-cv-5",
     src: "/residence/living.png",
     public_url: "/residence/living.png",
+    storage_path: "residence/living.png",
     alt: "Ultra-Prime Living Architecture",
     category: "REAL ESTATE",
     title: "Ultra-Prime Living Gallery",
@@ -118,7 +130,8 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     year: "2026",
     aspectRatio: "landscape",
     orientation: "landscape",
-    featured: true,
+    featured: false,
+    hero: false,
     sort_order: 5,
     createdAt: new Date().toISOString(),
   },
@@ -126,6 +139,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     id: "photo-cv-6",
     src: "/residence/cinema.png",
     public_url: "/residence/cinema.png",
+    storage_path: "residence/cinema.png",
     alt: "Media & Digital Broadcast Studio",
     category: "MEDIA",
     title: "Official Media Studio",
@@ -136,6 +150,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     aspectRatio: "landscape",
     orientation: "landscape",
     featured: false,
+    hero: false,
     sort_order: 6,
     createdAt: new Date().toISOString(),
   },
@@ -143,6 +158,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     id: "photo-cv-7",
     src: "/residence/command.png",
     public_url: "/residence/command.png",
+    storage_path: "residence/command.png",
     alt: "AiX OS Market Pulse Intelligence",
     category: "BUSINESS",
     title: "AiX Market Pulse Station",
@@ -153,6 +169,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     aspectRatio: "landscape",
     orientation: "landscape",
     featured: false,
+    hero: false,
     sort_order: 7,
     createdAt: new Date().toISOString(),
   },
@@ -160,6 +177,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     id: "photo-cv-8",
     src: "/residence/gallery.png",
     public_url: "/residence/gallery.png",
+    storage_path: "residence/gallery.png",
     alt: "Private Art & Architecture Gallery",
     category: "EDITORIAL",
     title: "Architecture & Design Monograph",
@@ -170,6 +188,7 @@ const INITIAL_PHOTOS: StoredPhoto[] = [
     aspectRatio: "landscape",
     orientation: "landscape",
     featured: false,
+    hero: false,
     sort_order: 8,
     createdAt: new Date().toISOString(),
   },
@@ -181,6 +200,73 @@ function ensureDirectoryExists(dirPath: string) {
   }
 }
 
+/**
+ * Upload buffer directly to Supabase Storage bucket
+ */
+export async function uploadToSupabaseStorage(
+  fileName: string,
+  buffer: Buffer,
+  contentType: string
+): Promise<{ publicUrl: string; storagePath: string } | null> {
+  const { client } = getSupabaseAdminClient();
+  if (!client) {
+    return null;
+  }
+
+  try {
+    // Ensure bucket exists or create it
+    const { data: buckets } = await client.storage.listBuckets();
+    const bucketExists = buckets?.some((b) => b.name === SUPABASE_BUCKET_NAME);
+
+    if (!bucketExists) {
+      await client.storage.createBucket(SUPABASE_BUCKET_NAME, {
+        public: true,
+        fileSizeLimit: 25 * 1024 * 1024, // 25MB
+      });
+    }
+
+    const storagePath = `photos/${Date.now()}_${fileName}`;
+    const { error: uploadError } = await client.storage
+      .from(SUPABASE_BUCKET_NAME)
+      .upload(storagePath, buffer, {
+        contentType,
+        upsert: true,
+      });
+
+    if (uploadError) {
+      console.error("[SUPABASE_STORAGE_ERROR] Upload failed:", uploadError);
+      return null;
+    }
+
+    const { data } = client.storage.from(SUPABASE_BUCKET_NAME).getPublicUrl(storagePath);
+    return {
+      publicUrl: data.publicUrl,
+      storagePath,
+    };
+  } catch (err) {
+    console.error("[SUPABASE_STORAGE_EXCEPTION]", err);
+    return null;
+  }
+}
+
+/**
+ * Delete file from Supabase Storage bucket
+ */
+export async function deleteFromSupabaseStorage(storagePath: string): Promise<boolean> {
+  const { client } = getSupabaseAdminClient();
+  if (!client || !storagePath) return false;
+
+  try {
+    const { error } = await client.storage.from(SUPABASE_BUCKET_NAME).remove([storagePath]);
+    return !error;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Get all photos sorted by sort_order
+ */
 export function getAllStoredPhotos(): StoredPhoto[] {
   try {
     ensureDirectoryExists(DATA_DIR);
@@ -201,9 +287,23 @@ export function getAllStoredPhotos(): StoredPhoto[] {
   }
 }
 
+/**
+ * Get the single active Hero photo (Strictly 1)
+ */
+export function getHeroPhoto(): StoredPhoto {
+  const photos = getAllStoredPhotos();
+  const explicitHero = photos.find((p) => p.hero === true);
+  if (explicitHero) return explicitHero;
+  // Fallback to default initial desk photo
+  return INITIAL_PHOTOS[0];
+}
+
+/**
+ * Get all photos marked as Featured for the homepage archive
+ */
 export function getFeaturedStoredPhotos(): StoredPhoto[] {
-  const all = getAllStoredPhotos();
-  return all.filter((p) => p.featured);
+  const photos = getAllStoredPhotos();
+  return photos.filter((p) => p.featured === true);
 }
 
 export function saveAllStoredPhotos(photos: StoredPhoto[]): boolean {
@@ -217,43 +317,100 @@ export function saveAllStoredPhotos(photos: StoredPhoto[]): boolean {
   }
 }
 
+/**
+ * Add a new photo. If marked hero === true, automatically demotes previous hero.
+ */
 export function addStoredPhoto(newPhoto: Omit<StoredPhoto, "id" | "createdAt">): StoredPhoto {
   const current = getAllStoredPhotos();
+
+  // If new photo is Hero, unset hero on all existing photos
+  const sanitizedCurrent = newPhoto.hero
+    ? current.map((p) => ({ ...p, hero: false, sort_order: (p.sort_order || 1) + 1 }))
+    : current.map((p) => ({ ...p, sort_order: (p.sort_order || 1) + 1 }));
+
   const photo: StoredPhoto = {
     ...newPhoto,
     id: `photo-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
     public_url: newPhoto.public_url || newPhoto.src,
     orientation: newPhoto.orientation || newPhoto.aspectRatio || "landscape",
     aspectRatio: newPhoto.aspectRatio || newPhoto.orientation || "landscape",
+    featured: Boolean(newPhoto.featured),
+    hero: Boolean(newPhoto.hero),
     sort_order: 1,
     createdAt: new Date().toISOString(),
   };
 
-  // Bump previous photos sort order
-  const updatedCurrent = current.map((p, idx) => ({ ...p, sort_order: idx + 2 }));
-  const updated = [photo, ...updatedCurrent];
+  const updated = [photo, ...sanitizedCurrent];
   saveAllStoredPhotos(updated);
   return photo;
 }
 
+/**
+ * Set a photo as Hero. Atomically ensures MAXIMUM ONE HERO.
+ */
+export function setHeroPhoto(id: string): StoredPhoto | null {
+  const current = getAllStoredPhotos();
+  const target = current.find((p) => p.id === id);
+  if (!target) return null;
+
+  const updated = current.map((p) => ({
+    ...p,
+    hero: p.id === id,
+  }));
+
+  saveAllStoredPhotos(updated);
+  return { ...target, hero: true };
+}
+
+/**
+ * Toggle Featured status for a photo
+ */
+export function toggleFeaturedPhoto(id: string, featured: boolean): StoredPhoto | null {
+  const current = getAllStoredPhotos();
+  const index = current.findIndex((p) => p.id === id);
+  if (index === -1) return null;
+
+  current[index] = {
+    ...current[index],
+    featured,
+  };
+
+  saveAllStoredPhotos(current);
+  return current[index];
+}
+
+/**
+ * Delete a photo and remove from storage
+ */
 export function deleteStoredPhoto(id: string): boolean {
   const current = getAllStoredPhotos();
   const photo = current.find((p) => p.id === id);
   if (!photo) return false;
 
-  // If local file exists, remove from disk
+  // Clean up Supabase storage if storage_path is present
+  if (photo.storage_path) {
+    deleteFromSupabaseStorage(photo.storage_path);
+  }
+
+  // Remove local copy if any
   if (photo.src && photo.src.startsWith("/uploads/photos/")) {
     try {
       const localPath = path.join(process.cwd(), "public", photo.src);
       if (fs.existsSync(localPath)) {
         fs.unlinkSync(localPath);
       }
-    } catch (err) {
-      console.error("[PhotoStore] Error unlinking file:", err);
+    } catch {
+      // Ignored
     }
   }
 
   const updated = current.filter((p) => p.id !== id);
+
+  // If the deleted photo was Hero, make the first available photo the Hero
+  if (photo.hero && updated.length > 0) {
+    updated[0].hero = true;
+  }
+
   return saveAllStoredPhotos(updated);
 }
 
@@ -261,32 +418,20 @@ export function updateStoredPhoto(id: string, updates: Partial<StoredPhoto>): St
   const current = getAllStoredPhotos();
   const index = current.findIndex((p) => p.id === id);
   if (index === -1) return null;
+
+  // If updates include hero === true, unset on all other photos
+  if (updates.hero === true) {
+    current.forEach((p) => {
+      p.hero = false;
+    });
+  }
+
   current[index] = {
     ...current[index],
     ...updates,
-    public_url: updates.src || updates.public_url || current[index].public_url,
+    public_url: updates.public_url || updates.src || current[index].public_url,
   };
+
   saveAllStoredPhotos(current);
   return current[index];
-}
-
-export function reorderStoredPhotos(orderedIds: string[]): boolean {
-  const current = getAllStoredPhotos();
-  const photoMap = new Map(current.map((p) => [p.id, p]));
-  const reordered: StoredPhoto[] = [];
-
-  orderedIds.forEach((id, index) => {
-    const p = photoMap.get(id);
-    if (p) {
-      reordered.push({ ...p, sort_order: index + 1 });
-      photoMap.delete(id);
-    }
-  });
-
-  // Append remaining unranked
-  photoMap.forEach((p) => {
-    reordered.push({ ...p, sort_order: reordered.length + 1 });
-  });
-
-  return saveAllStoredPhotos(reordered);
 }

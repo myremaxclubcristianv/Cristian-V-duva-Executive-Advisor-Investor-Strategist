@@ -90,9 +90,9 @@ export default function MasterBentoExperience() {
     loadVideos();
   }, []);
 
-  // Featured / Main Photos for Bento
-  const heroPhoto = photos.find((p) => p.featured) || photos[0];
-  const featuredPhotos = photos.filter((p) => p.featured).slice(0, 4);
+  // Explicit separation: Hero (Max 1) vs Featured (Multiple)
+  const heroPhoto = photos.find((p) => p.hero === true) || photos[0];
+  const featuredPhotos = photos.filter((p) => p.featured === true);
   const heroVideo = videos[0];
 
   const handleFormSubmit = async (e: React.FormEvent) => {
@@ -143,9 +143,8 @@ export default function MasterBentoExperience() {
             <div className="lg:col-span-7 flex flex-col justify-between space-y-8">
               
               <div className="space-y-6">
-                {/* Status Indicator */}
-                <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-[#B89B72]">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                {/* Geographic Positioning Tag */}
+                <div className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono tracking-widest text-[#B89B72]">
                   <span>BUCHAREST · MONACO · DUBAI</span>
                 </div>
 
@@ -472,7 +471,7 @@ export default function MasterBentoExperience() {
 
           {/* Bento Asymmetric Photo Grid */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-            {photos.slice(0, 4).map((photo, index) => {
+            {(featuredPhotos.length > 0 ? featuredPhotos : photos).slice(0, 4).map((photo, index) => {
               const isWide = index === 0 || index === 3;
               const colSpan = isWide ? "md:col-span-7" : "md:col-span-5";
 
