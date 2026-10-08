@@ -3,16 +3,16 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Lock, ArrowUpRight, Menu, X, Play, Image as ImageIcon } from "lucide-react";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
-  const toggleBtnRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 30);
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -39,7 +39,6 @@ export default function Navigation() {
 
   const closeMenu = useCallback(() => {
     setIsMenuOpen(false);
-    toggleBtnRef.current?.focus();
   }, []);
 
   useEffect(() => {
@@ -53,75 +52,107 @@ export default function Navigation() {
   }, [isMenuOpen, closeMenu]);
 
   const navLinks = [
-    { href: "/about", label: "ABOUT" },
-    { href: "/#expertise", label: "EXPERTISE" },
+    { href: "/", label: "EXECUTIVE" },
+    { href: "/gallery", label: "GALERIE FOTO" },
+    { href: "/tv", label: "YOUTUBE TV" },
+    { href: "/about", label: "DESPRE & BIOGRAFIE" },
     { href: "/real-estate", label: "REAL ESTATE" },
-    { href: "/#work", label: "WORK" },
-    { href: "/media", label: "MEDIA" },
-    { href: "/gallery", label: "GALLERY" },
     { href: "/contact", label: "CONTACT" },
   ];
 
   return (
     <>
-      {/* Apple-Style Navigation Header */}
-      <nav
+      {/* Apple-Style Glass Navbar */}
+      <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-[#F7F7F5]/90 backdrop-blur-xl border-b border-[#E5E5E1] py-4 shadow-sm"
-            : "bg-transparent py-5 sm:py-6"
+            ? "bg-[#0A0A0A]/85 backdrop-blur-2xl border-b border-white/10 py-3.5 shadow-2xl"
+            : "bg-[#0A0A0A]/40 backdrop-blur-md py-4 sm:py-5"
         }`}
-        aria-label="Primary Executive Navigation"
       >
         <div className="site-container">
           <div className="flex items-center justify-between">
-            {/* Brand Title */}
+            
+            {/* Brand Logo */}
             <Link
               href="/"
-              className="text-[#111111] font-display text-lg sm:text-xl tracking-tight hover:text-[#B89B72] transition-colors flex items-center gap-2.5 group"
-              aria-label="Cristian Văduva - Flagship Site"
+              className="flex items-center gap-3 group text-white hover:text-[#B89B72] transition-colors"
+              aria-label="Cristian Văduva - Executive Site"
             >
-              <span className="w-2 h-2 rounded-full bg-[#B89B72] group-hover:scale-125 transition-transform" />
-              <span className="font-semibold tracking-tight">CRISTIAN VĂDUVA</span>
+              <div className="w-2.5 h-2.5 rounded-full bg-[#B89B72] group-hover:scale-125 transition-transform" />
+              <div className="flex flex-col">
+                <span className="font-semibold text-sm sm:text-base tracking-tight text-white group-hover:text-[#B89B72] transition-colors">
+                  CRISTIAN VĂDUVA
+                </span>
+                <span className="text-[10px] font-mono tracking-widest text-neutral-400 uppercase">
+                  Executive Advisor
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Navigation Links */}
-            <div className="hidden lg:flex items-center gap-7">
+            <nav className="hidden lg:flex items-center gap-6">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`font-mono text-xs uppercase tracking-[0.2em] transition-colors relative py-1 ${
-                      isActive ? "text-[#B89B72] font-semibold" : "text-[#5E5E5E] hover:text-[#111111]"
+                    className={`font-mono text-xs uppercase tracking-[0.18em] transition-colors py-1 ${
+                      isActive
+                        ? "text-[#B89B72] font-semibold"
+                        : "text-neutral-300 hover:text-white"
                     }`}
                   >
                     {link.label}
                   </Link>
                 );
               })}
+            </nav>
+
+            {/* Desktop Actions */}
+            <div className="hidden lg:flex items-center gap-3">
               <Link
-                href="/contact"
-                className="px-5 py-2.5 bg-[#111111] text-[#F7F7F5] font-mono text-xs font-semibold uppercase tracking-[0.2em] hover:bg-[#B89B72] hover:text-[#FFFFFF] transition-colors touch-active"
+                href="/login"
+                className="p-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-neutral-400 hover:text-[#B89B72] transition-colors"
+                title="Admin Login & Photo Upload"
               >
-                WORK WITH ME →
+                <Lock className="w-4 h-4" />
               </Link>
+
+              <a
+                href="https://wa.me/436509536345"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 rounded-full bg-[#B89B72] hover:bg-[#C9AE85] text-black font-semibold text-xs font-mono uppercase tracking-wider transition-all duration-200 flex items-center gap-1.5 shadow-md shadow-[#B89B72]/20"
+              >
+                <span>WhatsApp</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
             </div>
 
-            {/* Mobile Menu Trigger */}
-            <button
-              ref={toggleBtnRef}
-              onClick={() => setIsMenuOpen(true)}
-              className="lg:hidden text-[#111111] min-w-[48px] min-h-[48px] flex items-center justify-center p-2 -mr-2 focus:outline-none touch-active font-mono text-xs font-semibold uppercase tracking-widest"
-              aria-label="Open mobile navigation menu"
-              aria-expanded={isMenuOpen}
-            >
-              <span>MENU</span>
-            </button>
+            {/* Mobile Menu Button */}
+            <div className="lg:hidden flex items-center gap-2">
+              <Link
+                href="/login"
+                className="p-2 rounded-xl bg-white/5 border border-white/10 text-neutral-400"
+                title="Admin"
+              >
+                <Lock className="w-4 h-4" />
+              </Link>
+
+              <button
+                onClick={() => setIsMenuOpen(true)}
+                className="p-2 text-white bg-white/5 border border-white/10 rounded-xl focus:outline-none"
+                aria-label="Open navigation menu"
+              >
+                <Menu className="w-5 h-5" />
+              </button>
+            </div>
+
           </div>
         </div>
-      </nav>
+      </header>
 
       {/* Full-Screen Mobile Drawer */}
       <div
@@ -130,22 +161,24 @@ export default function Navigation() {
         role="dialog"
         aria-modal="true"
         aria-label="Mobile Navigation"
-        className={`fixed inset-0 z-50 bg-[#F7F7F5]/98 backdrop-blur-2xl transition-all duration-300 ${
+        className={`fixed inset-0 z-50 bg-[#0A0A0A]/98 backdrop-blur-3xl transition-all duration-300 ${
           isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        } flex flex-col justify-between overflow-hidden`}
+        } flex flex-col justify-between overflow-hidden text-white`}
       >
         {/* Mobile Header Bar */}
-        <div className="flex justify-between items-center px-6 py-5 border-b border-[#E5E5E1] pt-[max(1.25rem,env(safe-area-inset-top))]">
+        <div className="flex justify-between items-center px-6 py-5 border-b border-white/10 pt-[max(1.25rem,env(safe-area-inset-top))]">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#B89B72]" />
-            <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#111111] font-semibold">CRISTIAN VĂDUVA</span>
+            <span className="font-mono text-xs uppercase tracking-[0.25em] text-white font-semibold">
+              CRISTIAN VĂDUVA
+            </span>
           </div>
           <button
             onClick={closeMenu}
-            className="text-[#5E5E5E] hover:text-[#111111] min-w-[48px] min-h-[48px] flex items-center justify-center -mr-2 font-mono text-xs uppercase tracking-widest focus:outline-none touch-active"
+            className="p-2 text-neutral-400 hover:text-white rounded-xl bg-white/5 border border-white/10"
             aria-label="Close menu"
           >
-            CLOSE ✕
+            <X className="w-5 h-5" />
           </button>
         </div>
 
@@ -158,11 +191,11 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMenu}
-                className={`group flex items-center justify-between min-h-[52px] py-3.5 border-b border-[#E5E5E1] transition-colors touch-active ${
-                  isActive ? "text-[#B89B72] font-semibold" : "text-[#111111] hover:text-[#B89B72]"
+                className={`group flex items-center justify-between py-4 border-b border-white/10 transition-colors ${
+                  isActive ? "text-[#B89B72] font-semibold" : "text-white hover:text-[#B89B72]"
                 }`}
               >
-                <span className="text-2xl font-display tracking-tight group-hover:translate-x-1 transition-transform">
+                <span className="text-xl sm:text-2xl font-semibold tracking-tight group-hover:translate-x-1 transition-transform">
                   {link.label}
                 </span>
                 <span className="text-[#B89B72] font-mono text-xs">→</span>
@@ -171,27 +204,37 @@ export default function Navigation() {
           })}
         </nav>
 
-        {/* Mobile Action Drawer Footer */}
-        <div className="p-6 border-t border-[#E5E5E1] space-y-4 bg-[#FFFFFF]/80 pb-[max(1.5rem,env(safe-area-inset-bottom))]">
-          <Link
-            href="/contact"
-            onClick={closeMenu}
-            className="block w-full min-h-[48px] py-4 bg-[#111111] text-[#F7F7F5] font-mono text-xs font-semibold uppercase tracking-[0.2em] text-center hover:bg-[#B89B72] transition-colors shadow-sm touch-active flex items-center justify-center"
-          >
-            WORK WITH ME →
-          </Link>
-
-          <div className="flex justify-between items-center font-mono text-[10px] uppercase tracking-widest text-[#5E5E5E] pt-1">
-            <span>BUCHAREST · MONACO · DUBAI</span>
-            <a
-              href="https://wa.me/436509536345"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#B89B72] hover:underline flex items-center gap-1 min-h-[36px]"
+        {/* Mobile Drawer Footer */}
+        <div className="p-6 border-t border-white/10 space-y-4 bg-[#121212] pb-[max(1.5rem,env(safe-area-inset-bottom))]">
+          <div className="grid grid-cols-2 gap-3">
+            <Link
+              href="/gallery"
+              onClick={closeMenu}
+              className="py-3 rounded-2xl bg-white/5 border border-white/10 text-center font-mono text-xs uppercase text-white flex items-center justify-center gap-2"
             >
-              WHATSAPP ↗
-            </a>
+              <ImageIcon className="w-4 h-4 text-[#B89B72]" />
+              <span>Galerie</span>
+            </Link>
+
+            <Link
+              href="/tv"
+              onClick={closeMenu}
+              className="py-3 rounded-2xl bg-white/5 border border-white/10 text-center font-mono text-xs uppercase text-white flex items-center justify-center gap-2"
+            >
+              <Play className="w-4 h-4 text-red-400" />
+              <span>YouTube TV</span>
+            </Link>
           </div>
+
+          <a
+            href="https://wa.me/436509536345"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+            className="block w-full py-4 bg-[#B89B72] text-black font-semibold text-xs font-mono uppercase tracking-widest text-center rounded-2xl shadow-lg shadow-[#B89B72]/20"
+          >
+            CONTACT WHATSAPP (+43 650 953 6345) ↗
+          </a>
         </div>
       </div>
     </>
