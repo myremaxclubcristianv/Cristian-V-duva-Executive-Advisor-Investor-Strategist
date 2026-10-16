@@ -188,7 +188,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
               <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.08] pb-6 font-mono text-[10px] sm:text-xs">
                 <div className="flex flex-wrap items-center gap-3">
                   <span className="px-3 py-1 bg-[#93C8FF]/15 border border-[#93C8FF]/30 text-[#93C8FF] uppercase tracking-[0.25em] font-bold">
-                    MONOGRAPH № {formattedIndex} // 35
+                    MONOGRAPH № {formattedIndex} // {selectedProperties.length}
                   </span>
                   <span className="text-white/20">|</span>
                   <span className="px-3 py-1 bg-white/[0.04] border border-white/[0.1] text-[#8A95A5] uppercase tracking-wider">

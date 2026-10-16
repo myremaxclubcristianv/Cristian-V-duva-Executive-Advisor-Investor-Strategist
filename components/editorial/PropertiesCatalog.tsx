@@ -40,6 +40,7 @@ export default function PropertiesCatalog() {
   const getPrimaryCountry = (countryStr?: string) => {
     if (!countryStr) return "Other";
     if (countryStr.includes("Romania")) return "Romania";
+    if (countryStr.includes("France")) return "France";
     if (countryStr.includes("Monaco")) return "Monaco";
     if (countryStr.includes("Spain")) return "Spain";
     if (countryStr.includes("Emirates") || countryStr.includes("UAE") || countryStr.includes("Dubai")) return "UAE";
@@ -474,15 +475,6 @@ export default function PropertiesCatalog() {
           </div>
         )}
       </div>
-
-      {/* Final Fiduciary CTA */}
-      <CTASection
-        eyebrow="EXCLUSIVE BUYER & SELLER REPRESENTATION"
-        title="Seeking Fiduciary Counsel for a Heritage Property Transaction?"
-        description="Whether structuring a private acquisition along the Bucharest – Monaco – Dubai corridor or preparing a legacy estate for confidential off-market disposition, we act solely on behalf of our principal, eliminating dual-agency conflicts."
-        primaryActionText="SCHEDULE A CONFIDENTIAL BRIEFING"
-        primaryActionHref="/contact"
-      />
     </div>
   );
 }

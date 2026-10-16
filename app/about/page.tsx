@@ -186,8 +186,8 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#8A95A5] px-1">
-                  <span>OFFICIAL MONOGRAPH PORTRAIT</span>
-                  <span className="text-[#93C8FF]">VERIFIED CREDENTIALS</span>
+                  <span>OFFICIAL PORTRAIT · ADRIAN BÎRGĂUAN</span>
+                  <span className="text-[#93C8FF]">VERIFIED SOURCE</span>
                 </div>
               </div>
             </div>

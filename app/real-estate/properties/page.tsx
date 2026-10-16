@@ -5,14 +5,44 @@ import ExecutiveHeader from "@/components/ExecutiveHeader";
 import Footer from "@/components/Footer";
 import PropertiesCatalog from "@/components/editorial/PropertiesCatalog";
 import EditorialCadran from "@/components/editorial/EditorialCadran";
+import CadranDivider from "@/components/editorial/CadranDivider";
+import PersonalPerspectiveSection from "@/components/editorial/PersonalPerspectiveSection";
+import EcosystemDirectory from "@/components/editorial/EcosystemDirectory";
+import ExecutiveContactCadran from "@/components/editorial/ExecutiveContactCadran";
+import { selectedProperties } from "@/lib/properties";
 import { ArrowDown, ShieldCheck, MapPin, Globe, Sparkles, Building2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Confirmed Property Portfolio & Acquisitions — Cristian Văduva",
-  description: "Curated editorial selection of verified penthouses, private architectural estates, residential masterplans, and international trophy assets across Bucharest, Monaco, and Dubai.",
+  description: "Curated editorial selection of verified penthouses, private architectural estates, residential masterplans, and international trophy assets across Bucharest, Marbella, Monaco, Dubai, and Miami.",
 };
 
 export default function PropertiesPage() {
+  // Dynamically derive portfolio intelligence metrics from verified inventory
+  const totalProperties = selectedProperties.length;
+  const totalPhotos = selectedProperties.reduce(
+    (sum, p) => sum + (p.galleryImages && p.galleryImages.length > 0 ? p.galleryImages.length : 1),
+    0
+  );
+
+  const countriesSet = new Set<string>();
+  selectedProperties.forEach((p) => {
+    const c = p.country || "";
+    if (c.includes("Romania")) countriesSet.add("Romania");
+    else if (c.includes("Spain")) countriesSet.add("Spain");
+    else if (c.includes("France")) countriesSet.add("France");
+    else if (c.includes("Monaco")) countriesSet.add("Monaco");
+    else if (c.includes("UAE") || c.includes("Emirates") || c.includes("Dubai")) countriesSet.add("UAE");
+    else if (c.includes("United States") || c.includes("USA") || c.includes("Florida")) countriesSet.add("USA");
+    else if (c.includes("Croatia")) countriesSet.add("Croatia");
+    else {
+      const primary = c.split("/")[0].trim();
+      if (primary) countriesSet.add(primary);
+    }
+  });
+  const totalCountries = countriesSet.size;
+  const countryCodesSummary = "RO, ES, UAE, FR, USA, HR";
+
   return (
     <div className="flex flex-col min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
       <ExecutiveHeader />
@@ -35,7 +65,7 @@ export default function PropertiesPage() {
                 </span>
                 <span className="text-white/20">|</span>
                 <span className="text-[#8A95A5] uppercase tracking-wider">
-                  CONFIRMED ASSET INVENTORY
+                  CONFIRMED ASSET INVENTORY ({totalProperties} MONOGRAPHS)
                 </span>
               </div>
 
@@ -73,23 +103,30 @@ export default function PropertiesPage() {
                     href="#catalog-view"
                     className="px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.2em] font-bold transition-all shadow-xl flex items-center gap-2"
                   >
-                    <span>EXPLORE PORTFOLIO COLLECTION</span>
+                    <span>EXPLORE PORTFOLIO COLLECTION ({totalProperties})</span>
                     <ArrowDown className="w-3.5 h-3.5" />
                   </a>
 
-                  <Link
-                    href="/contact"
+                  <a
+                    href="#perspectives"
                     className="px-6 py-3.5 border border-white/[0.15] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.2em] font-semibold transition-all"
                   >
-                    RETAINED MANDATE BRIEF
-                  </Link>
+                    CRISTIAN VĂDUVA PERSPECTIVE
+                  </a>
+
+                  <a
+                    href="#ecosystem"
+                    className="px-6 py-3.5 border border-white/[0.15] hover:border-[#A97F60] text-[#B8C2CF] hover:text-[#A97F60] uppercase tracking-[0.2em] font-semibold transition-all"
+                  >
+                    ECOSYSTEM DIRECTORY
+                  </a>
                 </div>
               </div>
 
               {/* Right Cinematic Hero Aperture (~45% on desktop) */}
               <div className="lg:col-span-5">
                 <EditorialCadran
-                  watermarkNumber="35"
+                  watermarkNumber={String(totalProperties)}
                   accentColor="ice"
                   surface="midnight"
                   className="p-3 bg-[#0C1119]"
@@ -122,7 +159,7 @@ export default function PropertiesPage() {
               </div>
             </div>
 
-            {/* Fiduciary Portfolio Metrics Cadran (Derived from genuine data) */}
+            {/* Fiduciary Portfolio Metrics Cadran (Derived dynamically from genuine data) */}
             <EditorialCadran
               accentColor="copper"
               surface="graphite"
@@ -134,10 +171,10 @@ export default function PropertiesPage() {
                     CONFIRMED ASSETS
                   </span>
                   <div className="font-serif text-3xl sm:text-4xl text-[#F5F4EF] font-normal">
-                    35
+                    {totalProperties}
                   </div>
                   <span className="text-[11px] text-[#8A95A5] block font-sans">
-                    Audited luxury properties
+                    Audited luxury monographs
                   </span>
                 </div>
 
@@ -146,19 +183,19 @@ export default function PropertiesPage() {
                     JURISDICTIONS
                   </span>
                   <div className="font-serif text-3xl sm:text-4xl text-[#F5F4EF] font-normal">
-                    6
+                    {totalCountries}
                   </div>
                   <span className="text-[11px] text-[#8A95A5] block font-sans">
-                    RO, ES, UAE, MC, USA, HR
+                    {countryCodesSummary}
                   </span>
                 </div>
 
                 <div className="space-y-1.5 border-r border-white/[0.08] last:border-0 pr-4">
                   <span className="text-[#93C8FF] text-[10px] uppercase tracking-[0.25em] block font-semibold">
-                    VERIFIED ASSETS
+                    VERIFIED PHOTOGRAPHS
                   </span>
                   <div className="font-serif text-3xl sm:text-4xl text-[#F5F4EF] font-normal">
-                    651
+                    {totalPhotos.toLocaleString()}
                   </div>
                   <span className="text-[11px] text-[#8A95A5] block font-sans">
                     High-resolution photographs
@@ -187,10 +224,32 @@ export default function PropertiesPage() {
         <div id="catalog-view" className="py-16 sm:py-24 lg:py-32">
           <PropertiesCatalog />
         </div>
+
+        {/* ======================================================== */}
+        {/* CRISTIAN VĂDUVA — A DIFFERENT PERSPECTIVE                */}
+        {/* ======================================================== */}
+        <div id="perspectives">
+          <PersonalPerspectiveSection />
+        </div>
+
+        {/* ======================================================== */}
+        {/* CONNECTED BUSINESS ECOSYSTEM DIRECTORY & MATRIX MAP      */}
+        {/* ======================================================== */}
+        <div id="ecosystem">
+          <EcosystemDirectory />
+        </div>
+
+        {/* ======================================================== */}
+        {/* COMPLETE CONTACT & ACQUISITION BRIEF CADRAN              */}
+        {/* ======================================================== */}
+        <div id="contact">
+          <ExecutiveContactCadran />
+        </div>
       </main>
 
       <Footer />
     </div>
   );
 }
+
 

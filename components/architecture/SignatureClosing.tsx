@@ -229,7 +229,7 @@ export default function SignatureClosing() {
                   </button>
 
                   <div className="font-mono text-[9px] uppercase tracking-wider text-center text-[#8A95A5]">
-                    PROTECTED BY 256-BIT TLS ENCRYPTION · STRICT NON-DISCLOSURE
+                    SECURE 256-BIT TLS TRANSMISSION · STRICT CONFIDENTIALITY
                   </div>
                 </form>
               )}

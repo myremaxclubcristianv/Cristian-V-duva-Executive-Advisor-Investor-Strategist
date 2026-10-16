@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getSelectedProperties } from "@/lib/properties";
+import { getSelectedProperties, Property } from "@/lib/properties";
 
 export default function SelectedPropertiesModule() {
   const properties = getSelectedProperties();
@@ -93,7 +93,7 @@ export default function SelectedPropertiesModule() {
                 ACTIVE PORTFOLIO CURATION
               </p>
 
-              {properties.slice(1, 3).map((prop) => (
+              {properties.slice(1, 3).map((prop: Property) => (
                 <div
                   key={prop.id}
                   className="space-y-2 pb-5 border-b border-surface-secondary/60 last:border-0"

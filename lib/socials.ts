@@ -26,17 +26,31 @@ export const socialLinks: SocialLink[] = [
     url: "https://t.me/capitalinvestcristianvaduva",
     displayName: "Telegram",
   },
-  // TODO: Verify exact Facebook and Instagram URLs from cristianvaduva.com
-  // {
-  //   platform: "facebook",
-  //   url: "https://facebook.com/cristianvaduva",
-  //   displayName: "Facebook",
-  // },
-  // {
-  //   platform: "instagram",
-  //   url: "https://instagram.com/cristianvaduva",
-  //   displayName: "Instagram",
-  // },
+  {
+    platform: "facebook",
+    url: "https://www.facebook.com/CristianVaduvaCV",
+    displayName: "Facebook",
+  },
+  {
+    platform: "instagram",
+    url: "https://instagram.com/cristian_vaduva_cristianv",
+    displayName: "Instagram",
+  },
+  {
+    platform: "threads",
+    url: "https://www.threads.net/@cristian_vaduva_cristianv",
+    displayName: "Threads",
+  },
+  {
+    platform: "tiktok",
+    url: "https://www.tiktok.com/@cristianvaduvacv",
+    displayName: "TikTok",
+  },
+  {
+    platform: "twitter",
+    url: "https://twitter.com/cristianvaduvaa",
+    displayName: "X (Twitter)",
+  },
 ];
 
 export const additionalSocials: SocialLink[] = [];
