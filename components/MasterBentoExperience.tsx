@@ -315,7 +315,7 @@ export default function MasterBentoExperience() {
 
                   <div className="p-4 rounded-2xl bg-white/[0.03] border border-white/5 space-y-1">
                     <span className="text-[10px] font-mono text-[#B89B72] uppercase">Monaco Riviera</span>
-                    <h3 className="text-sm font-semibold text-white">Monte Carlo · Côte d'Azur</h3>
+                    <h3 className="text-sm font-semibold text-white">Monte Carlo · Côte d&#39;Azur</h3>
                     <p className="text-[11px] text-neutral-400 font-light">Tranzacții transfrontaliere</p>
                   </div>
 

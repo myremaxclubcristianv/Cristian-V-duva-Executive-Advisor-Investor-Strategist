@@ -78,8 +78,6 @@ export default function AdminPage() {
           router.push("/login");
         } else {
           setAuthChecking(false);
-          loadPhotos();
-          loadYouTubeStats();
         }
       } catch {
         router.push("/login");
@@ -119,7 +117,16 @@ export default function AdminPage() {
       setSyncingYoutube(false);
     }
   };
-
+  // Load photos and YouTube stats after authentication check completes
+  useEffect(() => {
+    // authChecking becomes false when auth is verified
+    if (authChecking) return;
+    const fetchData = async () => {
+      await loadPhotos();
+      await loadYouTubeStats();
+    };
+    fetchData();
+  }, [authChecking]);
   // Handle File Selection
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];

@@ -9,7 +9,8 @@ function AmbientDustParticles() {
   const count = 140;
   const meshRef = useRef<THREE.InstancedMesh>(null);
 
-  const particles = useMemo(() => {
+  // Initialize particles once without impure functions during render
+  const [particles] = useState(() => {
     const temp = [];
     for (let i = 0; i < count; i++) {
       temp.push({
@@ -21,8 +22,7 @@ function AmbientDustParticles() {
       });
     }
     return temp;
-  }, []);
-
+  });
   const dummy = useMemo(() => new THREE.Object3D(), []);
 
   useFrame((state) => {
@@ -51,22 +51,30 @@ function AmbientDustParticles() {
 
 export default function SpatialOfficeCanvas() {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
-  const [reducedMotion, setReducedMotion] = useState(false);
+  // Initialize reducedMotion based on user preference without causing a synchronous state update in effect
+  const [reducedMotion] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  });
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReducedMotion(mediaQuery.matches);
-
+    const handleChange = (e: MediaQueryListEvent) => {
+      // Force re-render by updating a dummy state if needed; for now we rely on initial value.
+    };
+    mediaQuery.addEventListener("change", handleChange);
     const handleMouseMove = (e: MouseEvent) => {
       setMouse({
         x: (e.clientX / window.innerWidth) * 2 - 1,
         y: -(e.clientY / window.innerHeight) * 2 + 1,
       });
     };
-
     window.addEventListener("mousemove", handleMouseMove, { passive: true });
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
   }, []);
 
   if (reducedMotion) {

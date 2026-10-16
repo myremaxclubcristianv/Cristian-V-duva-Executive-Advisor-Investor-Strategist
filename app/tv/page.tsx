@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Navigation from "@/components/Navigation";
+import ExecutiveHeader from "@/components/ExecutiveHeader";
 import Footer from "@/components/Footer";
 import {
   Play,
@@ -63,7 +63,10 @@ export default function TVPage() {
   };
 
   useEffect(() => {
-    loadVideos();
+    const fetchData = async () => {
+      await loadVideos();
+    };
+    fetchData();
   }, []);
 
   const filteredVideos =
@@ -78,29 +81,29 @@ export default function TVPage() {
   const heroVideo = videos[0];
 
   return (
-    <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-[#070707] text-[#F5F5F7] selection:bg-[#B89B72]/30 selection:text-white">
-      <Navigation />
+    <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
+      <ExecutiveHeader />
 
       <main className="relative z-10 flex-1 pt-28 sm:pt-36 pb-28">
         <div className="site-container space-y-12">
           
-          {/* Top Apple TV Header */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-8">
+          {/* Top Architectural Broadcast Header */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/[0.08] pb-8">
             <div className="space-y-4 max-w-3xl">
-              <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.25em] text-[#B89B72] font-semibold">
+              <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.25em] text-[#93C8FF] font-semibold">
                 <Link href="/" className="hover:underline flex items-center gap-1">
-                  <ArrowLeft className="w-3.5 h-3.5" /> ACASĂ
+                  <ArrowLeft className="w-3.5 h-3.5" /> OVERVIEW
                 </Link>
                 <span>/</span>
                 <span className="flex items-center gap-1.5 text-red-400">
-                  <Radio className="w-3.5 h-3.5 animate-pulse" /> LIVE YOUTUBE TV
+                  <Radio className="w-3.5 h-3.5 animate-pulse" /> OFFICIAL YOUTUBE BROADCAST
                 </span>
               </div>
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-white">
-                Cristian Văduva Digital TV Studio
+              <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] tracking-tight">
+                Executive TV & Broadcast Studio
               </h1>
-              <p className="text-sm sm:text-base text-neutral-300 font-light leading-relaxed">
-                Transmisii video, analize macroeconomice, prezentări de reședințe de lux și strategii de negociere, importate în timp real de pe canalul oficial de YouTube.
+              <p className="font-sans text-sm sm:text-base text-[#B8C2CF] font-light leading-relaxed">
+                4K studio video broadcasts, macroeconomic analyses, ultra-prime European property tours, and negotiation masterclasses, synchronized directly from the official YouTube channel.
               </p>
             </div>
 
@@ -108,20 +111,20 @@ export default function TVPage() {
               <button
                 onClick={loadVideos}
                 disabled={isSyncing}
-                className="px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono uppercase tracking-wider text-neutral-300 flex items-center gap-2 cursor-pointer transition-all"
+                className="px-4 py-3 bg-[#0C1119] hover:bg-[#1B2028] border border-white/[0.1] text-xs font-mono uppercase tracking-wider text-[#B8C2CF] flex items-center gap-2 cursor-pointer transition-all"
               >
-                <RefreshCw className={`w-4 h-4 ${isSyncing ? "animate-spin text-[#B89B72]" : ""}`} />
-                <span>{isSyncing ? "Sincronizare..." : "Sincronizează Canal"}</span>
+                <RefreshCw className={`w-4 h-4 ${isSyncing ? "animate-spin text-[#93C8FF]" : ""}`} />
+                <span>{isSyncing ? "Syncing..." : "Sync Channel"}</span>
               </button>
 
               <a
                 href="https://www.youtube.com/@CristianVaduvaCV"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-3 rounded-2xl bg-red-600 hover:bg-red-700 text-white font-semibold text-xs font-mono uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg shadow-red-600/20"
+                className="px-5 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold text-xs font-mono uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg shadow-red-600/20"
               >
                 <YoutubeIcon className="w-4 h-4" />
-                <span>Abonează-te @CristianVaduvaCV</span>
+                <span>Subscribe @CristianVaduvaCV</span>
               </a>
             </div>
           </div>
@@ -130,7 +133,7 @@ export default function TVPage() {
           {heroVideo && (
             <div
               onClick={() => setSelectedVideo(heroVideo)}
-              className="bg-[#121212] border border-white/10 hover:border-red-500/50 rounded-3xl overflow-hidden cursor-pointer group transition-all duration-300 shadow-2xl relative"
+              className="bg-[#0C1119] border border-white/[0.1] hover:border-red-500/50 overflow-hidden cursor-pointer group transition-all duration-300 shadow-2xl relative"
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
                 <div className="lg:col-span-8 relative aspect-[16/9] bg-black overflow-hidden">
@@ -149,13 +152,13 @@ export default function TVPage() {
                     </div>
                   </div>
 
-                  <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10 text-xs font-mono uppercase text-[#B89B72] flex items-center gap-1.5">
+                  <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-black/80 backdrop-blur-md border border-white/10 text-xs font-mono uppercase text-[#93C8FF] flex items-center gap-1.5">
                     <Flame className="w-3.5 h-3.5 text-red-400" />
                     Episod Recomandat
                   </div>
                 </div>
 
-                <div className="lg:col-span-4 p-8 sm:p-10 flex flex-col justify-between bg-[#141414]">
+                <div className="lg:col-span-4 p-8 sm:p-10 flex flex-col justify-between bg-[#1B2028]">
                   <div className="space-y-4">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-mono uppercase">
                       <YoutubeIcon className="w-3.5 h-3.5" />
@@ -164,16 +167,16 @@ export default function TVPage() {
                     <h2 className="text-xl sm:text-2xl font-semibold text-white group-hover:text-red-400 transition-colors">
                       {heroVideo.title}
                     </h2>
-                    <p className="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
+                    <p className="text-xs sm:text-sm text-[#B8C2CF] font-light leading-relaxed">
                       {heroVideo.description || "Episod complet și analiză executivă pe YouTube."}
                     </p>
                   </div>
 
-                  <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono text-neutral-400">
+                  <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono text-[#8A95A5]">
                     <span className="text-emerald-400 flex items-center gap-1">
                       <CheckCircle2 className="w-3.5 h-3.5" /> Auto-Synced Live
                     </span>
-                    <span className="text-[#B89B72] group-hover:underline">Rulează Video →</span>
+                    <span className="text-[#93C8FF] group-hover:underline">Rulează Video →</span>
                   </div>
                 </div>
               </div>

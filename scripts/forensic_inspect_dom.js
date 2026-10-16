@@ -1,6 +1,6 @@
-const puppeteer = require('puppeteer-core');
-const fs = require('fs');
-const path = require('path');
+import puppeteer from 'puppeteer-core';
+import fs from 'fs';
+import path from 'path';
 
 async function auditDOM() {
   const chromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';

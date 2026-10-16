@@ -86,7 +86,10 @@ export default function AppleVideoShowcase() {
   };
 
   useEffect(() => {
-    fetchVideos();
+    const loadVideos = async () => {
+      await fetchVideos();
+    };
+    loadVideos();
   }, []);
 
   const heroVideo = videos[0];

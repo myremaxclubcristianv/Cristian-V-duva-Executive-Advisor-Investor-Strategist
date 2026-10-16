@@ -1,43 +1,82 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F6F6F3;
-  --background-secondary: #F0F0ED;
-  --background-dark: #111111;
-  --surface-primary: #FFFFFF;
-  --surface-secondary: #F0F0ED;
-  --surface-dark: #181818;
-  --text-primary: #111111;
-  --text-secondary: #5F5F5B;
-  --text-tertiary: #888884;
-  --text-inverse: #F6F6F3;
-  --accent: #B89B72;
-  --accent-muted: rgba(184, 155, 114, 0.15);
-  --border-rule: #E1E1DD;
-  --border-dark: #2B2B28;
-  --border-accent: rgba(184, 155, 114, 0.3);
+  /* EXECUTIVE 2.0 Palette (Brief 02) */
+  --midnight-ink: #07090D;
+  --blue-black: #0C1119;
+  --graphite: #1B2028;
+  --cold-silver: #B8C2CF;
+  --porcelain: #F5F4EF;
+  --limestone: #D8D0C2;
+  --muted-copper: #A97F60;
+  --electric-ice: #93C8FF;
+
+  /* Architectural Surface & Border Tokens */
+  --border-hairline: rgba(184, 194, 207, 0.08);
+  --border-structural: rgba(184, 194, 207, 0.14);
+  --border-ice: rgba(147, 200, 255, 0.35);
+
+  --text-primary: #F5F4EF;
+  --text-secondary: #B8C2CF;
+  --text-muted: #647082;
+  --text-stone: #D8D0C2;
+
+  /* Semantic Aliases */
+  --background: var(--midnight-ink);
+  --background-secondary: var(--blue-black);
+  --surface-primary: var(--blue-black);
+  --surface-secondary: var(--graphite);
+  --surface-elevated: #242B36;
+  --surface-porcelain: var(--porcelain);
+  --surface-limestone: var(--limestone);
+  --accent: var(--electric-ice);
+  --accent-copper: var(--muted-copper);
 }
 
 @theme inline {
+  --color-midnight-ink: var(--midnight-ink);
+  --color-blue-black: var(--blue-black);
+  --color-graphite: var(--graphite);
+  --color-cold-silver: var(--cold-silver);
+  --color-porcelain: var(--porcelain);
+  --color-limestone: var(--limestone);
+  --color-muted-copper: var(--muted-copper);
+  --color-electric-ice: var(--electric-ice);
+
+  --color-border-hairline: var(--border-hairline);
+  --color-border-structural: var(--border-structural);
+  --color-border-ice: var(--border-ice);
+
   --color-background: var(--background);
   --color-background-secondary: var(--background-secondary);
-  --color-background-dark: var(--background-dark);
-  --color-foreground: var(--text-primary);
   --color-surface-primary: var(--surface-primary);
   --color-surface-secondary: var(--surface-secondary);
-  --color-surface-dark: var(--surface-dark);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-porcelain: var(--surface-porcelain);
+  --color-surface-limestone: var(--surface-limestone);
+
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
-  --color-text-tertiary: var(--text-tertiary);
-  --color-text-inverse: var(--text-inverse);
+  --color-text-muted: var(--text-muted);
+  --color-text-stone: var(--text-stone);
   --color-accent: var(--accent);
-  --color-accent-muted: var(--accent-muted);
-  --color-border-rule: var(--border-rule);
-  --color-border-dark: var(--border-dark);
-  --color-border-accent: var(--border-accent);
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
-  --font-display: var(--font-playfair);
+  --color-accent-copper: var(--accent-copper);
+
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-surface-primary: var(--surface-primary);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-ivory: var(--surface-ivory);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-stone: var(--text-stone);
+
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-cormorant);
+  --font-display: var(--font-cormorant);
   --font-mono: var(--font-jetbrains);
 }
 
@@ -50,15 +89,30 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  background-color: #07090D;
 }
 
 body {
-  background: var(--background);
-  color: var(--text-primary);
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  background-color: #07090D;
+  color: #F5F4EF;
+  font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+/* Typographic Defaults */
+h1, h2, h3, .font-display, .font-serif {
+  font-family: var(--font-cormorant), Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+.font-sans {
+  font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
 }
 
 img {
@@ -76,10 +130,10 @@ button {
   cursor: pointer;
 }
 
-/* Axis & Spacing Standards */
+/* Architectural Grid & Surface Utilities */
 .site-container {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1360px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem;
@@ -100,27 +154,188 @@ button {
   }
 }
 
+@media (min-width: 1440px) {
+  .site-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
 .site-chapter {
   position: relative;
   width: 100%;
-  padding-top: clamp(5rem, 9vw, 9.5rem);
-  padding-bottom: clamp(5rem, 9vw, 9.5rem);
+  padding-top: clamp(4.5rem, 8vw, 8.5rem);
+  padding-bottom: clamp(4.5rem, 8vw, 8.5rem);
 }
 
-/* Fluid Typography Scale for Cinematic Brand Signature */
-.text-brand-signature {
-  font-size: clamp(3.5rem, 9vw + 1rem, 9.5rem);
-  line-height: 0.9;
-  letter-spacing: -0.04em;
-  font-weight: 700;
+/* Hairline Architectural Divider */
+.border-fine {
+  border-color: rgba(242, 242, 238, 0.14);
 }
 
-.text-chapter-heading {
-  font-size: clamp(2.25rem, 5vw + 0.5rem, 4.75rem);
-  line-height: 1.04;
-  letter-spacing: -0.03em;
+.border-subtle {
+  border-color: rgba(242, 242, 238, 0.08);
 }
 
-.touch-active:active {
-  transform: scale(0.98);
+/* Monumental Display Lettering */
+.font-monumental {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  line-height: 0.92;
+}
+
+.font-editorial {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Architectural Subtle Background Grid */
+.bg-arch-grid {
+  background-image: 
+    linear-gradient(to right, rgba(242, 242, 238, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(242, 242, 238, 0.035) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+.bg-arch-grid-dense {
+  background-image: 
+    linear-gradient(to right, rgba(242, 242, 238, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(242, 242, 238, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphism with Architectural Restraint */
+.glass-architectural {
+  background: rgba(8, 9, 11, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(242, 242, 238, 0.08);
+}
+
+.glass-card {
+  background: rgba(23, 26, 32, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(242, 242, 238, 0.08);
+}
+
+/* Surface: The White Chamber & Porcelain (Brief World 02) */
+.surface-porcelain {
+  background-color: #F5F4EF;
+  color: #07090D;
+}
+
+.surface-porcelain h1,
+.surface-porcelain h2,
+.surface-porcelain h3 {
+  color: #07090D;
+}
+
+.surface-porcelain p {
+  color: #1B2028;
+}
+
+.surface-limestone {
+  background-color: #D8D0C2;
+  color: #0C1119;
+}
+
+/* Light Beam & Illuminated Edges (Brief 02 Lighting) */
+.light-beam-overlay {
+  background: radial-gradient(circle at 50% 0%, rgba(147, 200, 255, 0.08) 0%, rgba(184, 194, 207, 0.02) 40%, transparent 70%);
+}
+
+.edge-illuminate-blue {
+  box-shadow: 0 -1px 0 0 rgba(147, 200, 255, 0.4), 0 0 16px -2px rgba(147, 200, 255, 0.15);
+}
+
+.edge-illuminate-copper {
+  box-shadow: 0 -1px 0 0 rgba(169, 127, 96, 0.4), 0 0 16px -2px rgba(169, 127, 96, 0.15);
+}
+
+/* Electric Ice Crosshairs */
+.arch-crosshair-ice {
+  position: relative;
+}
+.arch-crosshair-ice::before,
+.arch-crosshair-ice::after {
+  content: "";
+  position: absolute;
+  background-color: #93C8FF;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.arch-crosshair-ice::before {
+  top: 50%;
+  left: -8px;
+  right: -8px;
+  height: 1px;
+  transform: translateY(-50%);
+}
+.arch-crosshair-ice::after {
+  left: 50%;
+  top: -8px;
+  bottom: -8px;
+  width: 1px;
+  transform: translateX(-50%);
+}
+
+/* Architectural Crosshair & Framing Marker Elements */
+.arch-crosshair {
+  position: relative;
+}
+.arch-crosshair::before,
+.arch-crosshair::after {
+  content: "";
+  position: absolute;
+  background-color: var(--champagne);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.arch-crosshair::before {
+  top: 50%;
+  left: -8px;
+  right: -8px;
+  height: 1px;
+  transform: translateY(-50%);
+}
+.arch-crosshair::after {
+  left: 50%;
+  top: -8px;
+  bottom: -8px;
+  width: 1px;
+  transform: translateX(-50%);
+}
+
+/* Subtle Film Noise Texture */
+.arch-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Text stroke outline utility */
+.text-outline-monumental {
+  -webkit-text-stroke: 1px rgba(242, 242, 238, 0.2);
+  color: transparent;
+}
+
+.text-outline-champagne {
+  -webkit-text-stroke: 1px rgba(192, 170, 128, 0.4);
+  color: transparent;
+}
+
+/* Micro-interaction & Focus Accessibility */
+:focus-visible {
+  outline: 2px solid #C0AA80;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -72,7 +72,7 @@ async function capture() {
   console.log('Testing Mobile Navigation Drawer...');
   await page.evaluate(() => window.scrollTo(0, 0));
   await new Promise(r => setTimeout(r, 300));
-  const menuButton = await page.$('button[aria-label="Open mobile menu"]');
+  const menuButton = await page.$('button[aria-label="Open navigation menu"], button[aria-label="Open mobile menu"]');
   if (menuButton) {
     await menuButton.click();
     await new Promise(r => setTimeout(r, 500));
@@ -81,7 +81,7 @@ async function capture() {
     console.log(`Saved: ${drawerFilename}`);
     
     // Close menu
-    const closeButton = await page.$('button[aria-label="Close mobile menu"]');
+    const closeButton = await page.$('button[aria-label="Close navigation menu"], button[aria-label="Close mobile menu"]');
     if (closeButton) await closeButton.click();
     await new Promise(r => setTimeout(r, 300));
   }
