@@ -7,37 +7,37 @@ import Footer from "@/components/Footer";
 import { SectionHeader, EditorialText, CTASection } from "@/components/editorial";
 
 export const metadata: Metadata = {
-  title: "Despre & Mandat Fiduciar — Cristian Văduva",
+  title: "About & Fiduciary Mandate — Cristian Văduva",
   description:
-    "Consilier strategic executiv, investitor și negociator fiduciar pe axa Monaco · Dubai · București. Sinteza academică între economie, drept și ecologie.",
+    "Executive strategic advisor, investor, and fiduciary negotiator along the Monaco · Dubai · Bucharest axis. Academic synthesis of economics, law, and environmental ecology.",
 };
 
 const educationData = [
   {
     tier: "ACADEMIC TRINITY",
-    title: "Trei Licențe Universitare Complete",
-    field: "Științe Economice · Drept · Ecologie & Protecția Mediului",
-    location: "România & Uniunea Europeană",
+    title: "Three Complete University Bachelor Degrees",
+    field: "Economic Sciences · Law & Jurisprudence · Ecology & Environmental Protection",
+    location: "Romania & European Union",
     description:
-      "Fundamentare academică multidisciplinară ce îmbină modelarea economică cantitativă, jurisprudența contractuală riguroasă și analiza sistemică a riscurilor de mediu și dezvoltare durabilă.",
+      "Multidisciplinary academic foundation uniting quantitative econometric modeling, rigorous contractual jurisprudence, and systemic environmental impact analysis for built assets.",
     icon: Scale,
   },
   {
     tier: "POST-GRADUATE MASTERY",
     title: "Master of Science (M.Sc.)",
-    field: "Management Financiar & Auditul Riscului de Mediu",
+    field: "Financial Management & Environmental Risk Auditing",
     location: "Madrid & Amiens",
     description:
-      "Studii postuniversitare aprofundate axate pe strategii financiare corporative, evaluarea activelor transfrontaliere și cuantificarea impactului climatic asupra valorii imobiliare pe termen lung.",
+      "Advanced postgraduate studies focused on corporate financial structures, cross-border asset valuation, and quantifying climate risk impact on long-term real estate valuations.",
     icon: TrendingUp,
   },
   {
     tier: "EXECUTIVE SPECIALIZATION",
     title: "Executive Master's",
-    field: "Securitate Privată & Supravegherea Patrimoniului",
-    location: "Malta & Uniunea Europeană",
+    field: "Private Security & High-Value Asset Surveillance",
+    location: "Malta & European Union",
     description:
-      "Specializare de nivel înalt în guvernanța securității datelor, supravegherea confidențială a activelor fizice și arhitectura de conformitate instituțională pentru familii cu averi mari (UHNW).",
+      "High-level specialization in security governance, confidential physical asset custody, and institutional compliance frameworks for Ultra-High-Net-Worth (UHNW) families.",
     icon: ShieldCheck,
   },
 ];
@@ -45,47 +45,47 @@ const educationData = [
 const trajectorySteps = [
   {
     stage: "01",
-    title: "PIEȚE DE CAPITAL & ANALIZĂ CANTITATIVĂ",
-    desc: "Analiză cantitativă, infrastructură de tranzacționare, lichiditate macroeconomică și managementul structural al riscurilor în context financiar european.",
+    title: "CAPITAL MARKETS & QUANTITATIVE ANALYSIS",
+    desc: "Quantitative analysis, order routing infrastructure, macroeconomic liquidity assessment, and structural risk management across European financial markets.",
   },
   {
     stage: "02",
-    title: "NEGOCIERE DE PRINCIPAL & JURISPRUDENȚĂ",
-    desc: "Negociere strategică la nivel înalt, suveranitate contractuală transfrontalieră și execuția tranzacțiilor corporative complexe fără compromisuri fiduicare.",
+    title: "PRINCIPAL NEGOTIATION & CONTRACTUAL JURISPRUDENCE",
+    desc: "High-stakes strategic negotiation, cross-border contract sovereignty, and executing complex corporate real estate acquisitions without fiduciary compromise.",
   },
   {
     stage: "03",
-    title: "ORIGINARE IMOBILIARĂ ULTRA-PRIME",
-    desc: "Reprezentare exclusivă pentru achiziții confidențiale, evaluare arhitecturală riguroasă și originare off-market de proprietăți trofeu în Monaco, Coasta de Azur și București.",
+    title: "ULTRA-PRIME REAL ESTATE ORIGINATION",
+    desc: "Exclusive representation for discreet acquisitions, architectural due diligence, and confidential off-market sourcing of trophy estates across Monaco, the French Riviera, and Bucharest.",
   },
   {
     stage: "04",
-    title: "SUPRAVEGHERE PATRIMONIALĂ & APĂRARE",
-    desc: "Limitarea riscurilor de depreciere (downside containment), apărarea patrimoniului fizic și digital și arhitectură de conservare a averilor transgeneraționale.",
+    title: "PATRIMONIAL SURVEILLANCE & DOWNSIDE CONTAINMENT",
+    desc: "Capital preservation protocols, physical and cyber asset defense, and structural wealth defense mechanisms across multi-generational horizons.",
   },
   {
     stage: "05",
-    title: "PRACTICĂ EXECUTIVĂ INDEPENDENTĂ",
-    desc: "Consultanță confidențială dedicată unui număr restrâns de birouri de familie și principali UHNW pe axele București, Monaco, Zurich și Dubai.",
+    title: "INDEPENDENT EXECUTIVE ADVISORY",
+    desc: "Discreet advisory counsel dedicated to a select circle of single family offices and sovereign principals along the Bucharest, Monaco, Zurich, and Dubai corridors.",
   },
 ];
 
 const fiduciaryPillars = [
   {
-    title: "Exclusivitate Unilaterală (Fără Agenție Dublă)",
-    desc: "Reprezentăm o singură parte într-o tranzacție — fie cumpărătorul, fie vânzătorul. Eliminăm din start conflictul clasic de interese al agențiilor tradiționale care percep comisioane din ambele direcții.",
+    title: "Unilateral Exclusivity (Zero Dual Agency)",
+    desc: "We represent strictly one side of any transaction — either the buyer or the seller. We categorically eliminate the systemic conflict of interest prevalent in conventional brokerage models that collect fees from both counterparties.",
   },
   {
-    title: "Protecție Sub Secret Profesional & Swiss NDA",
-    desc: "Fiecare detaliu al tranzacției, structura patrimonială a clientului și identitatea beneficiarului final sunt protejate prin acorduri de confidențialitate stricte.",
+    title: "Confidentiality Under Swiss-Standard Non-Disclosure",
+    desc: "Every transaction nuance, holding entity structure, and beneficial ownership identity is shielded behind stringent fiduciary covenants and encrypted protocols.",
   },
   {
-    title: "Auditul Tehnic & Juridic Prealabil Fiecărui Euro",
-    desc: "Nicio tranzacție nu este avizată înainte de verificarea completă a titlurilor de proprietate, sarcinilor cadastrale, istoricului autorizării și calității constructive efective.",
+    title: "Forensic Cadastral & Legal Auditing Before Capital Commitment",
+    desc: "No asset is approved for acquisition prior to an exhaustive forensic audit of title deeds, encumbrances, historical permitting compliance, and physical structural integrity.",
   },
   {
-    title: "Viziune Generațională de Conservare a Valorii",
-    desc: "Nu vânzăm iluzii de randament speculativ pe termen scurt. Fiecare activ selectat trebuie să reziste ciclurilor economice adverse și să asigure conservarea capitalului pe zeci de ani.",
+    title: "Generational Wealth Preservation Focus",
+    desc: "We do not sell short-term speculative fantasies. Every curated asset must withstand adverse macroeconomic cycles and ensure uninterrupted balance sheet compounding across decades.",
   },
 ];
 
@@ -98,7 +98,7 @@ export default function AboutPage() {
         {/* ======================================================== */}
         {/* 01 // EDITORIAL MONOGRAPH HERO                           */}
         {/* ======================================================== */}
-        <section className="site-chapter border-b border-white/[0.08] relative overflow-hidden bg-arch-grid pb-24 sm:pb-32 lg:pb-36">
+        <section className="site-chapter border-b border-white/[0.08] relative overflow-hidden bg-arch-grid pb-28 sm:pb-36 lg:pb-44">
           {/* Subtle Corner Crosshairs */}
           <div className="absolute top-10 left-6 lg:left-16 w-3 h-3 border-t border-l border-[#93C8FF]" />
           <div className="absolute top-10 right-6 lg:right-16 w-3 h-3 border-t border-r border-[#93C8FF]" />
@@ -108,13 +108,13 @@ export default function AboutPage() {
             <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 font-mono text-[10px] sm:text-xs uppercase tracking-[0.28em] text-[#93C8FF]">
               <div className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
-                <span>01 // PROFIL & MANDAT FIDUCIAR</span>
+                <span>01 // PROFILE & FIDUCIARY MANDATE</span>
                 <span className="text-white/20">/</span>
                 <span className="text-[#B8C2CF]">CRISTIAN VĂDUVA</span>
               </div>
               <div className="hidden sm:flex items-center gap-2 text-[#8A95A5]">
                 <MapPin className="w-3.5 h-3.5 text-[#93C8FF]" />
-                <span>BUCUREȘTI · MONACO · DUBAI</span>
+                <span>BUCHAREST · MONACO · DUBAI</span>
               </div>
             </div>
 
@@ -123,31 +123,31 @@ export default function AboutPage() {
               <div className="lg:col-span-7 space-y-8">
                 <div className="space-y-4">
                   <span className="font-mono text-xs uppercase tracking-[0.24em] text-[#A97F60] block font-semibold">
-                    CONSILIER STRATEGIC EXECUTIV & INVESTITOR INDEPENDENT
+                    EXECUTIVE STRATEGIC ADVISOR & INDEPENDENT INVESTOR
                   </span>
                   <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-[#F5F4EF] leading-[1.02] tracking-tight">
-                    Consultanță Independentă.<br />
-                    <span className="text-[#A97F60] italic font-normal">Capital Strategic.</span><br />
-                    Apărare Generațională.
+                    Independent Advisory.<br />
+                    <span className="text-[#A97F60] italic font-normal">Strategic Capital.</span><br />
+                    Generational Defense.
                   </h1>
                 </div>
 
                 <EditorialText size="lg" maxWidth="prose" color="secondary" className="leading-relaxed">
-                  Cristian Văduva coordonează alocarea de capital, achizițiile imobiliare ultra-prime și mandatele executive confidențiale pe axa Monaco · București · Dubai · Zurich. Activând strict ca un consilier fiduciar independent, practica sa reunește modelarea financiară riguroasă, dreptul contractual și arhitectura de securitate a patrimoniului.
+                  Cristian Văduva directs capital allocation, ultra-prime real estate acquisitions, and discreet executive advisory along the Monaco · Bucharest · Dubai · Zurich axis. Operating strictly as an independent fiduciary counsel, his practice synthesizes quantitative econometric modeling, rigorous contractual law, and institutional asset security architecture.
                 </EditorialText>
 
                 <div className="pt-6 border-t border-white/[0.08] grid grid-cols-2 sm:grid-cols-3 gap-6 font-mono text-xs text-[#B8C2CF]">
                   <div>
-                    <span className="text-[#93C8FF] block uppercase tracking-widest text-[10px] font-semibold">AXE OPERAȚIONALE</span>
-                    <span className="text-[#F5F4EF] font-sans font-medium text-sm">București · Monaco · Dubai</span>
+                    <span className="text-[#93C8FF] block uppercase tracking-widest text-[10px] font-semibold">OPERATIONAL AXES</span>
+                    <span className="text-[#F5F4EF] font-sans font-medium text-sm">Bucharest · Monaco · Dubai</span>
                   </div>
                   <div>
-                    <span className="text-[#93C8FF] block uppercase tracking-widest text-[10px] font-semibold">FOCUS DE PRACTICĂ</span>
-                    <span className="text-[#F5F4EF] font-sans font-medium text-sm">Active Trofeu & Apărare Patrimonială</span>
+                    <span className="text-[#93C8FF] block uppercase tracking-widest text-[10px] font-semibold">PRACTICE FOCUS</span>
+                    <span className="text-[#F5F4EF] font-sans font-medium text-sm">Trophy Assets & Downside Defense</span>
                   </div>
                   <div className="hidden sm:block">
-                    <span className="text-[#93C8FF] block uppercase tracking-widest text-[10px] font-semibold">STANDARD FIDUCIAR</span>
-                    <span className="text-[#F5F4EF] font-sans font-medium text-sm">Exclusivitate Unilaterală (Fără Conflict)</span>
+                    <span className="text-[#93C8FF] block uppercase tracking-widest text-[10px] font-semibold">FIDUCIARY STANDARD</span>
+                    <span className="text-[#F5F4EF] font-sans font-medium text-sm">Unilateral Exclusivity (Zero Conflict)</span>
                   </div>
                 </div>
 
@@ -156,7 +156,7 @@ export default function AboutPage() {
                     href="/contact"
                     className="px-8 py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.22em] font-bold transition-all shadow-xl flex items-center gap-2"
                   >
-                    <span>DESCHIDE PROTOCOL PRIVAT</span>
+                    <span>INITIATE PRIVATE PROTOCOL</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </Link>
                   <a
@@ -186,8 +186,8 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#8A95A5] px-1">
-                  <span>PORTRET OFICIAL MONOGRAFIE</span>
-                  <span className="text-[#93C8FF]">DOSAR VERIFICAT</span>
+                  <span>OFFICIAL MONOGRAPH PORTRAIT</span>
+                  <span className="text-[#93C8FF]">VERIFIED CREDENTIALS</span>
                 </div>
               </div>
             </div>
@@ -197,13 +197,13 @@ export default function AboutPage() {
         {/* ======================================================== */}
         {/* 02 // MULTIDISCIPLINARY ACADEMIC SYNTHESIS                */}
         {/* ======================================================== */}
-        <section className="py-24 sm:py-32 lg:py-40 bg-[#0C1119] border-b border-white/[0.08]">
+        <section className="py-28 sm:py-36 lg:py-44 bg-[#0C1119] border-b border-white/[0.08]">
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-16 sm:space-y-20">
             <SectionHeader
-              eyebrow="02 // FUNDAMENT ACADEMIC MULTIDISCIPLINAR"
-              badge="DEGREESE & SPECIALIZĂRI"
-              title="Sinteza Academică între Economie, Drept și Mediu"
-              description="O abordare fiduciară completă cere înțelegerea simultană a cifrelor din bilanț, a clauzelor contractuale subtile și a rezilienței fizice și ecologice a activelor construite."
+              eyebrow="02 // MULTIDISCIPLINARY ACADEMIC FOUNDATION"
+              badge="DEGREES & SPECIALIZATIONS"
+              title="Academic Synthesis: Economics, Law & Ecology"
+              description="Comprehensive fiduciary advisory requires concurrent mastery of corporate balance sheets, nuanced contractual covenants, and the physical and environmental durability of real assets."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -250,12 +250,12 @@ export default function AboutPage() {
         {/* ======================================================== */}
         {/* 03 // FIDUCIARY PHILOSOPHY & PILLARS                      */}
         {/* ======================================================== */}
-        <section className="py-24 sm:py-32 lg:py-40 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-16 sm:space-y-20">
+        <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-16 sm:space-y-20">
           <SectionHeader
-            eyebrow="03 // FILOSOFIE & ETICĂ PROFESIONALĂ"
-            badge="STANDARDE TRANZACȚIONALE"
-            title="Doctrina Fiduciară Cristian Văduva"
-            description="Într-o industrie dominată adesea de intermedieri superficiale și comisioane ascunse, am fundamentat practica pe patru principii rigide de conduită profesională."
+            eyebrow="03 // PROFESSIONAL PHILOSOPHY & ETHICS"
+            badge="GOVERNANCE STANDARDS"
+            title="The Cristian Văduva Fiduciary Doctrine"
+            description="In an industry plagued by superficial brokerage and concealed transaction fees, this practice is grounded upon four uncompromising principles of professional conduct."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -267,7 +267,7 @@ export default function AboutPage() {
                 <div className="flex items-center gap-3">
                   <span className="font-serif text-2xl text-[#647082]">0{idx + 1}</span>
                   <div className="w-8 h-[1px] bg-[#93C8FF]/30" />
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-[#93C8FF]">PRINCIPIU CARDINAL</span>
+                  <span className="font-mono text-[10px] uppercase tracking-widest text-[#93C8FF]">CARDINAL PRINCIPLE</span>
                 </div>
 
                 <h3 className="font-serif text-2xl text-[#F5F4EF] leading-snug">
@@ -285,20 +285,20 @@ export default function AboutPage() {
         {/* ======================================================== */}
         {/* 04 // CAREER EVOLUTION TRAJECTORY                        */}
         {/* ======================================================== */}
-        <section className="py-24 sm:py-32 lg:py-40 bg-[#0C1119] border-t border-b border-white/[0.08]">
+        <section className="py-28 sm:py-36 lg:py-44 bg-[#0C1119] border-t border-b border-white/[0.08]">
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-16 sm:space-y-20">
             <SectionHeader
-              eyebrow="04 // EVOLUȚIE & CRONOLOGIE DE PRACTICĂ"
-              badge="TRAIECTORIE"
-              title="Etapele Consolidării Experienței Executive"
-              description="De la analize de lichiditate și piețe de capital până la negocierea confidențială a activelor trofeu și supravegherea averilor de familie."
+              eyebrow="04 // EVOLUTION & PRACTICE CHRONOLOGY"
+              badge="PRACTICE TRAJECTORY"
+              title="Phases of Executive & Fiduciary Consolidation"
+              description="From capital market liquidity research and econometric underwriting to sovereign trophy asset negotiations and multi-generational family office defense."
             />
 
             <div className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
               {trajectorySteps.map((step) => (
                 <div
                   key={step.stage}
-                  className="py-10 sm:py-12 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline hover:bg-[#1B2028]/40 transition-colors px-4 sm:px-6"
+                  className="py-12 sm:py-16 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline hover:bg-[#1B2028]/40 transition-colors px-4 sm:px-6"
                 >
                   <div className="md:col-span-4 flex items-baseline gap-4">
                     <span className="font-mono text-base text-[#93C8FF] font-semibold">{step.stage}</span>
@@ -321,14 +321,14 @@ export default function AboutPage() {
         {/* 05 // PRIVATE MANDATE INTAKE                             */}
         {/* ======================================================== */}
         <CTASection
-          eyebrow="PROTOCOL PRIVAT DE CONSULTANȚĂ"
-          title="Inițiază o Discuție Strategică Confidențială."
-          description="Evaluez personal fiecare mandat de achiziție, structurare sau apărare a patrimoniului. Discuțiile inițiale se desfășoară sub secret profesional și acord de confidențialitate prealabil."
-          primaryActionText="DESCHIDE PROTOCOL PRIVAT"
+          eyebrow="PRIVATE ADVISORY PROTOCOL"
+          title="Initiate a Confidential Strategic Consultation."
+          description="Every acquisition, capital structuring, or asset preservation mandate is evaluated personally by Cristian Văduva. Initial consultations operate under strict professional secrecy and pre-execution non-disclosure covenants."
+          primaryActionText="INITIATE PRIVATE PROTOCOL"
           primaryActionHref="/contact"
           secondaryActionText="WHATSAPP DESK (+43 650 953 6345)"
           secondaryActionHref="https://wa.me/436509536345"
-          disclaimer="Mandatele de reprezentare sunt limitate ca număr pentru a garanta atenția deplină și lipsa oricărui conflict de interese."
+          disclaimer="Representation mandates are strictly limited in volume to ensure undivided principal attention and complete insulation from conflicts of interest."
         />
       </main>
 

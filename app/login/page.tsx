@@ -16,7 +16,7 @@ export default function LoginPage() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!password.trim()) {
-      setError("Vă rugăm introduceți codul de securitate.");
+      setError("Please enter the security passcode.");
       return;
     }
 
@@ -36,10 +36,10 @@ export default function LoginPage() {
         router.push("/admin");
         router.refresh();
       } else {
-        setError(data.error || "Cod de securitate invalid.");
+        setError(data.error || "Invalid security passcode.");
       }
     } catch {
-      setError("Eroare de conexiune la server. Vă rugăm încercați din nou.");
+      setError("Server connection error. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -50,7 +50,7 @@ export default function LoginPage() {
       <Navigation />
 
       <main className="flex-1 flex items-center justify-center pt-28 pb-20 px-4 sm:px-6 relative overflow-hidden">
-        {/* Subtle Apple Ambient Glow */}
+        {/* Subtle Ambient Glow */}
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-gradient-to-tr from-[#B89B72]/15 via-[#8F7449]/10 to-transparent rounded-full blur-[120px] pointer-events-none" />
 
         <div className="w-full max-w-md relative z-10">
@@ -70,7 +70,7 @@ export default function LoginPage() {
                 Cristian Văduva
               </h1>
               <p className="text-xs sm:text-sm text-neutral-400 font-light max-w-xs mx-auto">
-                Portal securizat pentru administrarea conținutului foto, sincronizarea YouTube și gestionarea platformei.
+                Secure portal for photo management, YouTube synchronization, and platform administration.
               </p>
             </div>
 
@@ -79,14 +79,14 @@ export default function LoginPage() {
               <div className="space-y-2">
                 <label className="text-xs font-mono uppercase tracking-wider text-neutral-300 flex items-center gap-2">
                   <KeyRound className="w-3.5 h-3.5 text-[#B89B72]" />
-                  Cod de Securitate / Passcode
+                  Security Passcode
                 </label>
                 <div className="relative">
                   <input
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Introduceți parola..."
+                    placeholder="Enter passcode..."
                     autoFocus
                     className="w-full px-4 py-3.5 bg-black/50 border border-white/15 rounded-2xl text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-[#B89B72] focus:ring-2 focus:ring-[#B89B72]/20 transition-all font-mono"
                   />
@@ -109,7 +109,7 @@ export default function LoginPage() {
                   <span className="inline-block animate-spin w-4 h-4 border-2 border-black border-t-transparent rounded-full" />
                 ) : (
                   <>
-                    <span>Autentificare Securizată</span>
+                    <span>Secure Authentication</span>
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                   </>
                 )}
@@ -120,10 +120,10 @@ export default function LoginPage() {
             <div className="pt-4 border-t border-white/10 flex flex-col items-center gap-2 text-center text-[11px] text-neutral-500">
               <span className="flex items-center gap-1.5 text-neutral-400">
                 <Sparkles className="w-3.5 h-3.5 text-[#B89B72]" />
-                Acces rezervat exclusiv administratorului
+                Access reserved exclusively for administrator
               </span>
               <Link href="/" className="hover:text-white transition-colors underline underline-offset-4">
-                ← Înapoi la site-ul principal
+                ← Return to main website
               </Link>
             </div>
 

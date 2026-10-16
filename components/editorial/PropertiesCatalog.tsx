@@ -17,30 +17,30 @@ export default function PropertiesCatalog() {
   });
 
   const tabs: { id: FilterTab; label: string; count: number }[] = [
-    { id: "all", label: "TOATE ACTIVELE", count: selectedProperties.length },
+    { id: "all", label: "ALL ASSETS", count: selectedProperties.length },
     {
       id: "penthouse",
-      label: "PENTHOUSE & ROOFTOP",
+      label: "PENTHOUSES & ROOFTOPS",
       count: selectedProperties.filter((p) => p.category === "penthouse").length,
     },
     {
       id: "villa",
-      label: "VILE & DOMENII",
+      label: "ESTATES & MANSIONS",
       count: selectedProperties.filter((p) => p.category === "villa").length,
     },
     {
       id: "development",
-      label: "DEZVOLTĂRI REZIDENȚIALE",
+      label: "RESIDENTIAL DEVELOPMENTS",
       count: selectedProperties.filter((p) => p.category === "development").length,
     },
     {
       id: "marine",
-      label: "WATERFRONT & MARITIM",
+      label: "WATERFRONT & MARITIME",
       count: selectedProperties.filter((p) => p.category === "marine").length,
     },
     {
       id: "international",
-      label: "INTERNAȚIONAL (MONACO · DUBAI)",
+      label: "INTERNATIONAL (MONACO · DUBAI)",
       count: selectedProperties.filter((p) => p.category === "international").length,
     },
   ];
@@ -79,7 +79,6 @@ export default function PropertiesCatalog() {
       {/* Main Properties Exhibition Stream */}
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-16 sm:space-y-24">
         {filteredProperties.map((property, idx) => {
-          // If the property is marked as a development or project with custom developer details
           if (property.id === "prop-pipera-villas") {
             return (
               <ProjectFeature
@@ -87,10 +86,10 @@ export default function PropertiesCatalog() {
                 title={property.title}
                 subtitle={property.subtitle}
                 location={property.location}
-                phase="ANSAMBLU REZIDENȚIAL FINALIZAT · DISPONIBIL IMEDIAT"
-                unitsSummary="36 VILE (14 TIP 1 + 22 TIP 2)"
+                phase="COMPLETED RESIDENTIAL MASTERPLAN · IMMEDIATE OCCUPANCY"
+                unitsSummary="36 VILLAS (14 TYPE 1 + 22 TYPE 2)"
                 description={property.description}
-                developerNote="Infrastructură urbană completă: străzi asfaltate, rețele edilitare subterane, acces securizat și proximitate directă față de polul de școli internaționale din Pipera."
+                developerNote="Full municipal infrastructure delivered: paved roadway network, underground utility lines, perimeter security, and immediate transit to Northern Bucharest's international school cluster."
                 image={property.heroImage}
                 specs={property.specs}
                 highlights={property.features}
@@ -107,10 +106,10 @@ export default function PropertiesCatalog() {
                 title={property.title}
                 subtitle={property.subtitle}
                 location={property.location}
-                phase="PROIECT ÎN DEZVOLTARE · DATE PUBLICATE DE DEZVOLTATOR"
+                phase="ACTIVE DEVELOPMENT · CONFIRMED DEVELOPER SPECIFICATIONS"
                 unitsSummary="WATERFRONT SKY MANSIONS & WATER VILLAS"
                 description={property.description}
-                developerNote="Informații de proiect publicate de dezvoltator. Randamentele estimate și calendarele de predare fac obiectul contractului bilateral de rezervare (SPA) și nu constituie garanții comerciale implicite."
+                developerNote="Official developer-announced project details. Projected appreciation and handover schedules are governed by bilateral reservation contracts (SPA) and do not constitute implied commercial guarantees."
                 image={property.heroImage}
                 specs={property.specs}
                 highlights={property.features}
@@ -132,13 +131,13 @@ export default function PropertiesCatalog() {
         {filteredProperties.length === 0 && (
           <div className="text-center py-24 border border-white/[0.08] bg-[#0C1119] p-12 space-y-4">
             <span className="font-mono text-xs uppercase tracking-[0.24em] text-[#93C8FF]">
-              PROTOCOL CONFIDENȚIAL
+              CONFIDENTIAL FIDUCIARY PROTOCOL
             </span>
             <h3 className="font-serif text-2xl text-[#F5F4EF]">
-              Activele din această categorie sunt gestionate exclusiv off-market.
+              Assets in this category are managed strictly off-market.
             </h3>
-            <p className="font-sans text-sm text-[#B8C2CF] max-w-xl mx-auto font-light">
-              Pentru a accesa oportunități private protejate sub acord de confidențialitate (NDA), vă rugăm să trimiteți un mandat de căutare.
+            <p className="font-sans text-sm text-[#B8C2CF] max-w-xl mx-auto font-light leading-relaxed">
+              To review confidential acquisitions protected under Swiss-grade non-disclosure covenants (NDA), please submit a retained acquisition brief.
             </p>
           </div>
         )}
@@ -146,10 +145,10 @@ export default function PropertiesCatalog() {
 
       {/* Final Fiduciary CTA */}
       <CTASection
-        eyebrow="REPREZENTARE EXCLUSIVĂ ÎN ACHIZIȚIE & VÂNZARE"
-        title="Dorești reprezentare fiduciară pentru o proprietate de patrimoniu?"
-        description="Fie că analizezi o achiziție privată pe axa București – Monaco – Dubai sau dorești listarea confidențială a unei proprietăți de peste 1M €, acționăm exclusiv în interesul mandatarului, fără conflicte de agenție dublă."
-        primaryActionText="STABILEȘTE O AUDIENȚĂ FIDUCIARĂ"
+        eyebrow="EXCLUSIVE BUYER & SELLER REPRESENTATION"
+        title="Seeking Fiduciary Counsel for a Heritage Property Transaction?"
+        description="Whether structuring a private acquisition along the Bucharest – Monaco – Dubai corridor or preparing a legacy estate for confidential off-market disposition, we act solely on behalf of our principal, eliminating dual-agency conflicts."
+        primaryActionText="SCHEDULE A CONFIDENTIAL BRIEFING"
         primaryActionHref="/contact"
       />
     </div>

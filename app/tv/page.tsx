@@ -91,18 +91,18 @@ export default function TVPage() {
             <div className="space-y-4 max-w-3xl">
               <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.25em] text-[#93C8FF] font-semibold">
                 <Link href="/" className="hover:underline flex items-center gap-1">
-                  <ArrowLeft className="w-3.5 h-3.5" /> PREZENTARE GENERALĂ
+                  <ArrowLeft className="w-3.5 h-3.5" /> OVERVIEW
                 </Link>
                 <span>/</span>
                 <span className="flex items-center gap-1.5 text-red-400">
-                  <Radio className="w-3.5 h-3.5 animate-pulse" /> TRANSMISIE OFICIALĂ 4K
+                  <Radio className="w-3.5 h-3.5 animate-pulse" /> OFFICIAL 4K BROADCAST
                 </span>
               </div>
               <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] tracking-tight">
-                Executive TV & Studio de Analiză
+                Executive TV & Studio
               </h1>
               <p className="font-sans text-sm sm:text-base text-[#B8C2CF] font-light max-w-2xl leading-relaxed">
-                Transmisiuni 4K, analize macroeconomice, vizite detaliate în reședințe europene de elită și studii de caz din negocieri de mare anvergură, sincronizate direct cu canalul oficial YouTube.
+                4K broadcasts, macroeconomic analyses, in-depth walkthroughs of elite European residences, and private negotiation case studies synchronized directly from the official YouTube channel.
               </p>
             </div>
 
@@ -113,7 +113,7 @@ export default function TVPage() {
                 className="px-5 py-3.5 bg-[#0C1119] hover:bg-[#1B2028] border border-white/[0.1] text-xs font-mono uppercase tracking-wider text-[#B8C2CF] flex items-center gap-2 cursor-pointer transition-all"
               >
                 <RefreshCw className={`w-4 h-4 ${isSyncing ? "animate-spin text-[#93C8FF]" : ""}`} />
-                <span>{isSyncing ? "Sincronizare..." : "Sincronizează Canal"}</span>
+                <span>{isSyncing ? "Syncing..." : "Sync Channel"}</span>
               </button>
 
               <a
@@ -123,7 +123,7 @@ export default function TVPage() {
                 className="px-6 py-3.5 bg-red-600 hover:bg-red-700 text-white font-semibold text-xs font-mono uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg shadow-red-600/20"
               >
                 <YoutubeIcon className="w-4 h-4" />
-                <span>Abonează-te @CristianVaduvaCV</span>
+                <span>Subscribe @CristianVaduvaCV</span>
               </a>
             </div>
           </div>
@@ -153,7 +153,7 @@ export default function TVPage() {
 
                   <div className="absolute top-4 left-4 px-3 py-1.5 bg-[#07090D]/85 backdrop-blur-md border border-white/10 text-xs font-mono uppercase text-[#93C8FF] flex items-center gap-1.5">
                     <Flame className="w-3.5 h-3.5 text-red-400" />
-                    EPISOD RECOMANDAT
+                    FEATURED EPISODE
                   </div>
                 </div>
 
@@ -161,21 +161,21 @@ export default function TVPage() {
                   <div className="space-y-5">
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-mono uppercase">
                       <YoutubeIcon className="w-3.5 h-3.5" />
-                      Canal Oficial Cristian Văduva
+                      Official Channel · Cristian Văduva
                     </div>
                     <h2 className="font-serif text-2xl sm:text-3xl font-normal text-[#F5F4EF] group-hover:text-[#93C8FF] transition-colors leading-snug">
                       {heroVideo.title}
                     </h2>
                     <p className="font-sans text-xs sm:text-sm text-[#B8C2CF] font-light leading-relaxed">
-                      {heroVideo.description || "Episod complet și analiză executivă pe YouTube."}
+                      {heroVideo.description || "Full episode and executive analysis on YouTube."}
                     </p>
                   </div>
 
                   <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono text-[#8A95A5]">
                     <span className="text-emerald-400 flex items-center gap-1">
-                      <CheckCircle2 className="w-3.5 h-3.5" /> Sincronizat Live
+                      <CheckCircle2 className="w-3.5 h-3.5" /> Synchronized Live
                     </span>
-                    <span className="text-[#93C8FF] group-hover:underline">Rulează Video →</span>
+                    <span className="text-[#93C8FF] group-hover:underline">Play Video →</span>
                   </div>
                 </div>
               </div>
@@ -204,12 +204,12 @@ export default function TVPage() {
           {loading ? (
             <div className="py-24 text-center text-[#8A95A5]">
               <div className="w-8 h-8 border-2 border-[#93C8FF] border-t-transparent rounded-full animate-spin mx-auto mb-3" />
-              <p className="font-mono text-xs uppercase tracking-wider">Se sincronizează transmisia YouTube...</p>
+              <p className="font-mono text-xs uppercase tracking-wider">Synchronizing YouTube broadcast...</p>
             </div>
           ) : filteredVideos.length === 0 ? (
             <div className="py-24 text-center text-[#8A95A5] space-y-3">
               <YoutubeIcon className="w-12 h-12 mx-auto opacity-30 text-red-500" />
-              <p className="font-sans text-base text-[#F5F4EF]">Nu există video-uri în această categorie.</p>
+              <p className="font-sans text-base text-[#F5F4EF]">No videos found in this category.</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -250,7 +250,7 @@ export default function TVPage() {
                     )}
                     <div className="pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#8A95A5]">
                       <span>@CristianVaduvaCV</span>
-                      <span className="text-[#93C8FF] group-hover:underline">Rulează Video →</span>
+                      <span className="text-[#93C8FF] group-hover:underline">Play Video →</span>
                     </div>
                   </div>
                 </div>
@@ -296,7 +296,7 @@ export default function TVPage() {
             {/* Modal Footer */}
             <div className="p-4 sm:p-6 bg-[#0C1119] border-t border-white/[0.1] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <p className="font-sans text-xs sm:text-sm text-[#B8C2CF] font-light line-clamp-2">
-                {selectedVideo.description || "Transmisie oficială pe canalul Cristian Văduva."}
+                {selectedVideo.description || "Official broadcast on the Cristian Văduva channel."}
               </p>
               <a
                 href={selectedVideo.youtubeUrl || `https://www.youtube.com/watch?v=${selectedVideo.youtubeId || selectedVideo.id}`}
@@ -304,7 +304,7 @@ export default function TVPage() {
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 border border-white/[0.14] hover:border-[#93C8FF] text-xs font-mono uppercase text-[#F5F4EF] hover:text-[#93C8FF] transition-colors flex items-center gap-2 shrink-0"
               >
-                <span>Deschide pe YouTube</span>
+                <span>Open on YouTube</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>

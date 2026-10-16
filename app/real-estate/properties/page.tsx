@@ -5,8 +5,8 @@ import PropertiesCatalog from "@/components/editorial/PropertiesCatalog";
 import { SectionHeader } from "@/components/editorial";
 
 export const metadata: Metadata = {
-  title: "Portofoliu Rezidențial & Proprietăți Verificate — Cristian Văduva",
-  description: "Selecție editorială de proprietăți de prestigiu, penthouse-uri, ansambluri rezidențiale și oportunități internaționale verificate pe axa București · Monaco · Dubai.",
+  title: "Confirmed Property Portfolio & Acquisitions — Cristian Văduva",
+  description: "Curated editorial selection of verified penthouses, private architectural estates, residential masterplans, and international trophy assets across Bucharest, Monaco, and Dubai.",
 };
 
 export default function PropertiesPage() {
@@ -14,45 +14,45 @@ export default function PropertiesPage() {
     <div className="flex flex-col min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
       <ExecutiveHeader />
 
-      <main className="flex-1 pt-32 sm:pt-40 lg:pt-44">
+      <main className="flex-1 pt-32 sm:pt-40 lg:pt-48">
         {/* ======================================================== */}
         {/* EDITORIAL HERO SECTION                                   */}
         {/* ======================================================== */}
-        <section className="py-20 sm:py-28 lg:py-36 px-6 sm:px-12 lg:px-20 border-b border-white/[0.08] bg-arch-grid relative overflow-hidden">
+        <section className="py-24 sm:py-32 lg:py-40 px-6 sm:px-12 lg:px-20 border-b border-white/[0.08] bg-arch-grid relative overflow-hidden">
           {/* Subtle Corner Markers */}
           <div className="absolute top-10 left-6 sm:left-12 lg:left-20 w-3 h-3 border-t border-l border-[#93C8FF]" />
           <div className="absolute top-10 right-6 sm:right-12 lg:right-20 w-3 h-3 border-t border-r border-[#93C8FF]" />
 
-          <div className="max-w-7xl mx-auto space-y-8">
+          <div className="max-w-7xl mx-auto space-y-10 sm:space-y-12">
             <SectionHeader
-              eyebrow="PORTOFOLIU & ACTIVE VERIFICATE"
+              eyebrow="VERIFIED ASSET PORTFOLIO"
               badge="HOMEFIND × AIXLUXURY"
               title={
                 <>
-                  Selecție Editorială de<br />
-                  <span className="text-[#A97F60] italic font-normal">Active Imobiliare de Patrimoniu.</span>
+                  Editorial Curation of<br />
+                  <span className="text-[#A97F60] italic font-normal">Sovereign Architectural Assets.</span>
                 </>
               }
-              description="Fiecare proprietate prezentată a fost auditată conform rigorilor noastre de reprezentare: raritate urbanistică, soliditate structurală, documentație cadastrală verificată și potențial cert de conservare sau apreciere a capitalului."
+              description="Every property presented has been audited against our fiduciary representation standards: architectural rarity, structural engineering integrity, verified cadastre title provenance, and verified capital defense resilience."
             />
 
             {/* Fiduciary Standards Ticker */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/[0.06] font-mono text-[10px] sm:text-[11px] text-[#8A95A5]">
-              <div>
-                <span className="text-[#93C8FF] block font-semibold">STANDARDE DE AUDIT</span>
-                <span>Fără promisiuni neverificate</span>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-white/[0.08] font-mono text-[10px] sm:text-[11px] text-[#8A95A5]">
+              <div className="space-y-1">
+                <span className="text-[#93C8FF] block font-semibold uppercase tracking-wider">AUDIT STANDARDS</span>
+                <span className="text-[#F5F4EF] font-sans">Zero unverified marketing claims</span>
               </div>
-              <div>
-                <span className="text-[#93C8FF] block font-semibold">SURSE CONFIRMATE</span>
-                <span>HomeFind & CristianVaduva.com</span>
+              <div className="space-y-1">
+                <span className="text-[#93C8FF] block font-semibold uppercase tracking-wider">CONFIRMED SOURCES</span>
+                <span className="text-[#F5F4EF] font-sans">HomeFind & CristianVaduva.com</span>
               </div>
-              <div>
-                <span className="text-[#93C8FF] block font-semibold">CONFIDENȚIALITATE</span>
-                <span>Preț la cerere când este privat</span>
+              <div className="space-y-1">
+                <span className="text-[#93C8FF] block font-semibold uppercase tracking-wider">CONFIDENTIALITY TIER</span>
+                <span className="text-[#F5F4EF] font-sans">Price on inquiry for private placements</span>
               </div>
-              <div>
-                <span className="text-[#93C8FF] block font-semibold">REPREZENTARE</span>
-                <span>Single-Client Fiduciary Only</span>
+              <div className="space-y-1">
+                <span className="text-[#93C8FF] block font-semibold uppercase tracking-wider">REPRESENTATION BASIS</span>
+                <span className="text-[#F5F4EF] font-sans">Single-Client Fiduciary Exclusivity</span>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function PropertiesPage() {
         {/* ======================================================== */}
         {/* PROPERTIES EXHIBITION CATALOG                            */}
         {/* ======================================================== */}
-        <div className="py-16 sm:py-24">
+        <div className="py-20 sm:py-28 lg:py-36">
           <PropertiesCatalog />
         </div>
       </main>

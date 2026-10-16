@@ -25,15 +25,15 @@ interface ServiceSectionProps {
 }
 
 export default function ServiceSection({
-  eyebrow = "PIESE DE PRACTICĂ STRATEGICĂ",
-  badge = "CAPABILITĂȚI EXECUTIVE",
-  title = "Arhitectura Serviciilor & Mandatelor Fiduicare",
-  description = "Fiecare mandat este structurat la intersecția dintre analiza cantitativă, expertiza juridică transfrontalieră și securizarea activelor de mare valoare.",
+  eyebrow = "STRATEGIC PRACTICE PILLARS",
+  badge = "EXECUTIVE CAPABILITIES",
+  title = "Architecture of Fiduciary Mandates & Services",
+  description = "Every engagement is architected at the intersection of quantitative financial modeling, cross-border contract law, and high-value asset sovereignty.",
   services,
   className = "",
 }: ServiceSectionProps) {
   return (
-    <section className={`py-24 sm:py-32 lg:py-36 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-16 ${className}`}>
+    <section className={`py-28 sm:py-36 lg:py-44 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-20 ${className}`}>
       {/* Section Header */}
       <SectionHeader
         eyebrow={eyebrow}
@@ -47,7 +47,7 @@ export default function ServiceSection({
         {services.map((srv) => (
           <div
             key={srv.number}
-            className="py-12 sm:py-16 grid lg:grid-cols-12 gap-8 items-start hover:bg-[#0C1119]/50 transition-colors duration-300 px-4 sm:px-6"
+            className="py-14 sm:py-20 grid lg:grid-cols-12 gap-8 lg:gap-12 items-start hover:bg-[#0C1119]/50 transition-colors duration-300 px-4 sm:px-6"
           >
             {/* Number Column */}
             <div className="lg:col-span-2">
@@ -64,15 +64,15 @@ export default function ServiceSection({
               <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF] leading-snug">
                 {srv.title}
               </h3>
-              <EditorialText size="base" maxWidth="prose" color="secondary">
+              <EditorialText size="base" maxWidth="prose" color="secondary" className="leading-relaxed">
                 {srv.description}
               </EditorialText>
 
               {/* Deliverables */}
               {srv.deliverables && srv.deliverables.length > 0 && (
-                <div className="pt-2 space-y-2">
+                <div className="pt-3 space-y-2">
                   <span className="font-mono text-[10px] uppercase tracking-wider text-[#A97F60] font-semibold block">
-                    LIVRABILE ȘI STANDARDE:
+                    DELIVERABLES & FIDUCIARY BENCHMARKS:
                   </span>
                   <ul className="space-y-1.5 font-sans text-xs sm:text-sm text-[#B8C2CF]/90 font-light">
                     {srv.deliverables.map((item, idx) => (
@@ -90,9 +90,9 @@ export default function ServiceSection({
             <div className="lg:col-span-4 flex flex-col justify-between h-full space-y-6 lg:pl-8 lg:border-l lg:border-white/[0.06]">
               <div className="p-4 bg-[#1B2028]/60 border border-white/[0.06] font-mono text-xs text-[#8A95A5] space-y-1">
                 <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest font-semibold">
-                  STATUS ANGAJAMENT
+                  MANDATE STATUS
                 </span>
-                <span>Reprezentare exclusivă pe bază de contract de mandat fiduciar</span>
+                <span>Exclusive representation under retained fiduciary covenant</span>
               </div>
 
               {srv.external ? (
@@ -100,7 +100,7 @@ export default function ServiceSection({
                   href={srv.linkHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3.5 border border-white/[0.14] hover:border-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 group shadow-lg"
+                  className="px-6 py-4 border border-white/[0.14] hover:border-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 group shadow-lg"
                 >
                   <span>{srv.linkText}</span>
                   <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -108,7 +108,7 @@ export default function ServiceSection({
               ) : (
                 <Link
                   href={srv.linkHref}
-                  className="px-6 py-3.5 border border-white/[0.14] hover:border-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 group shadow-lg"
+                  className="px-6 py-4 border border-white/[0.14] hover:border-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 group shadow-lg"
                 >
                   <span>{srv.linkText}</span>
                   <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

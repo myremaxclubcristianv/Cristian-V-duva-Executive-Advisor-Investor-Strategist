@@ -16,18 +16,18 @@ interface CTASectionProps {
 }
 
 export default function CTASection({
-  eyebrow = "PROTOCOL DE COMUNICARE DIRECTĂ",
-  title = "Inițiază o Conversație Strategică Confidențială.",
-  description = "Fiecare solicitare este evaluată direct de Cristian Văduva sub strict privilegiu fiduciar. Nu menținem departamente de preluare sau intermediari.",
-  primaryActionText = "SOLICITĂ CONSULTANȚĂ PRIVATĂ",
+  eyebrow = "DIRECT PRINCIPAL COMMUNICATIONS PROTOCOL",
+  title = "Initiate a Confidential Strategic Conversation.",
+  description = "Every inquiry is evaluated directly by Cristian Văduva under strict fiduciary non-disclosure privilege. We do not maintain junior intake tiers or third-party intermediaries.",
+  primaryActionText = "REQUEST PRIVATE CONSULTATION",
   primaryActionHref = "/contact",
   secondaryActionText = "WHATSAPP DESK (+43 650 953 6345)",
   secondaryActionHref = "https://wa.me/436509536345",
-  disclaimer = "Toate consultațiile se desfășoară sub secret profesional și acord de confidențialitate prealabil oricărei divulgări de active.",
+  disclaimer = "All consultations operate under professional secrecy. Counter-party verification and preliminary NDA precede any asset disclosure.",
   className = "",
 }: CTASectionProps) {
   return (
-    <section className={`py-24 sm:py-32 lg:py-36 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto ${className}`}>
+    <section className={`py-28 sm:py-36 lg:py-44 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto ${className}`}>
       <div className="border border-white/[0.12] bg-[#0C1119] p-8 sm:p-14 lg:p-16 space-y-8 shadow-2xl relative overflow-hidden">
         {/* Ambient Corner Accents */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#93C8FF]/[0.03] rounded-full blur-3xl pointer-events-none" />
@@ -44,7 +44,7 @@ export default function CTASection({
             {title}
           </h2>
 
-          <EditorialText size="lg" maxWidth="prose" color="secondary">
+          <EditorialText size="lg" maxWidth="prose" color="secondary" className="leading-relaxed">
             {description}
           </EditorialText>
         </div>

@@ -37,7 +37,7 @@ export default function ProjectFeature({
 }: ProjectFeatureProps) {
   return (
     <article
-      className={`border border-white/[0.1] bg-[#0C1119] p-6 sm:p-10 lg:p-12 space-y-8 shadow-2xl relative overflow-hidden ${className}`}
+      className={`border border-white/[0.1] bg-[#0C1119] p-6 sm:p-10 lg:p-14 space-y-10 shadow-2xl relative overflow-hidden ${className}`}
     >
       {/* Top Banner */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-6 font-mono text-[10px] sm:text-xs">
@@ -68,9 +68,9 @@ export default function ProjectFeature({
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#07090D]/80 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#07090D]/85 via-transparent to-transparent pointer-events-none" />
             <div className="absolute top-4 left-4 px-3 py-1 bg-[#07090D]/90 border border-white/[0.12] font-mono text-[9px] uppercase tracking-widest text-[#93C8FF]">
-              DEZVOLTARE VERIFICATĂ
+              VERIFIED DEVELOPMENT MASTERPLAN
             </div>
           </div>
         </div>
@@ -86,13 +86,13 @@ export default function ProjectFeature({
             <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-[#F5F4EF] leading-snug">
               {title}
             </h3>
-            <EditorialText size="base" maxWidth="prose" color="secondary">
+            <EditorialText size="base" maxWidth="prose" color="secondary" className="leading-relaxed">
               {description}
             </EditorialText>
           </div>
 
           {/* Specs Matrix */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 p-4 border border-white/[0.08] bg-[#1B2028]/70">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 p-4 sm:p-5 border border-white/[0.08] bg-[#1B2028]/70">
             {specs.map((item, idx) => (
               <div key={idx} className="space-y-1">
                 <span className="font-mono text-[9px] uppercase tracking-wider text-[#8A95A5] block">
@@ -108,7 +108,7 @@ export default function ProjectFeature({
           {/* Highlights */}
           <div className="space-y-2">
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#B8C2CF] block font-semibold">
-              ELEMENTE STRUCTURALE:
+              STRUCTURAL INFRASTRUCTURE HIGHLIGHTS:
             </span>
             <ul className="space-y-1.5 font-sans text-xs sm:text-sm text-[#B8C2CF]/90 font-light">
               {highlights.map((hl, idx) => (
@@ -122,7 +122,7 @@ export default function ProjectFeature({
 
           {/* Developer Documentation Disclaimer */}
           {developerNote && (
-            <div className="p-3.5 border-l-2 border-[#A97F60] bg-[#07090D] flex items-start gap-2.5 text-xs text-[#B8C2CF] font-light">
+            <div className="p-4 border-l-2 border-[#A97F60] bg-[#07090D] flex items-start gap-2.5 text-xs text-[#B8C2CF] font-light leading-relaxed">
               <Info className="w-4 h-4 text-[#A97F60] shrink-0 mt-0.5" />
               <span>{developerNote}</span>
             </div>
@@ -132,9 +132,9 @@ export default function ProjectFeature({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-white/[0.08]">
             <Link
               href="/contact"
-              className="px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-xl"
+              className="px-7 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-xl"
             >
-              <span>SOLICITĂ DOSAR DE INVESTIȚIE</span>
+              <span>REQUEST INVESTMENT MEMORANDUM</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
 

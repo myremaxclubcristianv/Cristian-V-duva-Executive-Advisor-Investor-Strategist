@@ -11,6 +11,11 @@ interface PropertyFeatureProps {
   className?: string;
 }
 
+/**
+ * Pattern A — Signature Property Presentation
+ * Large cinematic visual occupying ~55–65% of desktop composition.
+ * Aligned editorial specifications rail with subtle dividing rules and clear action.
+ */
 export default function PropertyFeature({
   property,
   reversed = false,
@@ -18,7 +23,7 @@ export default function PropertyFeature({
 }: PropertyFeatureProps) {
   return (
     <article
-      className={`border border-white/[0.1] bg-[#0C1119] p-6 sm:p-10 lg:p-12 space-y-8 lg:space-y-10 shadow-2xl relative overflow-hidden ${className}`}
+      className={`border border-white/[0.1] bg-[#0C1119] p-6 sm:p-10 lg:p-14 space-y-10 lg:space-y-12 shadow-2xl relative overflow-hidden ${className}`}
     >
       {/* Top Meta Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-6 font-mono text-[10px] sm:text-xs">
@@ -39,23 +44,23 @@ export default function PropertyFeature({
 
       {/* Main Grid: Visual & Editorial Specifications */}
       <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-        {/* Visual Column */}
-        <div className={`lg:col-span-6 space-y-4 ${reversed ? "lg:order-2" : "lg:order-1"}`}>
+        {/* Visual Column (~60% on desktop) */}
+        <div className={`lg:col-span-7 space-y-4 ${reversed ? "lg:order-2" : "lg:order-1"}`}>
           <div className="relative aspect-[16/10] w-full border border-white/[0.12] bg-[#1B2028] overflow-hidden shadow-2xl group">
             <Image
               src={property.heroImage}
               alt={property.title}
               fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              sizes="(max-width: 1024px) 100vw, 60vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#07090D]/80 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#07090D]/85 via-transparent to-transparent pointer-events-none" />
             
-            {/* Price Floating Tag */}
-            <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between p-3 bg-[#07090D]/90 backdrop-blur-md border border-white/[0.12]">
+            {/* Price & Area Floating Rail */}
+            <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between p-4 bg-[#07090D]/90 backdrop-blur-md border border-white/[0.12]">
               <div>
                 <span className="font-mono text-[9px] uppercase tracking-widest text-[#8A95A5] block">
-                  VALOARE ESTIMATĂ / STATUT
+                  VALUATION / STATUS
                 </span>
                 <span className="font-serif text-xl sm:text-2xl text-[#93C8FF] font-medium">
                   {property.price}
@@ -63,7 +68,7 @@ export default function PropertyFeature({
               </div>
               <div className="text-right">
                 <span className="font-mono text-[9px] uppercase tracking-widest text-[#8A95A5] block">
-                  SUPRAFAȚĂ
+                  TOTAL FOOTPRINT
                 </span>
                 <span className="font-mono text-xs sm:text-sm text-[#F5F4EF]">
                   {property.area}
@@ -72,16 +77,16 @@ export default function PropertyFeature({
             </div>
           </div>
 
-          {/* Additional Gallery Strip if available */}
+          {/* Additional Gallery Strip */}
           {property.galleryImages && property.galleryImages.length > 1 && (
-            <div className="grid grid-cols-4 gap-2 pt-1">
+            <div className="grid grid-cols-4 gap-2.5 pt-1">
               {property.galleryImages.slice(1, 5).map((img, i) => (
                 <div key={i} className="relative aspect-[4/3] border border-white/[0.08] overflow-hidden bg-[#1B2028]">
                   <Image
                     src={img}
                     alt={`${property.title} detail ${i + 1}`}
                     fill
-                    sizes="(max-width: 1024px) 25vw, 12vw"
+                    sizes="(max-width: 1024px) 25vw, 15vw"
                     className="object-cover hover:scale-110 transition-transform duration-500"
                   />
                 </div>
@@ -90,18 +95,18 @@ export default function PropertyFeature({
           )}
         </div>
 
-        {/* Editorial Information Column */}
-        <div className={`lg:col-span-6 space-y-6 ${reversed ? "lg:order-1" : "lg:order-2"}`}>
+        {/* Editorial Information Column (~40% on desktop) */}
+        <div className={`lg:col-span-5 space-y-6 ${reversed ? "lg:order-1" : "lg:order-2"}`}>
           <div className="space-y-3">
             {property.subtitle && (
               <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.24em] text-[#A97F60] font-semibold block">
                 {property.subtitle}
               </span>
             )}
-            <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-[#F5F4EF] leading-snug">
+            <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF] leading-snug">
               {property.title}
             </h3>
-            <EditorialText size="base" maxWidth="prose" color="secondary">
+            <EditorialText size="base" maxWidth="prose" color="secondary" className="leading-relaxed">
               {property.description}
             </EditorialText>
           </div>
@@ -126,7 +131,7 @@ export default function PropertyFeature({
           {property.features && property.features.length > 0 && (
             <div className="space-y-2 pt-1">
               <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#B8C2CF] block font-semibold">
-                SPECIFICAȚII SEMNĂTURĂ:
+                SIGNATURE ARCHITECTURAL SPECIFICATIONS:
               </span>
               <ul className="space-y-1.5 font-sans text-xs sm:text-sm text-[#B8C2CF]/90 font-light">
                 {property.features.map((feat, idx) => (
@@ -139,13 +144,13 @@ export default function PropertyFeature({
             </div>
           )}
 
-          {/* Advisory Positioning Box */}
+          {/* Fiduciary Advisory Positioning Box */}
           <div className="p-4 border-l-2 border-[#93C8FF] bg-[#07090D] space-y-1.5">
             <span className="font-mono text-[9px] uppercase tracking-[0.28em] text-[#93C8FF] font-semibold block flex items-center gap-1.5">
               <ShieldCheck className="w-3 h-3" />
-              <span>PERSPECTIVĂ DE CONSULTANȚĂ FIDUCIARĂ</span>
+              <span>FIDUCIARY ADVISORY THESIS</span>
             </span>
-            <p className="font-serif italic text-sm sm:text-base text-[#D8D0C2] leading-relaxed">
+            <p className="font-serif italic text-sm text-[#D8D0C2] leading-relaxed">
               &ldquo;{property.advisoryPerspective}&rdquo;
             </p>
           </div>
@@ -154,9 +159,9 @@ export default function PropertyFeature({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-white/[0.08]">
             <Link
               href="/contact"
-              className="px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-xl"
+              className="px-7 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-xl"
             >
-              <span>SOLICITĂ DOSAR CONFIDENȚIAL</span>
+              <span>REQUEST CONFIDENTIAL DOSSIER</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
 
@@ -166,7 +171,7 @@ export default function PropertyFeature({
               rel="noopener noreferrer"
               className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] hover:text-[#93C8FF] flex items-center justify-center gap-1.5 transition-colors py-2"
             >
-              <span>Sursa: {property.sourceName}</span>
+              <span>Source: {property.sourceName}</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-[#93C8FF]" />
             </a>
           </div>

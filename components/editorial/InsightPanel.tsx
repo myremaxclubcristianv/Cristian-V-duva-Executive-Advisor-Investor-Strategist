@@ -73,14 +73,14 @@ export default function InsightPanel({
         )}
 
         {/* Body Text */}
-        <EditorialText size="sm" maxWidth="prose" color="secondary">
+        <EditorialText size="sm" maxWidth="prose" color="secondary" className="leading-relaxed">
           {description}
         </EditorialText>
       </div>
 
       {/* Footer Citation & Source Link */}
       <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between font-mono text-[10px] sm:text-[11px] text-[#647082]">
-        <span>Sursă: {source}</span>
+        <span>Source: {source}</span>
         {actionUrl && (
           <a
             href={actionUrl}

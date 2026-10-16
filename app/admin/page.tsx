@@ -144,7 +144,7 @@ export default function AdminPage() {
   const handleUploadSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!selectedFile) {
-      setUploadError("Vă rugăm să selectați o fotografie pentru încărcare.");
+      setUploadError("Please select a photograph to upload.");
       return;
     }
 
@@ -184,10 +184,10 @@ export default function AdminPage() {
         // Reload photos list
         await loadPhotos();
       } else {
-        setUploadError(data.error || "Eroare la încărcarea fotografiei.");
+        setUploadError(data.error || "Error uploading photograph.");
       }
     } catch {
-      setUploadError("A apărut o problemă de rețea. Vă rugăm să reîncercați.");
+      setUploadError("A network error occurred. Please try again.");
     } finally {
       setUploading(false);
     }
@@ -240,7 +240,7 @@ export default function AdminPage() {
 
   // Delete Photo
   const handleDeletePhoto = async (photo: StoredPhoto) => {
-    if (!confirm(`Sigur doriți să ștergeți fotografia "${photo.title}" din galerie și storage?`)) {
+    if (!confirm(`Are you sure you want to delete the photograph "${photo.title}" from storage?`)) {
       return;
     }
 
@@ -251,11 +251,11 @@ export default function AdminPage() {
       if (res.ok) {
         setPhotos((prev) => prev.filter((p) => p.id !== photo.id));
       } else {
-        alert("Eroare la ștergerea fotografiei.");
+        alert("Error deleting photograph.");
       }
     } catch (err) {
       console.error("Error deleting photo:", err);
-      alert("A apărut o eroare la ștergere.");
+      alert("An error occurred during deletion.");
     }
   };
 
@@ -276,7 +276,7 @@ export default function AdminPage() {
         <div className="flex flex-col items-center gap-4">
           <div className="w-10 h-10 border-2 border-[#B89B72] border-t-transparent rounded-full animate-spin" />
           <span className="font-mono text-xs uppercase tracking-widest text-neutral-400">
-            Verificare acces executiv...
+            Verifying executive credentials...
           </span>
         </div>
       </div>
@@ -308,7 +308,7 @@ export default function AdminPage() {
                 Executive Media & Architecture Studio
               </h1>
               <p className="text-sm text-neutral-400 font-light">
-                Gestionați stocarea fotografiilor, definiți fotografia Hero, arhiva Featured și monitorizați sincronizarea YouTube.
+                Manage photographic storage, designate Hero presentation, curate Featured archives, and monitor YouTube synchronization.
               </p>
             </div>
 
@@ -318,7 +318,7 @@ export default function AdminPage() {
                 target="_blank"
                 className="px-4 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono tracking-wider uppercase flex items-center gap-2 text-neutral-300 hover:text-white transition-all"
               >
-                <span>Vezi Galeria Live</span>
+                <span>View Live Gallery</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </Link>
               <Link
@@ -326,7 +326,7 @@ export default function AdminPage() {
                 target="_blank"
                 className="px-4 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono tracking-wider uppercase flex items-center gap-2 text-neutral-300 hover:text-white transition-all"
               >
-                <span>Vezi YouTube TV</span>
+                <span>View YouTube TV</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </Link>
               <button
@@ -334,7 +334,7 @@ export default function AdminPage() {
                 className="px-4 py-2.5 rounded-2xl bg-red-500/10 hover:bg-red-500/20 border border-red-500/20 text-red-400 text-xs font-mono tracking-wider uppercase flex items-center gap-2 transition-all cursor-pointer"
               >
                 <LogOut className="w-3.5 h-3.5" />
-                <span>Deconectare</span>
+                <span>Log Out</span>
               </button>
             </div>
           </div>
@@ -345,13 +345,13 @@ export default function AdminPage() {
             {/* Cadran 1: Total Photos & Roles */}
             <div className="bg-[#121212] border border-white/10 rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between">
               <div className="flex items-center justify-between text-neutral-400">
-                <span className="text-xs font-mono uppercase tracking-wider">Fotografii în Galerie</span>
+                <span className="text-xs font-mono uppercase tracking-wider">Gallery Photographs</span>
                 <ImageIcon className="w-5 h-5 text-[#B89B72]" />
               </div>
               <div className="mt-4">
                 <div className="text-4xl font-semibold text-white">{photos.length}</div>
                 <div className="text-xs text-neutral-400 mt-1">
-                  {photos.filter((p) => p.featured).length} marcate Featured · 1 Hero activ
+                  {photos.filter((p) => p.featured).length} featured · 1 active hero
                 </div>
               </div>
             </div>
@@ -359,15 +359,15 @@ export default function AdminPage() {
             {/* Cadran 2: Active Hero Photo Status */}
             <div className="bg-[#121212] border border-white/10 rounded-3xl p-6 relative overflow-hidden flex flex-col justify-between">
               <div className="flex items-center justify-between text-neutral-400">
-                <span className="text-xs font-mono uppercase tracking-wider">Fotografie Hero Activă</span>
+                <span className="text-xs font-mono uppercase tracking-wider">Active Hero Photo</span>
                 <Crown className="w-5 h-5 text-amber-400" />
               </div>
               <div className="mt-4">
                 <div className="text-sm font-semibold text-white truncate">
-                  {currentHeroPhoto?.title || "Implicită"}
+                  {currentHeroPhoto?.title || "Default"}
                 </div>
                 <div className="text-xs text-neutral-400 mt-1 font-mono">
-                  {currentHeroPhoto?.category || "PORTRAIT"} · {currentHeroPhoto?.location || "București"}
+                  {currentHeroPhoto?.category || "PORTRAIT"} · {currentHeroPhoto?.location || "Bucharest"}
                 </div>
               </div>
             </div>
@@ -381,7 +381,7 @@ export default function AdminPage() {
               <div className="mt-4">
                 <div className="flex items-baseline gap-2">
                   <span className="text-3xl font-semibold text-white">
-                    {youtubeCount !== null ? `${youtubeCount} video-uri` : "Sincronizat"}
+                    {youtubeCount !== null ? `${youtubeCount} videos` : "Synchronized"}
                   </span>
                   <span className="text-xs text-green-400 font-mono flex items-center gap-1">
                     <CheckCircle2 className="w-3 h-3" /> Auto-Sync
@@ -395,7 +395,7 @@ export default function AdminPage() {
                     className="text-[#B89B72] hover:underline flex items-center gap-1 cursor-pointer"
                   >
                     <RefreshCw className={`w-3 h-3 ${syncingYoutube ? "animate-spin" : ""}`} />
-                    Sincronizează
+                    Sync Now
                   </button>
                 </div>
               </div>
@@ -411,10 +411,10 @@ export default function AdminPage() {
               </div>
               <div>
                 <h2 className="text-xl sm:text-2xl font-semibold text-white">
-                  Încărcare Fotografie & Atribuire Roluri
+                  Upload Photograph & Role Assignment
                 </h2>
                 <p className="text-xs sm:text-sm text-neutral-400">
-                  Adăugați fotografii de înaltă rezoluție în storage persistent și atribuiți rolul (Hero, Featured sau Galerie).
+                  Upload high-resolution photography to persistent storage and assign roles (Hero, Featured, or Gallery).
                 </p>
               </div>
             </div>
@@ -425,7 +425,7 @@ export default function AdminPage() {
                 {/* Left: Drag & Drop / Image Preview */}
                 <div className="lg:col-span-5 space-y-4">
                   <label className="text-xs font-mono uppercase tracking-wider text-neutral-300 block">
-                    Fișier Imagine (JPG, PNG, WEBP, AVIF — max 25MB)
+                    Image File (JPG, PNG, WEBP, AVIF — max 25MB)
                   </label>
 
                   <div
@@ -454,7 +454,7 @@ export default function AdminPage() {
                         />
                         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl backdrop-blur-sm">
                           <span className="px-4 py-2 rounded-xl bg-white text-black text-xs font-semibold">
-                            Schimbă imaginea
+                            Change image
                           </span>
                         </div>
                       </div>
@@ -465,10 +465,10 @@ export default function AdminPage() {
                         </div>
                         <div className="space-y-1">
                           <p className="text-sm font-medium text-white">
-                            Faceți clic sau trageți fotografia aici
+                            Click or drag photograph here
                           </p>
                           <p className="text-xs text-neutral-400">
-                            Recomandat: Rezoluție înaltă, portret sau landscape
+                            Recommended: High resolution, portrait or landscape
                           </p>
                         </div>
                       </div>
@@ -482,13 +482,13 @@ export default function AdminPage() {
                   {/* Title */}
                   <div className="sm:col-span-2 space-y-2">
                     <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                      Titlu Fotografie *
+                      Photograph Title *
                     </label>
                     <input
                       type="text"
                       value={title}
                       onChange={(e) => setTitle(e.target.value)}
-                      placeholder="Ex: Cristian Văduva — Executive Advisory Desk"
+                      placeholder="E.g. Cristian Văduva — Executive Advisory Desk"
                       required
                       className="w-full px-4 py-3 bg-black/50 border border-white/15 rounded-2xl text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-[#B89B72]"
                     />
@@ -497,7 +497,7 @@ export default function AdminPage() {
                   {/* Category */}
                   <div className="space-y-2">
                     <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                      Categorie Galerie
+                      Gallery Category
                     </label>
                     <select
                       value={category}
@@ -516,13 +516,13 @@ export default function AdminPage() {
                   <div className="space-y-2">
                     <label className="text-xs font-mono uppercase tracking-wider text-neutral-300 flex items-center gap-1.5">
                       <MapPin className="w-3.5 h-3.5 text-[#B89B72]" />
-                      Locație
+                      Location
                     </label>
                     <input
                       type="text"
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
-                      placeholder="Ex: Bucharest / Monaco / Dubai"
+                      placeholder="E.g. Bucharest / Monaco / Dubai"
                       className="w-full px-4 py-3 bg-black/50 border border-white/15 rounded-2xl text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-[#B89B72]"
                     />
                   </div>
@@ -531,7 +531,7 @@ export default function AdminPage() {
                   <div className="space-y-2">
                     <label className="text-xs font-mono uppercase tracking-wider text-neutral-300 flex items-center gap-1.5">
                       <Calendar className="w-3.5 h-3.5 text-[#B89B72]" />
-                      An
+                      Year
                     </label>
                     <input
                       type="text"
@@ -545,29 +545,29 @@ export default function AdminPage() {
                   {/* Orientation */}
                   <div className="space-y-2">
                     <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                      Format Orientare
+                      Orientation Format
                     </label>
                     <select
                       value={orientation}
                       onChange={(e) => setOrientation(e.target.value as PhotoOrientation)}
                       className="w-full px-4 py-3 bg-[#1A1A1A] border border-white/15 rounded-2xl text-white text-sm focus:outline-none focus:border-[#B89B72]"
                     >
-                      <option value="landscape">Landscape (Orizontal)</option>
+                      <option value="landscape">Landscape (Horizontal)</option>
                       <option value="portrait">Portrait (Vertical)</option>
-                      <option value="square">Square (Pătrat)</option>
+                      <option value="square">Square</option>
                     </select>
                   </div>
 
                   {/* Caption */}
                   <div className="sm:col-span-2 space-y-2">
                     <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                      Descriere / Context Editorial
+                      Description / Editorial Context
                     </label>
                     <textarea
                       value={caption}
                       onChange={(e) => setCaption(e.target.value)}
                       rows={3}
-                      placeholder="Ex: Reprezentare privată și tranzacții ultra-prime..."
+                      placeholder="E.g. Private representation and ultra-prime transactions..."
                       className="w-full px-4 py-3 bg-black/50 border border-white/15 rounded-2xl text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-[#B89B72] resize-none"
                     />
                   </div>
@@ -586,7 +586,7 @@ export default function AdminPage() {
                       />
                       <label htmlFor="featured-toggle" className="text-xs text-neutral-200 cursor-pointer">
                         <span className="font-semibold block text-white">★ Featured Archive</span>
-                        <span>Apare în secțiunea vizuală homepage</span>
+                        <span>Featured in homepage visual section</span>
                       </label>
                     </div>
 
@@ -600,8 +600,8 @@ export default function AdminPage() {
                         className="w-5 h-5 accent-amber-500 rounded cursor-pointer"
                       />
                       <label htmlFor="hero-toggle" className="text-xs text-neutral-200 cursor-pointer">
-                        <span className="font-semibold block text-amber-300">👑 Setează ca Imagine Hero</span>
-                        <span>Devine fotografia principală (max 1)</span>
+                        <span className="font-semibold block text-amber-300">👑 Set as Hero Image</span>
+                        <span>Designates as main hero photograph (max 1)</span>
                       </label>
                     </div>
 
@@ -614,7 +614,7 @@ export default function AdminPage() {
               {uploadSuccess && (
                 <div className="p-4 rounded-2xl bg-green-500/10 border border-green-500/30 text-green-400 text-sm flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5" />
-                  <span>Fotografia a fost încărcată cu succes în storage și publicată!</span>
+                  <span>Photograph uploaded to storage and published successfully!</span>
                 </div>
               )}
 
@@ -634,12 +634,12 @@ export default function AdminPage() {
                 {uploading ? (
                   <>
                     <span className="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin" />
-                    <span>Se încarcă în storage...</span>
+                    <span>Uploading to storage...</span>
                   </>
                 ) : (
                   <>
                     <Upload className="w-4 h-4" />
-                    <span>Încarcă & Salvează Fotografia</span>
+                    <span>Upload & Save Photograph</span>
                   </>
                 )}
               </button>
@@ -655,10 +655,10 @@ export default function AdminPage() {
                 </div>
                 <div>
                   <h2 className="text-xl sm:text-2xl font-semibold text-white">
-                    Galeria Activă & Gestiune Roluri ({filteredPhotos.length})
+                    Active Gallery & Role Management ({filteredPhotos.length})
                   </h2>
                   <p className="text-xs sm:text-sm text-neutral-400">
-                    Definiți fotografia principală Hero, marcați elementele Featured sau ștergeți imagini.
+                    Designate primary Hero photograph, toggle Featured status, or manage storage.
                   </p>
                 </div>
               </div>
@@ -685,12 +685,12 @@ export default function AdminPage() {
             {loadingPhotos ? (
               <div className="py-16 text-center text-neutral-400">
                 <div className="w-8 h-8 border-2 border-[#B89B72] border-t-transparent rounded-full animate-spin mx-auto mb-3" />
-                <p className="font-mono text-xs">Se încarcă arhiva foto...</p>
+                <p className="font-mono text-xs">Loading photo archive...</p>
               </div>
             ) : filteredPhotos.length === 0 ? (
               <div className="py-16 text-center text-neutral-500 space-y-2">
                 <ImageIcon className="w-10 h-10 mx-auto opacity-40 text-[#B89B72]" />
-                <p className="text-sm">Nu există fotografii în această categorie.</p>
+                <p className="text-sm">No photographs in this category.</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -720,7 +720,7 @@ export default function AdminPage() {
                         {photo.hero && (
                           <div className="px-2.5 py-1 rounded-full bg-amber-500 text-black text-[10px] font-mono font-semibold flex items-center gap-1 shadow-md">
                             <Crown className="w-3 h-3 fill-black" />
-                            HERO ACTIV
+                            ACTIVE HERO
                           </div>
                         )}
                         {photo.featured && (
@@ -765,10 +765,10 @@ export default function AdminPage() {
                               ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 cursor-default"
                               : "bg-white/5 hover:bg-amber-500/10 text-neutral-400 hover:text-amber-300 border border-white/5"
                           }`}
-                          title="Setează ca imagine Hero"
+                          title="Set as Hero image"
                         >
                           <Crown className={`w-3.5 h-3.5 ${photo.hero ? "fill-amber-400" : ""}`} />
-                          <span>{photo.hero ? "Hero Activ" : "Setează Hero"}</span>
+                          <span>{photo.hero ? "Active Hero" : "Set Hero"}</span>
                         </button>
 
                         {/* Featured Toggle Button */}
@@ -779,17 +779,17 @@ export default function AdminPage() {
                               ? "bg-[#B89B72]/20 text-[#B89B72] border border-[#B89B72]/30"
                               : "bg-white/5 hover:bg-white/10 text-neutral-400 hover:text-white"
                           }`}
-                          title="Comută prezența în Featured Archive"
+                          title="Toggle Featured Archive presence"
                         >
                           <Star className={`w-3.5 h-3.5 ${photo.featured ? "fill-[#B89B72]" : ""}`} />
-                          <span>{photo.featured ? "Featured" : "Fă Featured"}</span>
+                          <span>{photo.featured ? "Featured" : "Set Featured"}</span>
                         </button>
 
                         {/* Delete Button */}
                         <button
                           onClick={() => handleDeletePhoto(photo)}
                           className="p-2 rounded-xl bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/20 transition-colors cursor-pointer"
-                          title="Șterge fotografia"
+                          title="Delete photograph"
                         >
                           <Trash2 className="w-4 h-4" />
                         </button>
