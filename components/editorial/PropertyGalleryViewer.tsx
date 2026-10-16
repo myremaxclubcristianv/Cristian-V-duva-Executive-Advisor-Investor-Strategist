@@ -33,6 +33,19 @@ export default function PropertyGalleryViewer({
     setActiveIndex((prev) => (prev === total - 1 ? 0 : prev + 1));
   };
 
+  // Keyboard navigation support
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (lightboxOpen) {
+        if (e.key === "Escape") setLightboxOpen(false);
+        if (e.key === "ArrowLeft") handlePrev();
+        if (e.key === "ArrowRight") handleNext();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [lightboxOpen, total]);
+
   return (
     <div className="space-y-4">
       {/* Primary Stage */}
@@ -40,6 +53,12 @@ export default function PropertyGalleryViewer({
         onClick={() => setLightboxOpen(true)}
         className="relative aspect-[16/10] sm:aspect-[16/9] w-full bg-[#12161F] border border-white/[0.12] overflow-hidden group cursor-pointer shadow-2xl"
       >
+        {/* Corner Architectural Ticks */}
+        <span className="absolute top-3 left-3 w-3 h-3 border-t border-l border-white/40 pointer-events-none z-10" />
+        <span className="absolute top-3 right-3 w-3 h-3 border-t border-r border-white/40 pointer-events-none z-10" />
+        <span className="absolute bottom-3 left-3 w-3 h-3 border-b border-l border-white/40 pointer-events-none z-10" />
+        <span className="absolute bottom-3 right-3 w-3 h-3 border-b border-r border-white/40 pointer-events-none z-10" />
+
         <Image
           src={currentImage}
           alt={`${title} — Photograph ${activeIndex + 1}`}

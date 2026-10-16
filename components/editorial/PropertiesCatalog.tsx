@@ -4,9 +4,12 @@ import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { selectedProperties, Property } from "@/lib/properties";
-import PropertyFeature from "./PropertyFeature";
+import PropertyCadranFeature from "./PropertyCadranFeature";
+import PropertySplitCadran from "./PropertySplitCadran";
 import ProjectFeature from "./ProjectFeature";
 import SupportingPropertyCard from "./SupportingPropertyCard";
+import CadranDivider from "./CadranDivider";
+import EditorialCadran from "./EditorialCadran";
 import CTASection from "./CTASection";
 import {
   Search,
@@ -20,6 +23,7 @@ import {
   X,
   Building,
   Globe2,
+  Sparkles,
 } from "lucide-react";
 
 type FilterCategory = "all" | "penthouse" | "villa" | "development" | "marine" | "international";
@@ -139,11 +143,104 @@ export default function PropertiesCatalog() {
     setVisibleCount(10);
   };
 
+  /**
+   * Helper to build rhythmic editorial stream:
+   * Groups properties into alternating visual presentations:
+   * 1. Heroic full-width cadran
+   * 2. Two-column paired spread
+   * 3. Specialized development feature
+   */
+  const renderEditorialStream = () => {
+    const elements: React.ReactNode[] = [];
+    let i = 0;
+    let sequenceCounter = 1;
+
+    while (i < displayedProperties.length) {
+      const current = displayedProperties[i];
+
+      // Check if it's a designated residential development
+      if (current.id === "prop-pipera-villas" || current.id === "prop-dubai-brabus") {
+        elements.push(
+          <div key={`dev-${current.id}`} className="space-y-6">
+            <ProjectFeature
+              title={current.title}
+              subtitle={current.subtitle}
+              location={current.location}
+              phase={
+                current.id === "prop-pipera-villas"
+                  ? "COMPLETED RESIDENTIAL MASTERPLAN · IMMEDIATE OCCUPANCY"
+                  : "ACTIVE DEVELOPMENT · CONFIRMED DEVELOPER SPECIFICATIONS"
+              }
+              unitsSummary={
+                current.id === "prop-pipera-villas"
+                  ? "36 VILLAS (14 TYPE 1 + 22 TYPE 2)"
+                  : "WATERFRONT SKY MANSIONS & WATER VILLAS"
+              }
+              description={current.description}
+              developerNote={
+                current.id === "prop-pipera-villas"
+                  ? "Full municipal infrastructure delivered: paved roadway network, underground utility lines, perimeter security, and immediate transit to Northern Bucharest's international school cluster."
+                  : "Official developer-announced project details. Projected appreciation and handover schedules are governed by bilateral reservation contracts (SPA) and do not constitute implied commercial guarantees."
+              }
+              image={current.heroImage}
+              specs={current.specs}
+              highlights={current.features}
+              sourceUrl={current.sourceUrl}
+              sourceName={current.sourceName}
+            />
+          </div>
+        );
+        i++;
+        sequenceCounter++;
+        continue;
+      }
+
+      // Check if we can pair the next two items into a 2-column spread
+      // We do this every 2nd or 3rd cycle if both are not developments and 2 items exist
+      if (sequenceCounter % 3 === 2 && i + 1 < displayedProperties.length) {
+        const next = displayedProperties[i + 1];
+        if (next.id !== "prop-pipera-villas" && next.id !== "prop-dubai-brabus") {
+          elements.push(
+            <PropertySplitCadran
+              key={`split-${current.id}-${next.id}`}
+              propertyA={current}
+              propertyB={next}
+              indexA={sequenceCounter}
+              indexB={sequenceCounter + 1}
+            />
+          );
+          i += 2;
+          sequenceCounter += 2;
+          continue;
+        }
+      }
+
+      // Default: Full-width Heroic Property Cadran Feature
+      const isReversed = sequenceCounter % 2 === 0;
+      elements.push(
+        <PropertyCadranFeature
+          key={`feature-${current.id}`}
+          property={current}
+          index={sequenceCounter}
+          reversed={isReversed}
+        />
+      );
+      i++;
+      sequenceCounter++;
+    }
+
+    return elements;
+  };
+
   return (
     <div className="space-y-12 sm:space-y-16">
-      {/* Sticky Interactive Filter Bar */}
-      <div className="border-b border-white/[0.08] sticky top-20 z-30 bg-[#07090D]/95 backdrop-blur-md py-4 space-y-4 shadow-xl">
-        <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-4">
+      {/* Sticky Architectural Navigation Cadran */}
+      <div className="sticky top-20 z-30 max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
+        <EditorialCadran
+          accentColor="ice"
+          surface="midnight"
+          className="p-4 sm:p-6 backdrop-blur-xl bg-[#07090D]/95 shadow-2xl border-white/[0.12] space-y-4"
+        >
           {/* Top Row: Categories Tabs */}
           <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto no-scrollbar pb-1">
             {categories.map((tab) => {
@@ -158,14 +255,14 @@ export default function PropertiesCatalog() {
                   className={`px-4 sm:px-5 py-2.5 font-mono text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium transition-all whitespace-nowrap flex items-center gap-2 border ${
                     isActive
                       ? "bg-[#93C8FF] text-[#07090D] border-[#93C8FF] font-bold shadow-lg shadow-[#93C8FF]/20"
-                      : "text-[#B8C2CF] border-white/[0.08] hover:border-[#93C8FF]/50 hover:text-[#F5F4EF] bg-[#0C1119]/50"
+                      : "text-[#B8C2CF] border-white/[0.08] hover:border-[#93C8FF]/50 hover:text-[#F5F4EF] bg-[#0C1119]/70"
                   }`}
                 >
                   <span>{tab.label}</span>
                   <span
                     className={`text-[9px] px-1.5 py-0.2 rounded-full ${
                       isActive
-                        ? "bg-[#07090D]/20 text-[#07090D]"
+                        ? "bg-[#07090D]/20 text-[#07090D] font-bold"
                         : "bg-white/[0.06] text-[#8A95A5]"
                     }`}
                   >
@@ -176,8 +273,45 @@ export default function PropertiesCatalog() {
             })}
           </div>
 
-          {/* Bottom Row: Search, Country Pills, Sort & View Mode */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 pt-2 border-t border-white/[0.04]">
+          {/* Middle Row: Sovereign Jurisdictions Pills */}
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pt-2 border-t border-white/[0.06]">
+            <span className="font-mono text-[10px] text-[#8A95A5] uppercase tracking-wider shrink-0 flex items-center gap-1.5 mr-1">
+              <Globe2 className="w-3.5 h-3.5 text-[#A97F60]" />
+              <span>SOVEREIGN REGION:</span>
+            </span>
+            <button
+              onClick={() => {
+                setSelectedCountry("all");
+                setVisibleCount(10);
+              }}
+              className={`px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition-colors border ${
+                selectedCountry === "all"
+                  ? "border-[#A97F60] text-[#A97F60] bg-[#A97F60]/15 font-semibold"
+                  : "border-white/[0.08] text-[#8A95A5] hover:text-[#F5F4EF] bg-[#0C1119]"
+              }`}
+            >
+              ALL JURISDICTIONS
+            </button>
+            {countries.map((c) => (
+              <button
+                key={c}
+                onClick={() => {
+                  setSelectedCountry(c);
+                  setVisibleCount(10);
+                }}
+                className={`px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition-colors border whitespace-nowrap ${
+                  selectedCountry === c
+                    ? "border-[#A97F60] text-[#A97F60] bg-[#A97F60]/15 font-semibold"
+                    : "border-white/[0.08] text-[#8A95A5] hover:text-[#F5F4EF] bg-[#0C1119]"
+                }`}
+              >
+                {c.split("/")[0].trim()}
+              </button>
+            ))}
+          </div>
+
+          {/* Bottom Row: Search, Sort, View Toggle */}
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 pt-3 border-t border-white/[0.06]">
             {/* Search Input */}
             <div className="relative flex-1 max-w-md">
               <Search className="w-4 h-4 text-[#8A95A5] absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
@@ -188,7 +322,7 @@ export default function PropertiesCatalog() {
                   setSearchQuery(e.target.value);
                   setVisibleCount(10);
                 }}
-                placeholder="Search title, city, or specifications..."
+                placeholder="Search title, district, specifications, or city..."
                 className="w-full pl-9 pr-8 py-2 bg-[#0C1119] border border-white/[0.1] text-xs font-mono text-[#F5F4EF] placeholder-[#647082] focus:outline-none focus:border-[#93C8FF] transition-colors"
               />
               {searchQuery && (
@@ -199,43 +333,6 @@ export default function PropertiesCatalog() {
                   <X className="w-3.5 h-3.5" />
                 </button>
               )}
-            </div>
-
-            {/* Jurisdiction / Country Filter */}
-            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar">
-              <span className="font-mono text-[10px] text-[#8A95A5] uppercase tracking-wider shrink-0 flex items-center gap-1">
-                <Globe2 className="w-3 h-3 text-[#A97F60]" />
-                <span>REGION:</span>
-              </span>
-              <button
-                onClick={() => {
-                  setSelectedCountry("all");
-                  setVisibleCount(10);
-                }}
-                className={`px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider transition-colors border ${
-                  selectedCountry === "all"
-                    ? "border-[#A97F60] text-[#A97F60] bg-[#A97F60]/10 font-semibold"
-                    : "border-white/[0.08] text-[#8A95A5] hover:text-[#F5F4EF]"
-                }`}
-              >
-                ALL
-              </button>
-              {countries.map((c) => (
-                <button
-                  key={c}
-                  onClick={() => {
-                    setSelectedCountry(c);
-                    setVisibleCount(10);
-                  }}
-                  className={`px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider transition-colors border whitespace-nowrap ${
-                    selectedCountry === c
-                      ? "border-[#A97F60] text-[#A97F60] bg-[#A97F60]/10 font-semibold"
-                      : "border-white/[0.08] text-[#8A95A5] hover:text-[#F5F4EF]"
-                  }`}
-                >
-                  {c.split("/")[0].trim()}
-                </button>
-              ))}
             </div>
 
             {/* Controls Group: Sort & View Toggle */}
@@ -251,7 +348,7 @@ export default function PropertiesCatalog() {
                   <option value="featured">Curated Priority</option>
                   <option value="price-desc">Valuation: High to Low</option>
                   <option value="price-asc">Valuation: Low to High</option>
-                  <option value="area-desc">Footprint: Largest</option>
+                  <option value="area-desc">Footprint: Largest First</option>
                 </select>
               </div>
 
@@ -259,38 +356,41 @@ export default function PropertiesCatalog() {
               <div className="flex items-center border border-white/[0.1] bg-[#0C1119] p-0.5">
                 <button
                   onClick={() => setViewMode("editorial")}
-                  className={`p-1.5 transition-colors ${
+                  className={`p-1.5 transition-colors flex items-center gap-1 font-mono text-[10px] px-2 ${
                     viewMode === "editorial"
-                      ? "bg-[#93C8FF] text-[#07090D]"
+                      ? "bg-[#93C8FF] text-[#07090D] font-bold"
                       : "text-[#8A95A5] hover:text-[#F5F4EF]"
                   }`}
-                  title="Editorial Spread View"
+                  title="Editorial Monograph Spreads"
                 >
                   <Rows className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">SPREADS</span>
                 </button>
                 <button
                   onClick={() => setViewMode("grid")}
-                  className={`p-1.5 transition-colors ${
+                  className={`p-1.5 transition-colors flex items-center gap-1 font-mono text-[10px] px-2 ${
                     viewMode === "grid"
-                      ? "bg-[#93C8FF] text-[#07090D]"
+                      ? "bg-[#93C8FF] text-[#07090D] font-bold"
                       : "text-[#8A95A5] hover:text-[#F5F4EF]"
                   }`}
-                  title="Portfolio Card Grid View"
+                  title="Portfolio Matrix Grid"
                 >
                   <LayoutGrid className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">MATRIX</span>
                 </button>
               </div>
             </div>
           </div>
-        </div>
+        </EditorialCadran>
       </div>
 
       {/* Results Meta Banner */}
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 flex flex-wrap items-center justify-between gap-4 font-mono text-xs text-[#8A95A5]">
-        <div>
-          <span>Displaying </span>
+        <div className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 bg-[#93C8FF] rounded-full" />
+          <span>Exhibiting </span>
           <span className="text-[#93C8FF] font-semibold">{filteredProperties.length}</span>
-          <span> confirmed properties</span>
+          <span> confirmed architectural assets</span>
           {activeCategory !== "all" && (
             <span> in <span className="text-[#F5F4EF] uppercase">{activeCategory}</span></span>
           )}
@@ -313,70 +413,26 @@ export default function PropertiesCatalog() {
       {/* Properties Exhibition Stream */}
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
         {viewMode === "editorial" ? (
-          /* Editorial Presentation (Large spreads Pattern A & B) */
+          /* Editorial Presentation (Rhythmic Cadran Spreads) */
           <div className="space-y-16 sm:space-y-24">
-            {displayedProperties.map((property, idx) => {
-              if (property.id === "prop-pipera-villas") {
-                return (
-                  <ProjectFeature
-                    key={property.id}
-                    title={property.title}
-                    subtitle={property.subtitle}
-                    location={property.location}
-                    phase="COMPLETED RESIDENTIAL MASTERPLAN · IMMEDIATE OCCUPANCY"
-                    unitsSummary="36 VILLAS (14 TYPE 1 + 22 TYPE 2)"
-                    description={property.description}
-                    developerNote="Full municipal infrastructure delivered: paved roadway network, underground utility lines, perimeter security, and immediate transit to Northern Bucharest's international school cluster."
-                    image={property.heroImage}
-                    specs={property.specs}
-                    highlights={property.features}
-                    sourceUrl={property.sourceUrl}
-                    sourceName={property.sourceName}
-                  />
-                );
-              }
-
-              if (property.id === "prop-dubai-brabus") {
-                return (
-                  <ProjectFeature
-                    key={property.id}
-                    title={property.title}
-                    subtitle={property.subtitle}
-                    location={property.location}
-                    phase="ACTIVE DEVELOPMENT · CONFIRMED DEVELOPER SPECIFICATIONS"
-                    unitsSummary="WATERFRONT SKY MANSIONS & WATER VILLAS"
-                    description={property.description}
-                    developerNote="Official developer-announced project details. Projected appreciation and handover schedules are governed by bilateral reservation contracts (SPA) and do not constitute implied commercial guarantees."
-                    image={property.heroImage}
-                    specs={property.specs}
-                    highlights={property.features}
-                    sourceUrl={property.sourceUrl}
-                    sourceName={property.sourceName}
-                  />
-                );
-              }
-
-              return (
-                <PropertyFeature
-                  key={property.id}
-                  property={property}
-                  reversed={idx % 2 === 1}
-                />
-              );
-            })}
+            {renderEditorialStream()}
           </div>
         ) : (
           /* Portfolio Card Grid View */
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {displayedProperties.map((property) => (
-              <SupportingPropertyCard key={property.id} property={property} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+            {displayedProperties.map((property, idx) => (
+              <SupportingPropertyCard
+                key={property.id}
+                property={property}
+                index={idx + 1}
+              />
             ))}
           </div>
         )}
 
         {/* Empty State */}
         {filteredProperties.length === 0 && (
-          <div className="text-center py-28 border border-white/[0.08] bg-[#0C1119] p-12 space-y-5 shadow-2xl">
+          <div className="text-center py-28 border border-white/[0.08] bg-[#0C1119] p-12 space-y-5 shadow-2xl relative">
             <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#93C8FF] block">
               CONFIDENTIAL FIDUCIARY PROTOCOL
             </span>
@@ -407,12 +463,12 @@ export default function PropertiesCatalog() {
 
         {/* Progressive Loading Button */}
         {hasMore && (
-          <div className="text-center pt-16">
+          <div className="text-center pt-20">
             <button
               onClick={() => setVisibleCount((prev) => prev + 10)}
               className="px-10 py-4 border border-[#93C8FF]/50 bg-[#0C1119] hover:bg-[#93C8FF] hover:text-[#07090D] text-[#93C8FF] font-mono text-xs uppercase tracking-[0.22em] font-bold transition-all shadow-xl group inline-flex items-center gap-2"
             >
-              <span>LOAD MORE PROPERTIES ({filteredProperties.length - visibleCount} REMAINING)</span>
+              <span>EXHIBIT MORE PROPERTIES ({filteredProperties.length - visibleCount} REMAINING)</span>
               <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
             </button>
           </div>
@@ -430,3 +486,4 @@ export default function PropertiesCatalog() {
     </div>
   );
 }
+
