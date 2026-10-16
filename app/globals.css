@@ -339,3 +339,28 @@ button {
     scroll-behavior: auto !important;
   }
 }
+
+/* Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Executive Header Clearance */
+.pt-executive-header {
+  padding-top: 104px;
+}
+@media (min-width: 640px) {
+  .pt-executive-header {
+    padding-top: 120px;
+  }
+}
+@media (min-width: 1024px) {
+  .pt-executive-header {
+    padding-top: 136px;
+  }
+}
+

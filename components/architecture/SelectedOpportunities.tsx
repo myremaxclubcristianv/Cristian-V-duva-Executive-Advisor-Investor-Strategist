@@ -28,7 +28,7 @@ export default function SelectedOpportunities() {
             href="/real-estate/properties"
             className="px-6 py-3.5 border border-white/[0.14] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-xs uppercase tracking-[0.2em] font-semibold transition-all shrink-0 flex items-center gap-2"
           >
-            <span>VIEW ALL 7 CONFIRMED ASSETS</span>
+            <span>VIEW ALL {selectedProperties.length} CONFIRMED ASSETS</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
           </Link>
         </div>

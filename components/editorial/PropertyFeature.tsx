@@ -47,14 +47,16 @@ export default function PropertyFeature({
         {/* Visual Column (~60% on desktop) */}
         <div className={`lg:col-span-7 space-y-4 ${reversed ? "lg:order-2" : "lg:order-1"}`}>
           <div className="relative aspect-[16/10] w-full border border-white/[0.12] bg-[#1B2028] overflow-hidden shadow-2xl group">
-            <Image
-              src={property.heroImage}
-              alt={property.title}
-              fill
-              sizes="(max-width: 1024px) 100vw, 60vw"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#07090D]/85 via-transparent to-transparent pointer-events-none" />
+            <Link href={`/real-estate/properties/${property.id}`} className="block relative w-full h-full">
+              <Image
+                src={property.heroImage}
+                alt={property.title}
+                fill
+                sizes="(max-width: 1024px) 100vw, 60vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#07090D]/85 via-transparent to-transparent pointer-events-none" />
+            </Link>
             
             {/* Price & Area Floating Rail */}
             <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between p-4 bg-[#07090D]/90 backdrop-blur-md border border-white/[0.12]">
@@ -81,15 +83,20 @@ export default function PropertyFeature({
           {property.galleryImages && property.galleryImages.length > 1 && (
             <div className="grid grid-cols-4 gap-2.5 pt-1">
               {property.galleryImages.slice(1, 5).map((img, i) => (
-                <div key={i} className="relative aspect-[4/3] border border-white/[0.08] overflow-hidden bg-[#1B2028]">
+                <Link
+                  key={i}
+                  href={`/real-estate/properties/${property.id}`}
+                  className="relative aspect-[4/3] border border-white/[0.08] overflow-hidden bg-[#1B2028] block group/thumb"
+                >
                   <Image
                     src={img}
                     alt={`${property.title} detail ${i + 1}`}
                     fill
                     sizes="(max-width: 1024px) 25vw, 15vw"
-                    className="object-cover hover:scale-110 transition-transform duration-500"
+                    className="object-cover group-hover/thumb:scale-110 transition-transform duration-500"
                   />
-                </div>
+                  <div className="absolute inset-0 bg-black/20 group-hover/thumb:bg-transparent transition-colors" />
+                </Link>
               ))}
             </div>
           )}
@@ -104,7 +111,12 @@ export default function PropertyFeature({
               </span>
             )}
             <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF] leading-snug">
-              {property.title}
+              <Link
+                href={`/real-estate/properties/${property.id}`}
+                className="hover:text-[#93C8FF] transition-colors"
+              >
+                {property.title}
+              </Link>
             </h3>
             <EditorialText size="base" maxWidth="prose" color="secondary" className="leading-relaxed">
               {property.description}
@@ -156,24 +168,37 @@ export default function PropertyFeature({
           </div>
 
           {/* Action Row */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-white/[0.08]">
-            <Link
-              href="/contact"
-              className="px-7 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-xl"
-            >
-              <span>REQUEST CONFIDENTIAL DOSSIER</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
+          <div className="space-y-3 pt-4 border-t border-white/[0.08]">
+            <div className="grid sm:grid-cols-2 gap-3">
+              <Link
+                href={`/real-estate/properties/${property.id}`}
+                className="px-5 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-[11px] uppercase tracking-[0.18em] font-bold transition-all text-center flex items-center justify-center gap-1.5 shadow-xl"
+              >
+                <span>VIEW FULL MONOGRAPH ({property.galleryImages?.length || 1} PHOTOS)</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
 
-            <a
-              href={property.sourceUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] hover:text-[#93C8FF] flex items-center justify-center gap-1.5 transition-colors py-2"
-            >
-              <span>Source: {property.sourceName}</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-[#93C8FF]" />
-            </a>
+              <Link
+                href={`/contact?property=${encodeURIComponent(property.title)}`}
+                className="px-5 py-3.5 border border-white/[0.16] hover:border-[#93C8FF] hover:bg-[#93C8FF]/10 text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-[11px] uppercase tracking-[0.18em] font-semibold transition-all text-center flex items-center justify-center gap-1.5"
+              >
+                <span>REQUEST DOSSIER</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            <div className="flex items-center justify-between font-mono text-xs text-[#8A95A5] pt-1">
+              <span>Platform: {property.sourcePlatform || "Executive"}</span>
+              <a
+                href={property.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#93C8FF] flex items-center gap-1 transition-colors"
+              >
+                <span>Source: {property.sourceName}</span>
+                <ArrowUpRight className="w-3 h-3 text-[#93C8FF]" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

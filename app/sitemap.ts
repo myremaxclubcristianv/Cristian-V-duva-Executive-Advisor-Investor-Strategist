@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { selectedProperties } from "@/lib/properties";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://executive.cristianvaduva.com";
@@ -143,5 +144,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    // Dynamic Real Estate Property Monographs
+    ...selectedProperties.map((p) => ({
+      url: `${baseUrl}/real-estate/properties/${p.id}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    })),
   ];
 }

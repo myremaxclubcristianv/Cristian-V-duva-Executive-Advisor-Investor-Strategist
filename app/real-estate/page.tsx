@@ -42,7 +42,7 @@ export default function RealEstateHubPage() {
     <div className="flex flex-col min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
       <ExecutiveHeader />
 
-      <main className="flex-1 pt-32 sm:pt-40 lg:pt-48">
+      <main className="flex-1 pt-executive-header">
         {/* ======================================================== */}
         {/* 01 // EDITORIAL HERO: ACQUISITIONS & REPRESENTATION      */}
         {/* ======================================================== */}

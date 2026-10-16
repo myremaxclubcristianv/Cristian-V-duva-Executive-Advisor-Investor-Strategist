@@ -14,7 +14,7 @@ export default function PropertiesPage() {
     <div className="flex flex-col min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
       <ExecutiveHeader />
 
-      <main className="flex-1 pt-32 sm:pt-40 lg:pt-48">
+      <main className="flex-1 pt-executive-header">
         {/* ======================================================== */}
         {/* EDITORIAL HERO SECTION                                   */}
         {/* ======================================================== */}
@@ -44,7 +44,7 @@ export default function PropertiesPage() {
               </div>
               <div className="space-y-1">
                 <span className="text-[#93C8FF] block font-semibold uppercase tracking-wider">CONFIRMED SOURCES</span>
-                <span className="text-[#F5F4EF] font-sans">HomeFind & CristianVaduva.com</span>
+                <span className="text-[#F5F4EF] font-sans">HomeFind, AiXLuxury & CristianVaduva.com</span>
               </div>
               <div className="space-y-1">
                 <span className="text-[#93C8FF] block font-semibold uppercase tracking-wider">CONFIDENTIALITY TIER</span>
