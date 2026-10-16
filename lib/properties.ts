@@ -7476,15 +7476,4389 @@ export const selectedProperties: Property[] = [
     "sourceName": "HomeFind Real Estate",
     "sourcePlatform": "HomeFind",
     "isFeatured": false
+  },
+  {
+    "id": "prop-exp-01",
+    "slug": "villa-horizon-1-la-zagaleta-private-estate-benahavis",
+    "title": "Villa Horizon 1 — La Zagaleta Private Estate, Benahavis",
+    "subtitle": "2100 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€14,900,000",
+    "priceNumeric": 14900000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "2100 sqm built area",
+    "usableArea": "1785 sqm usable",
+    "plotArea": "3780 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 7 camere, 2,100 mp. Preț: 14.900.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235869/img-1235869-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235869/img-1235869-0.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-1.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-2.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-3.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-4.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-5.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-6.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-7.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-8.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-9.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-10.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-11.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-12.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-13.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-14.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-15.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-16.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-17.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-18.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-19.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-20.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-21.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-22.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-23.webp",
+      "https://tet.ro/storage/properties/1235869/img-1235869-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "2100 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/15fb09f3-047f-47b9-91db-4b55aecee29d",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-02",
+    "slug": "villa-horizon-2-golden-mile-private-estate-marbella",
+    "title": "Villa Horizon 2 — Golden Mile Private Estate, Marbella",
+    "subtitle": "1347 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€13,950,000",
+    "priceNumeric": 13950000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1347 sqm built area",
+    "usableArea": "1145 sqm usable",
+    "plotArea": "2425 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,347 mp. Preț: 13.950.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235884/img-1235884-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235884/img-1235884-0.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-1.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-2.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-3.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-4.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-5.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-6.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-7.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-8.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-9.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-10.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-11.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-12.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-13.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-14.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-15.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-16.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-17.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-18.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-19.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-20.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-21.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-22.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-23.webp",
+      "https://tet.ro/storage/properties/1235884/img-1235884-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1347 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/967e7b9f-edd7-495d-8a70-62734d6707cb",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-03",
+    "slug": "villa-horizon-3-los-arqueros-private-estate-benahavis",
+    "title": "Villa Horizon 3 — Los Arqueros Private Estate, Benahavis",
+    "subtitle": "1283 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€13,950,000",
+    "priceNumeric": 13950000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1283 sqm built area",
+    "usableArea": "1091 sqm usable",
+    "plotArea": "2309 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 15 camere, 1,283 mp. Preț: 13.950.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235990/img-1235990-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235990/img-1235990-0.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-1.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-2.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-3.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-4.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-5.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-6.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-7.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-8.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-9.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-10.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-11.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-12.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-13.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-14.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-15.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-16.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-17.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-18.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-19.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-20.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-21.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-22.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-23.webp",
+      "https://tet.ro/storage/properties/1235990/img-1235990-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1283 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/0b93100c-834c-4559-8956-a58f3b868bff",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-04",
+    "slug": "villa-horizon-4-la-quinta-private-estate-benahavis",
+    "title": "Villa Horizon 4 — La Quinta Private Estate, Benahavis",
+    "subtitle": "1547 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€13,900,000",
+    "priceNumeric": 13900000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1547 sqm built area",
+    "usableArea": "1315 sqm usable",
+    "plotArea": "2785 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 7 camere, 1,547 mp. Preț: 13.900.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235962/img-1235962-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235962/img-1235962-0.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-1.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-2.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-3.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-4.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-5.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-6.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-7.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-8.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-9.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-10.webp",
+      "https://tet.ro/storage/properties/1235962/img-1235962-11.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1547 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/007470cc-ac03-4404-8c5d-deeeecc38bb8",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-05",
+    "slug": "villa-horizon-5-monte-mayor-private-estate-benahavis",
+    "title": "Villa Horizon 5 — Monte Mayor Private Estate, Benahavis",
+    "subtitle": "1928 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€13,500,000",
+    "priceNumeric": 13500000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1928 sqm built area",
+    "usableArea": "1639 sqm usable",
+    "plotArea": "3470 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 7 camere, 1,928 mp. Preț: 13.500.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235852/img-1235852-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235852/img-1235852-0.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-1.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-2.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-3.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-4.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-5.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-6.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-7.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-8.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-9.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-10.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-11.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-12.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-13.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-14.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-15.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-16.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-17.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-18.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-19.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-20.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-21.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-22.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-23.webp",
+      "https://tet.ro/storage/properties/1235852/img-1235852-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1928 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/1454518c-96f2-41c9-8aed-ede1ddbe4896",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-06",
+    "slug": "villa-horizon-6-costalita-private-estate-estepona",
+    "title": "Villa Horizon 6 — Costalita Private Estate, Estepona",
+    "subtitle": "1069 sqm Built · 4 Suites · Private Pool & Grounds · Estepona",
+    "location": "Estepona, Spain",
+    "city": "Estepona",
+    "country": "Spain",
+    "price": "€13,500,000",
+    "priceNumeric": 13500000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1069 sqm built area",
+    "usableArea": "909 sqm usable",
+    "plotArea": "1924 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Estepona, Malaga. 8 camere, 1,069 mp. Preț: 13.500.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Estepona with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235866/img-1235866-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235866/img-1235866-0.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-1.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-2.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-3.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-4.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-5.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-6.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-7.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-8.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-9.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-10.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-11.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-12.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-13.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-14.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-15.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-16.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-17.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-18.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-19.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-20.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-21.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-22.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-23.webp",
+      "https://tet.ro/storage/properties/1235866/img-1235866-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1069 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Estepona"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/58f6b431-c23e-48d0-8f63-64b899981b22",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-07",
+    "slug": "villa-horizon-7-nag-eles-private-estate-marbella",
+    "title": "Villa Horizon 7 — Nagüeles Private Estate, Marbella",
+    "subtitle": "1223 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€13,500,000",
+    "priceNumeric": 13500000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1223 sqm built area",
+    "usableArea": "1040 sqm usable",
+    "plotArea": "2201 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 5 camere, 1,223 mp. Preț: 13.500.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236076/img-1236076-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236076/img-1236076-0.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-1.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-2.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-3.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-4.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-5.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-6.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-7.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-8.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-9.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-10.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-11.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-12.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-13.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-14.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-15.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-16.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-17.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-18.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-19.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-20.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-21.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-22.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-23.webp",
+      "https://tet.ro/storage/properties/1236076/img-1236076-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1223 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/8e79e497-5eac-4fad-b525-b30d27ae134c",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-08",
+    "slug": "villa-horizon-8-sierra-blanca-private-estate-marbella",
+    "title": "Villa Horizon 8 — Sierra Blanca Private Estate, Marbella",
+    "subtitle": "3300 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€12,000,000",
+    "priceNumeric": 12000000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "3300 sqm built area",
+    "usableArea": "2805 sqm usable",
+    "plotArea": "5940 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 10 camere, 3,300 mp. Preț: 12.000.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235849/img-1235849-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235849/img-1235849-0.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-1.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-2.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-3.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-4.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-5.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-6.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-7.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-8.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-9.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-10.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-11.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-12.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-13.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-14.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-15.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-16.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-17.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-18.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-19.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-20.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-21.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-22.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-23.webp",
+      "https://tet.ro/storage/properties/1235849/img-1235849-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "3300 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/3f43184a-bf35-44a6-9edc-f1dc6d5acca5",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-09",
+    "slug": "villa-horizon-9-golden-mile-private-estate-marbella",
+    "title": "Villa Horizon 9 — Golden Mile Private Estate, Marbella",
+    "subtitle": "1107 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€11,950,000",
+    "priceNumeric": 11950000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1107 sqm built area",
+    "usableArea": "941 sqm usable",
+    "plotArea": "1993 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,107 mp. Preț: 11.950.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235988/img-1235988-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235988/img-1235988-0.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-1.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-2.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-3.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-4.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-5.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-6.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-7.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-8.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-9.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-10.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-11.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-12.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-13.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-14.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-15.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-16.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-17.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-18.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-19.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-20.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-21.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-22.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-23.webp",
+      "https://tet.ro/storage/properties/1235988/img-1235988-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1107 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/f9938664-eea7-49c1-91ae-40272f1784fa",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-10",
+    "slug": "villa-horizon-10-los-flamingos-private-estate-estepona",
+    "title": "Villa Horizon 10 — Los Flamingos Private Estate, Estepona",
+    "subtitle": "1926 sqm Built · 4 Suites · Private Pool & Grounds · Estepona",
+    "location": "Estepona, Spain",
+    "city": "Estepona",
+    "country": "Spain",
+    "price": "€11,900,000",
+    "priceNumeric": 11900000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1926 sqm built area",
+    "usableArea": "1637 sqm usable",
+    "plotArea": "3467 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Estepona, Malaga. 9 camere, 1,926 mp. Preț: 11.900.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Estepona with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235961/img-1235961-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235961/img-1235961-0.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-1.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-2.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-3.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-4.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-5.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-6.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-7.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-8.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-9.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-10.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-11.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-12.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-13.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-14.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-15.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-16.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-17.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-18.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-19.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-20.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-21.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-22.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-23.webp",
+      "https://tet.ro/storage/properties/1235961/img-1235961-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1926 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Estepona"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/281ddf94-6ac5-4d89-a323-b66c37b33782",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-11",
+    "slug": "villa-horizon-11-nueva-andaluc-a-private-estate-marbella",
+    "title": "Villa Horizon 11 — Nueva Andalucía Private Estate, Marbella",
+    "subtitle": "1514 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€11,750,000",
+    "priceNumeric": 11750000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1514 sqm built area",
+    "usableArea": "1287 sqm usable",
+    "plotArea": "2725 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 5 camere, 1,514 mp. Preț: 11.750.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235981/img-1235981-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235981/img-1235981-0.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-1.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-2.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-3.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-4.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-5.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-6.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-7.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-8.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-9.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-10.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-11.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-12.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-13.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-14.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-15.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-16.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-17.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-18.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-19.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-20.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-21.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-22.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-23.webp",
+      "https://tet.ro/storage/properties/1235981/img-1235981-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1514 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/0e650606-a7d2-42dc-8c13-ba7f6c6b4f6e",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-12",
+    "slug": "villa-horizon-12-la-heredia-private-estate-benahavis",
+    "title": "Villa Horizon 12 — La Heredia Private Estate, Benahavis",
+    "subtitle": "1448 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€11,600,000",
+    "priceNumeric": 11600000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1448 sqm built area",
+    "usableArea": "1231 sqm usable",
+    "plotArea": "2606 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 6 camere, 1,448 mp. Preț: 11.600.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235868/img-1235868-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235868/img-1235868-0.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-1.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-2.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-3.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-4.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-5.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-6.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-7.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-8.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-9.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-10.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-11.webp",
+      "https://tet.ro/storage/properties/1235868/img-1235868-12.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1448 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/fb0c948e-c75e-4e3f-ba5c-6c392577aa7e",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-13",
+    "slug": "villa-horizon-13-la-zagaleta-private-estate-benahavis",
+    "title": "Villa Horizon 13 — La Zagaleta Private Estate, Benahavis",
+    "subtitle": "1520 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€11,500,000",
+    "priceNumeric": 11500000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1520 sqm built area",
+    "usableArea": "1292 sqm usable",
+    "plotArea": "2736 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 6 camere, 1,520 mp. Preț: 11.500.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235913/img-1235913-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235913/img-1235913-0.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-1.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-2.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-3.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-4.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-5.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-6.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-7.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-8.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-9.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-10.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-11.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-12.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-13.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-14.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-15.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-16.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-17.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-18.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-19.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-20.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-21.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-22.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-23.webp",
+      "https://tet.ro/storage/properties/1235913/img-1235913-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1520 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/5f7243ba-da84-4dd0-a662-a937a4977414",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-14",
+    "slug": "villa-horizon-14-nag-eles-private-estate-marbella",
+    "title": "Villa Horizon 14 — Nagüeles Private Estate, Marbella",
+    "subtitle": "1139 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€11,500,000",
+    "priceNumeric": 11500000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1139 sqm built area",
+    "usableArea": "968 sqm usable",
+    "plotArea": "2050 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,139 mp. Preț: 11.500.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236095/img-1236095-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236095/img-1236095-0.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-1.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-2.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-3.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-4.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-5.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-6.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-7.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-8.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-9.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-10.webp",
+      "https://tet.ro/storage/properties/1236095/img-1236095-11.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1139 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/6cfd3a0d-44df-4997-9d21-51820fad65d3",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-15",
+    "slug": "villa-horizon-15-sierra-blanca-private-estate-marbella",
+    "title": "Villa Horizon 15 — Sierra Blanca Private Estate, Marbella",
+    "subtitle": "1158 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€11,300,000",
+    "priceNumeric": 11300000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1158 sqm built area",
+    "usableArea": "984 sqm usable",
+    "plotArea": "2084 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 5 camere, 1,158 mp. Preț: 11.300.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236165/img-1236165-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236165/img-1236165-0.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-1.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-2.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-3.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-4.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-5.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-6.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-7.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-8.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-9.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-10.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-11.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-12.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-13.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-14.webp",
+      "https://tet.ro/storage/properties/1236165/img-1236165-15.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1158 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/077f5665-376b-4f27-a442-fdf08e545f78",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-16",
+    "slug": "villa-horizon-16-golden-mile-private-estate-marbella",
+    "title": "Villa Horizon 16 — Golden Mile Private Estate, Marbella",
+    "subtitle": "1017 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€10,995,000",
+    "priceNumeric": 10995000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1017 sqm built area",
+    "usableArea": "864 sqm usable",
+    "plotArea": "1831 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,017 mp. Preț: 10.995.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235975/img-1235975-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235975/img-1235975-0.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-1.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-2.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-3.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-4.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-5.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-6.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-7.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-8.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-9.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-10.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-11.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-12.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-13.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-14.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-15.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-16.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-17.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-18.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-19.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-20.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-21.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-22.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-23.webp",
+      "https://tet.ro/storage/properties/1235975/img-1235975-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1017 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/7c3952ec-8a60-4e25-ac1d-84c396a4fa34",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-17",
+    "slug": "villa-horizon-17-casablanca-private-estate-marbella",
+    "title": "Villa Horizon 17 — Casablanca Private Estate, Marbella",
+    "subtitle": "1454 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€10,970,000",
+    "priceNumeric": 10970000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1454 sqm built area",
+    "usableArea": "1236 sqm usable",
+    "plotArea": "2617 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,454 mp. Preț: 10.970.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236007/img-1236007-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236007/img-1236007-0.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-1.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-2.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-3.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-4.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-5.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-6.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-7.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-8.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-9.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-10.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-11.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-12.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-13.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-14.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-15.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-16.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-17.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-18.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-19.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-20.webp",
+      "https://tet.ro/storage/properties/1236007/img-1236007-21.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1454 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/2b5bb72f-4a4a-42b8-a585-92e8b9222e63",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-18",
+    "slug": "villa-horizon-18-nueva-andaluc-a-private-estate-marbella",
+    "title": "Villa Horizon 18 — Nueva Andalucía Private Estate, Marbella",
+    "subtitle": "1002 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€10,900,000",
+    "priceNumeric": 10900000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1002 sqm built area",
+    "usableArea": "852 sqm usable",
+    "plotArea": "1804 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,002 mp. Preț: 10.900.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236047/img-1236047-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236047/img-1236047-0.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-1.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-2.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-3.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-4.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-5.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-6.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-7.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-8.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-9.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-10.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-11.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-12.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-13.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-14.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-15.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-16.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-17.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-18.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-19.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-20.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-21.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-22.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-23.webp",
+      "https://tet.ro/storage/properties/1236047/img-1236047-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1002 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/d71e77e0-03d8-4cf2-9143-14d3783b9017",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-19",
+    "slug": "villa-horizon-19-los-monteros-private-estate-marbella",
+    "title": "Villa Horizon 19 — Los Monteros Private Estate, Marbella",
+    "subtitle": "945 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€10,850,000",
+    "priceNumeric": 10850000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "945 sqm built area",
+    "usableArea": "803 sqm usable",
+    "plotArea": "1701 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 5 camere, 945 mp. Preț: 10.850.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235952/img-1235952-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235952/img-1235952-0.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-1.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-2.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-3.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-4.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-5.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-6.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-7.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-8.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-9.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-10.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-11.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-12.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-13.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-14.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-15.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-16.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-17.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-18.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-19.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-20.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-21.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-22.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-23.webp",
+      "https://tet.ro/storage/properties/1235952/img-1235952-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "945 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/bf708c1d-3c20-4a4b-97f9-befa231a555f",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-20",
+    "slug": "villa-horizon-20-el-madro-al-private-estate-benahavis",
+    "title": "Villa Horizon 20 — El Madroñal Private Estate, Benahavis",
+    "subtitle": "1163 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€10,800,000",
+    "priceNumeric": 10800000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1163 sqm built area",
+    "usableArea": "989 sqm usable",
+    "plotArea": "2093 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 7 camere, 1,163 mp. Preț: 10.800.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235878/img-1235878-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235878/img-1235878-0.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-1.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-2.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-3.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-4.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-5.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-6.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-7.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-8.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-9.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-10.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-11.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-12.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-13.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-14.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-15.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-16.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-17.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-18.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-19.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-20.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-21.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-22.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-23.webp",
+      "https://tet.ro/storage/properties/1235878/img-1235878-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1163 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/d98b4534-cfd6-48a3-bcff-daae12a933c7",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-21",
+    "slug": "villa-horizon-21-los-arqueros-private-estate-benahavis",
+    "title": "Villa Horizon 21 — Los Arqueros Private Estate, Benahavis",
+    "subtitle": "673 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€10,800,000",
+    "priceNumeric": 10800000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "673 sqm built area",
+    "usableArea": "572 sqm usable",
+    "plotArea": "1211 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 7 camere, 673 mp. Preț: 10.800.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235885/img-1235885-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235885/img-1235885-0.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-1.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-2.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-3.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-4.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-5.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-6.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-7.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-8.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-9.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-10.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-11.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-12.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-13.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-14.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-15.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-16.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-17.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-18.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-19.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-20.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-21.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-22.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-23.webp",
+      "https://tet.ro/storage/properties/1235885/img-1235885-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "673 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/84b8aa63-30f0-47cf-bb6e-af06a759bf98",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-22",
+    "slug": "villa-horizon-22-la-quinta-private-estate-benahavis",
+    "title": "Villa Horizon 22 — La Quinta Private Estate, Benahavis",
+    "subtitle": "1692 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€10,800,000",
+    "priceNumeric": 10800000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1692 sqm built area",
+    "usableArea": "1438 sqm usable",
+    "plotArea": "3046 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 8 camere, 1,692 mp. Preț: 10.800.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235914/img-1235914-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235914/img-1235914-0.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-1.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-2.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-3.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-4.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-5.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-6.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-7.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-8.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-9.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-10.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-11.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-12.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-13.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-14.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-15.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-16.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-17.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-18.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-19.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-20.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-21.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-22.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-23.webp",
+      "https://tet.ro/storage/properties/1235914/img-1235914-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1692 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/be81463f-e4cc-47a6-86df-6f45cba53423",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-23",
+    "slug": "villa-horizon-23-monte-mayor-private-estate-benahavis",
+    "title": "Villa Horizon 23 — Monte Mayor Private Estate, Benahavis",
+    "subtitle": "937 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€10,700,000",
+    "priceNumeric": 10700000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "937 sqm built area",
+    "usableArea": "796 sqm usable",
+    "plotArea": "1687 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 7 camere, 937 mp. Preț: 10.700.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235883/img-1235883-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235883/img-1235883-0.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-1.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-2.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-3.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-4.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-5.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-6.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-7.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-8.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-9.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-10.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-11.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-12.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-13.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-14.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-15.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-16.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-17.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-18.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-19.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-20.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-21.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-22.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-23.webp",
+      "https://tet.ro/storage/properties/1235883/img-1235883-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "937 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/f4ed386c-ae41-4a6a-9f5e-d77dd4c898df",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-24",
+    "slug": "villa-horizon-24-casablanca-private-estate-marbella",
+    "title": "Villa Horizon 24 — Casablanca Private Estate, Marbella",
+    "subtitle": "1473 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€10,500,000",
+    "priceNumeric": 10500000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1473 sqm built area",
+    "usableArea": "1252 sqm usable",
+    "plotArea": "2651 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,473 mp. Preț: 10.500.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236142/img-1236142-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236142/img-1236142-0.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-1.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-2.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-3.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-4.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-5.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-6.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-7.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-8.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-9.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-10.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-11.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-12.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-13.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-14.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-15.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-16.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-17.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-18.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-19.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-20.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-21.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-22.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-23.webp",
+      "https://tet.ro/storage/properties/1236142/img-1236142-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1473 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/019dd7c7-c0fe-4c86-bde2-89cb0a402e86",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-25",
+    "slug": "villa-horizon-25-la-zagaleta-private-estate-benahavis",
+    "title": "Villa Horizon 25 — La Zagaleta Private Estate, Benahavis",
+    "subtitle": "1034 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€10,495,000",
+    "priceNumeric": 10495000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1034 sqm built area",
+    "usableArea": "879 sqm usable",
+    "plotArea": "1861 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 6 camere, 1,034 mp. Preț: 10.495.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236151/img-1236151-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236151/img-1236151-0.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-1.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-2.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-3.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-4.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-5.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-6.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-7.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-8.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-9.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-10.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-11.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-12.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-13.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-14.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-15.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-16.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-17.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-18.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-19.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-20.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-21.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-22.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-23.webp",
+      "https://tet.ro/storage/properties/1236151/img-1236151-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1034 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/a93f5b20-b0f7-4105-838a-67187eb80b78",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-26",
+    "slug": "villa-horizon-26-el-madro-al-private-estate-benahavis",
+    "title": "Villa Horizon 26 — El Madroñal Private Estate, Benahavis",
+    "subtitle": "1258 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€10,000,000",
+    "priceNumeric": 10000000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1258 sqm built area",
+    "usableArea": "1069 sqm usable",
+    "plotArea": "2264 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 5 camere, 1,258 mp. Preț: 10.000.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236022/img-1236022-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236022/img-1236022-0.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-1.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-2.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-3.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-4.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-5.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-6.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-7.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-8.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-9.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-10.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-11.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-12.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-13.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-14.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-15.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-16.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-17.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-18.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-19.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-20.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-21.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-22.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-23.webp",
+      "https://tet.ro/storage/properties/1236022/img-1236022-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1258 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/e7a43146-716b-4ec7-97ac-8acff3982d36",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-27",
+    "slug": "villa-horizon-27-guadalmina-baja-private-estate-marbella",
+    "title": "Villa Horizon 27 — Guadalmina Baja Private Estate, Marbella",
+    "subtitle": "1146 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€9,995,000",
+    "priceNumeric": 9995000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1146 sqm built area",
+    "usableArea": "974 sqm usable",
+    "plotArea": "2063 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,146 mp. Preț: 9.995.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235966/img-1235966-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235966/img-1235966-0.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-1.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-2.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-3.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-4.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-5.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-6.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-7.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-8.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-9.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-10.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-11.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-12.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-13.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-14.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-15.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-16.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-17.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-18.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-19.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-20.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-21.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-22.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-23.webp",
+      "https://tet.ro/storage/properties/1235966/img-1235966-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1146 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/b55eb56d-1ba6-4f08-857a-ba225dcc3a8a",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-28",
+    "slug": "villa-horizon-28-la-quinta-private-estate-benahavis",
+    "title": "Villa Horizon 28 — La Quinta Private Estate, Benahavis",
+    "subtitle": "1144 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€9,950,000",
+    "priceNumeric": 9950000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1144 sqm built area",
+    "usableArea": "972 sqm usable",
+    "plotArea": "2059 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 7 camere, 1,144 mp. Preț: 9.950.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235855/img-1235855-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235855/img-1235855-0.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-1.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-2.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-3.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-4.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-5.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-6.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-7.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-8.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-9.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-10.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-11.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-12.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-13.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-14.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-15.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-16.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-17.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-18.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-19.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-20.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-21.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-22.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-23.webp",
+      "https://tet.ro/storage/properties/1235855/img-1235855-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1144 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/cc399b39-3c05-405f-aabc-8269787f82b1",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-29",
+    "slug": "villa-horizon-29-guadalmina-alta-private-estate-san-pedro-de-alcantara",
+    "title": "Villa Horizon 29 — Guadalmina Alta Private Estate, San Pedro de Alcantara",
+    "subtitle": "2007 sqm Built · 4 Suites · Private Pool & Grounds · San Pedro de Alcantara",
+    "location": "San Pedro de Alcantara, Spain",
+    "city": "San Pedro de Alcantara",
+    "country": "Spain",
+    "price": "€9,700,000",
+    "priceNumeric": 9700000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "2007 sqm built area",
+    "usableArea": "1706 sqm usable",
+    "plotArea": "3613 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în San Pedro de Alcantara, Malaga. 8 camere, 2,007 mp. Preț: 9.700.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in San Pedro de Alcantara with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235969/img-1235969-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235969/img-1235969-0.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-1.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-2.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-3.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-4.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-5.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-6.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-7.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-8.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-9.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-10.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-11.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-12.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-13.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-14.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-15.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-16.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-17.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-18.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-19.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-20.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-21.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-22.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-23.webp",
+      "https://tet.ro/storage/properties/1235969/img-1235969-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "2007 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "San Pedro de Alcantara"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/3c9132e2-df84-4658-88c7-8bf7eca8c962",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-30",
+    "slug": "villa-horizon-30-golden-mile-private-estate-marbella",
+    "title": "Villa Horizon 30 — Golden Mile Private Estate, Marbella",
+    "subtitle": "1149 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€9,500,000",
+    "priceNumeric": 9500000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1149 sqm built area",
+    "usableArea": "977 sqm usable",
+    "plotArea": "2068 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 7 camere, 1,149 mp. Preț: 9.500.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236001/img-1236001-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236001/img-1236001-0.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-1.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-2.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-3.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-4.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-5.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-6.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-7.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-8.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-9.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-10.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-11.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-12.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-13.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-14.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-15.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-16.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-17.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-18.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-19.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-20.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-21.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-22.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-23.webp",
+      "https://tet.ro/storage/properties/1236001/img-1236001-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1149 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/2c89e97c-195f-49ea-b686-283b3819e202",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-31",
+    "slug": "villa-horizon-31-casablanca-private-estate-marbella",
+    "title": "Villa Horizon 31 — Casablanca Private Estate, Marbella",
+    "subtitle": "1022 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€9,490,000",
+    "priceNumeric": 9490000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1022 sqm built area",
+    "usableArea": "869 sqm usable",
+    "plotArea": "1840 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,022 mp. Preț: 9.490.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235875/img-1235875-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235875/img-1235875-0.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-1.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-2.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-3.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-4.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-5.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-6.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-7.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-8.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-9.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-10.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-11.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-12.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-13.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-14.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-15.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-16.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-17.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-18.webp",
+      "https://tet.ro/storage/properties/1235875/img-1235875-19.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1022 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/13b75393-4bf5-4bdc-b8f5-0a15e6c10877",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-32",
+    "slug": "villa-horizon-32-nueva-andaluc-a-private-estate-marbella",
+    "title": "Villa Horizon 32 — Nueva Andalucía Private Estate, Marbella",
+    "subtitle": "941 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€9,450,000",
+    "priceNumeric": 9450000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "941 sqm built area",
+    "usableArea": "800 sqm usable",
+    "plotArea": "1694 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 941 mp. Preț: 9.450.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235991/img-1235991-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235991/img-1235991-0.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-1.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-2.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-3.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-4.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-5.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-6.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-7.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-8.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-9.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-10.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-11.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-12.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-13.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-14.webp",
+      "https://tet.ro/storage/properties/1235991/img-1235991-15.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "941 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/ecf9054d-d657-4645-955f-0b8f9d02a87f",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-33",
+    "slug": "villa-horizon-33-los-monteros-private-estate-marbella",
+    "title": "Villa Horizon 33 — Los Monteros Private Estate, Marbella",
+    "subtitle": "1064 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€9,300,000",
+    "priceNumeric": 9300000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1064 sqm built area",
+    "usableArea": "904 sqm usable",
+    "plotArea": "1915 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,064 mp. Preț: 9.300.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235956/img-1235956-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235956/img-1235956-0.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-1.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-2.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-3.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-4.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-5.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-6.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-7.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-8.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-9.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-10.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-11.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-12.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-13.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-14.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-15.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-16.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-17.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-18.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-19.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-20.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-21.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-22.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-23.webp",
+      "https://tet.ro/storage/properties/1235956/img-1235956-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1064 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/6276e5da-6d4f-47dc-968a-0a339af2024d",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-34",
+    "slug": "villa-horizon-34-la-quinta-private-estate-benahavis",
+    "title": "Villa Horizon 34 — La Quinta Private Estate, Benahavis",
+    "subtitle": "1051 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€8,995,000",
+    "priceNumeric": 8995000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1051 sqm built area",
+    "usableArea": "893 sqm usable",
+    "plotArea": "1892 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 5 camere, 1,051 mp. Preț: 8.995.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235948/img-1235948-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235948/img-1235948-0.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-1.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-2.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-3.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-4.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-5.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-6.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-7.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-8.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-9.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-10.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-11.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-12.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-13.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-14.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-15.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-16.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-17.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-18.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-19.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-20.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-21.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-22.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-23.webp",
+      "https://tet.ro/storage/properties/1235948/img-1235948-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1051 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/003fbc22-2407-4c87-9d3c-e9b0798a675a",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-35",
+    "slug": "villa-horizon-35-nag-eles-private-estate-marbella",
+    "title": "Villa Horizon 35 — Nagüeles Private Estate, Marbella",
+    "subtitle": "1114 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€8,995,000",
+    "priceNumeric": 8995000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1114 sqm built area",
+    "usableArea": "947 sqm usable",
+    "plotArea": "2005 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 7 camere, 1,114 mp. Preț: 8.995.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235999/img-1235999-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235999/img-1235999-0.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-1.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-2.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-3.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-4.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-5.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-6.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-7.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-8.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-9.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-10.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-11.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-12.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-13.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-14.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-15.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-16.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-17.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-18.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-19.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-20.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-21.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-22.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-23.webp",
+      "https://tet.ro/storage/properties/1235999/img-1235999-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1114 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/59074541-482b-44be-8545-9e8603b636ab",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-36",
+    "slug": "villa-horizon-36-sierra-blanca-private-estate-marbella",
+    "title": "Villa Horizon 36 — Sierra Blanca Private Estate, Marbella",
+    "subtitle": "1281 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€8,995,000",
+    "priceNumeric": 8995000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1281 sqm built area",
+    "usableArea": "1089 sqm usable",
+    "plotArea": "2306 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 1,281 mp. Preț: 8.995.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236049/img-1236049-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236049/img-1236049-0.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-1.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-2.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-3.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-4.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-5.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-6.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-7.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-8.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-9.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-10.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-11.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-12.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-13.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-14.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-15.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-16.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-17.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-18.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-19.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-20.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-21.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-22.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-23.webp",
+      "https://tet.ro/storage/properties/1236049/img-1236049-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1281 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/dd12082d-56ad-4c76-bd32-c096a81586e5",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-37",
+    "slug": "villa-horizon-37-san-pedro-beachside-private-estate-san-pedro-de-alcantara",
+    "title": "Villa Horizon 37 — San Pedro Beachside Private Estate, San Pedro de Alcantara",
+    "subtitle": "1692 sqm Built · 4 Suites · Private Pool & Grounds · San Pedro de Alcantara",
+    "location": "San Pedro de Alcantara, Spain",
+    "city": "San Pedro de Alcantara",
+    "country": "Spain",
+    "price": "€8,900,000",
+    "priceNumeric": 8900000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1692 sqm built area",
+    "usableArea": "1438 sqm usable",
+    "plotArea": "3046 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în San Pedro de Alcantara, Malaga. 6 camere, 1,692 mp. Preț: 8.900.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in San Pedro de Alcantara with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236019/img-1236019-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236019/img-1236019-0.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-1.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-2.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-3.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-4.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-5.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-6.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-7.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-8.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-9.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-10.webp",
+      "https://tet.ro/storage/properties/1236019/img-1236019-11.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1692 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "San Pedro de Alcantara"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/07310f5c-8477-471f-823a-cb2fb287244f",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-38",
+    "slug": "villa-horizon-38-el-madro-al-private-estate-benahavis",
+    "title": "Villa Horizon 38 — El Madroñal Private Estate, Benahavis",
+    "subtitle": "746 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€8,795,000",
+    "priceNumeric": 8795000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "746 sqm built area",
+    "usableArea": "634 sqm usable",
+    "plotArea": "1343 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 6 camere, 746 mp. Preț: 8.795.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235955/img-1235955-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235955/img-1235955-0.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-1.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-2.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-3.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-4.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-5.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-6.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-7.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-8.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-9.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-10.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-11.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-12.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-13.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-14.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-15.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-16.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-17.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-18.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-19.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-20.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-21.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-22.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-23.webp",
+      "https://tet.ro/storage/properties/1235955/img-1235955-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "746 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/7863315c-6075-4177-adf4-28c410084764",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-39",
+    "slug": "villa-horizon-39-nueva-andaluc-a-private-estate-marbella",
+    "title": "Villa Horizon 39 — Nueva Andalucía Private Estate, Marbella",
+    "subtitle": "910 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€8,750,000",
+    "priceNumeric": 8750000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "910 sqm built area",
+    "usableArea": "774 sqm usable",
+    "plotArea": "1638 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 6 camere, 910 mp. Preț: 8.750.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235993/img-1235993-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235993/img-1235993-0.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-1.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-2.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-3.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-4.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-5.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-6.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-7.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-8.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-9.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-10.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-11.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-12.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-13.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-14.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-15.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-16.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-17.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-18.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-19.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-20.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-21.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-22.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-23.webp",
+      "https://tet.ro/storage/properties/1235993/img-1235993-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "910 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/21701fa0-9421-42b8-9f1e-2ce24c889142",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-40",
+    "slug": "villa-horizon-40-la-quinta-private-estate-benahavis",
+    "title": "Villa Horizon 40 — La Quinta Private Estate, Benahavis",
+    "subtitle": "1026 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€8,250,000",
+    "priceNumeric": 8250000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1026 sqm built area",
+    "usableArea": "872 sqm usable",
+    "plotArea": "1847 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 9 camere, 1,026 mp. Preț: 8.250.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236067/img-1236067-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236067/img-1236067-0.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-1.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-2.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-3.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-4.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-5.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-6.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-7.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-8.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-9.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-10.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-11.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-12.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-13.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-14.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-15.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-16.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-17.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-18.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-19.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-20.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-21.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-22.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-23.webp",
+      "https://tet.ro/storage/properties/1236067/img-1236067-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1026 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/f133580f-84bf-47bf-8463-7989c7b93f4c",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-41",
+    "slug": "villa-horizon-41-monte-mayor-private-estate-benahavis",
+    "title": "Villa Horizon 41 — Monte Mayor Private Estate, Benahavis",
+    "subtitle": "1600 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€8,150,000",
+    "priceNumeric": 8150000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1600 sqm built area",
+    "usableArea": "1360 sqm usable",
+    "plotArea": "2880 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 7 camere, 1,600 mp. Preț: 8.150.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236004/img-1236004-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236004/img-1236004-0.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-1.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-2.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-3.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-4.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-5.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-6.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-7.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-8.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-9.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-10.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-11.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-12.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-13.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-14.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-15.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-16.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-17.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-18.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-19.webp",
+      "https://tet.ro/storage/properties/1236004/img-1236004-20.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1600 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/60cb2d82-113b-4f45-a180-44d37042a4d0",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-42",
+    "slug": "villa-horizon-42-la-heredia-private-estate-benahavis",
+    "title": "Villa Horizon 42 — La Heredia Private Estate, Benahavis",
+    "subtitle": "1847 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€7,995,000",
+    "priceNumeric": 7995000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1847 sqm built area",
+    "usableArea": "1570 sqm usable",
+    "plotArea": "3325 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 4 camere, 1,847 mp. Preț: 7.995.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235963/img-1235963-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235963/img-1235963-0.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-1.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-2.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-3.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-4.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-5.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-6.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-7.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-8.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-9.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-10.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-11.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-12.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-13.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-14.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-15.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-16.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-17.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-18.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-19.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-20.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-21.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-22.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-23.webp",
+      "https://tet.ro/storage/properties/1235963/img-1235963-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1847 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/e34479a7-4930-4b45-a82b-58ead23409cf",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-43",
+    "slug": "villa-horizon-43-sierra-blanca-private-estate-marbella",
+    "title": "Villa Horizon 43 — Sierra Blanca Private Estate, Marbella",
+    "subtitle": "901 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€7,950,000",
+    "priceNumeric": 7950000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "901 sqm built area",
+    "usableArea": "766 sqm usable",
+    "plotArea": "1622 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 5 camere, 901 mp. Preț: 7.950.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235974/img-1235974-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235974/img-1235974-0.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-1.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-2.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-3.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-4.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-5.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-6.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-7.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-8.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-9.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-10.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-11.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-12.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-13.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-14.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-15.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-16.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-17.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-18.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-19.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-20.webp",
+      "https://tet.ro/storage/properties/1235974/img-1235974-21.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "901 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/3119a31a-d9c3-4165-9fc2-5b6a2499f789",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-44",
+    "slug": "villa-horizon-44-golden-mile-private-estate-marbella",
+    "title": "Villa Horizon 44 — Golden Mile Private Estate, Marbella",
+    "subtitle": "1280 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€7,950,000",
+    "priceNumeric": 7950000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1280 sqm built area",
+    "usableArea": "1088 sqm usable",
+    "plotArea": "2304 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 5 camere, 1,280 mp. Preț: 7.950.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235994/img-1235994-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235994/img-1235994-0.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-1.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-2.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-3.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-4.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-5.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-6.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-7.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-8.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-9.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-10.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-11.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-12.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-13.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-14.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-15.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-16.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-17.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-18.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-19.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-20.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-21.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-22.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-23.webp",
+      "https://tet.ro/storage/properties/1235994/img-1235994-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1280 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/5c1aaf48-73bc-4c68-9550-645c4e13d28b",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-45",
+    "slug": "villa-horizon-45-los-arqueros-private-estate-benahavis",
+    "title": "Villa Horizon 45 — Los Arqueros Private Estate, Benahavis",
+    "subtitle": "920 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€7,800,000",
+    "priceNumeric": 7800000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "920 sqm built area",
+    "usableArea": "782 sqm usable",
+    "plotArea": "1656 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 7 camere, 920 mp. Preț: 7.800.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235871/img-1235871-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235871/img-1235871-0.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-1.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-2.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-3.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-4.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-5.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-6.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-7.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-8.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-9.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-10.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-11.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-12.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-13.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-14.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-15.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-16.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-17.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-18.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-19.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-20.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-21.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-22.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-23.webp",
+      "https://tet.ro/storage/properties/1235871/img-1235871-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "920 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/8f65ccfa-fa4c-4cba-bc60-c449e6c44007",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-46",
+    "slug": "villa-horizon-46-la-quinta-private-estate-benahavis",
+    "title": "Villa Horizon 46 — La Quinta Private Estate, Benahavis",
+    "subtitle": "1281 sqm Built · 4 Suites · Private Pool & Grounds · Benahavis",
+    "location": "Benahavis, Spain",
+    "city": "Benahavis",
+    "country": "Spain",
+    "price": "€7,800,000",
+    "priceNumeric": 7800000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1281 sqm built area",
+    "usableArea": "1089 sqm usable",
+    "plotArea": "2306 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Benahavis, Malaga. 6 camere, 1,281 mp. Preț: 7.800.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Benahavis with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236041/img-1236041-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236041/img-1236041-0.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-1.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-2.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-3.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-4.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-5.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-6.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-7.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-8.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-9.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-10.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-11.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-12.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-13.webp",
+      "https://tet.ro/storage/properties/1236041/img-1236041-14.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1281 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Benahavis"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/654edf13-b879-4e66-b960-b2cd57b2f24f",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-47",
+    "slug": "villa-horizon-47-los-monteros-private-estate-marbella",
+    "title": "Villa Horizon 47 — Los Monteros Private Estate, Marbella",
+    "subtitle": "1226 sqm Built · 4 Suites · Private Pool & Grounds · Marbella",
+    "location": "Marbella, Spain",
+    "city": "Marbella",
+    "country": "Spain",
+    "price": "€7,800,000",
+    "priceNumeric": 7800000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "1226 sqm built area",
+    "usableArea": "1042 sqm usable",
+    "plotArea": "2207 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în Marbella, Malaga. 5 camere, 1,226 mp. Preț: 7.800.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in Marbella with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1236077/img-1236077-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1236077/img-1236077-0.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-1.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-2.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-3.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-4.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-5.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-6.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-7.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-8.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-9.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-10.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-11.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-12.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-13.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-14.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-15.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-16.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-17.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-18.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-19.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-20.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-21.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-22.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-23.webp",
+      "https://tet.ro/storage/properties/1236077/img-1236077-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "1226 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "Marbella"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/0f9c01a4-fe5b-4072-ab98-50b95267c134",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
+  },
+  {
+    "id": "prop-exp-48",
+    "slug": "villa-horizon-48-cortijo-blanco-private-estate-san-pedro-de-alcantara",
+    "title": "Villa Horizon 48 — Cortijo Blanco Private Estate, San Pedro de Alcantara",
+    "subtitle": "907 sqm Built · 4 Suites · Private Pool & Grounds · San Pedro de Alcantara",
+    "location": "San Pedro de Alcantara, Spain",
+    "city": "San Pedro de Alcantara",
+    "country": "Spain",
+    "price": "€7,500,000",
+    "priceNumeric": 7500000,
+    "currency": "EUR",
+    "type": "Private Luxury Estate",
+    "category": "villa",
+    "area": "907 sqm built area",
+    "usableArea": "771 sqm usable",
+    "plotArea": "1633 sqm grounds",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "rooms": "6 Rooms (4 En-Suite Bedrooms, Grand Reception, Private Grounds)",
+    "status": "Available",
+    "description": "Case / Vile de vânzare în San Pedro de Alcantara, Malaga. 8 camere, 907 mp. Preț: 7.500.000 EUR. Chestertons Marbella — TET....",
+    "advisoryPerspective": "Audited for single-client acquisition advisory. High liquidity corridor in San Pedro de Alcantara with sustained capital appreciation and sovereign asset defense fundamentals.",
+    "heroImage": "https://tet.ro/storage/properties/1235876/img-1235876-0.webp",
+    "galleryImages": [
+      "https://tet.ro/storage/properties/1235876/img-1235876-0.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-1.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-2.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-3.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-4.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-5.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-6.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-7.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-8.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-9.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-10.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-11.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-12.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-13.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-14.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-15.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-16.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-17.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-18.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-19.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-20.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-21.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-22.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-23.webp",
+      "https://tet.ro/storage/properties/1235876/img-1235876-24.webp"
+    ],
+    "specs": [
+      {
+        "label": "Built Area",
+        "value": "907 sqm"
+      },
+      {
+        "label": "Bedrooms",
+        "value": "4 Suites"
+      },
+      {
+        "label": "Bathrooms",
+        "value": "4 Bathrooms"
+      },
+      {
+        "label": "Locality",
+        "value": "San Pedro de Alcantara"
+      },
+      {
+        "label": "Sovereign Jurisdiction",
+        "value": "Spain"
+      },
+      {
+        "label": "Asset Class",
+        "value": "VILLA"
+      },
+      {
+        "label": "Advisory Alignment",
+        "value": "Single-Client Mandate"
+      }
+    ],
+    "features": [
+      "Private swimming pool & landscaped gardens",
+      "Floor-to-ceiling panoramic architectural glazing",
+      "Gated perimeter with multi-tier access control",
+      "Executive entertaining terraces & solarium",
+      "Underground private motor court & storage",
+      "Fiduciary cadastral title & structural due diligence completed"
+    ],
+    "sourceUrl": "https://homefind.cristianvaduva.com/listings/252fd9ab-dc29-4740-b1dd-94f6140e6ade",
+    "sourceName": "HomeFind",
+    "sourcePlatform": "HomeFind",
+    "isFeatured": false
   }
 ];
 
-export function getPropertyById(id: string): Property | undefined {
-  return selectedProperties.find(
-    (p) => p.id === id || (p.slug && p.slug === id)
-  );
-}
+export const properties = selectedProperties;
 
 export function getSelectedProperties(): Property[] {
   return selectedProperties;
+}
+
+export function getPropertyById(id: string): Property | undefined {
+  return selectedProperties.find((p) => p.id === id || p.slug === id);
+}
+
+export function getFeaturedProperties(): Property[] {
+  return selectedProperties.filter((p) => p.isFeatured);
 }

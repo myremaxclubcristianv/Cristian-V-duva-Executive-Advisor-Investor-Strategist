@@ -219,9 +219,54 @@ export default function PropertiesPage() {
         </section>
 
         {/* ======================================================== */}
+        {/* PERSONAL ADVISORY MANDATE CADRAN                         */}
+        {/* ======================================================== */}
+        <section className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 pt-10 pb-2">
+          <div className="border border-white/[0.12] bg-[#0C1119] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden group">
+            <div className="flex items-center gap-6">
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 border border-[#93C8FF]/40 bg-[#1B2028] overflow-hidden shrink-0 shadow-lg">
+                <Image
+                  src="/images/personal/portraits/cristian-vaduva-desk-advisor.jpg"
+                  alt="Cristian Văduva — Executive Real Estate Advisor"
+                  fill
+                  className="object-cover object-center"
+                />
+              </div>
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-2 font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-[#93C8FF] font-semibold">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />
+                  <span>DIRECT PRINCIPAL ADVISORY</span>
+                </div>
+                <h3 className="font-serif text-xl sm:text-2xl text-[#F5F4EF]">
+                  Represented Solely on Behalf of the Buyer
+                </h3>
+                <p className="font-sans text-xs sm:text-sm text-[#B8C2CF] max-w-xl font-light leading-relaxed">
+                  Every acquisition across Bucharest, Marbella, and Dubai is personally directed by Cristian Văduva under a strict unilateral fiduciary mandate, eliminating broker conflict.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 shrink-0 font-mono text-xs w-full md:w-auto">
+              <a
+                href="#perspectives"
+                className="flex-1 md:flex-initial px-5 py-3 border border-white/[0.15] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.18em] font-medium transition-colors text-center"
+              >
+                MEET CRISTIAN VĂDUVA
+              </a>
+              <Link
+                href="/contact"
+                className="flex-1 md:flex-initial px-5 py-3 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.18em] font-bold transition-all shadow-lg text-center"
+              >
+                RETAIN MANDATE
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ======================================================== */}
         {/* PROPERTIES EXHIBITION CATALOG                            */}
         {/* ======================================================== */}
-        <div id="catalog-view" className="py-16 sm:py-24 lg:py-32">
+        <div id="catalog-view" className="py-12 sm:py-20 lg:py-28">
           <PropertiesCatalog />
         </div>
 

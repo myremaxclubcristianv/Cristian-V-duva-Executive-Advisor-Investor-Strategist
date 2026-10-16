@@ -6,19 +6,21 @@ import EditorialInterruption from "./EditorialInterruption";
 import SelectedOpportunities from "./SelectedOpportunities";
 import InvestmentIntelligence from "./InvestmentIntelligence";
 import InternationalPerspective from "./InternationalPerspective";
-import EcosystemGrid from "./EcosystemGrid";
+import EcosystemDirectory from "@/components/editorial/EcosystemDirectory";
 import SignatureClosing from "./SignatureClosing";
+import PersonalPerspectiveSection from "@/components/editorial/PersonalPerspectiveSection";
 
 /**
  * EXECUTIVE DIGITAL FLAGSHIP — MASTER EXPERIENCE
- * Art-directed 7-chapter architectural narrative:
+ * Art-directed 8-chapter architectural narrative:
  * 01 // Cinematic Opening & Perspective Orientation
  * 02 // The Principal's Fiduciary Mandate (Real Estate, Investment, Asset Protection)
- * 03 // Selected Real Estate Opportunities (Pattern A Signature & Pattern B Supporting)
- * 04 // Empirical Investment Intelligence & Macroeconomic Surveillance
- * 05 // International Perspective & Cross-Border Corridors (Romania · Monaco · Dubai)
- * 06 // The Integrated Operating Ecosystem
- * 07 // The Closing Fiduciary Statement & Direct Engagement
+ * 03 // The Human Advisor: Cristian Văduva — Authentic Photographs & Strategic Advisory Thesis
+ * 04 // Selected Real Estate Opportunities (Pattern A Signature & Pattern B Supporting)
+ * 05 // Empirical Investment Intelligence & Macroeconomic Surveillance
+ * 06 // International Perspective & Cross-Border Corridors (Romania · Monaco · Dubai)
+ * 07 // The Integrated Operating Ecosystem (All 13 Platforms with Pre-Launch Status)
+ * 08 // The Closing Fiduciary Statement & Direct Engagement
  */
 export default function ExecutiveExperience() {
   return (
@@ -29,19 +31,26 @@ export default function ExecutiveExperience() {
       {/* CHAPTER 02 // THE PRINCIPAL'S MANDATE */}
       <EditorialInterruption />
 
-      {/* CHAPTER 03 // SELECTED OPPORTUNITIES */}
+      {/* CHAPTER 03 // THE HUMAN STRATEGIST — CRISTIAN VĂDUVA */}
+      <div id="perspectives">
+        <PersonalPerspectiveSection />
+      </div>
+
+      {/* CHAPTER 04 // SELECTED OPPORTUNITIES */}
       <SelectedOpportunities />
 
-      {/* CHAPTER 04 // INVESTMENT INTELLIGENCE */}
+      {/* CHAPTER 05 // INVESTMENT INTELLIGENCE */}
       <InvestmentIntelligence />
 
-      {/* CHAPTER 05 // INTERNATIONAL PERSPECTIVE */}
+      {/* CHAPTER 06 // INTERNATIONAL PERSPECTIVE */}
       <InternationalPerspective />
 
-      {/* CHAPTER 06 // THE INTEGRATED ECOSYSTEM */}
-      <EcosystemGrid />
+      {/* CHAPTER 07 // THE INTEGRATED ECOSYSTEM */}
+      <div id="ecosystem">
+        <EcosystemDirectory />
+      </div>
 
-      {/* CHAPTER 07 // THE CLOSING STATEMENT & INTAKE */}
+      {/* CHAPTER 08 // THE CLOSING STATEMENT & INTAKE */}
       <SignatureClosing />
     </div>
   );

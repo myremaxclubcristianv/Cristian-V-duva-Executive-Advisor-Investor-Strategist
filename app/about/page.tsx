@@ -175,7 +175,7 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/5] w-full border border-white/[0.14] bg-[#0C1119] p-3 overflow-hidden shadow-2xl">
                   <div className="relative w-full h-full overflow-hidden">
                     <Image
-                      src="/images/personal/portraits/cristian-headshot.jpg"
+                      src="/images/personal/portraits/cristian-vaduva-desk-advisor.jpg"
                       alt="Cristian Văduva Official Monograph Portrait"
                       fill
                       priority

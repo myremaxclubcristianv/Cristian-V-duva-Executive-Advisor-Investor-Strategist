@@ -95,40 +95,74 @@ export default function PersonalPerspectiveSection({
 
         {/* Master Asymmetric Spread: Authentic Portrait + Strategic Philosophy */}
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          {/* Authentic High-Resolution Portrait (5 cols) */}
-          <div className="lg:col-span-5">
+          {/* Authentic High-Resolution Photographic Cadran (5 cols) */}
+          <div className="lg:col-span-5 space-y-4">
             <EditorialCadran
               watermarkNumber="CV"
               accentColor="ice"
               surface="midnight"
               className="p-3 bg-[#0C1119]"
             >
-              <div className="relative aspect-[4/5] w-full bg-[#1B2028] overflow-hidden border border-white/[0.08] group">
+              <div className="relative aspect-[4/5] w-full bg-[#1B2028] overflow-hidden border border-white/[0.1] group">
                 <Image
-                  src="/images/personal/portraits/cristian-headshot.jpg"
-                  alt="Cristian Văduva — Executive Advisor, Investor & Strategist"
+                  src="/images/personal/portraits/cristian-vaduva-desk-advisor.jpg"
+                  alt="Cristian Văduva — Executive Advisor, Real Estate Investor & Strategist"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 42vw"
-                  className="object-cover object-center filter grayscale contrast-105 group-hover:grayscale-0 transition-all duration-700"
+                  className="object-cover object-center transition-all duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#07090D]/90 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07090D]/95 via-[#07090D]/20 to-transparent pointer-events-none" />
 
                 {/* Floating Portrait Badge */}
-                <div className="absolute bottom-4 left-4 right-4 p-4 bg-[#07090D]/92 backdrop-blur-md border border-white/[0.1] space-y-1">
-                  <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-[#93C8FF] block">
-                    FOUNDER & PRINCIPAL ADVISOR
-                  </span>
-                  <h4 className="font-serif text-lg text-[#F5F4EF] font-medium leading-tight">
+                <div className="absolute bottom-4 left-4 right-4 p-4 bg-[#07090D]/94 backdrop-blur-md border border-white/[0.1] space-y-1">
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-[#93C8FF] block font-semibold">
+                      FOUNDER & PRINCIPAL ADVISOR
+                    </span>
+                    <span className="w-2 h-2 rounded-full bg-[#93C8FF]" />
+                  </div>
+                  <h4 className="font-serif text-xl text-[#F5F4EF] font-medium leading-tight">
                     Cristian Văduva
                   </h4>
                   <div className="flex items-center justify-between font-mono text-[10px] text-[#8A95A5] pt-1">
-                    <span>Executive Real Estate & Wealth Protection</span>
-                    <span className="text-[#A97F60]">Photograph: AdrianBirgauan.ro</span>
+                    <span>Executive Real Estate & Wealth Advisory</span>
+                    <span className="text-[#A97F60]">Source: cristianvaduva.com</span>
                   </div>
                 </div>
               </div>
             </EditorialCadran>
+
+            {/* Dual Authentic Photographic Context Thumbnails */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="relative aspect-[4/3] border border-white/[0.08] bg-[#0C1119] overflow-hidden group">
+                <Image
+                  src="/images/personal/editorial/cristian-vaduva-property-strategist.jpg"
+                  alt="Cristian Văduva at International Real Estate Forum"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 20vw"
+                  className="object-cover object-top transition-all duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-80" />
+                <span className="absolute bottom-1.5 left-2 font-mono text-[8px] uppercase tracking-wider text-[#B8C2CF]">
+                  Property Strategy
+                </span>
+              </div>
+
+              <div className="relative aspect-[4/3] border border-white/[0.08] bg-[#0C1119] overflow-hidden group">
+                <Image
+                  src="/images/personal/editorial/cristian-vaduva-financial-analyst.jpg"
+                  alt="Cristian Văduva — Financial Underwriting & Development Modeling"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 20vw"
+                  className="object-cover object-center transition-all duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-80" />
+                <span className="absolute bottom-1.5 left-2 font-mono text-[8px] uppercase tracking-wider text-[#93C8FF]">
+                  Capital Underwriting
+                </span>
+              </div>
+            </div>
           </div>
 
           {/* Strategic Philosophy & Fiduciary Thesis (7 cols) */}
@@ -157,8 +191,16 @@ export default function PersonalPerspectiveSection({
             {/* Direct Channel Action Bar */}
             <div className="pt-4 flex flex-wrap items-center gap-3 font-mono text-xs">
               <Link
-                href="/contact"
+                href="/real-estate/properties"
                 className="px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.18em] font-bold transition-all shadow-xl flex items-center gap-2"
+              >
+                <span>EXPLORE PROPERTY PORTFOLIO</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+
+              <Link
+                href="/contact"
+                className="px-6 py-3.5 border border-white/[0.2] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.18em] font-semibold transition-all flex items-center gap-2"
               >
                 <span>RETAIN PRIVATE COUNSEL</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -168,10 +210,10 @@ export default function PersonalPerspectiveSection({
                 href="https://wa.me/436509536345"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3.5 border border-white/[0.15] hover:border-[#93C8FF] hover:bg-[#93C8FF]/10 text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.18em] font-semibold transition-all flex items-center gap-2"
+                className="px-5 py-3.5 border border-[#25D366]/30 hover:border-[#25D366] hover:bg-[#25D366]/10 text-[#F5F4EF] hover:text-[#25D366] uppercase tracking-[0.18em] font-medium transition-all flex items-center gap-2"
               >
-                <MessageSquare className="w-3.5 h-3.5 text-[#93C8FF]" />
-                <span>DIRECT WHATSAPP (+43 650 953 6345)</span>
+                <MessageSquare className="w-3.5 h-3.5 text-[#25D366]" />
+                <span>WHATSAPP (+43 650 953 6345)</span>
               </a>
 
               <a
@@ -180,7 +222,7 @@ export default function PersonalPerspectiveSection({
                 rel="noopener noreferrer"
                 className="px-5 py-3.5 border border-white/[0.1] text-[#8A95A5] hover:text-[#F5F4EF] hover:border-white/30 uppercase tracking-[0.18em] transition-all flex items-center gap-1.5"
               >
-                <span>VISIT CRISTIANVADUVA.COM</span>
+                <span>CRISTIANVADUVA.COM</span>
                 <ExternalLink className="w-3 h-3 text-[#A97F60]" />
               </a>
             </div>
