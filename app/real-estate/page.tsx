@@ -26,7 +26,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Real Estate & Market Hub — Cristian Văduva | HomeFind & AiXLuxury",
-  description: "Bespoke advisory for ultra-prime property acquisitions, single-client fiduciary representation, forensic title audits, and residential developments across Bucharest, Monaco, and Dubai.",
+  description: "Consultanță dedicată pentru achiziții rezidențiale de prestigiu, reprezentare unilaterală, verificare cadastrală structurată și proprietăți selectate în București și internațional.",
 };
 
 export default function RealEstateHubPage() {
@@ -54,14 +54,14 @@ export default function RealEstateHubPage() {
           <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16 relative z-10">
             <SectionHeader
               eyebrow="01 // REAL ESTATE & MARKET HUB"
-              badge="EXCLUSIVE FIDUCIARY REPRESENTATION"
+              badge="DEDICATED PRINCIPAL REPRESENTATION"
               title={
                 <>
                   The Architecture of Prime Acquisitions &<br />
-                  <span className="text-[#A97F60] italic font-normal">Sovereign Fiduciary Strategy.</span>
+                  <span className="text-[#A97F60] italic font-normal">Strategic Property Analysis.</span>
                 </>
               }
-              description="In high-stakes acquisitions, market access is merely a prerequisite. Irreversible transactional advantage is engineered at the intersection of cross-border contract law, forensic structural due diligence, and retained single-client loyalty."
+              description="In prime property acquisitions, market access is merely a prerequisite. Real transactional advantage is built on rigorous cadastral verification, independent structural due diligence, and dedicated unilateral client representation."
             />
 
             {/* Strategic Pillars Grid */}
@@ -352,16 +352,16 @@ export default function RealEstateHubPage() {
         </section>
 
         {/* ======================================================== */}
-        {/* 07 // FINAL FIDUCIARY INTAKE CTA                         */}
+        {/* 07 // FINAL INTAKE CTA                                   */}
         {/* ======================================================== */}
         <CTASection
-          eyebrow="RETAINED FIDUCIARY ACQUISITION MANDATE"
+          eyebrow="RETAINED ACQUISITION MANDATE"
           title="Planning an Acquisition or Seeking Representation for a Prime Asset?"
-          description="We structure every transaction with absolute discretion, rigorous contractual shielding, and independent valuation audits. No mass marketing and zero dual-agency compromise."
+          description="We structure every transaction with discretion, rigorous contractual verification, and independent valuation audits. No mass marketing and zero dual-agency compromise."
           primaryActionText="SCHEDULE A PRIVATE CONSULTATION"
-          primaryActionHref="/contact"
-          secondaryActionText="WHATSAPP DESK (+43 650 953 6345)"
-          secondaryActionHref="https://wa.me/436509536345"
+          primaryActionHref="/programare"
+          secondaryActionText="DIRECT CONTACT"
+          secondaryActionHref="mailto:cristianvaduva@duck.com"
         />
       </main>
 

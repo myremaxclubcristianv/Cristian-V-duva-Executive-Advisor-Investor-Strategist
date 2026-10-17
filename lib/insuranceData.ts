@@ -18,7 +18,7 @@ export interface InsurancePillar {
 
 export const insuranceOverview = {
   title: "Asset Sovereignty & Strategic Underwriting",
-  subtitle: "Authorized Fiduciary Advisory · Generali România Partnership",
+  subtitle: "Authorized Asset Advisory · Generali România Partnership",
   corePhilosophy: "Acquiring high-value real estate or physical assets is only the initial milestone. Insulating balance sheets against catastrophic asymmetric risk is integral to generational family wealth governance.",
   externalPortalUrl: "https://insurance.cristianvaduva.com",
   partnerName: "Generali România",
@@ -81,8 +81,8 @@ export const insuranceDivisions: InsuranceDivision[] = [
       "Directors & Officers (D&O) liability shielding personal assets of board members and executives",
       "Cyber Risk underwriting aligned with the EU NIS 2 Directive (incident response & interruption)",
       "Marine Cargo vs. CMR carrier liability optimization for high-value logistics",
-      "Professional indemnity and commercial fiduciary malpractice defense",
-      "Independent contractual audit and policy renegotiation on fiduciary terms",
+      "Professional indemnity and commercial liability defense",
+      "Independent contractual audit and policy renegotiation on client-first terms",
     ],
     externalPath: "https://insurance.cristianvaduva.com/stiri/directiva-europeana-nis2-asigurare-cyber-riscuri-imm",
   },

@@ -32,28 +32,28 @@ export default function PersonalPerspectiveSection({
     {
       icon: Building2,
       category: "SOVEREIGN REAL ESTATE",
-      title: "Asset Selection & Fiduciary Acquisition",
+      title: "Asset Selection & Strategic Acquisition",
       description:
-        "Direct principal representation in ultra-prime residential penthouses, coastal villas, and masterplan developments across Bucharest, Marbella, and Dubai. Every asset is audited for title provenance, physical craftsmanship, and sovereign yield resilience, operating strictly under unilateral client mandates.",
+        "Direct principal advisory in ultra-prime residential penthouses, coastal villas, and masterplan developments across Bucharest, Marbella, and Dubai. Every asset is evaluated for title provenance, physical craftsmanship, and long-term value resilience, operating strictly under unilateral client mandates.",
       platformName: "HomeFind & AiXLuxury",
       platformUrl: "https://homefind.cristianvaduva.com",
     },
     {
       icon: BadgeDollarSign,
-      category: "FINANCING & CAPITAL",
-      title: "Credit Structuring & Debt Syndication",
+      category: "FINANCIAL ANALYSIS",
+      title: "Financial Analysis & Transaction Coordination",
       description:
-        "Structuring private mortgages, acquisition facilities, and developer bridge financing through CV Finance. Aligning debt amortization schedules with macroeconomic rate environments and sovereign holding entity requirements.",
+        "Evaluating purchase affordability, transaction cash flows, and mortgage financing options through authorized credit banking partners. Aligning financial planning with macroeconomic rate environments.",
       platformName: "CV Finance",
       platformUrl: "https://credite.cristianvaduva.com",
     },
     {
       icon: Lock,
       category: "ASSET PROTECTION",
-      title: "Insurance Architecture & Risk Shielding",
+      title: "Insurance Advisory & Risk Protection",
       description:
-        "Comprehensive property, casualty, and wealth preservation coverage designed in institutional collaboration with Generali Romania. Shielding family offices and corporate holding structures from unforeseen liabilities, environmental hazards, and succession disruption.",
-      platformName: "Generali Romania Alliance",
+        "Comprehensive property, casualty, and wealth preservation coverage structured as an authorized agent partner of Generali România. Protecting residences and corporate holdings from unforeseen liabilities and environmental hazards.",
+      platformName: "Partener Generali România",
       platformUrl: "https://insurance.cristianvaduva.com",
     },
     {
@@ -165,14 +165,14 @@ export default function PersonalPerspectiveSection({
             </div>
           </div>
 
-          {/* Strategic Philosophy & Fiduciary Thesis (7 cols) */}
+          {/* Strategic Philosophy & Advisory Thesis (7 cols) */}
           <div className="lg:col-span-7 space-y-6">
             <div className="p-6 sm:p-8 border-l-2 border-[#A97F60] bg-[#0C1119] space-y-3">
               <span className="font-mono text-[10px] uppercase tracking-[0.26em] text-[#A97F60] font-semibold block">
                 STRATEGIC ADVISORY PHILOSOPHY
               </span>
               <p className="font-serif italic text-lg sm:text-xl text-[#F5F4EF] leading-relaxed">
-                &ldquo;Real estate acquisitions cannot be executed in isolation. An exceptional asset is only truly defensible when integrated with sovereign legal title structuring, debt calibration, and comprehensive asset protection. We represent only the principal, eliminating dual-agency conflicts.&rdquo;
+                &ldquo;Real estate acquisitions require rigorous analysis. An exceptional asset is only truly valuable when backed by clean cadastral title verification, sound financial planning, and comprehensive asset protection. We operate under dedicated unilateral mandates, eliminating hidden conflicts of interest.&rdquo;
               </p>
               <div className="font-mono text-[10px] text-[#8A95A5] uppercase tracking-wider">
                 CRISTIAN VADUVA — EXECUTIVE DIRECTIVE

@@ -40,22 +40,22 @@ const ECOSYSTEM_PLATFORMS = [
     badge: "Live Tech",
   },
   {
-    name: "Subvenții.ro",
+    name: "Subvenții",
     tagline: "Government Programs & Funding Intelligence",
     description: "Platformă de analiză a fondurilor și programelor structurale de finanțare pentru dezvoltări și investiții durabile.",
-    url: "https://subventii.ro",
+    url: "https://subventii.cristianvaduva.com/",
     category: "FUNDING INTELLIGENCE",
     icon: Globe,
     badge: "Government / Grants",
   },
   {
     name: "Insurance & Asset Protection",
-    tagline: "Generali Romania Strategic Partnership",
-    description: "Structurare de protecție a activelor imobiliare și polițe complexe de asigurare pentru proprietăți de mare valoare.",
-    url: "#",
+    tagline: "Partener Generali România",
+    description: "Structurare de protecție a activelor imobiliare și polițe de asigurare pentru proprietăți de mare valoare în parteneriat cu Generali România.",
+    url: "https://insurance.cristianvaduva.com",
     category: "ASSET PROTECTION",
     icon: Shield,
-    badge: "Generali Partner",
+    badge: "Partener Generali",
   },
 ];
 

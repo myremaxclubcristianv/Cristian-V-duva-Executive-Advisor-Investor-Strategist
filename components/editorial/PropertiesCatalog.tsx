@@ -452,7 +452,7 @@ export default function PropertiesCatalog() {
         {filteredProperties.length === 0 && (
           <div className="text-center py-28 border border-white/[0.08] bg-[#0C1119] p-12 space-y-5 shadow-2xl relative">
             <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#93C8FF] block">
-              CONFIDENTIAL FIDUCIARY PROTOCOL
+              CONFIDENTIAL ACQUISITION PROTOCOL
             </span>
             <h3 className="font-serif text-3xl text-[#F5F4EF]">
               No public assets match the requested criteria.
@@ -460,7 +460,7 @@ export default function PropertiesCatalog() {
             <p className="font-sans text-sm text-[#B8C2CF] max-w-xl mx-auto font-light leading-relaxed">
               Substantial portions of the Executive acquisition portfolio are managed strictly
               off-market under private placement covenants. To review confidential opportunities,
-              submit a retained acquisition brief.
+              submit an acquisition brief or schedule an introductory discussion.
             </p>
             <div className="pt-4 flex items-center justify-center gap-4">
               <button

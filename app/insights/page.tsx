@@ -126,10 +126,10 @@ export default function InsightsPage() {
           title="Commission a Project Due Diligence or Architectural Audit."
           description="The executive team undertakes confidential feasibility studies, title stress-testing, and environmental risk audits for high-value residential acquisitions and development sites."
           primaryActionText="REQUEST PROJECT AUDIT"
-          primaryActionHref="/contact"
-          secondaryActionText="DIRECT WHATSAPP"
-          secondaryActionHref="https://wa.me/436509536345"
-          disclaimer="All intelligence reports and dossiers are delivered under strict fiduciary non-disclosure covenants."
+          primaryActionHref="/programare"
+          secondaryActionText="DIRECT CONTACT"
+          secondaryActionHref="mailto:cristianvaduva@duck.com"
+          disclaimer="All intelligence reports and dossiers are delivered under contractual non-disclosure covenants."
         />
       </main>
 

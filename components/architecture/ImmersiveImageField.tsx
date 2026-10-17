@@ -74,7 +74,7 @@ export default function ImmersiveImageField() {
           <div className="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/[0.1]">
             <div className="font-mono text-xs text-[#D8D0C2]">
               <span className="text-[#8A95A5] block text-[10px] uppercase">JURISDICTION COVERAGE</span>
-              <span>Monaco · Cap d’Antibes · Saint-Jean-Cap-Ferrat · Zurich</span>
+              <span>Bucharest · Prime International Corridors (via Chestertons Network)</span>
             </div>
 
             <Link

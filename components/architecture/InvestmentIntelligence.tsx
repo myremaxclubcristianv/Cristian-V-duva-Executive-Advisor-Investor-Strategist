@@ -13,7 +13,7 @@ export default function InvestmentIntelligence() {
           <SectionHeader
             eyebrow="04 // INVESTMENT INTELLIGENCE & MACRO MONITORING"
             badge="EMPIRICAL METRICS"
-            title="Quantitative Analysis & Fiduciary Surveillance"
+            title="Quantitative Analysis & Market Surveillance"
             description="Empirical market intelligence calibrated through continuous monitoring of national cadastre transaction records, central bank liquidity signals, and proprietary valuation indices."
           />
 
@@ -29,39 +29,39 @@ export default function InvestmentIntelligence() {
         {/* 3 Structured Intelligence Panels */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InsightPanel
-            category="RESIDENTIAL YIELDS · BUCHAREST NORTH"
-            title="Prime Yield Spread: Gross vs. Net Operating Income"
-            metric="6.8% – 8.2%"
-            change="+0.6% YoY"
-            trend="up"
-            date="Q1 2026 Reference Period"
-            source="ANCPI Official Cadastre & AiX OS™ Proprietary Index"
-            description="Executive and expatriate residential rental absorption across Northern Bucharest (Pipera, Herăstrău) delivers superior net cash yields relative to Central and Western European metropolitan averages."
-            actionUrl="/real-estate/market"
-          />
-
-          <InsightPanel
-            category="MEDITERRANEAN TROPHY PRESERVATION"
-            title="Monaco & French Riviera Prime Capital Resilience"
-            metric="€52,000 / sqm"
-            change="+3.4% Historical"
-            trend="up"
-            date="2025 – 2026 Reporting Year"
-            source="IMSEE Monégasque Statistics & AiXLuxury Monaco Bureau"
-            description="Extreme physical supply constraints combined with persistent global wealth migration maintain exceptional liquidity and asset sovereignty across the Monaco and Cap d'Ail coastal corridor."
-            actionUrl="https://www.aixluxury.com"
-          />
-
-          <InsightPanel
-            category="CORPORATE & EXECUTIVE ASSET DEFENSE"
-            title="Managerial Liability & Fiscal Deductibility"
-            metric="€400 / yr"
-            change="100% Deductible"
+            category="DINAMICĂ TRANZACȚIONALĂ · BUCUREȘTI"
+            title="Volumul tranzacțiilor imobiliare rezidențiale"
+            metric="Monitorizare ANCPI"
+            change="Tranzacții Cadastrale"
             trend="neutral"
-            date="Romanian Fiscal Code 2026"
-            source="Generali România Partnership & Tax Advisory Desk"
-            description="Structuring executive health and management D&O (Directors & Officers) risk coverage insulates family wealth and company balance sheets against legislative volatility and operational claims."
-            actionUrl="/ecosystem"
+            date="Rapoarte Lunare Oficiale"
+            source="Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI)"
+            description="Urmărirea volumului de tranzacții înregistrate oficial în București și Ilfov pentru a măsura lichiditatea reală a pieței, separând prețurile cerute de tranzacțiile efectiv autentificate."
+            actionUrl="/raport-piata"
+          />
+
+          <InsightPanel
+            category="SEGMENTUL INTERNAȚIONAL"
+            title="Piața rezidențială din Monaco & Coasta de Azur"
+            metric="Statistici IMSEE"
+            change="Date Publice"
+            trend="neutral"
+            date="Raport Anual IMSEE"
+            source="Institut Monégasque de la Statistique (IMSEE)"
+            description="Observații privind evoluția pieței din Monaco bazate pe date oficiale IMSEE. Aspectele fiscale depend de rezidența și structura fiecărui cumpărător și necesită verificare cu un consultant fiscal autorizat."
+            actionUrl="/raport-piata"
+          />
+
+          <InsightPanel
+            category="PROTECȚIA ACTIVELOR IMOBILIARE"
+            title="Managementul riscului patrimonial"
+            metric="Acoperiri Dedicate"
+            change="Partener Generali"
+            trend="neutral"
+            date="Protecție Bunuri & Clădiri"
+            source="Partener autorizat Generali România"
+            description="Soluții de transfer al riscului și asigurare a proprietăților premium la cost de reconstrucție. Evaluarea deductibilității fiscale se realizează punctual cu un consultant fiscal calificat."
+            actionUrl="/parteneri"
           />
         </div>
 

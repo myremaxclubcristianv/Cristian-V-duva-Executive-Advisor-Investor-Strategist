@@ -33,9 +33,9 @@ const steps: Step[] = [
     id: "structure",
     stepNumber: "03",
     label: "STRUCTURE",
-    title: "Capital Architecture & Collateral Protection",
-    description: "Designing bespoke SPVs, private equity trusts, and financing structures tailored to family office governance requirements.",
-    keyAction: "Bespoke legal, tax & capital SPV architecture",
+    title: "Coordonarea Achiziției & Analiza Financiară",
+    description: "Structurarea etapelor tranzacției, analiza opțiunilor de creditare și colaborarea strânsă cu instituțiile financiare și notarii implicați.",
+    keyAction: "Verificare documentație & coordonare financiară",
   },
   {
     id: "test",

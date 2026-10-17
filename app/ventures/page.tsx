@@ -1,134 +1,117 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, TrendingUp, ShieldCheck, Compass, CheckCircle2, Lock, Scale, Building2 } from "lucide-react";
+import { ArrowUpRight, TrendingUp, ShieldCheck, Compass, CheckCircle2, Lock, Building2 } from "lucide-react";
 import ExecutiveHeader from "@/components/ExecutiveHeader";
 import Footer from "@/components/Footer";
 import { SectionHeader, EditorialText, ServiceSection, CTASection, InsightPanel } from "@/components/editorial";
 import { ServiceItem } from "@/components/editorial/ServiceSection";
 
 export const metadata: Metadata = {
-  title: "Ventures, Co-Investments & Strategic Mandates — Cristian Văduva",
+  title: "Consultanță Strategică & Proiecte — Cristian Văduva Executive",
   description:
-    "Asymmetrical capital deployment, private syndications in elite real estate assets, and operational technology vehicles directed by Cristian Văduva.",
+    "Consultanță strategică pentru decizii imobiliare complexe, orientare în selecția activelor și coordonarea colaborărilor profesionale alături de Cristian Văduva.",
+  alternates: {
+    canonical: "https://executive.cristianvaduva.com/ventures",
+  },
 };
 
 const ventureServices: ServiceItem[] = [
   {
     number: "01",
-    category: "DIRECT EQUITY & SYNDICATION",
-    title: "Capital Syndication & Co-Investment in Ultra-Prime Residential",
+    category: "CONSULTANȚĂ IMOBILIARĂ",
+    title: "Consultanță Strategică pentru Achiziții Rezidențiale",
     description:
-      "Structuring Special Purpose Vehicles (SPVs) for large-scale prime residential acquisitions and developments in North Bucharest, Monaco, and select European trophy enclaves.",
+      "Asistență în analiza oportunităților imobiliare pe piața din București și pe coridoare internaționale, în coordonare cu evaluatori și notari autorizați.",
     deliverables: [
-      "Exhaustive technical, cadastral, and forensic financial audit (Full Due Diligence)",
-      "Advanced financial modeling: risk-weighted IRR simulations, stress-tested debt structures, and multiple exit vectors",
-      "Lender negotiations and institutional mezzanine debt optimization",
-      "Direct fiduciary co-investment aligning GP and LP balance sheet interests",
+      "Verificarea structurată a documentelor disponibile (cărți funciare, certificate de urbanism)",
+      "Analiză comparativă de preț pe criterii like-for-like în aceeași micro-zonă",
+      "Asistență la negocierea termenilor comerciali ai tranzacției",
+      "Coordonarea etapelor tranzacției împreună cu profesioniștii independenți ai părților",
     ],
-    linkHref: "/contact",
-    linkText: "REQUEST SYNDICATION DOSSIER",
+    linkHref: "/cum-lucrez",
+    linkText: "CUM LUCREZ ȘI ETAPELE COLABORĂRII",
     external: false,
   },
   {
     number: "02",
-    category: "PROPTECH & OPERATING INFRASTRUCTURE",
-    title: "PropTech Development & Operational Scaling",
+    category: "ECOSISTEM & TEHNOLOGIE",
+    title: "Platforme Digitale & Inteligență Imobiliară",
     description:
-      "Proprietary software and digital distribution platforms (HomeFind, AiX OS™, AiXLuxury) engineered to supply real-time transactional intelligence and vetted acquisition demand.",
+      "Inițiative tehnologice și media dezvoltate în cadrul ecosistemului Cristian Văduva (inclusiv HomeFind) pentru explorarea pieței și prezentarea activelor.",
     deliverables: [
-      "Predictive artificial intelligence identifying distressed and off-market opportunities prior to public release",
-      "Reverse Marketplace: direct matching algorithms against confirmed family office capital allocations",
-      "Proprietary transactional workflow infrastructure accessible to co-investment partners",
-      "Operational margin enhancement through programmatic tenant screening and automated lease underwriting",
+      "Catalog centralizat de proprietăți și oportunități rezidențiale documentate",
+      "Producție editorială și monografii detaliate pentru proprietăți reprezentative",
+      "Instrumente de explorare și filtrare a oportunităților de piață",
+      "Integrare cu rețele imobiliare internaționale partenere (Chestertons)",
     ],
-    linkHref: "/ecosystem",
-    linkText: "EXPLORE OPERATING INFRASTRUCTURE",
+    linkHref: "/parteneri",
+    linkText: "VEZI PARTENERIATELE RELEVANTE",
     external: false,
   },
   {
     number: "03",
-    category: "ASSET ALLOCATION & OFF-MARKET TROPHY",
-    title: "Origination & Exclusive Buyer Representation Mandates",
+    category: "MANDATE DEDICATE",
+    title: "Reprezentare Unilaterală & Confidențialitate Contractuală",
     description:
-      "Confidential identification and acquisition of sovereign trophy assets (panoramic penthouses, historic mansions, waterfront domains) under strict fiduciary non-disclosure covenants.",
+      "Mandate dedicate de asistență pentru cumpărători sau vânzători, desfășurate sub acorduri bilaterale de confidențialitate (NDA) și cu respectarea conformității KYC/AML.",
     deliverables: [
-      "Unilateral fiduciary representation eliminating double-agency broker conflicts",
-      "Direct principal-to-principal negotiations with legitimate titleholders",
-      "Fiscal structuring, corporate asset holding defense, and institutional insurance wrapping",
-      "Complete buyer anonymity preserved across entire transaction lifecycle",
+      "Reprezentarea exclusivă a intereselor clientului conform mandatului semnat",
+      "Păstrarea confidențialității contractuale asupra termenilor negocierii",
+      "Proceduri conforme de identificare a părților (KYC) și prevenire a spălării banilor (AML)",
+      "Colaborare strânsă cu avocații și consilierii fiscali desemnați de client",
     ],
-    linkHref: "/real-estate/properties",
-    linkText: "VIEW REFERENCE ASSETS",
+    linkHref: "/contact",
+    linkText: "SOLICITĂ O CONVERSAȚIE INIȚIALĂ",
     external: false,
   },
 ];
 
 export default function VenturesPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
+    <div className="min-h-screen bg-[#07090D] text-[#F5F4EF]">
       <ExecutiveHeader />
 
-      <main className="flex-1 pt-32 sm:pt-40 lg:pt-48">
+      <main className="pt-24 sm:pt-32">
         {/* ======================================================== */}
-        {/* 01 // ARCHITECTURAL VENTURES HERO                        */}
+        {/* 01 // HERO & STRATEGIC OVERVIEW                          */}
         {/* ======================================================== */}
-        <section className="site-chapter border-b border-white/[0.08] relative overflow-hidden bg-arch-grid pb-28 sm:pb-36 lg:pb-44">
-          {/* Subtle Corner Crosshairs */}
-          <div className="absolute top-10 left-6 lg:left-16 w-3 h-3 border-t border-l border-[#93C8FF]" />
-          <div className="absolute top-10 right-6 lg:right-16 w-3 h-3 border-t border-r border-[#93C8FF]" />
+        <section className="py-20 sm:py-28 lg:py-36 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-8 border-b border-white/[0.08]">
+          <div className="space-y-4 max-w-3xl">
+            <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#93C8FF] font-semibold block">
+              CONSULTANȚĂ & PROIECTE STRATEGICE
+            </span>
+            <h1 className="font-serif text-4xl sm:text-6xl text-[#F5F4EF] leading-tight">
+              Orientare Strategică în Tranzacții Imobiliare Complexe
+            </h1>
+            <p className="font-sans text-base sm:text-lg text-[#B8C2CF] font-light leading-relaxed">
+              Consultanță imobiliară independentă, fundamentare analitică și coordonarea proceselor de achiziție alături de specialiști autorizați și parteneri instituționali.
+            </p>
+          </div>
 
-          <div className="site-container space-y-12 sm:space-y-16 relative z-10">
-            {/* Metadata Bar */}
-            <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 font-mono text-[10px] sm:text-xs uppercase tracking-[0.28em] text-[#93C8FF]">
-              <div className="flex items-center gap-3">
-                <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
-                <span>01 // VENTURE CAPITAL & STRATEGIC ALLOCATIONS</span>
-                <span className="text-white/20">/</span>
-                <span className="text-[#B8C2CF]">ACTIVE PARTICIPATIONS</span>
-              </div>
-              <div className="hidden sm:block text-[#8A95A5]">
-                PRIVATE CAPITAL DISCIPLINE
-              </div>
+          <div className="pt-6 grid grid-cols-1 sm:grid-cols-3 gap-6 font-mono text-xs text-[#8A95A5] border-t border-white/[0.08]">
+            <div className="space-y-1">
+              <span className="text-[#93C8FF] block uppercase text-[10px] font-semibold">CADRU CONTRACTUAL</span>
+              <span className="text-[#F5F4EF] font-sans">Mandate clare · Transparență totală a remunerației</span>
             </div>
-
-            {/* Dominant Title */}
-            <div className="max-w-4xl space-y-8">
-              <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#F5F4EF] leading-[1.02] tracking-tight">
-                Asymmetric Capital &<br />
-                <span className="text-[#A97F60] italic font-normal">Direct Ventures.</span>
-              </h1>
-
-              <EditorialText size="xl" maxWidth="prose" color="secondary" className="leading-relaxed">
-                We deploy proprietary balance sheet capital and co-invest alongside family offices in prime residential real estate and operational technology platforms where Cristian Văduva&apos;s strategic oversight acts as an asymmetric value multiplier.
-              </EditorialText>
-
-              <div className="pt-4 flex flex-wrap items-center gap-4">
-                <Link
-                  href="/contact"
-                  className="px-8 py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.22em] font-bold transition-all shadow-xl flex items-center gap-2"
-                >
-                  <span>PROPOSE CO-INVESTMENT</span>
-                  <ArrowUpRight className="w-4 h-4" />
-                </Link>
-                <Link
-                  href="/about"
-                  className="px-7 py-4 border border-white/[0.16] hover:border-[#93C8FF] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] font-medium transition-colors"
-                >
-                  FIDUCIARY DOCTRINE
-                </Link>
-              </div>
+            <div className="space-y-1">
+              <span className="text-[#A97F60] block uppercase text-[10px] font-semibold">CONFIDENȚIALITATE</span>
+              <span className="text-[#F5F4EF] font-sans">Acorduri bilaterale NDA · Conformitate KYC</span>
+            </div>
+            <div className="space-y-1">
+              <span className="text-[#93C8FF] block uppercase text-[10px] font-semibold">PARTENERIATE</span>
+              <span className="text-[#F5F4EF] font-sans">Chestertons (Global) · Generali România (Agent)</span>
             </div>
           </div>
         </section>
 
         {/* ======================================================== */}
-        {/* 02 // INVESTMENT PILLARS & FIDUCIARY STRUCTURE           */}
+        {/* 02 // STRATEGIC OPERATING LINES                          */}
         {/* ======================================================== */}
         <ServiceSection
-          eyebrow="02 // STRATEGIC OPERATING LINES"
-          badge="ACTIVE MANDATES"
-          title="Co-Investment Models & Capital Syndications"
-          description="Every partnership is founded on rigorous fiduciary alignment: direct equity co-investment, complete balance sheet transparency, and uncompromising downside defense."
+          eyebrow="02 // LINII DE SERVICII"
+          badge="MANDATE DEDICATE"
+          title="Consultanță Imobiliară & Coordonare de Proiect"
+          description="Fiecare colaborare este structurată pe baze contractuale clare: definirea exactă a obiectivelor, verificarea documentației și coordonarea cu profesioniști independenți."
           services={ventureServices}
         />
 
@@ -138,54 +121,54 @@ export default function VenturesPage() {
         <section className="py-28 sm:py-36 lg:py-44 bg-[#0C1119] border-t border-b border-white/[0.08]">
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-16 sm:space-y-20">
             <SectionHeader
-              eyebrow="03 // INTELLIGENCE & YIELD INDICATORS"
-              badge="MARKET SURVEILLANCE"
-              title="Fundamental Metrics & Asset Allocation Thesis"
-              description="Direct quantitative telemetry from ANCPI cadastre registries, central bank benchmarks, and AiX OS™ neural monitoring to calibrate real inflation-adjusted returns against funding costs."
+              eyebrow="03 // ANALIZĂ DE PIAȚĂ & INDICATORI"
+              badge="MONITORIZARE FAPTICĂ"
+              title="Indicatori de Piață Fundamentați Factual"
+              description="Date orientative bazate pe monitorizarea registrelor cadastrale oficiale (ANCPI) și a rapoartelor publice de piață."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <InsightPanel
-                category="NORTH BUCHAREST RESIDENTIAL"
-                title="Bucharest North: Gross vs. Net Rental Yield"
-                metric="6.8% – 8.2%"
-                change="+0.6% YOY"
-                trend="up"
-                date="Current Quarter 2026"
-                source="AiX OS™ Proprietary Index & ANCPI Cadastre"
-                description="Prime rental yields across Pipera and Herăstrău remain among the highest across major European capitals, backed by robust multinational corporate housing demand and structural supply shortages."
-                actionUrl="/real-estate/market"
-              />
-
-              <InsightPanel
-                category="MONACO WATERFRONT TROPHY"
-                title="Monaco & French Riviera: Trophy Capital Conservation"
-                metric="€52,000 / sq.m"
-                change="+3.4% Index"
-                trend="up"
-                date="Current Quarter 2026"
-                source="AiXLuxury Monégasque Bureau & IMSEE"
-                description="Market liquidity remains hyper-selective, driven by extreme structural scarcity along the Carré d'Or and Cap d'Ail waterfront corridor. Exceptional multi-generational capital preservation."
-                actionUrl="https://www.aixluxury.com"
-              />
-
-              <InsightPanel
-                category="PATRIMONIAL RISK DEFENSE"
-                title="Fiscal Structuring & Casualty Risk Defense"
-                metric="€400 / yr"
-                change="100% Tax Deductible"
+                category="DINAMICĂ TRANZACȚIONALĂ · BUCUREȘTI"
+                title="Volumul tranzacțiilor imobiliare rezidențiale"
+                metric="Monitorizare ANCPI"
+                change="Date Cadastrale"
                 trend="neutral"
-                date="Active Fiscal Code Standards"
-                source="Generali România & Ministry of Finance"
-                description="Integrated structuring of corporate executive health coverage and D&O managerial liability shields family office balance sheets from legislative volatility and operational liabilities."
-                actionUrl="https://insurance.cristianvaduva.com"
+                date="Rapoarte Oficiale Lunare"
+                source="Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI)"
+                description="Monitorizarea lunară a volumelor de tranzacționare autentificate notarial pentru a distinge între cererea reală și prețurile de listare promovate pe portaluri."
+                actionUrl="/raport-piata"
+              />
+
+              <InsightPanel
+                category="SEGMENTUL INTERNAȚIONAL"
+                title="Piața rezidențială din Monaco & Coasta de Azur"
+                metric="Statistici IMSEE"
+                change="Date Publice"
+                trend="neutral"
+                date="Rapoarte Anuale IMSEE"
+                source="Institut Monégasque de la Statistique (IMSEE)"
+                description="Observații privind evoluția pieței din Monaco fundamentate pe datele statistice oficiale publicate de autoritățile monégasce. Tratamentul fiscal individual necesită consultanță fiscală autorizată."
+                actionUrl="/raport-piata"
+              />
+
+              <InsightPanel
+                category="PROTECȚIA ACTIVELOR IMOBILIARE"
+                title="Managementul riscului patrimonial"
+                metric="Polițe Dedicate"
+                change="Partener Generali"
+                trend="neutral"
+                date="Protecție Patrimoniu"
+                source="Partener autorizat Generali România"
+                description="Soluții de transfer al riscului și asigurare a clădirilor de mare valoare la costul real de reconstrucție, în baza contractului de agent Generali România."
+                actionUrl="/parteneri"
               />
             </div>
           </div>
         </section>
 
         {/* ======================================================== */}
-        {/* 04 // ASYMMETRICAL EQUITY ALLOCATION THESIS              */}
+        {/* 04 // STANDARDE DE SELECTIE                              */}
         {/* ======================================================== */}
         <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-12">
           <div className="p-10 sm:p-16 border border-white/[0.12] bg-[#0C1119] grid lg:grid-cols-12 gap-10 items-center shadow-2xl relative">
@@ -195,38 +178,38 @@ export default function VenturesPage() {
             <div className="lg:col-span-8 space-y-6">
               <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs uppercase tracking-[0.28em] text-[#93C8FF] font-semibold">
                 <Lock className="w-3.5 h-3.5" />
-                <span>PROJECT SELECTION CRITERIA</span>
+                <span>CRITERII DE SELECȚIE ȘI PROCES</span>
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#F5F4EF] leading-tight">
-                High-Conviction Allocations in Infrastructure and Real Property.
+                Decizii Imobiliare Fundamentate pe Documente și Analiză
               </h2>
 
               <EditorialText size="base" maxWidth="prose" color="secondary" className="leading-relaxed">
-                We do not deploy capital into speculative paper assets or volatile consumer tech. Every euro is anchored into irreplaceable land holdings, reinforced concrete structures with sustainable architectural finishes, or proprietary analytics platforms.
+                Nu promovăm speculații nerealiste sau promisiuni de randament fără bază verificabilă. Fiecare proprietate sau proiect analizat este evaluat din perspectiva calității construcției, a situației juridice și a fezabilității pe termen lung.
               </EditorialText>
 
               <div className="grid sm:grid-cols-2 gap-4 font-mono text-xs pt-4 border-t border-white/[0.08]">
                 <div className="p-5 bg-[#1B2028]/80 border border-white/[0.06] space-y-1.5">
-                  <span className="text-[#93C8FF] block text-[10px] uppercase font-semibold">SYNDICATION ACCESS</span>
-                  <span className="text-[#F5F4EF] font-sans">Reserved exclusively for verified co-investors and private family offices</span>
+                  <span className="text-[#93C8FF] block text-[10px] uppercase font-semibold">CUM LUCREZ</span>
+                  <span className="text-[#F5F4EF] font-sans">Etape structurate, mandat scris și remunerație transparentă</span>
                 </div>
                 <div className="p-5 bg-[#1B2028]/80 border border-white/[0.06] space-y-1.5">
-                  <span className="text-[#93C8FF] block text-[10px] uppercase font-semibold">INVESTMENT HORIZON</span>
-                  <span className="text-[#F5F4EF] font-sans">Compounded equity appreciation · 5 to 10-year holding horizon</span>
+                  <span className="text-[#93C8FF] block text-[10px] uppercase font-semibold">CONFIDENȚIALITATE</span>
+                  <span className="text-[#F5F4EF] font-sans">Protecție prin NDA bilateral la cererea părților</span>
                 </div>
               </div>
             </div>
 
             <div className="lg:col-span-4 flex flex-col justify-center space-y-4 lg:pl-8 lg:border-l lg:border-white/[0.08]">
               <Link
-                href="/contact"
+                href="/programare"
                 className="w-full py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.22em] font-bold text-center transition-all shadow-xl"
               >
-                DISCUSS A SYNDICATION
+                SOLICITĂ O DISCUȚIE (20 MIN)
               </Link>
               <div className="font-mono text-[10px] text-[#8A95A5] uppercase text-center tracking-wider">
-                MANDATORY NON-DISCLOSURE COVENANT
+                OPȚIUNE DE SCHIMB NDA ÎN PREALABIL
               </div>
             </div>
           </div>
@@ -236,14 +219,14 @@ export default function VenturesPage() {
         {/* 05 // PRIVATE CTA                                        */}
         {/* ======================================================== */}
         <CTASection
-          eyebrow="PRIVATE CO-INVESTMENT PROTOCOL"
-          title="Interested in a Joint Participation or Presenting a Strategic Opportunity?"
-          description="Every land acquisition, residential development, or equity syndication opportunity is personally audited by Cristian Văduva across Bucharest, Monaco, and Dubai."
-          primaryActionText="INITIATE PARTNERSHIP PROTOCOL"
-          primaryActionHref="/contact"
-          secondaryActionText="WHATSAPP DESK (+43 650 953 6345)"
+          eyebrow="DIALOG CONFIDENȚIAL"
+          title="Doriți să discutați o proprietate sau un mandat de consultanță?"
+          description="Fiecare colaborare debutează cu o discuție inițială pentru clarificarea cerințelor și stabilirea compatibilității cu mandatul Executive."
+          primaryActionText="PROGRAMEAZĂ O CONVERSAȚIE INIȚIALĂ"
+          primaryActionHref="/programare"
+          secondaryActionText="WHATSAPP (+43 650 953 6345)"
           secondaryActionHref="https://wa.me/436509536345"
-          disclaimer="All joint venture structures and capital syndications operate in strict compliance with European securities and capital market regulations."
+          disclaimer="Toate consultările se desfășoară sub principiul confidențialității contractuale și al conformității cu legislația aplicabilă."
         />
       </main>
 

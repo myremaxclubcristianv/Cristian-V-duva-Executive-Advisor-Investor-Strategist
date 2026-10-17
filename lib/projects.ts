@@ -47,8 +47,8 @@ export const projects: Project[] = [
   },
   {
     id: "subventii",
-    name: "Subvenții.ro",
-    url: "https://subventii.ro",
+    name: "Subvenții",
+    url: "https://subventii.cristianvaduva.com/",
     category: "Government Programs",
     description: "Funding and government programs intelligence platform.",
     image: "/residence/office.png",
@@ -59,9 +59,9 @@ export const projects: Project[] = [
   {
     id: "insurance",
     name: "Insurance & Asset Protection",
-    url: "#",
+    url: "https://insurance.cristianvaduva.com",
     category: "Insurance",
-    description: "Strategic insurance advisory and asset protection services in partnership with Generali Romania.",
+    description: "Insurance advisory and asset protection services as an authorized partner of Generali România.",
     image: "/residence/library.png",
     featured: true,
     status: "active",

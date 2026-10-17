@@ -6,31 +6,31 @@ import { ArrowUpRight, ShieldCheck, Compass, FileCheck, Landmark } from "lucide-
 
 const PROTOCOL_PHASES = [
   {
-    phase: "PHASE 01",
-    title: "Intake & Conflict Audit",
-    timeline: "DAYS 1 – 5",
-    desc: "Rigorous counter-party conflict check and mutual NDA execution. Scoping acquisition parameters, capital liquidity, and sovereign objectives.",
+    phase: "ETAPA 01",
+    title: "Conversație Inițială & Mandat",
+    timeline: "ETAPĂ ORIENTATIVĂ",
+    desc: "Clarificarea obiectivelor, definirea criteriilor specifice de căutare și semnarea acordului bilateral de confidențialitate (NDA) atunci când este convenit.",
     icon: ShieldCheck,
   },
   {
-    phase: "PHASE 02",
-    title: "Forensic Due Diligence",
-    timeline: "DAYS 6 – 20",
-    desc: "Independent architectural valuation, structural inspection, environmental risk audit, and replacement cost modeling decoupled from seller hype.",
+    phase: "ETAPA 02",
+    title: "Identificarea Oportunităților",
+    timeline: "ETAPĂ ORIENTATIVĂ",
+    desc: "Selecție structurată pe criterii like-for-like, analiza proprietăților compatibile din București sau prin rețele internaționale partenere.",
     icon: Compass,
   },
   {
-    phase: "PHASE 03",
-    title: "Entity & Tax Sovereignty",
-    timeline: "DAYS 21 – 30",
-    desc: "Aligning cross-border legal vehicles across Monaco, Swiss, or EU jurisdictions to ensure optimal fiscal shielding and generational custody.",
+    phase: "ETAPA 03",
+    title: "Verificarea Documentelor & Due Diligence",
+    timeline: "ETAPĂ ORIENTATIVĂ",
+    desc: "Procedură structurată de analiză a documentelor de proprietate și istoricului cadastral, în coordonare cu evaluatori tehnici, avocați și notari.",
     icon: Landmark,
   },
   {
-    phase: "PHASE 04",
-    title: "Principal Execution & Defense",
-    timeline: "CLOSING",
-    desc: "Confidential execution under strict fiduciary privilege. Immediate post-closing physical security and asset surveillance deployment.",
+    phase: "ETAPA 04",
+    title: "Coordonarea Tranzacției & Protecție",
+    timeline: "FINALIZARE",
+    desc: "Asistență în negocierea termenilor comerciali, suport la autentificarea notarială și transferul riscurilor de patrimoniu prin parteneriatul autorizat cu Generali România.",
     icon: FileCheck,
   },
 ];
@@ -113,30 +113,30 @@ export default function DepthAndDetail() {
           })}
         </div>
 
-        {/* Operational Jurisdictions Matrix */}
+        {/* Geographic Coverage & Partner Corridors */}
         <div className="p-6 border border-white/[0.1] bg-[#0C1119]/60 backdrop-blur-md grid sm:grid-cols-4 gap-6 font-mono text-xs">
           <div>
-            <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest">BUCHAREST DESK</span>
-            <span className="text-[#F5F4EF] font-sans font-medium text-sm">Central Europe Headquarters</span>
+            <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest">BUCHAREST</span>
+            <span className="text-[#F5F4EF] font-sans font-medium text-sm">Primary Advisory Practice</span>
             <span className="text-[#8A95A5] block text-[10px] mt-1">44.4396° N · 26.0963° E</span>
           </div>
 
           <div>
-            <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest">MONACO DESK</span>
-            <span className="text-[#F5F4EF] font-sans font-medium text-sm">Ultra-Prime Riviera Mandates</span>
-            <span className="text-[#8A95A5] block text-[10px] mt-1">43.7384° N · 07.4246° E</span>
+            <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest">GLOBAL NETWORK</span>
+            <span className="text-[#F5F4EF] font-sans font-medium text-sm">Chestertons International Access</span>
+            <span className="text-[#8A95A5] block text-[10px] mt-1">London · Monaco · Prime Hubs</span>
           </div>
 
           <div>
-            <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest">DUBAI DESK</span>
-            <span className="text-[#F5F4EF] font-sans font-medium text-sm">Middle East Capital Axis</span>
-            <span className="text-[#8A95A5] block text-[10px] mt-1">25.2048° N · 55.2708° E</span>
+            <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest">MEDITERRANEAN</span>
+            <span className="text-[#F5F4EF] font-sans font-medium text-sm">Marbella & Costa del Sol</span>
+            <span className="text-[#8A95A5] block text-[10px] mt-1">Partner Brokerage Network</span>
           </div>
 
           <div>
-            <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest">ZURICH CORRESPONDENT</span>
-            <span className="text-[#F5F4EF] font-sans font-medium text-sm">Private Banking Alignment</span>
-            <span className="text-[#8A95A5] block text-[10px] mt-1">47.3769° N · 08.5417° E</span>
+            <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest">MIDDLE EAST</span>
+            <span className="text-[#F5F4EF] font-sans font-medium text-sm">Dubai Prime Real Estate</span>
+            <span className="text-[#8A95A5] block text-[10px] mt-1">Associated Partner Corridor</span>
           </div>
         </div>
       </div>

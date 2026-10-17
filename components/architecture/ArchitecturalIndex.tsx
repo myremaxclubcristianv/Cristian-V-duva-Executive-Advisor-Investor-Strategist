@@ -30,24 +30,24 @@ const INDEX_ITEMS: IndexItem[] = [
   {
     id: "idx-capital",
     number: "02",
-    title: "Strategic Capital Structuring",
-    category: "CROSS-BORDER ALLOCATION",
+    title: "Strategic Property Advisory & Acquisition Coordination",
+    category: "PROPERTY ADVISORY",
     description:
-      "Architecting high-conviction syndications, debt-equity optimization, and private entity frameworks for institutional co-investors and European family balance sheets.",
-    href: "/ventures",
-    jurisdiction: "Zurich · Luxembourg · Bucharest",
-    metrics: "Institutional Rigor · Tax Optimization",
+      "Consultanță strategică pentru tranzacții imobiliare complexe, asistență în analiza financiară și coordonarea cu specialiști externi și instituții financiare.",
+    href: "/cum-lucrez",
+    jurisdiction: "București · Piețe Internaționale",
+    metrics: "Analiză Financiară · Mandate Dedicate",
   },
   {
     id: "idx-security",
     number: "03",
-    title: "Asset Sovereignty & Security Architecture",
-    category: "FIDUCIARY DEFENSE",
+    title: "Asset Protection & Risk Advisory",
+    category: "RISK MANAGEMENT",
     description:
-      "Executive master-level surveillance protocols, counter-intelligence measures, and estate physical security systems designed to insulate principal privacy and preserve generational wealth.",
-    href: "/about",
-    jurisdiction: "EU Compliant · Swiss Custody Alignments",
-    metrics: "Downside Containment · 100% Discretion",
+      "Consultanță privind protecția patrimoniului imobiliar și evaluarea riscurilor, în parteneriat autorizat cu Generali România.",
+    href: "/parteneri",
+    jurisdiction: "Conformitate UE · Standarde Contractuale",
+    metrics: "Protecție Patrimonială · Confidențialitate",
   },
   {
     id: "idx-ventures",
@@ -174,8 +174,8 @@ export default function ArchitecturalIndex() {
 
         {/* Index Bottom Metadata */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-wider text-[#8A95A5] pt-4">
-          <div>TOTAL ACTIVE PORTFOLIO AXES: 05 MANDATES</div>
-          <div className="text-[#93C8FF]">ALL ENGAGEMENTS PROTECTED BY SWISS-GRADE FIDUCIARY PRIVILEGE</div>
+          <div>DIRECT ADVISORY & PROPERTY PORTFOLIO</div>
+          <div className="text-[#93C8FF]">CONFIDENȚIALITATE CONTRACTUALĂ (NDA) · DUE DILIGENCE STRUCTURAT</div>
         </div>
       </div>
     </section>

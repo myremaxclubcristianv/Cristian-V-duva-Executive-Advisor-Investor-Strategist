@@ -18,12 +18,12 @@ interface CTASectionProps {
 export default function CTASection({
   eyebrow = "DIRECT PRINCIPAL COMMUNICATIONS PROTOCOL",
   title = "Initiate a Confidential Strategic Conversation.",
-  description = "Every inquiry is evaluated directly by Cristian Văduva under strict fiduciary non-disclosure privilege. We do not maintain junior intake tiers or third-party intermediaries.",
-  primaryActionText = "REQUEST PRIVATE CONSULTATION",
-  primaryActionHref = "/contact",
-  secondaryActionText = "WHATSAPP DESK (+43 650 953 6345)",
+  description = "Every inquiry is evaluated directly by Cristian Văduva under contractual confidentiality (bilateral NDA). We do not maintain junior intake tiers or third-party intermediaries.",
+  primaryActionText = "SOLICITĂ DISCUȚIE (20 MIN)",
+  primaryActionHref = "/programare",
+  secondaryActionText = "DIRECT INQUIRY (+43 650 953 6345)",
   secondaryActionHref = "https://wa.me/436509536345",
-  disclaimer = "All consultations operate under professional secrecy. Counter-party verification and preliminary NDA precede any asset disclosure.",
+  disclaimer = "All consultations operate under contractual confidentiality. Bilateral NDA precedes sensitive asset disclosure.",
   className = "",
 }: CTASectionProps) {
   return (

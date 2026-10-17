@@ -126,7 +126,7 @@ export default function ExecutiveContactCadran({
           <div className="space-y-3">
             <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs text-[#93C8FF] uppercase tracking-[0.28em] font-semibold">
               <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
-              <span>DIRECT FIDUCIARY ADVISORY DESK</span>
+              <span>DIRECT EXECUTIVE ADVISORY DESK</span>
               <span className="text-white/20">|</span>
               <span className="text-[#8A95A5]">CONFIDENTIAL CONSULTATION</span>
             </div>

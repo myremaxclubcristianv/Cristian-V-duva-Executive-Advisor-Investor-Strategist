@@ -64,7 +64,7 @@ export default function SignatureClosing() {
               <div className="p-4 border border-white/[0.08] bg-[#0C1119] text-[#B8C2CF] text-[11px] leading-relaxed flex items-start gap-3">
                 <ShieldCheck className="w-4 h-4 text-[#93C8FF] mt-0.5 shrink-0" />
                 <span>
-                  All consultations operate under professional secrecy. Counter-party verification and preliminary NDA precede any asset disclosure.
+                  All consultations operate under strict bilateral confidentiality. Counter-party verification and preliminary NDA precede any asset disclosure.
                 </span>
               </div>
             </div>

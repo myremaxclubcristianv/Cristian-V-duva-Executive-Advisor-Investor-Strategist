@@ -75,7 +75,7 @@ export default function PropertiesPage() {
               <div className="flex items-center gap-2 text-[#A97F60]">
                 <ShieldCheck className="w-3.5 h-3.5" />
                 <span className="tracking-[0.2em] font-semibold uppercase text-[10px]">
-                  Fiduciary Underwriting Standard
+                  Strategic Underwriting Standard
                 </span>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function PropertiesPage() {
                 </div>
 
                 <p className="font-sans text-base sm:text-lg text-[#B8C2CF] max-w-2xl font-light leading-relaxed">
-                  Every property presented has been audited against our fiduciary representation
+                  Every property presented has been reviewed against our rigorous representation
                   standards: architectural rarity, structural engineering integrity, verified cadastre
                   title provenance, and long-term capital defense resilience across sovereign corridors.
                 </p>
@@ -164,7 +164,7 @@ export default function PropertiesPage() {
               </div>
             </div>
 
-            {/* Fiduciary Portfolio Metrics Cadran (Derived dynamically from genuine data) */}
+            {/* Strategic Portfolio Metrics Cadran (Derived dynamically from genuine data) */}
             <EditorialCadran
               accentColor="copper"
               surface="graphite"
@@ -215,7 +215,7 @@ export default function PropertiesPage() {
                     100%
                   </div>
                   <span className="text-[11px] text-[#8A95A5] block font-sans">
-                    Single-client fiduciary mandate
+                    Single-client dedicated mandate
                   </span>
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function PropertiesPage() {
                   Represented Solely on Behalf of the Buyer
                 </h3>
                 <p className="font-sans text-xs sm:text-sm text-[#B8C2CF] max-w-xl font-light leading-relaxed">
-                  Every acquisition across Bucharest, Marbella, and Dubai is personally directed by Cristian Văduva under a strict unilateral fiduciary mandate, eliminating broker conflict.
+                  Every acquisition across Bucharest, Marbella, and Dubai is personally directed by Cristian Văduva under a direct client representation mandate, eliminating broker conflict.
                 </p>
               </div>
             </div>

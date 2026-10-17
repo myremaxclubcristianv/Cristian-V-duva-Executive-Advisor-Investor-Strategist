@@ -65,7 +65,7 @@ export default function ArchitecturalHero() {
             </div>
 
             <p className="font-sans text-sm sm:text-base lg:text-lg text-[#B8C2CF] font-light max-w-2xl leading-relaxed">
-              Directing confidential cross-border acquisitions, prime asset structuring, and fiduciary advisory for European family offices, institutional principals, and private wealth.
+              Directing confidential cross-border acquisitions, prime asset structuring, and real estate advisory for European family offices, institutional principals, and private wealth.
             </p>
 
             {/* Action Array */}
@@ -99,7 +99,7 @@ export default function ArchitecturalHero() {
 
               <div className="flex items-center justify-between border-b border-white/[0.08] pb-3">
                 <span className="font-mono text-[10px] uppercase tracking-[0.26em] text-[#93C8FF] font-semibold">
-                  FIDUCIARY SPECIFICATION
+                  PRACTICE SPECIFICATION
                 </span>
                 <span className="font-mono text-[10px] text-[#647082]">REV. 2026.04</span>
               </div>
@@ -107,11 +107,11 @@ export default function ArchitecturalHero() {
               <div className="space-y-3.5 font-mono text-xs text-[#B8C2CF]">
                 <div className="flex justify-between items-baseline border-b border-white/[0.05] pb-2">
                   <span className="text-[#647082] text-[10px] tracking-wider uppercase">CORE SECTORS</span>
-                  <span className="text-[#F5F4EF] font-sans font-medium text-right text-xs">Prime Real Estate · Capital Structuring</span>
+                  <span className="text-[#F5F4EF] font-sans font-medium text-right text-xs">Prime Real Estate · Transaction Coordination</span>
                 </div>
                 <div className="flex justify-between items-baseline border-b border-white/[0.05] pb-2">
                   <span className="text-[#647082] text-[10px] tracking-wider uppercase">OPERATING LOCATIONS</span>
-                  <span className="text-[#F5F4EF] font-sans font-medium text-right text-xs">Monaco · Bucharest · Dubai</span>
+                  <span className="text-[#F5F4EF] font-sans font-medium text-right text-xs">București (Main Desk) · Global Corridors</span>
                 </div>
                 <div className="flex justify-between items-baseline border-b border-white/[0.05] pb-2">
                   <span className="text-[#647082] text-[10px] tracking-wider uppercase">ACADEMIC FOUNDATION</span>
@@ -119,12 +119,12 @@ export default function ArchitecturalHero() {
                 </div>
                 <div className="flex justify-between items-baseline">
                   <span className="text-[#647082] text-[10px] tracking-wider uppercase">DISCRETION TIER</span>
-                  <span className="text-[#F5F4EF] font-sans font-medium text-right text-xs">Single-Client Fiduciary Exclusivity</span>
+                  <span className="text-[#F5F4EF] font-sans font-medium text-right text-xs">Dedicated Client Representation</span>
                 </div>
               </div>
 
               <div className="p-3 bg-white/[0.02] border border-white/[0.06] text-[11px] font-sans text-[#B8C2CF] leading-relaxed">
-                Advising ultra-high-net-worth principals with uncompromising legal precision, independent valuation models, and generational asset sovereignty.
+                Advising private principals with rigorous market analysis, independent valuation benchmarks, and strategic asset protection.
               </div>
             </div>
           </div>
@@ -141,11 +141,11 @@ export default function ArchitecturalHero() {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-[#93C8FF]">02</span>
-              <span>CAPITAL STRUCTURING</span>
+              <span>ANALIZĂ COMPARATIVĂ</span>
             </div>
             <div className="hidden md:flex items-center gap-2">
               <span className="text-[#93C8FF]">03</span>
-              <span>FIDUCIARY DEFENSE</span>
+              <span>ASSET PROTECTION</span>
             </div>
           </div>
 

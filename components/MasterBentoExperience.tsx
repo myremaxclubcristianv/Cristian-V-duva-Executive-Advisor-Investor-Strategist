@@ -716,9 +716,9 @@ export default function MasterBentoExperience() {
               </div>
             </a>
 
-            {/* Subventii.ro */}
+            {/* Subventii */}
             <a
-              href="https://subventii.ro"
+              href="https://subventii.cristianvaduva.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#111214] border border-white/10 hover:border-[#B89B72]/50 rounded-3xl p-6 sm:p-8 flex flex-col justify-between group transition-all"
@@ -730,10 +730,10 @@ export default function MasterBentoExperience() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white group-hover:text-[#B89B72] transition-colors flex items-center justify-between">
-                    Subvenții.ro <ArrowUpRight className="w-4 h-4" />
+                    Subvenții <ArrowUpRight className="w-4 h-4" />
                   </h3>
                   <p className="text-xs text-neutral-400 font-light mt-1">
-                    Platformă de finanțare și programe guvernamentale.
+                    Platformă de analiză a fondurilor și programelor guvernamentale.
                   </p>
                 </div>
               </div>

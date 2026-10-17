@@ -44,7 +44,7 @@ export default function EditorialInterruption() {
             </h2>
 
             <p className="font-sans text-lg sm:text-xl text-[#1B2028] font-light max-w-2xl leading-relaxed">
-              When navigating cross-border acquisitions and institutional capital allocation, traditional brokerages offer access; we architect irreversible advantage. The Executive practice integrates prime real estate representation, private investment syndication, and institutional wealth defense into one cohesive fiduciary counsel.
+              When navigating prime property acquisitions, traditional approaches often lack rigor. The Executive practice integrates prime real estate advisory, methodical due diligence coordination, and strategic asset protection into one cohesive private practice.
             </p>
           </div>
 
@@ -55,7 +55,7 @@ export default function EditorialInterruption() {
                 THE ADVISORY CRITERIA
               </span>
               <p className="font-sans text-sm text-[#1B2028] leading-relaxed">
-                Mandates are accepted exclusively on a retained, sole-representative basis. We maintain strict counter-party screening to preserve confidentiality and eliminate conflicting transactional commissions.
+                Mandates are accepted under bilateral written agreements, tailored to each client&apos;s specific criteria (retainer, success fee, or hybrid arrangement), preserving strict confidentiality and alignment of interest.
               </p>
             </div>
 
@@ -70,7 +70,7 @@ export default function EditorialInterruption() {
               </div>
               <div className="flex justify-between items-center border-b border-[#07090D]/10 pb-2">
                 <span className="text-[#647082]">CONFIDENTIALITY</span>
-                <span className="font-sans font-semibold text-[#07090D]">Strict Swiss Standard</span>
+                <span className="font-sans font-semibold text-[#07090D]">Acord Bilateral (NDA)</span>
               </div>
             </div>
 
@@ -105,13 +105,13 @@ export default function EditorialInterruption() {
                 Real Estate Advisory
               </h3>
               <p className="font-sans text-sm text-[#1B2028]/85 font-light leading-relaxed">
-                Unilateral representation of high-net-worth buyers and sovereign asset owners across Bucharest, Monaco, and Dubai. Sourcing off-market trophy penthouses, heritage villas, and land banks with forensic legal and structural auditing before commitment.
+                Reprezentare dedicată a cumpărătorilor și proprietarilor de active imobiliare în București și coridoare internaționale. Identificarea oportunităților reprezentative, verificare preliminară a documentelor și analiză structurală înainte de luarea oricărei decizii.
               </p>
             </div>
             <div className="pt-4 border-t border-[#07090D]/10 font-mono text-xs text-[#526071] flex items-center justify-between">
-              <span className="tracking-wider">UNILATERAL FIDUCIARY</span>
-              <Link href="/real-estate" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1 group/link">
-                <span>View Assets</span>
+              <span className="tracking-wider">TRANZACȚII DEDICATE</span>
+              <Link href="/cum-lucrez" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1 group/link">
+                <span>Cum Lucrez</span>
                 <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
               </Link>
             </div>
@@ -132,16 +132,16 @@ export default function EditorialInterruption() {
                 <TrendingUp className="w-4 h-4 text-[#07090D]" />
               </div>
               <h3 className="font-serif text-2xl sm:text-3xl text-[#07090D] leading-snug">
-                Investment Strategy
+                Strategie Imobiliară
               </h3>
               <p className="font-sans text-sm text-[#1B2028]/85 font-light leading-relaxed">
-                Direct balance sheet co-investments and private syndications alongside European family offices. Structuring Special Purpose Vehicles (SPVs), mezzanine financing, and stress-tested exit modeling calibrated for compounding equity and capital preservation.
+                Asistență strategică în analiza investițiilor imobiliare, estimarea sustenabilității financiare și coordonarea structurării achizițiilor alături de instituții de creditare și consultanți independenți autorizați.
               </p>
             </div>
             <div className="pt-4 border-t border-[#07090D]/10 font-mono text-xs text-[#526071] flex items-center justify-between">
-              <span className="tracking-wider">ASYMMETRIC EQUITY</span>
-              <Link href="/ventures" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1 group/link">
-                <span>View Ventures</span>
+              <span className="tracking-wider">COORDONARE STRATEGICĂ</span>
+              <Link href="/pentru-clienti" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1 group/link">
+                <span>Pentru Clienți</span>
                 <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
               </Link>
             </div>
@@ -162,18 +162,18 @@ export default function EditorialInterruption() {
                 <ShieldCheck className="w-4 h-4 text-[#07090D]" />
               </div>
               <h3 className="font-serif text-2xl sm:text-3xl text-[#07090D] leading-snug">
-                Asset Protection
+                Protecția Activelor
               </h3>
               <p className="font-sans text-sm text-[#1B2028]/85 font-light leading-relaxed">
-                Downside containment and institutional risk transfer in strategic alliance with Generali România. Comprehensive audits of property portfolios, agreed reconstruction valuations, corporate D&O liability, and confidential estate succession shielding.
+                Managementul riscurilor și protecția patrimoniului imobiliar în calitate de partener autorizat Generali România. Asigurări complete pentru proprietăți de mare valoare la cost real de reconstrucție și transfer al riscurilor patrimoniale.
               </p>
             </div>
             <div className="pt-4 border-t border-[#07090D]/10 font-mono text-xs text-[#526071] flex items-center justify-between">
-              <span className="tracking-wider">GENERALI ALLIANCE</span>
-              <a href="https://insurance.cristianvaduva.com" target="_blank" rel="noopener noreferrer" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1 group/link">
-                <span>Insurance Portal</span>
+              <span className="tracking-wider">PARTENER GENERALI</span>
+              <Link href="/parteneri" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1 group/link">
+                <span>Detalii Parteneri</span>
                 <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
-              </a>
+              </Link>
             </div>
           </div>
 

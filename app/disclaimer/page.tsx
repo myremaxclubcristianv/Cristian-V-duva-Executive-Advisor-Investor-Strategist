@@ -1,9 +1,11 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import LegalPageLayout from "@/components/LegalPageLayout";
 
 export const metadata: Metadata = {
-  title: "Disclaimer & Financial Notice — Cristian Văduva",
-  description: "Important legal and financial disclaimer regarding editorial market perspectives, real estate valuations, and investment information.",
+  title: "Notă Legală & Disclaimer — Cristian Văduva Executive",
+  description: "Clarificări legale privind natura informațiilor editoriale, delimitarea serviciilor de consultanță personalizată și cadrul de remunerare.",
   alternates: {
     canonical: "https://executive.cristianvaduva.com/disclaimer",
   },
@@ -12,66 +14,92 @@ export const metadata: Metadata = {
 export default function DisclaimerPage() {
   return (
     <LegalPageLayout
-      kicker="REGULATORY NOTICE"
-      title="Financial & Real Estate Disclaimer"
-      subtitle="Important disclosures regarding editorial perspectives, market surveillance, property estimations, and investment analysis."
-      lastUpdated="August 2026"
+      kicker="CADRU DE TRANSPARENȚĂ"
+      title="Notă Legală, Delimitarea Serviciilor & Disclaimer"
+      subtitle="Clarificări esențiale privind natura informațiilor publicate pe platformă, serviciile de consultanță personalizată și limitele de competență profesională."
+      lastUpdated="Octombrie 2026"
     >
-      <div className="space-y-12 text-text-secondary/90 font-light leading-relaxed">
-        {/* Critical Disclaimer Callout */}
-        <section className="bg-surface-primary border border-accent/40 p-8 space-y-4 shadow-2xl">
-          <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-accent font-semibold">
-            <span>IMPORTANT NOTICE</span>
-            <span className="w-4 h-[1px] bg-accent/40" />
-            <span>NO INDIVIDUALIZED ADVICE</span>
+      <div className="space-y-12 text-[#B8C2CF] font-light leading-relaxed">
+        {/* Core Distinction Callout */}
+        <section className="bg-[#0C1119] border border-[#93C8FF]/40 p-8 space-y-5 shadow-2xl">
+          <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-[#93C8FF] font-semibold">
+            <span>DISTINCȚIE FUNDAMENTALĂ</span>
+            <span className="w-4 h-[1px] bg-[#93C8FF]/40" />
+            <span>INFORMAȚII PUBLICE VS. MANDATE CONTRACTATE</span>
           </div>
-          <h2 className="font-display text-2xl sm:text-3xl text-text-primary leading-snug">
-            Editorial Perspectives & Strategic Intelligence
+          <h2 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF] leading-snug">
+            Natura Conținutului Publicat și a Serviciilor Personalizate
           </h2>
+          <div className="space-y-3 text-sm text-[#B8C2CF] leading-relaxed">
+            <p>
+              Toate articolele, analizele de piață, materialele video, monografiile de proprietăți și datele orientative publicate pe <span className="font-mono text-[#F5F4EF]">executive.cristianvaduva.com</span> au un caracter pur informativ și editorial. Ele reflectă observații profesionale și analize la data redactării și nu reprezintă o ofertă fermă sau un angajament contractual general.
+            </p>
+            <p>
+              Serviciile de consultanță personalizată (bespoke advisory) sunt oferite <strong className="text-[#F5F4EF] font-medium">exclusiv în baza unui contract scris și a unui mandat expres</strong> convenit bilateral cu fiecare client. Un serviciu personalizat nu ia naștere prin simpla navigare pe acest site sau prin trimiterea unui mesaj inițial, ci exclusiv după definirea obiectivelor, verificările necesare și semnarea acordului contractual.
+            </p>
+          </div>
+
+          <div className="pt-2 border-t border-white/[0.08]">
+            <Link
+              href="/cum-lucrez"
+              className="inline-flex items-center gap-2 text-xs font-mono text-[#93C8FF] hover:underline"
+            >
+              <span>Consultă principiile de remunerare și etapele de colaborare pe pagina dedicată</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        </section>
+
+        {/* Section 1: Limitele de Competență */}
+        <section className="space-y-4">
+          <div className="space-y-1 border-b border-white/[0.08] pb-3">
+            <span className="font-mono text-[10px] text-[#93C8FF] uppercase tracking-widest block">SECȚIUNEA 01</span>
+            <h2 className="font-serif text-2xl text-[#F5F4EF]">1. Limitele Profesionale și Servicii Externe</h2>
+          </div>
           <p className="text-sm">
-            All materials, market statistics, yield metrics, property analyses, video commentaries, and macroeconomic dispatches published on <span className="font-mono text-text-primary">executive.cristianvaduva.com</span> are prepared strictly for general educational and editorial informational purposes.
+            Cristian Văduva oferă consultanță imobiliară strategică, asistență în selecția și negocierea proprietăților și coordonarea procesului de due diligence. Activitatea desfășurată <strong className="text-[#F5F4EF] font-medium">nu substituie și nu constituie servicii de asistență juridică rezervate avocaților</strong>, audit contabil/fiscal autorizat sau consultanță de investiții financiare reglementată pe piețe de capital.
           </p>
           <p className="text-sm">
-            Nothing on this platform constitutes, or should be construed as, individualized financial, investment, legal, tax, or professional real estate valuation advice.
+            Pentru redactarea actelor autentice, autentificarea tranzacțiilor, emiterea de opinii juridice formale sau analize de structurare fiscală complexă, colaborăm punctual cu notari publici, case de avocatură și consultanți fiscali autorizați, sau recomandăm clientului apelarea la proprii săi consilieri independenți.
           </p>
         </section>
 
-        {/* Section 1: Real Estate Information */}
+        {/* Section 2: Date Imobiliare și Reprezentări */}
         <section className="space-y-4">
-          <div className="space-y-1 border-b border-surface-secondary/60 pb-3">
-            <span className="font-mono text-[10px] text-accent uppercase tracking-widest block">SECTION 01</span>
-            <h2 className="font-display text-2xl text-text-primary">1. Real Estate & Property Representations</h2>
+          <div className="space-y-1 border-b border-white/[0.08] pb-3">
+            <span className="font-mono text-[10px] text-[#93C8FF] uppercase tracking-widest block">SECȚIUNEA 02</span>
+            <h2 className="font-serif text-2xl text-[#F5F4EF]">2. Proprietăți, Suprafețe și Concepte Arhitecturale</h2>
           </div>
           <p className="text-sm">
-            Property descriptions, square meterage, architectural renderings, advisory perspectives, and valuation estimates represent subjective professional curation or market observations at the date of publication.
+            Descrierile proprietăților, suprafețele utile și construite, specificațiile tehnice și prețurile afișate în catalog sunt preluate din documentația furnizată de dezvoltatori, proprietari sau platformele partenere. Deși depunem diligențe rezonabile pentru verificarea corectitudinii acestora, orice cumpărător este sfătuit să solicite verificarea cărții funciare și a documentelor cadastrale înainte de orice angajament financiar.
           </p>
           <p className="text-sm">
-            Prospective purchasers, investors, and counterparties are required to conduct independent technical, cadastral, structural, legal, and financial due diligence through qualified licensed surveyors and attorneys prior to executing transactions.
+            Imaginile etichetate drept <span className="text-[#F5F4EF] font-mono text-xs">Concept Arhitectural</span> sau <span className="text-[#F5F4EF] font-mono text-xs">Randare Ilustrativă</span> reprezintă studii de design și volumetrie, nefiind fotografii ale unor construcții finalizate.
           </p>
         </section>
 
-        {/* Section 2: Macroeconomic & Financial Metrics */}
+        {/* Section 3: Remunerație & Relații Partenere */}
         <section className="space-y-4">
-          <div className="space-y-1 border-b border-surface-secondary/60 pb-3">
-            <span className="font-mono text-[10px] text-accent uppercase tracking-widest block">SECTION 02</span>
-            <h2 className="font-display text-2xl text-text-primary">2. Market Data & Third-Party Benchmark Sources</h2>
+          <div className="space-y-1 border-b border-white/[0.08] pb-3">
+            <span className="font-mono text-[10px] text-[#93C8FF] uppercase tracking-widest block">SECȚIUNEA 03</span>
+            <h2 className="font-serif text-2xl text-[#F5F4EF]">3. Transparența Remunerației și Parteneriate Comerciale</h2>
           </div>
           <p className="text-sm">
-            Market pulse figures, interest-rate benchmarks (e.g. ROBOR, EURIBOR), inflation data, and transaction volume statistics are derived from reputable official sources (such as the Romanian National Bank — BNR, ANCPI, INS, and financial publications).
+            Modul de remunerare variază în funcție de tipul serviciului (mandat de căutare cumpărător, intermediere vânzare, consultanță imobiliară). Relația cu Generali România este exercitată în calitate de partener/agent de asigurare autorizat, iar eventuala remunerare derivă din comisioanele standard reglementate în asigurări. Relația cu Chestertons oferă acces la rețeaua internațională de proprietăți.
           </p>
           <p className="text-sm">
-            While we strive for accuracy, market conditions fluctuate rapidly. We make no representations or warranties, express or implied, regarding the timeliness, completeness, or ongoing accuracy of historical or estimated market metrics.
+            Toate detaliile privind eventualele comisioane, onorarii sau mecanisme de plată sunt prezentate detaliat pe pagina <Link href="/cum-lucrez" className="text-[#93C8FF] underline">Cum lucrez și cum este stabilită remunerația</Link> și sunt stipulate în contractul încheiat cu clientul.
           </p>
         </section>
 
-        {/* Section 3: Risk Warning */}
+        {/* Section 4: Riscuri de Piață și Fără Garanții Absolute */}
         <section className="space-y-4">
-          <div className="space-y-1 border-b border-surface-secondary/60 pb-3">
-            <span className="font-mono text-[10px] text-accent uppercase tracking-widest block">SECTION 03</span>
-            <h2 className="font-display text-2xl text-text-primary">3. Risk Disclosures & Capital Preservation</h2>
+          <div className="space-y-1 border-b border-white/[0.08] pb-3">
+            <span className="font-mono text-[10px] text-[#93C8FF] uppercase tracking-widest block">SECȚIUNEA 04</span>
+            <h2 className="font-serif text-2xl text-[#F5F4EF]">4. Absența Garanțiilor Absolute & Riscuri de Piață</h2>
           </div>
           <p className="text-sm">
-            Real estate acquisitions, capital deployments, and private equity vehicles carry inherent financial risks, including illiquidity, market cyclicality, interest-rate exposure, and potential loss of invested capital. Past performance or historical returns discussed in editorial articles do not guarantee future performance.
+            Tranzacțiile imobiliare sunt supuse fluctuațiilor pieței, modificărilor legislative, evoluției ratelor dobânzilor și riscurilor specifice fiecărei proprietăți. Nu formulăm promisiuni absolute privind randamente viitoare, loialitate fără limite dincolo de cadrul contractual sau eliminarea totală a oricărui risc. Un proces structurat de due diligence are scopul de a reduce asimetria informațională și de a identifica riscurile documentate, fără a garanta că toate riscurile neevidente pot fi anticipate.
           </p>
         </section>
       </div>

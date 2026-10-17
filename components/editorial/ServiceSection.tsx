@@ -27,8 +27,8 @@ interface ServiceSectionProps {
 export default function ServiceSection({
   eyebrow = "STRATEGIC PRACTICE PILLARS",
   badge = "EXECUTIVE CAPABILITIES",
-  title = "Architecture of Fiduciary Mandates & Services",
-  description = "Every engagement is architected at the intersection of quantitative financial modeling, cross-border contract law, and high-value asset sovereignty.",
+  title = "Architecture of Strategic Mandates & Services",
+  description = "Every engagement is architected at the intersection of quantitative market analysis, due diligence coordination, and strategic asset protection.",
   services,
   className = "",
 }: ServiceSectionProps) {
@@ -72,7 +72,7 @@ export default function ServiceSection({
               {srv.deliverables && srv.deliverables.length > 0 && (
                 <div className="pt-3 space-y-2">
                   <span className="font-mono text-[10px] uppercase tracking-wider text-[#A97F60] font-semibold block">
-                    DELIVERABLES & FIDUCIARY BENCHMARKS:
+                    DELIVERABLES & QUALITY BENCHMARKS:
                   </span>
                   <ul className="space-y-1.5 font-sans text-xs sm:text-sm text-[#B8C2CF]/90 font-light">
                     {srv.deliverables.map((item, idx) => (
@@ -92,7 +92,7 @@ export default function ServiceSection({
                 <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest font-semibold">
                   MANDATE STATUS
                 </span>
-                <span>Exclusive representation under retained fiduciary covenant</span>
+                <span>Dedicated representation under written bilateral agreement</span>
               </div>
 
               {srv.external ? (

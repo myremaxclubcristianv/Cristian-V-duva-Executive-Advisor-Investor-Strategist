@@ -43,10 +43,10 @@ export default function SpatialComposition() {
               <div className="absolute -bottom-6 -left-6 hidden sm:block p-4 border border-white/[0.16] bg-[#07090D]/95 backdrop-blur-xl max-w-xs font-mono text-[10px] space-y-1 shadow-2xl">
                 <div className="text-[#93C8FF] tracking-widest font-semibold flex items-center gap-1.5">
                   <Scale className="w-3 h-3" />
-                  <span>TRANSACTION FIDUCIARY</span>
+                  <span>TRANSACTION ADVISOR</span>
                 </div>
                 <p className="text-[#B8C2CF] leading-snug">
-                  100% independent representation. Zero dual-agency conflict of interest.
+                  Independent unilateral representation. No hidden dual-agency commissions.
                 </p>
               </div>
             </div>

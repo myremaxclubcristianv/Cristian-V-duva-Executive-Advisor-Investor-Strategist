@@ -66,8 +66,8 @@ export function cleanUrl(pathOrUrl?: string): string {
 export function categorizePage(path: string): string {
   const cleanPath = path.split("?")[0].toLowerCase();
   if (cleanPath === "/" || cleanPath === "") return "Homepage / Salon Principal";
-  if (cleanPath.startsWith("/about")) return "Despre / Fiduciary Mandate";
-  if (cleanPath === "/real-estate/properties") return "Catalog Proprietăți (424 Monografii)";
+  if (cleanPath.startsWith("/about")) return "Despre / Strategic Mandate";
+  if (cleanPath === "/real-estate/properties") return "Catalog Proprietăți (433 Monografii)";
   if (cleanPath.startsWith("/real-estate/properties/")) return "Proprietate / Monografie Arhitecturală";
   if (cleanPath.startsWith("/real-estate/market")) return "Analiză de Piață & Intelligence";
   if (cleanPath.startsWith("/real-estate/news")) return "Perspective & Noutăți Imobiliare";

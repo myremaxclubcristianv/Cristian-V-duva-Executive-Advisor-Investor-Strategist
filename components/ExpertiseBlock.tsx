@@ -33,20 +33,20 @@ const chapters: Chapter[] = [
   {
     number: "03",
     category: "CAPITAL",
-    title: "Private Equity Placement & Co-Investment Architecture",
-    subtitle: "EQUITY PLACEMENT · DOWNSIDE PROTECTION",
-    description: "Combining institutional downside surveillance with private execution to structure bespoke co-investment vehicles, private equity placements, and asset-backed credit.",
+    title: "Strategic Asset Advisory & Capital Governance",
+    subtitle: "TRANSACTION STRUCTURING · ASSET PROTECTION",
+    description: "Combining meticulous asset valuation with disciplined transaction structuring to safeguard capital and optimize acquisition terms.",
     imageSrc: "/residence/library.png",
-    mandates: ["Private Equity Placement", "Credit Structuring", "Co-Investment Strategies"],
+    mandates: ["Transaction Advisory", "Asset Valuation", "Portfolio Curation"],
   },
   {
     number: "04",
     category: "FINANCIAL STRATEGY",
-    title: "Credit Optimization, Liquidity & Capital Structure",
+    title: "Credit Optimization, Liquidity & Risk Containment",
     subtitle: "FINANCIAL ARCHITECTURE · LIQUIDITY GOVERNANCE",
-    description: "Designing bespoke tax, legal, and financial structures tailored to family office governance, capital preservation, and compounding multi-generational wealth.",
+    description: "Advising on mortgage credit optimization via CV Finance and comprehensive real estate risk mitigation via Generali România.",
     imageSrc: "/residence/terrace.png",
-    mandates: ["Financial Architecture", "Liquidity Optimization", "Risk Containment"],
+    mandates: ["Financial Analysis", "Mortgage Structuring", "Asset Insurance"],
   },
 ];
 

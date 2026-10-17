@@ -20,7 +20,7 @@ export default function OversizedStatement() {
             <span className="text-white/20">/</span>
             <span className="text-[#B8C2CF]">MAXIMAL TYPOGRAPHIC HORIZON</span>
           </div>
-          <span className="text-[#8A95A5]">CONFIDENTIAL FIDUCIARY DOCTRINE</span>
+          <span className="text-[#8A95A5]">CONFIDENTIAL ADVISORY MANDATE</span>
         </div>
 
         {/* The Monumental Statement */}
@@ -38,7 +38,7 @@ export default function OversizedStatement() {
           <div className="grid lg:grid-cols-12 gap-8 pt-8 border-t border-white/[0.1] items-baseline">
             <div className="lg:col-span-8">
               <p className="font-sans text-base sm:text-xl text-[#B8C2CF] font-light max-w-2xl leading-relaxed">
-                When acquiring ultra-prime assets, the difference between an ordinary broker and an architectural advisor is measured not in marketing adjectives, but in contract clause survivability, tax neutrality, and downside capitalization.
+                When acquiring prime real estate assets, the difference between an ordinary broker and an executive advisor is measured not in marketing adjectives, but in contract clause rigor, cadastral title verification, and risk mitigation.
               </p>
             </div>
 

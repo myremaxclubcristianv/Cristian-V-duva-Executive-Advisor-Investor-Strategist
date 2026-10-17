@@ -10,7 +10,7 @@ import { SectionHeader, EditorialText, CTASection, InsightPanel } from "@/compon
 export const metadata: Metadata = {
   title: "Integrated Ecosystem & Operating Architecture — Cristian Văduva",
   description:
-    "The integrated matrix of real estate intelligence, verified marketplaces, ultra-luxury offshore access, and fiduciary wealth protection directed by Cristian Văduva.",
+    "The integrated matrix of real estate intelligence, verified marketplaces, ultra-luxury offshore access, and strategic wealth protection directed by Cristian Văduva.",
 };
 
 export default function EcosystemPage() {
@@ -183,7 +183,7 @@ export default function EcosystemPage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-16 sm:space-y-20">
             <SectionHeader
               eyebrow="03 // ASSET PROTECTION & GENERALI PARTNERSHIP"
-              badge="FIDUCIARY INTEGRITY"
+              badge="ASSET DEFENSE"
               title={insuranceOverview.title}
               description={insuranceOverview.corePhilosophy}
               action={
@@ -273,12 +273,12 @@ export default function EcosystemPage() {
         <CTASection
           eyebrow="SYSTEM INTEGRATION"
           title="Collaborate on Infrastructure or Propose a Strategic Alliance."
-          description="Whether seeking programmatic access to the HomeFind buyer stream, presenting an off-market trophy asset for AiXLuxury curation, or conducting an exhaustive fiduciary audit of real estate casualty coverage through Generali, engagement is direct and confidential."
-          primaryActionText="INITIATE STRATEGIC BRIEF"
+          description="Fie că doriți acces la catalogul de proprietăți HomeFind, prezentarea unei proprietăți reprezentative sau analizarea soluțiilor de asigurare și protecție a activelor prin parteneriatul cu Generali România, dialogul este direct și confidențial."
+          primaryActionText="SOLICITĂ O DISCUȚIE STRATEGICĂ"
           primaryActionHref="/contact"
-          secondaryActionText="WHATSAPP DESK (+43 650 953 6345)"
+          secondaryActionText="WHATSAPP (+43 650 953 6345)"
           secondaryActionHref="https://wa.me/436509536345"
-          disclaimer="All proprietary data and communications are processed strictly under European confidentiality standards and Swiss-standard fiduciary non-disclosure."
+          disclaimer="Toate datele și comunicările sunt procesate sub standarde europene de protecție a datelor și confidențialitate contractuală (NDA)."
         />
       </main>
 

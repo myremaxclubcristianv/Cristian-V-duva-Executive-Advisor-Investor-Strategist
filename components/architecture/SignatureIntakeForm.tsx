@@ -124,7 +124,7 @@ export default function SignatureIntakeForm() {
           className="w-full bg-[#1B2028] border border-white/[0.1] px-4 py-3 font-sans text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] transition-colors"
         >
           <option value="Ultra-Prime Real Estate">Ultra-Prime Real Estate Acquisition (€5M – €100M+)</option>
-          <option value="Strategic Capital Allocation">Strategic Capital Allocation & Syndication</option>
+          <option value="Strategic Capital Allocation">Strategic Capital Allocation & Advisory</option>
           <option value="Asset Sovereignty & Security">Asset Sovereignty & Security Architecture</option>
           <option value="Direct Ventures & Equity">Direct Ventures & Private Equity</option>
           <option value="Confidential Advisory Mandate">Other Confidential Principal Mandate</option>

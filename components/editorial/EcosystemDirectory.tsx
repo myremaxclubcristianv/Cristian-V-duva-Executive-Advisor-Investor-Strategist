@@ -96,14 +96,14 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
     },
     {
       groupTitle: "FINANCING, GRANTS & ASSET PROTECTION",
-      groupDescription: "Capital syndication, private mortgages, subsidies, and high-value risk indemnification.",
+      groupDescription: "Mortgage structuring, credit brokerage, non-reimbursable subsidies, and high-value risk indemnification.",
       accent: "copper" as const,
       platforms: [
         {
           id: "cv-finance",
           name: "CV Finance",
           url: "https://credite.cristianvaduva.com",
-          role: "Mortgage Structuring & Private Debt Syndication",
+          role: "Mortgage Structuring & Credit Brokerage",
           category: "Financing & Credit",
           description:
             "Strategic credit advisory structuring acquisition mortgages, refinancing, and developer debt facilities optimized against rate cycles.",
@@ -123,8 +123,8 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
         },
         {
           id: "subventii",
-          name: "Subventii.ro",
-          url: "https://subventii.ro",
+          name: "Subventii",
+          url: "https://subventii.cristianvaduva.com/",
           role: "European Structural Subsidies & Regional Development Grants",
           category: "Grants & Subsidies",
           description:
@@ -208,7 +208,7 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
           role: "Sovereign Real Estate & Private Investment Editorial",
           category: "Flagship Monograph",
           description:
-            "The private flagship platform presenting confirmed architectural assets, fiduciary investment thesis, and single-client representation.",
+            "The private flagship platform presenting confirmed architectural assets, strategic investment perspectives, and dedicated client representation.",
           icon: Sparkles,
           tag: "ACTIVE FLAGSHIP",
           isCurrent: true,
@@ -248,7 +248,7 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
         >
           <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 font-mono text-[10px] sm:text-xs">
             <span className="text-[#93C8FF] font-semibold uppercase tracking-[0.25em]">
-              ECOSYSTEM ARCHITECTURAL MATRIX // FLOW OF FIDUCIARY CAPITAL
+              ECOSYSTEM ARCHITECTURAL MATRIX // FLOW OF PRIVATE CAPITAL
             </span>
             <span className="text-[#8A95A5] hidden sm:inline">SINGLE-CLIENT ALIGNMENT</span>
           </div>

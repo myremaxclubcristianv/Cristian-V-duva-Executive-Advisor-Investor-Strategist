@@ -35,24 +35,16 @@ export default function Footer() {
             <div className="p-4 border border-white/[0.08] bg-[#0C1119]/80 space-y-2 max-w-md font-mono text-[10px] text-[#B8C2CF]">
               <div className="text-[#93C8FF] tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5" />
-                <span>GLOBAL OPERATIONAL AXIS</span>
+                <span>PREZENȚĂ & PIEȚE DE ACTIVITATE</span>
               </div>
               <div className="flex flex-col space-y-1">
                 <div className="flex justify-between">
-                  <span>BUCHAREST (HQ)</span>
-                  <span className="text-[#D8D0C2]">44.4396° N · 26.0963° E</span>
+                  <span>BUCUREȘTI (BIROU PRINCIPAL)</span>
+                  <span className="text-[#D8D0C2]">ROMÂNIA</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>MONACO (RIVIERA)</span>
-                  <span className="text-[#D8D0C2]">43.7384° N · 07.4246° E</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>DUBAI (GULF)</span>
-                  <span className="text-[#D8D0C2]">25.2048° N · 55.2708° E</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>ZURICH (CUSTODY)</span>
-                  <span className="text-[#D8D0C2]">47.3769° N · 08.5417° E</span>
+                  <span>CORIDOARE INTERNAȚIONALE</span>
+                  <span className="text-[#D8D0C2]">PARTENERIATE & MANDATE</span>
                 </div>
               </div>
             </div>
@@ -65,50 +57,62 @@ export default function Footer() {
             </span>
             <ul className="space-y-1 font-mono text-xs text-[#B8C2CF]">
               <li>
-                <Link href="/" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
+                <Link href="/" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-1.5 min-h-[36px]">
                   <span>01 // EXECUTIVE OVERVIEW</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/about" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
-                  <span>02 // BIOGRAPHY & MANDATE</span>
+                <Link href="/pentru-clienti" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-1.5 min-h-[36px]">
+                  <span>02 // PENTRU CLIENȚI ROMÂNI</span>
+                  <span className="text-[9px] px-1.5 py-0.5 border border-[#93C8FF]/30 text-[#93C8FF]">RO</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/cum-lucrez" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-1.5 min-h-[36px]">
+                  <span>03 // CUM LUCREZ & REMUNERAȚIE</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/real-estate" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
-                  <span>03 // ULTRA-PRIME REAL ESTATE</span>
+                <Link href="/parteneri" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-1.5 min-h-[36px]">
+                  <span>04 // PARTENERI (CHESTERTONS · GENERALI)</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/ventures" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
-                  <span>04 // VENTURES & ECOSYSTEM</span>
+                <Link href="/raport-piata" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-1.5 min-h-[36px]">
+                  <span>05 // RAPORT BUCHAREST PRIME</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/insights" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
-                  <span>05 // MARKET INSIGHTS</span>
+                <Link href="/ghid-cumparator" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-1.5 min-h-[36px]">
+                  <span>06 // DOSARUL CUMPĂRĂTORULUI</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" prefetch={false} className="hover:text-[#93C8FF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
-                  <span>06 // VISUAL MONOGRAPH</span>
-                  <span className="text-[9px] px-1.5 py-0.5 border border-[#93C8FF]/30 text-[#93C8FF]">HD</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/tv" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
-                  <span>07 // TV STUDIO BROADCAST</span>
+                <Link href="/programare" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-1.5 min-h-[36px]">
+                  <span>07 // SOLICITARE CONVERSAȚIE (20 MIN)</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/contact" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
-                  <span>08 // INTAKE DESK</span>
+                <Link href="/about" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-1.5 min-h-[36px]">
+                  <span>08 // BIOGRAFIE & MANDAT</span>
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/real-estate" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-1.5 min-h-[36px]">
+                  <span>09 // CATALOG IMOBILIAR</span>
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/studii-de-caz" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-1.5 min-h-[36px]">
+                  <span>10 // STUDII DE CAZ ANONIMIZATE</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
@@ -164,7 +168,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-2 text-[10px] font-mono text-[#8A95A5] pt-2">
               <ShieldCheck className="w-3.5 h-3.5 text-[#93C8FF]" />
-              <span>SWISS-GRADE FIDUCIARY PRIVILEGE · ISO COMPLIANT</span>
+              <span>CONFIDENȚIALITATE CONTRACTUALĂ (NDA) · DUE DILIGENCE STRUCTURAT</span>
             </div>
           </div>
         </div>

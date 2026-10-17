@@ -25,8 +25,8 @@ const destinations: DestinationItem[] = [
     hub: "BUCHAREST & ROMANIA",
     corridor: "NORTHERN DIPLOMATIC CORRIDOR",
     headline: "High-Yield Capital Growth & Prime Residential Scarcity",
-    thesis: "The diplomatic enclaves of Herăstrău, Kiseleff, and Pipera combine top European net rental yields with accelerating institutional capital inflows and structural permitting constraints.",
-    keyMetrics: "6.8% – 8.2% Rental Yield · €2,400 – €5,800 / sqm",
+    thesis: "The diplomatic enclaves of Herăstrău, Kiseleff, and Pipera combine attractive rental prospects with structural permitting constraints and sustained demand for high-end residential assets.",
+    keyMetrics: "Piață rezidențială prime · Evaluare per metru util conform standardelor ANEVAR",
     image: "/residence/terrace.png",
     tags: ["Penthouse Suites", "Modern Enclaves", "Heritage Mansions"],
     linkHref: "/real-estate",
@@ -38,8 +38,8 @@ const destinations: DestinationItem[] = [
     hub: "MONACO & THE FRENCH RIVIERA",
     corridor: "CARRÉ D'OR · CAP D'AIL WATERFRONT",
     headline: "Generational Trophy Preservation & Sovereign Security",
-    thesis: "With finite Mediterranean coastline and strict fiscal predictability, prime real estate in Monaco and Cap d'Ail serves as the world's most resilient physical capital safe haven.",
-    keyMetrics: "€52,000 / sqm Average · Zero Capital Gains Tax",
+    thesis: "With finite Mediterranean coastline and strict fiscal predictability, prime real estate in Monaco and Cap d'Ail serves as a resilient physical capital store. Individual fiscal implications depend on resident status and verified tax counsel.",
+    keyMetrics: "IMSEE Raportare Statistică Oficială · Regim fiscal dependent de statutul de rezident",
     image: "/residence/living.png",
     tags: ["Waterfront Villas", "Carré d'Or Penthouses", "Off-Market Estates"],
     linkHref: "https://www.aixluxury.com",
@@ -51,10 +51,10 @@ const destinations: DestinationItem[] = [
     hub: "DUBAI & THE ARABIAN GULF",
     corridor: "DUBAI ISLANDS · PALM JUMEIRAH",
     headline: "Global Liquidity & Sovereign Waterfront Masterplans",
-    thesis: "High-velocity global wealth migration has established Dubai as the premier zero-tax operating bridge between Europe and Asia, anchored by landmark branded coastal developments.",
-    keyMetrics: "BRABUS Island Partner · 7% – 9% Projected Yields",
+    thesis: "International wealth migration has established Dubai as a dynamic commercial and residential hub between Europe and Asia, anchored by landmark coastal masterplans.",
+    keyMetrics: "Dezvoltări de anvergură · Coridor internațional de investiții",
     image: "/residence/command.png",
-    tags: ["Branded Residences", "Private Island Mansions", "Off-Plan SPVs"],
+    tags: ["Branded Residences", "Private Waterfront", "Proiecte Off-Plan"],
     linkHref: "https://www.aixluxury.com",
     linkText: "DISCOVER GULF ALLOCATIONS",
     external: true,
@@ -72,12 +72,12 @@ export default function InternationalPerspective() {
             eyebrow="05 // CROSS-BORDER PRACTICE & OPERATIONAL HUBS"
             badge="INTERNATIONAL CORRIDORS"
             title="Strategic Representation Across Key Wealth Hubs"
-            description="A distinct tripartite advisory footprint uniting high-yield cash flows in Bucharest, generational capital preservation in Monaco, and dynamic international growth in Dubai."
+            description="A distinct advisory perspective linking prime residential properties in Bucharest with established international property corridors."
           />
 
           <div className="flex items-center gap-2 font-mono text-xs text-[#8A95A5] shrink-0">
             <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
-            <span>TRI-CENTRIC ADVISORY AXIS</span>
+            <span>INTERNATIONAL REAL ESTATE CORRIDORS</span>
           </div>
         </div>
 

@@ -298,7 +298,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                     {property.price}
                   </div>
                   <span className="font-mono text-[10px] text-[#B8C2CF] block pt-1">
-                    Single-Client Fiduciary Exclusivity · Non-Brokerage Retainer
+                    Consultanță dedicată · Condiții stabilite contractual
                   </span>
                 </div>
 
@@ -357,11 +357,11 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                 </EditorialCadran>
               )}
 
-              {/* Fiduciary Advisory Thesis Cadran */}
+              {/* Strategic Advisory Thesis Cadran */}
               <div className="p-6 sm:p-8 border-l-2 border-[#93C8FF] bg-[#07090D] space-y-3 shadow-2xl">
                 <div className="flex items-center gap-2 text-[#93C8FF] font-mono text-[10px] uppercase tracking-[0.25em] font-semibold">
                   <ShieldCheck className="w-4 h-4" />
-                  <span>FIDUCIARY ADVISORY THESIS</span>
+                  <span>STRATEGIC ADVISORY PERSPECTIVE</span>
                 </div>
                 <p className="font-serif italic text-base sm:text-lg text-[#D8D0C2] leading-relaxed">
                   &ldquo;{property.advisoryPerspective}&rdquo;
@@ -405,7 +405,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                   Every property curated in the Executive portfolio has been audited for
                   architectural rarity, legal title clarity, structural engineering robustness,
                   and capital defense resilience. Transactions structured under our advisory
-                  mandate operate under strict fiduciary non-brokerage confidentiality,
+                  mandate operate under strict contractual confidentiality,
                   eliminating commercial agency conflicts.
                 </p>
               </div>
@@ -441,7 +441,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                 className="p-8 space-y-6"
               >
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#A97F60] font-semibold block">
-                  ACQUISITION FIDUCIARY SHIELDING
+                  ACQUISITION ASSET SHIELDING
                 </span>
 
                 <ul className="space-y-4 text-xs font-mono text-[#B8C2CF]">

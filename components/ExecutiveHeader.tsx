@@ -45,13 +45,14 @@ export default function ExecutiveHeader() {
   const closeMenu = useCallback(() => setIsMenuOpen(false), []);
 
   const navLinks: NavLinkItem[] = [
-    { href: "/", label: "THE VOID", number: "01" },
-    { href: "/about", label: "MANDATE", number: "02" },
-    { href: "/real-estate", label: "PRIME ASSETS", number: "03" },
-    { href: "/ventures", label: "VENTURES", number: "04" },
-    { href: "/gallery", label: "MONOGRAPH", number: "05" },
-    { href: "/tv", label: "TV STUDIO", number: "06" },
-    { href: "/contact", label: "INTAKE DESK", number: "07" },
+    { href: "/", label: "OVERVIEW", number: "01" },
+    { href: "/pentru-clienti", label: "PENTRU CLIENȚI", number: "02" },
+    { href: "/cum-lucrez", label: "CUM LUCREZ", number: "03" },
+    { href: "/real-estate", label: "PROPRIETĂȚI", number: "04" },
+    { href: "/parteneri", label: "PARTENERI", number: "05" },
+    { href: "/raport-piata", label: "RAPORT PIAȚĂ", number: "06" },
+    { href: "/about", label: "BIOGRAFIE", number: "07" },
+    { href: "/contact", label: "CONTACT", number: "08" },
   ];
 
   return (
@@ -107,12 +108,10 @@ export default function ExecutiveHeader() {
           {/* Actions Desk */}
           <div className="hidden sm:flex items-center gap-3">
             <Link
-              href="https://wa.me/436509536345"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/programare"
               className="inline-flex items-center gap-2 px-4 py-2 border border-[#93C8FF]/30 bg-[#93C8FF]/10 hover:bg-[#93C8FF]/20 text-[#93C8FF] hover:text-[#F5F4EF] font-mono text-[11px] uppercase tracking-[0.2em] transition-all duration-300 min-h-[44px]"
             >
-              <span>PRIVATE INTAKE</span>
+              <span>PROGRAMARE (20 MIN)</span>
               <ArrowUpRight className="w-3 h-3 opacity-90" />
             </Link>
 
@@ -215,19 +214,18 @@ export default function ExecutiveHeader() {
 
           {/* Drawer Bottom Coordinates & Actions */}
           <div className="relative z-10 pt-6 border-t border-white/[0.1] space-y-6">
-            <a
-              href="https://wa.me/436509536345"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/programare"
+              onClick={closeMenu}
               className="w-full py-4 bg-[#93C8FF] text-[#07090D] font-mono text-xs uppercase tracking-[0.24em] font-bold flex items-center justify-center gap-2 shadow-2xl shadow-[#93C8FF]/20"
             >
-              <span>INITIATE PRIVATE INTAKE</span>
+              <span>SOLICITĂ DISCUȚIE (20 MIN)</span>
               <ArrowUpRight className="w-4 h-4" />
-            </a>
+            </Link>
 
             <div className="flex justify-between items-center font-mono text-[10px] text-[#647082] uppercase tracking-wider">
-              <span>BUCHAREST · MONACO · DUBAI</span>
-              <span>STRICT FIDUCIARY PRIVILEGE</span>
+              <span>BUCUREȘTI · ROMÂNIA</span>
+              <span>CONFIDENȚIALITATE CONTRACTUALĂ (NDA)</span>
             </div>
           </div>
         </div>

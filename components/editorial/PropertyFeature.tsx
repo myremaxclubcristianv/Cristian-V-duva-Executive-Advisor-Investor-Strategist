@@ -156,11 +156,11 @@ export default function PropertyFeature({
             </div>
           )}
 
-          {/* Fiduciary Advisory Positioning Box */}
+          {/* Strategic Advisory Positioning Box */}
           <div className="p-4 border-l-2 border-[#93C8FF] bg-[#07090D] space-y-1.5">
             <span className="font-mono text-[9px] uppercase tracking-[0.28em] text-[#93C8FF] font-semibold block flex items-center gap-1.5">
               <ShieldCheck className="w-3 h-3" />
-              <span>FIDUCIARY ADVISORY THESIS</span>
+              <span>STRATEGIC ADVISORY PERSPECTIVE</span>
             </span>
             <p className="font-serif italic text-sm text-[#D8D0C2] leading-relaxed">
               &ldquo;{property.advisoryPerspective}&rdquo;

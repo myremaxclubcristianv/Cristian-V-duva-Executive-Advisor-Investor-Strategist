@@ -1,28 +1,28 @@
 export default function IntelligenceBlock() {
   const metrics = [
     {
-      category: "MARKET",
-      value: "€250M+",
-      label: "TRANSACTIONS ADVISED",
-      detail: "Prime European acquisitions & portfolio structuring",
+      category: "METHODOLOGY",
+      value: "RIGOROUS",
+      label: "RESEARCH FRAMEWORK",
+      detail: "Evidence-based asset evaluation & transactional due diligence",
     },
     {
-      category: "CAPITAL",
-      value: "PRIVATE EQUITY",
-      label: "ALLOCATION MANDATE",
-      detail: "Direct equity placement & credit vehicles",
+      category: "COVERAGE",
+      value: "PRIME",
+      label: "URBAN MARKETS",
+      detail: "Bucharest prime sectors & international partner corridors",
     },
     {
-      category: "REAL ESTATE",
-      value: "TOP-TIER",
-      label: "EUROPEAN ASSETS",
-      detail: "Monaco · Zurich · Bucharest · Riviera",
+      category: "ALLIANCE",
+      value: "GLOBAL",
+      label: "CHESTERTONS NETWORK",
+      detail: "International prime reach via Chestertons Global Network",
     },
     {
-      category: "OPPORTUNITY",
-      value: "DISCREET",
-      label: "OFF-MARKET PIPELINE",
-      detail: "Proprietary access to high-value parcels & estates",
+      category: "PROTECTION",
+      value: "STRUCTURED",
+      label: "RISK MITIGATION",
+      detail: "Generali asset protection & contractual legal due diligence",
     },
   ];
 

@@ -3,7 +3,7 @@ import { biography } from "@/lib/content/biography";
 
 export default function ExecutiveProfile() {
   const indexItems = [
-    { number: "01", title: "ADVISORY PHILOSOPHY", desc: "Uncompromised independence, discretion, and fiduciary alignment with principal objectives." },
+    { number: "01", title: "ADVISORY PHILOSOPHY", desc: "Uncompromised independence, discretion, and strict alignment with principal objectives." },
     { number: "02", title: "INVESTMENT CRITERIA", desc: "Asymmetric downside protection, prime tangible asset backing, and defensible economic moats." },
     { number: "03", title: "EXECUTIVE COUNSEL", desc: "Direct, high-touch strategic advisory for family offices, boards, and UHNW principals." },
     { number: "04", title: "GLOBAL GEOGRAPHY", desc: "Focused strategic execution across Bucharest, Monaco, London, and key European centers." },

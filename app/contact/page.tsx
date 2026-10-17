@@ -83,7 +83,7 @@ export default function ContactPage() {
               </div>
               <div className="hidden sm:flex items-center gap-2 text-[#8A95A5]">
                 <Lock className="w-3.5 h-3.5 text-[#93C8FF]" />
-                <span>ENCRYPTED FIDUCIARY CHANNEL</span>
+                <span>CANAL DIRECT CONFIDENȚIAL</span>
               </div>
             </div>
 
@@ -94,7 +94,7 @@ export default function ContactPage() {
               </h1>
 
               <p className="font-sans text-base sm:text-xl text-[#B8C2CF] font-light max-w-2xl leading-relaxed">
-                Direct engagement for ultra-prime real estate acquisitions, capital structuring, and high-stakes fiduciary advisory. Inquiries are reviewed directly by Cristian Văduva.
+                Direct engagement for ultra-prime real estate acquisitions, transaction analysis, and strategic property advisory. Inquiries are reviewed directly by Cristian Văduva.
               </p>
             </div>
           </div>
@@ -145,16 +145,15 @@ export default function ContactPage() {
                       <span>OFFICE OF CRISTIAN VĂDUVA</span>
                     </div>
                     <div className="text-[#B8C2CF] text-xs font-sans space-y-1">
-                      <p>Bucharest HQ · Northern Diplomatic Axis</p>
-                      <p>Monaco · Fontvieille / Monte Carlo Office</p>
-                      <p>Dubai · DIFC Financial Centre Axis</p>
+                      <p>București, România (Birou Principal)</p>
+                      <p>Coridoare imobiliare internaționale & parteneriate dedicate</p>
                     </div>
                   </div>
 
                   <div className="p-4 border border-white/[0.08] bg-[#07090D] text-[#B8C2CF] text-[11px] leading-relaxed flex items-start gap-3">
                     <ShieldCheck className="w-4 h-4 text-[#93C8FF] mt-0.5 shrink-0" />
                     <span>
-                      Swiss-grade secrecy. All submissions protected by non-disclosure agreements and encrypted transmission standards.
+                      Confidențialitate contractuală. Posibilitate de încheiere a unui acord bilateral NDA înainte de schimbul de informații private.
                     </span>
                   </div>
                 </div>
@@ -250,7 +249,7 @@ export default function ContactPage() {
                           className="w-full bg-[#0C1119] border border-white/[0.1] px-4 py-3 font-sans text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] transition-colors"
                         >
                           <option value="Ultra-Prime Real Estate">Ultra-Prime Real Estate Acquisition (€5M – €100M+)</option>
-                          <option value="Strategic Capital Allocation">Strategic Capital Allocation & Syndication</option>
+                          <option value="Strategic Capital Allocation">Strategic Capital Allocation & Advisory</option>
                           <option value="Asset Sovereignty & Security">Asset Sovereignty & Security Architecture</option>
                           <option value="Direct Ventures & Equity">Direct Ventures & Private Equity</option>
                           <option value="Confidential Advisory Mandate">Other Confidential Principal Mandate</option>

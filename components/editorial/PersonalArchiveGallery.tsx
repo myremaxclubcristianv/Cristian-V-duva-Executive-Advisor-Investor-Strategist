@@ -198,11 +198,8 @@ export default function PersonalArchiveGallery({
 
               {/* Bottom Metadata Bar */}
               <div className="pt-3.5 mt-3.5 border-t border-white/[0.06] flex items-center justify-between font-mono text-[9px] text-[#8A95A5]">
-                <span className="flex items-center gap-1 text-[#93C8FF] font-semibold">
-                  <CheckCircle2 className="w-3 h-3" />
-                  <span>VERIFIED</span>
-                </span>
-                <span>{photo.fileSizeFormatted}</span>
+                <span className="text-[#B8C2CF] uppercase tracking-wider">{photo.categoryLabel}</span>
+                <span className="uppercase tracking-widest text-[#93C8FF]">ARHIVĂ AUTENTIFICATĂ</span>
               </div>
             </div>
           );
@@ -282,7 +279,7 @@ export default function PersonalArchiveGallery({
                 </div>
               </div>
 
-              {/* Fiduciary Monograph Details Card (~35% width) */}
+              {/* Advisory Monograph Details Card (~35% width) */}
               <div className="lg:col-span-4 p-6 sm:p-8 space-y-6 flex flex-col justify-between bg-[#0C1119]">
                 <div className="space-y-4">
                   <div className="space-y-2">

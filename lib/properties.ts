@@ -600,7 +600,7 @@ export const selectedProperties: Property[] = [
       "Official developer-announced project details — verified off-plan acquisition gateway",
       "Private shoreline with unobstructed panoramas of the Downtown skyline",
       "Eligibility for 10-Year UAE Golden Visa for principal and immediate family",
-      "Independent fiduciary audit of the standard Sales and Purchase Agreement (SPA)"
+      "Independent legal & contractual audit of the standard Sales and Purchase Agreement (SPA)"
     ],
     "sourceUrl": "https://aixluxury.com/brabus-island",
     "sourceName": "AiXLuxury Dubai & Abu Dhabi Desk",
@@ -7561,7 +7561,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/15fb09f3-047f-47b9-91db-4b55aecee29d",
     "sourceName": "HomeFind",
@@ -7654,7 +7654,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/967e7b9f-edd7-495d-8a70-62734d6707cb",
     "sourceName": "HomeFind",
@@ -7747,7 +7747,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0b93100c-834c-4559-8956-a58f3b868bff",
     "sourceName": "HomeFind",
@@ -7827,7 +7827,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/007470cc-ac03-4404-8c5d-deeeecc38bb8",
     "sourceName": "HomeFind",
@@ -7920,7 +7920,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1454518c-96f2-41c9-8aed-ede1ddbe4896",
     "sourceName": "HomeFind",
@@ -8013,7 +8013,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/58f6b431-c23e-48d0-8f63-64b899981b22",
     "sourceName": "HomeFind",
@@ -8106,7 +8106,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8e79e497-5eac-4fad-b525-b30d27ae134c",
     "sourceName": "HomeFind",
@@ -8199,7 +8199,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3f43184a-bf35-44a6-9edc-f1dc6d5acca5",
     "sourceName": "HomeFind",
@@ -8292,7 +8292,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f9938664-eea7-49c1-91ae-40272f1784fa",
     "sourceName": "HomeFind",
@@ -8385,7 +8385,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/281ddf94-6ac5-4d89-a323-b66c37b33782",
     "sourceName": "HomeFind",
@@ -8478,7 +8478,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0e650606-a7d2-42dc-8c13-ba7f6c6b4f6e",
     "sourceName": "HomeFind",
@@ -8559,7 +8559,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fb0c948e-c75e-4e3f-ba5c-6c392577aa7e",
     "sourceName": "HomeFind",
@@ -8652,7 +8652,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/5f7243ba-da84-4dd0-a662-a937a4977414",
     "sourceName": "HomeFind",
@@ -8732,7 +8732,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/6cfd3a0d-44df-4997-9d21-51820fad65d3",
     "sourceName": "HomeFind",
@@ -8816,7 +8816,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/077f5665-376b-4f27-a442-fdf08e545f78",
     "sourceName": "HomeFind",
@@ -8909,7 +8909,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/7c3952ec-8a60-4e25-ac1d-84c396a4fa34",
     "sourceName": "HomeFind",
@@ -8999,7 +8999,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/2b5bb72f-4a4a-42b8-a585-92e8b9222e63",
     "sourceName": "HomeFind",
@@ -9092,7 +9092,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d71e77e0-03d8-4cf2-9143-14d3783b9017",
     "sourceName": "HomeFind",
@@ -9185,7 +9185,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/bf708c1d-3c20-4a4b-97f9-befa231a555f",
     "sourceName": "HomeFind",
@@ -9278,7 +9278,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d98b4534-cfd6-48a3-bcff-daae12a933c7",
     "sourceName": "HomeFind",
@@ -9371,7 +9371,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/84b8aa63-30f0-47cf-bb6e-af06a759bf98",
     "sourceName": "HomeFind",
@@ -9464,7 +9464,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/be81463f-e4cc-47a6-86df-6f45cba53423",
     "sourceName": "HomeFind",
@@ -9557,7 +9557,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f4ed386c-ae41-4a6a-9f5e-d77dd4c898df",
     "sourceName": "HomeFind",
@@ -9650,7 +9650,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/019dd7c7-c0fe-4c86-bde2-89cb0a402e86",
     "sourceName": "HomeFind",
@@ -9743,7 +9743,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a93f5b20-b0f7-4105-838a-67187eb80b78",
     "sourceName": "HomeFind",
@@ -9836,7 +9836,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e7a43146-716b-4ec7-97ac-8acff3982d36",
     "sourceName": "HomeFind",
@@ -9929,7 +9929,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b55eb56d-1ba6-4f08-857a-ba225dcc3a8a",
     "sourceName": "HomeFind",
@@ -10022,7 +10022,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cc399b39-3c05-405f-aabc-8269787f82b1",
     "sourceName": "HomeFind",
@@ -10115,7 +10115,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3c9132e2-df84-4658-88c7-8bf7eca8c962",
     "sourceName": "HomeFind",
@@ -10208,7 +10208,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/2c89e97c-195f-49ea-b686-283b3819e202",
     "sourceName": "HomeFind",
@@ -10296,7 +10296,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/13b75393-4bf5-4bdc-b8f5-0a15e6c10877",
     "sourceName": "HomeFind",
@@ -10380,7 +10380,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ecf9054d-d657-4645-955f-0b8f9d02a87f",
     "sourceName": "HomeFind",
@@ -10473,7 +10473,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/6276e5da-6d4f-47dc-968a-0a339af2024d",
     "sourceName": "HomeFind",
@@ -10566,7 +10566,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/003fbc22-2407-4c87-9d3c-e9b0798a675a",
     "sourceName": "HomeFind",
@@ -10659,7 +10659,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/59074541-482b-44be-8545-9e8603b636ab",
     "sourceName": "HomeFind",
@@ -10752,7 +10752,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/dd12082d-56ad-4c76-bd32-c096a81586e5",
     "sourceName": "HomeFind",
@@ -10832,7 +10832,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/07310f5c-8477-471f-823a-cb2fb287244f",
     "sourceName": "HomeFind",
@@ -10925,7 +10925,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/7863315c-6075-4177-adf4-28c410084764",
     "sourceName": "HomeFind",
@@ -11018,7 +11018,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/21701fa0-9421-42b8-9f1e-2ce24c889142",
     "sourceName": "HomeFind",
@@ -11111,7 +11111,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f133580f-84bf-47bf-8463-7989c7b93f4c",
     "sourceName": "HomeFind",
@@ -11200,7 +11200,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/60cb2d82-113b-4f45-a180-44d37042a4d0",
     "sourceName": "HomeFind",
@@ -11293,7 +11293,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e34479a7-4930-4b45-a82b-58ead23409cf",
     "sourceName": "HomeFind",
@@ -11383,7 +11383,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3119a31a-d9c3-4165-9fc2-5b6a2499f789",
     "sourceName": "HomeFind",
@@ -11476,7 +11476,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/5c1aaf48-73bc-4c68-9550-645c4e13d28b",
     "sourceName": "HomeFind",
@@ -11569,7 +11569,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8f65ccfa-fa4c-4cba-bc60-c449e6c44007",
     "sourceName": "HomeFind",
@@ -11652,7 +11652,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/654edf13-b879-4e66-b960-b2cd57b2f24f",
     "sourceName": "HomeFind",
@@ -11745,7 +11745,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0f9c01a4-fe5b-4072-ab98-50b95267c134",
     "sourceName": "HomeFind",
@@ -11838,7 +11838,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/252fd9ab-dc29-4740-b1dd-94f6140e6ade",
     "sourceName": "HomeFind",
@@ -11922,7 +11922,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ef30dd57-6e9b-4193-9ef2-d884d97d46ca",
     "sourceName": "HomeFind",
@@ -12015,7 +12015,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/95183219-0f1c-432f-99f6-9c950571362e",
     "sourceName": "HomeFind",
@@ -12108,7 +12108,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a965f240-8067-4e08-8b2a-1954b497d23d",
     "sourceName": "HomeFind",
@@ -12201,7 +12201,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cc778c1d-fe9e-4c19-bc20-2d993273ac31",
     "sourceName": "HomeFind",
@@ -12288,7 +12288,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/594689e0-9e8a-4b56-863d-64147c893521",
     "sourceName": "HomeFind",
@@ -12381,7 +12381,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/7418bfc6-e402-40b5-96c0-1ae8d3919ec6",
     "sourceName": "HomeFind",
@@ -12474,7 +12474,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/6e5b0cbb-2106-4974-8821-29c426484c52",
     "sourceName": "HomeFind",
@@ -12567,7 +12567,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/67af2276-76af-4960-8818-a671b0f78316",
     "sourceName": "HomeFind",
@@ -12660,7 +12660,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/bf1a7e60-b7f3-4bbd-9eaa-24d13403d3cc",
     "sourceName": "HomeFind",
@@ -12745,7 +12745,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/c080db11-1559-4f5e-8083-d39bf9391cc1",
     "sourceName": "HomeFind",
@@ -12838,7 +12838,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0e97a473-6635-4605-8e84-d853ec00657b",
     "sourceName": "HomeFind",
@@ -12931,7 +12931,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3973aa47-c5ac-468d-b99f-5179387eea41",
     "sourceName": "HomeFind",
@@ -13014,7 +13014,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/358ef7d6-6395-4623-870d-c0781b83dad3",
     "sourceName": "HomeFind",
@@ -13098,7 +13098,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/9dc65307-a975-4bc2-a94e-785a7504c5da",
     "sourceName": "HomeFind",
@@ -13191,7 +13191,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/9b4df3e3-05f5-4523-9965-1cd273b3ca57",
     "sourceName": "HomeFind",
@@ -13284,7 +13284,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a54dae59-104e-4d8a-a7e5-42b730c7c173",
     "sourceName": "HomeFind",
@@ -13377,7 +13377,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/01ae917f-ac8b-4b45-a740-3a513f0f7e7f",
     "sourceName": "HomeFind",
@@ -13470,7 +13470,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b2171058-1ba4-44cd-8335-05b1222eae61",
     "sourceName": "HomeFind",
@@ -13548,7 +13548,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/bfbc6c14-ff5f-4f13-bb1e-7c7084780c02",
     "sourceName": "HomeFind",
@@ -13641,7 +13641,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b6d62e65-58ee-4325-aa72-7876f622e2fe",
     "sourceName": "HomeFind",
@@ -13734,7 +13734,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1e048af6-75ee-43ba-9c35-ce204438db9d",
     "sourceName": "HomeFind",
@@ -13822,7 +13822,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d667d621-4f2e-40a0-8d27-722fc79cd2c4",
     "sourceName": "HomeFind",
@@ -13905,7 +13905,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/99c99ea2-60a5-4fb5-8476-bbb2a834596a",
     "sourceName": "HomeFind",
@@ -13998,7 +13998,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/c9502a06-8872-49d9-9b7b-34fb20af1cd3",
     "sourceName": "HomeFind",
@@ -14091,7 +14091,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/9b0a0ef3-8585-46c1-ac9b-5663b6b95a49",
     "sourceName": "HomeFind",
@@ -14174,7 +14174,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ff89d4fc-f890-46a6-839d-ad8914979ba7",
     "sourceName": "HomeFind",
@@ -14260,7 +14260,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cdc0cdb3-6607-43fb-a44b-deef6d4d6143",
     "sourceName": "HomeFind",
@@ -14353,7 +14353,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/4771cebf-0157-4057-8bbc-bd11c489bc63",
     "sourceName": "HomeFind",
@@ -14446,7 +14446,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f376fe4b-f61b-495d-9831-5d731baabbad",
     "sourceName": "HomeFind",
@@ -14539,7 +14539,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b3bb04ff-1aab-4c38-8c0d-e5771f25c692",
     "sourceName": "HomeFind",
@@ -14632,7 +14632,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/207307de-573e-44af-9b75-c33e9a3da47e",
     "sourceName": "HomeFind",
@@ -14725,7 +14725,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/aae7f196-6638-4744-bf83-ef6d64c18661",
     "sourceName": "HomeFind",
@@ -14816,7 +14816,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/9baf40e4-614b-4e52-9f5b-fe1ebc1166a7",
     "sourceName": "HomeFind",
@@ -14900,7 +14900,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/403fbe46-d42b-4473-a1fc-3aa04009a101",
     "sourceName": "HomeFind",
@@ -14993,7 +14993,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a40201f6-9046-40b2-b688-be6cb801f6fc",
     "sourceName": "HomeFind",
@@ -15086,7 +15086,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b31e9080-7cae-4962-8cec-33c93f8ab0dc",
     "sourceName": "HomeFind",
@@ -15179,7 +15179,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/89aa78d5-0584-4b10-92b7-77af1ed027f5",
     "sourceName": "HomeFind",
@@ -15272,7 +15272,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/62edee2e-334c-4c5c-9500-70b53d8d04a5",
     "sourceName": "HomeFind",
@@ -15365,7 +15365,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/74e83024-e3e0-4b93-8a31-ccc13365d3a3",
     "sourceName": "HomeFind",
@@ -15449,7 +15449,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/60def811-0e52-4f64-a120-14df112bf707",
     "sourceName": "HomeFind",
@@ -15542,7 +15542,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/dca4e058-f8d3-4fe7-89fe-105f62b856a5",
     "sourceName": "HomeFind",
@@ -15635,7 +15635,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/5fd7ee9f-517f-484e-a31e-31ded7e08786",
     "sourceName": "HomeFind",
@@ -15717,7 +15717,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0462a8e4-3638-454d-ba71-c39798a22e2d",
     "sourceName": "HomeFind",
@@ -15810,7 +15810,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/eda00378-8a64-4538-be05-1accebb53056",
     "sourceName": "HomeFind",
@@ -15894,7 +15894,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e5b138c7-fb94-4800-8567-f0bb7d79acee",
     "sourceName": "HomeFind",
@@ -15979,7 +15979,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0b51f245-d616-4cff-91aa-7e384b743aa6",
     "sourceName": "HomeFind",
@@ -16072,7 +16072,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e538d479-62dc-435b-8d32-f3ba9a90afea",
     "sourceName": "HomeFind",
@@ -16165,7 +16165,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/59d633f0-6a11-460f-bd1d-86ad4580a9c3",
     "sourceName": "HomeFind",
@@ -16258,7 +16258,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0d16a155-44a9-414b-93e2-61cda6408cc7",
     "sourceName": "HomeFind",
@@ -16351,7 +16351,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d67b1d4d-692b-4c43-8225-f5d3f74fad07",
     "sourceName": "HomeFind",
@@ -16444,7 +16444,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/bfe12792-4434-4644-b51f-6201a7aad598",
     "sourceName": "HomeFind",
@@ -16537,7 +16537,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/c8a8acf0-f2c1-4eb2-ae6e-b0b37210d29d",
     "sourceName": "HomeFind",
@@ -16630,7 +16630,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/bb129bea-1f17-4a1c-913a-0a7e2a51d508",
     "sourceName": "HomeFind",
@@ -16723,7 +16723,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cdfe3322-e138-44b3-829c-37dae777521c",
     "sourceName": "HomeFind",
@@ -16800,7 +16800,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/db90d2ec-428b-480a-91fc-67c862fd1e87",
     "sourceName": "HomeFind",
@@ -16880,7 +16880,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/c8a198fa-6f87-4a97-90c0-0893f407d999",
     "sourceName": "HomeFind",
@@ -16973,7 +16973,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f33b8121-d163-48a1-b620-a9d60d761f2c",
     "sourceName": "HomeFind",
@@ -17066,7 +17066,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/12465d6a-eb7c-4cb0-af6d-85af992372b4",
     "sourceName": "HomeFind",
@@ -17159,7 +17159,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8c85787d-b185-4f89-a697-1b3212ba4c49",
     "sourceName": "HomeFind",
@@ -17252,7 +17252,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b9823a74-8903-4d38-9f25-4e79d278d308",
     "sourceName": "HomeFind",
@@ -17345,7 +17345,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3387471f-4af4-4504-a0dd-f1581ec8b399",
     "sourceName": "HomeFind",
@@ -17438,7 +17438,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e6474901-0bfc-41cf-90d5-39525f68369c",
     "sourceName": "HomeFind",
@@ -17531,7 +17531,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/28666dd7-0bb0-45de-8129-d91d5a7a71b6",
     "sourceName": "HomeFind",
@@ -17624,7 +17624,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3473b643-f25d-4948-99bc-72e19ac9b32f",
     "sourceName": "HomeFind",
@@ -17717,7 +17717,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/9e76f125-fc39-4814-9a10-ef7416ee8b50",
     "sourceName": "HomeFind",
@@ -17809,7 +17809,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/03723b00-dddd-4649-94fd-19d9bcdf6712",
     "sourceName": "HomeFind",
@@ -17902,7 +17902,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b547937b-cc23-47c2-86d5-b4efac7515fe",
     "sourceName": "HomeFind",
@@ -17995,7 +17995,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3111a160-2ade-43dc-9582-a771c6f61910",
     "sourceName": "HomeFind",
@@ -18088,7 +18088,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8e6d9292-349d-4c3e-ae1f-463bae4d51b0",
     "sourceName": "HomeFind",
@@ -18181,7 +18181,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d1d9804c-454b-4505-b6b3-3478112e5dd5",
     "sourceName": "HomeFind",
@@ -18274,7 +18274,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3f49445c-cada-43f9-8ca6-27b824a8f6fa",
     "sourceName": "HomeFind",
@@ -18367,7 +18367,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/eaa28ff1-c5c3-4b42-959a-44d109d2fdfe",
     "sourceName": "HomeFind",
@@ -18460,7 +18460,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/c55a8496-e667-4e2a-8598-7bc20e2dca70",
     "sourceName": "HomeFind",
@@ -18544,7 +18544,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/90dc2fde-792d-460d-aa13-19a8312b9a49",
     "sourceName": "HomeFind",
@@ -18637,7 +18637,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1a7d1126-ab0a-42fc-8bf6-21dbfe17a2f7",
     "sourceName": "HomeFind",
@@ -18730,7 +18730,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ffa554ef-efe5-47ec-a759-432dd392ab57",
     "sourceName": "HomeFind",
@@ -18823,7 +18823,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cfbcf0e1-623c-4a9b-a606-5028ce06b404",
     "sourceName": "HomeFind",
@@ -18904,7 +18904,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/75a6c3cc-36e1-4f56-93e1-02a3cbe1dec3",
     "sourceName": "HomeFind",
@@ -18997,7 +18997,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b2212403-843b-4b1f-9f55-ee5744f9bde4",
     "sourceName": "HomeFind",
@@ -19090,7 +19090,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/113e8735-3d4f-4262-9a5e-95d467b767c1",
     "sourceName": "HomeFind",
@@ -19183,7 +19183,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/9c3d6a6f-2243-4055-b94a-6b02332a6f50",
     "sourceName": "HomeFind",
@@ -19276,7 +19276,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/440dd86b-27f6-472e-9497-5cc223a98765",
     "sourceName": "HomeFind",
@@ -19369,7 +19369,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/2968493b-6b7a-4438-8286-d8181ff9535f",
     "sourceName": "HomeFind",
@@ -19462,7 +19462,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/484393f6-0345-4530-8310-daa8385e9179",
     "sourceName": "HomeFind",
@@ -19555,7 +19555,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f05adbf5-2d10-456e-be3d-7fb9e024450b",
     "sourceName": "HomeFind",
@@ -19648,7 +19648,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fe9d41bf-cf08-4b18-b401-b1109eaef404",
     "sourceName": "HomeFind",
@@ -19741,7 +19741,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8c4aa6d7-8ca6-4dab-8561-1c8b43a68f3b",
     "sourceName": "HomeFind",
@@ -19834,7 +19834,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/2c80561f-3253-473b-a9f4-00db2e1317ee",
     "sourceName": "HomeFind",
@@ -19927,7 +19927,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1dffefe3-ddac-495b-8686-5e98103cf820",
     "sourceName": "HomeFind",
@@ -20020,7 +20020,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/2c086dfb-dd1e-4994-a3bb-7c55bbbb1ca5",
     "sourceName": "HomeFind",
@@ -20113,7 +20113,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b060e671-02c4-4795-a6fc-d8aa2eb752df",
     "sourceName": "HomeFind",
@@ -20196,7 +20196,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/9d61c3c4-e240-4c97-a1bc-babab055fcde",
     "sourceName": "HomeFind",
@@ -20289,7 +20289,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/bf84b030-d766-4bad-85a8-0fcc26e49820",
     "sourceName": "HomeFind",
@@ -20372,7 +20372,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d414ba5a-82cd-44ba-8ea6-697cf69406a2",
     "sourceName": "HomeFind",
@@ -20453,7 +20453,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0f2667a3-dbdd-41a7-b494-a987584771f3",
     "sourceName": "HomeFind",
@@ -20536,7 +20536,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d070f031-2420-43ee-b931-353e50b24d59",
     "sourceName": "HomeFind",
@@ -20629,7 +20629,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ed377d52-382b-4b65-8579-d7f3a856b1ca",
     "sourceName": "HomeFind",
@@ -20722,7 +20722,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d29baf35-ca41-449d-a3c4-b8423cbaebaf",
     "sourceName": "HomeFind",
@@ -20815,7 +20815,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/eae20b62-7b09-49f0-9e17-9d7c31813539",
     "sourceName": "HomeFind",
@@ -20898,7 +20898,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/5651569c-939d-449e-bc64-d31bda592577",
     "sourceName": "HomeFind",
@@ -20991,7 +20991,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/76632490-36e2-437f-9524-423a6698a2f8",
     "sourceName": "HomeFind",
@@ -21084,7 +21084,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/9fcea24a-1836-4aee-ab3c-9372a2613f6e",
     "sourceName": "HomeFind",
@@ -21177,7 +21177,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f8b44792-b1c9-44f9-9192-006775f9b6a1",
     "sourceName": "HomeFind",
@@ -21270,7 +21270,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e60be8df-b64d-458d-93b8-b4bfe728aab7",
     "sourceName": "HomeFind",
@@ -21363,7 +21363,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/89c5384a-52ec-4ab1-808a-d27a4bcd3e43",
     "sourceName": "HomeFind",
@@ -21456,7 +21456,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/14841bf6-01b2-4d9b-b64d-7e771685de9e",
     "sourceName": "HomeFind",
@@ -21549,7 +21549,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/753b8d91-141e-4aef-8c1d-753930831ddd",
     "sourceName": "HomeFind",
@@ -21632,7 +21632,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1acc56c9-31a5-4759-8ac2-888a72fb4f98",
     "sourceName": "HomeFind",
@@ -21709,7 +21709,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d1c8e2b9-7682-4523-b7d1-4cf4f76ce0e4",
     "sourceName": "HomeFind",
@@ -21802,7 +21802,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/aebe6e48-c6e9-433e-9248-6c85712f130c",
     "sourceName": "HomeFind",
@@ -21887,7 +21887,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/2e2c3372-7fa6-461b-aba0-4ff10971a06c",
     "sourceName": "HomeFind",
@@ -21980,7 +21980,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/433e0f5c-f4d1-467b-99eb-1340a2590695",
     "sourceName": "HomeFind",
@@ -22073,7 +22073,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/99f8357e-e653-461a-8ae9-2d35d0e7c9b4",
     "sourceName": "HomeFind",
@@ -22166,7 +22166,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/33a7b1f1-ac5f-41df-a4d9-9c0ea5be42cf",
     "sourceName": "HomeFind",
@@ -22259,7 +22259,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/c8be27fc-e7b3-4b23-91e5-41a53e59d449",
     "sourceName": "HomeFind",
@@ -22352,7 +22352,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/5343ca14-3dc4-4f7c-b56c-dcfdee966da4",
     "sourceName": "HomeFind",
@@ -22435,7 +22435,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/6ced8e37-6837-48b9-b8fe-5e8c25dee998",
     "sourceName": "HomeFind",
@@ -22518,7 +22518,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a9070872-6146-4383-8be0-d7168b87bbdd",
     "sourceName": "HomeFind",
@@ -22611,7 +22611,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/5b09091b-46a0-4351-8248-a07cc34359af",
     "sourceName": "HomeFind",
@@ -22695,7 +22695,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/baf96811-aae3-4107-b2ce-57bd0aa9fa95",
     "sourceName": "HomeFind",
@@ -22766,7 +22766,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/236c1fe7-76a5-4fc3-9d81-1006012ad0e9",
     "sourceName": "HomeFind",
@@ -22850,7 +22850,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/7bd9572f-24c6-43d6-aaa6-ff805ffc4750",
     "sourceName": "HomeFind",
@@ -22943,7 +22943,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/043fe829-068d-4d55-a13a-e0114988c767",
     "sourceName": "HomeFind",
@@ -23027,7 +23027,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/46f135f3-2813-412f-a8d4-31513bfdd2ba",
     "sourceName": "HomeFind",
@@ -23116,7 +23116,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ac386335-ea54-41c6-8f11-a611f253dceb",
     "sourceName": "HomeFind",
@@ -23209,7 +23209,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cedd9433-cc00-4a15-a278-8495153fb513",
     "sourceName": "HomeFind",
@@ -23302,7 +23302,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8ba94d6a-c4fb-4cfb-9df3-c9ba2950839f",
     "sourceName": "HomeFind",
@@ -23391,7 +23391,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d6d489d1-1f7c-4880-842a-5928f45f6544",
     "sourceName": "HomeFind",
@@ -23473,7 +23473,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e22157e0-80ba-414c-9020-d09d6c358f45",
     "sourceName": "HomeFind",
@@ -23566,7 +23566,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/983d6d0b-0254-42b5-8609-b62add7661a8",
     "sourceName": "HomeFind",
@@ -23659,7 +23659,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ed807a49-8787-488a-b4e4-841ba94a7ab1",
     "sourceName": "HomeFind",
@@ -23752,7 +23752,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/dae2e75a-2ac5-49ce-bd9b-71b3e33a203a",
     "sourceName": "HomeFind",
@@ -23830,7 +23830,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/5c8e9319-4dfd-4b30-91fc-a926b7d396cf",
     "sourceName": "HomeFind",
@@ -23923,7 +23923,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/56e99984-91f0-4c97-869d-7fdf47cd3dbe",
     "sourceName": "HomeFind",
@@ -24016,7 +24016,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/bbe8dd67-56e7-4678-a492-b4b40be27edd",
     "sourceName": "HomeFind",
@@ -24109,7 +24109,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cfc7f9bc-a0d5-492e-b5e2-11a256dd881f",
     "sourceName": "HomeFind",
@@ -24200,7 +24200,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/bb06f0a6-11d5-46f8-8515-4902c9d99ad7",
     "sourceName": "HomeFind",
@@ -24293,7 +24293,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/305f1a10-9b4b-42d5-b992-41893e3d0820",
     "sourceName": "HomeFind",
@@ -24386,7 +24386,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/47418ee5-2607-4bb5-83f6-efb29291b44c",
     "sourceName": "HomeFind",
@@ -24479,7 +24479,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e28d1e7b-e61d-4db9-81fb-565e3e0a3dde",
     "sourceName": "HomeFind",
@@ -24567,7 +24567,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a6a5a5d9-b61d-4e03-b721-0e4734b0561d",
     "sourceName": "HomeFind",
@@ -24653,7 +24653,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/787d3429-1879-4033-b309-cf08025ccb46",
     "sourceName": "HomeFind",
@@ -24731,7 +24731,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/67309845-0b0a-4dcf-b3dd-705d3d574e58",
     "sourceName": "HomeFind",
@@ -24819,7 +24819,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1a26af1a-73c9-4e7d-b316-42e54959e4d8",
     "sourceName": "HomeFind",
@@ -24897,7 +24897,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ef580632-a9d2-4688-920f-e9a6679b4dcc",
     "sourceName": "HomeFind",
@@ -24975,7 +24975,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a103689e-6b34-4d1b-b16a-9d6c6ef0b0bd",
     "sourceName": "HomeFind",
@@ -25051,7 +25051,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/7d32cd4d-13c0-4b48-b7c5-b70ce79ca11e",
     "sourceName": "HomeFind",
@@ -25137,7 +25137,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/9e597fe6-d321-4481-88f1-c9182196362b",
     "sourceName": "HomeFind",
@@ -25223,7 +25223,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/81a01440-c809-4bf9-8b66-905e10ee49e6",
     "sourceName": "HomeFind",
@@ -25301,7 +25301,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/01f5abe5-96c5-462d-9ac9-c5741fcc37ad",
     "sourceName": "HomeFind",
@@ -25379,7 +25379,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0fc124ee-3510-4fb1-af8e-14675ecf35d6",
     "sourceName": "HomeFind",
@@ -25463,7 +25463,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b286d848-3183-4d58-b8df-290f09684cfd",
     "sourceName": "HomeFind",
@@ -25544,7 +25544,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/50c7e1ab-dd28-4f41-838b-e27e373f7a88",
     "sourceName": "HomeFind",
@@ -25628,7 +25628,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/9db59179-66b5-48b1-a14e-87a794d735b9",
     "sourceName": "HomeFind",
@@ -25721,7 +25721,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cac4acc8-4e79-42ea-8156-e8b72e48b185",
     "sourceName": "HomeFind",
@@ -25802,7 +25802,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fe657437-2abe-4141-8a26-06261cfe2aea",
     "sourceName": "HomeFind",
@@ -25878,7 +25878,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/18ae263b-0bc9-42de-9648-60658a4df120",
     "sourceName": "HomeFind",
@@ -25967,7 +25967,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a106e1a0-39f2-4be2-be9e-cab93a5c68e1",
     "sourceName": "HomeFind",
@@ -26045,7 +26045,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/51eee6b6-f80a-47fa-9112-a933356669aa",
     "sourceName": "HomeFind",
@@ -26138,7 +26138,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/31e20537-591b-451a-a70b-d97ca2e87af6",
     "sourceName": "HomeFind",
@@ -26231,7 +26231,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/11502161-3ca5-4fcd-9445-d0809bbe6403",
     "sourceName": "HomeFind",
@@ -26324,7 +26324,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b897c1e5-d33f-43fc-966e-d9ed48c0f596",
     "sourceName": "HomeFind",
@@ -26413,7 +26413,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1d34f9a9-b85d-4302-9c26-77921c38c446",
     "sourceName": "HomeFind",
@@ -26506,7 +26506,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a23c94d4-7026-483d-b126-8fbd34e1f714",
     "sourceName": "HomeFind",
@@ -26599,7 +26599,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0c0a40b9-5e60-4f40-b0c2-349855b18b40",
     "sourceName": "HomeFind",
@@ -26692,7 +26692,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/38a175b7-9333-4e94-b33a-cfcf4f853023",
     "sourceName": "HomeFind",
@@ -26785,7 +26785,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cb46533c-1e40-481a-abb3-05b784d4dc24",
     "sourceName": "HomeFind",
@@ -26878,7 +26878,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b99cf87a-2d55-4bf6-bdfa-d557c21c35d9",
     "sourceName": "HomeFind",
@@ -26971,7 +26971,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1fb54984-0da9-4aa0-b7b4-3dedab82317b",
     "sourceName": "HomeFind",
@@ -27064,7 +27064,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/46a5e9ce-f684-4fcd-b92d-12a170001a41",
     "sourceName": "HomeFind",
@@ -27156,7 +27156,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e8a9d52d-5fa3-4e3a-96ee-2227156357db",
     "sourceName": "HomeFind",
@@ -27249,7 +27249,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/6da2172b-25ef-41c4-bfdc-b39aa532102c",
     "sourceName": "HomeFind",
@@ -27342,7 +27342,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1a4f05d7-45ca-4da1-b025-5b1ab8b2f117",
     "sourceName": "HomeFind",
@@ -27435,7 +27435,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/809a5654-f0d4-4f93-b2b7-4767abd42b69",
     "sourceName": "HomeFind",
@@ -27528,7 +27528,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/da9dc456-3b0c-42e6-acd8-9d222b75a289",
     "sourceName": "HomeFind",
@@ -27609,7 +27609,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d18a5cba-ca29-4669-a43b-4c6c99ab55f9",
     "sourceName": "HomeFind",
@@ -27702,7 +27702,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/4229d3ee-951f-4333-8cc0-7acf01b655bb",
     "sourceName": "HomeFind",
@@ -27795,7 +27795,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/951e494a-5809-4ac6-9073-9827ce8eccef",
     "sourceName": "HomeFind",
@@ -27888,7 +27888,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/52068941-941b-4071-9883-6e1a31f69ab0",
     "sourceName": "HomeFind",
@@ -27981,7 +27981,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/aec165f6-925c-46a1-b621-9a82d0c3c786",
     "sourceName": "HomeFind",
@@ -28074,7 +28074,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/de99b40b-571d-4b86-9873-9f7cfee0b743",
     "sourceName": "HomeFind",
@@ -28167,7 +28167,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/6c1cc562-a59a-4387-8a0e-e816a7207ec9",
     "sourceName": "HomeFind",
@@ -28260,7 +28260,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/6cb09c0b-e3ca-4577-b3f1-c84a52a92a7f",
     "sourceName": "HomeFind",
@@ -28349,7 +28349,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3bf72292-0397-4b3b-ad16-f95097de6fb7",
     "sourceName": "HomeFind",
@@ -28442,7 +28442,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/499cf830-4ae2-402d-8ec7-bd28d1f0448f",
     "sourceName": "HomeFind",
@@ -28522,7 +28522,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/19ace96e-1ed6-4c4f-9e95-9277f17ed2b0",
     "sourceName": "HomeFind",
@@ -28602,7 +28602,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d9269ce3-207b-4549-9b99-25055e984ed6",
     "sourceName": "HomeFind",
@@ -28686,7 +28686,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a140373b-2504-4500-84d0-0a8661497370",
     "sourceName": "HomeFind",
@@ -28776,7 +28776,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/b43da840-ad11-4c06-a2b4-aae0b70b3788",
     "sourceName": "HomeFind",
@@ -28869,7 +28869,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/2f982f51-c31c-4fd5-8615-94a5183135b6",
     "sourceName": "HomeFind",
@@ -28961,7 +28961,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d6c1d17a-e3c5-46ff-af17-20d312079060",
     "sourceName": "HomeFind",
@@ -29054,7 +29054,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/43a6c040-f2c9-4f99-a9e6-c91fbd5c6c5d",
     "sourceName": "HomeFind",
@@ -29147,7 +29147,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/83fa589d-6c3b-4b6d-925f-e6a1ff473d7b",
     "sourceName": "HomeFind",
@@ -29220,7 +29220,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/752bacf3-5ea9-4063-9147-2ce9b581a2c4",
     "sourceName": "HomeFind",
@@ -29294,7 +29294,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ed0f3692-780c-494d-85bc-57f8981855c7",
     "sourceName": "HomeFind",
@@ -29387,7 +29387,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/201c74c5-82e2-4087-a6f5-508a36bf7307",
     "sourceName": "HomeFind",
@@ -29478,7 +29478,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e6feec13-ef24-4435-8ffd-e8491a00ff70",
     "sourceName": "HomeFind",
@@ -29571,7 +29571,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fe49ac94-b22e-44d6-8959-10d2be610e63",
     "sourceName": "HomeFind",
@@ -29664,7 +29664,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fe242c16-1741-457e-babf-f73b7394bc6b",
     "sourceName": "HomeFind",
@@ -29757,7 +29757,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/bf323c3f-96ba-455c-bcc6-28d35654de5a",
     "sourceName": "HomeFind",
@@ -29847,7 +29847,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/591221c7-5d66-43e1-b2ef-381e34c75c10",
     "sourceName": "HomeFind",
@@ -29940,7 +29940,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/7a267abb-4b74-4541-b981-795470387de2",
     "sourceName": "HomeFind",
@@ -30033,7 +30033,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/45b6c035-4b85-468a-a46e-673301315c27",
     "sourceName": "HomeFind",
@@ -30116,7 +30116,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fd7ac4af-3de3-4e18-9200-d110752441bc",
     "sourceName": "HomeFind",
@@ -30197,7 +30197,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/7d3f45f3-bc8c-4cb0-bfb8-d23b5e322601",
     "sourceName": "HomeFind",
@@ -30281,7 +30281,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1bc985f4-7673-460d-8b7a-fda68677fb34",
     "sourceName": "HomeFind",
@@ -30355,7 +30355,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/c0a4eff5-502d-4338-946a-357b880cf6b7",
     "sourceName": "HomeFind",
@@ -30448,7 +30448,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8a99f192-848e-444d-b834-f01fc1539efb",
     "sourceName": "HomeFind",
@@ -30541,7 +30541,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/af5d16da-dca7-43df-b4c2-1a1430a82846",
     "sourceName": "HomeFind",
@@ -30634,7 +30634,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fdb4f241-7c3c-4f89-b94f-8b754c6b3ed8",
     "sourceName": "HomeFind",
@@ -30727,7 +30727,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f331c36d-a653-47bc-bf11-c3967921b87e",
     "sourceName": "HomeFind",
@@ -30820,7 +30820,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/23a85094-5792-474f-861a-e03ee09e6543",
     "sourceName": "HomeFind",
@@ -30913,7 +30913,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/c5783bed-26e9-4ab2-8c80-ad18c4ad1040",
     "sourceName": "HomeFind",
@@ -31006,7 +31006,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/aaae1d72-3de6-4f2f-a265-05f098f2516b",
     "sourceName": "HomeFind",
@@ -31099,7 +31099,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/832dbc17-3072-482c-a84e-e2a7e57a88db",
     "sourceName": "HomeFind",
@@ -31192,7 +31192,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ad0a1b8a-0b8b-47e7-a474-f6d9b01b0230",
     "sourceName": "HomeFind",
@@ -31285,7 +31285,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/80edc08c-679e-4b48-92a1-ecc45533736d",
     "sourceName": "HomeFind",
@@ -31376,7 +31376,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/2d9f4b95-cfd1-4865-875e-235bf2c11db1",
     "sourceName": "HomeFind",
@@ -31469,7 +31469,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1c8879e1-2aa2-4ea0-8934-4347728b4d5a",
     "sourceName": "HomeFind",
@@ -31544,7 +31544,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0543ca10-80cf-47ec-8b67-61686f1036ff",
     "sourceName": "HomeFind",
@@ -31637,7 +31637,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d7d2a1d1-b04a-4fc8-8ca7-ed6f8481c970",
     "sourceName": "HomeFind",
@@ -31730,7 +31730,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/2759f8b3-9be2-4f62-8d4b-8105e45b4198",
     "sourceName": "HomeFind",
@@ -31823,7 +31823,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fe6d5ec0-8fce-4b80-8941-f49ce947e5ee",
     "sourceName": "HomeFind",
@@ -31916,7 +31916,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/45f3c5be-bc37-46e1-b56c-b683f7e937a0",
     "sourceName": "HomeFind",
@@ -32009,7 +32009,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/1e5f5b67-50dd-440d-8dac-197cf9680d1a",
     "sourceName": "HomeFind",
@@ -32102,7 +32102,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/22b445c6-6285-4768-a83d-2da78f7ca374",
     "sourceName": "HomeFind",
@@ -32185,7 +32185,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/e203fb61-2ba4-4690-9fe5-19ee18cea45c",
     "sourceName": "HomeFind",
@@ -32278,7 +32278,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/c1eb8ee4-e15f-423f-8f7b-bf5a6cda4101",
     "sourceName": "HomeFind",
@@ -32366,7 +32366,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/26d60707-eff9-4f81-a1bc-58dbb51512e7",
     "sourceName": "HomeFind",
@@ -32448,7 +32448,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f7277d13-7d22-4b85-8143-7677278684f0",
     "sourceName": "HomeFind",
@@ -32541,7 +32541,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/61286be1-d8a5-45c5-b2ad-df4277cc0e67",
     "sourceName": "HomeFind",
@@ -32627,7 +32627,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/df74c5c4-6ba5-42a9-8a91-fc9e4346a122",
     "sourceName": "HomeFind",
@@ -32711,7 +32711,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cb2229fd-cfe6-4def-ab9a-d94a47518da4",
     "sourceName": "HomeFind",
@@ -32804,7 +32804,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/2ca950f8-97c4-4ec0-a94c-71cc6fac07d6",
     "sourceName": "HomeFind",
@@ -32888,7 +32888,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/76017adc-ef6f-4053-82c4-8469137a6be6",
     "sourceName": "HomeFind",
@@ -32964,7 +32964,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/7b0a91bb-4399-40ab-b282-a52b7c49ef6b",
     "sourceName": "HomeFind",
@@ -33043,7 +33043,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d3d56935-722e-4725-9bc9-fc85d8fbca05",
     "sourceName": "HomeFind",
@@ -33136,7 +33136,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/678de445-c582-49a2-9abc-312ae87f5dc0",
     "sourceName": "HomeFind",
@@ -33229,7 +33229,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/4a0aa926-7be0-4ff0-b3b5-ec51a0993fd2",
     "sourceName": "HomeFind",
@@ -33322,7 +33322,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8c9df345-c465-48b5-9e68-81d850110b2e",
     "sourceName": "HomeFind",
@@ -33415,7 +33415,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0f448bd2-cea4-4c29-9afc-93f6a613a038",
     "sourceName": "HomeFind",
@@ -33508,7 +33508,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a54c1eb6-5649-4b64-ab18-da6a31b43fa9",
     "sourceName": "HomeFind",
@@ -33601,7 +33601,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/7bd8b651-17ad-439b-90e5-f30c55575aa5",
     "sourceName": "HomeFind",
@@ -33690,7 +33690,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/d30f7644-053d-4171-b9b9-7c0dfb51f93e",
     "sourceName": "HomeFind",
@@ -33783,7 +33783,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/cda0db34-ff72-454d-898a-e32dfcefc9bf",
     "sourceName": "HomeFind",
@@ -33876,7 +33876,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fb4ca094-881a-412f-99dd-fb7a91c48e25",
     "sourceName": "HomeFind",
@@ -33969,7 +33969,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ca624087-6533-4d6e-bb83-79520fd70804",
     "sourceName": "HomeFind",
@@ -34062,7 +34062,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f1016d83-3c13-42f9-8650-9c46fdffc3f8",
     "sourceName": "HomeFind",
@@ -34155,7 +34155,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8cfbe7ef-6669-42b1-a02f-3db2f5635af6",
     "sourceName": "HomeFind",
@@ -34248,7 +34248,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/7b8d3b5a-32b8-4dd5-b118-204a5d6db534",
     "sourceName": "HomeFind",
@@ -34341,7 +34341,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/21dcd0c0-bb1b-45d5-8ca2-fc9907ad3d66",
     "sourceName": "HomeFind",
@@ -34416,7 +34416,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/980c8588-b099-4a42-aa2b-ccc971ee0ed0",
     "sourceName": "HomeFind",
@@ -34509,7 +34509,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/32b82664-ce9d-449e-8518-bf827c6dbbd8",
     "sourceName": "HomeFind",
@@ -34592,7 +34592,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/96009072-da1d-4353-b273-84fc16a7e2ab",
     "sourceName": "HomeFind",
@@ -34685,7 +34685,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8125cfcb-d91c-474c-aa2a-b375084bbf60",
     "sourceName": "HomeFind",
@@ -34760,7 +34760,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/f4c870c4-646a-410e-95fb-822748bbcef6",
     "sourceName": "HomeFind",
@@ -34834,7 +34834,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3fc48c13-5fda-4fc9-ace5-3a793444b409",
     "sourceName": "HomeFind",
@@ -34927,7 +34927,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/ad162364-cbf5-41b4-bf2e-7e75d76f80b7",
     "sourceName": "HomeFind",
@@ -35002,7 +35002,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/45bcfc23-6078-4c73-b6b9-8f625c998072",
     "sourceName": "HomeFind",
@@ -35095,7 +35095,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/3dbda48b-4f4d-45f2-8722-4f12a2dd1753",
     "sourceName": "HomeFind",
@@ -35181,7 +35181,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/599b2191-bd97-49ac-9b31-21181d8647a8",
     "sourceName": "HomeFind",
@@ -35274,7 +35274,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/4e44fe22-8bf1-4642-86ea-8ab241b94697",
     "sourceName": "HomeFind",
@@ -35367,7 +35367,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/72415cd7-bc8c-4d76-a950-d407e23eea1e",
     "sourceName": "HomeFind",
@@ -35450,7 +35450,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fc8f6f75-7b2d-466a-950d-25e3cbbde397",
     "sourceName": "HomeFind",
@@ -35533,7 +35533,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/0b3250bb-599b-4d9d-bc9f-d646850e95de",
     "sourceName": "HomeFind",
@@ -35616,7 +35616,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/550fa7c0-1953-4753-995e-143b8284f0af",
     "sourceName": "HomeFind",
@@ -35700,7 +35700,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/a620cbca-5b9d-4886-a95d-a9c5fdd56492",
     "sourceName": "HomeFind",
@@ -35784,7 +35784,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/8117178e-e45c-4725-8742-1e94a5a5e3f6",
     "sourceName": "HomeFind",
@@ -35867,7 +35867,7 @@ export const selectedProperties: Property[] = [
       "Gated perimeter with multi-tier access control",
       "Executive entertaining terraces & solarium",
       "Underground private motor court & storage",
-      "Fiduciary cadastral title & structural due diligence completed"
+      "Cadastral title & structural due diligence verified"
     ],
     "sourceUrl": "https://homefind.cristianvaduva.com/listings/fe57fc11-9b44-4237-9d2d-8389bf9f935f",
     "sourceName": "HomeFind",

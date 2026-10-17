@@ -26,9 +26,9 @@ import CTASection from "@/components/editorial/CTASection";
 import PersonalArchiveGallery from "@/components/editorial/PersonalArchiveGallery";
 
 export const metadata: Metadata = {
-  title: "About & Fiduciary Mandate — Cristian Văduva | EXECUTIVE",
+  title: "Biografie & Experiență Profesională — Cristian Văduva | EXECUTIVE",
   description:
-    "Executive strategic advisor, investor, and fiduciary negotiator along the Monaco · Dubai · Bucharest axis. Verified academic synthesis of 3 degrees, 3 master's degrees, and international residencies in Madrid, France, and Malta.",
+    "Consilier strategic și investitor în proprietăți rezidențiale de prestigiu. Sinteză academică verificată: 3 licențe, 3 masterate și experiențe internaționale la Madrid, Amiens și Malta.",
   alternates: {
     canonical: "https://executive.cristianvaduva.com/about",
   },
@@ -60,24 +60,24 @@ interface ResidencyItem {
 const academicDegrees: DegreeItem[] = [
   {
     discipline: "Economics",
-    field: "Economic Strategy & Quantitative Modeling",
-    institution: "Valahia University · Faculty of Economics",
-    focus: "Macroeconomic liquidity assessment, capital allocation cycles, and quantitative feasibility models.",
-    relevance: "Provides the analytical underwriting basis for evaluating asset yields, inflation hedging, and acquisition viability.",
+    field: "Economic Strategy & Quantitative Analysis",
+    institution: "Studii Academice de Licență",
+    focus: "Analiză economică, cicluri de lichiditate și evaluarea fezabilității financiare a activelor imobiliare.",
+    relevance: "Furnizează fundamentul analitic pentru evaluarea randamentelor, rezistenței la inflație și viabilității achizițiilor.",
   },
   {
     discipline: "Law",
-    field: "Contractual Jurisprudence & Cadastral Law",
-    institution: "Valahia University · Faculty of Law",
-    focus: "Property rights, cadastral title forensic auditing, encumbrance verification, and bilateral acquisition covenants.",
-    relevance: "Shields private principals against contractual exposure, title disputes, and dual-agency brokerage liabilities.",
+    field: "Cadru Juridic și Drept Imobiliar",
+    institution: "Studii Academice de Licență",
+    focus: "Înțelegerea regimului proprietății, a publicității imobiliare și a structurii clauzelor contractuale (fără a practica avocatura sau oferi consultanță juridică autorizată).",
+    relevance: "Sprijină analiza preliminară a documentelor și coordonarea eficientă cu avocați și notari autorizați.",
   },
   {
     discipline: "Ecology",
-    field: "Environmental Science & Sustainable Systems",
-    institution: "Valahia University · Faculty of Environmental Science",
-    focus: "Site environmental impact, ecological durability, microclimatic exposure, and energy-efficiency standards.",
-    relevance: "Ensures long-term physical resilience and regulatory compliance for coastal, lakeside, and rural residential estates.",
+    field: "Ecologie și Durabilitate Ambientală",
+    institution: "Studii Academice de Licență",
+    focus: "Evaluarea expunerii microclimatice, a durabilității ecologice a amplasamentelor și a standardelor de eficiență energetică.",
+    relevance: "Asigură analiza rezistenței fizice și a conformității de mediu pentru proprietăți pe malul lacurilor sau în zone verzi.",
   },
 ];
 
@@ -85,113 +85,113 @@ const postGraduateMasters: MasterItem[] = [
   {
     degree: "Master's Degree",
     specialization: "Financial Management",
-    domain: "Corporate Finance & Capital Structuring",
-    description: "Advanced post-graduate specialization focusing on institutional capital structuring, debt syndication, and sovereign investment portfolio calibration.",
+    domain: "Gestiune Financiară & Analiză de Capital",
+    description: "Specializare aprofundată în gestiunea financiară a capitalului, analiza fluxurilor de numerar și evaluarea riscurilor investiționale.",
   },
   {
     degree: "Master's Degree",
     specialization: "Environmental Impact Assessment",
-    domain: "Ecological Engineering & Site Due Diligence",
-    description: "Post-graduate research on comprehensive environmental auditing, soil and water safety assessments, and physical durability under climate stress.",
+    domain: "Evaluarea Impactului asupra Mediului",
+    description: "Cercetare axată pe evaluarea impactului de mediu, analiza durabilității terenurilor și rezistența la factori microclimatici.",
   },
   {
     degree: "Master's Degree",
     specialization: "Information Security",
-    domain: "Cybersecurity & Encrypted Systems",
-    description: "Rigorous training in secure communications architecture, data privacy protocols, and digital asset defense for high-profile executive principals.",
+    domain: "Securitatea Informației & Comunicații Confidențiale",
+    description: "Pregătire avansată în arhitectura comunicațiilor protejate, confidențialitatea datelor și securitatea schimburilor de informații.",
   },
 ];
 
 const internationalResidencies: ResidencyItem[] = [
   {
     location: "Madrid",
-    country: "Spain",
-    duration: "1 Year",
-    focus: "Financial Management & European Real Estate Markets",
-    description: "One year of intensive financial management studies and institutional capital market research in Madrid, examining cross-border liquidity across Southern Europe.",
+    country: "Spania",
+    duration: "1 An",
+    focus: "Studii de Management Financiar",
+    description: "Un an de studii de gestiune financiară în Madrid, Spania, analizând mecanismele piețelor financiare europene.",
   },
   {
     location: "Amiens",
-    country: "France",
-    duration: "6 Months",
-    focus: "Academic Studies & Comparative Jurisprudence",
-    description: "Six months of specialized academic studies in Amiens, France, focusing on French patrimonial property law and European regulatory frameworks.",
+    country: "Franța",
+    duration: "6 Luni",
+    focus: "Studii Academice",
+    description: "Șase luni de studii universitare de specializare în Amiens, Franța.",
   },
   {
     location: "Valletta",
     country: "Malta",
-    duration: "3 Months",
-    focus: "Ecological Internship & Marine Ecosystems",
-    description: "Three-month ecological field internship analyzing Mediterranean coastal marine sustainability, water management, and island development standards.",
+    duration: "3 Luni",
+    focus: "Stagiu Ecologic",
+    description: "Trei luni de stagiu practic pe teren privind sustenabilitatea ecologică și conservarea ecosistemelor.",
   },
 ];
 
 const trajectorySteps = [
   {
     stage: "01",
-    phase: "CAPITAL MARKETS & UNDERWRITING",
-    title: "Quantitative Analysis & Order Routing Infrastructure",
-    desc: "Quantitative econometric analysis, order routing infrastructure, macroeconomic liquidity assessment, and structural risk management across European financial markets.",
-    focus: "Empirical Liquidity & Algorithmic Underwriting",
+    phase: "ANALIZĂ ECONOMICĂ & FINANCIARĂ",
+    title: "Fundamentare cantitativă și analiza piețelor",
+    desc: "Evaluare econometrică, monitorizarea lichidității și managementul riscurilor pe piețele imobiliare și de capital.",
+    focus: "Analiză Riguroasă & Modele Financiare",
   },
   {
     stage: "02",
-    phase: "CONTRACTUAL JURISPRUDENCE",
-    title: "Principal Negotiation & Cross-Border Sovereign Contracts",
-    desc: "High-stakes strategic negotiation, cross-border contract sovereignty, and executing complex corporate real estate acquisitions without fiduciary compromise.",
-    focus: "Unilateral Fiduciary Mandates & Title Sovereignty",
+    phase: "COORDONARE CONTRACTUALĂ",
+    title: "Asistență în negociere și documentare",
+    desc: "Consultanță strategică în tranzacții imobiliare complexe și coordonarea procesului de documentare alături de profesioniști calificați.",
+    focus: "Reprezentare Dedicată & Claritate Contractuală",
   },
   {
     stage: "03",
-    phase: "PRIME REAL ESTATE ORIGINATION",
-    title: "Off-Market Trophy Acquisitions & Masterplans",
-    desc: "Exclusive representation for discreet acquisitions, architectural due diligence, and confidential off-market sourcing of trophy estates across Monaco, the French Riviera, and Bucharest.",
-    focus: "Trophy Penthouses, Coastal Villas & Masterplan Developments",
+    phase: "IMOBILIAR PREMIUM & ORIENTARE",
+    title: "Identificare oportunități și analiză de proprietăți",
+    desc: "Orientare pentru achiziții discrete, verificarea preliminară a documentelor disponibile și selecție de proprietăți reprezentative.",
+    focus: "Proprietăți Rezidențiale Prime & Patrimoniu",
   },
   {
     stage: "04",
-    phase: "PATRIMONIAL DEFENSE ALLIANCE",
-    title: "Generali Romania Institutional Protection Partnership",
-    desc: "Capital preservation protocols, physical and cyber asset defense, and structural wealth defense mechanisms across multi-generational horizons in partnership with Generali Romania.",
-    focus: "Institutional Wealth Shielding & Generational Continuity",
+    phase: "PROTECȚIA ACTIVELOR",
+    title: "Parteneriat autorizat cu Generali România",
+    desc: "Soluții de transfer al riscurilor și asigurare a proprietăților de mare valoare la cost real de reconstrucție, în calitate de partener Generali România.",
+    focus: "Protecția Patrimoniului & Managementul Riscului",
   },
   {
     stage: "05",
-    phase: "INDEPENDENT EXECUTIVE ADVISORY",
-    title: "Integrated Fiduciary Counsel for Family Offices",
-    desc: "Discreet advisory counsel dedicated to a select circle of single family offices and sovereign principals along the Bucharest, Monaco, Zurich, and Dubai corridors.",
-    focus: "Cross-Disciplinary Sovereign Advisory Axis",
+    phase: "CONSULTANȚĂ IMOBILIARĂ INDEPENDENTĂ",
+    title: "Mandate de consultanță imobiliară pentru clienți privați",
+    desc: "Consultanță dedicată pentru investitori privați și familii, axată pe proprietăți din București și oportunități internaționale prin rețeaua Chestertons.",
+    focus: "București & Oportunități Internaționale",
   },
 ];
 
-const fiduciaryPillars = [
+const advisoryPillars = [
   {
     number: "01",
-    title: "Unilateral Exclusivity (Zero Dual Agency)",
-    subtitle: "Absolute Counterparty Independence",
-    desc: "We represent strictly one side of any transaction — either the buyer or the seller. We categorically eliminate the systemic conflict of interest prevalent in conventional brokerage models that collect commissions from both counterparties.",
-    impact: "100% fiduciary loyalty guaranteed to the retained principal.",
+    title: "Reprezentare Unilaterală Dedicată",
+    subtitle: "Claritate și eliminarea conflictelor de interese",
+    desc: "La solicitarea clientului și conform mandatului concret convenit, reprezentăm exclusiv interesele uneia dintre părți (cumpărător sau vânzător), asigurând transparență totală pe parcursul tranzacției.",
+    impact: "Reprezentare orientată transparent spre obiectivele mandantului.",
   },
   {
     number: "02",
-    title: "Swiss-Standard Non-Disclosure & Secrecy",
-    subtitle: "Institutional Privacy by Design",
-    desc: "Every transaction nuance, holding entity structure, and beneficial ownership identity is shielded behind stringent fiduciary covenants, encrypted communications, and pre-execution non-disclosure covenants.",
-    impact: "Total insulation against public disclosure and market rumor.",
+    title: "Confidențialitate Contractuală (NDA)",
+    subtitle: "Protecția informațiilor private convenită în scris",
+    desc: "Toate comunicările sensibile, circumstanțele tranzacției și datele contractuale sunt protejate prin acorduri bilaterale de confidențialitate (NDA) și proceduri sigure de schimb de documente.",
+    impact: "Discreție comercială și respectarea normelor legale aplicabile.",
   },
   {
     number: "03",
-    title: "Forensic Cadastral & Engineering Audit",
-    subtitle: "Pre-Capital Verification Protocol",
-    desc: "No asset is approved for acquisition prior to an exhaustive forensic audit of title deeds, encumbrances, historical permitting compliance, urban zoning certificates, and physical structural engineering integrity.",
-    impact: "Zero post-acquisition surprises or uninsurable encumbrances.",
+    title: "Procedură Structurată de Due Diligence",
+    subtitle: "Verificarea documentelor și a riscurilor identificate",
+    desc: "Procedură riguroasă de analiză a actelor de proprietate, a extraselor de carte funciară și a informațiilor urbanistice disponibile, în strânsă coordonare cu specialiști tehnici, notari și avocați.",
+    impact: "Identificarea din timp a riscurilor semnalate în documentație.",
   },
   {
     number: "04",
-    title: "Generational Wealth Preservation Focus",
-    subtitle: "Decadal Capital Compounding",
-    desc: "We do not sell short-term speculative hype. Every curated asset must demonstrate intrinsic architectural rarity, sustainable net operating yields, and balance sheet compounding resilience across adverse macroeconomic cycles.",
-    impact: "Capital defense prioritized over transactional volume.",
+    title: "Orientare spre Valoare Durabilă",
+    subtitle: "Decizii imobiliare fundamentate pe termen lung",
+    desc: "Nu promovăm speculații nerealiste. Fiecare oportunitate recomandată este analizată din perspectiva calității arhitecturale, a calității amplasamentului și a sustenabilității pe termen lung.",
+    impact: "Consultanță prudentă orientată spre păstrarea valorii capitalului.",
   },
 ];
 
@@ -217,7 +217,7 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-5 font-mono text-[10px] sm:text-xs uppercase tracking-[0.28em] text-[#93C8FF]">
               <div className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
-                <span className="font-semibold">01 // PROFILE & FIDUCIARY MANDATE</span>
+                <span className="font-semibold">01 // PROFILE & ADVISORY MANDATE</span>
                 <span className="text-white/20">/</span>
                 <span className="text-[#B8C2CF]">CRISTIAN VADUVA</span>
               </div>
@@ -245,43 +245,56 @@ export default function AboutPage() {
 
                 <div className="space-y-5 text-base sm:text-lg text-[#B8C2CF] font-light leading-relaxed max-w-2xl">
                   <p>
-                    Cristian Văduva directs capital allocation, ultra-prime real estate acquisitions, and discreet executive advisory along the Monaco · Bucharest · Dubai · Zurich axis.
+                    Cristian Văduva oferă consultanță strategică, orientare pentru tranzacții imobiliare premium și coordonarea structurilor de protecție a patrimoniului, cu activitate principală în București și acces la piețe internaționale.
                   </p>
-                  <p className="text-sm sm:text-base text-[#8A95A5] leading-relaxed">
-                    Operating strictly as an independent fiduciary counsel, his practice synthesizes quantitative econometric modeling, rigorous contractual law, and institutional asset security architecture. By rejecting commercial sales commissions in favor of sole-client retainers, every advisory mandate achieves uncompromised fiduciary alignment.
-                  </p>
+
+                  {/* Transparent Remuneration Block */}
+                  <div className="p-6 border border-white/[0.1] bg-[#0C1119] space-y-3 rounded-none">
+                    <h2 className="font-serif text-lg text-[#F5F4EF] font-medium">
+                      Cum lucrez și cum este stabilită remunerația
+                    </h2>
+                    <p className="text-xs sm:text-sm text-[#8A95A5] leading-relaxed">
+                      Remunerația depinde direct de serviciul solicitat și de acordul concret convenit cu fiecare client în parte. În funcție de natura mandatului (căutare și asistență la achiziție, reprezentare pentru vânzare sau consultanță de evaluare), colaborarea poate fi structurată printr-un onorariu/retainer dedicat, un comision de succes sau o altă formulă convenită contractual. Nu există un tarif generic aplicat identic tuturor situațiilor; fiecare serviciu, nivel de implicare și relație de parteneriat este stipulată clar în scris înaintea demarării activității.
+                    </p>
+                    <div className="pt-2">
+                      <Link href="/cum-lucrez" className="text-xs font-mono text-[#93C8FF] hover:underline inline-flex items-center gap-1.5">
+                        <span>Află mai multe despre etapele de colaborare și modul de stabilire a remunerației</span>
+                        <ArrowUpRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Key Fiduciary Rail */}
+                {/* Key Rail */}
                 <div className="pt-6 border-t border-white/[0.08] grid grid-cols-2 sm:grid-cols-3 gap-6 font-mono text-xs">
                   <div className="space-y-1">
                     <span className="text-[#93C8FF] block uppercase tracking-widest text-[9px] font-semibold">
-                      OPERATIONAL AXIS
+                      PREZENȚĂ PRINCIPALĂ
                     </span>
                     <span className="text-[#F5F4EF] font-sans font-medium text-sm block">
-                      Bucharest · Monaco · Dubai
+                      București, România
                     </span>
-                    <span className="text-[10px] text-[#8A95A5] block">European & Gulf Corridors</span>
+                    <span className="text-[10px] text-[#8A95A5] block">Parteneriate Internaționale</span>
                   </div>
 
                   <div className="space-y-1">
                     <span className="text-[#A97F60] block uppercase tracking-widest text-[9px] font-semibold">
-                      PRACTICE ALIGNMENT
+                      PARTENERIATE RELEVANTE
                     </span>
                     <span className="text-[#F5F4EF] font-sans font-medium text-sm block">
-                      Single Family Offices
+                      Chestertons · Generali
                     </span>
-                    <span className="text-[10px] text-[#8A95A5] block">Retained Principals Only</span>
+                    <span className="text-[10px] text-[#8A95A5] block">Colaborări Verificate</span>
                   </div>
 
                   <div className="space-y-1 col-span-2 sm:col-span-1">
                     <span className="text-[#93C8FF] block uppercase tracking-widest text-[9px] font-semibold">
-                      VERIFIED CATALOGUE
+                      CATALOG IMOBILIAR
                     </span>
                     <span className="text-[#F5F4EF] font-sans font-medium text-sm block">
-                      424 Audited Assets
+                      433 Proprietăți Documentate
                     </span>
-                    <span className="text-[10px] text-[#8A95A5] block">8,730 High-Res Photos</span>
+                    <span className="text-[10px] text-[#8A95A5] block">Selecție Structurată</span>
                   </div>
                 </div>
 
@@ -352,7 +365,7 @@ export default function AboutPage() {
 
                 <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#8A95A5] px-1">
                   <span>CANONICAL 1ST-PARTY PROVENANCE</span>
-                  <span className="text-[#93C8FF]">ISO/FIDUCIARY GRADE</span>
+                  <span className="text-[#93C8FF]">VERIFICAT FACTUAL</span>
                 </div>
               </div>
             </div>
@@ -370,7 +383,7 @@ export default function AboutPage() {
               eyebrow="02 // MULTIDISCIPLINARY ACADEMIC FOUNDATION"
               badge="DEGREES & SPECIALIZATIONS"
               title="Academic Synthesis: Economics, Law & Ecology"
-              description="Comprehensive fiduciary advisory requires concurrent mastery of corporate balance sheets, nuanced contractual covenants, and the physical environmental durability of real estate assets."
+              description="Comprehensive strategic advisory requires concurrent mastery of corporate balance sheets, nuanced contractual covenants, and the physical environmental durability of real estate assets."
             />
 
             {/* Sub-Module A: Tripartite University Degrees */}
@@ -556,13 +569,13 @@ export default function AboutPage() {
                 <div className="p-8 border border-[#A97F60]/30 bg-[#121721] space-y-6 relative shadow-xl">
                   <div className="space-y-3">
                     <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#A97F60] font-semibold block">
-                      FIDUCIARY ASSET DEFENSE PROTOCOL
+                      ASSET PROTECTION PROTOCOL
                     </span>
                     <p className="font-serif text-xl text-[#F5F4EF] leading-snug">
-                      Integrated Wealth Shielding & High-Value Asset Indemnification
+                      Soluții Structurate de Protecție a Reședințelor & Asigurare Clădiri de Valoare Mare
                     </p>
                     <p className="font-sans text-xs sm:text-sm text-[#B8C2CF] leading-relaxed font-light">
-                      A dedicated institutional collaboration with Generali Romania enables our advisory practice to architect comprehensive property, casualty, and executive liability coverage directly into sovereign real estate acquisitions and family office asset structures.
+                      Parteneriatul autorizat (contract de agent) cu Generali România permite integrarea directă a soluțiilor de protecție a proprietăților de mare valoare, evaluarea corectă a costului de reconstrucție și acoperirea riscurilor patrimoniale.
                     </p>
                   </div>
 
@@ -599,19 +612,19 @@ export default function AboutPage() {
         </section>
 
         {/* ======================================================== */}
-        {/* 03 // 2026 BUCHAREST RESIDENTIAL MARKET PARADOX           */}
+        {/* 03 // METODOLOGIE DE ANALIZĂ COMPARATIVĂ PIAȚĂ             */}
         {/* ======================================================== */}
         <section className="py-24 sm:py-32 lg:py-36 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-16 sm:space-y-20 border-b border-white/[0.08]">
           <SectionHeader
-            eyebrow="03 // MARKET SURVEILLANCE & EMPIRICAL ANALYSIS"
-            badge="REPORT AUG 2026"
-            title="The 2026 Bucharest Real Estate Market Paradox"
-            description="Empirical market intelligence published on cristianvaduva.com: Resale housing in Bucharest commands a 26% price premium over new residential developments."
+            eyebrow="03 // METODOLOGIE & ANALIZĂ COMPARATIVĂ"
+            badge="STANDARDE DE EVALUARE"
+            title="Analiza Prețurilor Rezidențiale: Criterii Like-for-Like"
+            description="O evaluare obiectivă a pieței rezidențiale din București impune separarea strictă a prețurilor de ofertă de cele efectiv tranzacționate și compararea exclusivă a proprietăților cu caracteristici similare în aceeași micro-zonă."
           />
 
           {/* Master Comparative Dossier Grid */}
           <div className="grid lg:grid-cols-12 gap-8 items-stretch">
-            {/* Metric Box 1: Resale (€2,653/sqm) */}
+            {/* Box 1: Prețuri de Listare vs Tranzacție */}
             <div className="lg:col-span-6 p-8 sm:p-10 border border-[#93C8FF]/40 bg-[#0C1119] space-y-6 relative shadow-2xl">
               <span className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#93C8FF]" />
               <span className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#93C8FF]" />
@@ -620,48 +633,45 @@ export default function AboutPage() {
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#93C8FF]" />
                   <span className="text-[#93C8FF] uppercase tracking-[0.2em] font-semibold">
-                    ESTABLISHED / RESALE HOUSING
+                    PREȚURI DE LISTARE VS. TRANZACȚIE
                   </span>
                 </div>
                 <span className="px-2.5 py-0.5 bg-[#93C8FF]/10 text-[#93C8FF] border border-[#93C8FF]/30 text-[10px] font-semibold">
-                  +26.4% PREMIUM SPREAD
+                  DISCIPLINĂ METODOLOGICĂ
                 </span>
               </div>
 
               <div className="space-y-3">
-                <div className="flex items-baseline gap-2">
-                  <span className="font-serif text-5xl sm:text-6xl text-[#F5F4EF] font-normal">
-                    €2,653
-                  </span>
-                  <span className="text-base font-mono text-[#8A95A5]">/ sqm average</span>
-                </div>
+                <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
+                  Distincția între așteptări și contracte
+                </h3>
                 <p className="font-sans text-sm text-[#B8C2CF] leading-relaxed font-light">
-                  Average transaction price in Bucharest prime established residential zones (Herăstrău, Dorobanți, Floreasca, Primăverii). Premium driven by unrepeatable central land scarcity, established municipal utility connections, and historical architectural provenance.
+                  Prețurile cerute pe portalurile imobiliare reflectă așteptările inițiale ale proprietarilor, în timp ce prețurile autentificate la notariat reflectă valoarea reală la care capitalul a fost transferat. Compararea datelor din zone ultracentrale (Herăstrău, Floreasca) cu cele din zone periferice distorsionează concluziile dacă nu se normalizează pentru aceeași micro-zonă.
                 </p>
               </div>
 
               <div className="space-y-2.5 pt-4 border-t border-white/[0.06] font-mono text-xs text-[#B8C2CF]">
                 <div className="flex items-center justify-between border-b border-white/[0.04] pb-2">
-                  <span className="text-[#8A95A5]">PRIMARY ZONES</span>
-                  <span className="text-[#F5F4EF]">Herăstrău · Dorobanți · Floreasca · Primăverii</span>
+                  <span className="text-[#8A95A5]">ACEEAȘI MICRO-ZONĂ</span>
+                  <span className="text-[#F5F4EF]">Criteriu eliminatoriu</span>
                 </div>
                 <div className="flex items-center justify-between border-b border-white/[0.04] pb-2">
-                  <span className="text-[#8A95A5]">LAND SCARCITY</span>
-                  <span className="text-[#93C8FF]">Near 100% Core Built-Out Density</span>
+                  <span className="text-[#8A95A5]">SUPRAFAȚĂ & FINISAJE</span>
+                  <span className="text-[#93C8FF]">Normalizare etalon util</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-[#8A95A5]">LIQUIDITY RATING</span>
-                  <span className="text-[#93C8FF] font-semibold">Immediate Sovereign Exit Liquidity</span>
+                  <span className="text-[#8A95A5]">SURSE CITATE</span>
+                  <span className="text-[#93C8FF] font-semibold">ANCPI & Documente Verificabile</span>
                 </div>
               </div>
 
               <div className="pt-4 border-t border-white/[0.06] font-mono text-[11px] text-[#93C8FF] flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
-                <span>Highest liquidity & sovereign wealth preservation resilience</span>
+                <span>Analize fundamentate exclusiv pe eșantioane comparabile direct</span>
               </div>
             </div>
 
-            {/* Metric Box 2: New Build (€2,099/sqm) */}
+            {/* Box 2: Factori Cheie în Evaluare */}
             <div className="lg:col-span-6 p-8 sm:p-10 border border-white/[0.12] bg-[#0C1119] space-y-6 relative shadow-2xl">
               <span className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#A97F60]" />
               <span className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#A97F60]" />
@@ -670,44 +680,41 @@ export default function AboutPage() {
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#A97F60]" />
                   <span className="text-[#A97F60] uppercase tracking-[0.2em] font-semibold">
-                    NEW RESIDENTIAL CONSTRUCTIONS
+                    STANDARDE DE COMPARABILITATE
                   </span>
                 </div>
                 <span className="px-2.5 py-0.5 bg-white/[0.05] text-[#8A95A5] border border-white/[0.1] text-[10px]">
-                  PERIPHERAL CORRIDORS
+                  LIKE-FOR-LIKE
                 </span>
               </div>
 
               <div className="space-y-3">
-                <div className="flex items-baseline gap-2">
-                  <span className="font-serif text-5xl sm:text-6xl text-[#F5F4EF] font-normal">
-                    €2,099
-                  </span>
-                  <span className="text-base font-mono text-[#8A95A5]">/ sqm average</span>
-                </div>
+                <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
+                  Criteriile unei decizii de achiziție sănătoase
+                </h3>
                 <p className="font-sans text-sm text-[#B8C2CF] leading-relaxed font-light">
-                  Average asking price across newly permitted developments. The inverted price differential highlights urban sprawl risk in peripheral sectors, permitting blockades in historical centers, and the imperative for structural title due diligence before off-plan commitments.
+                  Pentru a stabili dacă un activ imobiliar oferă un preț corect, evaluăm statutul juridic, istoricul cadastral, calitatea structurii și disponibilitatea utilităților, fără a promite randamente garantate sau a emite estimări fără suport faptic reproductibil.
                 </p>
               </div>
 
               <div className="space-y-2.5 pt-4 border-t border-white/[0.06] font-mono text-xs text-[#B8C2CF]">
                 <div className="flex items-center justify-between border-b border-white/[0.04] pb-2">
-                  <span className="text-[#8A95A5]">DEVELOPMENT RISK</span>
-                  <span className="text-[#A97F60]">PUZ Zoning Blockades & Permitting Lag</span>
+                  <span className="text-[#8A95A5]">CALITATE CONSTRUCTIVĂ</span>
+                  <span className="text-[#A97F60]">Audit tehnic de specialitate</span>
                 </div>
                 <div className="flex items-center justify-between border-b border-white/[0.04] pb-2">
-                  <span className="text-[#8A95A5]">INFRASTRUCTURE</span>
-                  <span className="text-[#8A95A5]">Utility & Transit Connection Exposure</span>
+                  <span className="text-[#8A95A5]">CADRU JURIDIC</span>
+                  <span className="text-[#8A95A5]">Verificare cărți funciare</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-[#8A95A5]">RECOMMENDATION</span>
-                  <span className="text-[#F5F4EF]">Strict Cadastral & Escrow Underwriting</span>
+                  <span className="text-[#8A95A5]">TRANSPARENȚĂ</span>
+                  <span className="text-[#F5F4EF]">Fără garanții de randament speculate</span>
                 </div>
               </div>
 
               <div className="pt-4 border-t border-white/[0.06] font-mono text-[11px] text-[#A97F60] flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 shrink-0" />
-                <span>Forensic evaluation required: infrastructure, zoning, and delivery timelines</span>
+                <span>Procedură meticuloasă de documentare înaintea oricărei oferte</span>
               </div>
             </div>
           </div>
@@ -716,35 +723,35 @@ export default function AboutPage() {
           <div className="p-8 sm:p-10 border border-white/[0.1] bg-[#121721] flex flex-col md:flex-row items-baseline justify-between gap-6 font-mono text-xs">
             <div className="space-y-1.5 max-w-3xl">
               <span className="text-[#93C8FF] uppercase tracking-[0.24em] text-[10px] font-semibold block">
-                FIDUCIARY INVESTMENT TAKEAWAY // BUCHAREST RESIDENTIAL STRATEGY
+                METODOLOGIE & RAPORT DE PIAȚĂ TRIMESTRIAL
               </span>
               <p className="font-sans text-sm sm:text-base text-[#F5F4EF] font-light leading-relaxed">
-                Rather than blindly acquiring off-plan units with speculative handover dates, institutional principals are advised to allocate toward rare central core resales or strictly audited masterplans with completed infrastructure delivered.
+                Consultă metodologia completă și structura raportului trimestrial dedicat pieței rezidențiale premium din București.
               </p>
             </div>
             <Link
-              href="/real-estate/properties"
+              href="/raport-piata"
               className="shrink-0 px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.18em] font-bold transition-all shadow-lg flex items-center gap-2 min-h-[44px]"
             >
-              <span className="text-[#07090D] font-bold">AUDIT PROPERTIES</span>
+              <span className="text-[#07090D] font-bold">VEZI RAPORT PIAȚĂ</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-[#07090D]" />
             </Link>
           </div>
         </section>
 
         {/* ======================================================== */}
-        {/* 04 // FIDUCIARY PHILOSOPHY & DOCTRINE                     */}
+        {/* 04 // ADVISORY PHILOSOPHY & PRINCIPLES                    */}
         {/* ======================================================== */}
         <section className="py-24 sm:py-32 lg:py-36 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-16 sm:space-y-20 border-b border-white/[0.08]">
           <SectionHeader
             eyebrow="04 // PROFESSIONAL PHILOSOPHY & ETHICS"
             badge="GOVERNANCE STANDARDS"
-            title="The Cristian Văduva Fiduciary Doctrine"
+            title="The Cristian Văduva Advisory Principles"
             description="In an industry plagued by superficial brokerage and concealed transaction fees, this practice is grounded upon four uncompromising principles of professional conduct."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {fiduciaryPillars.map((pillar) => (
+            {advisoryPillars.map((pillar) => (
               <div
                 key={pillar.number}
                 className="p-8 sm:p-10 border border-white/[0.09] bg-[#0C1119] space-y-5 hover:border-[#93C8FF]/50 transition-all duration-300 relative group shadow-xl"
@@ -814,7 +821,7 @@ export default function AboutPage() {
             <SectionHeader
               eyebrow="06 // EVOLUTION & PRACTICE CHRONOLOGY"
               badge="PRACTICE TRAJECTORY"
-              title="Phases of Executive & Fiduciary Consolidation"
+              title="Phases of Executive & Strategic Consolidation"
               description="From capital market liquidity research and econometric underwriting to sovereign trophy asset negotiations and multi-generational family office defense."
             />
 
@@ -858,7 +865,7 @@ export default function AboutPage() {
         <CTASection
           eyebrow="PRIVATE ADVISORY PROTOCOL"
           title="Initiate a Confidential Strategic Consultation."
-          description="Every acquisition, capital structuring, or asset preservation mandate is evaluated personally by Cristian Văduva. Initial consultations operate under strict professional secrecy and pre-execution non-disclosure covenants."
+          description="Every acquisition, capital structuring, or asset preservation mandate is evaluated personally by Cristian Văduva. Initial consultations operate under strict confidentiality agreements and pre-execution non-disclosure covenants."
           primaryActionText="INITIATE PRIVATE PROTOCOL"
           primaryActionHref="/contact"
           secondaryActionText="WHATSAPP DESK (+43 650 953 6345)"
