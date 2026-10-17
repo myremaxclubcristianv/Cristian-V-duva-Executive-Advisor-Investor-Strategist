@@ -2,8 +2,10 @@ import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import crypto from "crypto";
 import { getSupabaseAdminClient } from "@/lib/supabase";
-import { sendTelegramMessage } from "@/lib/telegram";
 import { parseUserAgent } from "@/lib/uaParser";
+import { extractCoarseLocation } from "@/lib/analytics/cleanGeo";
+import { getOrCreateSession, shouldSendNewVisitorAlert } from "@/lib/analytics/storage";
+import { buildNewVisitorMessage, dispatchTelegramIntelligence } from "@/lib/analytics/telegramIntelligence";
 
 const SESSION_COOKIE_NAME = "cv_session_id";
 const ALERT_COOKIE_NAME = "cv_alert_sent";
@@ -25,6 +27,13 @@ export async function POST(request: Request) {
     // Read payload safely
     let path = "/";
     let referrer = "Direct";
+    let pageTitle = "";
+    let utmSource: string | undefined;
+    let utmMedium: string | undefined;
+    let utmCampaign: string | undefined;
+    let utmContent: string | undefined;
+    let utmTerm: string | undefined;
+    let screenResolution: string | undefined;
 
     try {
       const body = await request.json();
@@ -35,6 +44,15 @@ export async function POST(request: Request) {
         if (typeof body.referrer === "string" && body.referrer.trim()) {
           referrer = body.referrer.trim().slice(0, 250);
         }
+        if (typeof body.pageTitle === "string" && body.pageTitle.trim()) {
+          pageTitle = body.pageTitle.trim().slice(0, 150);
+        }
+        if (typeof body.utmSource === "string") utmSource = body.utmSource.slice(0, 100);
+        if (typeof body.utmMedium === "string") utmMedium = body.utmMedium.slice(0, 100);
+        if (typeof body.utmCampaign === "string") utmCampaign = body.utmCampaign.slice(0, 100);
+        if (typeof body.utmContent === "string") utmContent = body.utmContent.slice(0, 100);
+        if (typeof body.utmTerm === "string") utmTerm = body.utmTerm.slice(0, 100);
+        if (typeof body.screenResolution === "string") screenResolution = body.screenResolution.slice(0, 30);
       }
     } catch {
       // Body reading is optional
@@ -44,80 +62,80 @@ export async function POST(request: Request) {
     const headers = request.headers;
     const userAgent = headers.get("user-agent") || "";
     const parsedUa = parseUserAgent(userAgent);
+    const { country, city } = extractCoarseLocation(headers);
 
-    // Reliable Vercel coarse location headers if present
-    const rawCountry = headers.get("x-vercel-ip-country") || headers.get("cf-ipcountry");
-    const rawCity = headers.get("x-vercel-ip-city");
+    // Register session in in-memory intelligence storage
+    const session = getOrCreateSession(
+      sessionId,
+      {
+        pagePath: path,
+        pageTitle,
+        referrer,
+        utmSource,
+        utmMedium,
+        utmCampaign,
+        utmContent,
+        utmTerm,
+        deviceType: parsedUa.device.toLowerCase().includes("phone") || parsedUa.device.toLowerCase().includes("android")
+          ? "mobile"
+          : parsedUa.device.toLowerCase().includes("pad")
+          ? "tablet"
+          : "desktop",
+        screenResolution,
+        operatingSystem: parsedUa.os,
+        browserName: parsedUa.browser,
+      },
+      country,
+      city
+    );
 
-    const country = rawCountry && rawCountry !== "XX" ? rawCountry : undefined;
-    const city = rawCity ? decodeURIComponent(rawCity) : undefined;
-    const locationText = country && city ? `${city}, ${country}` : country || "Coarse / Protected";
-
-    // 1. Record visit in Supabase
-    const { client: supabase } = getSupabaseAdminClient();
-    if (supabase) {
-      const { error: insertError } = await supabase.from("site_visits").insert({
-        session_id: sessionId,
-        path,
-        referrer: referrer || "Direct",
-        user_agent: userAgent.slice(0, 300),
-        device_type: parsedUa.device,
-        browser: parsedUa.browser,
-        os: parsedUa.os,
-        country: country || null,
-        city: city || null,
-        is_new_session: isNewSession,
-      });
-
-      if (insertError) {
-        console.warn("[VISITS_API] Supabase visit record warning:", insertError.message);
+    // 1. Record visit in Supabase if configured (optional, silent fallback)
+    try {
+      const { client: supabase } = getSupabaseAdminClient();
+      if (supabase) {
+        supabase.from("site_visits").insert({
+          session_id: sessionId,
+          path,
+          referrer: referrer || "Direct",
+          user_agent: userAgent.slice(0, 300),
+          device_type: parsedUa.device,
+          browser: parsedUa.browser,
+          os: parsedUa.os,
+          country: country !== "Unknown" ? country : null,
+          city: city !== "Unknown" ? city : null,
+          is_new_session: isNewSession,
+        }).then(() => {}, () => {});
       }
+    } catch {
+      // Supabase is non-critical for visit notifications
     }
 
-    // 2. Telegram Alert ONLY for NEW sessions that have not received an alert
+    // 2. Telegram Alert for NEW sessions that have not received an alert
     let alertDispatched = false;
 
-    if (isNewSession && !alertSentCookie) {
-      const timeFormatted = new Date().toLocaleString("en-GB", {
-        timeZone: "Europe/Bucharest",
-        dateStyle: "medium",
-        timeStyle: "short",
+    if (isNewSession && !alertSentCookie && shouldSendNewVisitorAlert(session)) {
+      const message = buildNewVisitorMessage(session, {
+        id: `evt_init_${Date.now()}`,
+        eventType: "SESSION_START",
+        pagePath: path,
+        pageTitle,
+        timestamp: new Date().toISOString(),
+        sessionId,
+        deviceType: session.deviceType,
       });
 
-      const telegramText = [
-        "NEW WEBSITE VISITOR",
-        "",
-        "Cristian Văduva Executive",
-        "",
-        `Page:`,
-        path,
-        "",
-        `Device:`,
-        parsedUa.device,
-        "",
-        `Browser:`,
-        parsedUa.browser,
-        "",
-        `OS:`,
-        parsedUa.os,
-        "",
-        `Referrer:`,
-        referrer || "Direct",
-        "",
-        `Location:`,
-        locationText,
-        "",
-        `Time:`,
-        `${timeFormatted} (RO)`,
-        "",
-        `Session:`,
-        sessionId.slice(0, 18),
-      ].join("\n");
+      // Dispatch asynchronously without blocking response
+      dispatchTelegramIntelligence(message)
+        .then((res) => {
+          if (res.success) {
+            console.log(`[TELEGRAM_VISITOR_INTELLIGENCE] NEW_VISITOR_ALERT_SENT for session ${sessionId.slice(0, 8)}`);
+          }
+        })
+        .catch((err) => {
+          console.warn("[TELEGRAM_VISITOR_INTELLIGENCE] Notification dispatch warning:", err.message);
+        });
 
-      const tgResult = await sendTelegramMessage(telegramText);
-      if (tgResult.success) {
-        alertDispatched = true;
-      }
+      alertDispatched = true;
     }
 
     // 3. Prepare response with session cookies

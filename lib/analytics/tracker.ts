@@ -22,12 +22,12 @@ export function getOrCreateClientSessionId(): string {
   try {
     let sid = sessionStorage.getItem(SESSION_STORAGE_KEY);
     if (!sid) {
-      sid = `sid_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
+      sid = `cv_sid_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
       sessionStorage.setItem(SESSION_STORAGE_KEY, sid);
     }
     return sid;
   } catch {
-    return `sid_temp_${Date.now()}`;
+    return `cv_sid_temp_${Date.now()}`;
   }
 }
 
@@ -37,6 +37,15 @@ export function getDeviceType(): "mobile" | "tablet" | "desktop" {
   if (width < 768) return "mobile";
   if (width < 1024) return "tablet";
   return "desktop";
+}
+
+export function getScreenResolution(): string {
+  if (typeof window === "undefined") return "";
+  try {
+    return `${window.screen.width}x${window.screen.height}`;
+  } catch {
+    return "";
+  }
 }
 
 export function trackEvent(
@@ -61,7 +70,10 @@ export function trackEvent(
       utmSource: urlParams.get("utm_source") || undefined,
       utmMedium: urlParams.get("utm_medium") || undefined,
       utmCampaign: urlParams.get("utm_campaign") || undefined,
+      utmContent: urlParams.get("utm_content") || undefined,
+      utmTerm: urlParams.get("utm_term") || undefined,
       deviceType: getDeviceType(),
+      screenResolution: getScreenResolution(),
       metadata,
     };
 
@@ -79,5 +91,32 @@ export function trackEvent(
     }
   } catch {
     // Fail silently in browser, zero runtime impact
+  }
+}
+
+export function sendSessionSummaryBeacon() {
+  if (!isAnalyticsPermitted()) return;
+  try {
+    const sessionId = getOrCreateClientSessionId();
+    const payload = {
+      sessionId,
+      eventType: "session_summary",
+      pagePath: window.location.pathname,
+      pageTitle: document.title,
+      deviceType: getDeviceType(),
+    };
+    const blob = new Blob([JSON.stringify(payload)], { type: "application/json" });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon("/api/events", blob);
+    } else {
+      fetch("/api/events", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        keepalive: true,
+      }).catch(() => {});
+    }
+  } catch {
+    // Fail silently
   }
 }
