@@ -164,6 +164,19 @@ async function runTests() {
     assert.strictEqual(res.status, 401, "Expired token must be rejected");
   });
 
+  await test("Admin Auth: Token signed with legacy key or salt is rejected with 401 (Dedicated key enforced)", async () => {
+    const crypto = await import("crypto");
+    const fakeId = "0123456789abcdef0123456789abcdef0123456789abcdef";
+    const ts = Date.now().toString();
+    const payload = `${fakeId}.${ts}`;
+    const legacySig = crypto.createHmac("sha256", "legacy-key").update(payload).digest("hex");
+    const legacyToken = `${payload}.${legacySig}`;
+    const res = await fetch(`${BASE_URL}/api/admin/auth/check`, {
+      headers: { Cookie: `executive_auth_session=${legacyToken}` },
+    });
+    assert.strictEqual(res.status, 401, "Legacy-signed token must be rejected");
+  });
+
   // 3. CSRF Protection
   await test("CSRF: POST /api/photos with cross-site Origin returns 403 Forbidden", async () => {
     const res = await fetch(`${BASE_URL}/api/photos`, {
@@ -289,20 +302,27 @@ async function runTests() {
       },
       body: formData,
     });
-    assert.strictEqual(res.status, 200);
-    const json = await res.json();
-    assert.strictEqual(json.success, true);
-    assert(json.photo?.id);
+    // In production without Supabase cloud storage, server MUST return controlled 503 (no phantom writes)
+    if (res.status === 503) {
+      const json = await res.json();
+      assert.strictEqual(json.success, false);
+      assert(json.error?.includes("Stocarea persistentă"));
+    } else {
+      assert.strictEqual(res.status, 200);
+      const json = await res.json();
+      assert.strictEqual(json.success, true);
+      assert(json.photo?.id);
 
-    // Clean up synthetic test photo immediately to preserve data pristine state
-    if (json.photo?.id) {
-      await fetch(`${BASE_URL}/api/photos/${json.photo.id}`, {
-        method: "DELETE",
-        headers: {
-          Origin: "http://localhost:3000",
-          Cookie: `executive_auth_session=${validSessionCookie}`,
-        },
-      });
+      // Clean up synthetic test photo immediately to preserve data pristine state
+      if (json.photo?.id) {
+        await fetch(`${BASE_URL}/api/photos/${json.photo.id}`, {
+          method: "DELETE",
+          headers: {
+            Origin: "http://localhost:3000",
+            Cookie: `executive_auth_session=${validSessionCookie}`,
+          },
+        });
+      }
     }
   });
 

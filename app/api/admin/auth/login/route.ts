@@ -87,6 +87,13 @@ export async function POST(req: NextRequest) {
 
     // 6. Issue cryptographically signed tamper-proof session token
     const sessionToken = createSignedAdminSession();
+    if (!sessionToken) {
+      console.error("[AUTH_LOGIN_ERROR] Dedicated ADMIN_SECRET_KEY is not configured or insufficient.");
+      return NextResponse.json(
+        { success: false, error: "Serviciul de autentificare nu este configurat." },
+        { status: 500 }
+      );
+    }
 
     const response = NextResponse.json({
       success: true,

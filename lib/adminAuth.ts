@@ -1,24 +1,19 @@
 import crypto from "crypto";
 import { NextRequest } from "next/server";
 
-// Secure server-side HMAC signing key derivation
-// If no persistent server secret is present in environment, generate an isolated ephemeral 256-bit key
-// per process to prevent any predictable fallback signature vulnerability.
-let ephemeralInstanceSecret: string | null = null;
-function getDerivedSigningKey(): Buffer {
-  const secret =
-    process.env.ADMIN_SECRET_KEY ||
-    process.env.TELEGRAM_BOT_TOKEN ||
-    process.env.SUPABASE_SERVICE_ROLE_KEY;
-
-  if (secret) {
-    return crypto.createHmac("sha256", "cv-executive-auth-salt").update(secret).digest();
+/**
+ * Dedicated server-side HMAC signing key derivation.
+ * Strictly uses ADMIN_SECRET_KEY from environment (minimum 32 bytes of entropy).
+ * Zero fallback to TELEGRAM_BOT_TOKEN or third-party service tokens.
+ * Zero fallback to predictable static keys or ephemeral per-instance random keys.
+ * Fails-closed if ADMIN_SECRET_KEY is absent or insufficient.
+ */
+function getDedicatedSigningKey(): Buffer | null {
+  const secret = process.env.ADMIN_SECRET_KEY;
+  if (!secret || typeof secret !== "string" || secret.trim().length < 32) {
+    return null;
   }
-
-  if (!ephemeralInstanceSecret) {
-    ephemeralInstanceSecret = crypto.randomBytes(32).toString("hex");
-  }
-  return crypto.createHmac("sha256", "cv-executive-auth-salt").update(ephemeralInstanceSecret).digest();
+  return crypto.createHmac("sha256", "cv-executive-dedicated-auth-salt").update(secret.trim()).digest();
 }
 
 // Rate limiting map for admin login: max 5 failed attempts per 15 minutes per IP
@@ -102,21 +97,31 @@ export function safeCompare(a: string, b: string): boolean {
 /**
  * Create a cryptographically signed session token:
  * format: <randomId>.<timestamp>.<signature>
+ * Returns null if ADMIN_SECRET_KEY is not configured.
  */
-export function createSignedAdminSession(): string {
+export function createSignedAdminSession(): string | null {
+  const signingKey = getDedicatedSigningKey();
+  if (!signingKey) {
+    return null;
+  }
   const randomId = crypto.randomBytes(24).toString("hex");
   const timestamp = Date.now().toString();
   const payload = `${randomId}.${timestamp}`;
-  const signingKey = getDerivedSigningKey();
   const signature = crypto.createHmac("sha256", signingKey).update(payload).digest("hex");
   return `${payload}.${signature}`;
 }
 
 /**
- * Verify signed session token with strict 24-hour lifetime and revocation check
+ * Verify signed session token with strict 24-hour lifetime and revocation check.
+ * Fails closed if ADMIN_SECRET_KEY is missing or invalid.
  */
 export function verifyAdminSessionToken(token?: string | null): boolean {
   if (!token || typeof token !== "string") return false;
+
+  const signingKey = getDedicatedSigningKey();
+  if (!signingKey) {
+    return false;
+  }
 
   // Check if token was explicitly revoked
   if (isSessionRevoked(token)) {
@@ -141,7 +146,6 @@ export function verifyAdminSessionToken(token?: string | null): boolean {
 
   // Signature verification with derived HMAC key
   const payload = `${randomId}.${timestampStr}`;
-  const signingKey = getDerivedSigningKey();
   const expectedSignature = crypto.createHmac("sha256", signingKey).update(payload).digest("hex");
   return safeCompare(signature, expectedSignature);
 }

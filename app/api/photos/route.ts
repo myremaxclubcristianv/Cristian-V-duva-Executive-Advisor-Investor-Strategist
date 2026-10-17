@@ -130,16 +130,31 @@ export async function POST(req: NextRequest) {
         public_url = supabaseResult.publicUrl;
         storage_path = supabaseResult.storagePath;
       } else {
-        // 2. Resilient Fallback: Persistent server directory
-        const uploadsDir = path.join(process.cwd(), "public", "uploads", "photos");
-        if (!fs.existsSync(uploadsDir)) {
-          fs.mkdirSync(uploadsDir, { recursive: true });
+        // In local development/testing without cloud storage, allow local directory
+        if (process.env.NODE_ENV !== "production") {
+          const uploadsDir = path.join(process.cwd(), "public", "uploads", "photos");
+          if (!fs.existsSync(uploadsDir)) {
+            fs.mkdirSync(uploadsDir, { recursive: true });
+          }
+          const filePath = path.join(uploadsDir, fileName);
+          fs.writeFileSync(filePath, buffer);
+          src = `/uploads/photos/${fileName}`;
+          public_url = src;
+          storage_path = `public/uploads/photos/${fileName}`;
+        } else {
+          // In production, reject ephemeral uploads with a controlled error to prevent phantom uploads
+          console.error(
+            "[API_PHOTOS_ERROR] Persistent cloud storage (Supabase) is unavailable. Ephemeral local writes are disabled in production."
+          );
+          return NextResponse.json(
+            {
+              success: false,
+              error:
+                "Stocarea persistentă pentru fotografii noi nu este configurată pe server. Vă rugăm să configurați serviciul de stocare în cloud.",
+            },
+            { status: 503 }
+          );
         }
-        const filePath = path.join(uploadsDir, fileName);
-        fs.writeFileSync(filePath, buffer);
-        src = `/uploads/photos/${fileName}`;
-        public_url = src;
-        storage_path = `public/uploads/photos/${fileName}`;
       }
     }
 
