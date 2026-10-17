@@ -6,9 +6,10 @@ import {
   PhotoCategory,
   PhotoOrientation,
 } from "@/lib/photoStore";
-import { verifyAdminRequest } from "@/lib/adminAuth";
+import { verifyAdminRequest, verifyCsrfOrigin, validateImageBuffer } from "@/lib/adminAuth";
 import fs from "fs";
 import path from "path";
+import crypto from "crypto";
 
 export const dynamic = "force-dynamic";
 
@@ -43,7 +44,15 @@ export async function GET() {
 
 export async function POST(req: NextRequest) {
   try {
-    // Enforce administrative authorization
+    // 1. CSRF Protection
+    if (!verifyCsrfOrigin(req)) {
+      return NextResponse.json(
+        { success: false, error: "CSRF verification failed." },
+        { status: 403 }
+      );
+    }
+
+    // 2. Enforce administrative authorization
     if (!verifyAdminRequest(req)) {
       return NextResponse.json(
         { success: false, error: "Acces neautorizat. Autentificarea este obligatorie." },
@@ -93,16 +102,27 @@ export async function POST(req: NextRequest) {
 
       const bytes = await file.arrayBuffer();
       const buffer = Buffer.from(bytes);
-      const sanitizedName = file.name
-        .replace(/[^a-zA-Z0-9.-]/g, "_")
-        .toLowerCase();
-      const fileName = `${Date.now()}_${sanitizedName || `photo${extension}`}`;
 
-      // 1. Primary: Upload to Supabase Storage if available
+      // 3. Binary Magic Bytes Validation (Deep file signature inspection)
+      const binaryValidation = validateImageBuffer(buffer);
+      if (!binaryValidation.valid) {
+        return NextResponse.json(
+          { success: false, error: binaryValidation.error || "Fișierul încărcat nu este o imagine validă." },
+          { status: 400 }
+        );
+      }
+
+      // Enforce safe filename and extension derived from verified binary format
+      const safeExtension = binaryValidation.extension || ".jpg";
+      const baseRaw = path.basename(file.name).replace(/\.[^/.]+$/, "");
+      const sanitizedBase = baseRaw.replace(/[^a-zA-Z0-9_-]/g, "_").slice(0, 40) || "photo";
+      const fileName = `${Date.now()}_${crypto.randomUUID().slice(0, 8)}_${sanitizedBase}${safeExtension}`;
+
+      // 4. Primary: Upload to Supabase Storage if available
       const supabaseResult = await uploadToSupabaseStorage(
         fileName,
         buffer,
-        file.type || "image/jpeg"
+        binaryValidation.mime || "image/jpeg"
       );
 
       if (supabaseResult) {

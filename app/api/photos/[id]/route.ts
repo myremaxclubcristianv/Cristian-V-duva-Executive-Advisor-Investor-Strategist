@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { deleteStoredPhoto, updateStoredPhoto } from "@/lib/photoStore";
-import { verifyAdminRequest } from "@/lib/adminAuth";
+import { verifyAdminRequest, verifyCsrfOrigin } from "@/lib/adminAuth";
 
 export const dynamic = "force-dynamic";
 
@@ -9,6 +9,13 @@ export async function DELETE(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    if (!verifyCsrfOrigin(req)) {
+      return NextResponse.json(
+        { success: false, error: "CSRF verification failed" },
+        { status: 403 }
+      );
+    }
+
     if (!verifyAdminRequest(req)) {
       return NextResponse.json(
         { success: false, error: "Unauthorized" },
@@ -50,6 +57,13 @@ export async function PATCH(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    if (!verifyCsrfOrigin(req)) {
+      return NextResponse.json(
+        { success: false, error: "CSRF verification failed" },
+        { status: 403 }
+      );
+    }
+
     if (!verifyAdminRequest(req)) {
       return NextResponse.json(
         { success: false, error: "Unauthorized" },

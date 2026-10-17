@@ -5,23 +5,29 @@ import {
   resetLoginRateLimit,
   safeCompare,
   createSignedAdminSession,
+  verifyCsrfOrigin,
 } from "@/lib/adminAuth";
 
 export const dynamic = "force-dynamic";
 
-const VALID_PASSCODES = [
-  process.env.ADMIN_PASSWORD,
-  "cristian2026",
-  "executive2026",
-  "aix2026",
-  "cristianvaduva",
-].filter((p): p is string => Boolean(p && typeof p === "string" && p.trim().length > 0));
+// If ADMIN_PASSWORD is set in environment, prioritize it exclusively to prevent credential confusion.
+const VALID_PASSCODES = process.env.ADMIN_PASSWORD
+  ? [process.env.ADMIN_PASSWORD]
+  : ["cristian2026", "executive2026", "aix2026", "cristianvaduva"];
 
 export async function POST(req: NextRequest) {
   try {
+    // 1. CSRF Origin Verification
+    if (!verifyCsrfOrigin(req)) {
+      return NextResponse.json(
+        { success: false, error: "CSRF verification failed." },
+        { status: 403 }
+      );
+    }
+
     const clientIp = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "127.0.0.1";
 
-    // 1. Rate limiting check (5 attempts per 15 minutes)
+    // 2. Rate limiting check (5 attempts per 15 minutes)
     const rateLimit = checkLoginRateLimit(clientIp);
     if (!rateLimit.allowed) {
       return NextResponse.json(
@@ -33,9 +39,26 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const body = await req.json().catch(() => ({}));
-    const { password, email } = body;
+    // 3. Size check on JSON payload (max 5KB)
+    const rawText = await req.text();
+    if (rawText.length > 5000) {
+      return NextResponse.json(
+        { success: false, error: "Cerere invalidă." },
+        { status: 413 }
+      );
+    }
 
+    let body: { password?: string; email?: string } = {};
+    try {
+      body = JSON.parse(rawText);
+    } catch {
+      return NextResponse.json(
+        { success: false, error: "Format payload invalid." },
+        { status: 400 }
+      );
+    }
+
+    const { password, email } = body;
     const enteredPass = (password || "").trim();
     if (!enteredPass) {
       return NextResponse.json(
@@ -44,23 +67,25 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 2. Constant-time comparison across allowed passcodes
+    // 4. Constant-time comparison across allowed passcodes
     const isAuthorized = VALID_PASSCODES.some((valid) =>
       safeCompare(valid.toLowerCase(), enteredPass.toLowerCase())
     );
 
     if (!isAuthorized) {
       recordFailedLogin(clientIp);
+      // Introduce defensive artificial delay against timing attacks and automated brute-force
+      await new Promise((resolve) => setTimeout(resolve, 600));
       return NextResponse.json(
         { success: false, error: "Cod de acces incorect. Vă rugăm să reîncercați." },
         { status: 401 }
       );
     }
 
-    // 3. Reset rate limit upon successful authentication
+    // 5. Reset rate limit upon successful authentication
     resetLoginRateLimit(clientIp);
 
-    // 4. Issue cryptographically signed tamper-proof session token
+    // 6. Issue cryptographically signed tamper-proof session token
     const sessionToken = createSignedAdminSession();
 
     const response = NextResponse.json({
@@ -79,7 +104,7 @@ export async function POST(req: NextRequest) {
       secure: process.env.NODE_ENV === "production",
       sameSite: "lax",
       path: "/",
-      maxAge: 60 * 60 * 24 * 30, // 30 days
+      maxAge: 60 * 60 * 24, // 24 hours strict executive session
     });
 
     return response;
