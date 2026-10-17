@@ -28,6 +28,8 @@ export default function PropertyCadranFeature({
   const formattedIndex = index < 10 ? `0${index}` : `${index}`;
   const totalPhotos = property.galleryImages?.length || 1;
 
+  const isFirst = index === 1;
+
   return (
     <EditorialCadran
       watermarkNumber={formattedIndex}
@@ -39,7 +41,7 @@ export default function PropertyCadranFeature({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-5 font-mono text-[10px] sm:text-xs">
         <div className="flex items-center gap-3">
           <span className="px-2 py-0.5 bg-[#93C8FF]/15 border border-[#93C8FF]/30 text-[#93C8FF] font-bold tracking-[0.2em] uppercase">
-            № {formattedIndex}
+            NO. {formattedIndex}
           </span>
           <span className="text-white/20">/</span>
           <span className="uppercase tracking-[0.22em] text-[#93C8FF] font-medium">
@@ -65,11 +67,14 @@ export default function PropertyCadranFeature({
             <div className="absolute top-3 left-3 w-3 h-3 border-t border-l border-white/40 z-10 pointer-events-none" />
             <div className="absolute top-3 right-3 w-3 h-3 border-t border-r border-white/40 z-10 pointer-events-none" />
 
-            <Link href={`/real-estate/properties/${property.id}`} className="block relative w-full h-full">
+            <Link href={`/real-estate/properties/${property.id}`} prefetch={false} className="block relative w-full h-full">
               <Image
                 src={property.heroImage}
                 alt={property.title}
                 fill
+                priority={isFirst}
+                fetchPriority={isFirst ? "high" : "auto"}
+                loading={isFirst ? undefined : "lazy"}
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -104,12 +109,14 @@ export default function PropertyCadranFeature({
                 <Link
                   key={i}
                   href={`/real-estate/properties/${property.id}`}
+                  prefetch={false}
                   className="relative aspect-[4/3] border border-white/[0.08] overflow-hidden bg-[#1B2028] block group/thumb"
                 >
                   <Image
                     src={img}
                     alt={`${property.title} photograph ${i + 2}`}
                     fill
+                    loading="lazy"
                     sizes="(max-width: 1024px) 25vw, 15vw"
                     className="object-cover group-hover/thumb:scale-110 transition-transform duration-500"
                   />
@@ -139,14 +146,21 @@ export default function PropertyCadranFeature({
                 {property.title}
               </Link>
             </h3>
-            <EditorialText size="base" maxWidth="prose" color="secondary" className="leading-relaxed">
-              {property.description}
-            </EditorialText>
+            <div className="space-y-3 font-sans text-sm sm:text-base text-[#B8C2CF] font-light leading-relaxed max-w-prose">
+              {property.description
+                .split(/\n\s*\n|\r\n\s*\r\n/)
+                .slice(0, 2)
+                .map((para, pIdx) => (
+                  <p key={pIdx}>{para.trim()}</p>
+                ))}
+            </div>
           </div>
 
           {/* Technical Specifications Matrix */}
           {property.specs && property.specs.length > 0 && (
-            <div className="grid grid-cols-2 gap-3 p-4 sm:p-5 border border-white/[0.08] bg-[#1B2028]/70">
+            <div className="grid grid-cols-2 gap-3 p-4 sm:p-5 border border-white/[0.08] bg-[#121721] relative">
+              <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-[#93C8FF]/40 pointer-events-none" />
+              <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[#93C8FF]/40 pointer-events-none" />
               {property.specs.slice(0, 4).map((spec, idx) => (
                 <div key={idx} className="space-y-1 border-b border-white/[0.04] pb-2 last:border-0">
                   <span className="font-mono text-[9px] uppercase tracking-wider text-[#8A95A5] block">
@@ -193,15 +207,17 @@ export default function PropertyCadranFeature({
             <div className="grid sm:grid-cols-2 gap-3">
               <Link
                 href={`/real-estate/properties/${property.id}`}
-                className="px-5 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-[11px] uppercase tracking-[0.18em] font-bold transition-all text-center flex items-center justify-center gap-1.5 shadow-xl"
+                prefetch={false}
+                className="px-5 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-[11px] uppercase tracking-[0.18em] font-bold transition-all text-center flex items-center justify-center gap-1.5 shadow-xl min-h-[48px]"
               >
-                <span>VIEW MONOGRAPH ({totalPhotos} PHOTOS)</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <span className="text-[#07090D] font-bold">VIEW MONOGRAPH ({totalPhotos} PHOTOS)</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#07090D]" />
               </Link>
 
               <Link
                 href={`/contact?property=${encodeURIComponent(property.title)}`}
-                className="px-5 py-3.5 border border-white/[0.16] hover:border-[#93C8FF] hover:bg-[#93C8FF]/10 text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-[11px] uppercase tracking-[0.18em] font-semibold transition-all text-center flex items-center justify-center gap-1.5"
+                prefetch={false}
+                className="px-5 py-3.5 border border-white/[0.16] hover:border-[#93C8FF] hover:bg-[#93C8FF]/10 text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-[11px] uppercase tracking-[0.18em] font-semibold transition-all text-center flex items-center justify-center gap-1.5 min-h-[48px]"
               >
                 <span>REQUEST DOSSIER</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -214,7 +230,7 @@ export default function PropertyCadranFeature({
                 href={property.sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#93C8FF] flex items-center gap-1 transition-colors"
+                className="hover:text-[#93C8FF] inline-flex items-center gap-1 transition-colors py-1.5 min-h-[32px]"
               >
                 <span>Source: {property.sourceName}</span>
                 <ArrowUpRight className="w-3 h-3 text-[#93C8FF]" />

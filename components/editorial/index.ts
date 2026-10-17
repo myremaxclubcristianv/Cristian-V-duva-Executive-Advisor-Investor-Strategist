@@ -10,7 +10,6 @@ export { default as ProjectFeature } from "./ProjectFeature";
 export { default as InsightPanel } from "./InsightPanel";
 export { default as ServiceSection } from "./ServiceSection";
 export { default as CTASection } from "./CTASection";
-export { default as PropertiesCatalog } from "./PropertiesCatalog";
 export { default as PersonalPerspectiveSection } from "./PersonalPerspectiveSection";
 export { default as EcosystemDirectory } from "./EcosystemDirectory";
 export { default as ExecutiveContactCadran } from "./ExecutiveContactCadran";

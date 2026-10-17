@@ -1,10 +1,9 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, MapPin, Building2, ShieldCheck, Anchor } from "lucide-react";
-import { SectionHeader, EditorialText } from "@/components/editorial";
+import SectionHeader from "@/components/editorial/SectionHeader";
+import EditorialText from "@/components/editorial/EditorialText";
 
 interface DestinationItem {
   id: string;

@@ -20,7 +20,7 @@ export default function Footer() {
                 href="/"
                 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF] tracking-tight hover:text-[#93C8FF] transition-colors block"
               >
-                CRISTIAN VĂDUVA
+                CRISTIAN VADUVA
               </Link>
               <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#93C8FF] font-medium">
                 EXECUTIVE ADVISOR · INVESTOR · STRATEGIST
@@ -63,51 +63,51 @@ export default function Footer() {
             <span className="font-mono text-[11px] uppercase tracking-[0.24em] text-[#93C8FF] font-semibold block">
               PLATFORM INDEX
             </span>
-            <ul className="space-y-2.5 font-mono text-xs text-[#B8C2CF]">
+            <ul className="space-y-1 font-mono text-xs text-[#B8C2CF]">
               <li>
-                <Link href="/" className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group">
+                <Link href="/" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
                   <span>01 // EXECUTIVE OVERVIEW</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group">
+                <Link href="/about" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
                   <span>02 // BIOGRAPHY & MANDATE</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/real-estate" className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group">
+                <Link href="/real-estate" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
                   <span>03 // ULTRA-PRIME REAL ESTATE</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/ventures" className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group">
+                <Link href="/ventures" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
                   <span>04 // VENTURES & ECOSYSTEM</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/insights" className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group">
+                <Link href="/insights" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
                   <span>05 // MARKET INSIGHTS</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="hover:text-[#93C8FF] transition-colors flex items-center justify-between group">
+                <Link href="/gallery" prefetch={false} className="hover:text-[#93C8FF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
                   <span>06 // VISUAL MONOGRAPH</span>
                   <span className="text-[9px] px-1.5 py-0.5 border border-[#93C8FF]/30 text-[#93C8FF]">HD</span>
                 </Link>
               </li>
               <li>
-                <Link href="/tv" className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group">
+                <Link href="/tv" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
                   <span>07 // TV STUDIO BROADCAST</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group">
+                <Link href="/contact" prefetch={false} className="hover:text-[#F5F4EF] transition-colors flex items-center justify-between group py-2.5 min-h-[44px]">
                   <span>08 // INTAKE DESK</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#93C8FF]">→</span>
                 </Link>
@@ -126,7 +126,7 @@ export default function Footer() {
                 href="https://wa.me/436509536345"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-3.5 border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF] transition-colors group"
+                className="flex items-center justify-between p-3.5 min-h-[48px] border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF] transition-colors group"
               >
                 <div className="flex items-center gap-2.5">
                   <Phone className="w-3.5 h-3.5 text-[#93C8FF]" />
@@ -139,7 +139,7 @@ export default function Footer() {
                 href="https://linkedin.com/in/cristianvaduva"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-3.5 border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF] transition-colors group"
+                className="flex items-center justify-between p-3.5 min-h-[48px] border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF] transition-colors group"
               >
                 <div className="flex items-center gap-2.5">
                   <LinkedinIcon className="w-3.5 h-3.5 text-[#93C8FF]" />
@@ -152,7 +152,7 @@ export default function Footer() {
                 href="https://www.youtube.com/@CristianVaduvaCV"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-3.5 border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF] transition-colors group"
+                className="flex items-center justify-between p-3.5 min-h-[48px] border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF] transition-colors group"
               >
                 <div className="flex items-center gap-2.5">
                   <YoutubeIcon className="w-3.5 h-3.5 text-[#93C8FF]" />
@@ -172,35 +172,35 @@ export default function Footer() {
         {/* Colophon & Legal Navigation */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-6 font-mono text-[10px] text-[#8A95A5] border-t border-white/[0.05]">
           <div>
-            © {currentYear} CRISTIAN VĂDUVA. ALL SOVEREIGN RIGHTS RESERVED.
+            © {currentYear} CRISTIAN VADUVA. ALL SOVEREIGN RIGHTS RESERVED.
           </div>
 
-          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-            <Link href="/privacy" className="hover:text-[#F5F4EF] transition-colors">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <Link href="/privacy" prefetch={false} className="hover:text-[#F5F4EF] transition-colors py-2 min-h-[36px] inline-flex items-center">
               PRIVACY POLICY
             </Link>
-            <span>·</span>
-            <Link href="/terms-of-use" className="hover:text-[#F5F4EF] transition-colors">
+            <span className="text-white/20">·</span>
+            <Link href="/terms-of-use" prefetch={false} className="hover:text-[#F5F4EF] transition-colors py-2 min-h-[36px] inline-flex items-center">
               TERMS OF USE
             </Link>
-            <span>·</span>
-            <Link href="/gdpr" className="hover:text-[#F5F4EF] transition-colors">
+            <span className="text-white/20">·</span>
+            <Link href="/gdpr" prefetch={false} className="hover:text-[#F5F4EF] transition-colors py-2 min-h-[36px] inline-flex items-center">
               GDPR
             </Link>
-            <span>·</span>
-            <Link href="/editorial-policy" className="hover:text-[#F5F4EF] transition-colors">
+            <span className="text-white/20">·</span>
+            <Link href="/editorial-policy" prefetch={false} className="hover:text-[#F5F4EF] transition-colors py-2 min-h-[36px] inline-flex items-center">
               EDITORIAL POLICY
             </Link>
-            <span>·</span>
-            <Link href="/data-provenance" className="hover:text-[#F5F4EF] transition-colors">
+            <span className="text-white/20">·</span>
+            <Link href="/data-provenance" prefetch={false} className="hover:text-[#F5F4EF] transition-colors py-2 min-h-[36px] inline-flex items-center">
               DATA PROVENANCE
             </Link>
-            <span>·</span>
-            <Link href="/disclaimer" className="hover:text-[#F5F4EF] transition-colors">
+            <span className="text-white/20">·</span>
+            <Link href="/disclaimer" prefetch={false} className="hover:text-[#F5F4EF] transition-colors py-2 min-h-[36px] inline-flex items-center">
               DISCLAIMER
             </Link>
-            <span>·</span>
-            <Link href="/login" className="hover:text-[#93C8FF] transition-colors flex items-center gap-1">
+            <span className="text-white/20">·</span>
+            <Link href="/login" prefetch={false} className="hover:text-[#93C8FF] transition-colors py-2 min-h-[36px] inline-flex items-center gap-1">
               <Lock className="w-2.5 h-2.5" />
               <span>PRINCIPAL LOGIN</span>
             </Link>

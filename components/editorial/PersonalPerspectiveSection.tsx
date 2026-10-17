@@ -83,7 +83,7 @@ export default function PersonalPerspectiveSection({
               <span className="text-[#8A95A5]">BUCHAREST · VIENNA · DUBAI</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] leading-[1.08] tracking-tight">
-              Cristian Văduva —<br />
+              Cristian Vaduva —<br />
               <span className="text-[#A97F60] italic font-normal">A Different Perspective.</span>
             </h2>
           </div>
@@ -109,7 +109,6 @@ export default function PersonalPerspectiveSection({
                   src="/images/personal/portraits/cristian-vaduva-desk-advisor.jpg"
                   alt="Cristian Văduva — Executive Advisor, Real Estate Investor & Strategist"
                   fill
-                  priority
                   sizes="(max-width: 1024px) 100vw, 42vw"
                   className="object-cover object-center transition-all duration-700 group-hover:scale-105"
                 />
@@ -123,9 +122,9 @@ export default function PersonalPerspectiveSection({
                     </span>
                     <span className="w-2 h-2 rounded-full bg-[#93C8FF]" />
                   </div>
-                  <h4 className="font-serif text-xl text-[#F5F4EF] font-medium leading-tight">
+                  <h3 className="font-serif text-xl text-[#F5F4EF] font-medium leading-tight">
                     Cristian Văduva
-                  </h4>
+                  </h3>
                   <div className="flex items-center justify-between font-mono text-[10px] text-[#8A95A5] pt-1">
                     <span>Executive Real Estate & Wealth Advisory</span>
                     <span className="text-[#A97F60]">Source: cristianvaduva.com</span>
@@ -176,7 +175,7 @@ export default function PersonalPerspectiveSection({
                 &ldquo;Real estate acquisitions cannot be executed in isolation. An exceptional asset is only truly defensible when integrated with sovereign legal title structuring, debt calibration, and comprehensive asset protection. We represent only the principal, eliminating dual-agency conflicts.&rdquo;
               </p>
               <div className="font-mono text-[10px] text-[#8A95A5] uppercase tracking-wider">
-                CRISTIAN VĂDUVA — EXECUTIVE DIRECTIVE
+                CRISTIAN VADUVA — EXECUTIVE DIRECTIVE
               </div>
             </div>
 
@@ -193,15 +192,15 @@ export default function PersonalPerspectiveSection({
             <div className="pt-4 flex flex-wrap items-center gap-3 font-mono text-xs">
               <Link
                 href="/real-estate/properties"
-                className="px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.18em] font-bold transition-all shadow-xl flex items-center gap-2"
+                className="px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.18em] font-bold transition-all shadow-xl flex items-center gap-2 min-h-[48px]"
               >
-                <span>EXPLORE PROPERTY PORTFOLIO</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <span className="text-[#07090D] font-bold">EXPLORE PROPERTY PORTFOLIO</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#07090D]" />
               </Link>
 
               <Link
                 href="/contact"
-                className="px-6 py-3.5 border border-white/[0.2] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.18em] font-semibold transition-all flex items-center gap-2"
+                className="px-6 py-3.5 border border-white/[0.2] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.18em] font-semibold transition-all flex items-center gap-2 min-h-[48px]"
               >
                 <span>RETAIN PRIVATE COUNSEL</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -211,7 +210,7 @@ export default function PersonalPerspectiveSection({
                 href="https://wa.me/436509536345"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-3.5 border border-[#25D366]/30 hover:border-[#25D366] hover:bg-[#25D366]/10 text-[#F5F4EF] hover:text-[#25D366] uppercase tracking-[0.18em] font-medium transition-all flex items-center gap-2"
+                className="px-5 py-3.5 border border-[#25D366]/30 hover:border-[#25D366] hover:bg-[#25D366]/10 text-[#F5F4EF] hover:text-[#25D366] uppercase tracking-[0.18em] font-medium transition-all flex items-center gap-2 min-h-[48px]"
               >
                 <MessageSquare className="w-3.5 h-3.5 text-[#25D366]" />
                 <span>WHATSAPP (+43 650 953 6345)</span>
@@ -219,7 +218,7 @@ export default function PersonalPerspectiveSection({
 
               <Link
                 href="/about#archive"
-                className="px-5 py-3.5 border border-[#A97F60]/40 hover:border-[#A97F60] text-[#A97F60] hover:bg-[#A97F60]/10 uppercase tracking-[0.18em] font-semibold transition-all flex items-center gap-2"
+                className="px-5 py-3.5 border border-[#A97F60]/40 hover:border-[#A97F60] text-[#A97F60] hover:bg-[#A97F60]/10 uppercase tracking-[0.18em] font-semibold transition-all flex items-center gap-2 min-h-[48px]"
               >
                 <Award className="w-3.5 h-3.5" />
                 <span>VERIFIED ARCHIVE (18)</span>
@@ -229,7 +228,7 @@ export default function PersonalPerspectiveSection({
                 href="https://cristianvaduva.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-3.5 border border-white/[0.1] text-[#8A95A5] hover:text-[#F5F4EF] hover:border-white/30 uppercase tracking-[0.18em] transition-all flex items-center gap-1.5"
+                className="px-5 py-3.5 border border-white/[0.1] text-[#8A95A5] hover:text-[#F5F4EF] hover:border-white/30 uppercase tracking-[0.18em] transition-all flex items-center gap-1.5 min-h-[48px]"
               >
                 <span>CRISTIANVADUVA.COM</span>
                 <ExternalLink className="w-3 h-3 text-[#A97F60]" />
@@ -252,13 +251,14 @@ export default function PersonalPerspectiveSection({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {pillars.map((p, idx) => {
               const Icon = p.icon;
+              const accent = idx % 2 === 0 ? "ice" : "copper";
               return (
                 <EditorialCadran
                   key={idx}
                   watermarkNumber={`0${idx + 1}`}
-                  accentColor="ice"
+                  accentColor={accent}
                   surface="midnight"
-                  className="p-6 sm:p-7 flex flex-col justify-between space-y-6 bg-[#0C1119]"
+                  className="p-6 sm:p-7 flex flex-col justify-between space-y-6 bg-[#0C1119] hover:-translate-y-1 transition-all duration-300 shadow-xl"
                 >
                   <div className="space-y-4">
                     <div className="w-10 h-10 border border-[#93C8FF]/30 bg-[#93C8FF]/10 flex items-center justify-center text-[#93C8FF]">
@@ -284,7 +284,7 @@ export default function PersonalPerspectiveSection({
                       href={p.platformUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-mono text-[10px] uppercase tracking-wider text-[#93C8FF] hover:text-[#B8C2CF] flex items-center justify-between group transition-colors"
+                      className="font-mono text-[10px] uppercase tracking-wider text-[#93C8FF] hover:text-[#B8C2CF] flex items-center justify-between group transition-colors py-2 min-h-[44px]"
                     >
                       <span>PLATFORM: {p.platformName}</span>
                       <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />

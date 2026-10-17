@@ -239,10 +239,12 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-1.5">
-                        <label className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
+                        <label htmlFor="contact-mandate-select" className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
                           Mandate Classification *
                         </label>
                         <select
+                          id="contact-mandate-select"
+                          aria-label="Mandate Classification"
                           value={interest}
                           onChange={(e) => setInterest(e.target.value)}
                           className="w-full bg-[#0C1119] border border-white/[0.1] px-4 py-3 font-sans text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] transition-colors"

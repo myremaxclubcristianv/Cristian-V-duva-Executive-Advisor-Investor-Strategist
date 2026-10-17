@@ -29,8 +29,14 @@ export default function InsightPanel({
 }: InsightPanelProps) {
   return (
     <div
-      className={`p-6 sm:p-8 border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF]/40 transition-all duration-300 flex flex-col justify-between space-y-6 shadow-xl group ${className}`}
+      className={`relative p-6 sm:p-8 border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF]/50 transition-all duration-300 flex flex-col justify-between space-y-6 shadow-xl hover:-translate-y-1 group ${className}`}
     >
+      {/* Corner Architectural Ticks */}
+      <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-[#93C8FF]/40 group-hover:border-[#93C8FF] pointer-events-none transition-colors" />
+      <span className="absolute top-0 right-0 w-2 h-2 border-t border-r border-[#93C8FF]/40 group-hover:border-[#93C8FF] pointer-events-none transition-colors" />
+      <span className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-[#93C8FF]/40 group-hover:border-[#93C8FF] pointer-events-none transition-colors" />
+      <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[#93C8FF]/40 group-hover:border-[#93C8FF] pointer-events-none transition-colors" />
+
       <div className="space-y-4">
         {/* Top Meta Line */}
         <div className="flex items-center justify-between font-mono text-[10px] text-[#8A95A5]">
@@ -79,7 +85,7 @@ export default function InsightPanel({
       </div>
 
       {/* Footer Citation & Source Link */}
-      <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between font-mono text-[10px] sm:text-[11px] text-[#647082]">
+      <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between font-mono text-[10px] sm:text-[11px] text-[#8A95A5]">
         <span>Source: {source}</span>
         {actionUrl && (
           <a

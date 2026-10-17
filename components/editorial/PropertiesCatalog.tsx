@@ -3,7 +3,8 @@
 import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { selectedProperties, Property } from "@/lib/properties";
+import { Property } from "@/lib/properties";
+import { catalogProperties as selectedProperties } from "@/lib/catalogProperties";
 import PropertyCadranFeature from "./PropertyCadranFeature";
 import PropertySplitCadran from "./PropertySplitCadran";
 import ProjectFeature from "./ProjectFeature";
@@ -240,28 +241,31 @@ export default function PropertiesCatalog() {
         <EditorialCadran
           accentColor="ice"
           surface="midnight"
-          className="p-4 sm:p-6 backdrop-blur-xl bg-[#07090D]/95 shadow-2xl border-white/[0.12] space-y-4"
+          className="p-5 sm:p-7 backdrop-blur-xl bg-[#07090D]/95 shadow-2xl border-white/[0.12] space-y-5"
         >
           {/* Top Row: Categories Tabs */}
-          <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto no-scrollbar pb-1">
+          <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto no-scrollbar pb-1" role="tablist" aria-label="Property Categories">
             {categories.map((tab) => {
               const isActive = activeCategory === tab.id;
               return (
                 <button
                   key={tab.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
                   onClick={() => {
                     setActiveCategory(tab.id);
                     setVisibleCount(10);
                   }}
-                  className={`px-4 sm:px-5 py-2.5 font-mono text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium transition-all whitespace-nowrap flex items-center gap-2 border ${
+                  className={`px-4 sm:px-5 py-2.5 font-mono text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium transition-all whitespace-nowrap flex items-center gap-2 border min-h-[44px] ${
                     isActive
                       ? "bg-[#93C8FF] text-[#07090D] border-[#93C8FF] font-bold shadow-lg shadow-[#93C8FF]/20"
                       : "text-[#B8C2CF] border-white/[0.08] hover:border-[#93C8FF]/50 hover:text-[#F5F4EF] bg-[#0C1119]/70"
                   }`}
                 >
-                  <span>{tab.label}</span>
+                  <span className={isActive ? "text-[#07090D] font-bold" : ""}>{tab.label}</span>
                   <span
-                    className={`text-[9px] px-1.5 py-0.2 rounded-full ${
+                    className={`text-[9px] px-1.5 py-0.5 rounded-full ${
                       isActive
                         ? "bg-[#07090D]/20 text-[#07090D] font-bold"
                         : "bg-white/[0.06] text-[#8A95A5]"
@@ -275,19 +279,20 @@ export default function PropertiesCatalog() {
           </div>
 
           {/* Middle Row: Sovereign Jurisdictions Pills */}
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pt-2 border-t border-white/[0.06]">
-            <span className="font-mono text-[10px] text-[#8A95A5] uppercase tracking-wider shrink-0 flex items-center gap-1.5 mr-1">
-              <Globe2 className="w-3.5 h-3.5 text-[#A97F60]" />
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pt-3 border-t border-white/[0.06]">
+            <span className="font-mono text-[10px] text-[#8A95A5] uppercase tracking-wider shrink-0 flex items-center gap-1.5 mr-1.5">
+              <Globe2 className="w-3.5 h-3.5 text-[#C49A78]" />
               <span>SOVEREIGN REGION:</span>
             </span>
             <button
+              type="button"
               onClick={() => {
                 setSelectedCountry("all");
                 setVisibleCount(10);
               }}
-              className={`px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition-colors border ${
+              className={`px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider transition-colors border min-h-[32px] inline-flex items-center ${
                 selectedCountry === "all"
-                  ? "border-[#A97F60] text-[#A97F60] bg-[#A97F60]/15 font-semibold"
+                  ? "border-[#C49A78] text-[#C49A78] bg-[#C49A78]/15 font-semibold"
                   : "border-white/[0.08] text-[#8A95A5] hover:text-[#F5F4EF] bg-[#0C1119]"
               }`}
             >
@@ -296,13 +301,14 @@ export default function PropertiesCatalog() {
             {countries.map((c) => (
               <button
                 key={c}
+                type="button"
                 onClick={() => {
                   setSelectedCountry(c);
                   setVisibleCount(10);
                 }}
-                className={`px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition-colors border whitespace-nowrap ${
+                className={`px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider transition-colors border whitespace-nowrap min-h-[32px] inline-flex items-center ${
                   selectedCountry === c
-                    ? "border-[#A97F60] text-[#A97F60] bg-[#A97F60]/15 font-semibold"
+                    ? "border-[#C49A78] text-[#C49A78] bg-[#C49A78]/15 font-semibold"
                     : "border-white/[0.08] text-[#8A95A5] hover:text-[#F5F4EF] bg-[#0C1119]"
                 }`}
               >
@@ -312,24 +318,27 @@ export default function PropertiesCatalog() {
           </div>
 
           {/* Bottom Row: Search, Sort, View Toggle */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 pt-3 border-t border-white/[0.06]">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pt-3.5 border-t border-white/[0.06]">
             {/* Search Input */}
             <div className="relative flex-1 max-w-md">
-              <Search className="w-4 h-4 text-[#8A95A5] absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <Search className="w-4 h-4 text-[#8A95A5] absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
               <input
                 type="text"
+                aria-label="Search title, district, specifications, or city"
                 value={searchQuery}
                 onChange={(e) => {
                   setSearchQuery(e.target.value);
                   setVisibleCount(10);
                 }}
                 placeholder="Search title, district, specifications, or city..."
-                className="w-full pl-9 pr-8 py-2 bg-[#0C1119] border border-white/[0.1] text-xs font-mono text-[#F5F4EF] placeholder-[#647082] focus:outline-none focus:border-[#93C8FF] transition-colors"
+                className="w-full pl-10 pr-9 py-2.5 bg-[#0C1119] border border-white/[0.1] text-xs font-mono text-[#F5F4EF] placeholder-[#8A95A5] focus:outline-none focus:border-[#93C8FF] focus:ring-1 focus:ring-[#93C8FF]/30 transition-all"
               />
               {searchQuery && (
                 <button
+                  type="button"
+                  aria-label="Clear search"
                   onClick={() => setSearchQuery("")}
-                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[#8A95A5] hover:text-[#F5F4EF]"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#8A95A5] hover:text-[#F5F4EF] transition-colors p-1"
                 >
                   <X className="w-3.5 h-3.5" />
                 </button>
@@ -340,11 +349,15 @@ export default function PropertiesCatalog() {
             <div className="flex items-center gap-3 shrink-0">
               {/* Sort Selection */}
               <div className="flex items-center gap-1.5 font-mono text-[10px]">
-                <span className="text-[#8A95A5] uppercase tracking-wider">SORT:</span>
+                <label htmlFor="catalog-sort-select" className="text-[#8A95A5] uppercase tracking-wider">
+                  SORT:
+                </label>
                 <select
+                  id="catalog-sort-select"
+                  aria-label="Sort properties"
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as SortOption)}
-                  className="bg-[#0C1119] border border-white/[0.1] text-[#F5F4EF] py-1.5 px-2.5 focus:outline-none focus:border-[#93C8FF] text-[10px] font-mono cursor-pointer"
+                  className="bg-[#0C1119] border border-white/[0.1] text-[#F5F4EF] py-2 px-3 focus:outline-none focus:border-[#93C8FF] text-[10px] font-mono cursor-pointer"
                 >
                   <option value="featured">Curated Priority</option>
                   <option value="price-desc">Valuation: High to Low</option>
@@ -356,8 +369,10 @@ export default function PropertiesCatalog() {
               {/* View Mode Toggle */}
               <div className="flex items-center border border-white/[0.1] bg-[#0C1119] p-0.5">
                 <button
+                  type="button"
+                  aria-label="Editorial Monograph Spreads"
                   onClick={() => setViewMode("editorial")}
-                  className={`p-1.5 transition-colors flex items-center gap-1 font-mono text-[10px] px-2 ${
+                  className={`p-2 transition-colors flex items-center justify-center gap-1.5 font-mono text-[10px] px-3 min-h-[44px] min-w-[44px] ${
                     viewMode === "editorial"
                       ? "bg-[#93C8FF] text-[#07090D] font-bold"
                       : "text-[#8A95A5] hover:text-[#F5F4EF]"
@@ -365,11 +380,13 @@ export default function PropertiesCatalog() {
                   title="Editorial Monograph Spreads"
                 >
                   <Rows className="w-3.5 h-3.5" />
-                  <span className="hidden sm:inline">SPREADS</span>
+                  <span className={`hidden sm:inline ${viewMode === "editorial" ? "text-[#07090D] font-bold" : ""}`}>SPREADS</span>
                 </button>
                 <button
+                  type="button"
+                  aria-label="Portfolio Matrix Grid"
                   onClick={() => setViewMode("grid")}
-                  className={`p-1.5 transition-colors flex items-center gap-1 font-mono text-[10px] px-2 ${
+                  className={`p-2 transition-colors flex items-center justify-center gap-1.5 font-mono text-[10px] px-3 min-h-[44px] min-w-[44px] ${
                     viewMode === "grid"
                       ? "bg-[#93C8FF] text-[#07090D] font-bold"
                       : "text-[#8A95A5] hover:text-[#F5F4EF]"
@@ -377,7 +394,7 @@ export default function PropertiesCatalog() {
                   title="Portfolio Matrix Grid"
                 >
                   <LayoutGrid className="w-3.5 h-3.5" />
-                  <span className="hidden sm:inline">MATRIX</span>
+                  <span className={`hidden sm:inline ${viewMode === "grid" ? "text-[#07090D] font-bold" : ""}`}>MATRIX</span>
                 </button>
               </div>
             </div>
@@ -466,15 +483,17 @@ export default function PropertiesCatalog() {
         {hasMore && (
           <div className="flex flex-wrap items-center justify-center gap-4 pt-20">
             <button
+              type="button"
               onClick={() => setVisibleCount((prev) => prev + 12)}
-              className="px-8 py-4 border border-[#93C8FF]/50 bg-[#0C1119] hover:bg-[#93C8FF] hover:text-[#07090D] text-[#93C8FF] font-mono text-xs uppercase tracking-[0.22em] font-bold transition-all shadow-xl group inline-flex items-center gap-2"
+              className="px-8 py-4 border border-[#93C8FF]/50 bg-[#0C1119] hover:bg-[#93C8FF] hover:text-[#07090D] text-[#93C8FF] font-mono text-xs uppercase tracking-[0.22em] font-bold transition-all shadow-xl group inline-flex items-center gap-2 min-h-[48px]"
             >
               <span>EXHIBIT MORE ASSETS ({filteredProperties.length - visibleCount} REMAINING)</span>
               <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
             </button>
             <button
+              type="button"
               onClick={() => setVisibleCount(filteredProperties.length)}
-              className="px-6 py-4 border border-white/[0.15] bg-[#07090D] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-xs uppercase tracking-[0.22em] font-medium transition-all shadow-lg"
+              className="px-6 py-4 border border-white/[0.15] bg-[#07090D] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-xs uppercase tracking-[0.22em] font-medium transition-all shadow-lg min-h-[48px] flex items-center justify-center"
             >
               <span>EXHIBIT ALL ({filteredProperties.length})</span>
             </button>

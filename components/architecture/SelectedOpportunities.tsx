@@ -1,10 +1,10 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { selectedProperties } from "@/lib/properties";
-import { SectionHeader, PropertyFeature, SupportingPropertyCard } from "@/components/editorial";
+import SectionHeader from "@/components/editorial/SectionHeader";
+import PropertyFeature from "@/components/editorial/PropertyFeature";
+import SupportingPropertyCard from "@/components/editorial/SupportingPropertyCard";
 
 export default function SelectedOpportunities() {
   const leadProperty = selectedProperties.find((p) => p.id === "prop-plevnei") || selectedProperties[0];

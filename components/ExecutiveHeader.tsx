@@ -72,7 +72,7 @@ export default function ExecutiveHeader() {
             <div className="flex items-center gap-2.5">
               <span className="w-2 h-2 rounded-full bg-[#93C8FF] shadow-[0_0_8px_rgba(147,200,255,0.6)]" />
               <span className="font-sans text-sm sm:text-base font-semibold tracking-[0.2em] text-[#F5F4EF]">
-                CRISTIAN VĂDUVA
+                CRISTIAN VADUVA
               </span>
             </div>
             <span className="font-mono text-[9px] uppercase tracking-[0.34em] text-[#B8C2CF] pl-4.5 group-hover:text-[#93C8FF] transition-colors">
@@ -88,6 +88,7 @@ export default function ExecutiveHeader() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  prefetch={false}
                   className={`relative font-mono text-[11px] uppercase tracking-[0.24em] transition-all py-1.5 ${
                     active
                       ? "text-[#F5F4EF] font-medium"
@@ -109,7 +110,7 @@ export default function ExecutiveHeader() {
               href="https://wa.me/436509536345"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 border border-[#93C8FF]/30 bg-[#93C8FF]/10 hover:bg-[#93C8FF]/20 text-[#93C8FF] hover:text-[#F5F4EF] font-mono text-[11px] uppercase tracking-[0.2em] transition-all duration-300"
+              className="inline-flex items-center gap-2 px-4 py-2 border border-[#93C8FF]/30 bg-[#93C8FF]/10 hover:bg-[#93C8FF]/20 text-[#93C8FF] hover:text-[#F5F4EF] font-mono text-[11px] uppercase tracking-[0.2em] transition-all duration-300 min-h-[44px]"
             >
               <span>PRIVATE INTAKE</span>
               <ArrowUpRight className="w-3 h-3 opacity-90" />
@@ -117,7 +118,8 @@ export default function ExecutiveHeader() {
 
             <Link
               href="/login"
-              className="p-2 border border-white/[0.08] hover:border-[#93C8FF]/50 text-[#B8C2CF] hover:text-[#F5F4EF] transition-colors"
+              prefetch={false}
+              className="p-2 border border-white/[0.08] hover:border-[#93C8FF]/50 text-[#B8C2CF] hover:text-[#F5F4EF] transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               title="Principal / Administrator Login"
               aria-label="Admin Portal"
             >
@@ -129,7 +131,8 @@ export default function ExecutiveHeader() {
           <div className="xl:hidden flex items-center gap-2">
             <Link
               href="/login"
-              className="p-2 border border-white/[0.08] text-[#B8C2CF] hover:text-white"
+              prefetch={false}
+              className="p-2 border border-white/[0.08] text-[#B8C2CF] hover:text-white min-h-[44px] min-w-[44px] flex items-center justify-center"
               title="Admin"
               aria-label="Admin Login"
             >
@@ -137,7 +140,7 @@ export default function ExecutiveHeader() {
             </Link>
             <button
               onClick={() => setIsMenuOpen(true)}
-              className="p-2 text-[#F5F4EF] border border-white/[0.1] bg-white/[0.03] hover:bg-white/[0.06] transition-colors"
+              className="p-2.5 text-[#F5F4EF] border border-white/[0.1] bg-white/[0.03] hover:bg-white/[0.06] transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               aria-label="Open navigation menu"
             >
               <Menu className="w-5 h-5" />
@@ -152,6 +155,7 @@ export default function ExecutiveHeader() {
           className="fixed inset-0 z-[100] bg-[#07090D] text-[#F5F4EF] flex flex-col justify-between p-6 sm:p-10 overflow-y-auto animate-in fade-in duration-300"
           role="dialog"
           aria-modal="true"
+          aria-label="Navigation Menu"
         >
           {/* Subtle background grid & cold light overlay */}
           <div className="absolute inset-0 bg-arch-grid opacity-25 pointer-events-none" />
@@ -168,7 +172,7 @@ export default function ExecutiveHeader() {
 
             <button
               onClick={closeMenu}
-              className="p-2.5 border border-white/[0.12] text-[#F5F4EF] hover:border-[#93C8FF] transition-colors"
+              className="p-2.5 border border-white/[0.12] text-[#F5F4EF] hover:border-[#93C8FF] transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               aria-label="Close navigation menu"
             >
               <X className="w-5 h-5" />
@@ -188,11 +192,12 @@ export default function ExecutiveHeader() {
                   <Link
                     key={link.href}
                     href={link.href}
+                    prefetch={false}
                     onClick={closeMenu}
                     className="group flex items-baseline justify-between py-4 text-[#F5F4EF]"
                   >
                     <div className="flex items-baseline gap-4">
-                      <span className="font-mono text-xs text-[#647082] group-hover:text-[#93C8FF]">
+                      <span className="font-mono text-xs text-[#8A95A5] group-hover:text-[#93C8FF]">
                         {link.number}
                       </span>
                       <span className={`font-serif text-2xl sm:text-3xl tracking-tight transition-colors ${

@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import { ArrowUpRight, Building2, TrendingUp, ShieldCheck, Scale, Compass } from "lucide-react";
@@ -90,10 +88,15 @@ export default function EditorialInterruption() {
         <div className="grid md:grid-cols-3 gap-8 pt-4">
           
           {/* Pillar 01: Real Estate Advisory */}
-          <div className="p-8 sm:p-10 border border-[#07090D]/15 bg-white space-y-6 shadow-sm flex flex-col justify-between group hover:border-[#07090D] transition-colors">
+          <div className="relative p-8 sm:p-10 border border-[#07090D]/15 bg-white space-y-6 shadow-sm flex flex-col justify-between group hover:border-[#07090D] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+            <span className="absolute top-0 left-0 w-2.5 h-2.5 border-t border-l border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+            <span className="absolute top-0 right-0 w-2.5 h-2.5 border-t border-r border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+            <span className="absolute bottom-0 left-0 w-2.5 h-2.5 border-b border-l border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+            <span className="absolute bottom-0 right-0 w-2.5 h-2.5 border-b border-r border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+
             <div className="space-y-4">
               <div className="flex items-center justify-between border-b border-[#07090D]/10 pb-3">
-                <span className="font-mono text-[10px] uppercase tracking-widest text-[#A97F60] font-semibold">
+                <span className="font-mono text-[10px] uppercase tracking-widest text-[#785338] font-semibold">
                   PILLAR 01
                 </span>
                 <Building2 className="w-4 h-4 text-[#07090D]" />
@@ -101,24 +104,29 @@ export default function EditorialInterruption() {
               <h3 className="font-serif text-2xl sm:text-3xl text-[#07090D] leading-snug">
                 Real Estate Advisory
               </h3>
-              <p className="font-sans text-sm text-[#1B2028]/80 font-light leading-relaxed">
+              <p className="font-sans text-sm text-[#1B2028]/85 font-light leading-relaxed">
                 Unilateral representation of high-net-worth buyers and sovereign asset owners across Bucharest, Monaco, and Dubai. Sourcing off-market trophy penthouses, heritage villas, and land banks with forensic legal and structural auditing before commitment.
               </p>
             </div>
-            <div className="pt-4 border-t border-[#07090D]/10 font-mono text-xs text-[#647082] flex items-center justify-between">
-              <span>UNILATERAL FIDUCIARY</span>
-              <Link href="/real-estate" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1">
+            <div className="pt-4 border-t border-[#07090D]/10 font-mono text-xs text-[#526071] flex items-center justify-between">
+              <span className="tracking-wider">UNILATERAL FIDUCIARY</span>
+              <Link href="/real-estate" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1 group/link">
                 <span>View Assets</span>
-                <ArrowUpRight className="w-3 h-3" />
+                <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
               </Link>
             </div>
           </div>
 
           {/* Pillar 02: Investment Strategy */}
-          <div className="p-8 sm:p-10 border border-[#07090D]/15 bg-white space-y-6 shadow-sm flex flex-col justify-between group hover:border-[#07090D] transition-colors">
+          <div className="relative p-8 sm:p-10 border border-[#07090D]/15 bg-white space-y-6 shadow-sm flex flex-col justify-between group hover:border-[#07090D] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+            <span className="absolute top-0 left-0 w-2.5 h-2.5 border-t border-l border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+            <span className="absolute top-0 right-0 w-2.5 h-2.5 border-t border-r border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+            <span className="absolute bottom-0 left-0 w-2.5 h-2.5 border-b border-l border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+            <span className="absolute bottom-0 right-0 w-2.5 h-2.5 border-b border-r border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+
             <div className="space-y-4">
               <div className="flex items-center justify-between border-b border-[#07090D]/10 pb-3">
-                <span className="font-mono text-[10px] uppercase tracking-widest text-[#A97F60] font-semibold">
+                <span className="font-mono text-[10px] uppercase tracking-widest text-[#785338] font-semibold">
                   PILLAR 02
                 </span>
                 <TrendingUp className="w-4 h-4 text-[#07090D]" />
@@ -126,24 +134,29 @@ export default function EditorialInterruption() {
               <h3 className="font-serif text-2xl sm:text-3xl text-[#07090D] leading-snug">
                 Investment Strategy
               </h3>
-              <p className="font-sans text-sm text-[#1B2028]/80 font-light leading-relaxed">
+              <p className="font-sans text-sm text-[#1B2028]/85 font-light leading-relaxed">
                 Direct balance sheet co-investments and private syndications alongside European family offices. Structuring Special Purpose Vehicles (SPVs), mezzanine financing, and stress-tested exit modeling calibrated for compounding equity and capital preservation.
               </p>
             </div>
-            <div className="pt-4 border-t border-[#07090D]/10 font-mono text-xs text-[#647082] flex items-center justify-between">
-              <span>ASYMMETRIC EQUITY</span>
-              <Link href="/ventures" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1">
+            <div className="pt-4 border-t border-[#07090D]/10 font-mono text-xs text-[#526071] flex items-center justify-between">
+              <span className="tracking-wider">ASYMMETRIC EQUITY</span>
+              <Link href="/ventures" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1 group/link">
                 <span>View Ventures</span>
-                <ArrowUpRight className="w-3 h-3" />
+                <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
               </Link>
             </div>
           </div>
 
           {/* Pillar 03: Asset Protection */}
-          <div className="p-8 sm:p-10 border border-[#07090D]/15 bg-white space-y-6 shadow-sm flex flex-col justify-between group hover:border-[#07090D] transition-colors">
+          <div className="relative p-8 sm:p-10 border border-[#07090D]/15 bg-white space-y-6 shadow-sm flex flex-col justify-between group hover:border-[#07090D] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+            <span className="absolute top-0 left-0 w-2.5 h-2.5 border-t border-l border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+            <span className="absolute top-0 right-0 w-2.5 h-2.5 border-t border-r border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+            <span className="absolute bottom-0 left-0 w-2.5 h-2.5 border-b border-l border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+            <span className="absolute bottom-0 right-0 w-2.5 h-2.5 border-b border-r border-[#07090D]/30 group-hover:border-[#07090D] pointer-events-none transition-colors" />
+
             <div className="space-y-4">
               <div className="flex items-center justify-between border-b border-[#07090D]/10 pb-3">
-                <span className="font-mono text-[10px] uppercase tracking-widest text-[#A97F60] font-semibold">
+                <span className="font-mono text-[10px] uppercase tracking-widest text-[#785338] font-semibold">
                   PILLAR 03
                 </span>
                 <ShieldCheck className="w-4 h-4 text-[#07090D]" />
@@ -151,15 +164,15 @@ export default function EditorialInterruption() {
               <h3 className="font-serif text-2xl sm:text-3xl text-[#07090D] leading-snug">
                 Asset Protection
               </h3>
-              <p className="font-sans text-sm text-[#1B2028]/80 font-light leading-relaxed">
+              <p className="font-sans text-sm text-[#1B2028]/85 font-light leading-relaxed">
                 Downside containment and institutional risk transfer in strategic alliance with Generali România. Comprehensive audits of property portfolios, agreed reconstruction valuations, corporate D&O liability, and confidential estate succession shielding.
               </p>
             </div>
-            <div className="pt-4 border-t border-[#07090D]/10 font-mono text-xs text-[#647082] flex items-center justify-between">
-              <span>GENERALI ALLIANCE</span>
-              <a href="https://insurance.cristianvaduva.com" target="_blank" rel="noopener noreferrer" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1">
+            <div className="pt-4 border-t border-[#07090D]/10 font-mono text-xs text-[#526071] flex items-center justify-between">
+              <span className="tracking-wider">GENERALI ALLIANCE</span>
+              <a href="https://insurance.cristianvaduva.com" target="_blank" rel="noopener noreferrer" className="text-[#07090D] hover:underline font-semibold flex items-center gap-1 group/link">
                 <span>Insurance Portal</span>
-                <ArrowUpRight className="w-3 h-3" />
+                <ArrowUpRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
               </a>
             </div>
           </div>

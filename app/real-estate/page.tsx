@@ -232,7 +232,7 @@ export default function RealEstateHubPage() {
                     </div>
 
                     <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#A97F60] font-semibold block">
-                      CAP D'AIL / MEDITERRANEAN COASTLINE
+                      CAP D&apos;AIL / MEDITERRANEAN COASTLINE
                     </span>
                     <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
                       {monacoVilla.title}

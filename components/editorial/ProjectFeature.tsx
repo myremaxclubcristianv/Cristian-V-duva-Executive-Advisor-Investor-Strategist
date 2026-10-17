@@ -65,6 +65,7 @@ export default function ProjectFeature({
               src={image}
               alt={title}
               fill
+              loading="lazy"
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -132,17 +133,18 @@ export default function ProjectFeature({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-white/[0.08]">
             <Link
               href="/contact"
-              className="px-7 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-xl"
+              prefetch={false}
+              className="px-7 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-xl min-h-[48px]"
             >
-              <span>REQUEST INVESTMENT MEMORANDUM</span>
-              <ArrowUpRight className="w-4 h-4" />
+              <span className="text-[#07090D] font-bold">REQUEST INVESTMENT MEMORANDUM</span>
+              <ArrowUpRight className="w-4 h-4 text-[#07090D]" />
             </Link>
 
             <a
               href={sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] hover:text-[#93C8FF] flex items-center justify-center gap-1.5 transition-colors py-2"
+              className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] hover:text-[#93C8FF] flex items-center justify-center gap-1.5 transition-colors py-2 min-h-[44px]"
             >
               <span>{sourceName}</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-[#93C8FF]" />

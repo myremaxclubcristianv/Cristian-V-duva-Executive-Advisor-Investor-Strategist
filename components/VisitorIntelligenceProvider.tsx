@@ -13,20 +13,24 @@ export default function VisitorIntelligenceProvider() {
     if (lastTrackedPath.current === pathname) return;
     lastTrackedPath.current = pathname;
 
-    // Send visit notification to server-side /api/visits
-    fetch("/api/visits", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        path: pathname,
-        referrer: typeof document !== "undefined" ? document.referrer : "",
-      }),
-    }).catch(() => {
-      // Fail silently in browser
-    });
+    const timer = setTimeout(() => {
+      // Send visit notification to server-side /api/visits
+      fetch("/api/visits", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          path: pathname,
+          referrer: typeof document !== "undefined" ? document.referrer : "",
+        }),
+      }).catch(() => {
+        // Fail silently in browser
+      });
 
-    // In-memory telemetry
-    trackEvent("PAGE_VIEW", { path: pathname });
+      // In-memory telemetry
+      trackEvent("PAGE_VIEW", { path: pathname });
+    }, 4500);
+
+    return () => clearTimeout(timer);
   }, [pathname]);
 
   // 2. Delegated CTA click tracking

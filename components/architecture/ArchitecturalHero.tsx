@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,15 +13,15 @@ export default function ArchitecturalHero() {
           alt="The Impossible Building — Monumental Contemporary Architecture"
           fill
           priority
+          fetchPriority="high"
           sizes="100vw"
-          className="object-cover object-center scale-[1.01] transition-transform duration-1000 ease-out"
+          className="object-cover object-center"
         />
         {/* Layered Deep Blue-Black Shadows & Narrow Cold Light Beam */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-[#07090D]/65 to-[#07090D]/45" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#07090D]/95 via-[#07090D]/40 to-[#07090D]/90" />
         <div className="absolute inset-0 light-beam-overlay pointer-events-none" />
-        <div className="absolute inset-0 bg-arch-grid opacity-25 pointer-events-none" />
-        <div className="absolute inset-0 arch-noise pointer-events-none opacity-30" />
+        <div className="absolute inset-0 bg-arch-grid opacity-20 pointer-events-none" />
       </div>
 
       {/* ── Structural Plane: Technical Framing, Datum Lines & Ice Crosshairs ── */}
@@ -74,10 +72,10 @@ export default function ArchitecturalHero() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
               <Link
                 href="#contact"
-                className="group relative px-7 py-3.5 sm:px-8 sm:py-4 bg-[#93C8FF] hover:bg-white text-[#07090D] font-mono text-xs uppercase tracking-[0.24em] font-bold transition-all duration-300 shadow-2xl shadow-[#93C8FF]/20 flex items-center justify-center gap-3 overflow-hidden text-center edge-illuminate-blue"
+                className="group relative px-7 py-3.5 sm:px-8 sm:py-4 bg-[#93C8FF] hover:bg-white text-[#07090D] font-mono text-xs uppercase tracking-[0.24em] font-bold transition-all duration-300 shadow-2xl shadow-[#93C8FF]/20 flex items-center justify-center gap-3 overflow-hidden text-center edge-illuminate-blue min-h-[48px]"
               >
-                <span className="relative z-10">REQUEST PRIVATE CONSULTATION</span>
-                <ArrowUpRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                <span className="relative z-10 text-[#07090D] font-bold">REQUEST PRIVATE CONSULTATION</span>
+                <ArrowUpRight className="w-4 h-4 relative z-10 text-[#07090D] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </Link>
 
               <Link

@@ -146,6 +146,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
             <div className="flex items-center gap-2 text-[#8A95A5]">
               <Link
                 href="/real-estate"
+                prefetch={false}
                 className="hover:text-[#93C8FF] transition-colors"
               >
                 REAL ESTATE
@@ -153,18 +154,20 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
               <span>/</span>
               <Link
                 href="/real-estate/properties"
+                prefetch={false}
                 className="hover:text-[#93C8FF] transition-colors"
               >
                 PORTFOLIO CATALOGUE
               </Link>
               <span>/</span>
               <span className="text-[#93C8FF] uppercase truncate max-w-[200px] sm:max-w-xs font-semibold">
-                MONOGRAPH № {formattedIndex}
+                MONOGRAPH NO. {formattedIndex}
               </span>
             </div>
 
             <Link
               href="/real-estate/properties"
+              prefetch={false}
               className="text-[#B8C2CF] hover:text-[#93C8FF] flex items-center gap-1.5 transition-colors font-semibold"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
@@ -188,7 +191,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
               <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.08] pb-6 font-mono text-[10px] sm:text-xs">
                 <div className="flex flex-wrap items-center gap-3">
                   <span className="px-3 py-1 bg-[#93C8FF]/15 border border-[#93C8FF]/30 text-[#93C8FF] uppercase tracking-[0.25em] font-bold">
-                    MONOGRAPH № {formattedIndex} // {selectedProperties.length}
+                    MONOGRAPH NO. {formattedIndex}{" // "}{selectedProperties.length}
                   </span>
                   <span className="text-white/20">|</span>
                   <span className="px-3 py-1 bg-white/[0.04] border border-white/[0.1] text-[#8A95A5] uppercase tracking-wider">
@@ -302,17 +305,17 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                 <div className="space-y-3 pt-2">
                   <Link
                     href={`/contact?property=${encodeURIComponent(property.title)}`}
-                    className="w-full py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-xl"
+                    className="w-full py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-xl min-h-[48px]"
                   >
-                    <span>REQUEST CONFIDENTIAL DOSSIER</span>
-                    <ArrowUpRight className="w-4 h-4" />
+                    <span className="text-[#07090D] font-bold">REQUEST CONFIDENTIAL DOSSIER</span>
+                    <ArrowUpRight className="w-4 h-4 text-[#07090D]" />
                   </Link>
 
                   <a
                     href={property.sourceUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3.5 border border-white/[0.12] hover:border-[#93C8FF] text-[#B8C2CF] hover:text-[#F5F4EF] font-mono text-[11px] uppercase tracking-wider transition-all text-center flex items-center justify-center gap-2 bg-[#1B2028]/40"
+                    className="w-full py-3.5 border border-white/[0.12] hover:border-[#93C8FF] text-[#B8C2CF] hover:text-[#F5F4EF] font-mono text-[11px] uppercase tracking-wider transition-all text-center flex items-center justify-center gap-2 bg-[#1B2028]/40 min-h-[44px]"
                   >
                     <span>Inspect Original Platform Source ({property.sourceName})</span>
                     <ExternalLink className="w-3.5 h-3.5 text-[#93C8FF]" />
@@ -386,9 +389,19 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                 </h2>
               </div>
 
-              <div className="space-y-6 font-sans text-base sm:text-lg text-[#B8C2CF] font-light leading-relaxed">
-                <p>{property.description}</p>
-                <p>
+              <div className="space-y-6 font-sans text-base sm:text-lg text-[#B8C2CF] font-light leading-relaxed max-w-3xl">
+                {property.description
+                  ? property.description
+                      .split(/\n\s*\n|\r\n\s*\r\n/)
+                      .map((p) => p.trim())
+                      .filter(Boolean)
+                      .map((para, pIdx) => (
+                        <p key={pIdx} className="leading-relaxed">
+                          {para}
+                        </p>
+                      ))
+                  : null}
+                <p className="pt-2 text-sm text-[#8A95A5] leading-relaxed border-t border-white/[0.06]">
                   Every property curated in the Executive portfolio has been audited for
                   architectural rarity, legal title clarity, structural engineering robustness,
                   and capital defense resilience. Transactions structured under our advisory
@@ -449,7 +462,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                 <div className="pt-4 border-t border-white/[0.08]">
                   <Link
                     href={`/contact?property=${encodeURIComponent(property.title)}`}
-                    className="w-full py-3.5 border border-[#93C8FF] text-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2"
+                    className="w-full py-3.5 border border-[#93C8FF] text-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2 min-h-[48px]"
                   >
                     <span>INITIATE PRIVATE BRIEF</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
@@ -493,6 +506,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                       src={img}
                       alt={`${property.title} view ${idx + 1}`}
                       fill
+                      loading="lazy"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />

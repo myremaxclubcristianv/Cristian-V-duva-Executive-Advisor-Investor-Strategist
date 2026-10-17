@@ -15,6 +15,9 @@ import { ArrowDown, ShieldCheck, MapPin, Globe, Sparkles, Building2 } from "luci
 export const metadata: Metadata = {
   title: "Confirmed Property Portfolio & Acquisitions — Cristian Văduva",
   description: "Curated editorial selection of verified penthouses, private architectural estates, residential masterplans, and international trophy assets across Bucharest, Marbella, Monaco, Dubai, and Miami.",
+  alternates: {
+    canonical: "https://executive.cristianvaduva.com/real-estate/properties",
+  },
 };
 
 export default function PropertiesPage() {
@@ -101,24 +104,24 @@ export default function PropertiesPage() {
                 <div className="flex flex-wrap items-center gap-4 pt-2 font-mono text-xs">
                   <a
                     href="#catalog-view"
-                    className="px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.2em] font-bold transition-all shadow-xl flex items-center gap-2"
+                    className="px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.2em] font-bold transition-all shadow-xl flex items-center gap-2 min-h-[48px]"
                   >
-                    <span>EXPLORE PORTFOLIO COLLECTION ({totalProperties})</span>
-                    <ArrowDown className="w-3.5 h-3.5" />
+                    <span className="text-[#07090D] font-bold">EXPLORE PORTFOLIO COLLECTION ({totalProperties})</span>
+                    <ArrowDown className="w-3.5 h-3.5 text-[#07090D]" />
                   </a>
 
                   <a
                     href="#perspectives"
-                    className="px-6 py-3.5 border border-white/[0.15] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.2em] font-semibold transition-all"
+                    className="px-6 py-3.5 border border-white/[0.15] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.2em] font-semibold transition-all min-h-[48px] flex items-center justify-center"
                   >
-                    CRISTIAN VĂDUVA PERSPECTIVE
+                    <span>CRISTIAN VĂDUVA PERSPECTIVE</span>
                   </a>
 
                   <a
                     href="#ecosystem"
-                    className="px-6 py-3.5 border border-white/[0.15] hover:border-[#A97F60] text-[#B8C2CF] hover:text-[#A97F60] uppercase tracking-[0.2em] font-semibold transition-all"
+                    className="px-6 py-3.5 border border-white/[0.15] hover:border-[#A97F60] text-[#B8C2CF] hover:text-[#A97F60] uppercase tracking-[0.2em] font-semibold transition-all min-h-[48px] flex items-center justify-center"
                   >
-                    ECOSYSTEM DIRECTORY
+                    <span>ECOSYSTEM DIRECTORY</span>
                   </a>
                 </div>
               </div>
@@ -137,7 +140,9 @@ export default function PropertiesPage() {
                       alt="Signature Rooftop Penthouse — Panoramic Bucharest Skyline"
                       fill
                       priority
-                      sizes="(max-width: 1024px) 100vw, 40vw"
+                      fetchPriority="high"
+                      sizes="(max-width: 640px) 92vw, (max-width: 1024px) 80vw, 40vw"
+                      quality={75}
                       className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-80" />
@@ -146,9 +151,9 @@ export default function PropertiesPage() {
                       <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-[#93C8FF] block">
                         FLAGSHIP CURATION FEATURE
                       </span>
-                      <h4 className="font-serif text-lg text-[#F5F4EF] font-medium leading-tight">
+                      <h2 className="font-serif text-lg text-[#F5F4EF] font-medium leading-tight">
                         Signature Penthouse with 220 sqm Rooftop
-                      </h4>
+                      </h2>
                       <div className="flex items-center justify-between font-mono text-[11px] text-[#B8C2CF] pt-1">
                         <span>Central Diplomatic Corridor, Bucharest</span>
                         <span className="text-[#93C8FF] font-serif text-sm">€468,000</span>
@@ -249,15 +254,15 @@ export default function PropertiesPage() {
             <div className="flex items-center gap-3 shrink-0 font-mono text-xs w-full md:w-auto">
               <a
                 href="#perspectives"
-                className="flex-1 md:flex-initial px-5 py-3 border border-white/[0.15] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.18em] font-medium transition-colors text-center"
+                className="flex-1 md:flex-initial px-5 py-3 border border-white/[0.15] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.18em] font-medium transition-colors text-center min-h-[44px] flex items-center justify-center"
               >
-                MEET CRISTIAN VĂDUVA
+                <span>MEET CRISTIAN VĂDUVA</span>
               </a>
               <Link
                 href="/contact"
-                className="flex-1 md:flex-initial px-5 py-3 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.18em] font-bold transition-all shadow-lg text-center"
+                className="flex-1 md:flex-initial px-5 py-3 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.18em] font-bold transition-all shadow-lg text-center min-h-[44px] flex items-center justify-center"
               >
-                RETAIN MANDATE
+                <span className="text-[#07090D] font-bold">RETAIN MANDATE</span>
               </Link>
             </div>
           </div>

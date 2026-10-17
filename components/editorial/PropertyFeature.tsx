@@ -172,15 +172,15 @@ export default function PropertyFeature({
             <div className="grid sm:grid-cols-2 gap-3">
               <Link
                 href={`/real-estate/properties/${property.id}`}
-                className="px-5 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-[11px] uppercase tracking-[0.18em] font-bold transition-all text-center flex items-center justify-center gap-1.5 shadow-xl"
+                className="px-5 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-[11px] uppercase tracking-[0.18em] font-bold transition-all text-center flex items-center justify-center gap-1.5 shadow-xl min-h-[48px]"
               >
-                <span>VIEW FULL MONOGRAPH ({property.galleryImages?.length || 1} PHOTOS)</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <span className="text-[#07090D] font-bold">VIEW FULL MONOGRAPH ({property.galleryImages?.length || 1} PHOTOS)</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#07090D]" />
               </Link>
 
               <Link
                 href={`/contact?property=${encodeURIComponent(property.title)}`}
-                className="px-5 py-3.5 border border-white/[0.16] hover:border-[#93C8FF] hover:bg-[#93C8FF]/10 text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-[11px] uppercase tracking-[0.18em] font-semibold transition-all text-center flex items-center justify-center gap-1.5"
+                className="px-5 py-3.5 border border-white/[0.16] hover:border-[#93C8FF] hover:bg-[#93C8FF]/10 text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-[11px] uppercase tracking-[0.18em] font-semibold transition-all text-center flex items-center justify-center gap-1.5 min-h-[48px]"
               >
                 <span>REQUEST DOSSIER</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -193,7 +193,7 @@ export default function PropertyFeature({
                 href={property.sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#93C8FF] flex items-center gap-1 transition-colors"
+                className="hover:text-[#93C8FF] inline-flex items-center gap-1 transition-colors py-1.5 min-h-[32px]"
               >
                 <span>Source: {property.sourceName}</span>
                 <ArrowUpRight className="w-3 h-3 text-[#93C8FF]" />

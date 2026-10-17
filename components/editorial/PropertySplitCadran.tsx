@@ -45,10 +45,10 @@ export default function PropertySplitCadran({
                 className={`px-2 py-0.5 border font-bold uppercase tracking-[0.2em] ${
                   accent === "ice"
                     ? "bg-[#93C8FF]/15 border-[#93C8FF]/30 text-[#93C8FF]"
-                    : "bg-[#A97F60]/15 border-[#A97F60]/30 text-[#A97F60]"
+                    : "bg-[#C49A78]/15 border-[#C49A78]/30 text-[#C49A78]"
                 }`}
               >
-                № {formattedIndex}
+                NO. {formattedIndex}
               </span>
               <span className="text-[#8A95A5] uppercase tracking-wider">{property.type}</span>
             </div>
@@ -61,11 +61,12 @@ export default function PropertySplitCadran({
 
           {/* Image Aperture */}
           <div className="relative aspect-[16/10] w-full bg-[#1B2028] border border-white/[0.1] overflow-hidden group">
-            <Link href={`/real-estate/properties/${property.id}`} className="block relative w-full h-full">
+            <Link href={`/real-estate/properties/${property.id}`} prefetch={false} className="block relative w-full h-full">
               <Image
                 src={property.heroImage}
                 alt={property.title}
                 fill
+                loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 45vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -93,11 +94,11 @@ export default function PropertySplitCadran({
                 {property.subtitle}
               </span>
             )}
-            <h4 className="font-serif text-xl sm:text-2xl text-[#F5F4EF] leading-snug group-hover:text-[#93C8FF] transition-colors">
-              <Link href={`/real-estate/properties/${property.id}`}>
+            <h3 className="font-serif text-xl sm:text-2xl text-[#F5F4EF] leading-snug group-hover:text-[#93C8FF] transition-colors">
+              <Link href={`/real-estate/properties/${property.id}`} prefetch={false}>
                 {property.title}
               </Link>
-            </h4>
+            </h3>
             <EditorialText size="sm" maxWidth="full" color="secondary" className="line-clamp-3 leading-relaxed">
               {property.description}
             </EditorialText>
@@ -108,7 +109,7 @@ export default function PropertySplitCadran({
             <div className="grid grid-cols-2 gap-2 p-3.5 border border-white/[0.06] bg-[#1B2028]/60 font-mono text-[10px]">
               {property.specs.slice(0, 4).map((s, idx) => (
                 <div key={idx} className="space-y-0.5">
-                  <span className="text-[#647082] uppercase text-[9px] tracking-wider block">
+                  <span className="text-[#8A95A5] uppercase text-[9px] tracking-wider block">
                     {s.label}
                   </span>
                   <span className="text-[#B8C2CF] font-medium truncate block">
@@ -124,7 +125,8 @@ export default function PropertySplitCadran({
         <div className="pt-4 border-t border-white/[0.08]">
           <Link
             href={`/real-estate/properties/${property.id}`}
-            className="w-full py-3.5 border border-white/[0.12] hover:border-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2"
+            prefetch={false}
+            className="w-full py-3.5 border border-white/[0.12] hover:border-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2 min-h-[44px]"
           >
             <span>VIEW MONOGRAPH & SPECS</span>
             <ArrowUpRight className="w-3.5 h-3.5" />

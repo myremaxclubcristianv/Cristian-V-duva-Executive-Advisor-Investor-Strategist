@@ -1,9 +1,8 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { SectionHeader, InsightPanel } from "@/components/editorial";
+import SectionHeader from "@/components/editorial/SectionHeader";
+import InsightPanel from "@/components/editorial/InsightPanel";
 
 export default function InvestmentIntelligence() {
   return (

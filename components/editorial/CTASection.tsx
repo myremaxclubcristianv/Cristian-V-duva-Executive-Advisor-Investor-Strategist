@@ -53,17 +53,17 @@ export default function CTASection({
         <div className="pt-4 flex flex-col sm:flex-row sm:items-center gap-4 border-t border-white/[0.08]">
           <Link
             href={primaryActionHref}
-            className="px-8 py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.22em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-2xl"
+            className="px-8 py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.22em] font-bold transition-all text-center flex items-center justify-center gap-2 shadow-2xl min-h-[48px]"
           >
-            <span>{primaryActionText}</span>
-            <ArrowUpRight className="w-4 h-4" />
+            <span className="text-[#07090D] font-bold">{primaryActionText}</span>
+            <ArrowUpRight className="w-4 h-4 text-[#07090D]" />
           </Link>
 
           <a
             href={secondaryActionHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-7 py-4 border border-white/[0.14] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-xs uppercase tracking-[0.2em] font-semibold transition-colors text-center flex items-center justify-center gap-2"
+            className="px-7 py-4 border border-white/[0.14] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-xs uppercase tracking-[0.2em] font-semibold transition-colors text-center flex items-center justify-center gap-2 min-h-[48px]"
           >
             <MessageSquare className="w-4 h-4 text-[#93C8FF]" />
             <span>{secondaryActionText}</span>
@@ -72,7 +72,7 @@ export default function CTASection({
 
         {/* Disclaimer */}
         {disclaimer && (
-          <div className="flex items-center gap-2 font-mono text-[10px] text-[#647082] tracking-wider pt-2">
+          <div className="flex items-center gap-2 font-mono text-[10px] text-[#8A95A5] tracking-wider pt-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]/60" />
             <span>{disclaimer}</span>
           </div>

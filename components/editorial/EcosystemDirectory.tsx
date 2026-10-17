@@ -123,7 +123,7 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
         },
         {
           id: "subventii",
-          name: "Subvenții.ro",
+          name: "Subventii.ro",
           url: "https://subventii.ro",
           role: "European Structural Subsidies & Regional Development Grants",
           category: "Grants & Subsidies",
@@ -231,7 +231,7 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
             </div>
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] leading-[1.08] tracking-tight">
               The Connected Ecosystem<br />
-              <span className="text-[#93C8FF] italic font-normal">of Cristian Văduva.</span>
+              <span className="text-[#93C8FF] italic font-normal">of Cristian Vaduva.</span>
             </h2>
           </div>
 
@@ -287,7 +287,7 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
               <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-white/[0.06] pb-3">
                 <div className="flex items-center gap-3">
                   <span className="font-mono text-xs text-[#93C8FF] font-bold">
-                    0{groupIdx + 1} //
+                    0{groupIdx + 1}{" //"}
                   </span>
                   <h3 className="font-serif text-xl sm:text-2xl text-[#F5F4EF]">
                     {group.groupTitle}

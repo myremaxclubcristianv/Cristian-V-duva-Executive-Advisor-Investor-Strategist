@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import ArchitecturalHero from "./ArchitecturalHero";
 import EditorialInterruption from "./EditorialInterruption";

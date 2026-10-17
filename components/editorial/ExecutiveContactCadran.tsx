@@ -329,10 +329,12 @@ export default function ExecutiveContactCadran({
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-[#8A95A5] uppercase tracking-wider text-[10px] block">
+                      <label htmlFor="cadran-mandate-select" className="text-[#8A95A5] uppercase tracking-wider text-[10px] block">
                         ADVISORY MANDATE DISCIPLINE
                       </label>
                       <select
+                        id="cadran-mandate-select"
+                        aria-label="Advisory Mandate Discipline"
                         value={formData.interest}
                         onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
                         className="w-full px-4 py-3 bg-[#07090D] border border-white/[0.1] text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] transition-colors cursor-pointer"
@@ -347,10 +349,11 @@ export default function ExecutiveContactCadran({
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-[#8A95A5] uppercase tracking-wider text-[10px] block">
+                    <label htmlFor="cadran-message-textarea" className="text-[#8A95A5] uppercase tracking-wider text-[10px] block">
                       MANDATE PARAMETERS & SCOPE *
                     </label>
                     <textarea
+                      id="cadran-message-textarea"
                       required
                       rows={4}
                       value={formData.message}
@@ -363,10 +366,10 @@ export default function ExecutiveContactCadran({
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className="w-full py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.22em] font-bold transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                    className="w-full py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.22em] font-bold transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 min-h-[52px]"
                   >
-                    <span>{status === "submitting" ? "TRANSMITTING BRIEF..." : "TRANSMIT CONFIDENTIAL BRIEF"}</span>
-                    <ArrowUpRight className="w-4 h-4" />
+                    <span className="text-[#07090D] font-bold">{status === "submitting" ? "TRANSMITTING BRIEF..." : "TRANSMIT CONFIDENTIAL BRIEF"}</span>
+                    <ArrowUpRight className="w-4 h-4 text-[#07090D]" />
                   </button>
                 </form>
               )}

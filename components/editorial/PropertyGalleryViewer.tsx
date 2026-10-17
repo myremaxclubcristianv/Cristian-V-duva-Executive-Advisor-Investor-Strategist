@@ -64,6 +64,7 @@ export default function PropertyGalleryViewer({
           alt={`${title} — Photograph ${activeIndex + 1}`}
           fill
           priority
+          fetchPriority="high"
           sizes="(max-width: 1024px) 100vw, 80vw"
           className="object-cover transition-transform duration-700 group-hover:scale-102"
         />
@@ -83,8 +84,9 @@ export default function PropertyGalleryViewer({
               e.stopPropagation();
               setLightboxOpen(true);
             }}
-            className="pointer-events-auto p-2 bg-[#07090D]/85 backdrop-blur-md border border-white/[0.1] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-colors"
+            className="pointer-events-auto p-2 min-w-[44px] min-h-[44px] flex items-center justify-center bg-[#07090D]/85 backdrop-blur-md border border-white/[0.1] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-colors"
             title="Open Fullscreen Lightbox"
+            aria-label="Open fullscreen gallery viewer"
           >
             <Maximize2 className="w-4 h-4" />
           </button>
@@ -95,14 +97,14 @@ export default function PropertyGalleryViewer({
           <div className="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity">
             <button
               onClick={handlePrev}
-              className="p-3 bg-[#07090D]/85 backdrop-blur-md border border-white/[0.1] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-all"
+              className="p-3 min-w-[44px] min-h-[44px] flex items-center justify-center bg-[#07090D]/85 backdrop-blur-md border border-white/[0.1] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-all"
               aria-label="Previous photograph"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={handleNext}
-              className="p-3 bg-[#07090D]/85 backdrop-blur-md border border-white/[0.1] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-all"
+              className="p-3 min-w-[44px] min-h-[44px] flex items-center justify-center bg-[#07090D]/85 backdrop-blur-md border border-white/[0.1] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-all"
               aria-label="Next photograph"
             >
               <ChevronRight className="w-5 h-5" />
@@ -116,9 +118,9 @@ export default function PropertyGalleryViewer({
             <span className="font-mono text-[9px] uppercase tracking-[0.24em] text-[#93C8FF] block">
               CONFIRMED PHOTOGRAPHIC RECORD
             </span>
-            <h4 className="font-serif text-lg sm:text-xl text-[#F5F4EF] font-medium leading-tight">
+            <p className="font-serif text-lg sm:text-xl text-[#F5F4EF] font-medium leading-tight">
               {title}
-            </h4>
+            </p>
             <div className="flex items-center gap-1.5 text-xs text-[#B8C2CF] font-mono">
               <MapPin className="w-3.5 h-3.5 text-[#A97F60]" />
               <span>{location}</span>
@@ -145,7 +147,8 @@ export default function PropertyGalleryViewer({
               <button
                 key={idx}
                 onClick={() => setActiveIndex(idx)}
-                className={`relative w-24 sm:w-28 aspect-[16/10] shrink-0 border transition-all overflow-hidden bg-[#1B2028] ${
+                aria-label={`View photograph ${idx + 1} of ${total}`}
+                className={`relative w-24 sm:w-28 aspect-[16/10] shrink-0 border transition-all overflow-hidden bg-[#1B2028] min-h-[44px] ${
                   isSelected
                     ? "border-[#93C8FF] scale-102 ring-1 ring-[#93C8FF]/50"
                     : "border-white/[0.1] opacity-60 hover:opacity-100 hover:border-white/30"
@@ -155,6 +158,7 @@ export default function PropertyGalleryViewer({
                   src={img}
                   alt={`Thumbnail ${idx + 1}`}
                   fill
+                  loading="lazy"
                   sizes="120px"
                   className="object-cover"
                 />
@@ -169,14 +173,19 @@ export default function PropertyGalleryViewer({
 
       {/* Fullscreen Lightbox Modal */}
       {lightboxOpen && (
-        <div className="fixed inset-0 z-50 bg-[#07090D]/98 backdrop-blur-xl flex flex-col justify-between p-4 sm:p-8 animate-in fade-in duration-200">
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="High-resolution photograph inspection lightbox"
+          className="fixed inset-0 z-50 bg-[#07090D]/98 backdrop-blur-xl flex flex-col justify-between p-4 sm:p-8 animate-in fade-in duration-200"
+        >
           {/* Lightbox Header */}
           <div className="flex items-center justify-between border-b border-white/[0.1] pb-4">
             <div className="space-y-0.5">
               <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#93C8FF] block">
                 HIGH-RESOLUTION INSPECTION VIEW
               </span>
-              <h3 className="font-serif text-lg text-[#F5F4EF]">{title}</h3>
+              <p className="font-serif text-lg text-[#F5F4EF] font-medium">{title}</p>
             </div>
 
             <div className="flex items-center gap-4">
@@ -185,7 +194,7 @@ export default function PropertyGalleryViewer({
               </span>
               <button
                 onClick={() => setLightboxOpen(false)}
-                className="p-2 border border-white/[0.15] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-colors"
+                className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center border border-white/[0.15] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-colors"
                 aria-label="Close fullscreen view"
               >
                 <X className="w-5 h-5" />
@@ -198,7 +207,7 @@ export default function PropertyGalleryViewer({
             <div className="relative w-full h-full max-h-[75vh]">
               <Image
                 src={currentImage}
-                alt={`${title} full size`}
+                alt={`${title} full size photograph ${activeIndex + 1}`}
                 fill
                 sizes="100vw"
                 className="object-contain"
@@ -210,13 +219,15 @@ export default function PropertyGalleryViewer({
               <>
                 <button
                   onClick={handlePrev}
-                  className="absolute left-2 sm:left-6 p-4 bg-[#07090D]/80 border border-white/[0.15] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-all"
+                  className="absolute left-2 sm:left-6 p-4 min-w-[48px] min-h-[48px] flex items-center justify-center bg-[#07090D]/80 border border-white/[0.15] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-all"
+                  aria-label="Previous photograph"
                 >
                   <ChevronLeft className="w-6 h-6" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="absolute right-2 sm:right-6 p-4 bg-[#07090D]/80 border border-white/[0.15] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-all"
+                  className="absolute right-2 sm:right-6 p-4 min-w-[48px] min-h-[48px] flex items-center justify-center bg-[#07090D]/80 border border-white/[0.15] hover:border-[#93C8FF] text-white hover:text-[#93C8FF] transition-all"
+                  aria-label="Next photograph"
                 >
                   <ChevronRight className="w-6 h-6" />
                 </button>
@@ -231,7 +242,8 @@ export default function PropertyGalleryViewer({
                 <button
                   key={idx}
                   onClick={() => setActiveIndex(idx)}
-                  className={`relative w-16 h-12 shrink-0 border transition-all overflow-hidden ${
+                  aria-label={`View photograph ${idx + 1}`}
+                  className={`relative w-16 h-12 shrink-0 border transition-all overflow-hidden min-h-[44px] ${
                     activeIndex === idx
                       ? "border-[#93C8FF] scale-105"
                       : "border-white/[0.1] opacity-50 hover:opacity-100"

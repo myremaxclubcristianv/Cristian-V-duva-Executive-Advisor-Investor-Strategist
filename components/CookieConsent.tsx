@@ -36,7 +36,7 @@ export default function CookieConsent() {
     if (!isHydrated) return;
     const stored = localStorage.getItem(STORAGE_KEY);
     if (!stored) {
-      const timer = setTimeout(() => setIsOpen(true), 1200);
+      const timer = setTimeout(() => setIsOpen(true), 4000);
       return () => clearTimeout(timer);
     }
   }, [isHydrated]);
@@ -120,7 +120,7 @@ export default function CookieConsent() {
             
             <p className="font-sans text-[11px] sm:text-xs text-text-secondary/90 font-light leading-relaxed">
               We use strictly necessary technical storage to ensure security and functionality. Read our{" "}
-              <Link href="/cookies" className="text-accent underline hover:text-text-primary">
+              <Link href="/cookies" prefetch={false} className="text-accent underline hover:text-text-primary">
                 Cookie Policy
               </Link>.
             </p>
