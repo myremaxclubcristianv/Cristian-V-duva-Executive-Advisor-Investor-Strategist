@@ -1,15 +1,25 @@
 import crypto from "crypto";
 import { NextRequest } from "next/server";
 
-// Fallback signing secret - derived server-side only
-const SIGNING_SECRET =
-  process.env.ADMIN_SECRET_KEY ||
-  process.env.TELEGRAM_BOT_TOKEN ||
-  process.env.SUPABASE_SERVICE_ROLE_KEY ||
-  "cv-executive-advisory-auth-signature-key-2026";
+// Secure server-side HMAC signing key derivation
+// If no persistent server secret is present in environment, generate an isolated ephemeral 256-bit key
+// per process to prevent any predictable fallback signature vulnerability.
+let ephemeralInstanceSecret: string | null = null;
+function getDerivedSigningKey(): Buffer {
+  const secret =
+    process.env.ADMIN_SECRET_KEY ||
+    process.env.TELEGRAM_BOT_TOKEN ||
+    process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-// Derive isolated cryptographic key for HMAC signing
-const SIGNING_KEY = crypto.createHmac("sha256", "cv-executive-auth-salt").update(SIGNING_SECRET).digest();
+  if (secret) {
+    return crypto.createHmac("sha256", "cv-executive-auth-salt").update(secret).digest();
+  }
+
+  if (!ephemeralInstanceSecret) {
+    ephemeralInstanceSecret = crypto.randomBytes(32).toString("hex");
+  }
+  return crypto.createHmac("sha256", "cv-executive-auth-salt").update(ephemeralInstanceSecret).digest();
+}
 
 // Rate limiting map for admin login: max 5 failed attempts per 15 minutes per IP
 const loginRateLimitMap = new Map<string, { attempts: number; lockUntil: number }>();
@@ -79,14 +89,14 @@ export function isSessionRevoked(token: string): boolean {
 }
 
 /**
- * Constant-time string comparison preventing timing side-channel attacks
+ * Constant-time string comparison preventing timing and length side-channel attacks
  */
 export function safeCompare(a: string, b: string): boolean {
   if (typeof a !== "string" || typeof b !== "string") return false;
-  const bufA = Buffer.from(a);
-  const bufB = Buffer.from(b);
-  if (bufA.length !== bufB.length) return false;
-  return crypto.timingSafeEqual(bufA, bufB);
+  // Pre-hash inputs to 32-byte digests to eliminate timing leaks related to length differences
+  const hashA = crypto.createHash("sha256").update(a).digest();
+  const hashB = crypto.createHash("sha256").update(b).digest();
+  return crypto.timingSafeEqual(hashA, hashB);
 }
 
 /**
@@ -97,7 +107,8 @@ export function createSignedAdminSession(): string {
   const randomId = crypto.randomBytes(24).toString("hex");
   const timestamp = Date.now().toString();
   const payload = `${randomId}.${timestamp}`;
-  const signature = crypto.createHmac("sha256", SIGNING_KEY).update(payload).digest("hex");
+  const signingKey = getDerivedSigningKey();
+  const signature = crypto.createHmac("sha256", signingKey).update(payload).digest("hex");
   return `${payload}.${signature}`;
 }
 
@@ -130,7 +141,8 @@ export function verifyAdminSessionToken(token?: string | null): boolean {
 
   // Signature verification with derived HMAC key
   const payload = `${randomId}.${timestampStr}`;
-  const expectedSignature = crypto.createHmac("sha256", SIGNING_KEY).update(payload).digest("hex");
+  const signingKey = getDerivedSigningKey();
+  const expectedSignature = crypto.createHmac("sha256", signingKey).update(payload).digest("hex");
   return safeCompare(signature, expectedSignature);
 }
 
@@ -152,13 +164,16 @@ export function verifyCsrfOrigin(req: Request | NextRequest): boolean {
   const origin = headers.get("origin");
   const referer = headers.get("referer");
 
+  // Strict domain boundary whitelist: only project's verified domains and exact preview aliases
   const isAllowedHost = (host: string) => {
     const h = host.toLowerCase().split(":")[0];
     return (
       h === "executive.cristianvaduva.com" ||
       h === "cristianvaduva.com" ||
       h.endsWith(".cristianvaduva.com") ||
-      h.endsWith(".vercel.app") ||
+      h === "executive-cristian-vaduva.vercel.app" ||
+      h === "executive-weld.vercel.app" ||
+      /^executive(-[a-z0-9-]+)?-cristian-vaduva\.vercel\.app$/.test(h) ||
       h === "localhost" ||
       h === "127.0.0.1"
     );
@@ -166,8 +181,12 @@ export function verifyCsrfOrigin(req: Request | NextRequest): boolean {
 
   if (origin) {
     try {
-      const originHost = new URL(origin).host;
-      return isAllowedHost(originHost);
+      const url = new URL(origin);
+      const isLocal = url.hostname === "localhost" || url.hostname === "127.0.0.1";
+      if (process.env.NODE_ENV === "production" && !isLocal && url.protocol !== "https:") {
+        return false;
+      }
+      return isAllowedHost(url.host);
     } catch {
       return false;
     }
@@ -175,8 +194,12 @@ export function verifyCsrfOrigin(req: Request | NextRequest): boolean {
 
   if (referer) {
     try {
-      const refererHost = new URL(referer).host;
-      return isAllowedHost(refererHost);
+      const url = new URL(referer);
+      const isLocal = url.hostname === "localhost" || url.hostname === "127.0.0.1";
+      if (process.env.NODE_ENV === "production" && !isLocal && url.protocol !== "https:") {
+        return false;
+      }
+      return isAllowedHost(url.host);
     } catch {
       return false;
     }
@@ -224,7 +247,7 @@ export function verifyAdminRequest(req: Request | NextRequest): boolean {
 }
 
 /**
- * Validates real binary image signatures (Magic Bytes)
+ * Validates real binary image signatures (Magic Bytes) & structural sanity
  */
 export function validateImageBuffer(buffer: Buffer): {
   valid: boolean;
@@ -232,13 +255,48 @@ export function validateImageBuffer(buffer: Buffer): {
   extension?: string;
   mime?: string;
   error?: string;
+  width?: number;
+  height?: number;
 } {
   if (!buffer || buffer.length < 16) {
     return { valid: false, error: "Fișierul este corupt sau prea mic pentru o imagine validă." };
   }
 
+  const MAX_DIMENSION = 16384;
+
   // 1. JPEG: FF D8 FF
   if (buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff) {
+    try {
+      let offset = 2;
+      while (offset < buffer.length - 8) {
+        if (buffer[offset] !== 0xff) {
+          offset++;
+          continue;
+        }
+        const marker = buffer[offset + 1];
+        // SOF0 (0xC0), SOF1 (0xC1), SOF2 (0xC2)
+        if (marker === 0xc0 || marker === 0xc1 || marker === 0xc2) {
+          const h = buffer.readUInt16BE(offset + 5);
+          const w = buffer.readUInt16BE(offset + 7);
+          if (h > MAX_DIMENSION || w > MAX_DIMENSION) {
+            return {
+              valid: false,
+              error: `Dimensiunile imaginii (${w}x${h}) depășesc limita maximă de ${MAX_DIMENSION}px.`,
+            };
+          }
+          return { valid: true, format: "jpeg", extension: ".jpg", mime: "image/jpeg", width: w, height: h };
+        }
+        if (offset + 3 < buffer.length) {
+          const length = buffer.readUInt16BE(offset + 2);
+          if (length < 2) break;
+          offset += 2 + length;
+        } else {
+          break;
+        }
+      }
+    } catch {
+      // Fallback if marker scan encountered truncated payload
+    }
     return { valid: true, format: "jpeg", extension: ".jpg", mime: "image/jpeg" };
   }
 
@@ -253,7 +311,24 @@ export function validateImageBuffer(buffer: Buffer): {
     buffer[6] === 0x1a &&
     buffer[7] === 0x0a
   ) {
-    return { valid: true, format: "png", extension: ".png", mime: "image/png" };
+    if (buffer.length < 33) {
+      return { valid: false, error: "Fișierul PNG este trunchiat sau incomplet." };
+    }
+    if (buffer.toString("ascii", 12, 16) !== "IHDR") {
+      return { valid: false, error: "Fișierul PNG este corupt (IHDR lipsește)." };
+    }
+    const width = buffer.readUInt32BE(16);
+    const height = buffer.readUInt32BE(20);
+    if (width === 0 || height === 0) {
+      return { valid: false, error: "Dimensiunile imaginii PNG sunt invalide (0x0)." };
+    }
+    if (width > MAX_DIMENSION || height > MAX_DIMENSION) {
+      return {
+        valid: false,
+        error: `Dimensiunile imaginii (${width}x${height}) depășesc limita de siguranță de ${MAX_DIMENSION}px.`,
+      };
+    }
+    return { valid: true, format: "png", extension: ".png", mime: "image/png", width, height };
   }
 
   // 3. WEBP: 'RIFF' at 0, 'WEBP' at 8
@@ -261,11 +336,30 @@ export function validateImageBuffer(buffer: Buffer): {
     buffer.toString("ascii", 0, 4) === "RIFF" &&
     buffer.toString("ascii", 8, 12) === "WEBP"
   ) {
-    return { valid: true, format: "webp", extension: ".webp", mime: "image/webp" };
+    if (buffer.length < 30) {
+      return { valid: false, error: "Fișierul WebP este trunchiat sau incomplet." };
+    }
+    const chunkType = buffer.toString("ascii", 12, 16);
+    let width = 0;
+    let height = 0;
+    if (chunkType === "VP8X" && buffer.length >= 30) {
+      width = 1 + (buffer[24] | (buffer[25] << 8) | (buffer[26] << 16));
+      height = 1 + (buffer[27] | (buffer[28] << 8) | (buffer[29] << 16));
+    } else if (chunkType === "VP8 " && buffer.length >= 30) {
+      width = buffer.readUInt16LE(26) & 0x3fff;
+      height = buffer.readUInt16LE(28) & 0x3fff;
+    }
+    if ((width > 0 && width > MAX_DIMENSION) || (height > 0 && height > MAX_DIMENSION)) {
+      return {
+        valid: false,
+        error: `Dimensiunile imaginii WebP (${width}x${height}) depășesc limita de ${MAX_DIMENSION}px.`,
+      };
+    }
+    return { valid: true, format: "webp", extension: ".webp", mime: "image/webp", width, height };
   }
 
   // 4. AVIF / HEIF: 'ftyp' at 4, followed by avif/avis/mif1/miaf
-  if (buffer.toString("ascii", 4, 8) === "ftyp") {
+  if (buffer.length >= 24 && buffer.toString("ascii", 4, 8) === "ftyp") {
     const brand = buffer.toString("ascii", 8, 12).toLowerCase();
     if (["avif", "avis", "mif1", "miaf"].includes(brand)) {
       return { valid: true, format: "avif", extension: ".avif", mime: "image/avif" };

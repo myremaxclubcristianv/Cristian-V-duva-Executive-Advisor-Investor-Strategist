@@ -176,6 +176,17 @@ async function runTests() {
     assert.strictEqual(res.status, 403, "Cross-site origin must be rejected with 403");
   });
 
+  await test("CSRF: Unauthorized arbitrary Vercel domain (attacker.vercel.app) is REJECTED with 403 Forbidden", async () => {
+    const res = await fetch(`${BASE_URL}/api/photos`, {
+      method: "POST",
+      headers: {
+        Origin: "https://attacker-project.vercel.app",
+        Cookie: `executive_auth_session=${validSessionCookie}`,
+      },
+    });
+    assert.strictEqual(res.status, 403, "Arbitrary vercel.app domains must be strictly rejected");
+  });
+
   await test("CSRF: DELETE /api/photos/[id] with cross-site Sec-Fetch-Site returns 403 Forbidden", async () => {
     const res = await fetch(`${BASE_URL}/api/photos/photo-cv-hero`, {
       method: "DELETE",
@@ -187,7 +198,7 @@ async function runTests() {
     assert.strictEqual(res.status, 403, "Sec-Fetch-Site cross-site must be rejected with 403");
   });
 
-  // 4. File Signature (Magic Bytes) Verification
+  // 4. File Signature (Magic Bytes) Verification & Structural Sanity
   await test("Photo Upload: Reject fake image file (text content disguised as .jpg)", async () => {
     const formData = new FormData();
     const fakeBlob = new Blob(["<?php phpinfo(); ?>malicious executable script disguised"], { type: "image/jpeg" });
@@ -205,6 +216,56 @@ async function runTests() {
     assert.strictEqual(res.status, 400);
     const json = await res.json();
     assert(json.error?.includes("Semnătura binară") || json.error?.includes("imagine validă"));
+  });
+
+  await test("Photo Upload: Reject truncated / malformed PNG file", async () => {
+    const formData = new FormData();
+    // 8 bytes PNG signature followed by truncated junk without valid IHDR chunk
+    const truncatedBytes = new Uint8Array([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0x00, 0x00, 0x00, 0x0d, 0x54, 0x52, 0x55, 0x4e]);
+    const truncatedBlob = new Blob([truncatedBytes], { type: "image/png" });
+    formData.append("file", truncatedBlob, "truncated.png");
+    formData.append("title", "Truncated PNG");
+
+    const res = await fetch(`${BASE_URL}/api/photos`, {
+      method: "POST",
+      headers: {
+        Origin: "http://localhost:3000",
+        Cookie: `executive_auth_session=${validSessionCookie}`,
+      },
+      body: formData,
+    });
+    assert.strictEqual(res.status, 400);
+    const json = await res.json();
+    assert(json.error?.includes("trunchiat") || json.error?.includes("corupt") || json.error?.includes("Semnătura"));
+  });
+
+  await test("Photo Upload: Reject excessive dimension image (decompression bomb defense)", async () => {
+    const formData = new FormData();
+    // PNG with 65536 width (excessive dimension)
+    const bombPng = new Uint8Array([
+      0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, // PNG Signature
+      0x00, 0x00, 0x00, 0x0d,                         // Chunk length 13
+      0x49, 0x48, 0x44, 0x52,                         // IHDR
+      0x00, 0x01, 0x00, 0x00,                         // Width: 65,536 px (> 16384)
+      0x00, 0x00, 0x01, 0x00,                         // Height: 256 px
+      0x08, 0x02, 0x00, 0x00, 0x00,                   // Bit depth 8, truecolor
+      0x00, 0x00, 0x00, 0x00                          // CRC placeholder
+    ]);
+    const bombBlob = new Blob([bombPng], { type: "image/png" });
+    formData.append("file", bombBlob, "bomb.png");
+    formData.append("title", "Decompression Bomb Image");
+
+    const res = await fetch(`${BASE_URL}/api/photos`, {
+      method: "POST",
+      headers: {
+        Origin: "http://localhost:3000",
+        Cookie: `executive_auth_session=${validSessionCookie}`,
+      },
+      body: formData,
+    });
+    assert.strictEqual(res.status, 400);
+    const json = await res.json();
+    assert(json.error?.includes("Dimensiunile imaginii") || json.error?.includes("limita"));
   });
 
   await test("Photo Upload: Accept genuine binary image file (valid JPEG magic bytes)", async () => {
@@ -232,6 +293,17 @@ async function runTests() {
     const json = await res.json();
     assert.strictEqual(json.success, true);
     assert(json.photo?.id);
+
+    // Clean up synthetic test photo immediately to preserve data pristine state
+    if (json.photo?.id) {
+      await fetch(`${BASE_URL}/api/photos/${json.photo.id}`, {
+        method: "DELETE",
+        headers: {
+          Origin: "http://localhost:3000",
+          Cookie: `executive_auth_session=${validSessionCookie}`,
+        },
+      });
+    }
   });
 
   // 5. Admin Intelligence Route Hardening
