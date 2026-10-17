@@ -1,44 +1,61 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Scale, TrendingUp, ShieldCheck, Compass, CheckCircle2, MapPin, Award, Lock } from "lucide-react";
+import {
+  ArrowUpRight,
+  Scale,
+  TrendingUp,
+  ShieldCheck,
+  Compass,
+  CheckCircle2,
+  MapPin,
+  Award,
+  Lock,
+  GraduationCap,
+  FileText,
+  BarChart3,
+  ExternalLink,
+  Building2,
+  Globe2,
+} from "lucide-react";
 import ExecutiveHeader from "@/components/ExecutiveHeader";
 import Footer from "@/components/Footer";
 import { SectionHeader, EditorialText, CTASection } from "@/components/editorial";
+import PersonalArchiveGallery from "@/components/editorial/PersonalArchiveGallery";
 
 export const metadata: Metadata = {
-  title: "About & Fiduciary Mandate — Cristian Văduva",
+  title: "About & Fiduciary Mandate — Cristian Văduva | EXECUTIVE",
   description:
-    "Executive strategic advisor, investor, and fiduciary negotiator along the Monaco · Dubai · Bucharest axis. Academic synthesis of economics, law, and environmental ecology.",
+    "Executive strategic advisor, investor, and fiduciary negotiator along the Monaco · Dubai · Bucharest axis. Verified academic synthesis of 3 degrees, 3 master's degrees, and international residencies in Madrid, France, and Malta.",
 };
 
-const educationData = [
+const academicDegrees = [
   {
-    tier: "ACADEMIC TRINITY",
-    title: "Three Complete University Bachelor Degrees",
-    field: "Economic Sciences · Law & Jurisprudence · Ecology & Environmental Protection",
-    location: "Romania & European Union",
+    tier: "ACADEMIC FOUNDATION // 3 DEGREES",
+    title: "Economics · Ecology · Law",
+    institution: "University Academic Programs",
+    field: "Economic Strategy · Environmental Protection · Legal Frameworks",
     description:
-      "Multidisciplinary academic foundation uniting quantitative econometric modeling, rigorous contractual jurisprudence, and systemic environmental impact analysis for built assets.",
+      "A tripartite academic foundation uniting quantitative economic analysis, environmental protection principles, and legal regulatory frameworks for physical real estate assets.",
     icon: Scale,
   },
   {
-    tier: "POST-GRADUATE MASTERY",
-    title: "Master of Science (M.Sc.)",
-    field: "Financial Management & Environmental Risk Auditing",
-    location: "Madrid & Amiens",
+    tier: "POST-GRADUATE SPECIALIZATION // 3 MASTER'S DEGREES",
+    title: "Financial Management · Environmental Impact Assessment · Information Security",
+    institution: "Post-Graduate Master's Programs",
+    field: "Financial Management · Environmental Impact Assessment · Information Security",
     description:
-      "Advanced postgraduate studies focused on corporate financial structures, cross-border asset valuation, and quantifying climate risk impact on long-term real estate valuations.",
+      "Advanced postgraduate specializations focusing on capital allocation, environmental impact assessment, and information security protocols.",
     icon: TrendingUp,
   },
   {
-    tier: "EXECUTIVE SPECIALIZATION",
-    title: "Executive Master's",
-    field: "Private Security & High-Value Asset Surveillance",
-    location: "Malta & European Union",
+    tier: "INTERNATIONAL RESIDENCIES & STRATEGIC COLLABORATION",
+    title: "Madrid (1 Yr) · France (6 Mo) · Malta (3 Mo)",
+    institution: "International Studies & Strategic Collaboration",
+    field: "Financial Management Studies · Ecological Internship · Generali Romania Collaboration",
     description:
-      "High-level specialization in security governance, confidential physical asset custody, and institutional compliance frameworks for Ultra-High-Net-Worth (UHNW) families.",
-    icon: ShieldCheck,
+      "One year of Financial Management studies in Madrid, six months of academic studies in Amiens, France, and a three-month ecological internship in Malta, reinforced by a strategic collaboration with Generali Romania for integrated asset protection.",
+    icon: GraduationCap,
   },
 ];
 
@@ -61,7 +78,7 @@ const trajectorySteps = [
   {
     stage: "04",
     title: "PATRIMONIAL SURVEILLANCE & DOWNSIDE CONTAINMENT",
-    desc: "Capital preservation protocols, physical and cyber asset defense, and structural wealth defense mechanisms across multi-generational horizons.",
+    desc: "Capital preservation protocols, physical and cyber asset defense, and structural wealth defense mechanisms across multi-generational horizons in partnership with Generali Romania.",
   },
   {
     stage: "05",
@@ -98,7 +115,7 @@ export default function AboutPage() {
         {/* ======================================================== */}
         {/* 01 // EDITORIAL MONOGRAPH HERO                           */}
         {/* ======================================================== */}
-        <section className="site-chapter border-b border-white/[0.08] relative overflow-hidden bg-arch-grid pb-28 sm:pb-36 lg:pb-44">
+        <section className="site-chapter border-b border-white/[0.08] relative overflow-hidden bg-arch-grid pb-24 sm:pb-32 lg:pb-40">
           {/* Subtle Corner Crosshairs */}
           <div className="absolute top-10 left-6 lg:left-16 w-3 h-3 border-t border-l border-[#93C8FF]" />
           <div className="absolute top-10 right-6 lg:right-16 w-3 h-3 border-t border-r border-[#93C8FF]" />
@@ -142,12 +159,12 @@ export default function AboutPage() {
                     <span className="text-[#F5F4EF] font-sans font-medium text-sm">Bucharest · Monaco · Dubai</span>
                   </div>
                   <div>
-                    <span className="text-[#93C8FF] block uppercase tracking-widest text-[10px] font-semibold">PRACTICE FOCUS</span>
-                    <span className="text-[#F5F4EF] font-sans font-medium text-sm">Trophy Assets & Downside Defense</span>
+                    <span className="text-[#93C8FF] block uppercase tracking-widest text-[10px] font-semibold">ACADEMIC FOUNDATION</span>
+                    <span className="text-[#F5F4EF] font-sans font-medium text-sm">3 Degrees · 3 Master&apos;s</span>
                   </div>
                   <div className="hidden sm:block">
                     <span className="text-[#93C8FF] block uppercase tracking-widest text-[10px] font-semibold">FIDUCIARY STANDARD</span>
-                    <span className="text-[#F5F4EF] font-sans font-medium text-sm">Unilateral Exclusivity (Zero Conflict)</span>
+                    <span className="text-[#F5F4EF] font-sans font-medium text-sm">Unilateral Exclusivity</span>
                   </div>
                 </div>
 
@@ -160,10 +177,16 @@ export default function AboutPage() {
                     <ArrowUpRight className="w-4 h-4" />
                   </Link>
                   <a
+                    href="#archive"
+                    className="px-7 py-4 border border-white/[0.16] hover:border-[#93C8FF] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] font-medium transition-colors"
+                  >
+                    EXPLORE VERIFIED ARCHIVE (18)
+                  </a>
+                  <a
                     href="https://wa.me/436509536345"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-7 py-4 border border-white/[0.16] hover:border-[#93C8FF] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] font-medium transition-colors"
+                    className="px-7 py-4 border border-[#25D366]/40 hover:border-[#25D366] text-[#25D366] font-mono text-xs uppercase tracking-[0.2em] font-medium transition-colors"
                   >
                     WHATSAPP DIRECT
                   </a>
@@ -186,8 +209,8 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#8A95A5] px-1">
-                  <span>OFFICIAL PORTRAIT · ADRIAN BÎRGĂUAN</span>
-                  <span className="text-[#93C8FF]">VERIFIED SOURCE</span>
+                  <span>OFFICIAL PORTRAIT · ARMANI EXCHANGE BLAZER</span>
+                  <span className="text-[#93C8FF]">CRISTIANVADUVA.COM</span>
                 </div>
               </div>
             </div>
@@ -197,17 +220,17 @@ export default function AboutPage() {
         {/* ======================================================== */}
         {/* 02 // MULTIDISCIPLINARY ACADEMIC SYNTHESIS                */}
         {/* ======================================================== */}
-        <section className="py-28 sm:py-36 lg:py-44 bg-[#0C1119] border-b border-white/[0.08]">
+        <section className="py-24 sm:py-32 lg:py-40 bg-[#0C1119] border-b border-white/[0.08]">
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-16 sm:space-y-20">
             <SectionHeader
               eyebrow="02 // MULTIDISCIPLINARY ACADEMIC FOUNDATION"
               badge="DEGREES & SPECIALIZATIONS"
               title="Academic Synthesis: Economics, Law & Ecology"
-              description="Comprehensive fiduciary advisory requires concurrent mastery of corporate balance sheets, nuanced contractual covenants, and the physical and environmental durability of real assets."
+              description="Comprehensive fiduciary advisory requires concurrent mastery of corporate balance sheets, nuanced contractual covenants, and the physical environmental durability of real estate assets."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {educationData.map((item) => {
+              {academicDegrees.map((item) => {
                 const IconComponent = item.icon;
                 return (
                   <div
@@ -226,7 +249,7 @@ export default function AboutPage() {
 
                       <div className="space-y-1.5">
                         <span className="font-mono text-xs text-[#8A95A5] block">
-                          {item.location}
+                          {item.institution}
                         </span>
                         <h3 className="font-serif text-2xl text-[#F5F4EF] leading-snug">
                           {item.title}
@@ -248,11 +271,77 @@ export default function AboutPage() {
         </section>
 
         {/* ======================================================== */}
-        {/* 03 // FIDUCIARY PHILOSOPHY & PILLARS                      */}
+        {/* 03 // 2026 BUCHAREST RESIDENTIAL MARKET PARADOX           */}
         {/* ======================================================== */}
-        <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-16 sm:space-y-20">
+        <section className="py-24 sm:py-32 lg:py-40 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-16 sm:space-y-20 border-b border-white/[0.08]">
           <SectionHeader
-            eyebrow="03 // PROFESSIONAL PHILOSOPHY & ETHICS"
+            eyebrow="03 // MARKET SURVEILLANCE & EMPIRICAL ANALYSIS"
+            badge="REPORT AUG 2026"
+            title="The 2026 Bucharest Real Estate Market Paradox"
+            description="Empirical market intelligence published on cristianvaduva.com: Resale housing in Bucharest commands a 26% price premium over new residential developments."
+          />
+
+          <div className="grid lg:grid-cols-12 gap-8 items-stretch">
+            {/* Metric Box 1: Resale (€2,653/sqm) */}
+            <div className="lg:col-span-6 p-8 sm:p-10 border border-[#93C8FF]/30 bg-[#0C1119] space-y-6 relative">
+              <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 font-mono text-xs">
+                <span className="text-[#93C8FF] uppercase tracking-[0.2em] font-semibold">
+                  ESTABLISHED / RESALE HOUSING
+                </span>
+                <span className="px-2 py-0.5 bg-[#93C8FF]/10 text-[#93C8FF] border border-[#93C8FF]/30">
+                  CENTRAL CORE CORRIDOR
+                </span>
+              </div>
+
+              <div className="space-y-2">
+                <div className="font-serif text-5xl sm:text-6xl text-[#F5F4EF]">
+                  €2,653 <span className="text-lg font-sans text-[#8A95A5]">/ sqm</span>
+                </div>
+                <p className="font-sans text-sm text-[#B8C2CF] leading-relaxed">
+                  Average transaction price in Bucharest prime established residential zones (Herăstrău, Dorobanți, Floreasca, Primăverii). Premium driven by unrepeatable central land scarcity, established municipal utility connections, and historical architectural provenance.
+                </p>
+              </div>
+
+              <div className="pt-4 border-t border-white/[0.06] font-mono text-[11px] text-[#A97F60] flex items-center gap-2">
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>Highest liquidity & sovereign wealth preservation resilience</span>
+              </div>
+            </div>
+
+            {/* Metric Box 2: New Build (€2,099/sqm) */}
+            <div className="lg:col-span-6 p-8 sm:p-10 border border-white/[0.1] bg-[#0C1119] space-y-6 relative">
+              <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 font-mono text-xs">
+                <span className="text-[#A97F60] uppercase tracking-[0.2em] font-semibold">
+                  NEW RESIDENTIAL CONSTRUCTIONS
+                </span>
+                <span className="px-2 py-0.5 bg-white/[0.05] text-[#8A95A5] border border-white/[0.1]">
+                  PERIPHERAL CORRIDORS
+                </span>
+              </div>
+
+              <div className="space-y-2">
+                <div className="font-serif text-5xl sm:text-6xl text-[#F5F4EF]">
+                  €2,099 <span className="text-lg font-sans text-[#8A95A5]">/ sqm</span>
+                </div>
+                <p className="font-sans text-sm text-[#B8C2CF] leading-relaxed">
+                  Average asking price across newly permitted developments. The inverted price differential highlights urban sprawl risk in peripheral sectors, permitting blockades in historical centers, and the imperative for structural title due diligence before off-plan commitments.
+                </p>
+              </div>
+
+              <div className="pt-4 border-t border-white/[0.06] font-mono text-[11px] text-[#8A95A5] flex items-center gap-2">
+                <ShieldCheck className="w-3.5 h-3.5 text-[#93C8FF]" />
+                <span>Forensic evaluation required: infrastructure, zoning, and delivery timelines</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ======================================================== */}
+        {/* 04 // FIDUCIARY PHILOSOPHY & DOCTRINE                     */}
+        {/* ======================================================== */}
+        <section className="py-24 sm:py-32 lg:py-40 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-16 sm:space-y-20 border-b border-white/[0.08]">
+          <SectionHeader
+            eyebrow="04 // PROFESSIONAL PHILOSOPHY & ETHICS"
             badge="GOVERNANCE STANDARDS"
             title="The Cristian Văduva Fiduciary Doctrine"
             description="In an industry plagued by superficial brokerage and concealed transaction fees, this practice is grounded upon four uncompromising principles of professional conduct."
@@ -283,12 +372,37 @@ export default function AboutPage() {
         </section>
 
         {/* ======================================================== */}
-        {/* 04 // CAREER EVOLUTION TRAJECTORY                        */}
+        {/* 05 // THE CRISTIAN VĂDUVA ARCHIVE (18 MONOGRAPHS & STUDIES) */}
         {/* ======================================================== */}
-        <section className="py-28 sm:py-36 lg:py-44 bg-[#0C1119] border-t border-b border-white/[0.08]">
+        <section className="py-24 sm:py-32 lg:py-40 bg-[#0C1119] border-b border-white/[0.08]">
+          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-16">
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs text-[#93C8FF] uppercase tracking-[0.28em] font-semibold">
+                <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
+                <span>05 // THE CRISTIAN VĂDUVA ARCHIVE</span>
+                <span className="text-white/20">|</span>
+                <span className="text-[#A97F60]">AUTHENTIC FIRST-PARTY ASSETS</span>
+              </div>
+              <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] leading-tight">
+                Photographic Monograph & Architectural Studies
+              </h2>
+              <p className="font-sans text-base sm:text-lg text-[#B8C2CF] max-w-3xl font-light leading-relaxed">
+                Explore the verified 18-monograph collection, comprising 13 executive portraits, advisory sessions, and on-site walkthroughs of Cristian Văduva sourced from cristianvaduva.com, alongside 5 curated architectural studies of landmark residential complexes and Danube nautical living photographed by Adrian Bîrgăuan.
+              </p>
+            </div>
+
+            {/* Interactive Archive Component */}
+            <PersonalArchiveGallery />
+          </div>
+        </section>
+
+        {/* ======================================================== */}
+        {/* 06 // CAREER EVOLUTION TRAJECTORY                        */}
+        {/* ======================================================== */}
+        <section className="py-24 sm:py-32 lg:py-40 bg-[#07090D] border-b border-white/[0.08]">
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-16 sm:space-y-20">
             <SectionHeader
-              eyebrow="04 // EVOLUTION & PRACTICE CHRONOLOGY"
+              eyebrow="06 // EVOLUTION & PRACTICE CHRONOLOGY"
               badge="PRACTICE TRAJECTORY"
               title="Phases of Executive & Fiduciary Consolidation"
               description="From capital market liquidity research and econometric underwriting to sovereign trophy asset negotiations and multi-generational family office defense."
@@ -318,7 +432,7 @@ export default function AboutPage() {
         </section>
 
         {/* ======================================================== */}
-        {/* 05 // PRIVATE MANDATE INTAKE                             */}
+        {/* 07 // PRIVATE MANDATE INTAKE                             */}
         {/* ======================================================== */}
         <CTASection
           eyebrow="PRIVATE ADVISORY PROTOCOL"

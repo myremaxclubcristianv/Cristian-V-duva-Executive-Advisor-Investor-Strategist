@@ -13,6 +13,7 @@ import {
   MessageSquare,
   Globe,
   CheckCircle2,
+  Award,
 } from "lucide-react";
 
 interface PersonalPerspectiveSectionProps {
@@ -51,8 +52,8 @@ export default function PersonalPerspectiveSection({
       category: "ASSET PROTECTION",
       title: "Insurance Architecture & Risk Shielding",
       description:
-        "Comprehensive property, casualty, and wealth preservation coverage designed for high-value architectural assets. Shielding family offices and corporate holding structures from unforeseen liabilities, environmental hazards, and succession disruption.",
-      platformName: "Insurance Advisory",
+        "Comprehensive property, casualty, and wealth preservation coverage designed in institutional collaboration with Generali Romania. Shielding family offices and corporate holding structures from unforeseen liabilities, environmental hazards, and succession disruption.",
+      platformName: "Generali Romania Alliance",
       platformUrl: "https://insurance.cristianvaduva.com",
     },
     {
@@ -215,6 +216,14 @@ export default function PersonalPerspectiveSection({
                 <MessageSquare className="w-3.5 h-3.5 text-[#25D366]" />
                 <span>WHATSAPP (+43 650 953 6345)</span>
               </a>
+
+              <Link
+                href="/about#archive"
+                className="px-5 py-3.5 border border-[#A97F60]/40 hover:border-[#A97F60] text-[#A97F60] hover:bg-[#A97F60]/10 uppercase tracking-[0.18em] font-semibold transition-all flex items-center gap-2"
+              >
+                <Award className="w-3.5 h-3.5" />
+                <span>VERIFIED ARCHIVE (18)</span>
+              </Link>
 
               <a
                 href="https://cristianvaduva.com"

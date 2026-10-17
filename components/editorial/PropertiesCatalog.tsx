@@ -35,7 +35,7 @@ export default function PropertiesCatalog() {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [sortBy, setSortBy] = useState<SortOption>("featured");
   const [viewMode, setViewMode] = useState<"editorial" | "grid">("editorial");
-  const [visibleCount, setVisibleCount] = useState<number>(10);
+  const [visibleCount, setVisibleCount] = useState<number>(12);
 
   const getPrimaryCountry = (countryStr?: string) => {
     if (!countryStr) return "Other";
@@ -462,15 +462,21 @@ export default function PropertiesCatalog() {
           </div>
         )}
 
-        {/* Progressive Loading Button */}
+        {/* Progressive Loading Controls */}
         {hasMore && (
-          <div className="text-center pt-20">
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-20">
             <button
-              onClick={() => setVisibleCount((prev) => prev + 10)}
-              className="px-10 py-4 border border-[#93C8FF]/50 bg-[#0C1119] hover:bg-[#93C8FF] hover:text-[#07090D] text-[#93C8FF] font-mono text-xs uppercase tracking-[0.22em] font-bold transition-all shadow-xl group inline-flex items-center gap-2"
+              onClick={() => setVisibleCount((prev) => prev + 12)}
+              className="px-8 py-4 border border-[#93C8FF]/50 bg-[#0C1119] hover:bg-[#93C8FF] hover:text-[#07090D] text-[#93C8FF] font-mono text-xs uppercase tracking-[0.22em] font-bold transition-all shadow-xl group inline-flex items-center gap-2"
             >
-              <span>EXHIBIT MORE PROPERTIES ({filteredProperties.length - visibleCount} REMAINING)</span>
+              <span>EXHIBIT MORE ASSETS ({filteredProperties.length - visibleCount} REMAINING)</span>
               <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+            </button>
+            <button
+              onClick={() => setVisibleCount(filteredProperties.length)}
+              className="px-6 py-4 border border-white/[0.15] bg-[#07090D] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-xs uppercase tracking-[0.22em] font-medium transition-all shadow-lg"
+            >
+              <span>EXHIBIT ALL ({filteredProperties.length})</span>
             </button>
           </div>
         )}
