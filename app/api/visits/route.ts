@@ -4,7 +4,7 @@ import crypto from "crypto";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 import { parseUserAgent } from "@/lib/uaParser";
 import { extractCoarseLocation } from "@/lib/analytics/cleanGeo";
-import { getOrCreateSession, shouldSendNewVisitorAlert } from "@/lib/analytics/storage";
+import { getOrCreateSession, shouldSendNewVisitorAlert, checkRateLimit } from "@/lib/analytics/storage";
 import { buildNewVisitorMessage, dispatchTelegramIntelligence } from "@/lib/analytics/telegramIntelligence";
 
 const SESSION_COOKIE_NAME = "cv_session_id";
@@ -12,11 +12,20 @@ const ALERT_COOKIE_NAME = "cv_alert_sent";
 
 export async function POST(request: Request) {
   try {
+    const headers = request.headers;
+    const clientIp = headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+
+    // 1. Rate Limiting Check (60 requests per minute per IP)
+    if (!checkRateLimit(`visit_${clientIp}`, 60)) {
+      return NextResponse.json({ status: "rate_limited" }, { status: 429 });
+    }
+
     const cookieStore = await cookies();
-    const existingSessionId = cookieStore.get(SESSION_COOKIE_NAME)?.value;
+    const rawSessionId = cookieStore.get(SESSION_COOKIE_NAME)?.value;
     const alertSentCookie = cookieStore.get(ALERT_COOKIE_NAME)?.value;
 
-    let sessionId = existingSessionId;
+    const isValidSessionId = rawSessionId && /^[a-zA-Z0-9_-]{10,64}$/.test(rawSessionId);
+    let sessionId = isValidSessionId ? rawSessionId : undefined;
     let isNewSession = false;
 
     if (!sessionId) {
@@ -59,7 +68,6 @@ export async function POST(request: Request) {
     }
 
     // Header extraction
-    const headers = request.headers;
     const userAgent = headers.get("user-agent") || "";
     const parsedUa = parseUserAgent(userAgent);
     const { country, city } = extractCoarseLocation(headers);

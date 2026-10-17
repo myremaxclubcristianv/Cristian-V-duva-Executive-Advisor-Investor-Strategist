@@ -47,13 +47,15 @@ export async function sendTelegramMessage(text: string): Promise<TelegramDispatc
       return { success: true };
     } else {
       const errorText = await res.text().catch(() => "No response body");
-      console.error(`[TELEGRAM_DISPATCH_FAILED] HTTP ${res.status}: ${errorText.slice(0, 150)}`);
+      const safeErrorText = errorText.replace(/bot\d+:[a-zA-Z0-9_-]+/g, "bot[REDACTED]");
+      console.error(`[TELEGRAM_DISPATCH_FAILED] HTTP ${res.status}: ${safeErrorText.slice(0, 150)}`);
       return { success: false, error: `Telegram returned HTTP ${res.status}` };
     }
   } catch (err: unknown) {
     clearTimeout(timeoutId);
-    const message = err instanceof Error ? err.message : String(err);
-    console.error("[TELEGRAM_DISPATCH_ERROR]", message);
-    return { success: false, error: message };
+    const rawMessage = err instanceof Error ? err.message : String(err);
+    const safeMessage = rawMessage.replace(/bot\d+:[a-zA-Z0-9_-]+/g, "bot[REDACTED]");
+    console.error("[TELEGRAM_DISPATCH_ERROR]", safeMessage);
+    return { success: false, error: safeMessage };
   }
 }

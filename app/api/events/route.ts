@@ -88,7 +88,8 @@ export async function POST(request: Request) {
     // Sanitize fields
     const pagePath = typeof body.pagePath === "string" ? body.pagePath.slice(0, 200) : "/";
     const pageTitle = typeof body.pageTitle === "string" ? body.pageTitle.slice(0, 150) : "";
-    const sessionId = typeof body.sessionId === "string" ? body.sessionId.slice(0, 64) : "anonymous";
+    const rawSessionId = typeof body.sessionId === "string" ? body.sessionId.trim().slice(0, 64) : "";
+    const sessionId = /^[a-zA-Z0-9_-]{10,64}$/.test(rawSessionId) ? rawSessionId : "anonymous";
     const referrer = typeof body.referrer === "string" ? body.referrer.slice(0, 250) : undefined;
     const utmSource = typeof body.utmSource === "string" ? body.utmSource.slice(0, 100) : undefined;
     const utmMedium = typeof body.utmMedium === "string" ? body.utmMedium.slice(0, 100) : undefined;

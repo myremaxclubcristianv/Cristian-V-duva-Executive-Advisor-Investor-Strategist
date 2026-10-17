@@ -8,8 +8,9 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const videoId = searchParams.get("videoId");
 
-  if (!videoId) {
-    return NextResponse.json({ isValid: false }, { status: 400 });
+  // YouTube video IDs are strictly 11 alphanumeric, underscore, or dash characters
+  if (!videoId || !/^[a-zA-Z0-9_-]{11}$/.test(videoId)) {
+    return NextResponse.json({ isValid: false, error: "Invalid video ID format." }, { status: 400 });
   }
 
   const apiKey = process.env.YOUTUBE_API_KEY;

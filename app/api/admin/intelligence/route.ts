@@ -1,13 +1,9 @@
-import { NextResponse } from "next/server";
+import { NextResponse, NextRequest } from "next/server";
 import { getRecentSessions } from "@/lib/analytics/storage";
+import { verifyAdminRequest } from "@/lib/adminAuth";
 
-export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const token = searchParams.get("token") || request.headers.get("authorization")?.replace("Bearer ", "");
-
-  const secret = process.env.ADMIN_SECRET_KEY || "aix_executive_preview_key";
-
-  if (!token || token !== secret) {
+export async function GET(request: NextRequest) {
+  if (!verifyAdminRequest(request)) {
     return NextResponse.json({ status: "unauthorized" }, { status: 401 });
   }
 
@@ -32,3 +28,4 @@ export async function GET(request: Request) {
     recentSessions: sessions.slice(0, 50),
   });
 }
+

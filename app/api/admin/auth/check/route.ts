@@ -1,11 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
+import { verifyAdminRequest } from "@/lib/adminAuth";
 
 export const dynamic = "force-dynamic";
 
 export async function GET(req: NextRequest) {
-  const sessionCookie = req.cookies.get("executive_auth_session")?.value;
-
-  if (sessionCookie && sessionCookie.startsWith("authenticated_session_cristian_vaduva")) {
+  if (verifyAdminRequest(req)) {
     return NextResponse.json({
       authenticated: true,
       user: {
@@ -21,3 +20,4 @@ export async function GET(req: NextRequest) {
     { status: 401 }
   );
 }
+

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { deleteStoredPhoto, updateStoredPhoto } from "@/lib/photoStore";
+import { verifyAdminRequest } from "@/lib/adminAuth";
 
 export const dynamic = "force-dynamic";
 
@@ -8,6 +9,13 @@ export async function DELETE(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    if (!verifyAdminRequest(req)) {
+      return NextResponse.json(
+        { success: false, error: "Unauthorized" },
+        { status: 401 }
+      );
+    }
+
     const { id } = await params;
     if (!id) {
       return NextResponse.json(
@@ -42,6 +50,13 @@ export async function PATCH(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    if (!verifyAdminRequest(req)) {
+      return NextResponse.json(
+        { success: false, error: "Unauthorized" },
+        { status: 401 }
+      );
+    }
+
     const { id } = await params;
     const body = await req.json();
 

@@ -6,6 +6,7 @@ import {
   PhotoCategory,
   PhotoOrientation,
 } from "@/lib/photoStore";
+import { verifyAdminRequest } from "@/lib/adminAuth";
 import fs from "fs";
 import path from "path";
 
@@ -18,6 +19,8 @@ const ALLOWED_MIME_TYPES = [
   "image/webp",
   "image/avif",
 ];
+
+const ALLOWED_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".avif"];
 
 const MAX_FILE_SIZE = 25 * 1024 * 1024; // 25MB
 
@@ -40,6 +43,14 @@ export async function GET() {
 
 export async function POST(req: NextRequest) {
   try {
+    // Enforce administrative authorization
+    if (!verifyAdminRequest(req)) {
+      return NextResponse.json(
+        { success: false, error: "Acces neautorizat. Autentificarea este obligatorie." },
+        { status: 401 }
+      );
+    }
+
     const formData = await req.formData();
     const file = formData.get("file") as File | null;
     const title = ((formData.get("title") as string) || "").trim() || "Cristian Văduva";
@@ -72,9 +83,16 @@ export async function POST(req: NextRequest) {
         );
       }
 
+      const extension = path.extname(file.name).toLowerCase() || ".jpg";
+      if (!ALLOWED_EXTENSIONS.includes(extension)) {
+        return NextResponse.json(
+          { success: false, error: "Extensia fișierului nu este permisă." },
+          { status: 400 }
+        );
+      }
+
       const bytes = await file.arrayBuffer();
       const buffer = Buffer.from(bytes);
-      const extension = path.extname(file.name) || ".jpg";
       const sanitizedName = file.name
         .replace(/[^a-zA-Z0-9.-]/g, "_")
         .toLowerCase();
