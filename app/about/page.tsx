@@ -794,10 +794,10 @@ export default function AboutPage() {
                 <span className="text-[#A97F60]">AUTHENTIC FIRST-PARTY ASSETS</span>
               </div>
               <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] leading-tight">
-                Photographic Monograph & Architectural Studies
+                Photographic Monograph & Personal Archive
               </h2>
               <p className="font-sans text-base sm:text-lg text-[#B8C2CF] max-w-3xl font-light leading-relaxed">
-                Explore the verified 18-monograph collection, comprising 13 executive portraits, advisory sessions, and on-site walkthroughs of Cristian Văduva sourced from cristianvaduva.com, alongside 5 curated architectural studies of landmark residential complexes and Danube nautical living photographed by Adrian Bîrgăuan.
+                Explore the comprehensive archive of 87 verified personal photographs of Cristian Văduva sourced from cristianvaduva.com and aixluxury.com, comprising official studio portraits, executive advisory sessions, on-site development inspections, keynote summits, and editorial shoots.
               </p>
             </div>
 

@@ -1,0 +1,1222 @@
+[
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1002_8a42d4eb-f073-4475-9401-e87298c8c3cc.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1006_IMG_5244-2.jpg",
+    "faceCount" : 1,
+    "confidence" : 0.6789238
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1007_IMG_4029-scaled.jpg",
+    "faceCount" : 1,
+    "confidence" : 0.8937718
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1008_IMG_7760.jpg",
+    "faceCount" : 1,
+    "confidence" : 0.8634845
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1009_IMG_3792-scaled.jpg",
+    "faceCount" : 1,
+    "confidence" : 0.85553116
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1010_certificate-7.jpg",
+    "faceCount" : 1,
+    "confidence" : 0.8738832
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1011_e88982a3-1ee3-4905-82c7-fc815afd0198.jpg",
+    "faceCount" : 2,
+    "confidence" : 0.87080467
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1012_IMG_8287.jpg",
+    "faceCount" : 2,
+    "confidence" : 0.86517924
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1018_Captura-de-ecran-din-2026-04-13-la-01.05.50.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1019_IMG_8363-1.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1027_f47db817-1323-43ed-861a-bfe35d981998.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1030_6a853c53-a9ac-45d8-86e7-086406f8e0ca.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1031_5eda9b58-8334-489b-a1f6-7fa6cba0a48b.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1032_IMG_1053.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1033_IMG_1052.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1034_IMG_1050.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1035_IMG_1054.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/103_Captura-de-ecran-din-2024-01-17-la-12.33.56-1.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1042_IMG_1064.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1043_IMG_1065.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1045_IMG_1067.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1046_IMG_1069.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1047_IMG_1070.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1048_IMG_1071.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/109_Captura-de-ecran-din-2024-01-17-la-12.35.06-2.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1128_55b7652c-a7ee-434e-af6f-dccf5934f165.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/1132_c4326451-7ce2-4c04-a59f-8a697b6c6f64.jpg",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/114_Captura-de-ecran-din-2024-01-17-la-12.41.13.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/115_Captura-de-ecran-din-2024-01-17-la-12.49.03.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/116_Captura-de-ecran-din-2024-01-17-la-12.49.58.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/118_Captura-de-ecran-din-2024-01-17-la-12.51.33.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/119_Captura-de-ecran-din-2024-01-17-la-12.55.25.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/120_Captura-de-ecran-din-2024-01-17-la-12.56.15.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/121_Captura-de-ecran-din-2024-01-17-la-12.57.40.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/124_Captura-de-ecran-din-2024-01-17-la-12.33.08-2.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/128_Captura-de-ecran-din-2024-01-17-la-12.35.43-2.png",
+    "faceCount" : 0,
+    "confidence" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/129_Captura-de-ecran-din-2024-01-17-la-12.40.06-2.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/140_Captura-de-ecran-din-2024-01-17-la-12.58.41.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/141_Captura-de-ecran-din-2024-01-17-la-13.09.46.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/142_Captura-de-ecran-din-2024-01-17-la-13.11.07.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/143_Captura-de-ecran-din-2024-01-17-la-13.11.34.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/144_Captura-de-ecran-din-2024-01-17-la-13.13.21.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/145_Captura-de-ecran-din-2024-01-17-la-13.12.35.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/146_Captura-de-ecran-din-2024-01-17-la-13.14.04.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/147_Captura-de-ecran-din-2024-01-17-la-13.16.10.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/148_Captura-de-ecran-din-2024-01-17-la-13.17.06.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/149_Captura-de-ecran-din-2024-01-17-la-13.17.37.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/151_Captura-de-ecran-din-2024-01-17-la-13.19.11.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/153_Captura-de-ecran-din-2024-01-17-la-13.20.52.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/154_Captura-de-ecran-din-2024-01-17-la-13.21.40.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/156_Captura-de-ecran-din-2024-01-17-la-13.28.01.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/157_Captura-de-ecran-din-2024-01-17-la-13.28.48.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/158_WhatsApp-Image-2023-08-04-at-16.39.30.jpeg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/161_Captura-de-ecran-din-2024-01-17-la-13.44.59.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/162_Captura-de-ecran-din-2024-01-17-la-13.46.11.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/165_Captura-de-ecran-din-2024-01-17-la-13.50.29-1.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/167_Captura-de-ecran-din-2024-01-17-la-13.51.19.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/168_Captura-de-ecran-din-2024-01-17-la-13.51.41.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/170_Captura-de-ecran-din-2024-01-17-la-13.52.10-1.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/171_Captura-de-ecran-din-2024-01-17-la-13.53.28.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/172_Captura-de-ecran-din-2024-01-17-la-14.02.30-1.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/173_Captura-de-ecran-din-2024-01-17-la-14.02.54.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/175_Captura-de-ecran-din-2024-01-17-la-14.03.59-1.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/176_Captura-de-ecran-din-2024-01-17-la-14.07.53.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/177_Captura-de-ecran-din-2024-01-17-la-14.08.21.png",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/213_B334C73D-C8A1-4375-8FBB-AAA7F164A419-1.jpeg",
+    "confidence" : 0.85553116,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/217_F5CEB168-EC4C-4B32-8508-21083A9A00DE.jpeg",
+    "confidence" : 0.88305444,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/218_1A4346F9-91F4-4830-9755-2F0AB371B37B-1.jpeg",
+    "confidence" : 0.7905694,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/219_32492929-B902-4D52-BE4E-EC9CC60BE1D0-1.jpeg",
+    "confidence" : 0.71908957,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/229_E60D595D-9517-4950-9018-2DEC1B39635B-1.jpeg",
+    "confidence" : 0.80858433,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/232_33337BDA-7411-41CD-A701-100C6DA73917-1.jpeg",
+    "confidence" : 0.8199776,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/233_D3ABA647-A802-49C4-A364-DA9EF481A1A9-2.jpeg",
+    "confidence" : 0.8736038,
+    "faceCount" : 1
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.871085,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/234_34026D8C-BC39-4004-9F72-AE3755FADC4F-2.jpeg"
+  },
+  {
+    "faceCount" : 0,
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/236_76A0D9B3-5A8D-48B8-895D-47FBD0478732.jpeg"
+  },
+  {
+    "faceCount" : 0,
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/24_47D9F6A5-6E69-4C31-A65F-654F209FA141.jpeg"
+  },
+  {
+    "faceCount" : 0,
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/25_0BF92FBD-C607-45AD-AB51-E765D73F2712.jpeg"
+  },
+  {
+    "faceCount" : 0,
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/26_E8FA80BD-74AA-42CD-A980-9E600964BAA9.jpeg"
+  },
+  {
+    "faceCount" : 0,
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/27_D14381A5-D0F2-48F3-9425-40E3B151F574.jpeg"
+  },
+  {
+    "faceCount" : 2,
+    "confidence" : 0.86517924,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/325_IMG_4296.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.880008,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/326_IMG_4298.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8532452,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/327_IMG_4299.png"
+  },
+  {
+    "faceCount" : 0,
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/340_FB_IMG_1699953145853.jpg"
+  },
+  {
+    "faceCount" : 0,
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/343_IMG_3928.jpg"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8061652,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/346_IMG_2839.jpg"
+  },
+  {
+    "faceCount" : 2,
+    "confidence" : 0.8428815,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/354_IMG_4300.png"
+  },
+  {
+    "faceCount" : 2,
+    "confidence" : 0.85951704,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/355_IMG_4301.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8082823,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/356_IMG_4302.png"
+  },
+  {
+    "faceCount" : 2,
+    "confidence" : 0.87080467,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/357_IMG_4303.png"
+  },
+  {
+    "faceCount" : 2,
+    "confidence" : 0.85667187,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/358_IMG_4304.png"
+  },
+  {
+    "faceCount" : 3,
+    "confidence" : 0.81310076,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/359_IMG_4305.png"
+  },
+  {
+    "faceCount" : 2,
+    "confidence" : 0.84865475,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/360_IMG_4306.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8019142,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/361_IMG_4307.png"
+  },
+  {
+    "faceCount" : 0,
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/362_IMG_4308.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8632017,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/365_IMG_4311.png"
+  },
+  {
+    "faceCount" : 0,
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/366_IMG_4312.png"
+  },
+  {
+    "faceCount" : 2,
+    "confidence" : 0.85553116,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/367_IMG_4313.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8121995,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/368_IMG_4314.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.76546556,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/370_IMG_4316.png"
+  },
+  {
+    "faceCount" : 5,
+    "confidence" : 0.7942666,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/371_IMG_4317.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8408515,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/372_IMG_4318.png"
+  },
+  {
+    "faceCount" : 2,
+    "confidence" : 0.8532452,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/374_IMG_4320.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8956819,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/375_IMG_4321.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.7930361,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/376_IMG_4322.png"
+  },
+  {
+    "faceCount" : 2,
+    "confidence" : 0.8558165,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/377_IMG_4323.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8420121,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/405_IMG_4327.png"
+  },
+  {
+    "faceCount" : 0,
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/429_IMG_4209.jpg"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8235428,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/478_IMG_4319-1.png"
+  },
+  {
+    "faceCount" : 1,
+    "confidence" : 0.8217621,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/486_Copy-of-5-Star-branded-property.jpg"
+  },
+  {
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/55_Captura-de-ecran-din-2024-01-17-la-14.03.59.png",
+    "faceCount" : 0
+  },
+  {
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/56_Captura-de-ecran-din-2024-01-17-la-13.52.10.png",
+    "faceCount" : 0
+  },
+  {
+    "confidence" : 0.8808399,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/589_a0aed5d6-f810-4032-9555-a6f0f3f606fd.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/597_1198009b-ce30-46aa-ba8d-d77bfffba88d.jpg",
+    "faceCount" : 0
+  },
+  {
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/611_IMG_4606.jpg",
+    "faceCount" : 0
+  },
+  {
+    "confidence" : 0.86150306,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/688_IMG_4835.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.8052562,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/691_IMG_4834.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.90165865,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/697_a2842b38-9e91-4bf2-8b26-2ce4f6a8ee2c.jpg",
+    "faceCount" : 2
+  },
+  {
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/702_IMG_4586.jpg",
+    "faceCount" : 0
+  },
+  {
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/722_IMG_3277.jpg",
+    "faceCount" : 0
+  },
+  {
+    "confidence" : 0.788095,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/73_C07D302E-B372-407D-8608-2B478FCCC563.jpeg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.8932254,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/762_IMG_4843.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.8738832,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/765_3D9C6578-11A4-4870-BA2F-402BFF553786.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.85353124,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/766_36E34693-9CB6-47B6-96B2-101FE7557AE7.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.87861973,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/767_Cristian-Vaduva-2.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.86291885,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/771_IMG_4897.png",
+    "faceCount" : 3
+  },
+  {
+    "confidence" : 0.8253195,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/775_CristianVaduva.com_-1.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.8109962,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/777_Cristian-Vaduva.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/77_Captura-de-ecran-din-2024-01-17-la-12.34.28.png",
+    "faceCount" : 0
+  },
+  {
+    "confidence" : 0.86206967,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/783_Captura-de-ecran-din-2024-02-26-la-10.59.16.png",
+    "faceCount" : 2
+  },
+  {
+    "confidence" : 0.85496026,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/801_5-Star-branded-property.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.7951882,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/802_IQON-VILLAS.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.778746,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/803_IMG_4635-2.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.85524577,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/804_IMG_5660-scaled.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.7065887,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/805_Captura-de-ecran-din-2024-03-01-la-11.11.02.png",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.64725983,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/806_IMG_5659-scaled.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/813_IMG_5047.jpg",
+    "faceCount" : 0
+  },
+  {
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/815_IMG_5043.jpg",
+    "faceCount" : 0
+  },
+  {
+    "confidence" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/817_IMG_5045.jpg",
+    "faceCount" : 0
+  },
+  {
+    "confidence" : 0.82324624,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/823_IMG_5791-scaled.jpg",
+    "faceCount" : 3
+  },
+  {
+    "confidence" : 0.8632017,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/825_Iall-take-a-moment-to-appreciate-myself-d¥.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.8417221,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/827_IMG_6913-scaled.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.81310076,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/828_D192FAF8-6EAC-4E70-BF64-34954C2C674B.jpg",
+    "faceCount" : 3
+  },
+  {
+    "confidence" : 0.85037905,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/830_Buy-Real-estate.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.86574346,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/832_IMG_7438-scaled.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.70485896,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/833_IMG_6868-1-scaled.jpg",
+    "faceCount" : 1
+  },
+  {
+    "confidence" : 0.7930361,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/839_IMG-20240404-WA0000.jpg"
+  },
+  {
+    "confidence" : 0.89921844,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/841_cristianvaduva.com_.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/845_new-one-cv.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/848_40767-110-439.png.png"
+  },
+  {
+    "confidence" : 0.8538173,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/850_Captura-de-ecran-din-2024-07-06-la-16.26.05-1.png"
+  },
+  {
+    "confidence" : 0.830921,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/851_Captura-de-ecran-din-2024-07-06-la-16.34.15.png"
+  },
+  {
+    "confidence" : 0.8270925,
+    "faceCount" : 3,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/852_Captura-de-ecran-din-2024-07-06-la-16.38.26.png"
+  },
+  {
+    "confidence" : 0.81310076,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/853_Captura-de-ecran-din-2024-07-06-la-16.41.58.png"
+  },
+  {
+    "confidence" : 0.7856128,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/854_Captura-de-ecran-din-2024-07-06-la-16.42.34.png"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/876_Captura-de-ecran-din-2024-07-14-la-11.09.50.png"
+  },
+  {
+    "confidence" : 0.8247277,
+    "faceCount" : 2,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/878_certificate-20.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/879_certificate.png.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/883_certificate-2.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/884_certificate-3.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/885_certificate-4.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/886_certificate-5.jpg"
+  },
+  {
+    "confidence" : 0.84375,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/887_certificate.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/902_209_AdrianBirgauan.ro_.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/903_220_AdrianBirgauan.ro_.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/904_224_AdrianBirgauan.ro_.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/906_196_AdrianBirgauan.ro_.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/907_200_AdrianBirgauan.ro_.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/909_234_AdrianBirgauan.ro_.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/910_227_AdrianBirgauan.ro_.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/911_228_AdrianBirgauan.ro_.jpg"
+  },
+  {
+    "confidence" : 0,
+    "faceCount" : 0,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/913_235_AdrianBirgauan.ro_.jpg"
+  },
+  {
+    "confidence" : 0.8640498,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/916_certificate-1.jpg"
+  },
+  {
+    "confidence" : 0.7470646,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/917_IMG_1517-scaled.jpg"
+  },
+  {
+    "confidence" : 0.84606165,
+    "faceCount" : 2,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/918_IMG_5321.jpg"
+  },
+  {
+    "confidence" : 0.8420121,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/919_IMG_1571-scaled.jpg"
+  },
+  {
+    "confidence" : 0.8267973,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/920_IMG_1582-scaled.jpg"
+  },
+  {
+    "confidence" : 0.82502365,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/921_IMG_1522-scaled.jpg"
+  },
+  {
+    "confidence" : 0.8838835,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/922_certificate-6.jpg"
+  },
+  {
+    "confidence" : 0.7936516,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/923_certificate-4.jpg"
+  },
+  {
+    "confidence" : 0.7948811,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/924_IMG_2182-scaled.jpg"
+  },
+  {
+    "confidence" : 0.6175335,
+    "faceCount" : 1,
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/925_IMG_2227-scaled.jpg"
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/926_IMG_2279-scaled.jpg",
+    "confidence" : 0.8303331,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/927_IMG_2301-scaled.jpg",
+    "confidence" : 0.6698735,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/928_IMG_2363-scaled.jpg",
+    "confidence" : 0.85438895,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/929_IMG_2531-scaled.jpg",
+    "confidence" : 0.8067707,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/930_IMG_2618-scaled.jpg",
+    "confidence" : 0.78156245,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/931_IMG_2655-scaled.jpg",
+    "confidence" : 0.7388494,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/932_IMG_2667-scaled.jpg",
+    "confidence" : 0.78125,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/933_certificate-3.jpg",
+    "confidence" : 0.8291562,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/934_216618319_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/935_216618320_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/936_216618321_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/937_216618323_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/938_216618316_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/939_216618317_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/940_216618318_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/941_223583200_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/943_218073638_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/944_218073639_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/945_204775577_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/946_IMG_3198-2.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/947_IMG_3198.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/949_IMG_3203.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/950_IMG_3206.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/951_IMG_3211.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/953_IMG_3185.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/954_IMG_3187.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/955_IMG_3209.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/956_IMG_3297.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/957_IMG_3298.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/959_certificate.jpeg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/960_fcef08ed-8f75-45f4-a691-4c173418080c-2.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/961_IMG_0861-2.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/962_IMG_1119.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/963_IMG_1595.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/966_IMG_2051-2.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/967_IMG_2059-2.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/970_certificate-3-1.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/971_certificate-2-1.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/972_certificate-4-1.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/973_certificate-6.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/974_certificate-5-1.jpg",
+    "confidence" : 0.84375,
+    "faceCount" : 1
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/975_228505795_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/976_228505818_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/977_228505819_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/978_228505821_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/979_228505822_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/980_228505823_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/981_228505825_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/982_228505796_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/983_228505817_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/984_228505820_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/985_228505816_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/986_228505824_WxH.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/987_1.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/988_2.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/989_3.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/990_4.jpeg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/991_5.jpeg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/992_10.jpeg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/993_11.jpeg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/994_12.jpeg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/995_97e0d9b5-1441-43db-b38f-3ea1b485d1d5.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/997_2b5d480e-2991-432a-8d98-b29720ca7db9.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  },
+  {
+    "path" : "scripts\/full_media_scan\/cristianvaduva\/998_8e6b3add-086c-4286-8e8f-f83e16d5a460.jpg",
+    "confidence" : 0,
+    "faceCount" : 0
+  }
+]

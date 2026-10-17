@@ -18,7 +18,7 @@ import {
   Camera,
 } from "lucide-react";
 
-type FilterCategory = "all" | "portraits" | "advisory" | "field" | "architecture";
+type FilterCategory = "all" | "portraits" | "advisory" | "field" | "events" | "lifestyle";
 
 interface PersonalArchiveGalleryProps {
   className?: string;
@@ -45,21 +45,27 @@ export default function PersonalArchiveGallery({
     },
     {
       id: "advisory",
-      label: "ADVISORY & MODELING",
+      label: "EXECUTIVE ADVISORY",
       count: personalArchivePhotos.filter((p) => p.category === "advisory").length,
       icon: Camera,
     },
     {
       id: "field",
-      label: "FIELD WALKTHROUGHS",
+      label: "DEVELOPMENTS & FIELD",
       count: personalArchivePhotos.filter((p) => p.category === "field").length,
       icon: Eye,
     },
     {
-      id: "architecture",
-      label: "ARCHITECTURAL STUDIES",
-      count: personalArchivePhotos.filter((p) => p.category === "architecture").length,
+      id: "events",
+      label: "KEYNOTES & EVENTS",
+      count: personalArchivePhotos.filter((p) => p.category === "events").length,
       icon: Building,
+    },
+    {
+      id: "lifestyle",
+      label: "EDITORIAL & LIFESTYLE",
+      count: personalArchivePhotos.filter((p) => p.category === "lifestyle").length,
+      icon: Camera,
     },
   ], []);
 
@@ -319,7 +325,12 @@ export default function PersonalArchiveGallery({
                     </div>
                     <div className="flex justify-between py-1">
                       <span className="text-[#8A95A5]">Source Domain</span>
-                      <span className="text-[#A97F60]">{new URL(selectedPhoto.sourcePage).hostname}</span>
+                      <span className="text-[#A97F60]">
+                        {selectedPhoto.sourceDomain ||
+                          (selectedPhoto.sourcePage.startsWith("http")
+                            ? new URL(selectedPhoto.sourcePage).hostname
+                            : selectedPhoto.sourcePage)}
+                      </span>
                     </div>
                   </div>
                 </div>
