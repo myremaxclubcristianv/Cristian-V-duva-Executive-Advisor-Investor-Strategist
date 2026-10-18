@@ -22,7 +22,7 @@ export default function Footer() {
               >
                 CRISTIAN VADUVA
               </Link>
-              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#93C8FF] font-medium">
+              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#A97F60] font-medium">
                 EXECUTIVE ADVISOR · INVESTOR · STRATEGIST
               </div>
             </div>
@@ -33,7 +33,7 @@ export default function Footer() {
 
             {/* Geographical Coordinates Matrix */}
             <div className="p-4 border border-white/[0.08] bg-[#0C1119]/80 space-y-2 max-w-md font-mono text-[10px] text-[#B8C2CF]">
-              <div className="text-[#93C8FF] tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5">
+              <div className="text-[#A97F60] tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5" />
                 <span>PREZENȚĂ & PIEȚE DE ACTIVITATE</span>
               </div>
@@ -121,7 +121,7 @@ export default function Footer() {
 
           {/* Confidential Communications & Social */}
           <div className="lg:col-span-4 space-y-6">
-            <span className="font-mono text-[11px] uppercase tracking-[0.24em] text-[#93C8FF] font-semibold block">
+            <span className="font-mono text-[11px] uppercase tracking-[0.24em] text-[#A97F60] font-semibold block">
               PRIVATE CHANNELS
             </span>
 
@@ -130,44 +130,44 @@ export default function Footer() {
                 href="https://wa.me/436509536345"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-3.5 min-h-[48px] border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF] transition-colors group"
+                className="flex items-center justify-between p-3.5 min-h-[48px] border border-white/[0.08] bg-[#0C1119] hover:border-[#A97F60] transition-colors group"
               >
                 <div className="flex items-center gap-2.5">
-                  <Phone className="w-3.5 h-3.5 text-[#93C8FF]" />
+                  <Phone className="w-3.5 h-3.5 text-[#A97F60]" />
                   <span>+43 650 953 6345 (Direct / Signal)</span>
                 </div>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#8A95A5] group-hover:text-[#93C8FF]" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#8A95A5] group-hover:text-[#A97F60]" />
               </a>
 
               <a
                 href="https://linkedin.com/in/cristianvaduva"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-3.5 min-h-[48px] border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF] transition-colors group"
+                className="flex items-center justify-between p-3.5 min-h-[48px] border border-white/[0.08] bg-[#0C1119] hover:border-[#A97F60] transition-colors group"
               >
                 <div className="flex items-center gap-2.5">
-                  <LinkedinIcon className="w-3.5 h-3.5 text-[#93C8FF]" />
+                  <LinkedinIcon className="w-3.5 h-3.5 text-[#A97F60]" />
                   <span>LinkedIn / Cristian Văduva</span>
                 </div>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#8A95A5] group-hover:text-[#93C8FF]" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#8A95A5] group-hover:text-[#A97F60]" />
               </a>
 
               <a
                 href="https://www.youtube.com/@CristianVaduvaCV"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-3.5 min-h-[48px] border border-white/[0.08] bg-[#0C1119] hover:border-[#93C8FF] transition-colors group"
+                className="flex items-center justify-between p-3.5 min-h-[48px] border border-white/[0.08] bg-[#0C1119] hover:border-[#A97F60] transition-colors group"
               >
                 <div className="flex items-center gap-2.5">
-                  <YoutubeIcon className="w-3.5 h-3.5 text-[#93C8FF]" />
+                  <YoutubeIcon className="w-3.5 h-3.5 text-[#A97F60]" />
                   <span>Official YouTube Broadcast</span>
                 </div>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#8A95A5] group-hover:text-[#93C8FF]" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#8A95A5] group-hover:text-[#A97F60]" />
               </a>
             </div>
 
             <div className="flex items-center gap-2 text-[10px] font-mono text-[#8A95A5] pt-2">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#93C8FF]" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#A97F60]" />
               <span>CONFIDENȚIALITATE CONTRACTUALĂ (NDA) · DUE DILIGENCE STRUCTURAT</span>
             </div>
           </div>

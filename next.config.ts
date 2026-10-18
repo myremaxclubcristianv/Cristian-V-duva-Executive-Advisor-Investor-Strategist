@@ -35,9 +35,14 @@ const nextConfig: NextConfig = {
     ];
   },
   async headers() {
+    const isDev = process.env.NODE_ENV === "development";
+    const scriptSrc = isDev
+      ? "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com;"
+      : "script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com;";
+
     const cspHeader = `
       default-src 'self';
-      script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com;
+      ${scriptSrc}
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       img-src 'self' data: blob: https://*.supabase.co https://img.youtube.com https://i.ytimg.com https://*.cristianvaduva.com https://cristianvaduva.com https://*.aixluxury.com https://aixluxury.com https://images.unsplash.com https://*.tet.ro https://tet.ro https://*.zf.ro https://*.profit.ro https://*.ft.com https://*.forbes.ro;
       font-src 'self' data: https://fonts.gstatic.com;

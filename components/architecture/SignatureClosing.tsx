@@ -1,27 +1,20 @@
 import React from "react";
-import Link from "next/link";
 import { ArrowUpRight, Lock, Phone, ShieldCheck } from "lucide-react";
 import SignatureIntakeForm from "./SignatureIntakeForm";
 
 export default function SignatureClosing() {
   return (
-    <section id="contact" className="relative w-full bg-[#07090D] text-[#F5F4EF] py-28 sm:py-36 lg:py-44 border-b border-white/[0.08] overflow-hidden">
-      {/* Background Architectural Subtle Grid */}
-      <div className="absolute inset-0 bg-arch-grid opacity-20 pointer-events-none" />
-
-      {/* Atmospheric Ambient Glow (Electric Ice Blue / Cold Silver) */}
-      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#93C8FF]/[0.03] rounded-full blur-[140px] pointer-events-none" />
-
-      <div className="site-container relative z-10 space-y-16 sm:space-y-24">
+    <section id="contact" className="relative w-full bg-[#07090D] text-[#F5F4EF] py-24 sm:py-32 lg:py-40 border-b border-white/[0.08] overflow-hidden">
+      <div className="site-container relative z-10 space-y-16 sm:space-y-20">
         {/* Top Eyebrow Sequence */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.1] pb-4 font-mono text-xs uppercase tracking-[0.24em] text-[#93C8FF]">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.1] pb-4 font-mono text-xs uppercase tracking-[0.24em] text-[#A97F60]">
           <div className="flex items-center gap-3">
-            <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
-            <span>08 // SIGNATURE CLOSING</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#A97F60]" />
+            <span className="text-[#F5F4EF] font-semibold">CONVERSAȚIE PRIVATĂ</span>
             <span className="text-white/20">/</span>
-            <span className="text-[#B8C2CF]">PRIVATE INTAKE PROTOCOL</span>
+            <span>ACCES DIRECT FONDATOR</span>
           </div>
-          <span className="text-[#8A95A5]">CONFIDENTIAL COMMUNICATIONS CHANNEL</span>
+          <span className="text-[#8A95A5]">CANAL CONFIDENȚIAL CRISTIAN VĂDUVA</span>
         </div>
 
         {/* Closing Composition: Left Monumental Statement & Coordinates, Right Intake Form */}
@@ -29,16 +22,16 @@ export default function SignatureClosing() {
           {/* Left Column: Monumental Invitation */}
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-4">
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#A97F60] block font-semibold">
-                DIRECT PRINCIPAL ENGAGEMENT
+              <span className="font-mono text-[10px] uppercase tracking-[0.26em] text-[#A97F60] block font-semibold">
+                DIALOG STRATEGIC PRELIMINAR
               </span>
-              <h2 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-[#F5F4EF] leading-[1.02] tracking-tight">
-                Initiate a Confidential Strategic Conversation.
+              <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] leading-[1.04] tracking-tight font-normal">
+                Inițiați o conversație confidențială direct cu Cristian Văduva.
               </h2>
             </div>
 
             <p className="font-sans text-base sm:text-lg text-[#B8C2CF] font-light max-w-xl leading-relaxed">
-              Every inquiry is reviewed directly by Cristian Văduva under strict non-disclosure privilege. We do not maintain junior intake tiers.
+              Fiecare solicitare este evaluată personal de Cristian Văduva, sub angajament deplin de confidențialitate contractuală (NDA). Nu menținem dispecerate comerciale intermediare.
             </p>
 
             {/* Direct Channels */}
@@ -47,44 +40,38 @@ export default function SignatureClosing() {
                 href="https://wa.me/436509536345"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-4 border border-white/[0.1] bg-[#0C1119] hover:border-[#93C8FF] hover:bg-[#1B2028] transition-colors group"
+                className="flex items-center justify-between p-4 border border-white/[0.1] bg-[#0C1119] hover:border-[#A97F60] hover:bg-[#1B2028] transition-colors group"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded border border-white/[0.1] flex items-center justify-center text-[#93C8FF]">
+                  <div className="w-8 h-8 rounded border border-white/[0.1] flex items-center justify-center text-[#A97F60]">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-[#8A95A5] block text-[10px]">ENCRYPTED MESSAGING</span>
-                    <span className="text-[#F5F4EF] font-sans font-medium">+43 650 953 6345 (WhatsApp)</span>
+                    <span className="text-[#8A95A5] block text-[10px]">COMUNICARE ENCRIPTATĂ</span>
+                    <span className="text-[#F5F4EF] font-sans font-medium">+43 650 953 6345 (WhatsApp / Signal)</span>
                   </div>
                 </div>
-                <ArrowUpRight className="w-4 h-4 text-[#B8C2CF] group-hover:text-[#93C8FF] transition-colors" />
+                <ArrowUpRight className="w-4 h-4 text-[#B8C2CF] group-hover:text-[#A97F60] transition-colors" />
               </a>
 
-              <div className="p-4 border border-white/[0.08] bg-[#0C1119] text-[#B8C2CF] text-[11px] leading-relaxed flex items-start gap-3">
-                <ShieldCheck className="w-4 h-4 text-[#93C8FF] mt-0.5 shrink-0" />
+              <div className="p-4 border border-white/[0.08] bg-[#0C1119] text-[#B8C2CF] text-xs leading-relaxed flex items-start gap-3">
+                <ShieldCheck className="w-4 h-4 text-[#A97F60] mt-0.5 shrink-0" />
                 <span>
-                  All consultations operate under strict bilateral confidentiality. Counter-party verification and preliminary NDA precede any asset disclosure.
+                  Toate discuțiile preliminare se desfășoară sub clauze bilaterale de confidențialitate. Puteți solicita semnarea unui acord NDA înaintea oricărei dezvăluiri de date.
                 </span>
               </div>
             </div>
           </div>
 
-          {/* Right Column: High-End Intake Desk Form */}
+          {/* Right Column: Clean Intake Desk Form (No HUD crosshairs) */}
           <div className="lg:col-span-6">
-            <div className="border border-white/[0.14] bg-[#0C1119]/95 backdrop-blur-2xl p-8 sm:p-12 relative shadow-2xl">
-              {/* Corner crosshairs */}
-              <div className="absolute -top-1 -left-1 w-3 h-3 border-t border-l border-[#93C8FF]" />
-              <div className="absolute -top-1 -right-1 w-3 h-3 border-t border-r border-[#93C8FF]" />
-              <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b border-l border-[#93C8FF]" />
-              <div className="absolute -bottom-1 -right-1 w-3 h-3 border-b border-r border-[#93C8FF]" />
-
-              <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 mb-6">
-                <span className="font-mono text-xs uppercase tracking-[0.24em] text-[#93C8FF] font-semibold flex items-center gap-2">
+            <div className="border border-white/[0.12] bg-[#0C1119] p-8 sm:p-12 shadow-2xl space-y-6">
+              <div className="flex items-center justify-between border-b border-white/[0.08] pb-4">
+                <span className="font-mono text-xs uppercase tracking-[0.24em] text-[#A97F60] font-semibold flex items-center gap-2">
                   <Lock className="w-3.5 h-3.5" />
-                  <span>INTAKE SPECIFICATION</span>
+                  <span>TRANSMITERE SOLICITARE</span>
                 </span>
-                <span className="font-mono text-[10px] text-[#8A95A5]">SECURE PROTOCOL</span>
+                <span className="font-mono text-[10px] text-[#8A95A5]">CONFIDENȚIALITATE GARANTATĂ</span>
               </div>
 
               <SignatureIntakeForm />

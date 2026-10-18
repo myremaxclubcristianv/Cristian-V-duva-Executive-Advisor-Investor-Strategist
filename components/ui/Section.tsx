@@ -3,16 +3,29 @@ import React from 'react';
 interface SectionProps {
   children: React.ReactNode;
   className?: string;
-  /** "light" (default) or "dark" */
-  variant?: 'light' | 'dark';
+  /** "light" | "dark" | "porcelain" | "charcoal" */
+  variant?: 'light' | 'dark' | 'porcelain' | 'charcoal';
+  id?: string;
 }
 
-export const Section: React.FC<SectionProps> = ({ children, className = '', variant = 'light' }) => {
-  const base = 'py-24';
-  const bg = variant === 'dark' ? 'bg-[#070707] text-[#F5F5F7]' : 'bg-[#FAFAFA] text-[#1D1D1F]';
+export const Section: React.FC<SectionProps> = ({
+  children,
+  className = '',
+  variant = 'dark',
+  id,
+}) => {
+  const bg =
+    variant === 'light' || variant === 'porcelain'
+      ? 'bg-[#F5F4EF] text-[#07090D]'
+      : variant === 'charcoal'
+      ? 'bg-[#0C1119] text-[#F5F4EF]'
+      : 'bg-[#07090D] text-[#F5F4EF]';
+
   return (
-    <section className={`${base} ${bg} ${className}`}>
+    <section id={id} className={`w-full ${bg} ${className}`}>
       {children}
     </section>
   );
 };
+
+export default Section;

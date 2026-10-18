@@ -86,7 +86,7 @@ export default function PropertiesPage() {
               <div className="lg:col-span-7 space-y-8">
                 <div className="space-y-4">
                   <span className="font-mono text-xs sm:text-sm uppercase tracking-[0.25em] text-[#A97F60] font-semibold block">
-                    SOVEREIGN REAL ESTATE ARCHITECTURE
+                    EXECUTIVE REAL ESTATE ARCHITECTURE
                   </span>
                   <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-[#F5F4EF] leading-[1.04] tracking-tight">
                     Editorial Curation of<br />
@@ -97,7 +97,7 @@ export default function PropertiesPage() {
                 <p className="font-sans text-base sm:text-lg text-[#B8C2CF] max-w-2xl font-light leading-relaxed">
                   Every property presented has been reviewed against our rigorous representation
                   standards: architectural rarity, structural engineering integrity, verified cadastre
-                  title provenance, and long-term capital defense resilience across sovereign corridors.
+                  title provenance, and long-term capital defense resilience across executive corridors.
                 </p>
 
                 {/* Direct Action Link */}

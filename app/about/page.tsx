@@ -24,6 +24,7 @@ import SectionHeader from "@/components/editorial/SectionHeader";
 import EditorialText from "@/components/editorial/EditorialText";
 import CTASection from "@/components/editorial/CTASection";
 import PersonalArchiveGallery from "@/components/editorial/PersonalArchiveGallery";
+import Section from "@/components/ui/Section";
 
 export const metadata: Metadata = {
   title: "Biografie & Experiență Profesională — Cristian Văduva | EXECUTIVE",
@@ -197,7 +198,7 @@ const advisoryPillars = [
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
+    <Section variant="dark" className="flex flex-col min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
       <ExecutiveHeader />
 
       <main className="flex-1 pt-28 sm:pt-36 lg:pt-44">
@@ -875,6 +876,6 @@ export default function AboutPage() {
       </main>
 
       <Footer />
-    </div>
+    </Section>
   );
 }

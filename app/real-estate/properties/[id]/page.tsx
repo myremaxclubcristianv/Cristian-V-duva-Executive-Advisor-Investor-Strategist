@@ -227,7 +227,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6 border-t border-white/[0.08] font-mono">
                 <div className="space-y-1">
                   <span className="text-[#8A95A5] text-[10px] uppercase tracking-widest block">
-                    SOVEREIGN LOCATION
+                    PREMIUM LOCATION
                   </span>
                   <div className="text-[#F5F4EF] text-xs sm:text-sm flex items-center gap-1.5 font-sans">
                     <MapPin className="w-3.5 h-3.5 text-[#A97F60] shrink-0" />
@@ -455,7 +455,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                   </li>
                   <li className="flex items-start gap-2.5">
                     <Compass className="w-4 h-4 text-[#93C8FF] shrink-0 mt-0.5" />
-                    <span>Tax & Cross-Border Sovereign Entity Structuring</span>
+                    <span>Tax & Cross-Border Executive Entity Structuring</span>
                   </li>
                 </ul>
 

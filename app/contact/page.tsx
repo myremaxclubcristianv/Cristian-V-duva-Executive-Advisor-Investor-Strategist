@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import ExecutiveHeader from "@/components/ExecutiveHeader";
 import Footer from "@/components/Footer";
+import Section from "@/components/ui/Section";
 import { Lock, Phone, Send, Mail, ShieldCheck, MapPin, ArrowUpRight, CheckCircle2 } from "lucide-react";
 
 export default function ContactPage() {
@@ -61,7 +62,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
+    <Section variant="dark" className="flex flex-col min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
       <ExecutiveHeader />
 
       <main className="flex-1 pt-28 sm:pt-36">
@@ -291,6 +292,6 @@ export default function ContactPage() {
       </main>
 
       <Footer />
-    </div>
+    </Section>
   );
 }

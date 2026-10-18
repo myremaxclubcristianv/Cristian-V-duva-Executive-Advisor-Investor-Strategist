@@ -129,7 +129,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col overflow-x-hidden bg-[#07090D] text-[#F5F4EF] font-sans selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
+      <body className="min-h-full flex flex-col overflow-x-hidden bg-[#07090D] text-[#F5F4EF] font-sans selection:bg-[#A97F60]/20 selection:text-[#F5F4EF]">
         {children}
         <CookieConsent />
         <VisitorIntelligenceProvider />

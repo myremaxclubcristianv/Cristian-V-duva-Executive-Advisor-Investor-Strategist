@@ -5,6 +5,7 @@ import ExecutiveHeader from "@/components/ExecutiveHeader";
 import Footer from "@/components/Footer";
 import { SectionHeader, EditorialText, ServiceSection, CTASection, InsightPanel } from "@/components/editorial";
 import { ServiceItem } from "@/components/editorial/ServiceSection";
+import Section from "@/components/ui/Section";
 
 export const metadata: Metadata = {
   title: "Consultanță Strategică & Proiecte — Cristian Văduva Executive",
@@ -68,7 +69,7 @@ const ventureServices: ServiceItem[] = [
 
 export default function VenturesPage() {
   return (
-    <div className="min-h-screen bg-[#07090D] text-[#F5F4EF]">
+    <Section variant="dark" className="min-h-screen bg-[#07090D] text-[#F5F4EF]">
       <ExecutiveHeader />
 
       <main className="pt-24 sm:pt-32">
@@ -231,6 +232,6 @@ export default function VenturesPage() {
       </main>
 
       <Footer />
-    </div>
+    </Section>
   );
 }

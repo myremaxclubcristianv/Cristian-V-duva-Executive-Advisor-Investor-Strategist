@@ -1,24 +1,26 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   BarChart3,
-  FileCheck2,
-  AlertCircle,
   CheckCircle2,
-  Search,
   ArrowRight,
-  Layers,
   Scale,
   Database,
-  ShieldAlert
+  ShieldAlert,
+  Filter,
+  Building,
 } from "lucide-react";
 import ExecutiveHeader from "@/components/ExecutiveHeader";
 import Footer from "@/components/Footer";
+import ChapterDivider from "@/components/ui/ChapterDivider";
+import ClosingFrame from "@/components/ui/ClosingFrame";
 
 export const metadata: Metadata = {
   title: "Raport Trimestrial Bucharest Prime | Cadrul Metodologic | Executive",
-  description: "Metodologia transparentă și reproductibilă a raportului trimestrial Bucharest Prime privind piața rezidențială de prestigiu. Analiză like-for-like bazată pe surse ANCPI, INS și date verificate.",
+  description:
+    "Metodologia transparentă și reproductibilă a raportului trimestrial Bucharest Prime privind piața rezidențială de prestigiu. Analiză like-for-like bazată pe surse ANCPI, INS și date verificate.",
   alternates: {
     canonical: "https://executive.cristianvaduva.com/raport-piata",
   },
@@ -30,172 +32,314 @@ export const metadata: Metadata = {
   },
 };
 
+const methodologyCriteria = [
+  {
+    number: "01",
+    tag: "TEMPORALITATE",
+    title: "Perioada Analizată și Frecvența de Extragere",
+    description:
+      "Datele sunt agregate pe cicluri trimestriale închise (Q1: 1 ianuarie – 31 martie; Q2: 1 aprilie – 30 iunie; Q3: 1 iulie – 30 septembrie; Q4: 1 octombrie – 31 decembrie). Nu se emit concluzii intermediare bazate pe ferestre incomplete sau eșantioane săptămânale de scurtă durată.",
+    deliverable: "Serii de date trimestriale continue, fără interpolări speculative",
+  },
+  {
+    number: "02",
+    tag: "SURSE DE DATE",
+    title: "Surse Oficiale Verificate și Data Extragerii",
+    description:
+      "Datele oficiale de volum sunt preluate din sintezele lunare publicate de Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI). Indicatorii macroeconomici provin de la Institutul Național de Statistică (INS). Prețurile de ofertă sunt extrase din baze de date verificate la o dată fixă de referință (ultima zi a trimestrului).",
+    deliverable: "Protocol de citare complet și timestamping exact al extragerilor",
+  },
+  {
+    number: "03",
+    tag: "DELIMITARE ZONALĂ",
+    title: "Zona Geografică și Criteriile de Includere",
+    description:
+      "Analiza este strict delimitată la enclavele rezidențiale de prestigiu din București: Herăstrău – Șoseaua Nordului, Primăverii, Kiseleff – Aviatorilor, Dorobanți Capitale, Floreasca și zona rezidențială Pipera (exclusiv perimetrul de vile). Sunt excluse proiectele periferice din afara ariei metropolitane nordice.",
+    deliverable: "Hartă topografică de delimitare cadastrală a micro-zonelor prime",
+  },
+  {
+    number: "04",
+    tag: "SEGMENTARE ACTIV",
+    title: "Tipul și Segmentul Proprietăților Monitorizate",
+    description:
+      "Sunt incluse doar proprietățile rezidențiale de clasă superioară: apartamente penthouse, locuințe de cel puțin 3 camere cu terase generoase, vile individuale și clădiri de patrimoniu reabilitate structural. Se aplică un prag valoric minim de intrare pentru a separa segmentul mass-market de cel prime.",
+    deliverable: "Eșantion omogen strict pe segmentul upper-prime și trofee arhitecturale",
+  },
+  {
+    number: "05",
+    tag: "SEPARARE RIGIDĂ",
+    title: "Preț de Ofertă (Asking) vs. Preț Notarial (Closing)",
+    description:
+      "Nu combinăm niciodată prețurile cerute pe portaluri cu prețurile efective de vânzare. Prețul de ofertă (asking price) este tratat exclusiv ca indicator al sentimentului vânzătorilor, în timp ce prețul de tranzacție (closing price) reflectă valoarea validată prin act autentic notarial.",
+    deliverable: "Grafic de dispersie distinct: Asking Price Sentiment vs. Closing Reality",
+  },
+  {
+    number: "06",
+    tag: "STANDARDIZARE",
+    title: "Moneda, Suprafața Utilă și Unitatea de Măsură",
+    description:
+      "Toate valorile sunt exprimate în Euro (fără TVA, cu mențiune explicită dacă TVA este aplicabil). Suprafața de referință este strict suprafața utilă (conform definiției Legii Locuinței 114/1996), excluzând balcoanele și terasele, care sunt evaluate separat cu coeficienți ponderați specifici.",
+    deliverable: "Metodologie de comparabilitate ca/mp util standardizat pe clasă de activ",
+  },
+  {
+    number: "07",
+    tag: "FILTRARE ANOMALII",
+    title: "Tratarea Extremelor și a Listărilor Duplicate",
+    description:
+      "Aplicăm filtrare statistică pentru eliminarea valorilor extreme (outliers) care ar distorsiona mediile. Listările duplicate ale aceleiași proprietăți promovate de agenții diferite sunt curățate manual și reduse la un singur identificator unic de activ.",
+    deliverable: "Deduplicare 1-la-1 și izolare statistică a tranzacțiilor atipice",
+  },
+  {
+    number: "08",
+    tag: "TRANSPARENȚĂ LIMITE",
+    title: "Mărimea Eșantionului și Limitările Analizei",
+    description:
+      "Segmentul rezidențial de lux din București înregistrează un număr restrâns de tranzacții per trimestru comparativ cu piața de masă. Fiecare ediție va menționa cu exactitate mărimea eșantionului (N) și marja de eroare asociată, fără extrapolări forțate.",
+    deliverable: "Raportare deschisă a limitelor metodologice și a intervalelor de confidență",
+  },
+];
+
 export default function RaportPiataPage() {
   return (
     <div className="min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
       <ExecutiveHeader />
 
       <main className="relative pt-32 pb-24 sm:pt-40 sm:pb-32 overflow-hidden">
-        {/* Glows */}
-        <div className="absolute top-24 left-1/4 w-[500px] h-[500px] bg-[#93C8FF]/5 rounded-full blur-[160px] pointer-events-none" />
-        <div className="absolute top-1/2 right-1/4 w-[450px] h-[450px] bg-[#A97F60]/5 rounded-full blur-[160px] pointer-events-none" />
+        {/* Architectural Grid & Ambient Aura */}
+        <div className="absolute inset-0 bg-arch-grid opacity-25 pointer-events-none" />
+        <div className="absolute top-24 left-1/4 w-[600px] h-[600px] bg-[#93C8FF]/5 rounded-full blur-[180px] pointer-events-none" />
+        <div className="absolute top-1/2 right-1/4 w-[500px] h-[500px] bg-[#A97F60]/5 rounded-full blur-[180px] pointer-events-none" />
 
-        <div className="site-container relative z-10 space-y-20 sm:space-y-28">
+        <div className="site-container relative z-10 space-y-24 sm:space-y-32">
 
-          {/* HERO */}
-          <section className="space-y-6 max-w-4xl border-b border-white/[0.08] pb-14">
-            <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase">
-              <BarChart3 className="w-3.5 h-3.5 text-[#93C8FF]" />
-              <span>CERCETARE DE PIAȚĂ · METODOLOGIE REPRODUCTIBILĂ</span>
-            </div>
+          {/* ======================================================== */}
+          {/* HERO EDITORIAL COMPOSITION WITH PHOTO APERTURE            */}
+          {/* ======================================================== */}
+          <section className="space-y-12">
+            <ChapterDivider
+              number="01"
+              category="INTELLIGENCE & RESEARCH ARCHITECTURE"
+              title="Bucharest Prime Residential Report"
+              subtitle="Cadrul Metodologic Reproductibil"
+            />
 
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.12]">
-              Bucharest Prime Residential Report
-            </h1>
+            <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+              {/* Left Column: Narrative & Status */}
+              <div className="lg:col-span-7 space-y-8">
+                <div className="space-y-4">
+                  <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase">
+                    <BarChart3 className="w-3.5 h-3.5 text-[#93C8FF]" />
+                    <span>CERCETARE RIGUROASĂ · ZERO DATE INVENTATE</span>
+                  </div>
 
-            <p className="font-sans text-lg sm:text-xl text-[#B8C2CF] leading-relaxed font-light">
-              Un cadru analitic riguros pentru monitorizarea pieței rezidențiale de prestigiu din Capitală. Respingem estimările speculative și prezentăm transparent metodologia pe baza căreia sunt colectate și interpretate datele.
-            </p>
+                  <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.08]">
+                    Infrastructură analitică pentru piața rezidențială de prestigiu.
+                  </h1>
+                </div>
 
-            <div className="p-4 bg-[#0C1119] border border-white/[0.08] flex items-center gap-3 font-mono text-xs text-[#8A95A5]">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#A97F60] animate-pulse shrink-0" />
-              <span>
-                STATUS ACTUAL: <strong className="text-[#F5F4EF]">CALIBRARE METODOLOGICĂ ÎN DESFĂȘURARE</strong> · Ediția Inaugurală în curs de agregare a eșantionului
-              </span>
+                <p className="font-sans text-base sm:text-lg text-[#B8C2CF] leading-relaxed font-light">
+                  Un cadru metodologic audibil și transparent pentru monitorizarea activelor prime din București. Respingem estimările speculative și prezentăm public specificațiile exacte pe baza cărora este agregat și filtrat eșantionul trimestrial.
+                </p>
+
+                {/* Calibration Status Badge */}
+                <div className="p-5 bg-[#0C1119] border border-white/[0.1] space-y-3">
+                  <div className="flex items-center gap-3 font-mono text-xs text-[#8A95A5]">
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#A97F60] animate-pulse shrink-0" />
+                    <span>
+                      STATUS ACTUAL: <strong className="text-[#F5F4EF]">CALIBRARE METODOLOGICĂ ÎN DESFĂȘURARE</strong>
+                    </span>
+                  </div>
+                  <p className="font-sans text-xs sm:text-sm text-[#8A95A5] leading-relaxed">
+                    Ediția Inaugurală este în curs de agregare a eșantionului de tranzacții. Raportul nu va publica cifre agregate până când nu se atinge pragul de robustețe statistică stabilit în specificațiile de mai jos.
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4 pt-2">
+                  <a
+                    href="#criterii"
+                    className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#E1E4EA] transition-colors"
+                  >
+                    <span>EXPLOREAZĂ CELE 8 CRITERII</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                  <Link
+                    href="/ghid-cumparator"
+                    className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/[0.15] bg-[#0C1119] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] hover:border-[#93C8FF] transition-colors"
+                  >
+                    <span>DOSARUL CUMPĂRĂTORULUI</span>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Right Column: Architectural Visual Aperture */}
+              <div className="lg:col-span-5">
+                <div className="relative border border-white/[0.12] bg-[#0C1119] p-3 shadow-2xl">
+                  {/* Structural Crosshairs */}
+                  <div className="absolute -top-1.5 -left-1.5 w-3 h-3 border-t border-l border-[#93C8FF]" />
+                  <div className="absolute -top-1.5 -right-1.5 w-3 h-3 border-t border-r border-[#93C8FF]" />
+                  <div className="absolute -bottom-1.5 -left-1.5 w-3 h-3 border-b border-l border-[#93C8FF]" />
+                  <div className="absolute -bottom-1.5 -right-1.5 w-3 h-3 border-b border-r border-[#93C8FF]" />
+
+                  <div className="relative aspect-[4/3] w-full bg-[#1B2028] overflow-hidden">
+                    <Image
+                      src="/media/cristian-vaduva/personal/cristian-vaduva-office-blueprints-underwriting.jpg"
+                      alt="Cristian Văduva — Analiză metodologică și audit de planuri"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 42vw"
+                      className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-80" />
+
+                    <div className="absolute bottom-4 left-4 right-4 p-4 bg-[#07090D]/90 backdrop-blur-md border border-white/[0.1] space-y-1">
+                      <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-[#93C8FF] block">
+                        CADRU METODOLOGIC AUDITABIL
+                      </span>
+                      <p className="font-serif text-sm text-[#F5F4EF]">
+                        Analiză like-for-like pe micro-zone și standarde cadastrale omogene.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
-          {/* EDITORIAL COMMITMENT: ZERO FAKE NUMBERS */}
-          <section className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-4">
-            <div className="flex items-center gap-3 text-[#93C8FF]">
-              <Database className="w-5 h-5" />
-              <h2 className="font-serif text-xl sm:text-2xl text-[#F5F4EF]">
-                Angajamentul Privind Integritatea Statistică
-              </h2>
-            </div>
-            <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-              Înainte de publicarea cifrelor finale, un raport respectabil trebuie să aibă o metodologie auditabilă. Refuzăm să inventăm procente de creștere fictive sau randamente garantate. Raportul nu va publica concluzii definitive până când eșantionul de tranzacții nu atinge pragul de reprezentativitate statistică.
-            </p>
-            <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-              Publicăm mai jos specificațiile complete ale metodologiei noastre de cercetare, menite să ofere viitorilor cititori și presei economice un instrument de referință 100% verificabil.
-            </p>
-          </section>
-
-          {/* 8-POINT REPRODUCIBLE METHODOLOGY BLUEPRINT */}
+          {/* ======================================================== */}
+          {/* DATA PIPELINE FLOW DIAGRAM                                */}
+          {/* ======================================================== */}
           <section className="space-y-8">
             <div className="space-y-3">
               <span className="font-mono text-xs uppercase tracking-[0.28em] text-[#A97F60] font-semibold block">
-                SPECIFICAȚII METODOLOGICE
+                ARHITECTURA DATELOR
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl text-[#F5F4EF]">
-                Arhitectura Metodologică în 8 Criterii
+                Fluxul de Ingestie, Filtrare și Standardizare
               </h2>
               <p className="font-sans text-sm sm:text-base text-[#8A95A5] max-w-2xl">
-                Criteriile riguroase aplicate pentru a asigura comparabilitatea datelor:
+                Cum transformăm datele primare eterogene într-o bază curată, auditabilă și reproductibilă:
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* 1 */}
-              <div className="p-6 sm:p-8 bg-[#0C1119] border border-white/[0.06] space-y-3">
-                <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF]">
-                  <span>CRITERIUL 01</span>
-                  <span>TEMPORALITATE</span>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 font-mono text-xs">
+              {/* Step 1 */}
+              <div className="p-6 bg-[#0C1119] border border-white/[0.08] space-y-4 relative">
+                <div className="flex items-center justify-between text-[#93C8FF]">
+                  <span className="text-[10px] uppercase tracking-widest font-semibold">ETAPA 01</span>
+                  <Database className="w-4 h-4" />
                 </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Perioada Analizată și Frecvența de Extragere</h3>
-                <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Datele sunt agregate pe cicluri trimestriale închise (Q1: 1 ianuarie – 31 martie; Q2: 1 aprilie – 30 iunie; Q3: 1 iulie – 30 septembrie; Q4: 1 octombrie – 31 decembrie). Nu se emit concluzii intermediare bazate pe ferestre incomplete sau eșantioane săptămânale.
+                <h3 className="font-serif text-lg text-[#F5F4EF] font-normal">
+                  Ingestie Surse Primare
+                </h3>
+                <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
+                  Preluare volume oficiale ANCPI, indicatori macroeconomici INS și snapshot-uri ale bazelor de listare la final de trimestru.
                 </p>
+                <div className="pt-2 text-[10px] text-[#93C8FF] border-t border-white/[0.06]">
+                  Surse publice + baze agreate
+                </div>
               </div>
 
-              {/* 2 */}
-              <div className="p-6 sm:p-8 bg-[#0C1119] border border-white/[0.06] space-y-3">
-                <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF]">
-                  <span>CRITERIUL 02</span>
-                  <span>SURSE DE DATE</span>
+              {/* Step 2 */}
+              <div className="p-6 bg-[#0C1119] border border-white/[0.08] space-y-4 relative">
+                <div className="flex items-center justify-between text-[#A97F60]">
+                  <span className="text-[10px] uppercase tracking-widest font-semibold">ETAPA 02</span>
+                  <Filter className="w-4 h-4" />
                 </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Surse Verificate și Data Extragerii</h3>
-                <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Datele oficiale de volum sunt preluate din sintezele lunare publicate de Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI). Indicatorii macroeconomici provin de la Institutul Național de Statistică (INS). Prețurile de ofertă sunt extrase din baze de date de listare verificate, la o dată fixă de referință (ultima zi a fiecărui trimestru).
+                <h3 className="font-serif text-lg text-[#F5F4EF] font-normal">
+                  Deduplicare & Outliers
+                </h3>
+                <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
+                  Eliminarea anunțurilor multi-broker pentru același imobil și curățarea extremelor statistice (tranzacții forțate sau atipice).
                 </p>
+                <div className="pt-2 text-[10px] text-[#A97F60] border-t border-white/[0.06]">
+                  1 identificator unic per activ
+                </div>
               </div>
 
-              {/* 3 */}
-              <div className="p-6 sm:p-8 bg-[#0C1119] border border-white/[0.06] space-y-3">
-                <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF]">
-                  <span>CRITERIUL 03</span>
-                  <span>DELIMITARE ZONALĂ</span>
+              {/* Step 3 */}
+              <div className="p-6 bg-[#0C1119] border border-white/[0.08] space-y-4 relative">
+                <div className="flex items-center justify-between text-[#93C8FF]">
+                  <span className="text-[10px] uppercase tracking-widest font-semibold">ETAPA 03</span>
+                  <Building className="w-4 h-4" />
                 </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Zona Geografică și Criteriile de Includere</h3>
-                <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Analiza este strict delimitată la enclavele rezidențiale de prestigiu din București: Herăstrău – Șoseaua Nordului, Primăverii, Kiseleff – Aviatorilor, Dorobanți Capitale, Floreasca și zona rezidențială Pipera (exclusiv perimetrul de vile). Sunt excluse proiectele periferice din afara ariei metropolitane nordice.
+                <h3 className="font-serif text-lg text-[#F5F4EF] font-normal">
+                  Filtrare Micro-Zonală
+                </h3>
+                <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
+                  Selectarea strictă a activelor situate în enclavele Herăstrău, Primăverii, Kiseleff, Dorobanți, Floreasca și Pipera Rezidențial.
                 </p>
+                <div className="pt-2 text-[10px] text-[#93C8FF] border-t border-white/[0.06]">
+                  Zero proiecte periferice
+                </div>
               </div>
 
-              {/* 4 */}
-              <div className="p-6 sm:p-8 bg-[#0C1119] border border-white/[0.06] space-y-3">
-                <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF]">
-                  <span>CRITERIUL 04</span>
-                  <span>SEGMENTARE ACTIV</span>
+              {/* Step 4 */}
+              <div className="p-6 bg-[#0C1119] border border-white/[0.08] space-y-4 relative">
+                <div className="flex items-center justify-between text-[#A97F60]">
+                  <span className="text-[10px] uppercase tracking-widest font-semibold">ETAPA 04</span>
+                  <Scale className="w-4 h-4" />
                 </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Tipul și Segmentul Proprietăților</h3>
-                <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Sunt incluse doar proprietățile rezidențiale de clasă superioară: apartamente penthouse, locuințe de cel puțin 3 camere cu terase generoase, vile individuale și clădiri de patrimoniu reabilitate structural. Se aplică un prag valoric minim de intrare pentru a separa segmentul mass-market de cel prime.
+                <h3 className="font-serif text-lg text-[#F5F4EF] font-normal">
+                  Raportare Separată
+                </h3>
+                <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
+                  Prețul cerut (sentimentul pieței) este ținut rigid separat de prețul autentificat notarial (valoarea validată tranzacționat).
                 </p>
-              </div>
-
-              {/* 5 */}
-              <div className="p-6 sm:p-8 bg-[#0C1119] border border-white/[0.06] space-y-3">
-                <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF]">
-                  <span>CRITERIUL 05</span>
-                  <span>SEPARARE RIGIDĂ</span>
+                <div className="pt-2 text-[10px] text-[#A97F60] border-t border-white/[0.06]">
+                  Asking vs. Closing decuplat
                 </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Preț de Ofertă vs. Preț de Tranzacție</h3>
-                <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Nu combinăm niciodată prețurile cerute pe portaluri cu prețurile efective de vânzare. Prețul de ofertă (asking price) este tratat ca indicator al sentimentului vânzătorilor, în timp ce prețul de tranzacție (closing price) reflectă valoarea validată prin act autentic notarial.
-                </p>
-              </div>
-
-              {/* 6 */}
-              <div className="p-6 sm:p-8 bg-[#0C1119] border border-white/[0.06] space-y-3">
-                <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF]">
-                  <span>CRITERIUL 06</span>
-                  <span>STANDARDIZARE</span>
-                </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Moneda, Suprafața și Unitatea de Comparație</h3>
-                <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Toate valorile sunt exprimate în Euro (fără TVA, cu mențiune explicită dacă TVA este aplicabil). Suprafața de referință este strict suprafața utilă (conform definiției Legii Locuinței 114/1996), excluzând balcoanele și terasele, care sunt evaluate separat cu coeficienți ponderați specifici.
-                </p>
-              </div>
-
-              {/* 7 */}
-              <div className="p-6 sm:p-8 bg-[#0C1119] border border-white/[0.06] space-y-3">
-                <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF]">
-                  <span>CRITERIUL 07</span>
-                  <span>FILTRARE ANOMALII</span>
-                </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Tratarea Extremelor și a Listărilor Duplicate</h3>
-                <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Aplicăm filtrare statistică pentru eliminarea valorilor extreme (outliers) care ar distorsiona mediile. Listările duplicate ale aceleiași proprietăți promovate de agenții diferite sunt curățate manual și reduse la un singur identificator unic de activ.
-                </p>
-              </div>
-
-              {/* 8 */}
-              <div className="p-6 sm:p-8 bg-[#0C1119] border border-white/[0.06] space-y-3">
-                <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF]">
-                  <span>CRITERIUL 08</span>
-                  <span>TRANSPARENȚĂ LIMITE</span>
-                </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Mărimea Eșantionului și Limitările Analizei</h3>
-                <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Segmentul rezidențial de lux din București înregistrează un număr restrâns de tranzacții per trimestru comparativ cu piața de masă. Fiecare ediție va menționa cu exactitate mărimea eșantionului (N) și marja de eroare asociată, fără extrapolări forțate.
-                </p>
               </div>
             </div>
           </section>
 
-          {/* DISCLAIMER INSTITUȚIONAL */}
-          <section className="p-8 sm:p-10 bg-white/[0.02] border-l-2 border-[#A97F60] font-sans text-xs sm:text-sm text-[#8A95A5] space-y-2 leading-relaxed">
+          {/* ======================================================== */}
+          {/* 8-POINT METHODOLOGICAL CRITERIA BLUEPRINT                */}
+          {/* ======================================================== */}
+          <section id="criterii" className="space-y-12">
+            <ChapterDivider
+              number="02"
+              category="SPECIFICAȚII METODOLOGICE DETALIATE"
+              title="Arhitectura Cercetării în 8 Criterii"
+              subtitle="Criteriile riguroase aplicate pentru a asigura comparabilitatea datelor"
+            />
+
+            <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+              {methodologyCriteria.map((criterion) => (
+                <div
+                  key={criterion.number}
+                  className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] hover:border-white/[0.2] transition-colors space-y-5 flex flex-col justify-between"
+                >
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between font-mono text-xs">
+                      <span className="px-2.5 py-1 bg-white/[0.04] border border-white/[0.08] text-[#93C8FF] tracking-widest font-semibold">
+                        CRITERIUL {criterion.number}
+                      </span>
+                      <span className="text-[#A97F60] tracking-widest uppercase font-semibold">
+                        {criterion.tag}
+                      </span>
+                    </div>
+
+                    <h3 className="font-serif text-2xl text-[#F5F4EF] leading-snug">
+                      {criterion.title}
+                    </h3>
+
+                    <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
+                      {criterion.description}
+                    </p>
+                  </div>
+
+                  <div className="pt-4 border-t border-white/[0.06] font-mono text-[11px] text-[#B8C2CF] flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#93C8FF] shrink-0 mt-0.5" />
+                    <span><strong>Standard de livrare:</strong> {criterion.deliverable}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* ======================================================== */}
+          {/* STATUT ȘI DELIMITARE LEGALĂ RIGUROASĂ                    */}
+          {/* ======================================================== */}
+          <section className="p-8 sm:p-10 bg-white/[0.02] border-l-2 border-[#A97F60] font-sans text-xs sm:text-sm text-[#8A95A5] space-y-3 leading-relaxed">
             <div className="flex items-center gap-2 text-[#F5F4EF] font-medium text-base">
               <ShieldAlert className="w-4 h-4 text-[#A97F60]" />
               <span>Statutul Raportului & Delimitare Legală</span>
@@ -205,30 +349,22 @@ export default function RaportPiataPage() {
             </p>
           </section>
 
-          {/* CTA CADRAN */}
-          <section className="p-10 sm:p-14 bg-[#0C1119] border border-white/[0.1] text-center space-y-6">
-            <h2 className="font-serif text-3xl sm:text-4xl text-[#F5F4EF]">
-              Doriți să primiți metodologia completă la publicare?
-            </h2>
-            <p className="font-sans text-sm sm:text-base text-[#8A95A5] max-w-xl mx-auto leading-relaxed">
-              Puteți solicita o discuție directă sau puteți consulta dosarul de criterii pentru cumpărătorii de proprietăți rezidențiale.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 pt-2">
-              <Link
-                href="/ghid-cumparator"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#E1E4EA] transition-colors"
-              >
-                <span>DOSARUL CUMPĂRĂTORULUI</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link
-                href="/programare"
-                className="inline-flex items-center gap-2 px-8 py-4 border border-white/[0.15] bg-[#07090D] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] hover:border-[#93C8FF] transition-colors"
-              >
-                <span>PROGRAMEAZĂ CONVERSAȚIE</span>
-              </Link>
-            </div>
-          </section>
+          {/* ======================================================== */}
+          {/* HIGH-IMPACT CLOSING FRAME                                */}
+          {/* ======================================================== */}
+          <ClosingFrame
+            category="03 // INIȚIERE DIALOG STRATEGIC"
+            title="Doriți să primiți metodologia completă la publicare?"
+            description="Puteți solicita o discuție directă sau puteți consulta dosarul de criterii tehnice conceput pentru cumpărătorii de proprietăți rezidențiale de mare valoare."
+            primaryAction={{
+              label: "CONSULTĂ DOSARUL CUMPĂRĂTORULUI",
+              href: "/ghid-cumparator",
+            }}
+            secondaryAction={{
+              label: "PROGRAMEAZĂ DISCUȚIE STRATEGICĂ",
+              href: "/programare",
+            }}
+          />
 
         </div>
       </main>

@@ -23,13 +23,13 @@ export default function PropertyFeature({
 }: PropertyFeatureProps) {
   return (
     <article
-      className={`border border-white/[0.1] bg-[#0C1119] p-6 sm:p-10 lg:p-14 space-y-10 lg:space-y-12 shadow-2xl relative overflow-hidden ${className}`}
+      className={`w-full space-y-8 lg:space-y-10 relative ${className}`}
     >
       {/* Top Meta Bar */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-6 font-mono text-[10px] sm:text-xs">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.1] pb-4 font-mono text-xs">
         <div className="flex items-center gap-3">
-          <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
-          <span className="uppercase tracking-[0.25em] text-[#93C8FF] font-semibold">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#A97F60]" />
+          <span className="uppercase tracking-[0.24em] text-[#A97F60] font-semibold">
             {property.type}
           </span>
           <span className="text-white/20">·</span>

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Calendar,
   Clock,
@@ -10,9 +11,6 @@ import {
   CheckCircle2,
   AlertCircle,
   ArrowRight,
-  Mail,
-  Phone,
-  User
 } from "lucide-react";
 import ExecutiveHeader from "@/components/ExecutiveHeader";
 import Footer from "@/components/Footer";
@@ -91,17 +89,20 @@ export default function ProgramarePage() {
       <ExecutiveHeader />
 
       <main className="relative pt-32 pb-24 sm:pt-40 sm:pb-32 overflow-hidden">
-        {/* Glows */}
+        {/* Architectural Grid & Ambient Aura */}
+        <div className="absolute inset-0 bg-arch-grid opacity-25 pointer-events-none" />
         <div className="absolute top-24 left-1/4 w-[500px] h-[500px] bg-[#93C8FF]/5 rounded-full blur-[160px] pointer-events-none" />
         <div className="absolute top-1/2 right-1/4 w-[450px] h-[450px] bg-[#A97F60]/5 rounded-full blur-[160px] pointer-events-none" />
 
-        <div className="site-container relative z-10 space-y-16 sm:space-y-24">
+        <div className="site-container relative z-10 space-y-20 sm:space-y-28">
 
-          {/* HERO */}
-          <section className="space-y-6 max-w-4xl border-b border-white/[0.08] pb-12">
+          {/* ======================================================== */}
+          {/* HERO ARCHITECTURAL MASTHEAD                              */}
+          {/* ======================================================== */}
+          <section className="space-y-8 max-w-4xl border-b border-white/[0.08] pb-14">
             <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase">
               <Calendar className="w-3.5 h-3.5 text-[#93C8FF]" />
-              <span>DISCUȚIE INIȚIALĂ · 20 MINUTE CONFIDENȚIALE</span>
+              <span>SESIUNE STRATEGICĂ · 20 MINUTE CONFIDENȚIALE</span>
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.12]">
@@ -113,26 +114,56 @@ export default function ProgramarePage() {
             </p>
           </section>
 
-          {/* STRUCTURA CONVERSAȚIEI & CE TREBUIE SĂ ȘTIȚI */}
-          <section className="grid lg:grid-cols-12 gap-8 lg:gap-12">
-            {/* Left: Expectations & Guidelines (5 cols) */}
+          {/* ======================================================== */}
+          {/* ASYMMETRIC DUAL-COLUMN INTAKE SUITE                      */}
+          {/* ======================================================== */}
+          <section className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+            {/* Left Column: Guidelines, NDA & Direct Contact (5 cols) */}
             <div className="lg:col-span-5 space-y-6">
-              <div className="p-6 bg-[#0C1119] border border-white/[0.08] space-y-4">
+              {/* Photo Aperture */}
+              <div className="relative border border-white/[0.1] bg-[#0C1119] p-3 shadow-xl">
+                <div className="relative aspect-[16/10] w-full bg-[#1B2028] overflow-hidden">
+                  <Image
+                    src="/media/cristian-vaduva/personal/cristian-vaduva-office-armchair-consultation.png"
+                    alt="Cristian Văduva — Consultanță privată în biroul executiv"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-80" />
+                  <div className="absolute bottom-3 left-3 right-3 font-mono text-[10px] text-[#8A95A5] flex items-center justify-between">
+                    <span>BIROU EXECUTIVE BUCUREȘTI</span>
+                    <span className="text-[#93C8FF]">DIALOG DIRECT</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Expectations Cadran */}
+              <div className="p-6 sm:p-8 bg-[#0C1119] border border-white/[0.08] space-y-4">
                 <span className="font-mono text-xs uppercase tracking-wider text-[#93C8FF] font-semibold block">
                   CE VA AVEA LOC ÎN CELE 20 DE MINUTE:
                 </span>
-                <ul className="space-y-3 font-sans text-xs sm:text-sm text-[#8A95A5]">
-                  <li className="flex items-start gap-2.5">
+                <ul className="space-y-4 font-sans text-xs sm:text-sm text-[#8A95A5]">
+                  <li className="flex items-start gap-3">
                     <Clock className="w-4 h-4 text-[#93C8FF] shrink-0 mt-0.5" />
-                    <span><strong>Clarificarea obiectivului:</strong> Înțelegerea profilului proprietății căutate sau a activului propus spre valorificare.</span>
+                    <div>
+                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-0.5">CLARIFICAREA OBIECTIVULUI</strong>
+                      Înțelegerea profilului proprietății căutate sau a activului propus spre valorificare pe termen lung.
+                    </div>
                   </li>
-                  <li className="flex items-start gap-2.5">
+                  <li className="flex items-start gap-3">
                     <ShieldCheck className="w-4 h-4 text-[#93C8FF] shrink-0 mt-0.5" />
-                    <span><strong>Evaluarea compatibilității:</strong> Verificarea dacă cerințele dumneavoastră se aliniază cu expertiza și aria noastră de acțiune.</span>
+                    <div>
+                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-0.5">EVALUAREA COMPATIBILITĂȚII</strong>
+                      Verificarea dacă cerințele dumneavoastră se aliniază cu expertiza și aria noastră de acțiune.
+                    </div>
                   </li>
-                  <li className="flex items-start gap-2.5">
+                  <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-4 h-4 text-[#93C8FF] shrink-0 mt-0.5" />
-                    <span><strong>Fără presiune comercială:</strong> Conversația este strict analitică. Nu vă vom propune proprietăți nepotrivite sau contracte pe loc.</span>
+                    <div>
+                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-0.5">FĂRĂ PRESIUNE COMERCIALĂ</strong>
+                      Conversația este strict analitică. Nu vă vom propune proprietăți nepotrivite sau contracte forțate.
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -144,27 +175,33 @@ export default function ProgramarePage() {
                   <span>Opțiunea de Confidențialitate (NDA)</span>
                 </div>
                 <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
-                  Dacă discuția vizează patrimonii private sensibile sau proprietăți off-market, puteți bifa opțiunea de a semna un Acord Bilateral de Confidențialitate (NDA) în prealabil, înainte de dezvăluirea detaliilor particulare.
+                  Dacă discuția vizează active private sensibile sau proprietăți off-market, puteți bifa opțiunea de a semna un Acord Bilateral de Confidențialitate (NDA) în prealabil, înainte de dezvăluirea datelor particulare.
                 </p>
                 <div className="text-[11px] font-mono text-[#6B7280]">
-                  *Un NDA este o convenție contractuală civilă între părți.
+                  *Un NDA este o convenție contractuală civilă încheiată în scris între părți.
                 </div>
               </div>
 
               {/* Procedură de confirmare */}
               <div className="p-6 bg-white/[0.02] border border-white/[0.06] space-y-2">
-                <h4 className="font-serif text-sm text-[#F5F4EF]">Cum funcționează confirmarea:</h4>
+                <h4 className="font-serif text-sm text-[#F5F4EF]">Confirmare manuală în maximum 24h:</h4>
                 <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
-                  Nu utilizăm calendare automate care simulează disponibilități artificiale. Cristian Văduva verifică agenda personală și vă va contacta în termen de 24 de ore lucrătoare pentru a confirma data și intervalul convenit.
+                  Nu utilizăm calendare automate care simulează disponibilități artificiale. Cristian Văduva verifică agenda personală și vă va contacta direct în termen de 24 de ore lucrătoare pentru a stabili data și ora convenită.
                 </p>
               </div>
             </div>
 
-            {/* Right: Booking Form (7 cols) */}
+            {/* Right Column: High-End Booking Form (7 cols) */}
             <div className="lg:col-span-7">
-              <div className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08]">
+              <div className="p-8 sm:p-12 bg-[#0C1119] border border-white/[0.1] relative">
+                {/* Structural Crosshairs */}
+                <div className="absolute -top-1 -left-1 w-3 h-3 border-t border-l border-[#93C8FF]" />
+                <div className="absolute -top-1 -right-1 w-3 h-3 border-t border-r border-[#93C8FF]" />
+                <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b border-l border-[#93C8FF]" />
+                <div className="absolute -bottom-1 -right-1 w-3 h-3 border-b border-r border-[#93C8FF]" />
+
                 {success ? (
-                  <div className="space-y-6 text-center py-6">
+                  <div className="space-y-6 text-center py-8">
                     <div className="w-14 h-14 mx-auto rounded-full bg-white/[0.03] border border-[#93C8FF]/40 flex items-center justify-center text-[#93C8FF]">
                       <CheckCircle2 className="w-7 h-7" />
                     </div>
@@ -179,20 +216,20 @@ export default function ProgramarePage() {
 
                     {requestPriorNDA && (
                       <div className="p-4 bg-black/40 border border-[#A97F60]/40 font-mono text-xs text-[#A97F60] max-w-md mx-auto">
-                        Ați solicitat semnarea unui acord de confidențialitate (NDA) în prealabil. Draftul acordului va fi transmis înainte de stabilirea sesiunii.
+                        Ați solicitat semnarea unui acord de confidențialitate (NDA) în prealabil. Draftul acordului va fi transmis înainte de desfășurarea sesiunii.
                       </div>
                     )}
 
                     <div className="pt-4 flex flex-wrap justify-center gap-4">
                       <Link
                         href="/"
-                        className="inline-flex items-center gap-2 px-6 py-3.5 bg-white text-[#07090D] font-mono text-xs uppercase tracking-wider font-semibold hover:bg-[#E1E4EA]"
+                        className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-[#07090D] font-mono text-xs uppercase tracking-wider font-semibold hover:bg-[#E1E4EA]"
                       >
                         <span>ÎNAPOI LA PAGINA PRINCIPALĂ</span>
                       </Link>
                       <Link
                         href="/cum-lucrez"
-                        className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/20 text-[#F5F4EF] font-mono text-xs uppercase tracking-wider hover:border-[#93C8FF]"
+                        className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/20 text-[#F5F4EF] font-mono text-xs uppercase tracking-wider hover:border-[#93C8FF]"
                       >
                         <span>CONSULTĂ ETAPELE COLABORĂRII</span>
                       </Link>
@@ -201,7 +238,10 @@ export default function ProgramarePage() {
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-1">
-                      <h3 className="font-serif text-2xl text-[#F5F4EF]">
+                      <span className="font-mono text-xs uppercase tracking-widest text-[#93C8FF] block">
+                        INTAKE PROTOCOL
+                      </span>
+                      <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
                         Formular de Solicitare Discuție
                       </h3>
                       <p className="font-sans text-xs sm:text-sm text-[#8A95A5]">
@@ -359,8 +399,8 @@ export default function ProgramarePage() {
                       </button>
                     </div>
 
-                    <div className="font-mono text-[11px] text-[#6B7280] text-center sm:text-left">
-                      Alternativ, puteți trimite un email la <a href="mailto:cristianvaduva@duck.com" className="text-[#93C8FF] underline">cristianvaduva@duck.com</a>
+                    <div className="font-mono text-[11px] text-[#6B7280] text-center sm:text-left pt-2 border-t border-white/[0.06]">
+                      Canal direct alternativ: <a href="mailto:cristianvaduva@duck.com" className="text-[#93C8FF] underline">cristianvaduva@duck.com</a> · Signal / WhatsApp: <a href="https://wa.me/436509536345" target="_blank" rel="noopener noreferrer" className="text-[#F5F4EF] hover:underline">+43 650 953 6345</a>
                     </div>
                   </form>
                 )}

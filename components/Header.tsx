@@ -12,22 +12,22 @@ const navLinks = [
 
 export default function Header() {
   const { scrollY } = useScroll();
-  const bgOpacity = useTransform(scrollY, [0, 100], [0, 1]);
+  const bgOpacity = useTransform(scrollY, [0, 100], [0, 0.85]);
 
   return (
     <motion.header
-      className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-4 bg-white bg-opacity-0 backdrop-blur-sm border-b border-neutral-200"
+      className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-4 bg-white bg-opacity-0 backdrop-blur-lg border-b border-copper/20"
       style={{ backgroundColor: `rgba(255,255,255,${bgOpacity})` }}
     >
-      <Link href="/" className="text-2xl font-serif font-bold text-text-primary">
-        Cristian Vaduva
+      <Link href="/" className="text-2xl font-serif font-bold text-ivory">
+        Cristian Văduva
       </Link>
       <nav className="hidden space-x-6 md:flex">
         {navLinks.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="text-base font-medium text-text-secondary hover:text-text-primary transition-colors"
+            className="text-sm font-mono uppercase tracking-widest text-copper hover:text-ivory transition-colors"
           >
             {link.label}
           </Link>
@@ -35,10 +35,9 @@ export default function Header() {
       </nav>
       {/* Mobile burger */}
       <div className="md:hidden">
-        {/* Placeholder for mobile menu – could be a drawer component later */}
         <button aria-label="Open menu" className="p-2 focus:outline-none">
           <svg
-            className="w-6 h-6 text-text-primary"
+            className="w-6 h-6 text-copper"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

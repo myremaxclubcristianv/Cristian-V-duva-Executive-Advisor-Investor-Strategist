@@ -142,7 +142,7 @@ export default function RealEstateHubPage() {
                 eyebrow="02 // CONFIRMED PROPERTY · PATTERN A SIGNATURE PRESENTATION"
                 badge="SECTOR 1, BUCHAREST"
                 title="Monumental Penthouse with 220 sqm Terrace"
-                description="A rare top-floor residence in the central diplomatic belt of Bucharest, providing the spatial sovereignty of an urban sanctuary with 360-degree skyline views."
+                description="A rare top-floor residence in the central diplomatic belt of Bucharest, providing the spatial exclusivity of an urban sanctuary with 360-degree skyline views."
               />
 
               <PropertyFeature property={plevneiPenthouse} />
