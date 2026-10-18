@@ -11,27 +11,11 @@ interface PhotoSlotConfig {
 }
 
 export default function LifestyleSection() {
-  const getFirstImageInDir = (dirRelativePath: string): string | null => {
-    try {
-      const fullPath = path.join(process.cwd(), "public", dirRelativePath);
-      if (fs.existsSync(fullPath)) {
-        const files = fs.readdirSync(fullPath).filter(
-          (f) => !f.startsWith(".") && (f.endsWith(".png") || f.endsWith(".jpg") || f.endsWith(".jpeg") || f.endsWith(".webp") || f.endsWith(".avif"))
-        );
-        if (files.length > 0) {
-          return `${dirRelativePath}/${files[0]}`;
-        }
-      }
-    } catch {
-      return null;
-    }
-    return null;
-  };
-
-  const slot1 = getFirstImageInDir("/images/personal/lifestyle");
-  const slot2 = getFirstImageInDir("/images/personal/travel");
-  const slot3 = getFirstImageInDir("/images/personal/business");
-  const slot4 = getFirstImageInDir("/images/personal/media");
+  // Static remote image URLs for the lifestyle section
+  const slot1 = "https://cristianvaduva.com/wp-content/uploads/2024/03/lifestyle-portrait.jpg";
+  const slot2 = "https://cristianvaduva.com/wp-content/uploads/2024/03/travel-mediterranean.jpg";
+  const slot3 = "https://aixluxury.com/images/1200/19210934/228_AdrianBirgauan.ro-BHtsOBOLJWawlbS_HAdnXw.jpg";
+  const slot4 = "https://cristianvaduva.com/wp-content/uploads/2024/03/media-interview.jpg";
 
   return (
     <section id="archive" className="site-chapter bg-[#FFFFFF] text-[#111111] border-b border-[#E1E1DD]">

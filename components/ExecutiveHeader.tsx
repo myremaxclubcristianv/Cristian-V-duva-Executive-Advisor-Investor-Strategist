@@ -37,7 +37,7 @@ const NAV_CATEGORIES: NavCategory[] = [
     label: "EXPERTISE",
     categoryNumber: "01",
     highlightText: "Mandate dedicate pentru cumpărători și vânzători de active rezidențiale de prestigiu.",
-    featuredImage: "/media/cristian-vaduva/personal/cristian-vaduva-office-armchair-consultation.png",
+    featuredImage: "https://cristianvaduva.com/assets/hero-consultation.jpg",
     featuredAlt: "Consultanță executivă Cristian Văduva",
     items: [
       {
@@ -65,8 +65,8 @@ const NAV_CATEGORIES: NavCategory[] = [
     label: "PROPRIETĂȚI",
     categoryNumber: "02",
     highlightText: "Curatoriat independent de reședințe excepționale în București și coridoare internaționale.",
-    featuredImage: "/residence/terrace.png",
-    featuredAlt: "Portofoliu proprietăți prime",
+    featuredImage: "https://aixluxury.com/images/1200/19210934/228_AdrianBirgauan.ro-BHtsOBOLJWawlbS_HAdnXw.jpg",
+    featuredAlt: "Portofoliu proprietăţi prime",
     items: [
       {
         title: "Portofoliu Prime (433)",
