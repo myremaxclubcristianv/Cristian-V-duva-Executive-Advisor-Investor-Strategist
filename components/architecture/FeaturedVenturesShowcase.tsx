@@ -41,8 +41,8 @@ export default function FeaturedVenturesShowcase() {
               sizes="100vw"
               className="object-cover object-center scale-[1.01] group-hover:scale-[1.03] transition-transform duration-1000 opacity-60"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-[#07090D]/80 to-[#07090D]/20" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#07090D] via-[#07090D]/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-[#07090D]/80 to-[#07090D]/20 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#07090D] via-[#07090D]/60 to-transparent pointer-events-none" />
           </div>
 
           {/* Content Plane */}
@@ -108,7 +108,7 @@ export default function FeaturedVenturesShowcase() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0C1119] via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0C1119] via-transparent to-transparent opacity-60 pointer-events-none" />
             </div>
 
             <div className="pt-2 relative z-10">
@@ -141,7 +141,7 @@ export default function FeaturedVenturesShowcase() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0C1119] via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0C1119] via-transparent to-transparent opacity-60 pointer-events-none" />
             </div>
 
             <div className="pt-2 relative z-10">
@@ -179,7 +179,7 @@ export default function FeaturedVenturesShowcase() {
                 sizes="(max-width: 1024px) 100vw, 58vw"
                 className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0C1119] via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0C1119] via-transparent to-transparent opacity-60 pointer-events-none" />
             </div>
 
             <div className="pt-2 relative z-10">
@@ -212,7 +212,7 @@ export default function FeaturedVenturesShowcase() {
                 sizes="(max-width: 1024px) 100vw, 42vw"
                 className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0C1119] via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0C1119] via-transparent to-transparent opacity-60 pointer-events-none" />
             </div>
 
             <div className="pt-2 relative z-10">

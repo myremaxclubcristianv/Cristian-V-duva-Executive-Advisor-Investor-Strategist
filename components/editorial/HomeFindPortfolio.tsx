@@ -55,7 +55,7 @@ export default function HomeFindPortfolio({
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0C1119] via-transparent to-transparent opacity-75 group-hover:opacity-40 transition-opacity" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0C1119] via-transparent to-transparent opacity-75 group-hover:opacity-40 transition-opacity pointer-events-none" />
 
           {/* Top Badges (Rounded Pills) */}
           <div className={`absolute top-3 ${isRtl ? "right-3" : "left-3"} flex items-center gap-1.5`}>

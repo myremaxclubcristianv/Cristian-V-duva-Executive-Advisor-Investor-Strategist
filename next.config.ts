@@ -24,9 +24,10 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.zf.ro" },
       { protocol: "https", hostname: "**.profit.ro" },
       { protocol: "https", hostname: "**.ft.com" },
-      { protocol: "https", hostname: "**.forbes.ro" }
+      { protocol: "https", hostname: "**.forbes.ro" },
+      { protocol: "https", hostname: "**.vercel.app" }
     ],
-    unoptimized: false,
+    unoptimized: true,
   },
   async redirects() {
     return [
@@ -47,9 +48,9 @@ const nextConfig: NextConfig = {
       default-src 'self';
       ${scriptSrc}
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-      img-src 'self' data: blob: https://*.supabase.co https://img.youtube.com https://i.ytimg.com https://*.cristianvaduva.com https://cristianvaduva.com https://*.aixluxury.com https://aixluxury.com https://images.unsplash.com https://*.tet.ro https://tet.ro https://*.zf.ro https://*.profit.ro https://*.ft.com https://*.forbes.ro;
+      img-src 'self' data: blob: https://*.supabase.co https://img.youtube.com https://i.ytimg.com https://*.cristianvaduva.com https://cristianvaduva.com https://*.aixluxury.com https://aixluxury.com https://images.unsplash.com https://*.tet.ro https://tet.ro https://*.zf.ro https://*.profit.ro https://*.ft.com https://*.forbes.ro https://*.vercel.app;
       font-src 'self' data: https://fonts.gstatic.com;
-      connect-src 'self' https://*.supabase.co https://*.cristianvaduva.com https://*.aixluxury.com https://va.vercel-scripts.com https://vitals.vercel-insights.com;
+      connect-src 'self' https://*.supabase.co https://*.cristianvaduva.com https://*.aixluxury.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://*.vercel.app;
       frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com;
       frame-ancestors 'self';
       form-action 'self';

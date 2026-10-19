@@ -98,8 +98,8 @@ export default function MediaInsightsShowcase() {
                             sizes="(max-width: 768px) 100vw, 35vw"
                             className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100"
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                          <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
+                          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                             <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-[#93C8FF] group-hover:text-[#07090D] transition-all">
                               <Play className="w-4 h-4 fill-current ml-0.5" />
                             </div>
@@ -158,7 +158,7 @@ export default function MediaInsightsShowcase() {
                   </div>
 
                   <h3 className="font-serif text-lg sm:text-xl text-[#F5F4EF] leading-snug group-hover:text-[#93C8FF] transition-colors">
-                    <Link href={`/insights/${insight.slug}`}>
+                    <Link href="/insights">
                       {insight.title}
                     </Link>
                   </h3>
@@ -169,7 +169,7 @@ export default function MediaInsightsShowcase() {
 
                   <div className="pt-2">
                     <Link
-                      href={`/insights/${insight.slug}`}
+                      href="/insights"
                       className="apple-action-link text-xs"
                     >
                       <span>Citește analiza completă</span>
