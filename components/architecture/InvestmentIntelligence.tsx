@@ -49,7 +49,7 @@ export default function InvestmentIntelligence() {
             date="Raport Anual IMSEE"
             source="Institut Monégasque de la Statistique (IMSEE)"
             description="Observații privind evoluția pieței din Monaco bazate pe date oficiale IMSEE. Aspectele fiscale depend de rezidența și structura fiecărui cumpărător și necesită verificare cu un consultant fiscal autorizat."
-            actionUrl="/raport-piata"
+            actionUrl="https://www.imsee.mc/Economie-et-Finances/Immobilier"
           />
 
           <InsightPanel

@@ -171,7 +171,7 @@ export default function PropertiesCatalog() {
               phase={
                 current.id === "prop-pipera-villas"
                   ? "COMPLETED RESIDENTIAL MASTERPLAN · IMMEDIATE OCCUPANCY"
-                  : "ACTIVE DEVELOPMENT · CONFIRMED DEVELOPER SPECIFICATIONS"
+                  : "ACTIVE DEVELOPMENT · SPECIFICAȚII TEHNICE DEZVOLTATOR"
               }
               unitsSummary={
                 current.id === "prop-pipera-villas"
@@ -243,8 +243,8 @@ export default function PropertiesCatalog() {
           surface="midnight"
           className="p-5 sm:p-7 backdrop-blur-xl bg-[#07090D]/95 shadow-2xl border-white/[0.12] space-y-5"
         >
-          {/* Top Row: Categories Tabs */}
-          <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto no-scrollbar pb-1" role="tablist" aria-label="Property Categories">
+          {/* Top Row: Categories Tabs - Apple Segmented Pills */}
+          <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar pb-1" role="tablist" aria-label="Property Categories">
             {categories.map((tab) => {
               const isActive = activeCategory === tab.id;
               return (
@@ -257,15 +257,15 @@ export default function PropertiesCatalog() {
                     setActiveCategory(tab.id);
                     setVisibleCount(10);
                   }}
-                  className={`px-4 sm:px-5 py-2.5 font-mono text-[10px] sm:text-xs uppercase tracking-[0.2em] font-medium transition-all whitespace-nowrap flex items-center gap-2 border min-h-[44px] ${
+                  className={`px-4 sm:px-5 py-2 rounded-full font-mono text-[10px] sm:text-xs uppercase tracking-[0.16em] font-medium transition-all whitespace-nowrap flex items-center gap-2 border min-h-[38px] ${
                     isActive
-                      ? "bg-[#93C8FF] text-[#07090D] border-[#93C8FF] font-bold shadow-lg shadow-[#93C8FF]/20"
-                      : "text-[#B8C2CF] border-white/[0.08] hover:border-[#93C8FF]/50 hover:text-[#F5F4EF] bg-[#0C1119]/70"
+                      ? "bg-[#93C8FF] text-[#07090D] border-[#93C8FF] font-bold shadow-md shadow-[#93C8FF]/20"
+                      : "text-[#B8C2CF] border-white/[0.08] hover:border-white/[0.2] hover:text-[#F5F4EF] bg-[#0C1119]"
                   }`}
                 >
                   <span className={isActive ? "text-[#07090D] font-bold" : ""}>{tab.label}</span>
                   <span
-                    className={`text-[9px] px-1.5 py-0.5 rounded-full ${
+                    className={`text-[9px] px-2 py-0.5 rounded-full ${
                       isActive
                         ? "bg-[#07090D]/20 text-[#07090D] font-bold"
                         : "bg-white/[0.06] text-[#8A95A5]"
@@ -290,7 +290,7 @@ export default function PropertiesCatalog() {
                 setSelectedCountry("all");
                 setVisibleCount(10);
               }}
-              className={`px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider transition-colors border min-h-[32px] inline-flex items-center ${
+              className={`px-3 py-1 rounded-full font-mono text-[10px] uppercase tracking-wider transition-colors border min-h-[30px] inline-flex items-center ${
                 selectedCountry === "all"
                   ? "border-[#C49A78] text-[#C49A78] bg-[#C49A78]/15 font-semibold"
                   : "border-white/[0.08] text-[#8A95A5] hover:text-[#F5F4EF] bg-[#0C1119]"
@@ -306,7 +306,7 @@ export default function PropertiesCatalog() {
                   setSelectedCountry(c);
                   setVisibleCount(10);
                 }}
-                className={`px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider transition-colors border whitespace-nowrap min-h-[32px] inline-flex items-center ${
+                className={`px-3 py-1 rounded-full font-mono text-[10px] uppercase tracking-wider transition-colors border whitespace-nowrap min-h-[30px] inline-flex items-center ${
                   selectedCountry === c
                     ? "border-[#C49A78] text-[#C49A78] bg-[#C49A78]/15 font-semibold"
                     : "border-white/[0.08] text-[#8A95A5] hover:text-[#F5F4EF] bg-[#0C1119]"
@@ -331,7 +331,7 @@ export default function PropertiesCatalog() {
                   setVisibleCount(10);
                 }}
                 placeholder="Search title, district, specifications, or city..."
-                className="w-full pl-10 pr-9 py-2.5 bg-[#0C1119] border border-white/[0.1] text-xs font-mono text-[#F5F4EF] placeholder-[#8A95A5] focus:outline-none focus:border-[#93C8FF] focus:ring-1 focus:ring-[#93C8FF]/30 transition-all"
+                className="w-full pl-10 pr-9 py-2 rounded-full bg-[#0C1119] border border-white/[0.1] text-xs font-mono text-[#F5F4EF] placeholder-[#8A95A5] focus:outline-none focus:border-[#93C8FF] focus:ring-1 focus:ring-[#93C8FF]/30 transition-all"
               />
               {searchQuery && (
                 <button
@@ -408,7 +408,7 @@ export default function PropertiesCatalog() {
           <span className="w-1.5 h-1.5 bg-[#93C8FF] rounded-full" />
           <span>Exhibiting </span>
           <span className="text-[#93C8FF] font-semibold">{filteredProperties.length}</span>
-          <span> confirmed architectural assets</span>
+          <span> proprietăți din portofoliu</span>
           {activeCategory !== "all" && (
             <span> in <span className="text-[#F5F4EF] uppercase">{activeCategory}</span></span>
           )}

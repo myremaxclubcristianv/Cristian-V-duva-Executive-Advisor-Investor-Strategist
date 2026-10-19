@@ -230,7 +230,7 @@ export default function GhidCumparatorPage() {
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-1">
                     <span className="text-[#A97F60] block">AUDIT JURIDIC & TEHNIC</span>
-                    <p className="text-[#E1E4EA] font-sans text-xs">Onorarii pentru avocat Barou și expertiză tehnică MLPAT.</p>
+                    <p className="text-[#E1E4EA] font-sans text-xs">Onorarii pentru avocat Barou și expertiză tehnică atestată.</p>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-1">
                     <span className="text-[#A97F60] block">SERVICII & MENTENANȚĂ</span>
@@ -293,7 +293,7 @@ export default function GhidCumparatorPage() {
                   4. Auditul Tehnic și Structural al Imobilului
                 </h3>
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Finisajele de lux pot ascunde probleme de execuție structurală sau de izolație. O inspecție fizică realizată de un inginer atestat MLPAT trebuie să vizeze:
+                  Finisajele de lux pot ascunde probleme de execuție structurală sau de izolație. O inspecție fizică realizată de un inginer structurist / expert tehnic atestat trebuie să vizeze:
                 </p>
                 <div className="grid sm:grid-cols-3 gap-4 pt-2 font-mono text-xs text-[#8A95A5]">
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-2">

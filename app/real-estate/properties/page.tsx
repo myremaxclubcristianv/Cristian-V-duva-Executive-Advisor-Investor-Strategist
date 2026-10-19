@@ -9,6 +9,7 @@ import CadranDivider from "@/components/editorial/CadranDivider";
 import PersonalPerspectiveSection from "@/components/editorial/PersonalPerspectiveSection";
 import EcosystemDirectory from "@/components/editorial/EcosystemDirectory";
 import ExecutiveContactCadran from "@/components/editorial/ExecutiveContactCadran";
+import HomeFindPortfolio from "@/components/editorial/HomeFindPortfolio";
 import { selectedProperties } from "@/lib/properties";
 import { ArrowDown, ShieldCheck, MapPin, Globe, Sparkles, Building2 } from "lucide-react";
 
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   title: "Confirmed Property Portfolio & Acquisitions — Cristian Văduva",
   description: "Curated editorial selection of verified penthouses, private architectural estates, residential masterplans, and international trophy assets across Bucharest, Marbella, Monaco, Dubai, and Miami.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/real-estate/properties",
+    canonical: "https://cristianvaduva.com/real-estate/properties",
   },
 };
 
@@ -60,21 +61,21 @@ export default function PropertiesPage() {
 
           <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
             {/* Top Index & Verification Header */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-6 font-mono text-[10px] sm:text-xs">
-              <div className="flex items-center gap-3">
-                <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
-                <span className="text-[#93C8FF] uppercase tracking-[0.28em] font-semibold">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.08] pb-6 font-mono text-[10px] sm:text-xs">
+              <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+                <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse shrink-0" />
+                <span className="text-[#93C8FF] uppercase tracking-[0.16em] sm:tracking-[0.28em] font-semibold">
                   PORTFOLIO CATALOGUE 2026 // VOL. IV
                 </span>
-                <span className="text-white/20">|</span>
-                <span className="text-[#8A95A5] uppercase tracking-wider">
+                <span className="text-white/20 hidden xs:inline">|</span>
+                <span className="text-[#8A95A5] uppercase tracking-wider hidden xs:inline">
                   CONFIRMED ASSET INVENTORY ({totalProperties} MONOGRAPHS)
                 </span>
               </div>
 
               <div className="flex items-center gap-2 text-[#A97F60]">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span className="tracking-[0.2em] font-semibold uppercase text-[10px]">
+                <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+                <span className="tracking-[0.15em] sm:tracking-[0.2em] font-semibold uppercase text-[10px]">
                   Strategic Underwriting Standard
                 </span>
               </div>
@@ -88,7 +89,7 @@ export default function PropertiesPage() {
                   <span className="font-mono text-xs sm:text-sm uppercase tracking-[0.25em] text-[#A97F60] font-semibold block">
                     EXECUTIVE REAL ESTATE ARCHITECTURE
                   </span>
-                  <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-[#F5F4EF] leading-[1.04] tracking-tight">
+                  <h1 className="font-serif text-3xl sm:text-6xl lg:text-7xl text-[#F5F4EF] leading-[1.04] tracking-tight break-words">
                     Editorial Curation of<br />
                     <span className="text-[#A97F60] italic font-normal">Sovereign Architectural Assets.</span>
                   </h1>
@@ -100,26 +101,26 @@ export default function PropertiesPage() {
                   title provenance, and long-term capital defense resilience across executive corridors.
                 </p>
 
-                {/* Direct Action Link */}
-                <div className="flex flex-wrap items-center gap-4 pt-2 font-mono text-xs">
+                {/* Direct Action Link - Apple Pills */}
+                <div className="flex flex-wrap items-center gap-3 pt-2 font-mono text-xs">
                   <a
                     href="#catalog-view"
-                    className="px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.2em] font-bold transition-all shadow-xl flex items-center gap-2 min-h-[48px]"
+                    className="btn-apple-pill-primary shadow-xl shadow-[#93C8FF]/15"
                   >
-                    <span className="text-[#07090D] font-bold">EXPLORE PORTFOLIO COLLECTION ({totalProperties})</span>
-                    <ArrowDown className="w-3.5 h-3.5 text-[#07090D]" />
+                    <span>EXPLORE PORTFOLIO ({totalProperties})</span>
+                    <ArrowDown className="w-3.5 h-3.5" />
                   </a>
 
                   <a
                     href="#perspectives"
-                    className="px-6 py-3.5 border border-white/[0.15] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.2em] font-semibold transition-all min-h-[48px] flex items-center justify-center"
+                    className="btn-apple-pill-secondary"
                   >
                     <span>CRISTIAN VĂDUVA PERSPECTIVE</span>
                   </a>
 
                   <a
                     href="#ecosystem"
-                    className="px-6 py-3.5 border border-white/[0.15] hover:border-[#A97F60] text-[#B8C2CF] hover:text-[#A97F60] uppercase tracking-[0.2em] font-semibold transition-all min-h-[48px] flex items-center justify-center"
+                    className="btn-apple-pill-secondary"
                   >
                     <span>ECOSYSTEM DIRECTORY</span>
                   </a>
@@ -227,9 +228,9 @@ export default function PropertiesPage() {
         {/* PERSONAL ADVISORY MANDATE CADRAN                         */}
         {/* ======================================================== */}
         <section className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 pt-10 pb-2">
-          <div className="border border-white/[0.12] bg-[#0C1119] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden group">
+          <div className="rounded-3xl border border-white/[0.08] bg-[#0C1119] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden group shadow-xl">
             <div className="flex items-center gap-6">
-              <div className="relative w-20 h-20 sm:w-24 sm:h-24 border border-[#93C8FF]/40 bg-[#1B2028] overflow-hidden shrink-0 shadow-lg">
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl border border-white/[0.1] bg-[#1B2028] overflow-hidden shrink-0 shadow-lg">
                 <Image
                   src="/images/personal/portraits/cristian-vaduva-desk-advisor.jpg"
                   alt="Cristian Văduva — Executive Real Estate Advisor"
@@ -254,19 +255,26 @@ export default function PropertiesPage() {
             <div className="flex items-center gap-3 shrink-0 font-mono text-xs w-full md:w-auto">
               <a
                 href="#perspectives"
-                className="flex-1 md:flex-initial px-5 py-3 border border-white/[0.15] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] uppercase tracking-[0.18em] font-medium transition-colors text-center min-h-[44px] flex items-center justify-center"
+                className="btn-apple-pill-secondary flex-1 md:flex-initial"
               >
                 <span>MEET CRISTIAN VĂDUVA</span>
               </a>
               <Link
                 href="/contact"
-                className="flex-1 md:flex-initial px-5 py-3 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.18em] font-bold transition-all shadow-lg text-center min-h-[44px] flex items-center justify-center"
+                className="btn-apple-pill-primary flex-1 md:flex-initial shadow-lg"
               >
-                <span className="text-[#07090D] font-bold">RETAIN MANDATE</span>
+                <span>RETAIN MANDATE</span>
               </Link>
             </div>
           </div>
         </section>
+
+        {/* ======================================================== */}
+        {/* LIVE HOMEFIND BUY & RENT PORTFOLIO                       */}
+        {/* ======================================================== */}
+        <div id="homefind-portfolio">
+          <HomeFindPortfolio />
+        </div>
 
         {/* ======================================================== */}
         {/* PROPERTIES EXHIBITION CATALOG                            */}

@@ -64,19 +64,19 @@ export default function InsightsPage() {
             description="Each memorandum investigates structural market dynamics: from real inflation-adjusted rental yields to sovereign capital preservation across the Monaco · Dubai corridor."
           />
 
-          <div className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
+          <div className="space-y-8">
             {insights.map((item, idx) => (
               <article
                 key={item.id}
-                className="py-16 sm:py-24 grid lg:grid-cols-12 gap-8 lg:gap-12 items-center hover:bg-[#0C1119]/40 transition-colors duration-300 px-4 sm:px-6 group"
+                className="p-8 sm:p-12 rounded-3xl border border-white/[0.08] bg-[#0C1119] grid lg:grid-cols-12 gap-8 lg:gap-12 items-center hover:border-white/[0.22] hover:bg-[#101622] transition-all duration-300 shadow-xl group"
               >
                 <div className="lg:col-span-1 hidden lg:block">
-                  <span className="font-monumental text-5xl text-[#1B2028] group-hover:text-[#93C8FF] transition-colors">
+                  <span className="font-serif text-4xl text-[#647082]/60 group-hover:text-[#93C8FF] transition-colors">
                     0{idx + 1}
                   </span>
                 </div>
 
-                <div className="lg:col-span-5 relative aspect-video bg-black overflow-hidden border border-white/[0.1] shadow-xl">
+                <div className="lg:col-span-5 relative aspect-video rounded-2xl overflow-hidden border border-white/[0.08] shadow-xl">
                   <Image
                     src={item.coverImage}
                     alt={item.title}
@@ -89,7 +89,7 @@ export default function InsightsPage() {
 
                 <div className="lg:col-span-6 space-y-5">
                   <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs">
-                    <span className="text-[#A97F60] uppercase tracking-widest font-semibold">{item.category}</span>
+                    <span className="px-3 py-1 rounded-full bg-[#A97F60]/10 border border-[#A97F60]/20 text-[#A97F60] uppercase tracking-wider font-semibold">{item.category}</span>
                     <span className="text-[#8A95A5]">·</span>
                     <span className="text-[#B8C2CF]">{item.publicationDate} · {item.readingTime}</span>
                   </div>
@@ -102,13 +102,13 @@ export default function InsightsPage() {
                     {item.excerpt}
                   </EditorialText>
 
-                  <div className="pt-4 flex items-center justify-between border-t border-white/[0.06] font-mono text-xs">
+                  <div className="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-white/[0.06] font-mono text-xs">
                     <span className="text-[#8A95A5]">Author: {item.author}</span>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-1.5 text-[#93C8FF] hover:text-[#B8C2CF] font-semibold transition-colors"
+                      className="btn-apple-pill-secondary"
                     >
-                      <span>REQUEST STRATEGIC MEMORANDUM</span>
+                      <span>REQUEST MEMORANDUM</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>

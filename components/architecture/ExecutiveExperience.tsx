@@ -1,58 +1,65 @@
+"use client";
+
 import React from "react";
 import ArchitecturalHero from "./ArchitecturalHero";
 import EditorialInterruption from "./EditorialInterruption";
-import SelectedOpportunities from "./SelectedOpportunities";
-import InvestmentIntelligence from "./InvestmentIntelligence";
-import InternationalPerspective from "./InternationalPerspective";
-import ChestertonsSection from "./ChestertonsSection";
-import EcosystemDirectory from "@/components/editorial/EcosystemDirectory";
-import SignatureClosing from "./SignatureClosing";
+import ClientBenefits from "@/components/editorial/ClientBenefits";
+import FeaturedVenturesShowcase from "./FeaturedVenturesShowcase";
+import HomeFindPortfolio from "@/components/editorial/HomeFindPortfolio";
 import PersonalPerspectiveSection from "@/components/editorial/PersonalPerspectiveSection";
+import RepresentationDifference from "@/components/editorial/RepresentationDifference";
+import MediaInsightsShowcase from "./MediaInsightsShowcase";
+import SignatureClosing from "./SignatureClosing";
 
 /**
- * EXECUTIVE DIGITAL FLAGSHIP — MASTER EXPERIENCE
- * Art-directed 8-chapter architectural narrative:
- * 01 // Cinematic Opening & Perspective Orientation
- * 02 // The Principal's Advisory Mandate (Real Estate, Investment, Asset Protection)
- * 03 // The Human Advisor: Cristian Văduva — Authentic Photographs & Strategic Advisory Thesis
- * 04 // Selected Real Estate Opportunities (Pattern A Signature & Pattern B Supporting)
- * 05 // Empirical Investment Intelligence & Macroeconomic Surveillance
- * 06 // International Perspective & Cross-Border Corridors (Romania · Monaco · Dubai)
- * 07 // The Integrated Operating Ecosystem (All 13 Platforms with Pre-Launch Status)
- * 08 // The Closing Strategic Statement & Direct Engagement
+ * EXECUTIVE DIGITAL FLAGSHIP — APPLE-LEVEL EDITORIAL HOMEPAGE
+ * Carefully directed narrative sequence:
+ * 01 // Navigation (ExecutiveHeader in app/page.tsx)
+ * 02 // Hero: Monumental impact, authentic positioning & portrait (ArchitecturalHero)
+ * 03 // Value Proposition: Light canvas editorial contrast & fiduciary mandate (EditorialInterruption & ClientBenefits)
+ * 04 // Featured Ventures: Distinct Apple-style product bento & billboards (FeaturedVenturesShowcase)
+ * 05 // Real Estate: Curated verified BUY & RENT properties from HomeFind (HomeFindPortfolio)
+ * 06 // About & Credibility: Authentic professional trajectory & fiduciar posture (PersonalPerspectiveSection)
+ * 07 // The Fiduciary Difference: Empirical comparison (RepresentationDifference)
+ * 08 // Media & Insights: Official video broadcasts & research dispatches (MediaInsightsShowcase)
+ * 09 // Final CTA & Footer: Confidential consultation prompt & Apple directory (SignatureClosing & Footer)
  */
 export default function ExecutiveExperience() {
   return (
     <div className="w-full bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
-      {/* CHAPTER 01 // CINEMATIC OPENING */}
+      {/* 01 // HERO (APPLE MONUMENTAL LAUNCH STYLE) */}
       <ArchitecturalHero />
 
-      {/* CHAPTER 02 // THE PRINCIPAL'S MANDATE */}
-      <EditorialInterruption />
+      {/* 02 // VALUE PROPOSITION (LIGHT/PORCELAIN CANVAS CONTRAST) */}
+      <div id="services">
+        <EditorialInterruption />
+      </div>
 
-      {/* CHAPTER 03 // THE HUMAN STRATEGIST — CRISTIAN VĂDUVA */}
-      <div id="perspectives">
+      {/* 03 // ROLE-BASED CONCRETE VALUE FOR CLIENTS */}
+      <ClientBenefits />
+
+      {/* 04 // FEATURED VENTURES SHOWCASE (APPLE PRODUCT BENTO & BILLBOARDS) */}
+      <FeaturedVenturesShowcase />
+
+      {/* 05 // REAL ESTATE PORTFOLIO — LIVE HOMEFIND CURATED SELECTION */}
+      <div id="portfolio">
+        <HomeFindPortfolio />
+      </div>
+
+      {/* 06 // ABOUT & CREDIBILITY (FOUNDER PROFILE & RIGOR) */}
+      <div id="about">
         <PersonalPerspectiveSection />
       </div>
 
-      {/* CHAPTER 04 // SELECTED OPPORTUNITIES */}
-      <SelectedOpportunities />
+      {/* 07 // THE FIDUCIARY DIFFERENCE (EMPIRICAL COMPARISON) */}
+      <RepresentationDifference />
 
-      {/* CHAPTER 05 // INVESTMENT INTELLIGENCE */}
-      <InvestmentIntelligence />
-
-      {/* CHAPTER 06 // INTERNATIONAL PERSPECTIVE */}
-      <InternationalPerspective />
-
-      {/* CHAPTER 06.5 // CHESTERTONS GLOBAL AFFILIATION */}
-      <ChestertonsSection />
-
-      {/* CHAPTER 07 // THE INTEGRATED ECOSYSTEM */}
-      <div id="ecosystem">
-        <EcosystemDirectory />
+      {/* 08 // MEDIA & INSIGHTS (YOUTUBE MASTERCLASSES & RESEARCH MEMORANDA) */}
+      <div id="insights">
+        <MediaInsightsShowcase />
       </div>
 
-      {/* CHAPTER 08 // THE CLOSING STATEMENT & INTAKE */}
+      {/* 09 // SIGNATURE CLOSING (CONFIDENTIAL INTAKE DESK) */}
       <SignatureClosing />
     </div>
   );

@@ -21,13 +21,13 @@ export const metadata: Metadata = {
   description:
     "Servicii de consultanță strategică, reprezentare unilaterală dedicată și due diligence imobiliar pentru achiziția și vânzarea de proprietăți rezidențiale de prestigiu în București și internațional.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/pentru-clienti",
+    canonical: "https://cristianvaduva.com/pentru-clienti",
   },
   openGraph: {
     title: "Consultanță Imobiliară Premium pentru Clienți Privați | Cristian Văduva",
     description:
       "Orientare strategică independentă pentru decizii de achiziție și vânzare imobiliară premium în București și internațional.",
-    url: "https://executive.cristianvaduva.com/pentru-clienti",
+    url: "https://cristianvaduva.com/pentru-clienti",
     type: "website",
   },
 };
@@ -35,25 +35,25 @@ export const metadata: Metadata = {
 const COMPARISON_ROWS: ComparisonRow[] = [
   {
     dimension: "Alinierea Interesului",
-    traditional: "Agenție tranzacțională clasică (adesea comision din ambele părți ale tranzacției).",
+    traditional: "Intermediere tranzacțională standard (adesea reprezentare ambiguă între ambele părți).",
     advisory: "Mandat de reprezentare unilateral scris, apărând exclusiv interesele dumneavoastră.",
     note: "Fără conflict de interese",
   },
   {
     dimension: "Filtrarea Pieței",
-    traditional: "Promovarea agresivă a proprietăților proprii din portofoliu pentru comision imediat.",
+    traditional: "Promovarea limitată la proprietățile proprii din stoc, fără explorarea întregii piețe.",
     advisory: "Căutare pe întreaga piață, inclusiv oportunități off-market și analiză obiectivă a dezavantajelor.",
     note: "Filtrare obiectivă",
   },
   {
     dimension: "Verificare & Due Diligence",
     traditional: "Superficială; se bazează adesea doar pe promisiunile vânzătorului și ale dezvoltatorului.",
-    advisory: "Coordonare formală de due diligence: carte funciară, cadastru, ingineri MLPAT, avocați de barou.",
+    advisory: "Coordonare formală de due diligence: carte funciară, cadastru, ingineri structuriști atestați, avocați de barou.",
     note: "Risc structural atenuat",
   },
   {
     dimension: "Negociere de Preț & Termeni",
-    traditional: "Interes ca prețul să rămână cât mai ridicat pentru a maximiza comisionul procentual.",
+    traditional: "Lipsă de aliniere obiectivă; atenție limitată la optimizarea analitică a costului real de achiziție.",
     advisory: "Negociere riguroasă pe bază de prețuri reale de închidere (like-for-like), nu pe prețuri de listare.",
     note: "Economii demonstrate",
   },
@@ -120,7 +120,7 @@ export default function PentruClientiPage() {
             <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
               {/* Left Column: Editorial Headline & Narrative */}
               <div className="lg:col-span-7 space-y-6 sm:space-y-8">
-                <div className="inline-flex items-center gap-2.5 px-3.5 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase">
+                <div className="inline-flex items-center gap-2.5 px-3.5 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase rounded-full">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#93C8FF]" />
                   <span>CONSULTANȚĂ PRIVATĂ · REPREZENTARE EXCLUSIVĂ</span>
                 </div>
@@ -136,7 +136,7 @@ export default function PentruClientiPage() {
                 <div className="flex flex-wrap items-center gap-4 pt-4">
                   <Link
                     href="/programare"
-                    className="inline-flex items-center gap-2 px-7 py-4 bg-[#93C8FF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold hover:bg-white transition-all shadow-xl shadow-[#93C8FF]/20 min-h-[48px]"
+                    className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[48px]"
                   >
                     <span>SOLICITĂ DISCUȚIE DE 20 MINUTE</span>
                     <ArrowRight className="w-4 h-4" />
@@ -144,17 +144,17 @@ export default function PentruClientiPage() {
 
                   <Link
                     href="/cum-lucrez"
-                    className="inline-flex items-center gap-2 px-7 py-4 border border-white/[0.15] bg-[#0C1119] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] hover:border-[#93C8FF] transition-colors min-h-[48px]"
+                    className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
                   >
-                    <span>CUM FUNCȚIONEAZĂ REMUNERAȚIA</span>
+                    <span>METODOLOGIE DE LUCRU</span>
                   </Link>
                 </div>
 
                 {/* Key Quick Indicators */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-6 border-t border-white/[0.08] font-mono text-[11px] text-[#8A95A5]">
                   <div>
-                    <span className="text-[#93C8FF] block font-semibold">100% UNILATERAL</span>
-                    <span>Zero dublu comision</span>
+                    <span className="text-[#93C8FF] block font-semibold">100% DEDICAT</span>
+                    <span>Reprezentare Unilaterală</span>
                   </div>
                   <div>
                     <span className="text-[#93C8FF] block font-semibold">ACORD NDA</span>
@@ -228,7 +228,7 @@ export default function PentruClientiPage() {
                 ctaHref="/programare"
                 stats={[
                   { value: "100%", label: "Aliniere Unilaterală" },
-                  { value: "0€", label: "Dublu Comision Ascuns" },
+                  { value: "0", label: "Conflicte de Interese" },
                   { value: "24h", label: "Confirmare Solicitare" },
                 ]}
               />
@@ -269,7 +269,7 @@ export default function PentruClientiPage() {
               <ArchitecturalFeaturePanel
                 tag="DIRECȚIA 03 // COORDONARE DUE DILIGENCE"
                 title="Audit Multidisciplinar: Titlu, Urbanism & Calitate Structurală"
-                description="Coordonăm verificarea istoricului complet de proprietate, a conformității urbanistice și a stării tehnice structurale prin intermediul experților independenți atestați (avocați de barou, notari publici, ingineri atestați MLPAT, evaluatori ANEVAR)."
+                description="Coordonăm verificarea istoricului complet de proprietate, a conformității urbanistice și a stării tehnice structurale prin intermediul experților independenți atestați (avocați de barou, notari publici, experți tehnici atestați în construcții, evaluatori ANEVAR)."
                 imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-office-blueprints-underwriting.jpg"
                 imageAlt="Analiză planuri arhitecturale și carte tehnică"
                 imageCaption="Verificare tehnică de specialitate"
@@ -280,7 +280,7 @@ export default function PentruClientiPage() {
                     desc: "Depistarea sarcinilor, ipotecilor, proceselor sau revendicărilor istorice.",
                   },
                   {
-                    title: "Inspecție tehnică MLPAT a structurii și instalațiilor",
+                    title: "Inspecție tehnică atestată a structurii și instalațiilor",
                     desc: "Analiza calității execuției, cărții tehnice a construcției și a rezistenței seismice.",
                   },
                   {
@@ -292,7 +292,7 @@ export default function PentruClientiPage() {
                 ctaHref="/ghid-cumparator"
                 stats={[
                   { value: "7 Etape", label: "Ghid de Verificare" },
-                  { value: "MLPAT", label: "Ingineri Structuriști" },
+                  { value: "MDLPA", label: "Experți Tehnici Atestați" },
                   { value: "Barou", label: "Avocați Independenți" },
                 ]}
               />
@@ -401,7 +401,7 @@ export default function PentruClientiPage() {
               number="04"
               category="METODOLOGIE DE LUCRU"
               title="Etapele unui Mandat Privat de Consultanță"
-              description="O relație profesională bazată pe claritate totală, etape documentate și remunerare agreată în avans prin contract scris bilateral."
+              description="O relație profesională bazată pe claritate totală, etape documentate și termeni agreați transparent prin contract scris bilateral."
             />
 
             <NumberedProcessTimeline steps={ADVISORY_STEPS} />
@@ -414,7 +414,7 @@ export default function PentruClientiPage() {
             description="Fiecare mandat este asumat personal de Cristian Văduva. Oferim o sesiune confidențială de 20 de minute pentru a evalua compatibilitatea proiectului dumneavoastră."
             primaryCtaText="SOLICITĂ DISCUȚIE DE 20 MINUTE"
             primaryCtaHref="/programare"
-            secondaryCtaText="VEZI DETALII REMUNERAȚIE"
+            secondaryCtaText="VEZI METODOLOGIA DE LUCRU"
             secondaryCtaHref="/cum-lucrez"
             imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-office-armchair-consultation.png"
           />

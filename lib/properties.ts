@@ -22,7 +22,7 @@ export interface Property {
   bedrooms?: number | string;
   bathrooms?: number | string;
   rooms: string;
-  status: "Available" | "Private Deal" | "Acquired" | "Under Development" | "Custom Order" | "Available for Lease";
+  status: "Available" | "Private Deal" | "Acquired" | "Under Development" | "Custom Order" | "Available for Lease" | "Architectural Concept";
   description: string;
   advisoryPerspective: string;
   heroImage: string;
@@ -201,7 +201,7 @@ export const selectedProperties: Property[] = [
     "location": "Northern Prime Diplomatic Enclave, Bucharest Metropolitan Area",
     "city": "Bucharest",
     "country": "Romania",
-    "price": "Price upon confidential inquiry",
+    "price": "Architectural Study / Conceptual",
     "currency": "EUR",
     "type": "Sovereign Estate / Protocol Architectural Study",
     "category": "villa",
@@ -211,9 +211,9 @@ export const selectedProperties: Property[] = [
     "bedrooms": 8,
     "bathrooms": 6,
     "rooms": "16 Rooms (Grand Reception Hall, Formal Salons, Master Wings)",
-    "status": "Private Deal",
-    "description": "An architectural monograph and protocol estate study designed for diplomatic representation, family office headquarters, or multi-generational private living. The concept features 3,050 sqm of mature landscaped parkland, high-volume ceremonial salons, an enclosed vehicle salon, and dedicated perimeter security infrastructure.",
-    "advisoryPerspective": "A masterplanned architectural study for a generational estate compound, structured for private development under single-client advisory alignment.",
+    "status": "Architectural Concept",
+    "description": "An architectural concept and protocol estate study illustrative of high-volume spatial planning, designed for diplomatic representation, family office headquarters, or multi-generational private living. Features 3,050 sqm of mature landscaped parkland, high-volume ceremonial salons, and vehicle security infrastructure.",
+    "advisoryPerspective": "An illustrative masterplanned architectural study for a generational estate compound, structured as a conceptual model.",
     "heroImage": "/images/architecture/executive-study.jpg",
     "galleryImages": [
       "/images/architecture/executive-study.jpg"
@@ -323,7 +323,7 @@ export const selectedProperties: Property[] = [
     "location": "Cap-d'Ail, Côte d'Azur, France (Monaco Border)",
     "city": "Cap-d'Ail",
     "country": "France",
-    "price": "Price upon confidential inquiry",
+    "price": "Architectural Study / Conceptual",
     "currency": "EUR",
     "type": "Mediterranean Cliffside Architectural Study",
     "category": "international",
@@ -333,9 +333,9 @@ export const selectedProperties: Property[] = [
     "bedrooms": 6,
     "bathrooms": 6,
     "rooms": "6 Master Suites · Formal Entertaining Salons",
-    "status": "Private Deal",
-    "description": "An architectural study in honed travertine and structural glass commanding open panoramas over the Mediterranean Sea from the cliffside terrain of Cap-d'Ail, France. The advisory mandate involved cross-border French Riviera zoning review, holding structure tax analysis, and direct principal consultation under a non-disclosure covenant.",
-    "advisoryPerspective": "Positioned along the prestigious Cap-d'Ail coastal cliffline on the French Riviera, immediately adjacent to the Principality of Monaco sovereign border.",
+    "status": "Architectural Concept",
+    "description": "An architectural study in honed travertine and structural glass commanding open panoramas over the Mediterranean Sea from the cliffside terrain of Cap-d'Ail, France (Monaco border corridor). Represents architectural spatial modeling and cross-border French Riviera property analysis.",
+    "advisoryPerspective": "Conceptual study positioned along the Cap-d'Ail coastal cliffline on the French Riviera, adjacent to the Principality of Monaco sovereign border.",
     "heroImage": "/images/architecture/monaco-cliffside.jpg",
     "galleryImages": [
       "/images/architecture/monaco-cliffside.jpg",

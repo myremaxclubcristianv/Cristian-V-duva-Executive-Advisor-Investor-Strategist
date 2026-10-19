@@ -4,52 +4,37 @@ export const socialLinks: SocialLink[] = [
   {
     platform: "linkedin",
     url: "https://linkedin.com/in/cristianvaduva",
-    displayName: "LinkedIn",
+    displayName: "LinkedIn / Cristian Văduva",
   },
   {
     platform: "youtube",
     url: "https://www.youtube.com/@CristianVaduvaCV",
-    displayName: "YouTube",
-  },
-  {
-    platform: "linktree",
-    url: "https://linktr.ee/cristianvaduvarealestate",
-    displayName: "Linktree",
+    displayName: "Official YouTube Channel",
   },
   {
     platform: "whatsapp",
     url: "https://wa.me/436509536345",
-    displayName: "WhatsApp",
+    displayName: "WhatsApp / Direct Desk",
   },
   {
     platform: "telegram",
-    url: "https://t.me/capitalinvestcristianvaduva",
-    displayName: "Telegram",
+    url: "https://t.me/CristianVaduva",
+    displayName: "Telegram / Direct",
   },
   {
-    platform: "facebook",
-    url: "https://www.facebook.com/CristianVaduvaCV",
-    displayName: "Facebook",
+    platform: "telegram-channel",
+    url: "https://t.me/capitalinvestcristianvaduva",
+    displayName: "Telegram / Capital Invest",
   },
   {
     platform: "instagram",
     url: "https://instagram.com/cristian_vaduva_cristianv",
-    displayName: "Instagram",
+    displayName: "Instagram / @cristian_vaduva_cristianv",
   },
   {
-    platform: "threads",
-    url: "https://www.threads.net/@cristian_vaduva_cristianv",
-    displayName: "Threads",
-  },
-  {
-    platform: "tiktok",
-    url: "https://www.tiktok.com/@cristianvaduvacv",
-    displayName: "TikTok",
-  },
-  {
-    platform: "twitter",
-    url: "https://twitter.com/cristianvaduvaa",
-    displayName: "X (Twitter)",
+    platform: "facebook",
+    url: "https://www.facebook.com/CristianVaduvaCV",
+    displayName: "Facebook / CristianVaduvaCV",
   },
 ];
 

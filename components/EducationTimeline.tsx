@@ -55,7 +55,7 @@ export default function EducationTimeline() {
         {/* Apple-Style Education Grid */}
         <div className="space-y-12">
           <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#111111] font-semibold border-b border-black/10 pb-3">
-            VERIFIED ACADEMIC CREDENTIALS
+            ACADEMIC CREDENTIALS & DEGREES
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "GDPR Rights & Data Subject Requests — Cristian Văduva",
   description: "Practical guide to exercising your statutory GDPR rights, including access, rectification, erasure, and data portability.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/gdpr",
+    canonical: "https://cristianvaduva.com/gdpr",
   },
 };
 

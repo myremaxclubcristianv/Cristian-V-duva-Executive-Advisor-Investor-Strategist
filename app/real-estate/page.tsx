@@ -27,6 +27,9 @@ import {
 export const metadata: Metadata = {
   title: "Real Estate & Market Hub — Cristian Văduva | HomeFind & AiXLuxury",
   description: "Consultanță dedicată pentru achiziții rezidențiale de prestigiu, reprezentare unilaterală, verificare cadastrală structurată și proprietăți selectate în București și internațional.",
+  alternates: {
+    canonical: "https://cristianvaduva.com/real-estate",
+  },
 };
 
 export default function RealEstateHubPage() {
@@ -66,8 +69,8 @@ export default function RealEstateHubPage() {
 
             {/* Strategic Pillars Grid */}
             <div className="grid md:grid-cols-3 gap-8 pt-8 border-t border-white/[0.08]">
-              <div className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-4 hover:border-[#93C8FF]/40 transition-colors shadow-xl">
-                <div className="w-10 h-10 border border-[#93C8FF]/30 bg-[#93C8FF]/10 flex items-center justify-center text-[#93C8FF]">
+              <div className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] rounded-2xl space-y-4 hover:border-[#93C8FF]/40 transition-colors shadow-xl">
+                <div className="w-10 h-10 rounded-xl border border-[#93C8FF]/30 bg-[#93C8FF]/10 flex items-center justify-center text-[#93C8FF]">
                   <Scale className="w-5 h-5" />
                 </div>
                 <h3 className="font-serif text-2xl text-[#F5F4EF]">
@@ -78,8 +81,8 @@ export default function RealEstateHubPage() {
                 </EditorialText>
               </div>
 
-              <div className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-4 hover:border-[#93C8FF]/40 transition-colors shadow-xl">
-                <div className="w-10 h-10 border border-[#A97F60]/30 bg-[#A97F60]/10 flex items-center justify-center text-[#A97F60]">
+              <div className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] rounded-2xl space-y-4 hover:border-[#93C8FF]/40 transition-colors shadow-xl">
+                <div className="w-10 h-10 rounded-xl border border-[#A97F60]/30 bg-[#A97F60]/10 flex items-center justify-center text-[#A97F60]">
                   <Compass className="w-5 h-5" />
                 </div>
                 <h3 className="font-serif text-2xl text-[#F5F4EF]">
@@ -90,8 +93,8 @@ export default function RealEstateHubPage() {
                 </EditorialText>
               </div>
 
-              <div className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-4 hover:border-[#93C8FF]/40 transition-colors shadow-xl">
-                <div className="w-10 h-10 border border-[#93C8FF]/30 bg-[#93C8FF]/10 flex items-center justify-center text-[#93C8FF]">
+              <div className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] rounded-2xl space-y-4 hover:border-[#93C8FF]/40 transition-colors shadow-xl">
+                <div className="w-10 h-10 rounded-xl border border-[#93C8FF]/30 bg-[#93C8FF]/10 flex items-center justify-center text-[#93C8FF]">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <h3 className="font-serif text-2xl text-[#F5F4EF]">
@@ -107,26 +110,27 @@ export default function RealEstateHubPage() {
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
                 href="/real-estate/properties"
-                className="px-8 py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all shadow-xl flex items-center gap-2"
+                className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[48px]"
               >
                 <span>EXPLORE CONFIRMED PORTFOLIO</span>
-                <ArrowUpRight className="w-4 h-4" />
+                <ArrowUpRight className="w-4 h-4 text-[#07090D]" />
               </Link>
 
               <Link
                 href="/real-estate/market"
-                className="px-7 py-4 border border-white/[0.16] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-xs uppercase tracking-[0.2em] transition-colors"
+                className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
               >
-                MARKET DATA TERMINAL
+                <span>MARKET DATA TERMINAL</span>
               </Link>
 
               <a
                 href="https://homefind.cristianvaduva.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-7 py-4 border border-white/[0.1] hover:border-white/[0.3] text-[#B8C2CF] font-mono text-xs uppercase tracking-[0.2em] transition-colors flex items-center gap-1.5"
+                className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
               >
-                <span>HOMEFIND PORTAL ↗</span>
+                <span>HOMEFIND PORTAL</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#93C8FF]" />
               </a>
             </div>
           </div>

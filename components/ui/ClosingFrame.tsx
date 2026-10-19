@@ -39,11 +39,11 @@ export default function ClosingFrame({
 }: ClosingFrameProps) {
   const pText = primaryAction?.label || primaryCtaText || "SOLICITĂ DISCUȚIE (20 MIN)";
   const pHref = primaryAction?.href || primaryCtaHref || "/programare";
-  const sText = secondaryAction?.label || secondaryCtaText || "CUM FUNCȚIONEAZĂ REMUNERAȚIA";
+  const sText = secondaryAction?.label || secondaryCtaText || "CUM LUCREZ: METODOLOGIE & ETAPE";
   const sHref = secondaryAction?.href || secondaryCtaHref || "/cum-lucrez";
   return (
     <section
-      className={`relative w-full p-8 sm:p-14 lg:p-20 bg-[#07090D] border border-white/[0.1] overflow-hidden ${className}`}
+      className={`relative w-full p-8 sm:p-14 lg:p-20 bg-[#07090D] border border-white/[0.1] overflow-hidden rounded-3xl shadow-2xl ${className}`}
     >
       {/* Background Architectural Ambient Image */}
       {imageSrc && (
@@ -63,7 +63,7 @@ export default function ClosingFrame({
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-[#93C8FF]/40 to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl mx-auto text-center space-y-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/[0.04] border border-white/[0.08] font-mono text-[10px] uppercase tracking-[0.26em] text-[#A97F60]">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-white/[0.04] border border-white/[0.08] font-mono text-[10px] uppercase tracking-[0.26em] text-[#A97F60] rounded-full">
           <Lock className="w-3 h-3 text-[#93C8FF]" />
           <span>{category}</span>
         </div>
@@ -80,16 +80,16 @@ export default function ClosingFrame({
         <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
           <Link
             href={pHref}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#93C8FF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold hover:bg-white transition-all shadow-xl shadow-[#93C8FF]/20"
+            className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[48px]"
           >
-            <Calendar className="w-4 h-4" />
+            <Calendar className="w-4 h-4 text-[#07090D]" />
             <span>{pText}</span>
-            <ArrowUpRight className="w-4 h-4" />
+            <ArrowUpRight className="w-4 h-4 text-[#07090D]" />
           </Link>
 
           <Link
             href={sHref}
-            className="inline-flex items-center gap-2 px-7 py-4 border border-white/[0.15] bg-[#0C1119] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] hover:border-[#93C8FF] transition-colors"
+            className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
           >
             <span>{sText}</span>
           </Link>

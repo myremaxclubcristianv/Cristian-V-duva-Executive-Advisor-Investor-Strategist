@@ -6,7 +6,7 @@
     "category": "portraits",
     "categoryLabel": "Official Portraits",
     "depictionStatus": "Cristian Văduva in bespoke dark tailored suit and silk tie in studio setting",
-    "caption": "Executive Studio Portrait — Formal Black Tie & Peak Lapel Suit",
+    "caption": "Consiliere strategică și reprezentare fiduciară în tranzacții imobiliare de mare valoare",
     "orientation": "square",
     "sourceUrl": "https://aixluxury.com/images/1200/9737978/SNY01904-Edit.jpg",
     "sourceDomain": "aixluxury.com",
@@ -17,7 +17,9 @@
     "width": 800,
     "height": 800,
     "sha256": "9b111e26a0f9d67082ad588b0a07bdaba28de4faaa60e90253b64423eacda23f",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Portret Executiv Oficial",
+    "alt": "Cristian Văduva — Portret Executiv Oficial"
   },
   {
     "id": "photo-cv-002",
@@ -26,7 +28,7 @@
     "category": "portraits",
     "categoryLabel": "Official Portraits",
     "depictionStatus": "Cristian Văduva seated in formal executive dark suit in studio setting",
-    "caption": "Executive Studio Portrait — Classic Seated Stance",
+    "caption": "Coordonarea mandatelor de achiziție și structurare a capitalului",
     "orientation": "square",
     "sourceUrl": "https://aixluxury.com/images/1200/9736460/SNY02239-Edit.jpg",
     "sourceDomain": "aixluxury.com",
@@ -37,7 +39,9 @@
     "width": 800,
     "height": 800,
     "sha256": "3496902d453dac1203c75a703e6e8eb42de5eba9239c14edb0f38e93e5958a92",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Portret Executiv — Biroul Central",
+    "alt": "Cristian Văduva — Biroul Executiv Central"
   },
   {
     "id": "photo-cv-003",
@@ -46,7 +50,7 @@
     "category": "portraits",
     "categoryLabel": "Official Portraits",
     "depictionStatus": "Cristian Văduva standing with arms folded in dark executive suit",
-    "caption": "Executive Studio Portrait — Confident Standing Stance",
+    "caption": "Analiză comparativă și strategie de tranzacționare",
     "orientation": "landscape",
     "sourceUrl": "https://aixluxury.com/images/1200/9736456/SNY05672-Edit.jpg",
     "sourceDomain": "aixluxury.com",
@@ -57,7 +61,9 @@
     "width": 1200,
     "height": 801,
     "sha256": "d3a04868e2291a376dd76f78e73a41ff3d23a0f955714997623efa1fac56bd76",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Portret Editorial — Reprezentare Investițională",
+    "alt": "Cristian Văduva — Reprezentare Investițională"
   },
   {
     "id": "photo-cv-004",
@@ -66,7 +72,7 @@
     "category": "portraits",
     "categoryLabel": "Official Portraits",
     "depictionStatus": "Cristian Văduva portrait in navy executive suit and patterned tie",
-    "caption": "Official Advisory Portrait — Tailored Navy Business Suit",
+    "caption": "Asistență independentă pentru achiziții și vânzări rezidențiale de elită",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/02/Cristian-Vaduva-2.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -77,7 +83,9 @@
     "width": 1414,
     "height": 1782,
     "sha256": "e7b454d9b70909a6f245b32ddb5ab7e070f59e6d7a6064de7f59a91b26ad86f8",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Consultanță Strategică — Mandate Imobiliare",
+    "alt": "Cristian Văduva — Consultanță Strategică"
   },
   {
     "id": "photo-cv-005",
@@ -86,7 +94,7 @@
     "category": "portraits",
     "categoryLabel": "Official Portraits",
     "depictionStatus": "Cristian Văduva official brand identity portrait in charcoal suit",
-    "caption": "Official Brand Portrait — Charcoal Executive Suit",
+    "caption": "Orientare fiduciară pentru investitori privați și family offices",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/02/CristianVaduva.com_-1.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -97,7 +105,9 @@
     "width": 1414,
     "height": 1744,
     "sha256": "4e66c841e60f87d0e9b5aaea23c514198c5f4748a627322cc9b5526880ddd289",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Consilier Executiv & Investitor",
+    "alt": "Cristian Văduva — Consilier Executiv"
   },
   {
     "id": "photo-cv-006",
@@ -106,7 +116,7 @@
     "category": "portraits",
     "categoryLabel": "Official Portraits",
     "depictionStatus": "Cristian Văduva executive portrait in formal suit for prime acquisition advisory",
-    "caption": "Institutional Real Estate Strategist — Acquisition Monograph",
+    "caption": "Monografii de achiziție și due diligence pentru proprietăți reprezentative",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/07/Buy-Real-estate.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -117,7 +127,9 @@
     "width": 1414,
     "height": 2000,
     "sha256": "21b52d53e8a4aa2114cc47a87a27e8afbcfa98ab134491919a2956b6c1fd5349",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Strategie Imobiliară Instituțională",
+    "alt": "Cristian Văduva — Strategie Imobiliară"
   },
   {
     "id": "photo-cv-007",
@@ -126,7 +138,7 @@
     "category": "portraits",
     "categoryLabel": "Official Portraits",
     "depictionStatus": "Cristian Văduva in executive suit for 5-star branded property transactions",
-    "caption": "Luxury Branded Residences Advisory Direction",
+    "caption": "Reprezentare exclusivă pentru proprietăți de mare anvergură",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/02/5-Star-branded-property.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -137,7 +149,9 @@
     "width": 1414,
     "height": 1695,
     "sha256": "3eab7393af864c5852d3e1b0031e1c6ebdcfa8e32a5b60855295284f58d88355",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Consultanță Rezidențială de Lux",
+    "alt": "Cristian Văduva — Consultanță Rezidențială"
   },
   {
     "id": "photo-cv-008",
@@ -186,7 +200,7 @@
     "category": "advisory",
     "categoryLabel": "Executive Advisory",
     "depictionStatus": "Cristian Văduva seated at sculptural golden executive desk with legal library and candelabra",
-    "caption": "Sovereign Executive Suite — Sculptural Gold Desk & Library",
+    "caption": "Documentare contractuală și analiză a tranzacțiilor",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/07/Captura-de-ecran-din-2024-07-06-la-16.34.15.png",
     "sourceDomain": "cristianvaduva.com",
@@ -197,7 +211,9 @@
     "width": 761,
     "height": 899,
     "sha256": "1eddcdc58be57ac9be04da475c79a95a0a36af26f644b90119709fa338e6ed89",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Cabinet Executiv — Spațiu de Lucru",
+    "alt": "Cristian Văduva — Cabinet Executiv"
   },
   {
     "id": "photo-cv-011",
@@ -206,7 +222,7 @@
     "category": "advisory",
     "categoryLabel": "Executive Advisory",
     "depictionStatus": "Cristian Văduva seated in black leather armchair in shirt, tie, and watch",
-    "caption": "Private Consultation Lounge — Executive Armchair Advisory",
+    "caption": "Dialog direct și confidențialitate contractuală pentru principalii de decizie",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/07/Captura-de-ecran-din-2024-07-06-la-16.26.05-1.png",
     "sourceDomain": "cristianvaduva.com",
@@ -217,7 +233,9 @@
     "width": 564,
     "height": 899,
     "sha256": "0f719927c3cd806705019cf5dccc9c0ce7d6d6a2b76d92160b9c11f62f036217",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Sală de Consultanță Privată",
+    "alt": "Cristian Văduva — Sală de Consultanță"
   },
   {
     "id": "photo-cv-012",
@@ -226,7 +244,7 @@
     "category": "advisory",
     "categoryLabel": "Executive Advisory",
     "depictionStatus": "Cristian Văduva at executive desk with MacBook, shirt and tie",
-    "caption": "Portfolio Underwriting & Global Advisory Desk",
+    "caption": "Evaluarea comparativă a portofoliilor și modelare financiară",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/certificate-7.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -237,7 +255,9 @@
     "width": 1080,
     "height": 721,
     "sha256": "88d212aa069162dedc32b5be5d7e29d93d57768eb76ff561a32737f6d3f2cc04",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Birou de Analiză și Subscriere",
+    "alt": "Cristian Văduva — Analiză și Subscriere"
   },
   {
     "id": "photo-cv-013",
@@ -246,7 +266,7 @@
     "category": "advisory",
     "categoryLabel": "Executive Advisory",
     "depictionStatus": "Cristian Văduva at workstation in executive vest, shirt, and tie",
-    "caption": "Principal Fiduciary Mandate — Tailored Advisory Desk",
+    "caption": "Monitorizarea etapelor tranzacției și protecția intereselor clientului",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/certificate-1.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -257,7 +277,9 @@
     "width": 1080,
     "height": 791,
     "sha256": "8752f6d30e1a0b35f6a963f1b6de29cfefe91a47168c156ef064cf8401024e50",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Coordonare Mandate Dedicate",
+    "alt": "Cristian Văduva — Coordonare Mandate"
   },
   {
     "id": "photo-cv-014",
@@ -346,7 +368,7 @@
     "category": "advisory",
     "categoryLabel": "Executive Advisory",
     "depictionStatus": "Cristian Văduva in black turtleneck before Generali headquarters emblem",
-    "caption": "Strategic Asset Protection & Sovereign Risk Insurance",
+    "caption": "Structuri de asigurare a riscurilor imobiliare și protecție a patrimoniului",
     "orientation": "portrait",
     "sourceUrl": "https://aixluxury.com/images/0/24854757/Capturdeecrandin2026-04-15la23.15.43-IiiqlEP4v-AYV5JwXlNH-g.png",
     "sourceDomain": "aixluxury.com",
@@ -357,7 +379,9 @@
     "width": 740,
     "height": 900,
     "sha256": "61834aed3527c5463e14b0654b82c0c699b837f182742bd2b98baae5f25c86c5",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Protecție Patrimonială & Asigurări",
+    "alt": "Cristian Văduva — Protecție Patrimonială"
   },
   {
     "id": "photo-cv-019",
@@ -366,7 +390,7 @@
     "category": "field",
     "categoryLabel": "Developments & Field",
     "depictionStatus": "Cristian Văduva in protective hard hat and safety vest on high-rise development terrace",
-    "caption": "On-Site Construction Inspection — SkyTower Bucharest Skyline",
+    "caption": "Inspecție tehnică pe teren și urmărirea stadiului de execuție a dezvoltărilor",
     "orientation": "portrait",
     "sourceUrl": "https://aixluxury.com/images/0/16131771/Capturdeecrandin2025-05-10la16.15.58-uv_PCWufaosgW10_37Bx7w.png",
     "sourceDomain": "aixluxury.com",
@@ -377,7 +401,9 @@
     "width": 672,
     "height": 900,
     "sha256": "8b47af59d705bf45637d5bfc56723588ee76ab1b0c93d5a8dab6d08085eed222",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Audit Șantier — Ansambluri Rezidențiale",
+    "alt": "Cristian Văduva — Audit Șantier"
   },
   {
     "id": "photo-cv-020",
@@ -386,7 +412,7 @@
     "category": "field",
     "categoryLabel": "Developments & Field",
     "depictionStatus": "Cristian Văduva in royal blue Armani Exchange blazer and sunglasses on luxury atrium terrace",
-    "caption": "Architectural Walkthrough — Yacht Kid Luxury Atrium Balcony",
+    "caption": "Analiză de calitate a finisajelor și integritate structurală",
     "orientation": "portrait",
     "sourceUrl": "https://aixluxury.com/images/0/16131788/Capturdeecrandin2025-05-10la16.20.16-ps_-ClzOFF965DxENEJaSA.png",
     "sourceDomain": "aixluxury.com",
@@ -397,7 +423,9 @@
     "width": 672,
     "height": 900,
     "sha256": "c2e228e95b6a7e84f2d3b1656acb10a3fe6ebdbe80f277435b7d7fb2be19c6a5",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Evaluare Arhitecturală — Terase & Atrium",
+    "alt": "Cristian Văduva — Evaluare Arhitecturală"
   },
   {
     "id": "photo-cv-021",
@@ -446,7 +474,7 @@
     "category": "field",
     "categoryLabel": "Developments & Field",
     "depictionStatus": "Cristian Văduva on upper terrace in black shirt, beige trousers, and sunglasses",
-    "caption": "Penthouse Curved Terrace — Architectural Wave Facade",
+    "caption": "Evaluarea amplasamentului, orientării și valorii de piață",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/07/Captura-de-ecran-din-2024-07-06-la-16.41.58.png",
     "sourceDomain": "cristianvaduva.com",
@@ -457,7 +485,9 @@
     "width": 672,
     "height": 899,
     "sha256": "1ae56d992e4c9e6f20afe8689bd1f7dec51c7bf1d2e60d4ae901edb74ad069c1",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Inspecție Penthouse — Perspective Panoramice",
+    "alt": "Cristian Văduva — Inspecție Penthouse"
   },
   {
     "id": "photo-cv-024",
@@ -606,7 +636,7 @@
     "category": "events",
     "categoryLabel": "Keynotes & Events",
     "depictionStatus": "Cristian Văduva seated in sculptural armchair in three-piece suit against bookmatched marble",
-    "caption": "Private Residence Salon — Bookmatched Marble Architecture",
+    "caption": "Aprecierea calității materialelor și a designului spațial",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/07/IMG-20240404-WA0000.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -617,7 +647,9 @@
     "width": 934,
     "height": 1293,
     "sha256": "f00601f4a28fc4ef2f20b4285ebd612be1be6ef77b2894edef2929e574396813",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Salon Rezidențial — Arhitectură Interioară",
+    "alt": "Cristian Văduva — Salon Rezidențial"
   },
   {
     "id": "photo-cv-032",
@@ -686,7 +718,7 @@
     "category": "events",
     "categoryLabel": "Keynotes & Events",
     "depictionStatus": "Cristian Văduva in tailored vest and white shirt seated at solid walnut conference table",
-    "caption": "Executive Suite Consultation — Private Boardroom",
+    "caption": "Negocieri comerciale și alinierea termenilor contractuali",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_4302.png",
     "sourceDomain": "cristianvaduva.com",
@@ -697,7 +729,9 @@
     "width": 921,
     "height": 610,
     "sha256": "2dcd694b7d1cbcd306966e3985ff2dd96be9d534a96197282574d071bc77b418",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Întâlnire de Consiliu — Sală de Ședințe",
+    "alt": "Cristian Văduva — Sală de Ședințe"
   },
   {
     "id": "photo-cv-036",
@@ -726,7 +760,7 @@
     "category": "events",
     "categoryLabel": "Keynotes & Events",
     "depictionStatus": "Cristian Văduva in three-piece waistcoat and tie with Renet leadership",
-    "caption": "Renet Real Estate Network Headquarters — Partner Delegation",
+    "caption": "Colaborări verificate cu asociații de profil și parteneri de rețea",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_4306.png",
     "sourceDomain": "cristianvaduva.com",
@@ -737,7 +771,9 @@
     "width": 655,
     "height": 857,
     "sha256": "9c075ab69b11d36cb40ee3d570aeb17fa685db7a6dbfa510ee132274e85b059f",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Parteneriate Profesionale & Rețele Imobiliare",
+    "alt": "Cristian Văduva — Parteneriate Profesionale"
   },
   {
     "id": "photo-cv-038",
@@ -746,7 +782,7 @@
     "category": "events",
     "categoryLabel": "Keynotes & Events",
     "depictionStatus": "Cristian Văduva in black shirt and grey trousers standing before vintage automobile and heritage mansion",
-    "caption": "Heritage Asset Field Inspection — Historic Villa & Classic Car",
+    "caption": "Audit patrimonial și evaluarea rarității arhitecturale",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_4307.png",
     "sourceDomain": "cristianvaduva.com",
@@ -757,7 +793,9 @@
     "width": 649,
     "height": 866,
     "sha256": "e5f99876ed65ca7b17d2b43aeda0bec4fb637e5430bf5b1f2fdc2d6fdbe4f7b5",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Inspecție Proprietăți Istorice & Vile de Patrimoniu",
+    "alt": "Cristian Văduva — Inspecție Proprietăți Istorice"
   },
   {
     "id": "photo-cv-039",
@@ -766,7 +804,7 @@
     "category": "events",
     "categoryLabel": "Keynotes & Events",
     "depictionStatus": "Cristian Văduva in casual military print shirt and sunglasses on penthouse balcony",
-    "caption": "Lakefront Penthouse Inspection — Sunny Terrace Perspective",
+    "caption": "Verificarea factorilor de atractivitate și intimitate rezidențială",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_4314.png",
     "sourceDomain": "cristianvaduva.com",
@@ -777,7 +815,9 @@
     "width": 649,
     "height": 866,
     "sha256": "03a79398428ffdcd4def2c8e9eb0c28ca406e7a8b9b5b4d7649d915001988681",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Tur de Evaluare — Proprietăți pe Malul Lacului",
+    "alt": "Cristian Văduva — Evaluare Rezidențială"
   },
   {
     "id": "photo-cv-040",
@@ -786,7 +826,7 @@
     "category": "events",
     "categoryLabel": "Keynotes & Events",
     "depictionStatus": "Cristian Văduva in navy button-down shirt and tailored trousers with associate in hotel atrium",
-    "caption": "International Real Estate Delegation — Luxury Atrium Consultation",
+    "caption": "Parteneriate strategice pe piețele din Monaco și Dubai",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_4323.png",
     "sourceDomain": "cristianvaduva.com",
@@ -797,7 +837,9 @@
     "width": 649,
     "height": 866,
     "sha256": "756cdfaaafa7376f90efc367bffc9cf409a94e848b1e85be6fa415680cadcad9",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Consultanță Internațională & Delegații",
+    "alt": "Cristian Văduva — Consultanță Internațională"
   },
   {
     "id": "photo-cv-041",
@@ -805,8 +847,8 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-1517.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 1517)",
-    "caption": "Editorial Stance — Architectural Facade Inspection",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
+    "caption": "Analiză tehnică a anvelopei clădirii și eficienței energetice",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_1517-scaled.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -817,7 +859,9 @@
     "width": 2560,
     "height": 1920,
     "sha256": "1e2751477ebca2d4fea099e723f1bec87cf5e411229c5a0ca993c9d4d6291448",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Audit Fațade & Soluții Arhitecturale",
+    "alt": "Cristian Văduva — Audit Fațade"
   },
   {
     "id": "photo-cv-042",
@@ -825,7 +869,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-1522.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 1522)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Executive Walkthrough — Residential Promenade",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2025/10/IMG_1522-scaled.jpg",
@@ -845,7 +889,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-1571.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 1571)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Development Field Audit — Architectural Setting",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_1571-scaled.jpg",
@@ -865,7 +909,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-1582.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 1582)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Executive Portrait — Urban Architectural Perspective",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_1582-scaled.jpg",
@@ -885,7 +929,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-2182.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 2182)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Editorial Profile — Contemporary Living Architecture",
     "orientation": "portrait",
     "sourceUrl": "https://aixluxury.com/images/1920/20071678/IMG_2182-9b6bsxtfM9U7GwZCjkD-Rg.jpg",
@@ -905,7 +949,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-2227.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 2227)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Residential Grounds Walkthrough — Exterior Framing",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2025/10/IMG_2227-scaled.jpg",
@@ -925,7 +969,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-2279.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 2279)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Executive Demeanor — Property Advisory Fieldwork",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2025/10/IMG_2279-scaled.jpg",
@@ -945,7 +989,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-2301.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 2301)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Architectural Exterior Audit — Northern District",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2025/10/IMG_2301-scaled.jpg",
@@ -965,7 +1009,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-2363.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 2363)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Contemporary Executive Style — Urban Setting",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2025/10/IMG_2363-scaled.jpg",
@@ -985,7 +1029,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-2531.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 2531)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Residential Promenade Audit — Strategic Advisory",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2025/10/IMG_2531-scaled.jpg",
@@ -1005,7 +1049,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-2618.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 2618)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Architectural Site Inspection — Masterplan View",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2025/10/IMG_2618-scaled.jpg",
@@ -1025,8 +1069,8 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-2655.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 2655)",
-    "caption": "Outdoor Executive Stance — Natural Daylight Shoot",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
+    "caption": "Evaluarea contextului urbanistic și a perspectivelor de valorificare",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2025/10/IMG_2655-scaled.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -1037,7 +1081,9 @@
     "width": 1920,
     "height": 2560,
     "sha256": "f8c4c8f1de46edf509cfa934b1f30e70d00a67160b02767e395856cce80f6f56",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Analiză de Ansamblu Rezidențial",
+    "alt": "Cristian Văduva — Analiză Urbanistică"
   },
   {
     "id": "photo-cv-053",
@@ -1045,7 +1091,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-2667.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 2667)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Field Demeanor — Premium Asset Location",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2025/10/IMG_2667-scaled.jpg",
@@ -1065,8 +1111,8 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-3792.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 3792)",
-    "caption": "Executive Editorial — Prime Residence Balcony Stance",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
+    "caption": "Identificarea elementelor unice de terasă și amplasament",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_3792-scaled.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -1077,7 +1123,9 @@
     "width": 2094,
     "height": 2560,
     "sha256": "5fea01594dbab44f4daca548941d06cf75f85f3e4705c6614314e5e11bbadb5a",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Perspectivă Rezidențială Prime",
+    "alt": "Cristian Văduva — Perspectivă Rezidențială"
   },
   {
     "id": "photo-cv-055",
@@ -1085,7 +1133,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-4029.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 4029)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Architectural Perspective — Urban Panorama Inspection",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_4029-scaled.jpg",
@@ -1105,7 +1153,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-4635.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 4635)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Field Inspection — Residential Grounds Walkthrough",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/02/IMG_4635-2.jpg",
@@ -1125,8 +1173,8 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-4834.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 4834)",
-    "caption": "Editorial Close-Up — Executive Outdoor Stance",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
+    "caption": "Due diligence direct și verificarea stării de fapt a proprietăților",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/02/IMG_4834.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -1137,7 +1185,9 @@
     "width": 1242,
     "height": 1513,
     "sha256": "aa15a706d2f687cb717e750b3bd30bf06399f3f237833238b2f460e61595f505",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Consultanță Executivă pe Teren",
+    "alt": "Cristian Văduva — Consultanță pe Teren"
   },
   {
     "id": "photo-cv-058",
@@ -1145,7 +1195,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-4835.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 4835)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Architectural Promenade — Prime District Audit",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/02/IMG_4835.jpg",
@@ -1165,7 +1215,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-4843.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 4843)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Executive Profile — Development Site Walkthrough",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/02/IMG_4843.jpg",
@@ -1185,7 +1235,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-4897.png",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 4897)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Advisory Demeanor — Residential Community Tour",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/02/IMG_4897.png",
@@ -1205,7 +1255,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-5244.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 5244)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Executive Portrait — Urban Real Estate Setting",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_5244-2.jpg",
@@ -1225,7 +1275,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-5321.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 5321)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Networking Consultation — Associate Discussion on Site",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_5321.jpg",
@@ -1245,7 +1295,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-5659.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 5659)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Development Panorama — Landscape Architecture Review",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/03/IMG_5659-scaled.jpg",
@@ -1265,7 +1315,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-5660.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 5660)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Field Walkthrough — Luxury Residential Community",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/03/IMG_5660-scaled.jpg",
@@ -1285,7 +1335,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-5789.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 5789)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Architectural Inspection — High-End Villa Enclave",
     "orientation": "landscape",
     "sourceUrl": "https://aixluxury.com/images/1920/16131657/IMG_5789-taaEU-AHhTWN-LMNPDT-dw.jpg",
@@ -1305,7 +1355,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-5791.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 5791)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Executive Demeanor — On-Site Client Direction",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/03/IMG_5791-scaled.jpg",
@@ -1325,8 +1375,8 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-6868.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 6868)",
-    "caption": "Residential Promenade Walkthrough — Daylight Shoot",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
+    "caption": "Inspecția infrastructurii proximității și a calității locuirii",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/07/IMG_6868-1-scaled.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -1337,7 +1387,9 @@
     "width": 1920,
     "height": 2560,
     "sha256": "119e3510479bbc0e73d5f9974ed213aa01d4257b44066c4ac44f7bdd55ec4e51",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Tur de Evaluare Rezidențială",
+    "alt": "Cristian Văduva — Tur de Evaluare"
   },
   {
     "id": "photo-cv-068",
@@ -1345,8 +1397,8 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-6913.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 6913)",
-    "caption": "Contemporary Advisory Stance — High-Rise Terrace",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
+    "caption": "Orientare spațială și analiza vizibilității panoramice",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/07/IMG_6913-scaled.jpg",
     "sourceDomain": "cristianvaduva.com",
@@ -1357,7 +1409,9 @@
     "width": 1920,
     "height": 2560,
     "sha256": "b5672c9756d7fc8dab48b634ab804fe54c2ba3867681f32f38860a7a8f0a3579",
-    "verifiedAuthentic": true
+    "verifiedAuthentic": true,
+    "title": "Perspectivă Arhitecturală — Terase Înalte",
+    "alt": "Cristian Văduva — Perspectivă Arhitecturală"
   },
   {
     "id": "photo-cv-069",
@@ -1365,7 +1419,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-7438.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 7438)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Executive Master Portrait — High-Definition 12MP Camera Session",
     "orientation": "portrait",
     "sourceUrl": "https://aixluxury.com/images/0/16131734/IMG_7438-6aNAXuE1mhvI72Lmdi4xeg.jpg",
@@ -1385,7 +1439,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-7760.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 7760)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "Architectural Context — Contemporary Residence Setting",
     "orientation": "portrait",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_7760.jpg",
@@ -1405,7 +1459,7 @@
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-editorial-img-8287.jpg",
     "category": "lifestyle",
     "categoryLabel": "Editorial & Lifestyle",
-    "depictionStatus": "Cristian Văduva in bespoke executive attire during on-site photoshoot (Session 8287)",
+    "depictionStatus": "Cristian Văduva — Consultanță executivă și analiză strategică",
     "caption": "On-Site Review — Associate Collaboration & Tour",
     "orientation": "landscape",
     "sourceUrl": "https://cristianvaduva.com/wp-content/uploads/2024/01/IMG_8287.jpg",

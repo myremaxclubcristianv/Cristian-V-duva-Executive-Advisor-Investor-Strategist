@@ -1,11 +1,13 @@
 "use client";
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { Locale, Translations, getTranslation } from '@/lib/translations';
 
-export type Locale = 'en' | 'ro' | 'fr' | 'de' | 'ar';
+export type { Locale };
 
 interface LocaleContextProps {
   locale: Locale;
   setLocale: (l: Locale) => void;
+  t: Translations;
 }
 
 const LocaleContext = createContext<LocaleContextProps | undefined>(undefined);
@@ -15,8 +17,21 @@ export const LocaleProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlLocale = (urlParams.get('lang') || urlParams.get('locale')) as Locale | null;
       const stored = localStorage.getItem('locale') as Locale | null;
-      if (stored) setLocaleState(stored);
+      const target = (urlLocale && ['en', 'ro', 'fr', 'de', 'ar'].includes(urlLocale))
+        ? urlLocale
+        : (stored && ['en', 'ro', 'fr', 'de', 'ar'].includes(stored))
+          ? stored
+          : 'en';
+
+      if (target) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setLocaleState(target);
+        document.documentElement.lang = target;
+        document.documentElement.dir = target === 'ar' ? 'rtl' : 'ltr';
+      }
     }
   }, []);
 
@@ -24,13 +39,15 @@ export const LocaleProvider = ({ children }: { children: ReactNode }) => {
     setLocaleState(l);
     if (typeof window !== 'undefined') {
       localStorage.setItem('locale', l);
-      document.documentElement.lang = l === 'ar' ? 'ar' : 'en';
+      document.documentElement.lang = l;
       document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
     }
   };
 
+  const t = getTranslation(locale);
+
   return (
-    <LocaleContext.Provider value={{ locale, setLocale }}>
+    <LocaleContext.Provider value={{ locale, setLocale, t }}>
       {children}
     </LocaleContext.Provider>
   );
@@ -42,6 +59,8 @@ export const useLocale = () => {
   return ctx;
 };
 
-
-// Duplicate block removed – original definitions retained above.
+export const useTranslation = () => {
+  const { t, locale } = useLocale();
+  return { t, locale };
+};
 

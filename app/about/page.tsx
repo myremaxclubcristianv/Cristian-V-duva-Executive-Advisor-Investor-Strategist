@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   description:
     "Consilier strategic și investitor în proprietăți rezidențiale de prestigiu. Sinteză academică verificată: 3 licențe, 3 masterate și experiențe internaționale la Madrid, Amiens și Malta.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/about",
+    canonical: "https://cristianvaduva.com/about",
   },
 };
 
@@ -215,15 +215,15 @@ export default function AboutPage() {
 
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-12 sm:space-y-16 relative z-10">
             {/* Top Eyebrow Index */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-5 font-mono text-[10px] sm:text-xs uppercase tracking-[0.28em] text-[#93C8FF]">
-              <div className="flex items-center gap-3">
-                <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.08] pb-5 font-mono text-[10px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.28em] text-[#93C8FF]">
+              <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+                <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse shrink-0" />
                 <span className="font-semibold">01 // PROFILE & ADVISORY MANDATE</span>
-                <span className="text-white/20">/</span>
-                <span className="text-[#B8C2CF]">CRISTIAN VADUVA</span>
+                <span className="text-white/20 hidden xs:inline">/</span>
+                <span className="text-[#B8C2CF] hidden xs:inline">CRISTIAN VADUVA</span>
               </div>
               <div className="flex items-center gap-2 text-[#8A95A5]">
-                <MapPin className="w-3.5 h-3.5 text-[#A97F60]" />
+                <MapPin className="w-3.5 h-3.5 text-[#A97F60] shrink-0" />
                 <span>BUCHAREST · MONACO · DUBAI</span>
               </div>
             </div>
@@ -233,11 +233,11 @@ export default function AboutPage() {
               {/* Left Column: Thesis & Directives (~58% on desktop) */}
               <div className="lg:col-span-7 space-y-8">
                 <div className="space-y-4">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#A97F60]/10 border border-[#A97F60]/30 font-mono text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#A97F60] font-semibold">
-                    <ShieldCheck className="w-3.5 h-3.5" />
-                    <span>EXECUTIVE STRATEGIC ADVISOR & INVESTOR</span>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#A97F60]/10 border border-[#A97F60]/30 font-mono text-[9px] sm:text-xs uppercase tracking-[0.18em] sm:tracking-[0.25em] text-[#A97F60] font-semibold max-w-full">
+                    <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+                    <span className="truncate sm:overflow-visible">EXECUTIVE STRATEGIC ADVISOR & INVESTOR</span>
                   </div>
-                  <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-[#F5F4EF] leading-[1.03] tracking-tight">
+                  <h1 className="font-serif text-3xl sm:text-6xl lg:text-7xl text-[#F5F4EF] leading-[1.03] tracking-tight break-words">
                     Independent Advisory.<br />
                     <span className="text-[#A97F60] italic font-normal">Strategic Capital.</span><br />
                     Generational Defense.
@@ -249,17 +249,17 @@ export default function AboutPage() {
                     Cristian Văduva oferă consultanță strategică, orientare pentru tranzacții imobiliare premium și coordonarea structurilor de protecție a patrimoniului, cu activitate principală în București și acces la piețe internaționale.
                   </p>
 
-                  {/* Transparent Remuneration Block */}
-                  <div className="p-6 border border-white/[0.1] bg-[#0C1119] space-y-3 rounded-none">
+                  {/* Professional Services Focus */}
+                  <div className="p-6 sm:p-8 rounded-2xl border border-white/[0.08] bg-[#0C1119] space-y-3">
                     <h2 className="font-serif text-lg text-[#F5F4EF] font-medium">
-                      Cum lucrez și cum este stabilită remunerația
+                      Consultanță Imobiliară & Reprezentare Dedicată
                     </h2>
-                    <p className="text-xs sm:text-sm text-[#8A95A5] leading-relaxed">
-                      Remunerația depinde direct de serviciul solicitat și de acordul concret convenit cu fiecare client în parte. În funcție de natura mandatului (căutare și asistență la achiziție, reprezentare pentru vânzare sau consultanță de evaluare), colaborarea poate fi structurată printr-un onorariu/retainer dedicat, un comision de succes sau o altă formulă convenită contractual. Nu există un tarif generic aplicat identic tuturor situațiilor; fiecare serviciu, nivel de implicare și relație de parteneriat este stipulată clar în scris înaintea demarării activității.
+                    <p className="text-xs sm:text-sm text-[#B8C2CF] leading-relaxed font-light">
+                      Reprezentare fiduciară adaptată obiectivelor clientului — cumpărător, vânzător sau investitor. De la identificarea și analiza comparativă a activelor până la negociere strategică și coordonarea etapelor tranzacției, colaborarea este ghidată de claritate, rigoare analitică și protecția intereselor dumneavoastră.
                     </p>
                     <div className="pt-2">
                       <Link href="/cum-lucrez" className="text-xs font-mono text-[#93C8FF] hover:underline inline-flex items-center gap-1.5">
-                        <span>Află mai multe despre etapele de colaborare și modul de stabilire a remunerației</span>
+                        <span>Vezi metodologia de lucru și etapele colaborării</span>
                         <ArrowUpRight className="w-3.5 h-3.5" />
                       </Link>
                     </div>
@@ -299,19 +299,19 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                {/* Action Buttons */}
-                <div className="pt-4 flex flex-wrap items-center gap-4">
+                {/* Action Buttons - Apple Pills */}
+                <div className="pt-4 flex flex-wrap items-center gap-3">
                   <Link
                     href="/contact"
-                    className="px-8 py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.22em] font-bold transition-all shadow-xl shadow-[#93C8FF]/15 flex items-center gap-2 group min-h-[48px]"
+                    className="btn-apple-pill-primary shadow-xl shadow-[#93C8FF]/15"
                   >
-                    <span className="text-[#07090D] font-bold">INITIATE PRIVATE PROTOCOL</span>
-                    <ArrowUpRight className="w-4 h-4 text-[#07090D] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    <span>INITIATE PRIVATE PROTOCOL</span>
+                    <ArrowUpRight className="w-4 h-4" />
                   </Link>
 
                   <a
                     href="#archive"
-                    className="px-7 py-4 border border-white/[0.18] hover:border-[#93C8FF] text-[#F5F4EF] hover:text-[#93C8FF] font-mono text-xs uppercase tracking-[0.2em] font-medium transition-colors bg-[#0C1119] min-h-[48px] flex items-center justify-center"
+                    className="btn-apple-pill-secondary"
                   >
                     <span>EXPLORE VERIFIED ARCHIVE (18)</span>
                   </a>
@@ -320,7 +320,7 @@ export default function AboutPage() {
                     href="https://wa.me/436509536345"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-7 py-4 border border-[#25D366]/40 hover:border-[#25D366] text-[#25D366] font-mono text-xs uppercase tracking-[0.2em] font-medium transition-colors bg-[#0C1119] min-h-[48px] flex items-center justify-center"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-full text-xs font-mono uppercase tracking-[0.16em] font-medium border border-[#25D366]/40 text-[#25D366] hover:bg-[#25D366]/10 transition-all min-h-[44px]"
                   >
                     <span>WHATSAPP DIRECT</span>
                   </a>
@@ -329,14 +329,8 @@ export default function AboutPage() {
 
               {/* Right Column: Official Monograph Portrait (~42% on desktop) */}
               <div className="lg:col-span-5 space-y-4">
-                <div className="relative aspect-[4/5] w-full border border-white/[0.14] bg-[#0C1119] p-3 overflow-hidden shadow-2xl group">
-                  {/* Fine Corner Accents */}
-                  <span className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#93C8FF] z-10 pointer-events-none" />
-                  <span className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#93C8FF] z-10 pointer-events-none" />
-                  <span className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-[#93C8FF] z-10 pointer-events-none" />
-                  <span className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-[#93C8FF] z-10 pointer-events-none" />
-
-                  <div className="relative w-full h-full overflow-hidden">
+                <div className="relative aspect-[4/5] w-full rounded-3xl border border-white/[0.12] bg-[#0C1119] p-3 overflow-hidden shadow-2xl group">
+                  <div className="relative w-full h-full rounded-2xl overflow-hidden">
                     <Image
                       src="/images/personal/portraits/cristian-vaduva-desk-advisor.jpg"
                       alt="Cristian Văduva Official Monograph Portrait"
@@ -347,26 +341,16 @@ export default function AboutPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-65 pointer-events-none" />
 
-                    {/* Floating Monograph Caption Card */}
-                    <div className="absolute bottom-3 left-3 right-3 p-4 bg-[#07090D]/90 backdrop-blur-md border border-white/[0.1] space-y-1">
-                      <div className="flex items-center justify-between font-mono text-[9px] uppercase tracking-widest text-[#93C8FF]">
-                        <span>OFFICIAL MONOGRAPH PORTRAIT</span>
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />
-                      </div>
+                    {/* Portrait Caption Card */}
+                    <div className="absolute bottom-3 left-3 right-3 p-4 rounded-xl bg-[#07090D]/90 backdrop-blur-md border border-white/[0.1] space-y-1">
                       <div className="font-serif text-lg text-[#F5F4EF] font-medium">
                         Cristian Văduva
                       </div>
-                      <div className="flex items-center justify-between font-mono text-[10px] text-[#8A95A5]">
-                        <span>Armani Exchange Blazer · Executive Desk</span>
-                        <span className="text-[#A97F60]">cristianvaduva.com</span>
+                      <div className="font-mono text-[10px] text-[#A97F60] uppercase tracking-wider">
+                        Consultanță Executivă & Reprezentare Imobiliară
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-[#8A95A5] px-1">
-                  <span>CANONICAL 1ST-PARTY PROVENANCE</span>
-                  <span className="text-[#93C8FF]">VERIFICAT FACTUAL</span>
                 </div>
               </div>
             </div>
@@ -410,11 +394,8 @@ export default function AboutPage() {
                 {academicDegrees.map((item, idx) => (
                   <div
                     key={item.discipline}
-                    className="p-8 border border-white/[0.1] bg-[#121721] flex flex-col justify-between space-y-6 hover:border-[#93C8FF]/60 transition-all duration-300 relative group shadow-lg"
+                    className="p-8 rounded-2xl border border-white/[0.08] bg-[#121721] flex flex-col justify-between space-y-6 hover:border-white/[0.22] hover:bg-[#161c28] transition-all duration-300 shadow-xl"
                   >
-                    {/* Corner Accent */}
-                    <span className="absolute top-0 left-0 w-2.5 h-2.5 border-t border-l border-[#93C8FF]/50 group-hover:border-[#93C8FF]" />
-
                     <div className="space-y-4">
                       <div className="flex items-center justify-between border-b border-white/[0.08] pb-3">
                         <span className="font-mono text-[10px] uppercase tracking-widest text-[#93C8FF] font-semibold">
@@ -456,7 +437,7 @@ export default function AboutPage() {
             <div className="space-y-6 pt-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/[0.08] pb-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-7 h-7 rounded border border-[#A97F60]/40 bg-[#A97F60]/10 flex items-center justify-center text-[#A97F60]">
+                  <div className="w-8 h-8 rounded-full border border-[#A97F60]/40 bg-[#A97F60]/10 flex items-center justify-center text-[#A97F60]">
                     <TrendingUp className="w-4 h-4" />
                   </div>
                   <div>
@@ -475,15 +456,13 @@ export default function AboutPage() {
                 {postGraduateMasters.map((m, idx) => (
                   <div
                     key={m.specialization}
-                    className="p-8 border border-white/[0.1] bg-[#121721] space-y-5 hover:border-[#A97F60]/60 transition-all duration-300 relative group shadow-lg"
+                    className="p-8 rounded-2xl border border-white/[0.08] bg-[#121721] space-y-5 hover:border-[#A97F60]/60 hover:bg-[#161c28] transition-all duration-300 shadow-xl"
                   >
-                    <span className="absolute top-0 left-0 w-2.5 h-2.5 border-t border-l border-[#A97F60]/50 group-hover:border-[#A97F60]" />
-
                     <div className="flex items-center justify-between border-b border-white/[0.08] pb-3">
                       <span className="font-mono text-[10px] uppercase tracking-widest text-[#A97F60] font-semibold">
                         MASTER 0{idx + 1}
                       </span>
-                      <span className="px-2 py-0.5 bg-[#A97F60]/10 border border-[#A97F60]/30 font-mono text-[9px] uppercase text-[#C49A78] font-semibold">
+                      <span className="px-2.5 py-1 rounded-full bg-[#A97F60]/10 border border-[#A97F60]/30 font-mono text-[9px] uppercase text-[#C49A78] font-semibold">
                         POST-GRADUATE
                       </span>
                     </div>
@@ -511,7 +490,7 @@ export default function AboutPage() {
               <div className="lg:col-span-7 space-y-6">
                 <div className="border-b border-white/[0.08] pb-4 flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-7 h-7 rounded border border-[#93C8FF]/40 bg-[#93C8FF]/10 flex items-center justify-center text-[#93C8FF]">
+                    <div className="w-8 h-8 rounded-full border border-[#93C8FF]/40 bg-[#93C8FF]/10 flex items-center justify-center text-[#93C8FF]">
                       <Globe2 className="w-4 h-4" />
                     </div>
                     <div>
@@ -530,7 +509,7 @@ export default function AboutPage() {
                   {internationalResidencies.map((res) => (
                     <div
                       key={res.location}
-                      className="p-6 border border-white/[0.08] bg-[#121721] space-y-2.5 hover:border-white/[0.2] transition-colors"
+                      className="p-6 rounded-2xl border border-white/[0.08] bg-[#121721] space-y-2.5 hover:border-white/[0.2] hover:bg-[#161c28] transition-colors"
                     >
                       <div className="flex items-center justify-between font-mono text-xs">
                         <div className="flex items-center gap-2">
@@ -538,7 +517,7 @@ export default function AboutPage() {
                           <span className="text-[#8A95A5]">·</span>
                           <span className="text-[#A97F60]">{res.country}</span>
                         </div>
-                        <span className="px-2.5 py-0.5 bg-[#93C8FF]/10 text-[#93C8FF] border border-[#93C8FF]/20 text-[10px] uppercase font-semibold">
+                        <span className="px-3 py-1 rounded-full bg-[#93C8FF]/10 text-[#93C8FF] border border-[#93C8FF]/20 text-[10px] uppercase font-semibold">
                           {res.duration}
                         </span>
                       </div>
@@ -554,7 +533,7 @@ export default function AboutPage() {
               {/* Generali Romania Strategic Collaboration (5 cols) */}
               <div className="lg:col-span-5 space-y-6">
                 <div className="border-b border-white/[0.08] pb-4 flex items-center gap-3">
-                  <div className="w-7 h-7 rounded border border-[#A97F60]/40 bg-[#A97F60]/10 flex items-center justify-center text-[#A97F60]">
+                  <div className="w-8 h-8 rounded-full border border-[#A97F60]/40 bg-[#A97F60]/10 flex items-center justify-center text-[#A97F60]">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
                   <div>
@@ -567,7 +546,7 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="p-8 border border-[#A97F60]/30 bg-[#121721] space-y-6 relative shadow-xl">
+                <div className="p-8 rounded-3xl border border-[#A97F60]/30 bg-[#121721] space-y-6 relative shadow-xl">
                   <div className="space-y-3">
                     <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#A97F60] font-semibold block">
                       ASSET PROTECTION PROTOCOL
@@ -600,7 +579,7 @@ export default function AboutPage() {
                       href="https://insurance.cristianvaduva.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-3 border border-[#A97F60]/50 hover:border-[#A97F60] bg-[#07090D] text-[#A97F60] hover:text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.18em] transition-all flex items-center justify-center gap-2"
+                      className="btn-apple-pill-secondary w-full"
                     >
                       <span>INSPECT GENERALI ALLIANCE DESK</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
@@ -626,10 +605,7 @@ export default function AboutPage() {
           {/* Master Comparative Dossier Grid */}
           <div className="grid lg:grid-cols-12 gap-8 items-stretch">
             {/* Box 1: Prețuri de Listare vs Tranzacție */}
-            <div className="lg:col-span-6 p-8 sm:p-10 border border-[#93C8FF]/40 bg-[#0C1119] space-y-6 relative shadow-2xl">
-              <span className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#93C8FF]" />
-              <span className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#93C8FF]" />
-
+            <div className="lg:col-span-6 p-8 sm:p-10 rounded-2xl border border-[#93C8FF]/30 bg-[#0C1119] space-y-6 shadow-2xl">
               <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 font-mono text-xs">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#93C8FF]" />
@@ -637,7 +613,7 @@ export default function AboutPage() {
                     PREȚURI DE LISTARE VS. TRANZACȚIE
                   </span>
                 </div>
-                <span className="px-2.5 py-0.5 bg-[#93C8FF]/10 text-[#93C8FF] border border-[#93C8FF]/30 text-[10px] font-semibold">
+                <span className="px-3 py-1 rounded-full bg-[#93C8FF]/10 text-[#93C8FF] border border-[#93C8FF]/30 text-[10px] font-semibold">
                   DISCIPLINĂ METODOLOGICĂ
                 </span>
               </div>
@@ -673,10 +649,7 @@ export default function AboutPage() {
             </div>
 
             {/* Box 2: Factori Cheie în Evaluare */}
-            <div className="lg:col-span-6 p-8 sm:p-10 border border-white/[0.12] bg-[#0C1119] space-y-6 relative shadow-2xl">
-              <span className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#A97F60]" />
-              <span className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#A97F60]" />
-
+            <div className="lg:col-span-6 p-8 sm:p-10 rounded-2xl border border-white/[0.1] bg-[#0C1119] space-y-6 shadow-2xl">
               <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 font-mono text-xs">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#A97F60]" />
@@ -684,7 +657,7 @@ export default function AboutPage() {
                     STANDARDE DE COMPARABILITATE
                   </span>
                 </div>
-                <span className="px-2.5 py-0.5 bg-white/[0.05] text-[#8A95A5] border border-white/[0.1] text-[10px]">
+                <span className="px-3 py-1 rounded-full bg-white/[0.05] text-[#8A95A5] border border-white/[0.1] text-[10px]">
                   LIKE-FOR-LIKE
                 </span>
               </div>
@@ -721,7 +694,7 @@ export default function AboutPage() {
           </div>
 
           {/* Analytical Takeaway Callout */}
-          <div className="p-8 sm:p-10 border border-white/[0.1] bg-[#121721] flex flex-col md:flex-row items-baseline justify-between gap-6 font-mono text-xs">
+          <div className="p-8 sm:p-10 rounded-2xl border border-white/[0.08] bg-[#121721] flex flex-col md:flex-row items-baseline justify-between gap-6 font-mono text-xs">
             <div className="space-y-1.5 max-w-3xl">
               <span className="text-[#93C8FF] uppercase tracking-[0.24em] text-[10px] font-semibold block">
                 METODOLOGIE & RAPORT DE PIAȚĂ TRIMESTRIAL
@@ -732,10 +705,10 @@ export default function AboutPage() {
             </div>
             <Link
               href="/raport-piata"
-              className="shrink-0 px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] uppercase tracking-[0.18em] font-bold transition-all shadow-lg flex items-center gap-2 min-h-[44px]"
+              className="btn-apple-pill-primary shadow-lg shrink-0"
             >
-              <span className="text-[#07090D] font-bold">VEZI RAPORT PIAȚĂ</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-[#07090D]" />
+              <span>VEZI RAPORT PIAȚĂ</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
             </Link>
           </div>
         </section>
@@ -755,7 +728,7 @@ export default function AboutPage() {
             {advisoryPillars.map((pillar) => (
               <div
                 key={pillar.number}
-                className="p-8 sm:p-10 border border-white/[0.09] bg-[#0C1119] space-y-5 hover:border-[#93C8FF]/50 transition-all duration-300 relative group shadow-xl"
+                className="p-8 sm:p-10 rounded-2xl border border-white/[0.08] bg-[#0C1119] space-y-5 hover:border-white/[0.22] hover:bg-[#121721] transition-all duration-300 shadow-xl"
               >
                 <div className="flex items-center justify-between border-b border-white/[0.08] pb-4">
                   <div className="flex items-center gap-3">
@@ -797,15 +770,13 @@ export default function AboutPage() {
             <div className="space-y-4">
               <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs text-[#93C8FF] uppercase tracking-[0.28em] font-semibold">
                 <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
-                <span>05 // THE CRISTIAN VĂDUVA ARCHIVE</span>
-                <span className="text-white/20">|</span>
-                <span className="text-[#A97F60]">AUTHENTIC FIRST-PARTY ASSETS</span>
+                <span>05 // ARHIVĂ VIZUALĂ & MOMENTE PROFESIONALE</span>
               </div>
               <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] leading-tight">
-                Photographic Monograph & Personal Archive
+                Galerie & Documentare Profesională
               </h2>
               <p className="font-sans text-base sm:text-lg text-[#B8C2CF] max-w-3xl font-light leading-relaxed">
-                Explore the comprehensive archive of 87 verified personal photographs of Cristian Văduva sourced from cristianvaduva.com and aixluxury.com, comprising official studio portraits, executive advisory sessions, on-site development inspections, keynote summits, and editorial shoots.
+                O privire în activitatea de consultanță executivă, întâlniri de lucru, inspecții ale proprietăților și momente profesionale alături de parteneri și colaboratori.
               </p>
             </div>
 

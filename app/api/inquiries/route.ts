@@ -27,11 +27,22 @@ function isRateLimited(clientIp: string, maxLimit = 5, windowMs = 600000): boole
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const ALLOWED_INTERESTS = [
+  "Seller representation",
+  "Buyer representation",
+  "Investor advisory",
+  "Property sourcing",
+  "Strategic consultation",
+  "Other",
+  // Backward compatibility
   "Real Estate",
   "Capital & Investments",
   "Executive Advisory",
   "Strategic Partnerships",
-  "Other",
+  "Ultra-Prime Real Estate",
+  "Strategic Capital Allocation",
+  "Asset Sovereignty & Security",
+  "Direct Ventures & Equity",
+  "Confidential Advisory Mandate",
 ];
 
 export async function POST(request: Request) {

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cookie Policy & Technical Storage — Cristian Văduva",
   description: "Transparent inventory of cookies and local browser storage technologies used across Cristian Văduva platforms.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/cookies",
+    canonical: "https://cristianvaduva.com/cookies",
   },
 };
 

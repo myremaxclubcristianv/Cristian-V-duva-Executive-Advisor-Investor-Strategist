@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Editorial Policy & Standards — Cristian Văduva",
   description: "Editorial integrity principles, fact-checking standards, source attribution, and correction guidelines for Cristian Văduva and AiX Media publications.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/editorial-policy",
+    canonical: "https://cristianvaduva.com/editorial-policy",
   },
 };
 

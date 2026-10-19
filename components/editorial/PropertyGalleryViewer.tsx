@@ -113,10 +113,10 @@ export default function PropertyGalleryViewer({
         )}
 
         {/* Bottom Metadata Overlay */}
-        <div className="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row sm:items-end justify-between gap-3 p-4 sm:p-5 bg-[#07090D]/90 backdrop-blur-md border border-white/[0.12]">
+        <div className="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row sm:items-end justify-between gap-3 p-4 sm:p-5 bg-[#07090D]/90 backdrop-blur-md border border-white/[0.12] rounded-2xl">
           <div className="space-y-1">
-            <span className="font-mono text-[9px] uppercase tracking-[0.24em] text-[#93C8FF] block">
-              CONFIRMED PHOTOGRAPHIC RECORD
+            <span className="font-mono text-[9px] uppercase tracking-[0.24em] text-[#93C8FF] block font-semibold">
+              GALERIE FOTOGRAFICĂ OFICIALĂ
             </span>
             <p className="font-serif text-lg sm:text-xl text-[#F5F4EF] font-medium leading-tight">
               {title}
@@ -129,7 +129,7 @@ export default function PropertyGalleryViewer({
 
           <div className="sm:text-right">
             <span className="font-mono text-[9px] uppercase tracking-widest text-[#8A95A5] block">
-              ASSET VALUATION
+              VALOARE DE TRANZACȚIE
             </span>
             <span className="font-serif text-xl sm:text-2xl text-[#93C8FF] font-medium">
               {price}

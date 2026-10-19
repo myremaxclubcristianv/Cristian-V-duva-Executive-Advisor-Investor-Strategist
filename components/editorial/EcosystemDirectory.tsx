@@ -204,11 +204,11 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
         {
           id: "executive",
           name: "EXECUTIVE",
-          url: "https://executive.cristianvaduva.com",
+          url: "https://cristianvaduva.com",
           role: "Sovereign Real Estate & Private Investment Editorial",
           category: "Flagship Monograph",
           description:
-            "The private flagship platform presenting confirmed architectural assets, strategic investment perspectives, and dedicated client representation.",
+            "Platforma privată de consultanță executivă, portofoliu imobiliar selectat și reprezentare fiduciară dedicată.",
           icon: Sparkles,
           tag: "ACTIVE FLAGSHIP",
           isCurrent: true,
@@ -216,6 +216,10 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
       ],
     },
   ];
+
+  const livePlatformsCount = categories
+    .flatMap((g) => g.platforms)
+    .filter((p) => p.tag !== "PRE-LAUNCH").length;
 
   return (
     <section className={`py-20 sm:py-28 lg:py-36 px-6 sm:px-12 lg:px-20 border-b border-white/[0.08] bg-[#0C1119] relative overflow-hidden ${className}`}>
@@ -225,9 +229,9 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
           <div className="space-y-3">
             <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs text-[#A97F60] uppercase tracking-[0.28em] font-semibold">
               <span className="w-2 h-2 rounded-full bg-[#A97F60] animate-pulse" />
-              <span>THE COMPLETE BUSINESS UNIVERSE</span>
+              <span>THE CONNECTED ECOSYSTEM</span>
               <span className="text-white/20">|</span>
-              <span className="text-[#8A95A5]">13 VERIFIED PLATFORMS</span>
+              <span className="text-[#8A95A5]">{livePlatformsCount} ACTIVE PLATFORMS · 1 PRE-LAUNCH</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] leading-[1.08] tracking-tight">
               The Connected Ecosystem<br />
@@ -263,7 +267,7 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
             <div className="p-4 border border-[#A97F60]/20 bg-[#A97F60]/5 space-y-1">
               <span className="text-[10px] text-[#A97F60] uppercase tracking-wider block">QUADRANT 02</span>
               <span className="text-[#F5F4EF] font-bold block">FINANCING</span>
-              <span className="text-[10px] text-[#8A95A5]">CV Finance · Subvenții.ro</span>
+              <span className="text-[10px] text-[#8A95A5]">CV Finance · Subvenții (Granturi)</span>
             </div>
 
             <div className="p-4 border border-white/[0.1] bg-white/[0.02] space-y-1">

@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   description:
     "Metodologia transparentă și reproductibilă a raportului trimestrial Bucharest Prime privind piața rezidențială de prestigiu. Analiză like-for-like bazată pe surse ANCPI, INS și date verificate.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/raport-piata",
+    canonical: "https://cristianvaduva.com/raport-piata",
   },
   openGraph: {
     title: "Bucharest Prime Residential Report — Metodologie | Cristian Văduva",
     description: "Infrastructura de cercetare trimestrială pentru piața rezidențială prime din București.",
-    url: "https://executive.cristianvaduva.com/raport-piata",
+    url: "https://cristianvaduva.com/raport-piata",
     type: "website",
   },
 };

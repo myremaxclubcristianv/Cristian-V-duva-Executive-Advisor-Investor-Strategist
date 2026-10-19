@@ -47,7 +47,7 @@ export default function ArchitecturalFeaturePanel({
 
   return (
     <div
-      className={`relative w-full p-6 sm:p-10 lg:p-14 bg-[#0C1119] border border-white/[0.08] overflow-hidden ${className}`}
+      className={`relative w-full p-6 sm:p-10 lg:p-14 bg-[#0C1119] border border-white/[0.08] overflow-hidden rounded-3xl shadow-2xl ${className}`}
     >
       {/* Background architectural glow */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-[#93C8FF]/[0.03] rounded-full blur-[100px] pointer-events-none" />
@@ -65,7 +65,7 @@ export default function ArchitecturalFeaturePanel({
                 {tag}
               </span>
               {accentBadge && (
-                <span className="px-2 py-0.5 bg-[#93C8FF]/10 border border-[#93C8FF]/30 font-mono text-[9px] uppercase tracking-[0.2em] text-[#93C8FF]">
+                <span className="px-2.5 py-0.5 bg-[#93C8FF]/10 border border-[#93C8FF]/30 font-mono text-[9px] uppercase tracking-[0.2em] text-[#93C8FF] rounded-full">
                   {accentBadge}
                 </span>
               )}
@@ -96,7 +96,7 @@ export default function ArchitecturalFeaturePanel({
           {stats && stats.length > 0 && (
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-white/[0.08]">
               {stats.map((s, idx) => (
-                <div key={idx} className="p-3 bg-black/40 border border-white/[0.05] space-y-1">
+                <div key={idx} className="p-3 bg-black/40 border border-white/[0.05] rounded-xl space-y-1">
                   <span className="font-serif text-xl sm:text-2xl text-[#93C8FF] block">
                     {s.value}
                   </span>
@@ -113,7 +113,7 @@ export default function ArchitecturalFeaturePanel({
               {ctaText && ctaHref && (
                 <Link
                   href={ctaHref}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#F5F4EF] transition-colors"
+                  className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[44px]"
                 >
                   <span>{ctaText}</span>
                   <ArrowUpRight className="w-4 h-4" />
@@ -122,7 +122,7 @@ export default function ArchitecturalFeaturePanel({
               {secondaryCtaText && secondaryCtaHref && (
                 <Link
                   href={secondaryCtaHref}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/[0.15] bg-[#07090D] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] hover:border-[#93C8FF] transition-colors"
+                  className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[44px]"
                 >
                   <span>{secondaryCtaText}</span>
                 </Link>
@@ -137,7 +137,7 @@ export default function ArchitecturalFeaturePanel({
             isImageRight ? "order-2" : "order-2 lg:order-1"
           }`}
         >
-          <div className="relative aspect-[4/5] bg-black border border-white/[0.1] overflow-hidden group shadow-2xl">
+          <div className="relative aspect-[4/5] bg-black border border-white/[0.1] rounded-2xl overflow-hidden group shadow-2xl">
             <Image
               src={imageSrc}
               alt={imageAlt}
@@ -147,7 +147,7 @@ export default function ArchitecturalFeaturePanel({
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-80" />
             {imageCaption && (
-              <div className="absolute bottom-4 left-4 right-4 p-3 bg-[#07090D]/90 backdrop-blur-md border border-white/10 font-mono text-[11px] text-[#E1E4EA] flex items-center justify-between">
+              <div className="absolute bottom-4 left-4 right-4 p-3 bg-[#07090D]/90 backdrop-blur-md border border-white/10 rounded-xl font-mono text-[11px] text-[#E1E4EA] flex items-center justify-between">
                 <span>{imageCaption}</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />
               </div>

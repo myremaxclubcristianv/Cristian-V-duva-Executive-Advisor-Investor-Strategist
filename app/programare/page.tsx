@@ -100,12 +100,12 @@ export default function ProgramarePage() {
           {/* HERO ARCHITECTURAL MASTHEAD                              */}
           {/* ======================================================== */}
           <section className="space-y-8 max-w-4xl border-b border-white/[0.08] pb-14">
-            <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase">
-              <Calendar className="w-3.5 h-3.5 text-[#93C8FF]" />
-              <span>SESIUNE STRATEGICĂ · 20 MINUTE CONFIDENȚIALE</span>
+            <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[10px] sm:text-[11px] tracking-[0.16em] sm:tracking-[0.25em] text-[#A97F60] uppercase max-w-full">
+              <Calendar className="w-3.5 h-3.5 text-[#93C8FF] shrink-0" />
+              <span className="truncate sm:overflow-visible">SESIUNE STRATEGICĂ · 20 MINUTE CONFIDENȚIALE</span>
             </div>
 
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.12]">
+            <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.12] break-words">
               Programare Conversație Inițială
             </h1>
 
@@ -121,8 +121,8 @@ export default function ProgramarePage() {
             {/* Left Column: Guidelines, NDA & Direct Contact (5 cols) */}
             <div className="lg:col-span-5 space-y-6">
               {/* Photo Aperture */}
-              <div className="relative border border-white/[0.1] bg-[#0C1119] p-3 shadow-xl">
-                <div className="relative aspect-[16/10] w-full bg-[#1B2028] overflow-hidden">
+              <div className="relative rounded-3xl border border-white/[0.08] bg-[#0C1119] p-3 shadow-xl overflow-hidden">
+                <div className="relative aspect-[16/10] w-full rounded-2xl bg-[#1B2028] overflow-hidden">
                   <Image
                     src="/media/cristian-vaduva/personal/cristian-vaduva-office-armchair-consultation.png"
                     alt="Cristian Văduva — Consultanță privată în biroul executiv"
@@ -139,7 +139,7 @@ export default function ProgramarePage() {
               </div>
 
               {/* Expectations Cadran */}
-              <div className="p-6 sm:p-8 bg-[#0C1119] border border-white/[0.08] space-y-4">
+              <div className="p-6 sm:p-8 rounded-2xl bg-[#0C1119] border border-white/[0.08] space-y-4 shadow-xl">
                 <span className="font-mono text-xs uppercase tracking-wider text-[#93C8FF] font-semibold block">
                   CE VA AVEA LOC ÎN CELE 20 DE MINUTE:
                 </span>
@@ -169,7 +169,7 @@ export default function ProgramarePage() {
               </div>
 
               {/* Protocol NDA box */}
-              <div className="p-6 bg-[#0C1119] border border-white/[0.08] space-y-3">
+              <div className="p-6 rounded-2xl bg-[#0C1119] border border-white/[0.08] space-y-3 shadow-xl">
                 <div className="flex items-center gap-2 text-[#A97F60] font-mono text-xs uppercase tracking-wider">
                   <Lock className="w-4 h-4" />
                   <span>Opțiunea de Confidențialitate (NDA)</span>
@@ -183,7 +183,7 @@ export default function ProgramarePage() {
               </div>
 
               {/* Procedură de confirmare */}
-              <div className="p-6 bg-white/[0.02] border border-white/[0.06] space-y-2">
+              <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/[0.06] space-y-2">
                 <h4 className="font-serif text-sm text-[#F5F4EF]">Confirmare manuală în maximum 24h:</h4>
                 <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
                   Nu utilizăm calendare automate care simulează disponibilități artificiale. Cristian Văduva verifică agenda personală și vă va contacta direct în termen de 24 de ore lucrătoare pentru a stabili data și ora convenită.
@@ -193,13 +193,7 @@ export default function ProgramarePage() {
 
             {/* Right Column: High-End Booking Form (7 cols) */}
             <div className="lg:col-span-7">
-              <div className="p-8 sm:p-12 bg-[#0C1119] border border-white/[0.1] relative">
-                {/* Structural Crosshairs */}
-                <div className="absolute -top-1 -left-1 w-3 h-3 border-t border-l border-[#93C8FF]" />
-                <div className="absolute -top-1 -right-1 w-3 h-3 border-t border-r border-[#93C8FF]" />
-                <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b border-l border-[#93C8FF]" />
-                <div className="absolute -bottom-1 -right-1 w-3 h-3 border-b border-r border-[#93C8FF]" />
-
+              <div className="p-8 sm:p-12 rounded-3xl bg-[#0C1119] border border-white/[0.08] relative shadow-2xl">
                 {success ? (
                   <div className="space-y-6 text-center py-8">
                     <div className="w-14 h-14 mx-auto rounded-full bg-white/[0.03] border border-[#93C8FF]/40 flex items-center justify-center text-[#93C8FF]">
@@ -215,21 +209,21 @@ export default function ProgramarePage() {
                     </div>
 
                     {requestPriorNDA && (
-                      <div className="p-4 bg-black/40 border border-[#A97F60]/40 font-mono text-xs text-[#A97F60] max-w-md mx-auto">
+                      <div className="p-4 rounded-xl bg-black/40 border border-[#A97F60]/40 font-mono text-xs text-[#A97F60] max-w-md mx-auto">
                         Ați solicitat semnarea unui acord de confidențialitate (NDA) în prealabil. Draftul acordului va fi transmis înainte de desfășurarea sesiunii.
                       </div>
                     )}
 
-                    <div className="pt-4 flex flex-wrap justify-center gap-4">
+                    <div className="pt-4 flex flex-wrap justify-center gap-3">
                       <Link
                         href="/"
-                        className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-[#07090D] font-mono text-xs uppercase tracking-wider font-semibold hover:bg-[#E1E4EA]"
+                        className="btn-apple-pill-primary shadow-lg"
                       >
                         <span>ÎNAPOI LA PAGINA PRINCIPALĂ</span>
                       </Link>
                       <Link
                         href="/cum-lucrez"
-                        className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/20 text-[#F5F4EF] font-mono text-xs uppercase tracking-wider hover:border-[#93C8FF]"
+                        className="btn-apple-pill-secondary"
                       >
                         <span>CONSULTĂ ETAPELE COLABORĂRII</span>
                       </Link>
@@ -267,7 +261,7 @@ export default function ProgramarePage() {
                           value={fullName}
                           onChange={(e) => setFullName(e.target.value)}
                           placeholder="Ex: Cristian Ionescu"
-                          className="w-full px-4 py-3 bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
+                          className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                         />
                       </div>
 
@@ -281,7 +275,7 @@ export default function ProgramarePage() {
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           placeholder="nume@exemplu.ro"
-                          className="w-full px-4 py-3 bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
+                          className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                         />
                       </div>
                     </div>
@@ -297,7 +291,7 @@ export default function ProgramarePage() {
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
                           placeholder="+40 7..."
-                          className="w-full px-4 py-3 bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
+                          className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                         />
                       </div>
 
@@ -308,7 +302,7 @@ export default function ProgramarePage() {
                         <select
                           value={preferredTimeframe}
                           onChange={(e) => setPreferredTimeframe(e.target.value)}
-                          className="w-full px-4 py-3 bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
+                          className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                         >
                           <option value="Dimineața (09:00 - 12:00)">Dimineața (09:00 - 12:00)</option>
                           <option value="Prânz (12:00 - 15:00)">Prânz (12:00 - 15:00)</option>
@@ -324,7 +318,7 @@ export default function ProgramarePage() {
                       <select
                         value={consultationType}
                         onChange={(e) => setConsultationType(e.target.value)}
-                        className="w-full px-4 py-3 bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
+                        className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                       >
                         <option value="Achiziție rezidențială prime (Buyer Advisory)">
                           Mandat de Achiziție Rezidențială Prime (București)
@@ -353,18 +347,18 @@ export default function ProgramarePage() {
                         value={notes}
                         onChange={(e) => setNotes(e.target.value)}
                         placeholder="Menționați pe scurt criteriile cheie (zonă, tip imobil, orizont temporal)..."
-                        className="w-full px-4 py-3 bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
+                        className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans resize-none"
                       />
                     </div>
 
                     {/* BIFĂ NDA ÎN PREALABIL */}
-                    <div className="p-4 bg-black/40 border border-white/[0.08] space-y-2">
+                    <div className="p-4 rounded-xl bg-black/40 border border-white/[0.08] space-y-2">
                       <label className="flex items-start gap-3 cursor-pointer text-xs text-[#E1E4EA] leading-relaxed">
                         <input
                           type="checkbox"
                           checked={requestPriorNDA}
                           onChange={(e) => setRequestPriorNDA(e.target.checked)}
-                          className="mt-1 h-4 w-4 rounded-none bg-black border-white/20 text-[#A97F60] focus:ring-0 cursor-pointer"
+                          className="mt-1 h-4 w-4 rounded border-white/20 bg-black text-[#A97F60] focus:ring-0 cursor-pointer"
                         />
                         <span>
                           <strong className="text-[#A97F60]">Solicit Acord de Confidențialitate (NDA) în prealabil:</strong> Doresc transmiterea unui acord bilateral de confidențialitate înainte de a divulga detalii specifice privind activele sau planurile mele.
@@ -380,7 +374,7 @@ export default function ProgramarePage() {
                           required
                           checked={consentPrivacy}
                           onChange={(e) => setConsentPrivacy(e.target.checked)}
-                          className="mt-1 h-4 w-4 rounded-none bg-black border-white/20 text-[#93C8FF] focus:ring-0 cursor-pointer"
+                          className="mt-1 h-4 w-4 rounded border-white/20 bg-black text-[#93C8FF] focus:ring-0 cursor-pointer"
                         />
                         <span>
                           Sunt de acord cu prelucrarea datelor mele cu caracter personal furnizate în scopul stabilirii și desfășurării conversației inițiale, conform <Link href="/privacy" className="text-[#93C8FF] underline">Politicii de Confidențialitate</Link>. Datele nu sunt înstrăinate către terți.
@@ -392,7 +386,7 @@ export default function ProgramarePage() {
                       <button
                         type="submit"
                         disabled={loading}
-                        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#E1E4EA] disabled:opacity-50 transition-colors"
+                        className="btn-apple-pill-primary w-full shadow-xl"
                       >
                         <span>{loading ? "SE TRANSMITE..." : "SOLICITĂ PROGRAMAREA CONVERSAȚIEI"}</span>
                         <ArrowRight className="w-4 h-4" />

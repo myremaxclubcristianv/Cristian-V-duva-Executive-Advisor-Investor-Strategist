@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   description:
     "Cadrul de analiză și structura metodologică aplicată în mandatele de consultanță imobiliară premium. Publicarea studiilor de caz reale respectă confidențialitatea strictă și acordul scris bilateral al clienților.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/studii-de-caz",
+    canonical: "https://cristianvaduva.com/studii-de-caz",
   },
   openGraph: {
     title: "Studii de Caz & Cadru Metodologic | Cristian Văduva",
     description:
       "Anatomia unui mandat structurat de consultanță imobiliară privată și politica riguroasă de confidențialitate a clienților.",
-    url: "https://executive.cristianvaduva.com/studii-de-caz",
+    url: "https://cristianvaduva.com/studii-de-caz",
     type: "website",
   },
 };
@@ -36,7 +36,7 @@ const ANATOMY_POINTS = [
   {
     num: "02",
     title: "Diagnostic & Due Diligence",
-    desc: "Verificarea istoricului de proprietate, a conformității cadastrale, a expertizei MLPAT și a stării juridice a cărții funciare.",
+    desc: "Verificarea istoricului de proprietate, a conformității cadastrale, a expertizei tehnice de rezistență și a stării juridice a cărții funciare.",
   },
   {
     num: "03",
@@ -69,7 +69,7 @@ export default function StudiiDeCazPage() {
           {/* HERO SECTION */}
           <section className="border-b border-white/[0.08] pb-16 lg:pb-24">
             <div className="max-w-4xl space-y-6 sm:space-y-8">
-              <div className="inline-flex items-center gap-2.5 px-3.5 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase">
+              <div className="inline-flex items-center gap-2.5 px-3.5 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase rounded-full">
                 <FileText className="w-3.5 h-3.5 text-[#93C8FF]" />
                 <span>METODOLOGIE & MANDATE DOCUMENTATE</span>
               </div>
@@ -85,7 +85,7 @@ export default function StudiiDeCazPage() {
               <div className="flex flex-wrap items-center gap-4 pt-4">
                 <Link
                   href="/programare"
-                  className="inline-flex items-center gap-2 px-7 py-4 bg-[#93C8FF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold hover:bg-white transition-all shadow-xl shadow-[#93C8FF]/20 min-h-[48px]"
+                  className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[48px]"
                 >
                   <span>SOLICITĂ DISCUȚIE DE 20 MINUTE</span>
                   <ArrowRight className="w-4 h-4" />
@@ -93,18 +93,18 @@ export default function StudiiDeCazPage() {
 
                 <Link
                   href="/cum-lucrez"
-                  className="inline-flex items-center gap-2 px-7 py-4 border border-white/[0.15] bg-[#0C1119] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] hover:border-[#93C8FF] transition-colors min-h-[48px]"
+                  className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
                 >
-                  <span>CUM FUNCȚIONEAZĂ REMUNERAȚIA</span>
+                  <span>METODOLOGIE & ETAPE DE LUCRU</span>
                 </Link>
               </div>
             </div>
           </section>
 
           {/* EDITORIAL NOTICE ON FACTUAL INTEGRITY & CLIENT CONFIDENTIALITY */}
-          <section className="p-8 sm:p-12 bg-[#0C1119] border border-white/[0.1] relative">
+          <section className="p-8 sm:p-12 bg-[#0C1119] border border-white/[0.1] rounded-3xl relative shadow-xl">
             <div className="flex items-start gap-5">
-              <div className="p-3 bg-white/[0.04] border border-white/[0.08] text-[#93C8FF] shrink-0 mt-1">
+              <div className="p-3 bg-white/[0.04] border border-white/[0.08] text-[#93C8FF] shrink-0 mt-1 rounded-2xl">
                 <Lock className="w-5 h-5" />
               </div>
               <div className="space-y-4 max-w-3xl">
@@ -275,7 +275,7 @@ export default function StudiiDeCazPage() {
                   <div className="space-y-2 p-5 bg-black/40 border border-white/[0.04]">
                     <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">INTERVENȚIE EXECUTIVE</span>
                     <p className="leading-relaxed">
-                      Coordonarea cabinetelor de avocatură pentru clarificarea sarcinilor, inspecție tehnică MLPAT și reevaluare de piață ANEVAR.
+                      Coordonarea cabinetelor de avocatură pentru clarificarea sarcinilor, inspecție tehnică structurală de specialitate și reevaluare de piață ANEVAR.
                     </p>
                   </div>
 
@@ -297,7 +297,7 @@ export default function StudiiDeCazPage() {
             description="Programați o primă conversație confidențială de 20 de minute. Stabilim împreună dacă proiectul dumneavoastră se încadrează în standardele noastre de lucru."
             primaryCtaText="SOLICITĂ DISCUȚIE (20 MIN)"
             primaryCtaHref="/programare"
-            secondaryCtaText="CUM LUCREZ & REMUNERAȚIE"
+            secondaryCtaText="CUM LUCREZ: METODOLOGIE & ETAPE"
             secondaryCtaHref="/cum-lucrez"
             imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-office-armchair-consultation.png"
           />

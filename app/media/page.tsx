@@ -32,48 +32,50 @@ export default function MediaPage() {
               Official video commentary, property masterclasses, market analysis briefings, and architectural photography.
             </p>
 
-            {/* Tab Navigation - Architectural Filter Buttons */}
-            <div className="flex flex-wrap gap-3 pt-6">
-              <button
-                onClick={() => setActiveTab("all")}
-                className={`px-5 py-2.5 font-mono text-xs uppercase tracking-widest transition-all cursor-pointer ${
-                  activeTab === "all"
-                    ? "bg-[#93C8FF] text-[#07090D] font-bold"
-                    : "border border-white/[0.1] text-[#B8C2CF] hover:border-[#93C8FF] hover:text-[#F5F4EF] bg-[#0C1119]"
-                }`}
-              >
-                All Content
-              </button>
-              <button
-                onClick={() => setActiveTab("videos")}
-                className={`px-5 py-2.5 font-mono text-xs uppercase tracking-widest transition-all cursor-pointer ${
-                  activeTab === "videos"
-                    ? "bg-[#93C8FF] text-[#07090D] font-bold"
-                    : "border border-white/[0.1] text-[#B8C2CF] hover:border-[#93C8FF] hover:text-[#F5F4EF] bg-[#0C1119]"
-                }`}
-              >
-                Broadcasts
-              </button>
-              <button
-                onClick={() => setActiveTab("shorts")}
-                className={`px-5 py-2.5 font-mono text-xs uppercase tracking-widest transition-all cursor-pointer ${
-                  activeTab === "shorts"
-                    ? "bg-[#93C8FF] text-[#07090D] font-bold"
-                    : "border border-white/[0.1] text-[#B8C2CF] hover:border-[#93C8FF] hover:text-[#F5F4EF] bg-[#0C1119]"
-                }`}
-              >
-                Executive Shorts
-              </button>
-              <button
-                onClick={() => setActiveTab("photos")}
-                className={`px-5 py-2.5 font-mono text-xs uppercase tracking-widest transition-all cursor-pointer ${
-                  activeTab === "photos"
-                    ? "bg-[#93C8FF] text-[#07090D] font-bold"
-                    : "border border-white/[0.1] text-[#B8C2CF] hover:border-[#93C8FF] hover:text-[#F5F4EF] bg-[#0C1119]"
-                }`}
-              >
-                Photography
-              </button>
+            {/* Tab Navigation - Apple Segmented Control */}
+            <div className="pt-6">
+              <div className="inline-flex p-1.5 rounded-full border border-white/[0.08] bg-[#07090D]/90 backdrop-blur-xl shadow-xl gap-1 overflow-x-auto no-scrollbar">
+                <button
+                  onClick={() => setActiveTab("all")}
+                  className={`px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
+                    activeTab === "all"
+                      ? "bg-[#93C8FF] text-[#07090D] font-bold shadow-md shadow-[#93C8FF]/20"
+                      : "text-[#B8C2CF] hover:text-[#F5F4EF] hover:bg-white/[0.05]"
+                  }`}
+                >
+                  All Content
+                </button>
+                <button
+                  onClick={() => setActiveTab("videos")}
+                  className={`px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
+                    activeTab === "videos"
+                      ? "bg-[#93C8FF] text-[#07090D] font-bold shadow-md shadow-[#93C8FF]/20"
+                      : "text-[#B8C2CF] hover:text-[#F5F4EF] hover:bg-white/[0.05]"
+                  }`}
+                >
+                  Broadcasts
+                </button>
+                <button
+                  onClick={() => setActiveTab("shorts")}
+                  className={`px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
+                    activeTab === "shorts"
+                      ? "bg-[#93C8FF] text-[#07090D] font-bold shadow-md shadow-[#93C8FF]/20"
+                      : "text-[#B8C2CF] hover:text-[#F5F4EF] hover:bg-white/[0.05]"
+                  }`}
+                >
+                  Executive Shorts
+                </button>
+                <button
+                  onClick={() => setActiveTab("photos")}
+                  className={`px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
+                    activeTab === "photos"
+                      ? "bg-[#93C8FF] text-[#07090D] font-bold shadow-md shadow-[#93C8FF]/20"
+                      : "text-[#B8C2CF] hover:text-[#F5F4EF] hover:bg-white/[0.05]"
+                  }`}
+                >
+                  Photography
+                </button>
+              </div>
             </div>
           </div>
         </section>

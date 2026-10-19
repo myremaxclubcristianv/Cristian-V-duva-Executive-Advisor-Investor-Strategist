@@ -66,7 +66,7 @@ export async function generateMetadata({
       type: "website",
     },
     alternates: {
-      canonical: `https://executive.cristianvaduva.com/real-estate/properties/${property.id}`,
+      canonical: `https://cristianvaduva.com/real-estate/properties/${property.id}`,
     },
   };
 }
@@ -98,7 +98,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
     "@type": "RealEstateListing",
     name: property.title,
     description: property.description,
-    url: `https://executive.cristianvaduva.com/real-estate/properties/${property.id}`,
+    url: `https://cristianvaduva.com/real-estate/properties/${property.id}`,
     image: property.heroImage,
     category: property.type,
     itemOffered: {

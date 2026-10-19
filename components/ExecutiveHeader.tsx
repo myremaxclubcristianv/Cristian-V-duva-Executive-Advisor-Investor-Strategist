@@ -1,323 +1,285 @@
-// ExecutiveHeader – Apple × Bloomberg × Luxury editorial redesign
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useTranslation, useLocale, Locale } from "@/app/context/LocaleContext";
+import { Globe, ArrowUpRight, X, Menu } from "lucide-react";
 
-// Color palette – Apple/Bloomberg/Luxury editorial
-const COLORS = {
-  // Core palette
-  white: "#FFFFFF",
-  // Main navigation background (ultra‑dark navy) with subtle transparency
-  navyMain: "rgba(8, 15, 26, 0.92)",
-  // Ticker background, ultra‑dark navy with higher opacity
-  navyTicker: "rgba(4, 8, 15, 0.97)",
-  // Dropdown and mobile drawer background (ultra‑dark navy)
-  navyDropdown: "#0B1421",
-  // Soft white for primary text (links, logo) with opacity
-  softWhite: "rgba(255, 255, 255, 0.92)",
-  // Muted secondary text (blue‑gray)
-  mutedGray: "#AAB6C5",
-  // Champagne gold for accents
-  gold: "#C6A15B",
-  // Border colour – very subtle white
-  border: "rgba(255,255,255,0.10)",
-  // Deep ink used for hamburger icon
-  deepInk: "#19171D",
-};
-
-// --- Ticker ---------------------------------------------------------------
-const TICKER_MESSAGES = [
-  "EXECUTIVE STRATEGY",
-  "BUSINESS & INVESTMENT PERSPECTIVES",
-  "ENTREPRENEURIAL VENTURES",
-  "PRIVATE CONSULTATION",
-  "CRISTIAN VĂDUVA — EXECUTIVE ADVISOR",
+const languages: { code: Locale; label: string }[] = [
+  { code: "en", label: "EN" },
+  { code: "ro", label: "RO" },
+  { code: "fr", label: "FR" },
+  { code: "de", label: "DE" },
+  { code: "ar", label: "AR" },
 ];
-
-// --- Navigation -----------------------------------------------------------
-const NAV_ITEMS = [
-  {
-    label: "About",
-    href: "/about",
-    subItems: [
-      { label: "Profile", href: "/about", description: "Executive overview and biography." },
-      { label: "Philosophy", href: "/about#philosophy", description: "Investment philosophy and approach." },
-    ],
-  },
-  {
-    label: "Insights",
-    subItems: [
-      { label: "Articles", href: "/insights", description: "Thought leadership and market analysis." },
-      { label: "Media", href: "/media", description: "Interviews, podcasts, and video content." },
-      { label: "Videos", href: "/tv", description: "Video series and presentations." },
-    ],
-  },
-  {
-    label: "Real Estate",
-    subItems: [
-      { label: "Market", href: "/real-estate/market", description: "Current market trends and data." },
-      { label: "Properties", href: "/real-estate/properties", description: "Selected premium assets." },
-    ],
-  },
-  {
-    label: "Ventures",
-    href: "/ventures",
-    subItems: [
-      { label: "Portfolio", href: "/ventures", description: "Strategic venture initiatives." },
-    ],
-  },
-  { label: "Contact", href: "/contact" },
-];
-
-const DROPDOWN_INTRO: Record<string, string> = {
-  About: "Learn about Cristian Văduva and his advisory services.",
-  Insights: "Explore analysis, media and video content.",
-  "Real Estate": "Insights into premium real estate investments.",
-  Ventures: "Strategic venture initiatives.",
-};
-
 
 export default function ExecutiveHeader() {
   const pathname = usePathname();
-  const [active, setActive] = useState<string | null>(null);
+  const { t } = useTranslation();
+  const { locale, setLocale } = useLocale();
+  const isRtl = locale === "ar";
+
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const headerRef = useRef<HTMLDivElement>(null);
 
-  // Close dropdowns on scroll – prevents sticky open panels while moving page
+  const navLinks = [
+    { label: t.nav.about || "About", href: "/about" },
+    { label: t.nav.ventures || "Ventures", href: "/ventures" },
+    { label: locale === "ro" ? "Ecosistem" : locale === "fr" ? "Écosystème" : locale === "de" ? "Ökosystem" : locale === "ar" ? "المنظومة" : "Ecosystem", href: "/ecosystem" },
+    { label: t.nav.media || "Media", href: "/media" },
+    { label: t.nav.insights || "Insights", href: "/insights" },
+    { label: t.nav.contact || "Contact", href: "/contact" },
+  ];
+
+  // Track scroll state for enhanced border/blur opacity
   useEffect(() => {
-    const onScroll = () => setActive(null);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Reset on route change – close mobile drawer & dropdowns
+  // Close menus on route change
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMobileOpen(false);
-    setActive(null);
+    setLangMenuOpen(false);
   }, [pathname]);
 
-  // Click‑outside handling for dropdowns & mobile drawer
+  // Click outside listener
   useEffect(() => {
-    const handleClick = (e: MouseEvent) => {
+    const handleClickOutside = (e: MouseEvent) => {
       if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
-        setActive(null);
-        setMobileOpen(false);
+        setLangMenuOpen(false);
       }
     };
-    document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Escape key to close menus
+  // Escape key handler
   useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        setActive(null);
         setMobileOpen(false);
+        setLangMenuOpen(false);
       }
     };
-    document.addEventListener("keydown", handleKey);
-    return () => document.removeEventListener("keydown", handleKey);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  // Hover handling – keep dropdown open while moving between trigger and panel
-  const handleMouseEnter = (label: string) => setActive(label);
-  const handleMouseLeave = (e: React.MouseEvent) => {
-    const related = e.relatedTarget as HTMLElement | null;
-    if (related && headerRef.current?.contains(related)) return;
-    setActive(null);
-  };
-
-  // Mobile submenu toggle helper
-  const toggleSubMenu = (label: string) => {
-    setActive((prev) => (prev === label ? null : label));
-  };
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
 
   return (
-    <header ref={headerRef} className="header-wrapper">
-      {/* Layer A – Continuous ticker */}
-      <div className="ticker" aria-label="Information ticker">
-        <div className="ticker-inner">
-          {[...TICKER_MESSAGES, ...TICKER_MESSAGES].map((msg, i) => (
-            <span key={i} className="ticker-item">
-              {msg}
-            </span>
-          ))}
-        </div>
-      </div>
-
-      {/* Layer B – Navigation */}
-      <div className="nav-bar">
-        {/* Wordmark */}
-        <div className="wordmark">
-          <Link href="/" className="brand-primary" aria-label="Home">
-            EXECUTIVE
-          </Link>
-          <span className="brand-secondary">CRISTIAN VĂDUVA</span>
-        </div>
-          
-        {/* Desktop navigation */}
-        <nav className="nav-desktop" role="navigation" aria-label="Primary navigation">
-          <ul className="nav-list">
-            {NAV_ITEMS.map((item) => (
-              <li
-                key={item.label}
-                className="nav-item"
-                onMouseEnter={() => item.subItems && handleMouseEnter(item.label)}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Link
-                  href={item.href ?? "#"}
-                  className={`nav-link ${active === item.label ? "active" : ""}`}
-                >
-                  {item.label}
-                </Link>
-                {item.subItems && active === item.label && (
-                  <div
-                    className="dropdown-panel"
-                    onMouseEnter={() => handleMouseEnter(item.label)}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    <div className="dropdown-header">
-                      <span className="dropdown-eyebrow">{item.label.toUpperCase()}</span>
-                      <h3 className="dropdown-title">{item.label}</h3>
-                      {DROPDOWN_INTRO[item.label] && (
-                        <p className="dropdown-intro">{DROPDOWN_INTRO[item.label]}</p>
-                      )}
-                    </div>
-                    <ul className="dropdown-list">
-                      {item.subItems.map((sub) => (
-                        <li key={sub.label} className="dropdown-item">
-                          <Link href={sub.href} className="dropdown-link">
-                            {sub.label}
-                          </Link>
-                          {sub.description && (
-                            <p className="dropdown-desc">{sub.description}</p>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </li>
-            ))}
-            {/* Consultation CTA */}
-            <li className="nav-item cta-item">
-              <Link href="/contact" className="cta-button">
-                Consultation
-              </Link>
-            </li>
-          </ul>
-        </nav>
-          <div className="language-switcher-desktop"><LanguageSwitcher /></div>
-
-        {/* Mobile hamburger */}
-        <button
-          className="mobile-toggle"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle navigation menu"
+    <header
+      ref={headerRef}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-[#07090D]/90 backdrop-blur-xl border-b border-white/[0.08] shadow-2xl shadow-black/40"
+          : "bg-[#07090D]/75 backdrop-blur-md border-b border-white/[0.05]"
+      }`}
+    >
+      <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 h-12 sm:h-13 flex items-center justify-between">
+        
+        {/* Apple-style Wordmark Identity */}
+        <Link
+          href="/"
+          className="flex items-center gap-2 group tracking-tight transition-opacity hover:opacity-90 py-1"
+          aria-label="Cristian Văduva Executive Home"
         >
-          <span className="hamburger-icon" />
-        </button>
+          <span className="font-serif text-base sm:text-lg font-medium text-[#F5F4EF] tracking-[-0.01em]">
+            Cristian Văduva
+          </span>
+          <span className="w-1 h-1 rounded-full bg-[#A97F60]" />
+          <span className="font-mono text-[9px] uppercase tracking-[0.22em] text-[#86868B] group-hover:text-[#93C8FF] transition-colors hidden xs:inline-block">
+            Executive
+          </span>
+        </Link>
+
+        {/* Desktop Minimal Navigation (Apple.com spacing & typography) */}
+        <nav
+          className="hidden md:flex items-center gap-7 lg:gap-9"
+          role="navigation"
+          aria-label="Primary Navigation"
+        >
+          {navLinks.map((item) => {
+            const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`font-sans text-[12px] lg:text-[13px] tracking-normal transition-colors duration-200 ${
+                  isActive
+                    ? "text-[#F5F4EF] font-semibold"
+                    : "text-[#86868B] hover:text-[#F5F4EF] font-normal"
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
+
+        {/* Right Action Suite: Language Switcher & Subtle Pill CTA */}
+        <div className="flex items-center gap-3">
+          
+          {/* Minimal Language Switcher */}
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setLangMenuOpen((v) => !v)}
+              aria-expanded={langMenuOpen}
+              aria-label="Select Language"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-mono text-[#B8C2CF] hover:text-[#F5F4EF] rounded-full border border-white/[0.08] hover:border-white/[0.2] transition-colors"
+            >
+              <Globe className="w-3 h-3 text-[#A97F60]" />
+              <span className="uppercase font-semibold">{locale}</span>
+            </button>
+
+            {langMenuOpen && (
+              <div
+                className={`absolute top-full mt-2 w-28 bg-[#0C1119] border border-white/[0.12] rounded-xl shadow-2xl p-1 z-50 backdrop-blur-xl ${
+                  isRtl ? "left-0" : "right-0"
+                }`}
+              >
+                {languages.map((l) => (
+                  <button
+                    key={l.code}
+                    type="button"
+                    onClick={() => {
+                      setLocale(l.code);
+                      setLangMenuOpen(false);
+                    }}
+                    className={`w-full text-left px-3 py-1.5 rounded-lg text-xs font-mono flex items-center justify-between transition-colors ${
+                      locale === l.code
+                        ? "bg-[#93C8FF]/10 text-[#93C8FF] font-semibold"
+                        : "text-[#B8C2CF] hover:bg-white/[0.06] hover:text-[#F5F4EF]"
+                    }`}
+                  >
+                    <span>{l.label}</span>
+                    {locale === l.code && <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Apple-style Discreet Pill CTA */}
+          <Link
+            href="/programare"
+            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/[0.08] hover:bg-white/[0.16] border border-white/[0.12] hover:border-white/[0.25] text-[#F5F4EF] font-sans text-xs font-medium tracking-tight transition-all duration-200"
+          >
+            <span>{t.nav.consultation || "Consultanță"}</span>
+            <ArrowUpRight className="w-3 h-3 text-[#93C8FF]" />
+          </Link>
+
+          {/* Mobile Menu Hamburger (Minimal 2-bar icon) */}
+          <button
+            type="button"
+            onClick={() => setMobileOpen((v) => !v)}
+            aria-expanded={mobileOpen}
+            aria-label="Toggle navigation drawer"
+            className="md:hidden p-2 text-[#F5F4EF] hover:text-white transition-colors"
+          >
+            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
       </div>
 
-      {/* Mobile drawer */}
+      {/* Apple-Style Fullscreen Mobile Navigation Drawer */}
       {mobileOpen && (
-        <div className="mobile-drawer" role="dialog" aria-modal="true">
-          <button className="mobile-close" onClick={() => setMobileOpen(false)} aria-label="Close menu">
-            ✕
-          </button>
-          <ul className="mobile-nav-list">
-            {NAV_ITEMS.map((item) => (
-              <li key={item.label} className="mobile-nav-item">
-                <div className="mobile-nav-header" onClick={() => item.subItems && toggleSubMenu(item.label)}>
-                  <Link href={item.href ?? "#"} className="mobile-nav-link" onClick={() => setMobileOpen(false)}>
-                    {item.label}
-                  </Link>
-                  {item.subItems && (
-                    <span className="mobile-sub-toggle">{active === item.label ? "▴" : "▾"}</span>
-                  )}
-                </div>
-                {item.subItems && active === item.label && (
-                  <ul className="mobile-sub-list">
-                    {item.subItems.map((sub) => (
-                      <li key={sub.label} className="mobile-sub-item">
-                        <Link href={sub.href} className="mobile-sub-link" onClick={() => setMobileOpen(false)}>
-                          {sub.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-            <li className="mobile-nav-item cta-mobile">
-              <Link href="/contact" className="cta-button-mobile" onClick={() => setMobileOpen(false)}>
-                Consultation
+        <div
+          className="fixed inset-0 top-12 z-40 bg-[#07090D]/98 backdrop-blur-2xl md:hidden flex flex-col justify-between p-6 sm:p-10 animate-in fade-in duration-200 overflow-y-auto"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile Navigation Menu"
+        >
+          <div className="space-y-6 pt-4">
+            <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#A97F60] font-semibold block">
+              NAVIGAȚIE PRINCIPALĂ
+            </span>
+
+            <ul className="space-y-4">
+              {navLinks.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={`block font-serif text-2xl sm:text-3xl tracking-tight transition-colors ${
+                        isActive
+                          ? "text-[#93C8FF] font-normal"
+                          : "text-[#F5F4EF] hover:text-[#93C8FF]"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+
+            {/* Direct Consultation Link */}
+            <div className="pt-6 border-t border-white/[0.08]">
+              <Link
+                href="/programare"
+                onClick={() => setMobileOpen(false)}
+                className="w-full py-3.5 px-6 rounded-full bg-[#F5F4EF] text-[#07090D] font-sans text-xs uppercase tracking-wider font-semibold flex items-center justify-center gap-2 shadow-xl"
+              >
+                <span>{t.nav.consultation || "SOLICITĂ CONSULTANȚĂ (20 MIN)"}</span>
+                <ArrowUpRight className="w-4 h-4 text-[#07090D]" />
               </Link>
-            </li>
-            {/* Language Switcher in mobile drawer */}
-            <li className="mobile-nav-item language-switcher-mobile" style={{ marginTop: '1rem' }}>
-              <LanguageSwitcher />
-            </li>
-          </ul>
+            </div>
+          </div>
+
+          {/* Drawer Footer with Coordinates & Language Selector */}
+          <div className="pt-8 border-t border-white/[0.08] space-y-4 font-mono text-xs text-[#86868B]">
+            <div className="flex items-center justify-between">
+              <span>LIMBĂ // LANGUAGE:</span>
+              <div className="flex items-center gap-2">
+                {languages.map((l) => (
+                  <button
+                    key={l.code}
+                    type="button"
+                    onClick={() => {
+                      setLocale(l.code);
+                      setMobileOpen(false);
+                    }}
+                    className={`px-2 py-1 rounded text-[11px] ${
+                      locale === l.code
+                        ? "bg-[#93C8FF] text-[#07090D] font-bold"
+                        : "text-[#B8C2CF] hover:text-white"
+                    }`}
+                  >
+                    {l.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="text-[11px] text-[#647082] flex justify-between">
+              <span>CRISTIAN VĂDUVA</span>
+              <span>BUCUREȘTI · MONACO · DUBAI</span>
+            </div>
+          </div>
         </div>
       )}
-
-      {/* Scoped CSS */}
-      <style jsx>{`
-        .header-wrapper { width: 100%; font-family: 'Inter', sans-serif; background: ${COLORS.navyMain}; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
-        .ticker { background: ${COLORS.navyTicker}; color: ${COLORS.white}; overflow: hidden; white-space: nowrap; font-size: 0.85rem; line-height: 1.5; height: 2rem; display: flex; align-items: center; z-index: 1000; }
-        .ticker-inner { display: inline-block; padding-left: 100%; animation: ticker-scroll 30s linear infinite; }
-        .ticker-item { display: inline-block; margin-right: 3rem; }
-        @keyframes ticker-scroll { from { transform: translateX(0%); } to { transform: translateX(-50%); } }
-        @media (prefers-reduced-motion: reduce) { .ticker-inner { animation: none; } }
-        .nav-bar { display: flex; align-items: center; justify-content: space-between; background: ${COLORS.navyMain}; padding: 0.75rem 1.5rem; border-bottom: 1px solid ${COLORS.border}; position: sticky; top: 0; z-index: 1000; }
-        .wordmark { display: flex; flex-direction: column; line-height: 1; }
-        .brand-primary { font-family: 'Georgia', serif; font-size: 1.25rem; font-weight: 600; color: ${COLORS.white}; text-decoration: none; letter-spacing: -0.5px; }
-        .brand-secondary { font-size: 0.75rem; color: ${COLORS.white}; margin-top: 2px; }
-        .nav-desktop { flex: 1; margin-left: 2rem; }
-        .nav-list { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; align-items: center; }
-        .nav-item { position: relative; }
-        .nav-link { text-decoration: none; font-weight: 500; color: ${COLORS.softWhite}; font-size: 0.95rem; transition: color 0.2s; }
-        .nav-link:hover, .nav-link.active { color: ${COLORS.gold}; }
-        .cta-item {}
-        .language-switcher-desktop { position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); display: flex; align-items: center; z-index: 20; }
-        .cta-button:hover { background: ${COLORS.gold}; color: ${COLORS.white}; }
-.lang-toggle { background: none; border: none; color: ${COLORS.white}; cursor: pointer; font-size: 0.95rem; }
-.lang-toggle:hover { color: ${COLORS.gold}; }
-        .dropdown-panel { position: absolute; top: 100%; left: 0; width: 280px; background: ${COLORS.navyDropdown}; border: 1px solid ${COLORS.border}; box-shadow: 0 4px 12px rgba(0,0,0,0.2); padding: 1rem; z-index: 10; }
-        .dropdown-header { margin-bottom: 0.75rem; }
-        .dropdown-eyebrow { display: block; font-size: 0.65rem; color: ${COLORS.mutedGray}; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 0.25rem; }
-        .dropdown-title { margin: 0; font-size: 1.1rem; color: ${COLORS.white}; }
-        .dropdown-intro { margin: 0.25rem 0 0; font-size: 0.85rem; color: ${COLORS.mutedGray}; }
-        .dropdown-list { list-style: none; margin: 0; padding: 0; }
-        .dropdown-item { margin-bottom: 0.6rem; }
-        .dropdown-link { text-decoration: none; font-weight: 500; color: ${COLORS.white}; font-size: 0.9rem; transition: color 0.2s; }
-        .dropdown-link:hover { color: ${COLORS.gold}; }
-        .dropdown-desc { margin: 0.2rem 0 0; font-size: 0.78rem; color: ${COLORS.mutedGray}; }
-        .mobile-toggle { display: none; background: none; border: none; cursor: pointer; }
-        .hamburger-icon { width: 24px; height: 2px; background: ${COLORS.deepInk}; position: relative; }
-        .hamburger-icon::before, .hamburger-icon::after { content: ''; width: 24px; height: 2px; background: ${COLORS.deepInk}; position: absolute; left: 0; }
-        .hamburger-icon::before { top: -8px; }
-        .hamburger-icon::after { top: 8px; }
-        .mobile-drawer { position: fixed; top: 0; right: 0; width: 85%; height: 100vh; background: ${COLORS.navyMain}; box-shadow: -2px 0 8px rgba(0,0,0,0.12); padding: 1.5rem; overflow-y: auto; z-index: 2000; }
-        .mobile-close { background: none; border: none; font-size: 1.5rem; position: absolute; top: 1rem; right: 1rem; cursor: pointer; }
-        .mobile-nav-list { list-style: none; padding: 0; margin-top: 3rem; }
-        .mobile-nav-item { margin-bottom: 1rem; }
-        .mobile-nav-header { display: flex; justify-content: space-between; align-items: center; }
-        .mobile-nav-link { text-decoration: none; font-size: 1.1rem; color: ${COLORS.softWhite}; font-weight: 500; }
-        .mobile-sub-toggle { font-size: 0.9rem; color: ${COLORS.mutedGray}; }
-        .mobile-sub-list { list-style: none; padding-left: 1rem; margin-top: 0.5rem; }
-        .mobile-sub-link { text-decoration: none; font-size: 0.95rem; color: ${COLORS.mutedGray}; }
-        .cta-mobile { margin-top: 2rem; }
-        .cta-button-mobile { background: ${COLORS.navyMain}; color: ${COLORS.white}; border: 1px solid ${COLORS.border}; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-weight: 600; display: inline-block; }
-        @media (max-width: 768px) { .nav-desktop { display: none; } .mobile-toggle { display: block; } }
-      `}</style>
     </header>
   );
 }

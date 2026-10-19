@@ -213,7 +213,7 @@ export default function NewHome() {
             Ecosistem Integrat
           </Heading>
           <p className="text-lg text-[#1D1D1F] max-w-3xl mb-8">
-            Platforme şi divizii conectate: cristianvaduva.com, aixluxury.com, HomeFind, Subvenţii.ro, și AiX OS.
+            Platforme și divizii conectate: cristianvaduva.com, aixluxury.com, HomeFind, Dubai, și AiX OS.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link href="https://cristianvaduva.com" target="_blank" className="block p-6 border rounded-lg hover:border-[#B89B72] transition">

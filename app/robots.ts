@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://executive.cristianvaduva.com/sitemap.xml",
+    sitemap: "https://cristianvaduva.com/sitemap.xml",
   };
 }

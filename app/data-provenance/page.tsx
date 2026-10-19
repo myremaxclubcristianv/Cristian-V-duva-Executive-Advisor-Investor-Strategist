@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Data Provenance & Methodology — Cristian Văduva",
   description: "Methodology, official data sources, cadastre verification, and market intelligence provenance across Cristian Văduva platforms.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/data-provenance",
+    canonical: "https://cristianvaduva.com/data-provenance",
   },
 };
 

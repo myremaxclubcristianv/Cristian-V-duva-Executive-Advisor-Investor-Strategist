@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Consultanță strategică pentru decizii imobiliare complexe, orientare în selecția activelor și coordonarea colaborărilor profesionale alături de Cristian Văduva.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/ventures",
+    canonical: "https://cristianvaduva.com/ventures",
   },
 };
 
@@ -81,7 +81,7 @@ export default function VenturesPage() {
             <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#93C8FF] font-semibold block">
               CONSULTANȚĂ & PROIECTE STRATEGICE
             </span>
-            <h1 className="font-serif text-4xl sm:text-6xl text-[#F5F4EF] leading-tight">
+            <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] leading-tight break-words">
               Orientare Strategică în Tranzacții Imobiliare Complexe
             </h1>
             <p className="font-sans text-base sm:text-lg text-[#B8C2CF] font-light leading-relaxed">
@@ -150,7 +150,7 @@ export default function VenturesPage() {
                 date="Rapoarte Anuale IMSEE"
                 source="Institut Monégasque de la Statistique (IMSEE)"
                 description="Observații privind evoluția pieței din Monaco fundamentate pe datele statistice oficiale publicate de autoritățile monégasce. Tratamentul fiscal individual necesită consultanță fiscală autorizată."
-                actionUrl="/raport-piata"
+                actionUrl="https://www.imsee.mc/Economie-et-Finances/Immobilier"
               />
 
               <InsightPanel
@@ -172,10 +172,7 @@ export default function VenturesPage() {
         {/* 04 // STANDARDE DE SELECTIE                              */}
         {/* ======================================================== */}
         <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-12">
-          <div className="p-10 sm:p-16 border border-white/[0.12] bg-[#0C1119] grid lg:grid-cols-12 gap-10 items-center shadow-2xl relative">
-            <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#93C8FF]" />
-            <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-[#93C8FF]" />
-
+          <div className="p-10 sm:p-16 rounded-3xl border border-white/[0.08] bg-[#0C1119] grid lg:grid-cols-12 gap-10 items-center shadow-2xl relative">
             <div className="lg:col-span-8 space-y-6">
               <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs uppercase tracking-[0.28em] text-[#93C8FF] font-semibold">
                 <Lock className="w-3.5 h-3.5" />
@@ -191,11 +188,11 @@ export default function VenturesPage() {
               </EditorialText>
 
               <div className="grid sm:grid-cols-2 gap-4 font-mono text-xs pt-4 border-t border-white/[0.08]">
-                <div className="p-5 bg-[#1B2028]/80 border border-white/[0.06] space-y-1.5">
+                <div className="p-5 rounded-2xl bg-[#1B2028]/80 border border-white/[0.06] space-y-1.5">
                   <span className="text-[#93C8FF] block text-[10px] uppercase font-semibold">CUM LUCREZ</span>
                   <span className="text-[#F5F4EF] font-sans">Etape structurate, mandat scris și remunerație transparentă</span>
                 </div>
-                <div className="p-5 bg-[#1B2028]/80 border border-white/[0.06] space-y-1.5">
+                <div className="p-5 rounded-2xl bg-[#1B2028]/80 border border-white/[0.06] space-y-1.5">
                   <span className="text-[#93C8FF] block text-[10px] uppercase font-semibold">CONFIDENȚIALITATE</span>
                   <span className="text-[#F5F4EF] font-sans">Protecție prin NDA bilateral la cererea părților</span>
                 </div>
@@ -205,9 +202,9 @@ export default function VenturesPage() {
             <div className="lg:col-span-4 flex flex-col justify-center space-y-4 lg:pl-8 lg:border-l lg:border-white/[0.08]">
               <Link
                 href="/programare"
-                className="w-full py-4 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.22em] font-bold text-center transition-all shadow-xl"
+                className="btn-apple-pill-primary w-full shadow-xl"
               >
-                SOLICITĂ O DISCUȚIE (20 MIN)
+                <span>SOLICITĂ O DISCUȚIE (20 MIN)</span>
               </Link>
               <div className="font-mono text-[10px] text-[#8A95A5] uppercase text-center tracking-wider">
                 OPȚIUNE DE SCHIMB NDA ÎN PREALABIL

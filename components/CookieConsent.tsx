@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useSyncExternalStore, useCallback } from "react";
 import Link from "next/link";
+import { useTranslation } from "@/app/context/LocaleContext";
 
 interface CookiePreferences {
   necessary: boolean;
@@ -22,6 +23,7 @@ const defaultPreferences: CookiePreferences = {
 const emptySubscribe = () => () => {};
 
 export default function CookieConsent() {
+  const { t } = useTranslation();
   const isHydrated = useSyncExternalStore(
     emptySubscribe,
     () => true,
@@ -119,9 +121,9 @@ export default function CookieConsent() {
             </div>
             
             <p className="font-sans text-[11px] sm:text-xs text-text-secondary/90 font-light leading-relaxed">
-              We use strictly necessary technical storage to ensure security and functionality. Read our{" "}
+              {t.cookies.desc}{" "}
               <Link href="/cookies" prefetch={false} className="text-accent underline hover:text-text-primary">
-                Cookie Policy
+                {t.cookies.policy}
               </Link>.
             </p>
 
@@ -131,14 +133,14 @@ export default function CookieConsent() {
                 onClick={handleAcceptAll}
                 className="flex-1 py-2 px-3 bg-accent text-background font-mono text-[10px] font-semibold uppercase tracking-wider hover:bg-accent/90 transition-quick text-center min-h-[36px]"
               >
-                Accept All
+                {t.cookies.accept}
               </button>
               <button
                 type="button"
                 onClick={handleRejectNonEssential}
                 className="flex-1 py-2 px-3 border border-white/15 bg-background/50 text-text-primary font-mono text-[10px] uppercase tracking-wider hover:border-accent hover:text-accent transition-quick text-center min-h-[36px]"
               >
-                Reject Non-Essential
+                {t.cookies.decline}
               </button>
             </div>
           </div>

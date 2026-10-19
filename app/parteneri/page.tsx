@@ -21,13 +21,13 @@ export const metadata: Metadata = {
   description:
     "Relațiile profesionale confirmate ale lui Cristian Văduva: partener asociat în rețeaua internațională Chestertons Global și partener autorizat Generali România pentru asigurarea activelor de mare valoare.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/parteneri",
+    canonical: "https://cristianvaduva.com/parteneri",
   },
   openGraph: {
     title: "Parteneriate & Afilieri Profesionale | Cristian Văduva",
     description:
       "Afilieri factuale cu Chestertons Global Network și Generali România, completate de colaborări cu experți independenți acreditați.",
-    url: "https://executive.cristianvaduva.com/parteneri",
+    url: "https://cristianvaduva.com/parteneri",
     type: "website",
   },
 };
@@ -46,7 +46,7 @@ export default function ParteneriPage() {
           {/* HERO SECTION */}
           <section className="border-b border-white/[0.08] pb-16 lg:pb-24">
             <div className="max-w-4xl space-y-6 sm:space-y-8">
-              <div className="inline-flex items-center gap-2.5 px-3.5 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase">
+              <div className="inline-flex items-center gap-2.5 px-3.5 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase rounded-full">
                 <Globe className="w-3.5 h-3.5 text-[#93C8FF]" />
                 <span>AFILIERI & COORDONARE DE SPECIALITATE</span>
               </div>
@@ -62,7 +62,7 @@ export default function ParteneriPage() {
               <div className="flex flex-wrap items-center gap-4 pt-4">
                 <Link
                   href="/programare"
-                  className="inline-flex items-center gap-2 px-7 py-4 bg-[#93C8FF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold hover:bg-white transition-all shadow-xl shadow-[#93C8FF]/20 min-h-[48px]"
+                  className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[48px]"
                 >
                   <span>SOLICITĂ DISCUȚIE DE 20 MINUTE</span>
                   <ArrowRight className="w-4 h-4" />
@@ -70,7 +70,7 @@ export default function ParteneriPage() {
 
                 <Link
                   href="/pentru-clienti"
-                  className="inline-flex items-center gap-2 px-7 py-4 border border-white/[0.15] bg-[#0C1119] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] hover:border-[#93C8FF] transition-colors min-h-[48px]"
+                  className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
                 >
                   <span>PENTRU CLIENȚI PRIVATAȚI</span>
                 </Link>
@@ -212,9 +212,9 @@ export default function ParteneriPage() {
                 <div className="w-10 h-10 rounded-none bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-[#93C8FF]">
                   <Building2 className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Ingineri MLPAT</h3>
+                <h3 className="font-serif text-xl text-[#F5F4EF]">Experți Tehnici Atestați în Construcții</h3>
                 <p className="leading-relaxed">
-                  Ingineri structuriști și diriginți de șantier autorizați pentru inspectarea rezistenței, instalațiilor și calității execuției.
+                  Ingineri structuriști atestați și diriginți de șantier autorizați pentru inspectarea rezistenței, instalațiilor și calității execuției.
                 </p>
                 <div className="pt-2 font-mono text-[10px] text-[#A97F60] uppercase tracking-wider">
                   STRUCTURĂ & INSTALAȚII

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Terms of Use — Cristian Văduva",
   description: "Terms and conditions governing the access and usage of Cristian Văduva and AiX Media digital platforms.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/terms-of-use",
+    canonical: "https://cristianvaduva.com/terms-of-use",
   },
 };
 
@@ -26,7 +26,7 @@ export default function TermsOfUsePage() {
             <h2 className="font-display text-2xl text-text-primary">1. Agreement to Terms</h2>
           </div>
           <p className="text-sm">
-            By accessing or browsing this website (<span className="text-text-primary font-mono">executive.cristianvaduva.com</span>), you acknowledge that you have read, understood, and agreed to be bound by these Terms of Use, our{" "}
+            By accessing or browsing this website (<span className="text-text-primary font-mono">cristianvaduva.com</span>), you acknowledge that you have read, understood, and agreed to be bound by these Terms of Use, our{" "}
             <Link href="/privacy" className="text-accent underline">
               Privacy Policy
             </Link>

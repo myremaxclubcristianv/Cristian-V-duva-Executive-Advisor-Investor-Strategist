@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Real Estate Intelligence Dispatches — Cristian Văduva",
   description: "Live real estate news, regulatory updates, and commercial dispatches curated by the Executive Intelligence Desk.",
+  alternates: {
+    canonical: "https://cristianvaduva.com/real-estate/news",
+  },
 };
 
 export default async function NewsPage() {

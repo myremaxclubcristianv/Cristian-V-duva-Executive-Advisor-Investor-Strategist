@@ -29,19 +29,19 @@ export default function EcosystemPage() {
 
           <div className="site-container space-y-12 sm:space-y-16 relative z-10">
             {/* Metadata Bar */}
-            <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 font-mono text-[10px] sm:text-xs uppercase tracking-[0.28em] text-[#93C8FF]">
-              <div className="flex items-center gap-3">
-                <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse" />
+            <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 font-mono text-[10px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.28em] text-[#93C8FF]">
+              <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+                <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse shrink-0" />
                 <span>01 // DIGITAL & OPERATIONAL INFRASTRUCTURE</span>
-                <span className="text-white/20">/</span>
-                <span className="text-[#B8C2CF]">PRIVATE ECOSYSTEM</span>
+                <span className="text-white/20 hidden xs:inline">/</span>
+                <span className="text-[#B8C2CF] hidden xs:inline">PRIVATE ECOSYSTEM</span>
               </div>
               <span className="text-[#8A95A5] hidden sm:block">BUCHAREST · MONACO · DUBAI</span>
             </div>
 
             {/* Dominant Title & Subtitle */}
             <div className="max-w-4xl space-y-8">
-              <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#F5F4EF] leading-[1.02] tracking-tight">
+              <h1 className="font-serif text-3xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#F5F4EF] leading-[1.02] tracking-tight break-words">
                 Architecture of an<br />
                 <span className="text-[#A97F60] italic font-normal">Integrated Ecosystem.</span>
               </h1>
@@ -52,19 +52,19 @@ export default function EcosystemPage() {
 
               {/* Ecosystem Quick Matrix */}
               <div className="pt-6 grid grid-cols-2 md:grid-cols-4 gap-4 font-mono text-xs">
-                <div className="p-5 bg-[#0C1119] border border-white/[0.08] space-y-1.5">
+                <div className="p-5 rounded-2xl bg-[#0C1119] border border-white/[0.08] space-y-1.5 shadow-lg">
                   <span className="text-[#93C8FF] block text-[10px] uppercase tracking-wider font-semibold">NEURAL AI ENGINE</span>
                   <span className="text-[#F5F4EF] font-medium font-sans text-sm">AiX OS™</span>
                 </div>
-                <div className="p-5 bg-[#0C1119] border border-white/[0.08] space-y-1.5">
+                <div className="p-5 rounded-2xl bg-[#0C1119] border border-white/[0.08] space-y-1.5 shadow-lg">
                   <span className="text-[#93C8FF] block text-[10px] uppercase tracking-wider font-semibold">VERIFIED MARKETPLACE</span>
                   <span className="text-[#F5F4EF] font-medium font-sans text-sm">HomeFind</span>
                 </div>
-                <div className="p-5 bg-[#0C1119] border border-white/[0.08] space-y-1.5">
+                <div className="p-5 rounded-2xl bg-[#0C1119] border border-white/[0.08] space-y-1.5 shadow-lg">
                   <span className="text-[#93C8FF] block text-[10px] uppercase tracking-wider font-semibold">ULTRA-PRIME AXIS</span>
                   <span className="text-[#F5F4EF] font-medium font-sans text-sm">AiXLuxury.com</span>
                 </div>
-                <div className="p-5 bg-[#0C1119] border border-white/[0.08] space-y-1.5">
+                <div className="p-5 rounded-2xl bg-[#0C1119] border border-white/[0.08] space-y-1.5 shadow-lg">
                   <span className="text-[#93C8FF] block text-[10px] uppercase tracking-wider font-semibold">ASSET PROTECTION</span>
                   <span className="text-[#F5F4EF] font-medium font-sans text-sm">Insurance Advisory</span>
                 </div>
@@ -74,7 +74,7 @@ export default function EcosystemPage() {
         </section>
 
         {/* ======================================================== */}
-        {/* 02 // DETAILED PLATFORMS CATALOG (AIRY MONOLITHIC ROWS)   */}
+        {/* 02 // DETAILED PLATFORMS CATALOG (APPLE BENTO ROWS)      */}
         {/* ======================================================== */}
         <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-16 sm:space-y-24">
           <SectionHeader
@@ -84,18 +84,18 @@ export default function EcosystemPage() {
             description="Each platform within the ecosystem addresses a decisive node in the lifecycle of prime real estate capital: predictive discovery, contractual qualification, cross-border placement, and wealth conservation."
           />
 
-          <div className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
+          <div className="space-y-8">
             {ecosystemPlatforms.map((platform, idx) => (
               <div
                 key={platform.id}
-                className="py-16 sm:py-24 grid lg:grid-cols-12 gap-8 lg:gap-12 items-start hover:bg-[#0C1119]/40 transition-colors duration-300 px-4 sm:px-6"
+                className="p-8 sm:p-12 lg:p-16 rounded-3xl border border-white/[0.08] bg-[#0C1119] grid lg:grid-cols-12 gap-8 lg:gap-12 items-start hover:border-white/[0.22] hover:bg-[#101622] transition-all duration-300 shadow-2xl"
               >
                 {/* Index & Badge */}
                 <div className="lg:col-span-2 space-y-2">
                   <span className="font-serif text-4xl sm:text-5xl text-[#647082]/60 font-light block">
                     0{idx + 1}
                   </span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#93C8FF] font-semibold block">
+                  <span className="px-3 py-1 rounded-full bg-[#93C8FF]/10 border border-[#93C8FF]/20 font-mono text-[9px] uppercase tracking-[0.2em] text-[#93C8FF] font-semibold inline-block">
                     {platform.badge}
                   </span>
                 </div>
@@ -131,7 +131,7 @@ export default function EcosystemPage() {
                   </div>
 
                   {/* Synergy Context */}
-                  <div className="p-5 bg-[#1B2028]/70 border border-white/[0.06] text-xs font-mono space-y-1.5">
+                  <div className="p-5 rounded-2xl bg-[#1B2028]/70 border border-white/[0.06] text-xs font-mono space-y-1.5">
                     <span className="text-[#A97F60] uppercase tracking-wider block text-[10px] font-semibold">
                       ROLE IN THE EXECUTIVE MANDATE:
                     </span>
@@ -160,13 +160,13 @@ export default function EcosystemPage() {
                       href={platform.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-6 py-4 border border-white/[0.14] hover:border-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 group shadow-xl"
+                      className="btn-apple-pill-primary w-full text-center"
                     >
                       <span>ACCESS PLATFORM</span>
-                      <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      <ArrowUpRight className="w-4 h-4" />
                     </a>
                   ) : (
-                    <div className="px-6 py-3.5 border border-white/[0.08] bg-white/[0.02] font-mono text-[11px] uppercase tracking-wider text-[#8A95A5] text-center">
+                    <div className="px-6 py-3 rounded-full border border-white/[0.08] bg-white/[0.02] font-mono text-[11px] uppercase tracking-wider text-[#8A95A5] text-center">
                       INTERNAL PRIVATE PROTOCOL
                     </div>
                   )}
@@ -191,7 +191,7 @@ export default function EcosystemPage() {
                   href={insuranceOverview.externalPortalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3.5 bg-[#93C8FF] hover:bg-[#B8C2CF] text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all inline-flex items-center gap-2 shadow-xl"
+                  className="btn-apple-pill-primary"
                 >
                   <span>DEDICATED INSURANCE PORTAL</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -200,7 +200,7 @@ export default function EcosystemPage() {
             />
 
             {/* General Information Banner */}
-            <div className="p-6 sm:p-8 bg-[#1B2028]/80 border border-white/[0.08] flex flex-col md:flex-row md:items-center justify-between gap-6 font-mono text-xs">
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#121721] border border-white/[0.08] flex flex-col md:flex-row md:items-center justify-between gap-6 font-mono text-xs shadow-xl">
               <div className="space-y-1">
                 <span className="text-[#93C8FF] block text-[10px] uppercase tracking-wider font-semibold">
                   OFFICIAL ACCREDITATION & STRATEGIC ALLIANCE
@@ -219,7 +219,7 @@ export default function EcosystemPage() {
               {insuranceDivisions.map((division) => (
                 <div
                   key={division.id}
-                  className="p-8 sm:p-10 border border-white/[0.08] bg-[#07090D] hover:border-[#93C8FF]/50 transition-all duration-300 flex flex-col justify-between space-y-6 group"
+                  className="p-8 sm:p-10 rounded-2xl border border-white/[0.08] bg-[#07090D] hover:border-white/[0.22] hover:bg-[#0c1119] transition-all duration-300 flex flex-col justify-between space-y-6 group shadow-xl"
                 >
                   <div className="space-y-4">
                     <div className="flex items-center justify-between border-b border-white/[0.06] pb-3">

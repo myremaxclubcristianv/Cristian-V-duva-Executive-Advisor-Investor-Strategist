@@ -17,6 +17,12 @@
   --color-silver: #B8C2CF;
   --color-ice: #93C8FF;
 
+  /* Apple Light Canvas Palette */
+  --color-apple-light: #F5F5F7;
+  --color-apple-dark: #1D1D1F;
+  --color-apple-muted: #86868B;
+  --color-apple-subtle: #E8E8ED;
+
   --color-border-hairline: rgba(184, 194, 207, 0.08);
   --color-border-structural: rgba(184, 194, 207, 0.14);
   --color-border-ice: rgba(147, 200, 255, 0.35);
@@ -46,7 +52,6 @@
 }
 
 :root {
-  /* EXECUTIVE 2.0 / Sovereign Monograph Tokens */
   --midnight-ink: #07090D;
   --blue-black: #0C1119;
   --graphite: #1B2028;
@@ -62,6 +67,10 @@
   --ivory: #F5F4EF;
   --silver: #B8C2CF;
   --ice: #93C8FF;
+
+  --apple-light: #F5F5F7;
+  --apple-dark: #1D1D1F;
+  --apple-muted: #86868B;
 
   --border-hairline: rgba(184, 194, 207, 0.08);
   --border-structural: rgba(184, 194, 207, 0.14);
@@ -84,50 +93,50 @@
   --accent-copper: #A97F60;
 }
 
-* {
-  box-sizing: border-box;
-}
+/* ==========================================================================
+   TAILWIND CSS V4 BASE LAYER (Compliant with Rule 2 - No Unscoped Resets)
+   ========================================================================== */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
 
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-  background-color: #07090D;
-}
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    background-color: #07090D;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
 
-body {
-  background-color: #07090D;
-  color: #F5F4EF;
-  font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-}
+  body {
+    background-color: #07090D;
+    color: #F5F4EF;
+    font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
 
-h1, h2, h3, .font-display, .font-serif {
-  font-family: var(--font-cormorant), Georgia, serif;
-  letter-spacing: -0.02em;
-}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-cormorant), Georgia, serif;
+    letter-spacing: -0.02em;
+  }
 
-.font-sans {
-  font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
-}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-.font-mono {
-  font-family: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
 }
 
 /* ==========================================================================
-   REUSABLE EDITORIAL & ARCHITECTURAL LAYOUT UTILITIES
+   APPLE-LEVEL DESIGN SYSTEM & EDITORIAL UTILITIES
    ========================================================================== */
 
 /* Main Site Content Container */
@@ -165,17 +174,32 @@ button {
 .site-chapter {
   position: relative;
   width: 100%;
-  padding-top: clamp(4.5rem, 8vw, 8.5rem);
-  padding-bottom: clamp(4.5rem, 8vw, 8.5rem);
+  padding-top: clamp(5rem, 9vw, 9.5rem);
+  padding-bottom: clamp(5rem, 9vw, 9.5rem);
 }
 
-/* Border utilities */
-.border-fine {
-  border-color: rgba(242, 242, 238, 0.14);
+/* Apple Navigation Blur */
+.apple-nav-blur {
+  background-color: rgba(7, 9, 13, 0.82);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.border-subtle {
-  border-color: rgba(242, 242, 238, 0.08);
+/* Alternating Canvas Themes (Apple Contrast Discipline) */
+.apple-canvas-dark {
+  background-color: #07090D;
+  color: #F5F4EF;
+}
+
+.apple-canvas-light {
+  background-color: #F5F5F7;
+  color: #1D1D1F;
+}
+
+.apple-canvas-navy {
+  background-color: #0C1119;
+  color: #F5F4EF;
 }
 
 /* Typography treatments */
@@ -183,7 +207,7 @@ button {
   font-family: var(--font-cormorant), Georgia, serif;
   font-weight: 300;
   letter-spacing: -0.035em;
-  line-height: 0.92;
+  line-height: 0.94;
 }
 
 .font-editorial {
@@ -205,74 +229,92 @@ button {
   background-size: 24px 24px;
 }
 
-/* Sovereign Architectural Glass */
-.glass-architectural {
-  background: rgba(7, 9, 13, 0.88);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(169, 127, 96, 0.2);
+/* Apple-style Interactive Elements */
+.apple-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #93C8FF;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.glass-card {
-  background: rgba(12, 17, 25, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(184, 194, 207, 0.1);
+.apple-action-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-/* Sovereign Monograph Surface Variants */
-.surface-porcelain {
+.apple-action-link svg {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apple-action-link:hover svg {
+  transform: translateX(3px);
+}
+
+[dir="rtl"] .apple-action-link:hover svg {
+  transform: translateX(-3px);
+}
+
+/* Apple-style Pill Buttons */
+.btn-apple-pill-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
   background-color: #F5F4EF;
   color: #07090D;
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-.surface-porcelain h1,
-.surface-porcelain h2,
-.surface-porcelain h3 {
-  color: #07090D;
+.btn-apple-pill-primary:hover {
+  background-color: #FFFFFF;
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.surface-porcelain p {
-  color: #1B2028;
+.btn-apple-pill-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #F5F4EF;
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.surface-limestone {
-  background-color: #D8D0C2;
-  color: #0C1119;
-}
-
-.btn-solid-light {
-  background-color: #F5F4EF !important;
-  color: #07090D !important;
-}
-
-.btn-solid-light span,
-.btn-solid-light svg {
-  color: #07090D !important;
-}
-
-.light-beam-overlay {
-  background: radial-gradient(circle at 50% 0%, rgba(147, 200, 255, 0.08) 0%, rgba(184, 194, 207, 0.02) 40%, transparent 70%);
-}
-
-.edge-illuminate-blue {
-  box-shadow: 0 -1px 0 0 rgba(147, 200, 255, 0.4), 0 0 16px -2px rgba(147, 200, 255, 0.15);
+.btn-apple-pill-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: scale(1.02);
 }
 
 /* Header Spacer */
 .pt-executive-header {
-  padding-top: 104px;
+  padding-top: 64px;
 }
 
 @media (min-width: 640px) {
   .pt-executive-header {
-    padding-top: 120px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .pt-executive-header {
-    padding-top: 136px;
+    padding-top: 72px;
   }
 }
 
@@ -286,7 +328,7 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid #A97F60;
+  outline: 2px solid #93C8FF;
   outline-offset: 3px;
 }
 
@@ -297,4 +339,21 @@ button {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Arabic & RTL Language Styling */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: system-ui, -apple-system, 'Segoe UI', Tahoma, 'Noto Sans Arabic', 'Geeza Pro', Arial, sans-serif;
+}
+
+[dir="rtl"] .dropdown-panel {
+  left: auto !important;
+  right: 0 !important;
+}
+
+[dir="rtl"] .mobile-drawer {
+  right: auto !important;
+  left: 0 !important;
 }

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Notă Legală & Disclaimer — Cristian Văduva Executive",
   description: "Clarificări legale privind natura informațiilor editoriale, delimitarea serviciilor de consultanță personalizată și cadrul de remunerare.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/disclaimer",
+    canonical: "https://cristianvaduva.com/disclaimer",
   },
 };
 
@@ -32,7 +32,7 @@ export default function DisclaimerPage() {
           </h2>
           <div className="space-y-3 text-sm text-[#B8C2CF] leading-relaxed">
             <p>
-              Toate articolele, analizele de piață, materialele video, monografiile de proprietăți și datele orientative publicate pe <span className="font-mono text-[#F5F4EF]">executive.cristianvaduva.com</span> au un caracter pur informativ și editorial. Ele reflectă observații profesionale și analize la data redactării și nu reprezintă o ofertă fermă sau un angajament contractual general.
+              Toate articolele, analizele de piață, materialele video, monografiile de proprietăți și datele orientative publicate pe <span className="font-mono text-[#F5F4EF]">cristianvaduva.com</span> au un caracter pur informativ și editorial. Ele reflectă observații profesionale și analize la data redactării și nu reprezintă o ofertă fermă sau un angajament contractual general.
             </p>
             <p>
               Serviciile de consultanță personalizată (bespoke advisory) sunt oferite <strong className="text-[#F5F4EF] font-medium">exclusiv în baza unui contract scris și a unui mandat expres</strong> convenit bilateral cu fiecare client. Un serviciu personalizat nu ia naștere prin simpla navigare pe acest site sau prin trimiterea unui mesaj inițial, ci exclusiv după definirea obiectivelor, verificările necesare și semnarea acordului contractual.
@@ -88,7 +88,7 @@ export default function DisclaimerPage() {
             Modul de remunerare variază în funcție de tipul serviciului (mandat de căutare cumpărător, intermediere vânzare, consultanță imobiliară). Relația cu Generali România este exercitată în calitate de partener/agent de asigurare autorizat, iar eventuala remunerare derivă din comisioanele standard reglementate în asigurări. Relația cu Chestertons oferă acces la rețeaua internațională de proprietăți.
           </p>
           <p className="text-sm">
-            Toate detaliile privind eventualele comisioane, onorarii sau mecanisme de plată sunt prezentate detaliat pe pagina <Link href="/cum-lucrez" className="text-[#93C8FF] underline">Cum lucrez și cum este stabilită remunerația</Link> și sunt stipulate în contractul încheiat cu clientul.
+            Toate detaliile privind termenii comerciali, onorariile sau mecanismele de lucru sunt prezentate pe pagina <Link href="/cum-lucrez" className="text-[#93C8FF] underline">Cum lucrez: Etape, Analiză și Reprezentare</Link> și sunt stipulate în contractul bilateral încheiat cu clientul.
           </p>
         </section>
 

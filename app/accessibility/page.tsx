@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Accessibility Statement — Cristian Văduva",
   description: "Accessibility standards, assistive technology support, keyboard navigation, and inclusive design commitments on Cristian Văduva digital platforms.",
   alternates: {
-    canonical: "https://executive.cristianvaduva.com/accessibility",
+    canonical: "https://cristianvaduva.com/accessibility",
   },
 };
 
@@ -53,7 +53,7 @@ export default function AccessibilityPage() {
             <h2 className="font-display text-2xl text-text-primary">Universal Digital Access</h2>
           </div>
           <p className="text-sm">
-            We are dedicated to ensuring that digital content on <span className="font-mono text-text-primary">executive.cristianvaduva.com</span> is accessible to all individuals, including people with visual, auditory, motor, or cognitive disabilities, aligning with Web Content Accessibility Guidelines (WCAG 2.1 Level AA) best practices.
+            We are dedicated to ensuring that digital content on <span className="font-mono text-text-primary">cristianvaduva.com</span> is accessible to all individuals, including people with visual, auditory, motor, or cognitive disabilities, aligning with Web Content Accessibility Guidelines (WCAG 2.1 Level AA) best practices.
           </p>
         </section>
 

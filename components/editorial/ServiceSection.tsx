@@ -42,19 +42,19 @@ export default function ServiceSection({
         description={description}
       />
 
-      {/* Services Monolithic Rows */}
-      <div className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
+      {/* Services Bento Cards */}
+      <div className="space-y-8">
         {services.map((srv) => (
           <div
             key={srv.number}
-            className="py-14 sm:py-20 grid lg:grid-cols-12 gap-8 lg:gap-12 items-start hover:bg-[#0C1119]/50 transition-colors duration-300 px-4 sm:px-6"
+            className="p-8 sm:p-12 rounded-3xl border border-white/[0.08] bg-[#0C1119] grid lg:grid-cols-12 gap-8 lg:gap-12 items-start hover:border-white/[0.22] hover:bg-[#101622] transition-all duration-300 shadow-xl"
           >
             {/* Number Column */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 space-y-2">
               <span className="font-serif text-4xl sm:text-5xl text-[#647082]/60 font-light block">
                 {srv.number}
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#93C8FF] block mt-2 font-semibold">
+              <span className="px-3 py-1 rounded-full bg-[#93C8FF]/10 border border-[#93C8FF]/20 font-mono text-[9px] uppercase tracking-[0.2em] text-[#93C8FF] inline-block font-semibold">
                 {srv.category}
               </span>
             </div>
@@ -88,7 +88,7 @@ export default function ServiceSection({
 
             {/* Action Column */}
             <div className="lg:col-span-4 flex flex-col justify-between h-full space-y-6 lg:pl-8 lg:border-l lg:border-white/[0.06]">
-              <div className="p-4 bg-[#1B2028]/60 border border-white/[0.06] font-mono text-xs text-[#8A95A5] space-y-1">
+              <div className="p-4 rounded-2xl bg-[#1B2028]/60 border border-white/[0.06] font-mono text-xs text-[#8A95A5] space-y-1">
                 <span className="text-[#93C8FF] block text-[10px] uppercase tracking-widest font-semibold">
                   MANDATE STATUS
                 </span>
@@ -100,18 +100,18 @@ export default function ServiceSection({
                   href={srv.linkHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-4 border border-white/[0.14] hover:border-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 group shadow-lg"
+                  className="btn-apple-pill-primary w-full text-center"
                 >
                   <span>{srv.linkText}</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <ArrowUpRight className="w-4 h-4" />
                 </a>
               ) : (
                 <Link
                   href={srv.linkHref}
-                  className="px-6 py-4 border border-white/[0.14] hover:border-[#93C8FF] hover:bg-[#93C8FF] hover:text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-bold transition-all text-center flex items-center justify-center gap-2 group shadow-lg"
+                  className="btn-apple-pill-primary w-full text-center"
                 >
                   <span>{srv.linkText}</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <ArrowUpRight className="w-4 h-4" />
                 </Link>
               )}
             </div>
