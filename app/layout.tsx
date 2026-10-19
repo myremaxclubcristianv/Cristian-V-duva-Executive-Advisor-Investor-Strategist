@@ -113,27 +113,32 @@ const jsonLd = {
   ]
 };
 
+import { LocaleProvider } from './context/LocaleContext';
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${manrope.variable} ${cormorant.variable} ${jetbrainsMono.variable} h-full antialiased dark`}
-    >
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
-      <body className="min-h-full flex flex-col overflow-x-hidden bg-[#07090D] text-[#F5F4EF] font-sans selection:bg-[#A97F60]/20 selection:text-[#F5F4EF]">
-        {children}
-        <CookieConsent />
-        <VisitorIntelligenceProvider />
-      </body>
-    </html>
+    <LocaleProvider>
+      <html
+        lang="en"
+        dir="ltr"
+        className={`${manrope.variable} ${cormorant.variable} ${jetbrainsMono.variable} h-full antialiased dark`}
+      >
+        <head>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+        </head>
+        <body className="min-h-full flex flex-col overflow-x-hidden bg-[#07090D] text-[#F5F4EF] font-sans selection:bg-[#A97F60]/20 selection:text-[#F5F4EF]">
+          {children}
+          <CookieConsent />
+          <VisitorIntelligenceProvider />
+        </body>
+      </html>
+    </LocaleProvider>
   );
 }

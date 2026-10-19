@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   turbopack: { root: __dirname },
   devIndicators: false,
+
+
+
   images: {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 31536000,
