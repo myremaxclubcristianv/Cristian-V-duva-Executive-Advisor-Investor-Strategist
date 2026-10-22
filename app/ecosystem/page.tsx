@@ -8,9 +8,12 @@ import { insuranceDivisions, insuranceOverview } from "@/lib/insuranceData";
 import { SectionHeader, EditorialText, CTASection, InsightPanel } from "@/components/editorial";
 
 export const metadata: Metadata = {
-  title: "Integrated Ecosystem & Operating Architecture — Cristian Văduva",
+  title: "Ecosistem Integrat & Arhitectură Operațională — Cristian Văduva",
   description:
-    "The integrated matrix of real estate intelligence, verified marketplaces, ultra-luxury offshore access, and strategic wealth protection directed by Cristian Văduva.",
+    "Rețeaua integrată de servicii imobiliare, consultanță strategică, finanțare și protecție a patrimoniului coordonată de Cristian Văduva.",
+  alternates: {
+    canonical: "https://executive.cristianvaduva.com/ecosystem",
+  },
 };
 
 export default function EcosystemPage() {

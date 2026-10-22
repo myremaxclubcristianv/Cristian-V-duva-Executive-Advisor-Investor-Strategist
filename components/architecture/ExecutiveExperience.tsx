@@ -16,11 +16,11 @@ import SignatureClosing from "./SignatureClosing";
  * Carefully directed narrative sequence:
  * 01 // Navigation (ExecutiveHeader in app/page.tsx)
  * 02 // Hero: Monumental impact, authentic positioning & portrait (ArchitecturalHero)
- * 03 // Value Proposition: Light canvas editorial contrast & fiduciary mandate (EditorialInterruption & ClientBenefits)
+ * 03 // Value Proposition: Light canvas editorial contrast & dedicated advisory (EditorialInterruption & ClientBenefits)
  * 04 // Featured Ventures: Distinct Apple-style product bento & billboards (FeaturedVenturesShowcase)
- * 05 // Real Estate: Curated verified BUY & RENT properties from HomeFind (HomeFindPortfolio)
- * 06 // About & Credibility: Authentic professional trajectory & fiduciar posture (PersonalPerspectiveSection)
- * 07 // The Fiduciary Difference: Empirical comparison (RepresentationDifference)
+ * 05 // Real Estate: Curated BUY & RENT properties from HomeFind network (HomeFindPortfolio)
+ * 06 // About & Credibility: Authentic professional trajectory & rigorous posture (PersonalPerspectiveSection)
+ * 07 // The Representation Difference: Empirical comparison (RepresentationDifference)
  * 08 // Media & Insights: Official video broadcasts & research dispatches (MediaInsightsShowcase)
  * 09 // Final CTA & Footer: Confidential consultation prompt & Apple directory (SignatureClosing & Footer)
  */
@@ -51,7 +51,7 @@ export default function ExecutiveExperience() {
         <PersonalPerspectiveSection />
       </div>
 
-      {/* 07 // THE FIDUCIARY DIFFERENCE (EMPIRICAL COMPARISON) */}
+      {/* 07 // THE REPRESENTATION DIFFERENCE (EMPIRICAL COMPARISON) */}
       <RepresentationDifference />
 
       {/* 08 // MEDIA & INSIGHTS (YOUTUBE MASTERCLASSES & RESEARCH MEMORANDA) */}

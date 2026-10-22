@@ -1,8 +1,9 @@
 import { MetadataRoute } from "next";
 import { selectedProperties } from "@/lib/properties";
+import { getOriginalInsights } from "@/lib/insights";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://cristianvaduva.com";
+  const baseUrl = "https://executive.cristianvaduva.com";
 
   return [
     {
@@ -192,6 +193,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.85,
+    })),
+    // Dynamic Insights & Research Articles
+    ...getOriginalInsights().map((insight) => ({
+      url: `${baseUrl}/insights/${insight.slug}`,
+      lastModified: new Date(insight.publicationDate),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
     })),
   ];
 }

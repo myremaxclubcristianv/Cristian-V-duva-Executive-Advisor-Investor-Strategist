@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title: "Real Estate & Market Hub — Cristian Văduva | HomeFind & AiXLuxury",
   description: "Consultanță dedicată pentru achiziții rezidențiale de prestigiu, reprezentare unilaterală, verificare cadastrală structurată și proprietăți selectate în București și internațional.",
   alternates: {
-    canonical: "https://cristianvaduva.com/real-estate",
+    canonical: "https://executive.cristianvaduva.com/real-estate",
   },
 };
 
@@ -77,7 +77,7 @@ export default function RealEstateHubPage() {
                   Zero Dual-Agency Conflict
                 </h3>
                 <EditorialText size="sm" maxWidth="full" color="secondary" className="leading-relaxed">
-                  Traditional brokerages are incentivized by gross transactional velocity and dual commissions. We operate exclusively as retained fiduciaries for one principal, stress-testing every contract clause and protecting capital.
+                  Traditional brokerages are incentivized by gross transactional velocity and dual commissions. We operate exclusively as retained advisors for one principal, stress-testing every contract clause and protecting capital.
                 </EditorialText>
               </div>
 

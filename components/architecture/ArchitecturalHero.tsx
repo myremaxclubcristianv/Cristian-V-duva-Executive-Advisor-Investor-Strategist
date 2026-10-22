@@ -35,7 +35,7 @@ export default function ArchitecturalHero() {
             <div className="space-y-3">
               <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[4.75rem] text-[#F5F4EF] leading-[1.02] tracking-tight font-normal">
                 Investiții imobiliare. <br />
-                <span className="text-[#A97F60] italic font-light">Rigoare fiduciară.</span>
+                <span className="text-[#A97F60] italic font-light">Rigoare strategică.</span>
               </h1>
 
               <p className="font-sans text-base sm:text-lg lg:text-xl text-[#B8C2CF] font-light max-w-xl leading-relaxed pt-2">
@@ -111,15 +111,15 @@ export default function ArchitecturalHero() {
 
           <div className="space-y-1">
             <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">STANDARDE PROFESIONALE</span>
-            <span className="text-[#F5F4EF] font-sans text-sm block">Mandat Fiduciar Dedicat</span>
+            <span className="text-[#F5F4EF] font-sans text-sm block">Consultanță Privată Dedicată</span>
             <span className="text-[11px] text-[#647082] block">Acorduri Bilaterale NDA la Cerere</span>
           </div>
 
           <div className="space-y-1">
-            <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">PORTOFOLIU VERIFICAT</span>
+            <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">PORTOFOLIU SELECTAT</span>
             <span className="text-[#F5F4EF] font-sans text-sm block">Platforma HomeFind</span>
             <Link href="/real-estate/properties" className="text-[11px] text-[#93C8FF] hover:underline block font-sans">
-              15 active confirmate →
+              Explorează selecția de proprietăți →
             </Link>
           </div>
         </div>

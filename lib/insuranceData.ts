@@ -17,7 +17,7 @@ export interface InsurancePillar {
 }
 
 export const insuranceOverview = {
-  title: "Asset Sovereignty & Strategic Underwriting",
+  title: "Protecția Patrimoniului & Structurare de Risc",
   subtitle: "Authorized Asset Advisory · Generali România Partnership",
   corePhilosophy: "Acquiring high-value real estate or physical assets is only the initial milestone. Insulating balance sheets against catastrophic asymmetric risk is integral to generational family wealth governance.",
   externalPortalUrl: "https://insurance.cristianvaduva.com",

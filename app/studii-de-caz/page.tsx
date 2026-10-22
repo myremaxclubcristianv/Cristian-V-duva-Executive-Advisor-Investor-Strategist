@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   description:
     "Cadrul de analiză și structura metodologică aplicată în mandatele de consultanță imobiliară premium. Publicarea studiilor de caz reale respectă confidențialitatea strictă și acordul scris bilateral al clienților.",
   alternates: {
-    canonical: "https://cristianvaduva.com/studii-de-caz",
+    canonical: "https://executive.cristianvaduva.com/studii-de-caz",
   },
   openGraph: {
     title: "Studii de Caz & Cadru Metodologic | Cristian Văduva",
     description:
       "Anatomia unui mandat structurat de consultanță imobiliară privată și politica riguroasă de confidențialitate a clienților.",
-    url: "https://cristianvaduva.com/studii-de-caz",
+    url: "https://executive.cristianvaduva.com/studii-de-caz",
     type: "website",
   },
 };

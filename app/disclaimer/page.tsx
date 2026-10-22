@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Notă Legală & Disclaimer — Cristian Văduva Executive",
   description: "Clarificări legale privind natura informațiilor editoriale, delimitarea serviciilor de consultanță personalizată și cadrul de remunerare.",
   alternates: {
-    canonical: "https://cristianvaduva.com/disclaimer",
+    canonical: "https://executive.cristianvaduva.com/disclaimer",
   },
 };
 

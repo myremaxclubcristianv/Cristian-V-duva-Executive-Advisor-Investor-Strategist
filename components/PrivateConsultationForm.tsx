@@ -118,8 +118,19 @@ export default function PrivateConsultationForm() {
         </p>
       </div>
 
-      {/* Honeypot field */}
-      <div className="hidden" aria-hidden="true">
+      {/* Honeypot field (hidden from legitimate users, excluded from tab order and accessibility tree) */}
+      <div
+        style={{
+          position: "absolute",
+          left: "-9999px",
+          opacity: 0,
+          height: 0,
+          width: 0,
+          overflow: "hidden",
+          pointerEvents: "none",
+        }}
+        aria-hidden="true"
+      >
         <label htmlFor="website">Do not fill this field</label>
         <input
           type="text"
@@ -129,6 +140,7 @@ export default function PrivateConsultationForm() {
           onChange={(e) => setFormData({ ...formData, website: e.target.value })}
           tabIndex={-1}
           autoComplete="off"
+          aria-hidden="true"
         />
       </div>
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Accessibility Statement — Cristian Văduva",
   description: "Accessibility standards, assistive technology support, keyboard navigation, and inclusive design commitments on Cristian Văduva digital platforms.",
   alternates: {
-    canonical: "https://cristianvaduva.com/accessibility",
+    canonical: "https://executive.cristianvaduva.com/accessibility",
   },
 };
 

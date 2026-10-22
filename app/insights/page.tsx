@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Executive Journal & Market Dispatches — Cristian Văduva",
   description:
     "Original macroeconomic research, liquidity analytics, and strategic insights on European real estate cycles authored by Cristian Văduva.",
+  alternates: {
+    canonical: "https://executive.cristianvaduva.com/insights",
+  },
 };
 
 export default function InsightsPage() {
@@ -95,7 +98,9 @@ export default function InsightsPage() {
                   </div>
 
                   <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-[#F5F4EF] leading-snug group-hover:text-[#93C8FF] transition-colors">
-                    {item.title}
+                    <Link href={`/insights/${item.slug}`}>
+                      {item.title}
+                    </Link>
                   </h2>
 
                   <EditorialText size="sm" maxWidth="prose" color="secondary" className="leading-relaxed">
@@ -105,11 +110,11 @@ export default function InsightsPage() {
                   <div className="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-white/[0.06] font-mono text-xs">
                     <span className="text-[#8A95A5]">Author: {item.author}</span>
                     <Link
-                      href="/contact"
-                      className="btn-apple-pill-secondary"
+                      href={`/insights/${item.slug}`}
+                      className="btn-apple-pill-secondary inline-flex items-center gap-2"
                     >
-                      <span>REQUEST MEMORANDUM</span>
-                      <ArrowUpRight className="w-3.5 h-3.5" />
+                      <span>CITEȘTE ANALIZA COMPLETĂ</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[#93C8FF]" />
                     </Link>
                   </div>
                 </div>

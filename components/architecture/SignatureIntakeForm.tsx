@@ -76,8 +76,8 @@ export default function SignatureIntakeForm() {
 
   return (
     <form onSubmit={handleFormSubmit} className="space-y-4">
-      {/* Honeypot field (hidden from legitimate users) */}
-      <div style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, width: 0, overflow: "hidden" }} aria-hidden="true">
+      {/* Honeypot field (hidden from legitimate users, excluded from tab order and accessibility tree) */}
+      <div style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, width: 0, overflow: "hidden", pointerEvents: "none" }} aria-hidden="true">
         <label htmlFor="signature-website-trap">Leave blank</label>
         <input
           id="signature-website-trap"
@@ -87,6 +87,7 @@ export default function SignatureIntakeForm() {
           onChange={(e) => setFormHoneypot(e.target.value)}
           tabIndex={-1}
           autoComplete="off"
+          aria-hidden="true"
         />
       </div>
 

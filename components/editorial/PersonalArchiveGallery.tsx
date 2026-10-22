@@ -285,7 +285,7 @@ export default function PersonalArchiveGallery({
                       REPREZENTARE & CONSULTANȚĂ IMOBILIARĂ
                     </span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed font-light">
-                      Consultanță dedicată pe bază de mandat fiduciar în tranzacții rezidențiale, identificare de oportunități de investiții și negociere strategică.
+                      Consultanță dedicată pe bază de mandat exclusiv în tranzacții rezidențiale, identificare de oportunități de investiții și negociere strategică.
                     </p>
                   </div>
                 </div>

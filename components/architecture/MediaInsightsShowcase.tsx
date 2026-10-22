@@ -158,7 +158,7 @@ export default function MediaInsightsShowcase() {
                   </div>
 
                   <h3 className="font-serif text-lg sm:text-xl text-[#F5F4EF] leading-snug group-hover:text-[#93C8FF] transition-colors">
-                    <Link href="/insights">
+                    <Link href={`/insights/${insight.slug}`}>
                       {insight.title}
                     </Link>
                   </h3>
@@ -169,7 +169,7 @@ export default function MediaInsightsShowcase() {
 
                   <div className="pt-2">
                     <Link
-                      href="/insights"
+                      href={`/insights/${insight.slug}`}
                       className="apple-action-link text-xs"
                     >
                       <span>Citește analiza completă</span>

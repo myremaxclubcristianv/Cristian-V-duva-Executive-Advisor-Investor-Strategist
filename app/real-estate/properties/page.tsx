@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Confirmed Property Portfolio & Acquisitions — Cristian Văduva",
   description: "Curated editorial selection of verified penthouses, private architectural estates, residential masterplans, and international trophy assets across Bucharest, Marbella, Monaco, Dubai, and Miami.",
   alternates: {
-    canonical: "https://cristianvaduva.com/real-estate/properties",
+    canonical: "https://executive.cristianvaduva.com/real-estate/properties",
   },
 };
 

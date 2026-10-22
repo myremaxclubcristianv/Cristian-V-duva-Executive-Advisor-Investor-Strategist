@@ -25,7 +25,7 @@ const ECOSYSTEM_PLATFORMS = [
     name: "AiX OS & Market Pulse",
     tagline: "Live Real Estate Surveillance & Yield Analytics",
     description: "Platformă de analiză în timp real a indicatorilor macroeconomici, prețuri per metru pătrat și randamente investiționale.",
-    url: "#",
+    url: "https://os.cristianvaduva.com",
     category: "MARKET INTELLIGENCE",
     icon: Database,
     badge: "PropTech OS",

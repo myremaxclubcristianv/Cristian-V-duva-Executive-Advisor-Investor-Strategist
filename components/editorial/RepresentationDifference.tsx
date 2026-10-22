@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, AlertTriangle, CheckCircle2, Calendar, FileSearch } from "lucide-react";
+import { AlertTriangle, CheckCircle2, Calendar, FileSearch } from "lucide-react";
 import { useLocale } from "@/app/context/LocaleContext";
 import { DIFFERENCE_TRANSLATIONS } from "@/lib/content/editorialTranslations";
 
@@ -70,9 +70,9 @@ export default function RepresentationDifference({
                 {/* Area Header */}
                 <div className="lg:col-span-3 space-y-1">
                   <span className="font-mono text-[10px] text-[#A97F60] uppercase tracking-[0.2em] font-semibold block">
-                    {item.area}
+                    {`${String(idx + 1).padStart(2, "0")} // CRITERIU`}
                   </span>
-                  <span className="font-serif text-lg text-[#F5F4EF] font-medium hidden lg:block">
+                  <span className="font-serif text-lg text-[#F5F4EF] font-medium block">
                     {item.area}
                   </span>
                 </div>
@@ -88,7 +88,7 @@ export default function RepresentationDifference({
                   </p>
                 </div>
 
-                {/* With Dedicated Representation (Fiduciary Mandate) */}
+                {/* With Dedicated Representation */}
                 <div className="lg:col-span-5 lg:border-l lg:border-white/[0.06] lg:pl-6 lg:bg-[#93C8FF]/[0.01] space-y-1.5">
                   <div className="flex items-center gap-2 lg:hidden font-mono text-[10px] text-[#93C8FF] uppercase tracking-wider font-semibold">
                     <CheckCircle2 className="w-3 h-3 text-[#93C8FF]" />

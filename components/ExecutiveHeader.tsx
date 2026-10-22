@@ -3,34 +3,24 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTranslation, useLocale, Locale } from "@/app/context/LocaleContext";
-import { Globe, ArrowUpRight, X, Menu } from "lucide-react";
-
-const languages: { code: Locale; label: string }[] = [
-  { code: "en", label: "EN" },
-  { code: "ro", label: "RO" },
-  { code: "fr", label: "FR" },
-  { code: "de", label: "DE" },
-  { code: "ar", label: "AR" },
-];
+import { useTranslation, useLocale } from "@/app/context/LocaleContext";
+import { ArrowUpRight, X, Menu } from "lucide-react";
 
 export default function ExecutiveHeader() {
   const pathname = usePathname();
   const { t } = useTranslation();
-  const { locale, setLocale } = useLocale();
-  const isRtl = locale === "ar";
+  const { locale } = useLocale();
 
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [langMenuOpen, setLangMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const headerRef = useRef<HTMLDivElement>(null);
 
   const navLinks = [
-    { label: t.nav.about || "About", href: "/about" },
-    { label: t.nav.ventures || "Ventures", href: "/ventures" },
-    { label: locale === "ro" ? "Ecosistem" : locale === "fr" ? "Écosystème" : locale === "de" ? "Ökosystem" : locale === "ar" ? "المنظومة" : "Ecosystem", href: "/ecosystem" },
+    { label: t.nav.about || "Despre", href: "/about" },
+    { label: t.nav.ventures || "Inițiative", href: "/ventures" },
+    { label: "Ecosistem", href: "/ecosystem" },
     { label: t.nav.media || "Media", href: "/media" },
-    { label: t.nav.insights || "Insights", href: "/insights" },
+    { label: t.nav.insights || "Analize & Perspective", href: "/insights" },
     { label: t.nav.contact || "Contact", href: "/contact" },
   ];
 
@@ -43,30 +33,17 @@ export default function ExecutiveHeader() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close menus on route change
+  // Close menu on route change
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setMobileOpen(false);
-    setLangMenuOpen(false);
   }, [pathname]);
-
-  // Click outside listener
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
-        setLangMenuOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   // Escape key handler
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setMobileOpen(false);
-        setLangMenuOpen(false);
       }
     };
     document.addEventListener("keydown", handleKeyDown);
@@ -115,7 +92,7 @@ export default function ExecutiveHeader() {
         <nav
           className="hidden md:flex items-center gap-7 lg:gap-9"
           role="navigation"
-          aria-label="Primary Navigation"
+          aria-label="Navigație Principală"
         >
           {navLinks.map((item) => {
             const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
@@ -135,50 +112,8 @@ export default function ExecutiveHeader() {
           })}
         </nav>
 
-        {/* Right Action Suite: Language Switcher & Subtle Pill CTA */}
+        {/* Right Action Suite: Subtle Pill CTA & Mobile Menu Button */}
         <div className="flex items-center gap-3">
-          
-          {/* Minimal Language Switcher */}
-          <div className="relative">
-            <button
-              type="button"
-              onClick={() => setLangMenuOpen((v) => !v)}
-              aria-expanded={langMenuOpen}
-              aria-label="Select Language"
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-mono text-[#B8C2CF] hover:text-[#F5F4EF] rounded-full border border-white/[0.08] hover:border-white/[0.2] transition-colors"
-            >
-              <Globe className="w-3 h-3 text-[#A97F60]" />
-              <span className="uppercase font-semibold">{locale}</span>
-            </button>
-
-            {langMenuOpen && (
-              <div
-                className={`absolute top-full mt-2 w-28 bg-[#0C1119] border border-white/[0.12] rounded-xl shadow-2xl p-1 z-50 backdrop-blur-xl ${
-                  isRtl ? "left-0" : "right-0"
-                }`}
-              >
-                {languages.map((l) => (
-                  <button
-                    key={l.code}
-                    type="button"
-                    onClick={() => {
-                      setLocale(l.code);
-                      setLangMenuOpen(false);
-                    }}
-                    className={`w-full text-left px-3 py-1.5 rounded-lg text-xs font-mono flex items-center justify-between transition-colors ${
-                      locale === l.code
-                        ? "bg-[#93C8FF]/10 text-[#93C8FF] font-semibold"
-                        : "text-[#B8C2CF] hover:bg-white/[0.06] hover:text-[#F5F4EF]"
-                    }`}
-                  >
-                    <span>{l.label}</span>
-                    {locale === l.code && <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
           {/* Apple-style Discreet Pill CTA */}
           <Link
             href="/programare"
@@ -193,7 +128,7 @@ export default function ExecutiveHeader() {
             type="button"
             onClick={() => setMobileOpen((v) => !v)}
             aria-expanded={mobileOpen}
-            aria-label="Toggle navigation drawer"
+            aria-label="Deschide meniul de navigare"
             className="md:hidden p-2 text-[#F5F4EF] hover:text-white transition-colors"
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -207,7 +142,7 @@ export default function ExecutiveHeader() {
           className="fixed inset-0 top-12 z-40 bg-[#07090D]/98 backdrop-blur-2xl md:hidden flex flex-col justify-between p-6 sm:p-10 animate-in fade-in duration-200 overflow-y-auto"
           role="dialog"
           aria-modal="true"
-          aria-label="Mobile Navigation Menu"
+          aria-label="Meniu Navigație Mobil"
         >
           <div className="space-y-6 pt-4">
             <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#A97F60] font-semibold block">
@@ -248,31 +183,8 @@ export default function ExecutiveHeader() {
             </div>
           </div>
 
-          {/* Drawer Footer with Coordinates & Language Selector */}
+          {/* Drawer Footer with Coordinates */}
           <div className="pt-8 border-t border-white/[0.08] space-y-4 font-mono text-xs text-[#86868B]">
-            <div className="flex items-center justify-between">
-              <span>LIMBĂ // LANGUAGE:</span>
-              <div className="flex items-center gap-2">
-                {languages.map((l) => (
-                  <button
-                    key={l.code}
-                    type="button"
-                    onClick={() => {
-                      setLocale(l.code);
-                      setMobileOpen(false);
-                    }}
-                    className={`px-2 py-1 rounded text-[11px] ${
-                      locale === l.code
-                        ? "bg-[#93C8FF] text-[#07090D] font-bold"
-                        : "text-[#B8C2CF] hover:text-white"
-                    }`}
-                  >
-                    {l.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
             <div className="text-[11px] text-[#647082] flex justify-between">
               <span>CRISTIAN VĂDUVA</span>
               <span>BUCUREȘTI · MONACO · DUBAI</span>

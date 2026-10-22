@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   description:
     "Consilier strategic și investitor în proprietăți rezidențiale de prestigiu. Sinteză academică verificată: 3 licențe, 3 masterate și experiențe internaționale la Madrid, Amiens și Malta.",
   alternates: {
-    canonical: "https://cristianvaduva.com/about",
+    canonical: "https://executive.cristianvaduva.com/about",
   },
 };
 
@@ -255,7 +255,7 @@ export default function AboutPage() {
                       Consultanță Imobiliară & Reprezentare Dedicată
                     </h2>
                     <p className="text-xs sm:text-sm text-[#B8C2CF] leading-relaxed font-light">
-                      Reprezentare fiduciară adaptată obiectivelor clientului — cumpărător, vânzător sau investitor. De la identificarea și analiza comparativă a activelor până la negociere strategică și coordonarea etapelor tranzacției, colaborarea este ghidată de claritate, rigoare analitică și protecția intereselor dumneavoastră.
+                      Reprezentare adaptată obiectivelor clientului — cumpărător, vânzător sau investitor. De la identificarea și analiza comparativă a activelor până la negociere strategică și coordonarea etapelor tranzacției, colaborarea este ghidată de claritate, rigoare analitică și protecția intereselor dumneavoastră.
                     </p>
                     <div className="pt-2">
                       <Link href="/cum-lucrez" className="text-xs font-mono text-[#93C8FF] hover:underline inline-flex items-center gap-1.5">

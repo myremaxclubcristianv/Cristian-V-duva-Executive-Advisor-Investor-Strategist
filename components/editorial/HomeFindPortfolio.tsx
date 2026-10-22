@@ -100,11 +100,11 @@ export default function HomeFindPortfolio({
           <div className="pt-2 border-t border-white/[0.06] grid grid-cols-2 gap-2 font-mono text-[10px] text-[#B8C2CF]">
             <div>
               <span className="text-[#86868B] block text-[9px] uppercase">{t.labelSurface}</span>
-              <span>{prop.surface}</span>
+              <span>{prop.surface && prop.surface.trim() !== "" ? prop.surface : (locale === "ro" ? "Nespecificat" : "Not specified")}</span>
             </div>
             <div>
               <span className="text-[#86868B] block text-[9px] uppercase">{t.labelRooms}</span>
-              <span>{prop.rooms}</span>
+              <span>{prop.rooms && prop.rooms.trim() !== "" ? prop.rooms : (locale === "ro" ? "Nespecificat" : "Not specified")}</span>
             </div>
           </div>
 

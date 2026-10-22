@@ -13,18 +13,18 @@ interface LocaleContextProps {
 const LocaleContext = createContext<LocaleContextProps | undefined>(undefined);
 
 export const LocaleProvider = ({ children }: { children: ReactNode }) => {
-  const [locale, setLocaleState] = useState<Locale>('en');
+  const [locale, setLocaleState] = useState<Locale>('ro');
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const urlParams = new URLSearchParams(window.location.search);
       const urlLocale = (urlParams.get('lang') || urlParams.get('locale')) as Locale | null;
       const stored = localStorage.getItem('locale') as Locale | null;
-      const target = (urlLocale && ['en', 'ro', 'fr', 'de', 'ar'].includes(urlLocale))
+      const target = (urlLocale && ['ro', 'en'].includes(urlLocale))
         ? urlLocale
-        : (stored && ['en', 'ro', 'fr', 'de', 'ar'].includes(stored))
+        : (stored && ['ro', 'en'].includes(stored))
           ? stored
-          : 'en';
+          : 'ro';
 
       if (target) {
         // eslint-disable-next-line react-hooks/set-state-in-effect

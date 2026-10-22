@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Consultanță strategică pentru decizii imobiliare complexe, orientare în selecția activelor și coordonarea colaborărilor profesionale alături de Cristian Văduva.",
   alternates: {
-    canonical: "https://cristianvaduva.com/ventures",
+    canonical: "https://executive.cristianvaduva.com/ventures",
   },
 };
 

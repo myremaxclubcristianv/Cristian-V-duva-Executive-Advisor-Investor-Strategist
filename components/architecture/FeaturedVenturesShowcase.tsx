@@ -22,11 +22,11 @@ export default function FeaturedVenturesShowcase() {
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.08]">
-            Platforme dedicate. <span className="text-[#A97F60] italic font-light">Un singur standard fiduciar.</span>
+            Platforme dedicate. <span className="text-[#A97F60] italic font-light">Un standard riguros de consultanță.</span>
           </h2>
 
           <p className="font-sans text-base sm:text-lg text-[#86868B] font-light leading-relaxed max-w-2xl">
-            Fiecare inițiativă este concepută pentru a rezolva o problemă structurală a pieței de lux — de la verificarea riguroasă a proprietăților la structurarea financiară și protecția patrimoniului.
+            Fiecare inițiativă este concepută pentru a rezolva o problemă structurală a pieței de lux — de la selecția riguroasă a proprietăților la structurarea financiară și protecția patrimoniului.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export default function FeaturedVenturesShowcase() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/media/cristian-vaduva/personal/cristian-vaduva-residence-curved-glass-terrace.png"
-              alt="HomeFind — Platforma Verificată de Proprietăți de Lux"
+              alt="HomeFind — Platformă Imobiliară de Prestigiu"
               fill
               sizes="100vw"
               className="object-cover object-center scale-[1.01] group-hover:scale-[1.03] transition-transform duration-1000 opacity-60"
@@ -49,7 +49,7 @@ export default function FeaturedVenturesShowcase() {
           <div className="relative z-10 max-w-2xl space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/[0.08] backdrop-blur-md border border-white/[0.12] font-mono text-[10px] uppercase tracking-[0.2em] text-[#93C8FF]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />
-              <span>PLATFORMĂ VERIFICATĂ DE LUX</span>
+              <span>OPORTUNITĂȚI IMOBILIARE SELECTATE</span>
             </div>
 
             <div className="space-y-3">
@@ -57,7 +57,7 @@ export default function FeaturedVenturesShowcase() {
                 HomeFind
               </h3>
               <p className="font-sans text-base sm:text-lg text-[#B8C2CF] font-light leading-relaxed">
-                Căutarea imobiliară de prestigiu, curățată de speculații. Anunțuri verificate independent, fotografii arhitecturale autentice și legături directe cu proprietari și cumpărători calificați.
+                Căutarea imobiliară de prestigiu, structurată transparent. Selecție atentă de proprietăți, fotografii arhitecturale autentice și prezentare orientată spre decizii informate.
               </p>
             </div>
 
@@ -112,10 +112,15 @@ export default function FeaturedVenturesShowcase() {
             </div>
 
             <div className="pt-2 relative z-10">
-              <Link href="/ventures" className="apple-action-link">
+              <a
+                href="https://credite.cristianvaduva.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="apple-action-link"
+              >
                 <span>Explorează serviciile financiare</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
             </div>
           </div>
 
@@ -145,10 +150,15 @@ export default function FeaturedVenturesShowcase() {
             </div>
 
             <div className="pt-2 relative z-10">
-              <Link href="/ecosystem" className="apple-action-link">
+              <a
+                href="https://insurance.cristianvaduva.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="apple-action-link"
+              >
                 <span>Vezi soluțiile de protecție</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
             </div>
           </div>
 
@@ -167,7 +177,7 @@ export default function FeaturedVenturesShowcase() {
                 Dubai & Monaco International
               </h4>
               <p className="font-sans text-sm sm:text-base text-[#86868B] font-light leading-relaxed">
-                Asistență fiduciară pentru tranzacții transfrontaliere în centre financiare globale: Dubai, Monaco, Marbella și Miami. Conexiune directă cu birourile locale din rețeaua internațională Chestertons.
+                Consultanță strategică pentru tranzacții transfrontaliere în centre financiare globale: Dubai, Monaco, Marbella și Miami. Conexiune directă cu birourile locale din rețeaua internațională Chestertons.
               </p>
             </div>
 
@@ -183,21 +193,26 @@ export default function FeaturedVenturesShowcase() {
             </div>
 
             <div className="pt-2 relative z-10">
-              <Link href="/parteneri" className="apple-action-link">
+              <a
+                href="https://dubai.cristianvaduva.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="apple-action-link"
+              >
                 <span>Descoperă rețeaua internațională</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
             </div>
           </div>
 
-          {/* Module 05: AiXLuxury & Construction Architecture (5 cols - Craft & Development) */}
+          {/* Module 05: Constructions Advisory (5 cols - Craft & Development) */}
           <div className="lg:col-span-5 rounded-3xl p-8 sm:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
             <div className="space-y-4 relative z-10">
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#93C8FF] font-semibold">
                 ARHITECTURĂ & DEZVOLTARE
               </div>
               <h4 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF] font-normal">
-                AiXLuxury & Construction
+                Constructions Advisory
               </h4>
               <p className="font-sans text-sm sm:text-base text-[#86868B] font-light leading-relaxed">
                 Dezvoltare rezidențială contemporană, materiale durabile și management de proiect de precizie. Standarde constructive fără compromisuri pentru reședințe de colecție.
@@ -207,7 +222,7 @@ export default function FeaturedVenturesShowcase() {
             <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-white/[0.08] bg-[#07090D]">
               <Image
                 src="/media/cristian-vaduva/personal/cristian-vaduva-development-curved-balcony-armani.png"
-                alt="AiXLuxury — Construcții și dezvoltare de lux"
+                alt="Constructions Advisory — Construcții și dezvoltare de lux"
                 fill
                 sizes="(max-width: 1024px) 100vw, 42vw"
                 className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
@@ -217,12 +232,12 @@ export default function FeaturedVenturesShowcase() {
 
             <div className="pt-2 relative z-10">
               <a
-                href="https://aixluxury.com"
+                href="https://constructions.cristianvaduva.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="apple-action-link"
               >
-                <span>Accesează AiXLuxury.com</span>
+                <span>Accesează Constructions Advisory</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>

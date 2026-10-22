@@ -52,10 +52,10 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
           id: "homefind",
           name: "HomeFind",
           url: "https://homefind.cristianvaduva.com",
-          role: "Sovereign Property Matching & Verified Listing Ingestion",
+          role: "Sovereign Property Matching & Network Ingestion",
           category: "Real Estate",
           description:
-            "Proprietary real estate portal indexing verified Romanian and international properties with full cadastre, structural specifications, and direct buyer matching.",
+            "Proprietary real estate portal indexing selected Romanian and international properties with structural specifications and direct buyer matching.",
           icon: Building,
           tag: "PRIMARY INVENTORY",
         },
@@ -141,14 +141,25 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
       platforms: [
         {
           id: "aix-os",
-          name: "AiXLuxury OS",
-          url: "https://os.aixluxury.com",
+          name: "OS",
+          url: "https://os.cristianvaduva.com",
           role: "Digital Property Intelligence & Portfolio Operating Platform",
           category: "Technology & Intelligence",
           description:
             "Analytical software infrastructure managing property discovery data, transaction underwriting, and cross-border portfolio telemetry.",
           icon: Cpu,
           tag: "CORE SYSTEM",
+        },
+        {
+          id: "aether",
+          name: "Aether",
+          url: "https://aether.cristianvaduva.com",
+          role: "Digital Asset Security & Advanced Computing Architecture",
+          category: "Technology & Intelligence",
+          description:
+            "Cryptographic data sovereignty, archival asset preservation, and private infrastructure protocols.",
+          icon: Cpu,
+          tag: "DIGITAL ASSETS",
         },
         {
           id: "aix-media",
@@ -204,11 +215,11 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
         {
           id: "executive",
           name: "EXECUTIVE",
-          url: "https://cristianvaduva.com",
+          url: "https://executive.cristianvaduva.com",
           role: "Sovereign Real Estate & Private Investment Editorial",
           category: "Flagship Monograph",
           description:
-            "Platforma privată de consultanță executivă, portofoliu imobiliar selectat și reprezentare fiduciară dedicată.",
+            "Platforma privată de consultanță executivă, portofoliu imobiliar selectat și reprezentare dedicată.",
           icon: Sparkles,
           tag: "ACTIVE FLAGSHIP",
           isCurrent: true,

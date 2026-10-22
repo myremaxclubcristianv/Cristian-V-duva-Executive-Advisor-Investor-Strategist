@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   description:
     "Metodologie structurată de lucru, etapele colaborării, confidențialitatea NDA, due diligence cadastral și delimitarea responsabilităților profesionale în mandatele imobiliare.",
   alternates: {
-    canonical: "https://cristianvaduva.com/cum-lucrez",
+    canonical: "https://executive.cristianvaduva.com/cum-lucrez",
   },
   openGraph: {
     title: "Cum Lucrez: Etape, Analiză și Reprezentare | Cristian Văduva",
     description:
       "Claritate contractuală, etape de lucru, modele de mandat și delimitarea responsabilităților în consultanța imobiliară privată.",
-    url: "https://cristianvaduva.com/cum-lucrez",
+    url: "https://executive.cristianvaduva.com/cum-lucrez",
     type: "website",
   },
 };
@@ -170,7 +170,7 @@ export default function CumLucrezPage() {
               number="02"
               category="CADRU STRATEGIC"
               title="Reprezentare Adaptată: Cumpărători · Vânzători · Închiriere · Investitori"
-              description="Fiecare mandat este calibrat pe obiectivele specifice ale clientului, asigurând eliminarea oricărui conflict de interese și acționând fiduciar exclusiv în sprijinul părții reprezentate."
+              description="Fiecare mandat este calibrat pe obiectivele specifice ale clientului, asigurând eliminarea oricărui conflict de interese și acționând exclusiv în sprijinul părții reprezentate."
             />
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

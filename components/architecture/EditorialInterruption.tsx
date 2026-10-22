@@ -11,7 +11,7 @@ export default function EditorialInterruption() {
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-black/[0.08] pb-4 font-mono text-xs uppercase tracking-[0.24em] text-[#86868B]">
           <div className="flex items-center gap-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#1D1D1F]" />
-            <span className="font-semibold text-[#1D1D1F]">MANDATUL FIDUCIAR</span>
+            <span className="font-semibold text-[#1D1D1F]">CONSULTANȚA DEDICATĂ</span>
             <span className="text-black/20">/</span>
             <span>REPREZENTARE DEDICATĂ</span>
           </div>

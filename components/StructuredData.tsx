@@ -4,7 +4,7 @@ const structuredData = {
   "name": "Cristian Văduva",
   "jobTitle": "Executive Advisor · Investor · Strategist",
   "description": "Independent, mandate-based real estate advisory, property sourcing and transaction strategy across Romania and selected international markets.",
-  "url": "https://cristianvaduva.com",
+  "url": "https://executive.cristianvaduva.com",
   "email": "mailto:cristianvaduva@duck.com",
   "telephone": "+43 650 953 6345",
   "sameAs": [

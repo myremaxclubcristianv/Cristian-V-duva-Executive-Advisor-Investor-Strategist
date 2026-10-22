@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Terms of Use — Cristian Văduva",
   description: "Terms and conditions governing the access and usage of Cristian Văduva and AiX Media digital platforms.",
   alternates: {
-    canonical: "https://cristianvaduva.com/terms-of-use",
+    canonical: "https://executive.cristianvaduva.com/terms-of-use",
   },
 };
 

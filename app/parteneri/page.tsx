@@ -19,15 +19,15 @@ import ClosingFrame from "@/components/ui/ClosingFrame";
 export const metadata: Metadata = {
   title: "Parteneriate și Afilieri Instituționale | Executive Cristian Văduva",
   description:
-    "Relațiile profesionale confirmate ale lui Cristian Văduva: partener asociat în rețeaua internațională Chestertons Global și partener autorizat Generali România pentru asigurarea activelor de mare valoare.",
+    "Prezentare a afilierilor și colaborărilor profesionale din domeniile imobiliar și al asigurărilor.",
   alternates: {
-    canonical: "https://cristianvaduva.com/parteneri",
+    canonical: "https://executive.cristianvaduva.com/parteneri",
   },
   openGraph: {
     title: "Parteneriate & Afilieri Profesionale | Cristian Văduva",
     description:
-      "Afilieri factuale cu Chestertons Global Network și Generali România, completate de colaborări cu experți independenți acreditați.",
-    url: "https://cristianvaduva.com/parteneri",
+      "Informații despre rețeaua profesională și colaborările prezentate de Cristian Văduva.",
+    url: "https://executive.cristianvaduva.com/parteneri",
     type: "website",
   },
 };
@@ -52,7 +52,7 @@ export default function ParteneriPage() {
               </div>
 
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.08]">
-                Parteneriate și Relații Profesionale Confirmate
+                Parteneriate și Afilieri Profesionale
               </h1>
 
               <p className="font-sans text-base sm:text-lg text-[#B8C2CF] leading-relaxed font-light max-w-3xl">

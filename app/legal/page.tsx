@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Legal & Corporate Information — Cristian Văduva",
   description: "Institutional legal notice, operator identity, intellectual property, and regulatory transparency for Cristian Văduva and AiX Media platforms.",
   alternates: {
-    canonical: "https://cristianvaduva.com/legal",
+    canonical: "https://executive.cristianvaduva.com/legal",
   },
 };
 

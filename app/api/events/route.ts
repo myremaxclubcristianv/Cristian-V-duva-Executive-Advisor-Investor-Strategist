@@ -222,7 +222,7 @@ export async function POST(request: Request) {
       if (shouldSendCommercialAlert(session, "email_click")) {
         commercialSignalTriggered = true;
         commercialActionTitle = "Clic pe adresa de email oficială";
-        commercialInterpretation = "Utilizatorul pregătește o corespondență scrisă oficială pentru consultanță fiduciară.";
+        commercialInterpretation = "Utilizatorul pregătește o corespondență scrisă oficială pentru consultanță privată.";
       }
     }
     // Trigger 4: Form Started

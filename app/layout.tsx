@@ -37,28 +37,21 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Cristian Văduva — Executive Advisor · Investor · Strategist",
-  description: "Independent, mandate-based real estate advisory, property sourcing and transaction strategy across Romania and selected international markets.",
-  metadataBase: new URL("https://cristianvaduva.com"),
+  description: "Consultanță imobiliară strategică, selecție de active și structurare de tranzacții în România și piețe internaționale selectate.",
+  metadataBase: new URL("https://executive.cristianvaduva.com"),
   alternates: {
-    canonical: "https://cristianvaduva.com/",
-    languages: {
-      "en-US": "https://cristianvaduva.com/",
-      "ro-RO": "https://cristianvaduva.com/",
-      "fr-FR": "https://cristianvaduva.com/",
-      "de-DE": "https://cristianvaduva.com/",
-      "ar": "https://cristianvaduva.com/",
-    },
+    canonical: "https://executive.cristianvaduva.com/",
   },
   openGraph: {
     title: "Cristian Văduva — Executive Advisor · Investor · Strategist",
-    description: "Independent, mandate-based real estate advisory, property sourcing and transaction strategy across Romania and selected international markets.",
-    url: "https://cristianvaduva.com/",
-    siteName: "Cristian Văduva",
+    description: "Consultanță imobiliară strategică, selecție de active și structurare de tranzacții în România și piețe internaționale selectate.",
+    url: "https://executive.cristianvaduva.com/",
+    siteName: "Cristian Văduva — Executive",
     type: "website",
-    locale: "en_US",
+    locale: "ro_RO",
     images: [
       {
-        url: "/images/og-executive.jpg",
+        url: "https://executive.cristianvaduva.com/images/og-executive.jpg",
         width: 1200,
         height: 630,
         type: "image/jpeg",
@@ -69,8 +62,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Cristian Văduva — Executive Advisor · Investor · Strategist",
-    description: "Independent, mandate-based real estate advisory, property sourcing and transaction strategy across Romania and selected international markets.",
-    images: ["/images/og-executive.jpg"],
+    description: "Consultanță imobiliară strategică, selecție de active și structurare de tranzacții în România și piețe internaționale selectate.",
+    images: ["https://executive.cristianvaduva.com/images/og-executive.jpg"],
   },
   robots: {
     index: true,
@@ -90,12 +83,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://cristianvaduva.com/#person",
+      "@id": "https://executive.cristianvaduva.com/#person",
       "name": "Cristian Văduva",
       "jobTitle": "Executive Advisor · Investor · Strategist",
-      "description": "Independent, mandate-based real estate advisory, property sourcing and transaction strategy across Romania and selected international markets.",
-      "url": "https://cristianvaduva.com/",
-      "image": "https://cristianvaduva.com/media/cristian-vaduva/personal/cristian-vaduva-portrait-navy-suit.jpg",
+      "description": "Consultanță imobiliară strategică, selecție de active și structurare de tranzacții în România și piețe internaționale selectate.",
+      "url": "https://executive.cristianvaduva.com/",
+      "image": "https://executive.cristianvaduva.com/media/cristian-vaduva/personal/cristian-vaduva-portrait-navy-suit.jpg",
       "email": "mailto:cristianvaduva@duck.com",
       "telephone": "+43 650 953 6345",
       "sameAs": [
@@ -108,21 +101,21 @@ const jsonLd = {
         "https://instagram.com/cristian_vaduva_cristianv"
       ],
       "knowsAbout": [
-        "Real Estate Advisory",
-        "Property Sourcing",
-        "Transaction Strategy",
-        "Asset Protection",
-        "Strategic Investment Analysis"
+        "Consultanță Imobiliară Strategică",
+        "Selecție de Active",
+        "Structurare Tranzacții",
+        "Analiză de Investiții Strategice",
+        "Consultanță Privată"
       ]
     },
     {
       "@type": "WebSite",
-      "@id": "https://cristianvaduva.com/#website",
-      "url": "https://cristianvaduva.com/",
+      "@id": "https://executive.cristianvaduva.com/#website",
+      "url": "https://executive.cristianvaduva.com/",
       "name": "Cristian Văduva — Executive Advisory",
-      "description": "Executive Real Estate Advisory & Strategic Investment Architecture of Cristian Văduva",
+      "description": "Consultanță Imobiliară Strategică și Analiză de Investiții — Cristian Văduva",
       "publisher": {
-        "@id": "https://cristianvaduva.com/#person"
+        "@id": "https://executive.cristianvaduva.com/#person"
       }
     }
   ]
@@ -138,7 +131,7 @@ export default function RootLayout({
   return (
     <LocaleProvider>
       <html
-        lang="en"
+        lang="ro"
         dir="ltr"
         className={`${manrope.variable} ${cormorant.variable} ${jetbrainsMono.variable} h-full antialiased dark`}
       >

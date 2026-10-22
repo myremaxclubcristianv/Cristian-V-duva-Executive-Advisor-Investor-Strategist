@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Market Intelligence & Capital Analytics — Cristian Văduva",
   description: "Real-time European market intelligence, macroeconomic indicators, and institutional real estate capital analysis.",
+  alternates: {
+    canonical: "https://executive.cristianvaduva.com/real-estate/market",
+  },
 };
 
 export default function MarketPage() {

@@ -70,7 +70,7 @@ export const personalArchivePhotos: PersonalPhotoItem[] = [
     "localPath": "/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-standing.jpg",
     "category": "portraits",
     "categoryLabel": "Official Portraits",
-    "depictionStatus": "Cristian Văduva — Reprezentare strategică fiduciară",
+    "depictionStatus": "Cristian Văduva — Reprezentare strategică dedicată",
     "caption": "Portret Editorial — Reprezentare Investițională",
     "orientation": "landscape",
     "sourceUrl": "https://aixluxury.com/images/1200/9736456/SNY05672-Edit.jpg",

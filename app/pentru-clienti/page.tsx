@@ -21,13 +21,13 @@ export const metadata: Metadata = {
   description:
     "Servicii de consultanță strategică, reprezentare unilaterală dedicată și due diligence imobiliar pentru achiziția și vânzarea de proprietăți rezidențiale de prestigiu în București și internațional.",
   alternates: {
-    canonical: "https://cristianvaduva.com/pentru-clienti",
+    canonical: "https://executive.cristianvaduva.com/pentru-clienti",
   },
   openGraph: {
     title: "Consultanță Imobiliară Premium pentru Clienți Privați | Cristian Văduva",
     description:
       "Orientare strategică independentă pentru decizii de achiziție și vânzare imobiliară premium în București și internațional.",
-    url: "https://cristianvaduva.com/pentru-clienti",
+    url: "https://executive.cristianvaduva.com/pentru-clienti",
     type: "website",
   },
 };
