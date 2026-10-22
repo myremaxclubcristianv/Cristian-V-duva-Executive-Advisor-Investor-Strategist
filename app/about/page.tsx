@@ -210,11 +210,11 @@ export default function AboutPage() {
     <Section variant="dark" className="flex flex-col min-h-screen bg-[#07090D] text-[#F5F4EF] selection:bg-[#93C8FF]/25 selection:text-[#F5F4EF]">
       <ExecutiveHeader />
 
-      <main className="flex-1 pt-28 sm:pt-36 lg:pt-44">
+      <main className="flex-1 pt-28 sm:pt-36 lg:pt-44 w-full max-w-full overflow-hidden">
         {/* ======================================================== */}
         {/* 01 // EDITORIAL MONOGRAPH HERO                           */}
         {/* ======================================================== */}
-        <section className="relative overflow-hidden border-b border-white/[0.08] bg-arch-grid pb-24 sm:pb-32 lg:pb-36">
+        <section className="relative overflow-hidden w-full max-w-full border-b border-white/[0.08] bg-arch-grid pb-24 sm:pb-32 lg:pb-36">
           {/* Subtle Ambient Glow */}
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[#93C8FF]/[0.025] blur-[140px] pointer-events-none" />
 
@@ -222,7 +222,7 @@ export default function AboutPage() {
           <div className="absolute top-8 left-6 sm:left-12 lg:left-20 w-3 h-3 border-t border-l border-[#93C8FF]/60" />
           <div className="absolute top-8 right-6 sm:right-12 lg:right-20 w-3 h-3 border-t border-r border-[#93C8FF]/60" />
 
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-12 sm:space-y-16 relative z-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-20 space-y-12 sm:space-y-16 relative z-10 w-full min-w-0">
             {/* Top Eyebrow Index */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.08] pb-5 font-mono text-[10px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.28em] text-[#93C8FF]">
               <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
@@ -259,7 +259,7 @@ export default function AboutPage() {
                   </p>
 
                   {/* Professional Services Focus */}
-                  <div className="p-6 sm:p-8 rounded-2xl border border-white/[0.08] bg-[#0C1119] space-y-3">
+                  <div className="p-4 sm:p-6 lg:p-8 rounded-2xl border border-white/[0.08] bg-[#0C1119] space-y-3">
                     <h2 className="font-serif text-lg text-[#F5F4EF] font-medium">
                       Real Estate Advisory & Dedicated Representation
                     </h2>
@@ -267,9 +267,9 @@ export default function AboutPage() {
                       Representation tailored to the client&#39;s objectives — whether buyer, seller, or investor. From comparative asset analysis to strategic negotiation and transaction coordination, each mandate is governed by analytical rigor, clarity, and the defense of your interests.
                     </p>
                     <div className="pt-2">
-                      <Link href="/cum-lucrez" className="text-xs font-mono text-[#93C8FF] hover:underline inline-flex items-center gap-1.5">
+                      <Link href="/cum-lucrez" className="text-xs font-mono text-[#93C8FF] hover:underline underline-offset-2 flex flex-wrap items-center gap-1.5 break-words">
                         <span>Explore advisory methodology and collaboration phases</span>
-                        <ArrowUpRight className="w-3.5 h-3.5" />
+                        <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
                       </Link>
                     </div>
                   </div>

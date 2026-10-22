@@ -120,8 +120,9 @@ export async function POST(request: Request) {
 
     // 2. Telegram Alert for NEW sessions that have not received an alert
     let alertDispatched = false;
+    const isLocalOrTest = clientIp === "127.0.0.1" || clientIp === "::1" || clientIp === "unknown" || userAgent.includes("HeadlessChrome") || userAgent.includes("Playwright");
 
-    if (isNewSession && !alertSentCookie && shouldSendNewVisitorAlert(session)) {
+    if (!isLocalOrTest && isNewSession && !alertSentCookie && shouldSendNewVisitorAlert(session)) {
       const message = buildNewVisitorMessage(session, {
         id: `evt_init_${Date.now()}`,
         eventType: "SESSION_START",

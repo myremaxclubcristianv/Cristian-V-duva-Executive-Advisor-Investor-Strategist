@@ -27,7 +27,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.forbes.ro" },
       { protocol: "https", hostname: "**.vercel.app" }
     ],
-    unoptimized: true,
+    unoptimized: false,
   },
   async redirects() {
     return [

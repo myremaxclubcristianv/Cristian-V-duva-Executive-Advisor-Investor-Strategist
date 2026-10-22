@@ -31,7 +31,7 @@ export default function Footer() {
               Dedicated private advisory, capital structuring, and high-value residential acquisitions across Bucharest, Monaco, and Dubai.
             </p>
 
-            <div className="pt-2 flex items-center gap-2 text-[11px] font-mono text-[#647082]">
+            <div className="pt-2 flex items-center gap-2 text-[11px] font-mono text-[#8E9AA8]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />
               <span>Bucharest (Headquarters) · Vienna · Global Corridors</span>
             </div>
@@ -120,13 +120,13 @@ export default function Footer() {
             <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#A97F60] font-semibold block">
               DIRECT CHANNELS
             </span>
-            <ul className="space-y-2.5 font-sans text-xs">
+            <ul className="space-y-1.5 font-sans text-xs">
               <li>
                 <a
                   href="mailto:cristianvaduva@duck.com"
-                  className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-1.5"
+                  className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-2 py-1 min-h-[36px]"
                 >
-                  <Mail className="w-3 h-3 text-[#A97F60]" />
+                  <Mail className="w-3.5 h-3.5 text-[#A97F60]" />
                   <span>cristianvaduva@duck.com</span>
                 </a>
               </li>
@@ -135,9 +135,9 @@ export default function Footer() {
                   href="https://wa.me/436509536345"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-1.5"
+                  className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-2 py-1 min-h-[36px]"
                 >
-                  <Phone className="w-3 h-3 text-[#A97F60]" />
+                  <Phone className="w-3.5 h-3.5 text-[#A97F60]" />
                   <span>WhatsApp (+43 650 953 6345)</span>
                 </a>
               </li>
@@ -146,9 +146,9 @@ export default function Footer() {
                   href="https://t.me/CristianVaduva"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-1.5"
+                  className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-2 py-1 min-h-[36px]"
                 >
-                  <Send className="w-3 h-3 text-[#A97F60]" />
+                  <Send className="w-3.5 h-3.5 text-[#A97F60]" />
                   <span>Telegram / CristianVaduva</span>
                 </a>
               </li>
@@ -157,9 +157,9 @@ export default function Footer() {
                   href="https://linkedin.com/in/cristianvaduva"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-1.5"
+                  className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-2 py-1 min-h-[36px]"
                 >
-                  <LinkedinIcon className="w-3 h-3 text-[#A97F60]" />
+                  <LinkedinIcon className="w-3.5 h-3.5 text-[#A97F60]" />
                   <span>Official LinkedIn</span>
                 </a>
               </li>
@@ -168,9 +168,9 @@ export default function Footer() {
                   href="https://www.youtube.com/@CristianVaduvaCV"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-1.5"
+                  className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-2 py-1 min-h-[36px]"
                 >
-                  <YoutubeIcon className="w-3 h-3 text-[#A97F60]" />
+                  <YoutubeIcon className="w-3.5 h-3.5 text-[#A97F60]" />
                   <span>YouTube Broadcast</span>
                 </a>
               </li>
@@ -180,41 +180,41 @@ export default function Footer() {
         </div>
 
         {/* Bottom Colophon Bar (Apple Legal Line Standard) */}
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-2 font-mono text-[10px] text-[#86868B]">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-2 font-mono text-[10px] text-[#8E9AA8]">
           <div>
             Copyright © {currentYear} Cristian Văduva. All rights reserved.
           </div>
 
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[#647082]">
-            <Link href="/privacy" className="hover:text-[#B8C2CF] transition-colors">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[#8E9AA8]">
+            <Link href="/privacy" className="hover:text-[#F5F4EF] transition-colors py-1">
               Privacy Policy
             </Link>
             <span>·</span>
-            <Link href="/terms-of-use" className="hover:text-[#B8C2CF] transition-colors">
+            <Link href="/terms-of-use" className="hover:text-[#F5F4EF] transition-colors py-1">
               Terms of Use
             </Link>
             <span>·</span>
-            <Link href="/cookies" className="hover:text-[#B8C2CF] transition-colors">
+            <Link href="/cookies" className="hover:text-[#F5F4EF] transition-colors py-1">
               Cookie Policy
             </Link>
             <span>·</span>
-            <Link href="/gdpr" className="hover:text-[#B8C2CF] transition-colors">
+            <Link href="/gdpr" className="hover:text-[#F5F4EF] transition-colors py-1">
               GDPR
             </Link>
             <span>·</span>
-            <Link href="/editorial-policy" className="hover:text-[#B8C2CF] transition-colors">
+            <Link href="/editorial-policy" className="hover:text-[#F5F4EF] transition-colors py-1">
               Editorial Policy
             </Link>
             <span>·</span>
-            <Link href="/data-provenance" className="hover:text-[#B8C2CF] transition-colors">
+            <Link href="/data-provenance" className="hover:text-[#F5F4EF] transition-colors py-1">
               Data Provenance
             </Link>
             <span>·</span>
-            <Link href="/disclaimer" className="hover:text-[#B8C2CF] transition-colors">
+            <Link href="/disclaimer" className="hover:text-[#F5F4EF] transition-colors py-1">
               Disclaimer
             </Link>
             <span>·</span>
-            <Link href="/login" className="hover:text-[#93C8FF] transition-colors inline-flex items-center gap-1">
+            <Link href="/login" className="hover:text-[#93C8FF] transition-colors inline-flex items-center gap-1 py-1">
               <Lock className="w-2.5 h-2.5" />
               <span>Principal Portal</span>
             </Link>

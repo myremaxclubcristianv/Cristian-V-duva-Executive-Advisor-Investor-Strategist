@@ -34,7 +34,7 @@ export default function EditorialText({
   const colorClasses = {
     primary: "text-[#F5F4EF]",
     secondary: "text-[#B8C2CF]",
-    muted: "text-[#647082]",
+    muted: "text-[#8E9AA8]",
     porcelain: "text-[#F5F4EF]",
     limestone: "text-[#D8D0C2]",
   };

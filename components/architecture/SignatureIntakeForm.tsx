@@ -183,7 +183,7 @@ export default function SignatureIntakeForm() {
         />
         <label htmlFor="signature-gdpr-consent" className="text-[11px] text-[#B8C2CF] leading-relaxed cursor-pointer">
           I consent to the processing of submitted details to receive a direct response, in accordance with the{" "}
-          <Link href="/privacy" className="text-[#93C8FF] hover:underline" target="_blank">
+          <Link href="/privacy" className="text-[#93C8FF] underline underline-offset-2 hover:text-white" target="_blank">
             Privacy Policy
           </Link>.
         </label>

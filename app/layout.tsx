@@ -9,7 +9,6 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "600"],
-  adjustFontFallback: false,
 });
 
 const manrope = Manrope({
@@ -17,7 +16,6 @@ const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600"],
-  adjustFontFallback: false,
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -25,7 +23,6 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   display: "swap",
   weight: ["400"],
-  adjustFontFallback: false,
 });
 
 export const viewport: Viewport = {

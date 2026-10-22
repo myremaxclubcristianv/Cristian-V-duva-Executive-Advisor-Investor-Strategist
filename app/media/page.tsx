@@ -33,11 +33,11 @@ export default function MediaPage() {
             </p>
 
             {/* Tab Navigation - Apple Segmented Control */}
-            <div className="pt-6">
-              <div className="inline-flex p-1.5 rounded-full border border-white/[0.08] bg-[#07090D]/90 backdrop-blur-xl shadow-xl gap-1 overflow-x-auto no-scrollbar">
+            <div className="pt-6 max-w-full">
+              <div className="inline-flex max-w-full p-1.5 rounded-full border border-white/[0.08] bg-[#07090D]/90 backdrop-blur-xl shadow-xl gap-1 overflow-x-auto no-scrollbar">
                 <button
                   onClick={() => setActiveTab("all")}
-                  className={`px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
+                  className={`shrink-0 px-4 sm:px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
                     activeTab === "all"
                       ? "bg-[#93C8FF] text-[#07090D] font-bold shadow-md shadow-[#93C8FF]/20"
                       : "text-[#B8C2CF] hover:text-[#F5F4EF] hover:bg-white/[0.05]"
@@ -47,7 +47,7 @@ export default function MediaPage() {
                 </button>
                 <button
                   onClick={() => setActiveTab("videos")}
-                  className={`px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
+                  className={`shrink-0 px-4 sm:px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
                     activeTab === "videos"
                       ? "bg-[#93C8FF] text-[#07090D] font-bold shadow-md shadow-[#93C8FF]/20"
                       : "text-[#B8C2CF] hover:text-[#F5F4EF] hover:bg-white/[0.05]"
@@ -57,7 +57,7 @@ export default function MediaPage() {
                 </button>
                 <button
                   onClick={() => setActiveTab("shorts")}
-                  className={`px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
+                  className={`shrink-0 px-4 sm:px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
                     activeTab === "shorts"
                       ? "bg-[#93C8FF] text-[#07090D] font-bold shadow-md shadow-[#93C8FF]/20"
                       : "text-[#B8C2CF] hover:text-[#F5F4EF] hover:bg-white/[0.05]"
@@ -67,7 +67,7 @@ export default function MediaPage() {
                 </button>
                 <button
                   onClick={() => setActiveTab("photos")}
-                  className={`px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
+                  className={`shrink-0 px-4 sm:px-5 py-2 rounded-full font-mono text-xs uppercase tracking-wider transition-all cursor-pointer ${
                     activeTab === "photos"
                       ? "bg-[#93C8FF] text-[#07090D] font-bold shadow-md shadow-[#93C8FF]/20"
                       : "text-[#B8C2CF] hover:text-[#F5F4EF] hover:bg-white/[0.05]"

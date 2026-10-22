@@ -55,8 +55,8 @@ export default function InsightPanel({
 
         {/* Metric Callout if present */}
         {metric && (
-          <div className="flex items-baseline gap-3 py-2 border-y border-white/[0.06]">
-            <span className="font-mono text-2xl sm:text-3xl text-[#93C8FF] font-bold">
+          <div className="flex flex-wrap items-baseline gap-2 sm:gap-3 py-2 border-y border-white/[0.06]">
+            <span className="font-mono text-xl sm:text-2xl lg:text-3xl text-[#93C8FF] font-bold break-words">
               {metric}
             </span>
             {change && (

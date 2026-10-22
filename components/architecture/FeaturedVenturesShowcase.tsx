@@ -31,14 +31,14 @@ export default function FeaturedVenturesShowcase() {
         </div>
 
         {/* ── MODULE 01: THE FLAGSHIP BILLBOARD — HOMEFIND ── */}
-        <div className="relative w-full rounded-3xl overflow-hidden border border-white/[0.1] bg-[#0C1119] min-h-[520px] lg:min-h-[580px] flex flex-col justify-end p-8 sm:p-12 lg:p-16 group transition-all duration-500 hover:border-[#93C8FF]/40">
+        <div className="relative w-full rounded-3xl overflow-hidden border border-white/[0.1] bg-[#0C1119] min-h-[440px] sm:min-h-[520px] lg:min-h-[580px] flex flex-col justify-end p-5 sm:p-10 lg:p-16 group transition-all duration-500 hover:border-[#93C8FF]/40">
           {/* Cinematic Background Plane */}
           <div className="absolute inset-0 z-0">
             <Image
               src="/media/cristian-vaduva/personal/cristian-vaduva-residence-curved-glass-terrace.png"
               alt="HomeFind — Curated Prime Real Estate Platform"
               fill
-              sizes="100vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
               className="object-cover object-center scale-[1.01] group-hover:scale-[1.03] transition-transform duration-1000 opacity-60"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-[#07090D]/80 to-[#07090D]/20 pointer-events-none" />
@@ -87,7 +87,7 @@ export default function FeaturedVenturesShowcase() {
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           
           {/* Dual 01: CV Finance & Capital Advisory */}
-          <div className="rounded-3xl p-8 sm:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
+          <div className="rounded-3xl p-6 sm:p-10 lg:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
             <div className="space-y-4 relative z-10">
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#A97F60] font-semibold">
                 CAPITAL STRUCTURING & INVESTMENT
@@ -116,7 +116,7 @@ export default function FeaturedVenturesShowcase() {
                 href="https://credite.cristianvaduva.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="apple-action-link"
+                className="apple-action-link min-h-[44px] flex items-center"
               >
                 <span>Explore financial services</span>
                 <ExternalLink className="w-3.5 h-3.5" />
@@ -125,7 +125,7 @@ export default function FeaturedVenturesShowcase() {
           </div>
 
           {/* Dual 02: Insurance Advisory */}
-          <div className="rounded-3xl p-8 sm:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
+          <div className="rounded-3xl p-6 sm:p-10 lg:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
             <div className="space-y-4 relative z-10">
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#93C8FF] font-semibold">
                 ASSET PROTECTION · GENERALI PARTNER
@@ -168,7 +168,7 @@ export default function FeaturedVenturesShowcase() {
         <div className="grid lg:grid-cols-12 gap-6 sm:gap-8">
           
           {/* Module 04: Dubai & Monaco International (7 cols - Expansive Global Corridor) */}
-          <div className="lg:col-span-7 rounded-3xl p-8 sm:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
+          <div className="lg:col-span-7 rounded-3xl p-6 sm:p-10 lg:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
             <div className="space-y-4 relative z-10 max-w-xl">
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#A97F60] font-semibold">
                 GLOBAL CORRIDORS · CHESTERTONS ALLIANCE
@@ -197,7 +197,7 @@ export default function FeaturedVenturesShowcase() {
                 href="https://dubai.cristianvaduva.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="apple-action-link"
+                className="apple-action-link min-h-[44px] flex items-center"
               >
                 <span>Explore international network</span>
                 <ExternalLink className="w-3.5 h-3.5" />
@@ -206,7 +206,7 @@ export default function FeaturedVenturesShowcase() {
           </div>
 
           {/* Module 05: Constructions Advisory (5 cols - Craft & Development) */}
-          <div className="lg:col-span-5 rounded-3xl p-8 sm:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
+          <div className="lg:col-span-5 rounded-3xl p-6 sm:p-10 lg:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
             <div className="space-y-4 relative z-10">
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#93C8FF] font-semibold">
                 ARCHITECTURE & DEVELOPMENT
@@ -235,7 +235,7 @@ export default function FeaturedVenturesShowcase() {
                 href="https://constructions.cristianvaduva.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="apple-action-link"
+                className="apple-action-link min-h-[44px] flex items-center"
               >
                 <span>Access Constructions Advisory</span>
                 <ExternalLink className="w-3.5 h-3.5" />

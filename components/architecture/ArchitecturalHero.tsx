@@ -33,21 +33,21 @@ export default function ArchitecturalHero() {
 
             {/* Headline with Apple Typographic Scale */}
             <div className="space-y-3">
-              <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[4.75rem] text-[#F5F4EF] leading-[1.02] tracking-tight font-normal">
+              <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-[4.5rem] text-[#F5F4EF] leading-[1.05] tracking-tight font-normal">
                 Real estate investment. <br />
                 <span className="text-[#A97F60] italic font-light">Strategic rigor.</span>
               </h1>
 
-              <p className="font-sans text-base sm:text-lg lg:text-xl text-[#B8C2CF] font-light max-w-xl leading-relaxed pt-2">
+              <p className="font-sans text-sm sm:text-base lg:text-lg text-[#B8C2CF] font-light max-w-xl leading-relaxed pt-2">
                 Strategic advisory, capital structuring, and off-market access for high-value properties across Bucharest, Monaco, and Dubai.
               </p>
             </div>
 
             {/* Apple Dual Pill CTA Action Suite */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2 w-full sm:w-auto">
               <Link
                 href="/programare"
-                className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[48px]"
+                className="btn-apple-pill-primary inline-flex items-center justify-center gap-2 min-h-[48px] px-6 py-3.5 text-xs uppercase tracking-wider font-semibold"
               >
                 <span>{t.hero.ctaConsultation || "REQUEST CONSULTATION"}</span>
                 <ArrowUpRight className="w-4 h-4 text-[#07090D]" />
@@ -55,7 +55,7 @@ export default function ArchitecturalHero() {
 
               <Link
                 href="/real-estate/properties"
-                className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
+                className="btn-apple-pill-secondary inline-flex items-center justify-center gap-2 min-h-[48px] px-6 py-3.5 text-xs uppercase tracking-wider font-semibold border border-white/15 bg-white/[0.04] hover:bg-white/[0.08] text-[#F5F4EF] rounded-full transition-colors"
               >
                 <span>{t.hero.exploreCatalog || "EXPLORE PORTFOLIO"}</span>
                 <ArrowRight className="w-4 h-4 text-[#93C8FF]" />
@@ -73,19 +73,19 @@ export default function ArchitecturalHero() {
                 fill
                 priority
                 fetchPriority="high"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 480px"
+                sizes="(max-width: 480px) 92vw, (max-width: 640px) 448px, (max-width: 1024px) 420px, 480px"
                 className="object-cover object-top scale-[1.01] group-hover:scale-[1.03] transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-85 pointer-events-none" />
 
               {/* Minimal Clean Card Label (Zero technical camera metadata) */}
-              <div className="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-[#07090D]/85 backdrop-blur-xl border border-white/[0.1] space-y-1">
+              <div className="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5 p-3.5 sm:p-4 rounded-2xl bg-[#07090D]/85 backdrop-blur-xl border border-white/[0.1] space-y-1">
                 <span className="font-mono text-[9px] uppercase tracking-[0.24em] text-[#A97F60] font-semibold block">
                   EXECUTIVE ADVISOR & INVESTOR
                 </span>
-                <div className="font-serif text-lg text-[#F5F4EF] font-normal flex items-center justify-between">
+                <div className="font-serif text-base sm:text-lg text-[#F5F4EF] font-normal flex flex-wrap items-center justify-between gap-1">
                   <span>Cristian Văduva</span>
-                  <span className="font-sans text-[11px] text-[#93C8FF] font-medium tracking-wide">BUCHAREST · MONACO · DUBAI</span>
+                  <span className="font-sans text-[10px] sm:text-[11px] text-[#93C8FF] font-medium tracking-wide">BUCHAREST · MONACO · DUBAI</span>
                 </div>
               </div>
             </div>
@@ -95,30 +95,30 @@ export default function ArchitecturalHero() {
       </div>
 
       {/* ── Substantive Context Rail (Apple Grid Cleanliness) ── */}
-      <div className="site-container relative z-10 w-full pt-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 border-t border-white/[0.08] pt-6 font-mono text-xs text-[#86868B]">
+      <div className="site-container relative z-10 w-full pt-6 sm:pt-8">
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-8 border-t border-white/[0.08] pt-6 font-mono text-xs text-[#86868B]">
           <div className="space-y-1">
             <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">GEOGRAPHIC FOOTPRINT</span>
             <span className="text-[#F5F4EF] font-sans text-sm block">Bucharest · Monaco · Dubai</span>
-            <span className="text-[11px] text-[#647082] block">Prime Residential & Capital Placements</span>
+            <span className="text-[11px] text-[#8E9AA8] block">Prime Residential & Capital Placements</span>
           </div>
 
           <div className="space-y-1">
             <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">INTERNATIONAL ALLIANCE</span>
             <span className="text-[#F5F4EF] font-sans text-sm block">Chestertons Global Network</span>
-            <span className="text-[11px] text-[#647082] block">Strategic Partnerships & Private Mandates</span>
+            <span className="text-[11px] text-[#8E9AA8] block">Strategic Partnerships & Private Mandates</span>
           </div>
 
           <div className="space-y-1">
             <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">PROFESSIONAL STANDARDS</span>
             <span className="text-[#F5F4EF] font-sans text-sm block">Dedicated Private Advisory</span>
-            <span className="text-[11px] text-[#647082] block">Bilateral NDA Protocols upon Request</span>
+            <span className="text-[11px] text-[#8E9AA8] block">Bilateral NDA Protocols upon Request</span>
           </div>
 
           <div className="space-y-1">
             <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">CURATED PORTFOLIO</span>
             <span className="text-[#F5F4EF] font-sans text-sm block">HomeFind Network Platform</span>
-            <Link href="/real-estate/properties" className="text-[11px] text-[#93C8FF] hover:underline block font-sans">
+            <Link href="/real-estate/properties" className="text-[11px] text-[#93C8FF] hover:underline block font-sans min-h-[32px] flex items-center">
               Explore property selection →
             </Link>
           </div>

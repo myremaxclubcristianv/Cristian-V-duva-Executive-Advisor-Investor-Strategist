@@ -108,8 +108,8 @@ export default function PersonalArchiveGallery({
   return (
     <div id="archive" className={`space-y-8 sm:space-y-12 ${className}`}>
       {/* Category Tabs Bar - Apple Segmented Control */}
-      <div className="p-1.5 sm:p-2 rounded-full border border-white/[0.08] bg-[#07090D]/90 backdrop-blur-xl shadow-xl max-w-fit mx-auto">
-        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar" role="tablist" aria-label="Archive Categories">
+      <div className="p-1.5 sm:p-2 rounded-full border border-white/[0.08] bg-[#07090D]/90 backdrop-blur-xl shadow-xl max-w-full overflow-hidden mx-auto flex justify-center">
+        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar max-w-full px-1" role="tablist" aria-label="Archive Categories">
           {categories.map((tab) => {
             const isActive = activeCategory === tab.id;
             const Icon = tab.icon;

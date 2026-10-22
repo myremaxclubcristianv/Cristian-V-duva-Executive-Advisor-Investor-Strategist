@@ -63,7 +63,7 @@ export default function ComparisonMatrix({
               <div className="col-span-4 p-4 sm:p-5 font-mono text-xs text-[#E1E4EA] flex flex-col justify-center">
                 <span className="font-semibold text-[#F5F4EF]">{row.dimension}</span>
                 {row.note && (
-                  <span className="text-[10px] text-[#647082] mt-1 hidden sm:block">
+                  <span className="text-[10px] text-[#8E9AA8] mt-1 hidden sm:block">
                     {row.note}
                   </span>
                 )}

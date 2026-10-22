@@ -175,13 +175,13 @@ export default function HomeFindPortfolio({
 
         {/* Category Filter Tabs (Apple Segmented Pill Control) */}
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <div className="inline-flex p-1 rounded-full bg-white/[0.06] border border-white/[0.1] gap-1" role="tablist" aria-label="Transaction Type">
+          <div className="inline-flex max-w-full overflow-x-auto p-1 rounded-full bg-white/[0.06] border border-white/[0.1] gap-1" role="tablist" aria-label="Transaction Type">
             <button
               type="button"
               role="tab"
               aria-selected={activeTab === "all"}
               onClick={() => setActiveTab("all")}
-              className={`px-5 py-2 rounded-full font-sans text-xs font-medium transition-all flex items-center gap-2 ${
+              className={`px-3.5 sm:px-5 py-2 rounded-full font-sans text-xs font-medium transition-all flex items-center gap-1.5 sm:gap-2 shrink-0 ${
                 activeTab === "all"
                   ? "bg-[#F5F4EF] text-[#07090D] shadow-md font-semibold"
                   : "text-[#86868B] hover:text-[#F5F4EF]"
@@ -199,7 +199,7 @@ export default function HomeFindPortfolio({
               role="tab"
               aria-selected={activeTab === "buy"}
               onClick={() => setActiveTab("buy")}
-              className={`px-5 py-2 rounded-full font-sans text-xs font-medium transition-all flex items-center gap-2 ${
+              className={`px-3.5 sm:px-5 py-2 rounded-full font-sans text-xs font-medium transition-all flex items-center gap-1.5 sm:gap-2 shrink-0 ${
                 activeTab === "buy"
                   ? "bg-[#F5F4EF] text-[#07090D] shadow-md font-semibold"
                   : "text-[#86868B] hover:text-[#F5F4EF]"
@@ -217,7 +217,7 @@ export default function HomeFindPortfolio({
               role="tab"
               aria-selected={activeTab === "rent"}
               onClick={() => setActiveTab("rent")}
-              className={`px-5 py-2 rounded-full font-sans text-xs font-medium transition-all flex items-center gap-2 ${
+              className={`px-3.5 sm:px-5 py-2 rounded-full font-sans text-xs font-medium transition-all flex items-center gap-1.5 sm:gap-2 shrink-0 ${
                 activeTab === "rent"
                   ? "bg-[#F5F4EF] text-[#07090D] shadow-md font-semibold"
                   : "text-[#86868B] hover:text-[#F5F4EF]"
