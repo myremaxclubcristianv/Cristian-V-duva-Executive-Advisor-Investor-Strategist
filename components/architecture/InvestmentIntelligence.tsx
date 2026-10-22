@@ -29,38 +29,38 @@ export default function InvestmentIntelligence() {
         {/* 3 Structured Intelligence Panels */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InsightPanel
-            category="DINAMICĂ TRANZACȚIONALĂ · BUCUREȘTI"
-            title="Volumul tranzacțiilor imobiliare rezidențiale"
-            metric="Monitorizare ANCPI"
-            change="Tranzacții Cadastrale"
+            category="TRANSACTIONAL DYNAMICS · BUCHAREST"
+            title="Residential Transaction Volume Monitoring"
+            metric="ANCPI Cadastral Records"
+            change="Official Authenticated Sales"
             trend="neutral"
-            date="Rapoarte Lunare Oficiale"
-            source="Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI)"
-            description="Urmărirea volumului de tranzacții înregistrate oficial în București și Ilfov pentru a măsura lichiditatea reală a pieței, separând prețurile cerute de tranzacțiile efectiv autentificate."
+            date="Official Monthly Reports"
+            source="National Agency for Cadastre and Land Registration (ANCPI)"
+            description="Tracking officially authenticated transactions in Bucharest and Ilfov to assess real liquidity, distinguishing asking prices from finalized contracts."
             actionUrl="/raport-piata"
           />
 
           <InsightPanel
-            category="SEGMENTUL INTERNAȚIONAL"
-            title="Piața rezidențială din Monaco & Coasta de Azur"
-            metric="Statistici IMSEE"
-            change="Date Publice"
+            category="INTERNATIONAL SEGMENTS"
+            title="Monaco & French Riviera Prime Real Estate"
+            metric="IMSEE Public Records"
+            change="Official Publications"
             trend="neutral"
-            date="Raport Anual IMSEE"
-            source="Institut Monégasque de la Statistique (IMSEE)"
-            description="Observații privind evoluția pieței din Monaco bazate pe date oficiale IMSEE. Aspectele fiscale depend de rezidența și structura fiecărui cumpărător și necesită verificare cu un consultant fiscal autorizat."
+            date="Annual IMSEE Observatory"
+            source="Monegasque Institute of Statistics and Economic Studies (IMSEE)"
+            description="Market cycle observations based on published IMSEE statistical data. Specific fiscal considerations depend on individual tax residency and require qualified tax advisory."
             actionUrl="https://www.imsee.mc/Economie-et-Finances/Immobilier"
           />
 
           <InsightPanel
-            category="PROTECȚIA ACTIVELOR IMOBILIARE"
-            title="Managementul riscului patrimonial"
-            metric="Acoperiri Dedicate"
-            change="Partener Generali"
+            category="REAL ESTATE ASSET PROTECTION"
+            title="Private Wealth Risk Engineering"
+            metric="Tailored Coverage"
+            change="Generali Partner"
             trend="neutral"
-            date="Protecție Bunuri & Clădiri"
-            source="Partener autorizat Generali România"
-            description="Soluții de transfer al riscului și asigurare a proprietăților premium la cost de reconstrucție. Evaluarea deductibilității fiscale se realizează punctual cu un consultant fiscal calificat."
+            date="Asset & Property Protection"
+            source="Authorized Generali Romania Partner Desk"
+            description="Structured risk-transfer mechanisms and full replacement-cost insurance for prime residential assets. Tax deductibility is evaluated on a case-by-case basis with qualified counsel."
             actionUrl="/parteneri"
           />
         </div>

@@ -16,11 +16,11 @@ export default function ExecutiveHeader() {
   const headerRef = useRef<HTMLDivElement>(null);
 
   const navLinks = [
-    { label: t.nav.about || "Despre", href: "/about" },
-    { label: t.nav.ventures || "Inițiative", href: "/ventures" },
-    { label: "Ecosistem", href: "/ecosystem" },
+    { label: t.nav.about || "About", href: "/about" },
+    { label: t.nav.ventures || "Ventures", href: "/ventures" },
+    { label: "Ecosystem", href: "/ecosystem" },
     { label: t.nav.media || "Media", href: "/media" },
-    { label: t.nav.insights || "Analize & Perspective", href: "/insights" },
+    { label: t.nav.insights || "Insights & Perspectives", href: "/insights" },
     { label: t.nav.contact || "Contact", href: "/contact" },
   ];
 
@@ -92,7 +92,7 @@ export default function ExecutiveHeader() {
         <nav
           className="hidden md:flex items-center gap-7 lg:gap-9"
           role="navigation"
-          aria-label="Navigație Principală"
+          aria-label="Main Navigation"
         >
           {navLinks.map((item) => {
             const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
@@ -119,7 +119,7 @@ export default function ExecutiveHeader() {
             href="/programare"
             className="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white/[0.08] hover:bg-white/[0.16] border border-white/[0.12] hover:border-white/[0.25] text-[#F5F4EF] font-sans text-xs font-medium tracking-tight transition-all duration-200"
           >
-            <span>{t.nav.consultation || "Consultanță"}</span>
+            <span>{t.nav.consultation || "Consultation"}</span>
             <ArrowUpRight className="w-3 h-3 text-[#93C8FF]" />
           </Link>
 
@@ -128,7 +128,7 @@ export default function ExecutiveHeader() {
             type="button"
             onClick={() => setMobileOpen((v) => !v)}
             aria-expanded={mobileOpen}
-            aria-label="Deschide meniul de navigare"
+            aria-label="Open navigation menu"
             className="md:hidden p-2 text-[#F5F4EF] hover:text-white transition-colors"
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -142,11 +142,11 @@ export default function ExecutiveHeader() {
           className="fixed inset-0 top-12 z-40 bg-[#07090D]/98 backdrop-blur-2xl md:hidden flex flex-col justify-between p-6 sm:p-10 animate-in fade-in duration-200 overflow-y-auto"
           role="dialog"
           aria-modal="true"
-          aria-label="Meniu Navigație Mobil"
+          aria-label="Mobile Navigation Menu"
         >
           <div className="space-y-6 pt-4">
             <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#A97F60] font-semibold block">
-              NAVIGAȚIE PRINCIPALĂ
+              MAIN NAVIGATION
             </span>
 
             <ul className="space-y-4">
@@ -177,7 +177,7 @@ export default function ExecutiveHeader() {
                 onClick={() => setMobileOpen(false)}
                 className="w-full py-3.5 px-6 rounded-full bg-[#F5F4EF] text-[#07090D] font-sans text-xs uppercase tracking-wider font-semibold flex items-center justify-center gap-2 shadow-xl"
               >
-                <span>{t.nav.consultation || "SOLICITĂ CONSULTANȚĂ (20 MIN)"}</span>
+                <span>{t.nav.consultation || "REQUEST CONSULTATION (20 MIN)"}</span>
                 <ArrowUpRight className="w-4 h-4 text-[#07090D]" />
               </Link>
             </div>
@@ -187,7 +187,7 @@ export default function ExecutiveHeader() {
           <div className="pt-8 border-t border-white/[0.08] space-y-4 font-mono text-xs text-[#86868B]">
             <div className="text-[11px] text-[#647082] flex justify-between">
               <span>CRISTIAN VĂDUVA</span>
-              <span>BUCUREȘTI · MONACO · DUBAI</span>
+              <span>BUCHAREST · MONACO · DUBAI</span>
             </div>
           </div>
         </div>

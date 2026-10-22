@@ -49,7 +49,7 @@ function ContactFormContent() {
       if (sanitizedProperty) {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setMessage(
-          `Referință proprietate: ${sanitizedProperty}\nSolicit analiză preliminară și asistență la tranzacție.`
+          `Property reference: ${sanitizedProperty}\nRequesting preliminary underwriting and transaction advisory.`
         );
       }
     }
@@ -117,15 +117,15 @@ function ContactFormContent() {
           <div className="w-12 h-12 rounded-full border border-[#93C8FF] flex items-center justify-center mx-auto text-[#93C8FF]">
             <CheckCircle2 className="w-6 h-6" />
           </div>
-          <h4 className="font-serif text-2xl text-[#F5F4EF]">Solicitare Transmisă</h4>
+          <h4 className="font-serif text-2xl text-[#F5F4EF]">Inquiry Submitted</h4>
           <p className="font-sans text-xs text-[#B8C2CF] max-w-sm mx-auto leading-relaxed">
-            Vă mulțumim. Detaliile au fost înregistrate. Cristian Văduva sau biroul privat vă vor răspunde direct în termen de 24 de ore.
+            Thank you. Your mandate parameters have been recorded. Cristian Văduva or the private desk will contact you within 24 hours.
           </p>
           <button
             onClick={() => setSubmitted(false)}
             className="btn-apple-pill-secondary mt-4"
           >
-            Trimite o nouă solicitare
+            Submit another inquiry
           </button>
         </div>
       ) : (
@@ -147,14 +147,14 @@ function ContactFormContent() {
 
           <div className="space-y-1.5">
             <label className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
-              Nume Principal / Reprezentant *
+              Principal Name / Representative *
             </label>
             <input
               type="text"
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="ex. Cristian Popescu"
+              placeholder="e.g. Cristian Popescu"
               className="w-full rounded-xl bg-[#0C1119] border border-white/[0.1] px-4 py-3.5 font-sans text-sm text-[#F5F4EF] placeholder-white/20 focus:outline-none focus:border-[#93C8FF] transition-colors"
             />
           </div>
@@ -162,7 +162,7 @@ function ContactFormContent() {
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="space-y-1.5">
               <label className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
-                Email Direct *
+                Direct Email *
               </label>
               <input
                 type="email"
@@ -176,7 +176,7 @@ function ContactFormContent() {
 
             <div className="space-y-1.5">
               <label className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
-                Telefon / Signal Direct
+                Direct Phone / Signal
               </label>
               <input
                 type="tel"
@@ -190,33 +190,33 @@ function ContactFormContent() {
 
           <div className="space-y-1.5">
             <label htmlFor="contact-mandate-select" className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
-              Tipologie Solicitare / Mandat *
+              Mandate Typology / Scope *
             </label>
             <select
               id="contact-mandate-select"
-              aria-label="Tipologie Solicitare / Mandat"
+              aria-label="Mandate Typology / Scope"
               value={interest}
               onChange={(e) => setInterest(e.target.value)}
               className="w-full rounded-xl bg-[#0C1119] border border-white/[0.1] px-4 py-3.5 font-sans text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] transition-colors"
             >
-              <option value="Buyer representation">Reprezentare Cumpărător (Căutare proprietăți, due diligence, achiziție)</option>
-              <option value="Seller representation">Reprezentare Vânzător (Poziționare, promovare privată, tranzacționare)</option>
-              <option value="Investor advisory">Consultanță Investiții (Screening piață, analiză financiară, underwriting)</option>
-              <option value="Property sourcing">Sourcing Proprietăți (Identificare oportunități on-market & off-market)</option>
-              <option value="Strategic consultation">Consultanță Strategică (Imobiliară & capital)</option>
-              <option value="Other">Alt tip de mandat dedicat</option>
+              <option value="Buyer representation">Buyer Representation (Asset sourcing, due diligence, acquisition)</option>
+              <option value="Seller representation">Seller Representation (Positioning, discreet marketing, transaction execution)</option>
+              <option value="Investor advisory">Investor Advisory (Market screening, financial modeling, underwriting)</option>
+              <option value="Property sourcing">Property Sourcing (On-market & off-market discovery)</option>
+              <option value="Strategic consultation">Strategic Consultation (Real estate & capital structure)</option>
+              <option value="Other">Other Bespoke Mandate</option>
             </select>
           </div>
 
           <div className="space-y-1.5">
             <label className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
-              Note Executive / Briefing
+              Executive Notes / Mandate Briefing
             </label>
             <textarea
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Descrieți cerințele tranzacției, zona geografică vizată, parametrii de capital sau calendarul de execuție..."
+              placeholder="Outline transaction requirements, target geographic corridor, capital allocation parameters, or execution timeline..."
               className="w-full rounded-xl bg-[#0C1119] border border-white/[0.1] px-4 py-3.5 font-sans text-sm text-[#F5F4EF] placeholder-white/20 focus:outline-none focus:border-[#93C8FF] transition-colors resize-none"
             />
           </div>
@@ -232,9 +232,9 @@ function ContactFormContent() {
               className="mt-1 h-4 w-4 rounded border-white/20 bg-[#0C1119] text-[#93C8FF] focus:ring-[#93C8FF] cursor-pointer"
             />
             <label htmlFor="contact-gdpr-consent" className="text-[11px] text-[#B8C2CF] leading-relaxed cursor-pointer">
-              Sunt de acord cu prelucrarea datelor transmise pentru a primi un răspuns la solicitare, conform{" "}
+              I agree to the processing of submitted information to receive a response regarding this inquiry, pursuant to the{" "}
               <Link href="/privacy" className="text-[#93C8FF] hover:underline" target="_blank">
-                Politicii de Confidențialitate
+                Privacy Policy
               </Link>.
             </label>
           </div>
@@ -244,12 +244,12 @@ function ContactFormContent() {
             disabled={loading}
             className="btn-apple-pill-primary w-full shadow-xl"
           >
-            <span>{loading ? "SE TRANSMITE..." : "TRANSMITE SOLICITAREA CONFIDENȚIALĂ"}</span>
+            <span>{loading ? "SUBMITTING INQUIRY..." : "SUBMIT CONFIDENTIAL INQUIRY"}</span>
             <Send className="w-4 h-4" />
           </button>
 
           <div className="font-mono text-[9px] uppercase tracking-wider text-center text-[#8A95A5]">
-            Solicitările sunt tratate cu discreție maximă. Un acord separat de confidențialitate (NDA) poate fi discutat și semnat înainte de partajarea informațiilor sensibile.
+            All inquiries are handled with strict discretion. A bilateral non-disclosure agreement (NDA) precedes the exchange of sensitive commercial information.
           </div>
         </form>
       )}
@@ -275,24 +275,24 @@ export default function Contact() {
             <div className="flex items-center justify-between border-b border-white/[0.1] pb-4 font-mono text-[10px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.28em] text-[#93C8FF]">
               <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
                 <span className="w-2 h-2 rounded-full bg-[#93C8FF] animate-pulse shrink-0" />
-                <span>01 // BIROU PRIVAT DE CONSULTANȚĂ</span>
+                <span>01 // PRIVATE ADVISORY DESK</span>
                 <span className="text-white/20 hidden xs:inline">/</span>
-                <span className="text-[#B8C2CF] hidden xs:inline">CONSULTANȚĂ CONFIDENȚIALĂ</span>
+                <span className="text-[#B8C2CF] hidden xs:inline">CONFIDENTIAL CONSULTATION</span>
               </div>
               <div className="hidden sm:flex items-center gap-2 text-[#8A95A5]">
                 <Lock className="w-3.5 h-3.5 text-[#93C8FF]" />
-                <span>CANAL DIRECT CONFIDENȚIAL</span>
+                <span>DIRECT CONFIDENTIAL CHANNEL</span>
               </div>
             </div>
 
             <div className="max-w-4xl space-y-6">
               <h1 className="font-serif text-3xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#F5F4EF] leading-[0.98] tracking-tight break-words">
-                Inițiați un Dialog<br />
-                <span className="text-[#A97F60] italic font-normal">Strategic & Dedicat.</span>
+                Initiate a Strategic &<br />
+                <span className="text-[#A97F60] italic font-normal">Dedicated Dialogue.</span>
               </h1>
 
               <p className="font-sans text-base sm:text-xl text-[#B8C2CF] font-light max-w-2xl leading-relaxed">
-                Interacțiune directă pentru achiziții imobiliare de anvergură, analiză tranzacțională și consultanță strategică de proprietate. Solicitările sunt evaluate direct de Cristian Văduva.
+                Direct engagement for high-value real estate acquisitions, transactional analysis, and strategic property advisory. Inquiries are evaluated directly by Cristian Văduva.
               </p>
             </div>
           </div>
@@ -308,13 +308,13 @@ export default function Contact() {
               <div className="lg:col-span-5 space-y-8">
                 <div className="space-y-4">
                   <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#A97F60] font-semibold block">
-                    ACCES DIRECT PRINCIPAL
+                    DIRECT PRINCIPAL ACCESS
                   </span>
                   <h3 className="font-serif text-3xl sm:text-4xl text-[#F5F4EF]">
-                    Canale Discrete de Comunicare
+                    Discreet Communication Channels
                   </h3>
                   <p className="font-sans text-xs sm:text-sm text-[#B8C2CF] font-light leading-relaxed">
-                    Principals și mandatele private beneficiază de acces direct, fără intermediari auxiliari. Puteți opta pentru comunicare directă securizată sau transmiterea unui dosar scris.
+                    Principals and private mandates benefit from direct access without auxiliary intermediaries. Choose direct encrypted communication or submit a structured brief.
                   </p>
                 </div>
 
@@ -343,15 +343,15 @@ export default function Contact() {
                       <span>OFFICE OF CRISTIAN VĂDUVA</span>
                     </div>
                     <div className="text-[#B8C2CF] text-xs font-sans space-y-1">
-                      <p>București, România (Birou Principal)</p>
-                      <p>Coridoare imobiliare internaționale & parteneriate dedicate</p>
+                      <p>Bucharest, Romania (Primary Desk)</p>
+                      <p>International real estate corridors & strategic partnerships</p>
                     </div>
                   </div>
 
                   <div className="p-5 rounded-2xl border border-white/[0.08] bg-[#07090D] text-[#B8C2CF] text-[11px] leading-relaxed flex items-start gap-3 shadow-lg">
                     <ShieldCheck className="w-4 h-4 text-[#93C8FF] mt-0.5 shrink-0" />
                     <span>
-                      Confidențialitate contractuală. Posibilitate de încheiere a unui acord bilateral NDA înainte de schimbul de informații private.
+                      Contractual confidentiality. Bilateral non-disclosure agreements (NDA) available prior to exchanging sensitive asset data.
                     </span>
                   </div>
                 </div>
@@ -362,7 +362,7 @@ export default function Contact() {
                 <Suspense
                   fallback={
                     <div className="border border-white/[0.14] bg-[#1B2028]/90 p-8 sm:p-12 text-center font-mono text-xs text-[#8A95A5]">
-                      SE ÎNCARCĂ FORMULARUL...
+                      LOADING INTAKE DESK...
                     </div>
                   }
                 >

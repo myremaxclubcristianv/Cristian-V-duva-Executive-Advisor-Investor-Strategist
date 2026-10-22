@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/editorial-policy",
   },
+  openGraph: {
+    title: "Editorial Policy & Standards — Cristian Văduva",
+    description: "Editorial integrity principles, fact-checking standards, source attribution, and correction guidelines for Cristian Văduva and AiX Media publications.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function EditorialPolicyPage() {

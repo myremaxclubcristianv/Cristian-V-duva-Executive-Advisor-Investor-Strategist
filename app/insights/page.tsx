@@ -14,6 +14,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/insights",
   },
+  openGraph: {
+    title: "Executive Journal & Market Dispatches — Cristian Văduva",
+    description:
+      "Original macroeconomic research, liquidity analytics, and strategic insights on European real estate cycles authored by Cristian Văduva.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function InsightsPage() {
@@ -113,7 +120,7 @@ export default function InsightsPage() {
                       href={`/insights/${item.slug}`}
                       className="btn-apple-pill-secondary inline-flex items-center gap-2"
                     >
-                      <span>CITEȘTE ANALIZA COMPLETĂ</span>
+                      <span>READ COMPLETE ANALYSIS</span>
                       <ArrowUpRight className="w-3.5 h-3.5 text-[#93C8FF]" />
                     </Link>
                   </div>

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function About() {
@@ -14,9 +13,9 @@ export default function About() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-semibold mb-4">Despre Cristian Văduva</h2>
+          <h2 className="text-3xl font-semibold mb-4">About Cristian Văduva</h2>
           <p className="text-lg text-[#1D1D1F] leading-relaxed max-w-prose">
-            Consultant executiv cu o carieră construită pe tranzacţii imobiliare de top, protecţia capitalului și investiţii strategice. Pasionat de inovație, combină expertiza juridică cu cea financiară pentru soluţii personalizate.
+            Executive advisor with a track record built on prime real estate transactions, capital protection, and strategic investment allocations. Combining legal and financial rigor to deliver bespoke client representation.
           </p>
         </motion.div>
         {/* Portrait */}

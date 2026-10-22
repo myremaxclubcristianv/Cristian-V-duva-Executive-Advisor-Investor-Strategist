@@ -200,7 +200,7 @@ export default function PersonalArchiveGallery({
         <div
           role="dialog"
           aria-modal="true"
-          aria-label={selectedPhoto.caption || "Fotografie Cristian Văduva"}
+          aria-label={selectedPhoto.caption || "Cristian Văduva Photo Archive"}
           className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10 bg-[#07090D]/95 backdrop-blur-2xl animate-fadeIn"
         >
           {/* Backdrop Click to Close */}
@@ -282,10 +282,10 @@ export default function PersonalArchiveGallery({
 
                   <div className="p-4 rounded-xl border border-white/[0.08] bg-[#121721] space-y-2">
                     <span className="font-mono text-[10px] text-[#A97F60] uppercase tracking-wider block font-semibold">
-                      REPREZENTARE & CONSULTANȚĂ IMOBILIARĂ
+                      REAL ESTATE REPRESENTATION & ADVISORY
                     </span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed font-light">
-                      Consultanță dedicată pe bază de mandat exclusiv în tranzacții rezidențiale, identificare de oportunități de investiții și negociere strategică.
+                      Dedicated exclusive mandate advisory for residential transactions, investment opportunity identification, and strategic negotiation.
                     </p>
                   </div>
                 </div>
@@ -296,11 +296,11 @@ export default function PersonalArchiveGallery({
                     href="/programare"
                     className="btn-apple-pill-primary w-full shadow-lg"
                   >
-                    <span>PROGRAMEAZĂ O DISCUȚIE PRIVATĂ</span>
+                    <span>SCHEDULE A PRIVATE CONSULTATION</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </a>
                   <p className="font-mono text-[9px] text-[#8A95A5] text-center">
-                    Discuțiile sunt tratate cu discreție profesională.
+                    All strategic discussions operate under contractual confidentiality.
                   </p>
                 </div>
               </div>

@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/real-estate/properties",
   },
+  openGraph: {
+    title: "Confirmed Property Portfolio & Acquisitions — Cristian Văduva",
+    description: "Curated editorial selection of verified penthouses, private architectural estates, residential masterplans, and international trophy assets across Bucharest, Marbella, Monaco, Dubai, and Miami.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function PropertiesPage() {

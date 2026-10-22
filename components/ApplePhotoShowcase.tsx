@@ -59,13 +59,13 @@ export default function ApplePhotoShowcase() {
           <div className="space-y-3 max-w-2xl">
             <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-[#B89B72]">
               <ImageIcon className="w-3.5 h-3.5" />
-              <span>GALERIE FOTO & MONOGRAPH VIZUAL</span>
+              <span>PHOTO ARCHIVE & VISUAL MONOGRAPH</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-white">
-              Arhiva Executivă & Stil de Viață
+              Executive Archive & Lifestyle
             </h2>
             <p className="text-sm sm:text-base text-neutral-400 font-light">
-              Momente din activitatea de consultanță, proprietăți reprezentate în București și Monaco, portrete oficiale și arhitectură de elită.
+              Curated documentation of advisory practice, represented estates across Bucharest and Monaco, official portraits, and prime architecture.
             </p>
           </div>
 
@@ -75,14 +75,14 @@ export default function ApplePhotoShowcase() {
               className="px-4 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono uppercase tracking-wider text-neutral-300 flex items-center gap-2 transition-all"
             >
               <Lock className="w-3.5 h-3.5 text-[#B89B72]" />
-              <span>Încarcă Poze (Admin)</span>
+              <span>Upload Photos (Admin)</span>
             </Link>
 
             <Link
               href="/gallery"
               className="px-5 py-2.5 rounded-2xl bg-[#B89B72] hover:bg-[#C9AE85] text-black text-xs font-mono uppercase tracking-wider font-semibold flex items-center gap-2 transition-all shadow-lg shadow-[#B89B72]/20 group"
             >
-              <span>Explorează Toată Galeria</span>
+              <span>Explore Complete Gallery</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
           </div>
@@ -112,7 +112,7 @@ export default function ApplePhotoShowcase() {
         {loading ? (
           <div className="py-20 text-center text-neutral-400">
             <div className="w-8 h-8 border-2 border-[#B89B72] border-t-transparent rounded-full animate-spin mx-auto mb-3" />
-            <p className="font-mono text-xs uppercase tracking-wider">Se încarcă arhiva foto...</p>
+            <p className="font-mono text-xs uppercase tracking-wider">Loading photo archive...</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">

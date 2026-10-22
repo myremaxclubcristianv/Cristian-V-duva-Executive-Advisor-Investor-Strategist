@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
     // 1. Rate Limiting Check
     if (isRateLimited(clientIp)) {
       return NextResponse.json(
-        { error: "Prea multe solicitări. Vă rugăm să încercați din nou mai târziu." },
+        { error: "Too many requests. Please try again later." },
         { status: 429 }
       );
     }
@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
     // 3. Server-side Validation
     if (!body.fullName || typeof body.fullName !== "string" || body.fullName.trim().length < 2) {
       return NextResponse.json(
-        { error: "Vă rugăm să introduceți numele complet." },
+        { error: "Please enter your full name." },
         { status: 400 }
       );
     }
@@ -61,14 +61,14 @@ export async function POST(req: NextRequest) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!body.email || typeof body.email !== "string" || !emailRegex.test(body.email.trim())) {
       return NextResponse.json(
-        { error: "Vă rugăm să introduceți o adresă de email validă." },
+        { error: "Please enter a valid email address." },
         { status: 400 }
       );
     }
 
     if (!body.consentPrivacy) {
       return NextResponse.json(
-        { error: "Este necesar consimțământul pentru prelucrarea datelor în scopul solicitării ghidului." },
+        { error: "Consent for data processing is required to request the buyer's dossier." },
         { status: 400 }
       );
     }
@@ -87,8 +87,8 @@ export async function POST(req: NextRequest) {
           name: sanitizedName,
           email: sanitizedEmail,
           phone: sanitizedPhone || null,
-          interest: "Dosarul Cumpărătorului",
-          message: `Solicitare Ghid Cumpărător | Marketing Opt-in: ${marketingOptIn ? "DA" : "NU"}`,
+          interest: "Buyer's Strategic Dossier",
+          message: `Buyer's Guide Request | Marketing Opt-in: ${marketingOptIn ? "YES" : "NO"}`,
           source: "/ghid-cumparator",
           status: "new",
         });
@@ -125,7 +125,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         success: true,
-        message: "Solicitarea dumneavoastră a fost înregistrată. Aveți acces instantaneu la dosarul complet mai jos.",
+        message: "Your request has been registered. You have immediate access to the complete dossier below.",
         deliveryStatus: {
           database: persistedInDatabase,
           notification: dispatchedViaTelegram,
@@ -135,7 +135,7 @@ export async function POST(req: NextRequest) {
     );
   } catch {
     return NextResponse.json(
-      { error: "A apărut o eroare la procesarea solicitării. Vă rugăm să încercați din nou." },
+      { error: "An error occurred while processing your request. Please try again." },
       { status: 500 }
     );
   }

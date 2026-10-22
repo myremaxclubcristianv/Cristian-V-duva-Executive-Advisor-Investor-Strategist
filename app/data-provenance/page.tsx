@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/data-provenance",
   },
+  openGraph: {
+    title: "Data Provenance & Methodology — Cristian Văduva",
+    description: "Methodology, official data sources, cadastre verification, and market intelligence provenance across Cristian Văduva platforms.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function DataProvenancePage() {

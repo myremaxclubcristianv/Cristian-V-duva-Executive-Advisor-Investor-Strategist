@@ -17,18 +17,19 @@ import ArchitecturalFeaturePanel from "@/components/ui/ArchitecturalFeaturePanel
 import ClosingFrame from "@/components/ui/ClosingFrame";
 
 export const metadata: Metadata = {
-  title: "Parteneriate și Afilieri Instituționale | Executive Cristian Văduva",
+  title: "Institutional Partnerships & Professional Affiliations | Executive Cristian Văduva",
   description:
-    "Prezentare a afilierilor și colaborărilor profesionale din domeniile imobiliar și al asigurărilor.",
+    "Institutional affiliations and professional advisory collaborations across international luxury real estate and asset protection.",
   alternates: {
     canonical: "https://executive.cristianvaduva.com/parteneri",
   },
   openGraph: {
-    title: "Parteneriate & Afilieri Profesionale | Cristian Văduva",
+    title: "Partnerships & Professional Affiliations | Cristian Văduva",
     description:
-      "Informații despre rețeaua profesională și colaborările prezentate de Cristian Văduva.",
+      "Professional network and institutional affiliations presented by Cristian Văduva.",
     url: "https://executive.cristianvaduva.com/parteneri",
     type: "website",
+    locale: "en_US",
   },
 };
 
@@ -48,15 +49,15 @@ export default function ParteneriPage() {
             <div className="max-w-4xl space-y-6 sm:space-y-8">
               <div className="inline-flex items-center gap-2.5 px-3.5 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase rounded-full">
                 <Globe className="w-3.5 h-3.5 text-[#93C8FF]" />
-                <span>AFILIERI & COORDONARE DE SPECIALITATE</span>
+                <span>AFFILIATIONS & SPECIALIZED COORDINATION</span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.08]">
-                Parteneriate și Afilieri Profesionale
+                Professional Partnerships & Institutional Affiliations
               </h1>
 
               <p className="font-sans text-base sm:text-lg text-[#B8C2CF] leading-relaxed font-light max-w-3xl">
-                Executive colaborează cu rețele imobiliare globale de prestigiu și asigurători instituționali de top. Fiecare parteneriat are roluri clar delimitate, garantând clienților noștri acces nemijlocit la expertiză internațională și protecție patrimonială veritabilă.
+                Executive collaborates with established global real estate networks and leading institutional insurers. Every partnership operates with defined boundaries, providing private clients with direct international reach and institutional asset protection.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -64,7 +65,7 @@ export default function ParteneriPage() {
                   href="/programare"
                   className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[48px]"
                 >
-                  <span>SOLICITĂ DISCUȚIE DE 20 MINUTE</span>
+                  <span>SCHEDULE 20-MINUTE CONSULTATION</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
 
@@ -72,7 +73,7 @@ export default function ParteneriPage() {
                   href="/pentru-clienti"
                   className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
                 >
-                  <span>PENTRU CLIENȚI PRIVATAȚI</span>
+                  <span>PRIVATE CLIENT ADVISORY</span>
                 </Link>
               </div>
             </div>
@@ -82,46 +83,46 @@ export default function ParteneriPage() {
           <section className="space-y-12">
             <ChapterDivider
               number="01"
-              category="REȚEA IMOBILIARĂ INTERNAȚIONALĂ"
-              title="Chestertons Global Network — Fondată la Londra în 1805"
-              description="Parteneriat profesional asociat care deschide clienților privați din România acces direct către marile piețe rezidențiale din Marea Britanie, Europa Occidentală și Emiratele Arabe Unite."
+              category="INTERNATIONAL REAL ESTATE NETWORK"
+              title="Chestertons Global Network — Founded in London in 1805"
+              description="An associate professional relationship providing private clients with direct access to prime residential markets across the United Kingdom, Western Europe, and the United Arab Emirates."
             />
 
             <ArchitecturalFeaturePanel
-              tag="AFILIERE CONFIRMATĂ // CHESTERTONS GLOBAL"
-              title="Acces Direct la Portofoliul Rezidențial Global de Lux"
-              description="Cristian Văduva activează în calitate de partener/asociat internațional pe piața din România în cadrul rețelei Chestertons Global. Asigură filtrarea preliminară a proprietăților și colaborarea directă cu birourile partenere din Londra, Riviera Franceză, Monaco, Dubai și Spania."
+              tag="CONFIRMED AFFILIATION // CHESTERTONS GLOBAL"
+              title="Direct Access to the Global Prime Residential Portfolio"
+              description="Cristian Văduva operates as an international partner/associate for the Romanian market within the Chestertons Global network, providing preliminary portfolio filtering and direct coordination with partner desks in London, the French Riviera, Monaco, Dubai, and Spain."
               imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-office-chestertons-global-network.png"
-              imageAlt="Cristian Văduva la biroul Chestertons Global Network"
-              imageCaption="Cristian Văduva · Rețeaua Chestertons Global"
+              imageAlt="Cristian Văduva at Chestertons Global Network office"
+              imageCaption="Cristian Văduva · Chestertons Global Network"
               imagePosition="right"
               bullets={[
                 {
-                  title: "Prezență în peste 30 de țări",
-                  desc: "Rețea de peste 100 de birouri locale pe cele mai lichide piețe rezidențiale din lume.",
+                  title: "Presence in over 30 countries",
+                  desc: "Network of over 100 local partner offices across key global residential markets.",
                 },
                 {
-                  title: "Proprietăți on & off-market",
-                  desc: "Acces la reședințe istorice, penthouse-uri și vile care nu sunt promovate pe portalurile publice.",
+                  title: "On & off-market acquisitions",
+                  desc: "Direct access to historic estates, penthouses, and private residences not publicly advertised.",
                 },
                 {
-                  title: "Asistență bilingvă la București",
-                  desc: "Coordonarea comunicării, selecției și documentației înainte de deplasarea la vizionare externă.",
+                  title: "Bilingual coordination in Bucharest",
+                  desc: "Direct briefing, asset curation, and preliminary documentation before traveling for on-site viewings.",
                 },
               ]}
-              ctaText="CONSULTĂ PORTOFOLIUL GLOBAL"
+              ctaText="EXPLORE GLOBAL PORTFOLIO"
               ctaHref="/programare"
               stats={[
-                { value: "1805", label: "Anul Fondării" },
-                { value: "30+ Țări", label: "Acoperire Globală" },
-                { value: "100+", label: "Birouri Partenere" },
+                { value: "1805", label: "Year Founded" },
+                { value: "30+ Countries", label: "Global Reach" },
+                { value: "100+", label: "Partner Desks" },
               ]}
             />
 
             {/* Disclaimer Chestertons */}
             <div className="p-5 bg-white/[0.02] border-l-2 border-[#A97F60] font-sans text-xs text-[#8A95A5] leading-relaxed">
-              <strong className="text-[#F5F4EF] font-medium block mb-1">Delimitare juridică factuală a mărcii:</strong>
-              Chestertons Global este o entitate internațională independentă, iar marca aparține deținătorilor săi de drept. Platforma Executive nu deține și nu operează brandul Chestertons, ci activează în calitate de partener/asociat internațional pentru mandate imobiliare specifice.
+              <strong className="text-[#F5F4EF] font-medium block mb-1">Factual trademark delimitation:</strong>
+              Chestertons Global is an independent international entity, and its trademark belongs to its lawful proprietors. The Executive platform does not own or operate the Chestertons brand, operating as an international associate/partner for specific transaction mandates.
             </div>
           </section>
 
@@ -129,56 +130,56 @@ export default function ParteneriPage() {
           <section className="space-y-12">
             <ChapterDivider
               number="02"
-              category="PROTECȚIE PATRIMONIALĂ & ASIGURARE"
-              title="Partener Autorizat Generali România Asigurare Reasigurare S.A."
-              description="Soluții specializate de asigurare patrimonială și management al riscului fizic pentru clădiri și proprietăți rezidențiale de mare valoare."
+              category="ASSET PROTECTION & RISK STRUCTURING"
+              title="Authorized Partner — Generali România Asigurare Reasigurare S.A."
+              description="Specialized asset protection and physical risk advisory for prime residential estates, commercial assets, and private collections."
             />
 
             <ArchitecturalFeaturePanel
-              tag="CONTRACT AUTORIZAT // GENERALI ROMÂNIA"
-              title="Protecția Patrimoniului Imobiliar & Managementul Riscului Fizic"
-              description="Cristian Văduva deține un contract autorizat de agent/partener de asigurare cu Generali România Asigurare Reasigurare S.A. Oferim consiliere de specialitate în structurarea polițelor complete de asigurare a clădirilor de lux, calculul corect al valorii de reconstrucție (evitând subasigurarea) și protecția finisajelor premium."
+              tag="AUTHORIZED CONTRACT // GENERALI ROMÂNIA"
+              title="Property Asset Protection & Physical Risk Engineering"
+              description="Cristian Văduva holds an authorized insurance partner agreement with Generali România Asigurare Reasigurare S.A., structuring comprehensive prime real estate policies, verifying accurate reconstruction replacement valuations (preventing underinsurance), and securing bespoke architectural finishes."
               imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-office-generali-portfolio-protection.png"
-              imageAlt="Cristian Văduva — Certificare și activitate Generali România"
-              imageCaption="Cristian Văduva · Soluții de Asigurare Clădiri Prime"
+              imageAlt="Cristian Văduva — Generali România certification and practice"
+              imageCaption="Cristian Văduva · Prime Property Risk & Protection Solutions"
               imagePosition="left"
               bullets={[
                 {
-                  title: "Polițe complete pentru proprietăți de mare valoare",
-                  desc: "Acoperire completă a riscurilor catastrofice, incendiilor, infiltrațiilor și viciilor de structură.",
+                  title: "Comprehensive coverage for high-value properties",
+                  desc: "Complete protection against catastrophic risk, fire, water ingress, and structural defects.",
                 },
                 {
-                  title: "Calculul valorii de înlocuire la cost real",
-                  desc: "Evaluarea realistă a costurilor de manoperă și materiale de import pentru a preveni subasigurarea.",
+                  title: "Accurate replacement cost valuation",
+                  desc: "Independent assessment of imported materials, bespoke craftsmanship, and rebuilding costs to eliminate underinsurance.",
                 },
                 {
-                  title: "Cadru reglementat ASF",
-                  desc: "Toate produsele sunt intermediate conform normelor Autorității de Supraveghere Financiară.",
+                  title: "Regulated ASF framework",
+                  desc: "All insurance solutions are brokered in compliance with the Financial Supervisory Authority (ASF) standards.",
                 },
               ]}
-              ctaText="DISCUTĂ AUDITUL DE ASIGURARE"
+              ctaText="REQUEST ASSET PROTECTION AUDIT"
               ctaHref="/programare"
               stats={[
-                { value: "ASF", label: "Cadru Reglementat" },
-                { value: "Generali", label: "Emitent Instituțional" },
-                { value: "100%", label: "Protecție Activ" },
+                { value: "ASF", label: "Regulated Framework" },
+                { value: "Generali", label: "Institutional Underwriter" },
+                { value: "100%", label: "Asset Coverage Focus" },
               ]}
             />
 
             {/* Disclaimer Generali */}
             <div className="p-5 bg-white/[0.02] border-l-2 border-[#93C8FF] font-sans text-xs text-[#8A95A5] leading-relaxed">
-              <strong className="text-[#F5F4EF] font-medium block mb-1">Delimitare de autoritate:</strong>
-              Polițele de asigurare sunt emise exclusiv de către Generali România Asigurare Reasigurare S.A. în conformitate cu termenii contractuali și condițiile generale de asigurare aprobate. Executive furnizează consultanța de încadrare și analiza riscului fizic al activului.
+              <strong className="text-[#F5F4EF] font-medium block mb-1">Regulatory delimitation:</strong>
+              Insurance policies are underwritten exclusively by Generali România Asigurare Reasigurare S.A. pursuant to approved policy terms and conditions. Executive provides risk profile structuring and physical property audit advisory.
             </div>
           </section>
 
-          {/* CHAPTER 03 // REȚEAUA DESCHISĂ DE COLABORATORI ACREDITAȚI */}
+          {/* CHAPTER 03 // OPEN NETWORK OF ACCREDITED COLLABORATORS */}
           <section className="space-y-12">
             <ChapterDivider
               number="03"
-              category="EXPERTIZĂ SPECIALIZATĂ INDEPENDENTĂ"
-              title="Rețeaua Deschisă de Profesioniști Acreditați"
-              description="Nicio tranzacție imobiliară responsabilă nu poate fi condusă de o singură persoană. În funcție de cerințele mandatului, colaborăm deschis cu consilierii dumneavoastră existenți sau vă punem în contact cu experți verificați."
+              category="INDEPENDENT ACCREDITED EXPERTISE"
+              title="Open Network of Accredited Professionals"
+              description="High-stakes transactions require rigorous multidisciplinary oversight. Depending on mandate specifications, we collaborate seamlessly with your existing family counsel or assemble vetted independent practitioners."
             />
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 font-sans text-xs sm:text-sm text-[#8A95A5]">
@@ -186,12 +187,12 @@ export default function ParteneriPage() {
                 <div className="w-10 h-10 rounded-none bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-[#93C8FF]">
                   <Scale className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Avocați de Barou</h3>
+                <h3 className="font-serif text-xl text-[#F5F4EF]">Bar Attorneys</h3>
                 <p className="leading-relaxed">
-                  Cabinete de avocatură specializate în drept imobiliar, urbanism și litigii de proprietate pentru auditul formal al titlurilor.
+                  Specialized law practices focused on real estate law, urban planning compliance, and title verification for complete legal audits.
                 </p>
                 <div className="pt-2 font-mono text-[10px] text-[#A97F60] uppercase tracking-wider">
-                  BAROUL BUCUREȘTI
+                  BUCHAREST BAR ASSOCIATION
                 </div>
               </div>
 
@@ -199,12 +200,12 @@ export default function ParteneriPage() {
                 <div className="w-10 h-10 rounded-none bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-[#93C8FF]">
                   <FileText className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Notari Publici</h3>
+                <h3 className="font-serif text-xl text-[#F5F4EF]">Public Notaries</h3>
                 <p className="leading-relaxed">
-                  Birouri notariale cu experiență în tranzacții rezidențiale de mare valoare, garantând legalitatea autentificării și a transferului.
+                  Established notary offices with extensive experience in high-value asset transfers, solemn deed execution, and title registration.
                 </p>
                 <div className="pt-2 font-mono text-[10px] text-[#A97F60] uppercase tracking-wider">
-                  AUTENTIFICARE SOLEMNĂ
+                  NOTARIAL AUTHENTICATION
                 </div>
               </div>
 
@@ -212,12 +213,12 @@ export default function ParteneriPage() {
                 <div className="w-10 h-10 rounded-none bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-[#93C8FF]">
                   <Building2 className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Experți Tehnici Atestați în Construcții</h3>
+                <h3 className="font-serif text-xl text-[#F5F4EF]">Certified Building Engineers</h3>
                 <p className="leading-relaxed">
-                  Ingineri structuriști atestați și diriginți de șantier autorizați pentru inspectarea rezistenței, instalațiilor și calității execuției.
+                  Certified structural engineers and authorized site inspectors auditing structural integrity, MEP installations, and execution standards.
                 </p>
                 <div className="pt-2 font-mono text-[10px] text-[#A97F60] uppercase tracking-wider">
-                  STRUCTURĂ & INSTALAȚII
+                  STRUCTURE & MEP AUDITS
                 </div>
               </div>
 
@@ -225,12 +226,12 @@ export default function ParteneriPage() {
                 <div className="w-10 h-10 rounded-none bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-[#93C8FF]">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-xl text-[#F5F4EF]">Evaluatori ANEVAR</h3>
+                <h3 className="font-serif text-xl text-[#F5F4EF]">ANEVAR Certified Appraisers</h3>
                 <p className="leading-relaxed">
-                  Evaluatori atestați conform standardelor internaționale de evaluare pentru estimarea valorii de piață și de creditare.
+                  Independent appraisers certified under International Valuation Standards (IVS) for market value and lending compliance determinations.
                 </p>
                 <div className="pt-2 font-mono text-[10px] text-[#A97F60] uppercase tracking-wider">
-                  STANDARDE IVS / ANEVAR
+                  IVS / ANEVAR STANDARDS
                 </div>
               </div>
             </div>
@@ -238,12 +239,12 @@ export default function ParteneriPage() {
 
           {/* CLOSING FRAME */}
           <ClosingFrame
-            category="INITIERE PARTENERIAT SAU MANDAT"
-            title="Doriți să valorificați rețeaua noastră de parteneri pentru proiectul dumneavoastră?"
-            description="Fie că aveți nevoie de acces la proprietăți internaționale prin Chestertons sau doriți protejarea unui activ de mare valoare cu Generali, vă punem la dispoziție canale directe verificate."
-            primaryCtaText="SOLICITĂ DISCUȚIE (20 MIN)"
+            category="INITIATE PARTNERSHIP OR MANDATE"
+            title="Ready to leverage our institutional partner network for your transaction?"
+            description="Whether securing international residences via Chestertons or structuring prime asset coverage with Generali, we provide direct, vetted channels."
+            primaryCtaText="SCHEDULE CONSULTATION (20 MIN)"
             primaryCtaHref="/programare"
-            secondaryCtaText="REPREZENTARE CLIENȚI"
+            secondaryCtaText="PRIVATE CLIENT ADVISORY"
             secondaryCtaHref="/pentru-clienti"
             imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-office-chestertons-global-network.png"
           />

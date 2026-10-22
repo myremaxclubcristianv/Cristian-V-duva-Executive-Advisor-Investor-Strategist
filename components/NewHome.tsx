@@ -82,10 +82,10 @@ export default function NewHome() {
               target="_blank"
               className="px-6 py-3 rounded-full bg-[#B89B72] text-black font-medium hover:bg-[#C9AE85] transition"
             >
-              Consultanță Privată Directă
+              Direct Private Consultation
             </Link>
             <Link href="/gallery" className="px-6 py-3 rounded-full bg-gray-100 text-gray-900 font-medium hover:bg-gray-200 transition">
-              Galeria Foto
+              Photo Gallery
             </Link>
             <Link href="/tv" className="px-6 py-3 rounded-full bg-red-600 text-white font-medium hover:bg-red-700 transition">
               YouTube TV
@@ -98,10 +98,10 @@ export default function NewHome() {
       <section className="py-24 bg-[#F5F5F7]">
         <Container>
           <Heading as="h2" className="text-3xl font-semibold mb-6">
-            Identitate • Poveste
+            Identity • Narrative
           </Heading>
           <p className="text-lg text-[#1D1D1F] max-w-3xl">
-            Cristian Văduva activează la intersecţia dintre tranzacţiile imobiliare de mare anvergură, protecţia activelor şi plasamentele strategice de capital. Cu o fundație academică multidisciplinară și masterate specializate, fiecare mandat oferă analiza completă a riscului, randamentului și confidenţialităţii.
+            Cristian Văduva operates at the intersection of high-value real estate transactions, asset protection, and strategic capital allocation. With a multidisciplinary academic foundation and specialized master&#39;s degrees, each mandate provides thorough risk, return, and confidentiality analysis.
           </p>
         </Container>
       </section>
@@ -110,23 +110,23 @@ export default function NewHome() {
       <section className="py-24">
         <Container>
           <Heading as="h2" className="text-3xl font-semibold mb-6">
-            Educație & Experienţă Internaţională
+            Education & International Experience
           </Heading>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-medium mb-2">Diplome Universitare</h3>
+              <h3 className="text-xl font-medium mb-2">Bachelor&#39;s Degrees</h3>
               <ul className="list-disc pl-5 text-[#1D1D1F]">
-                <li>Economie</li>
-                <li>Drept</li>
-                <li>Ecologie</li>
+                <li>Economics</li>
+                <li>Law</li>
+                <li>Ecology</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-medium mb-2">Masterate</h3>
+              <h3 className="text-xl font-medium mb-2">Master&#39;s Degrees</h3>
               <ul className="list-disc pl-5 text-[#1D1D1F]">
-                <li>Management Financiar</li>
-                <li>Impact Mediu</li>
-                <li>Securitate Privată</li>
+                <li>Financial Management</li>
+                <li>Environmental Impact</li>
+                <li>Private Security</li>
               </ul>
             </div>
           </div>
@@ -140,10 +140,10 @@ export default function NewHome() {
             Luxury Real Estate – BUY • SELL • INVEST
           </Heading>
           <p className="text-lg text-[#1D1D1F] max-w-2xl mb-8">
-            Reprezentare exclusivă pentru cumpărători și vânzători de reședințe de lux, proprietăți istorice și terenuri de dezvoltare strategică în Monaco, Dubai, Bucureşti şi alte hub‑uri europene.
+            Exclusive representation for buyers and sellers of luxury residences, heritage properties, and strategic development land in Monaco, Dubai, Bucharest, and other European hubs.
           </p>
           <Link href="/real-estate" className="inline-block px-6 py-3 rounded-full bg-gray-100 text-gray-900 font-medium hover:bg-gray-200 transition">
-            Explorează Portofoliul
+            Explore Portfolio
           </Link>
         </Container>
       </section>
@@ -155,9 +155,9 @@ export default function NewHome() {
             Asset Protection & Strategic Decision‑Making
           </Heading>
           <ul className="list-disc pl-5 text-[#1D1D1F] space-y-2">
-            <li>Asigurări complexe de proprietăţi rezidenţiale şi comerciale</li>
-            <li>Consultanţă pentru reducere a riscului şi securitate a investiţiei</li>
-            <li>Planificare de continuitate pentru capitalul privat</li>
+            <li>Comprehensive coverage for prime residential and commercial assets</li>
+            <li>Advisory for risk mitigation and investment security</li>
+            <li>Continuity planning for private capital</li>
           </ul>
         </Container>
       </section>
@@ -166,7 +166,7 @@ export default function NewHome() {
       <section className="py-24 bg-[#F5F5F7]">
         <Container>
           <Heading as="h2" className="text-3xl font-semibold mb-6">
-            Galeria Vizuală & Portrete Oficiale
+            Visual Gallery & Official Portraits
           </Heading>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {photos.slice(0, 4).map((photo) => (
@@ -210,23 +210,23 @@ export default function NewHome() {
       <section className="py-24 bg-[#F5F5F7]">
         <Container>
           <Heading as="h2" className="text-3xl font-semibold mb-6">
-            Ecosistem Integrat
+            Integrated Ecosystem
           </Heading>
           <p className="text-lg text-[#1D1D1F] max-w-3xl mb-8">
-            Platforme și divizii conectate: cristianvaduva.com, aixluxury.com, HomeFind, Dubai, și AiX OS.
+            Connected platforms and divisions: cristianvaduva.com, aixluxury.com, HomeFind, Dubai, and AiX OS.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link href="https://cristianvaduva.com" target="_blank" className="block p-6 border rounded-lg hover:border-[#B89B72] transition">
               <h3 className="text-lg font-semibold mb-2">CristianVaduva.com</h3>
-              <p className="text-sm text-[#1D1D1F]">Prezență digitală centrală și consultanță executivă.</p>
+              <p className="text-sm text-[#1D1D1F]">Central digital presence and executive advisory.</p>
             </Link>
             <Link href="https://aixluxury.com" target="_blank" className="block p-6 border rounded-lg hover:border-[#B89B72] transition">
               <h3 className="text-lg font-semibold mb-2">AiXLuxury.com</h3>
-              <p className="text-sm text-[#1D1D1F]">Portofoliu imobiliar ultra‑prime și lifestyle premium.</p>
+              <p className="text-sm text-[#1D1D1F]">Ultra‑prime real estate portfolio and premium lifestyle.</p>
             </Link>
             <Link href="https://homefind.cristianvaduva.com" target="_blank" className="block p-6 border rounded-lg hover:border-[#B89B72] transition">
               <h3 className="text-lg font-semibold mb-2">HomeFind</h3>
-              <p className="text-sm text-[#1D1D1F]">Platformă de căutare imobiliară și identificare proprietăţi.</p>
+              <p className="text-sm text-[#1D1D1F]">AI-assisted property acquisition and search intelligence.</p>
             </Link>
           </div>
         </Container>
@@ -238,9 +238,9 @@ export default function NewHome() {
           <Heading as="h2" className="text-3xl font-semibold mb-6">
             Contact & Private Intake
           </Heading>
-          <p className="mb-4 text-[#1D1D1F]">Pentru consultanţe private, utilizaţi formularul sau contactaţi‑ne direct.</p>
+          <p className="mb-4 text-[#1D1D1F]">For private advisory inquiries, submit the intake form or contact directly.</p>
           <Link href="/contact" className="inline-block px-6 py-3 rounded-full bg-gray-100 text-gray-900 font-medium hover:bg-gray-200 transition">
-            Deschide Formularul de Contact
+            Open Contact Desk
           </Link>
         </Container>
       </section>

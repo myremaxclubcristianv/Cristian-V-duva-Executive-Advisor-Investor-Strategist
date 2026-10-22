@@ -29,17 +29,17 @@ export default function AppleHeroCadran() {
             <p className="text-lg sm:text-2xl lg:text-3xl text-[#B89B72] font-serif italic tracking-wide">Executive Luxury Real Estate Advisor · Investor · Strategist</p>
           </div>
           <p className="text-base sm:text-xl text-neutral-300 font-light leading-relaxed max-w-3xl">
-            Arhitectură de capital, achiziții ultra-prime și consultanță strategică de cel mai înalt nivel pentru investitori privați, fonduri de investiții și family offices în România, Monaco și Dubai.
+            Capital architecture, ultra-prime acquisitions, and executive-level strategic advisory for private investors, investment syndicates, and family offices across Romania, Monaco, and Dubai.
           </p>
           {/* Action CTAs */}
           <div className="flex flex-wrap items-center gap-4 pt-4 justify-center">
             <a href="https://wa.me/436509536345" target="_blank" rel="noopener noreferrer" className="px-6 py-3.5 rounded-full bg-[#1D1D1F] hover:bg-gray-800 text-white font-medium text-sm transition-all duration-200 flex items-center gap-2 shadow-md">
-              <span>Consultanță Privată Directă</span>
+              <span>Direct Private Advisory</span>
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <Link href="/gallery" className="px-6 py-3.5 rounded-full border border-gray-300 text-gray-800 font-medium text-sm transition-all duration-200 flex items-center gap-2 bg-white hover:bg-gray-50">
               <ImageIcon className="w-4 h-4 text-gray-800" />
-              <span>Galeria Foto & Monograph</span>
+              <span>Photo Archive & Monograph</span>
             </Link>
             <Link href="/tv" className="px-6 py-3.5 rounded-full border border-gray-300 text-gray-800 font-medium text-sm transition-all duration-200 flex items-center gap-2 bg-white hover:bg-gray-50">
               <Play className="w-4 h-4 text-red-600" />
@@ -53,7 +53,7 @@ export default function AppleHeroCadran() {
           {/* Cadran 1 */}
           <div className="bg-[#141414]/80 border border-white/10 hover:border-[#B89B72]/40 rounded-3xl p-6 backdrop-blur-xl transition-all duration-300 group flex flex-col justify-between">
             <div className="flex items-center justify-between text-neutral-400">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#B89B72]">Expertiză Prime</span>
+              <span className="text-xs font-mono uppercase tracking-widest text-[#B89B72]">Prime Expertise</span>
               <Building2 className="w-4 h-4 text-[#B89B72]" />
             </div>
             <div className="mt-6 space-y-1">
@@ -64,34 +64,34 @@ export default function AppleHeroCadran() {
           {/* Cadran 2 */}
           <div className="bg-[#141414]/80 border border-white/10 hover:border-[#B89B72]/40 rounded-3xl p-6 backdrop-blur-xl transition-all duration-300 group flex flex-col justify-between">
             <div className="flex items-center justify-between text-neutral-400">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#B89B72]">Protecție Capital</span>
+              <span className="text-xs font-mono uppercase tracking-widest text-[#B89B72]">Capital Protection</span>
               <ShieldCheck className="w-4 h-4 text-[#B89B72]" />
             </div>
             <div className="mt-6 space-y-1">
               <div className="text-2xl font-semibold text-white group-hover:text-[#B89B72] transition-colors">Asset Protection</div>
-              <p className="text-xs text-neutral-400 font-light leading-relaxed">Parteneriat strategic Generali România & structurare de asigurări UHNW.</p>
+              <p className="text-xs text-neutral-400 font-light leading-relaxed">Strategic Generali Romania partnership & UHNW wealth risk structuring.</p>
             </div>
           </div>
           {/* Cadran 3 */}
           <div className="bg-[#141414]/80 border border-white/10 hover:border-[#B89B72]/40 rounded-3xl p-6 backdrop-blur-xl transition-all duration-300 group flex flex-col justify-between">
             <div className="flex items-center justify-between text-neutral-400">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#B89B72]">Rigoare Academică</span>
+              <span className="text-xs font-mono uppercase tracking-widest text-[#B89B72]">Academic Rigor</span>
               <Award className="w-4 h-4 text-[#B89B72]" />
             </div>
             <div className="mt-6 space-y-1">
-              <div className="text-2xl font-semibold text-white group-hover:text-[#B89B72] transition-colors">6 Diplome & Masterate</div>
-              <p className="text-xs text-neutral-400 font-light leading-relaxed">Economie, Drept, Ecologie, Management Financiar & Securitatea Informației.</p>
+              <div className="text-2xl font-semibold text-white group-hover:text-[#B89B72] transition-colors">6 Degrees & Master&apos;s</div>
+              <p className="text-xs text-neutral-400 font-light leading-relaxed">Economics, Law, Ecology, Financial Management & Information Security.</p>
             </div>
           </div>
           {/* Cadran 4 */}
           <div className="bg-[#141414]/80 border border-white/10 hover:border-[#B89B72]/40 rounded-3xl p-6 backdrop-blur-xl transition-all duration-300 group flex flex-col justify-between">
             <div className="flex items-center justify-between text-neutral-400">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#B89B72]">Platformă & Media</span>
+              <span className="text-xs font-mono uppercase tracking-widest text-[#B89B72]">Platform & Media</span>
               <Landmark className="w-4 h-4 text-[#B89B72]" />
             </div>
             <div className="mt-6 space-y-1">
               <div className="text-2xl font-semibold text-white group-hover:text-[#B89B72] transition-colors">AiXLuxury & YouTube</div>
-              <p className="text-xs text-neutral-400 font-light leading-relaxed">Ecosistem digital integrat, analiză de piață video & tranzacții internaționale.</p>
+              <p className="text-xs text-neutral-400 font-light leading-relaxed">Integrated digital ecosystem, video market intelligence & cross-border transactions.</p>
             </div>
           </div>
         </div>

@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/legal",
   },
+  openGraph: {
+    title: "Legal & Corporate Information — Cristian Văduva",
+    description: "Institutional legal notice, operator identity, intellectual property, and regulatory transparency for Cristian Văduva and AiX Media platforms.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function LegalPage() {

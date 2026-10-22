@@ -263,7 +263,7 @@ export function validateImageBuffer(buffer: Buffer): {
   height?: number;
 } {
   if (!buffer || buffer.length < 16) {
-    return { valid: false, error: "Fișierul este corupt sau prea mic pentru o imagine validă." };
+    return { valid: false, error: "File is corrupted or too small for a valid image." };
   }
 
   const MAX_DIMENSION = 16384;
@@ -285,7 +285,7 @@ export function validateImageBuffer(buffer: Buffer): {
           if (h > MAX_DIMENSION || w > MAX_DIMENSION) {
             return {
               valid: false,
-              error: `Dimensiunile imaginii (${w}x${h}) depășesc limita maximă de ${MAX_DIMENSION}px.`,
+              error: `Image dimensions (${w}x${h}) exceed the maximum limit of ${MAX_DIMENSION}px.`,
             };
           }
           return { valid: true, format: "jpeg", extension: ".jpg", mime: "image/jpeg", width: w, height: h };
@@ -316,20 +316,20 @@ export function validateImageBuffer(buffer: Buffer): {
     buffer[7] === 0x0a
   ) {
     if (buffer.length < 33) {
-      return { valid: false, error: "Fișierul PNG este trunchiat sau incomplet." };
+      return { valid: false, error: "PNG file is truncated or incomplete." };
     }
     if (buffer.toString("ascii", 12, 16) !== "IHDR") {
-      return { valid: false, error: "Fișierul PNG este corupt (IHDR lipsește)." };
+      return { valid: false, error: "PNG file is corrupted (missing IHDR header)." };
     }
     const width = buffer.readUInt32BE(16);
     const height = buffer.readUInt32BE(20);
     if (width === 0 || height === 0) {
-      return { valid: false, error: "Dimensiunile imaginii PNG sunt invalide (0x0)." };
+      return { valid: false, error: "PNG image dimensions are invalid (0x0)." };
     }
     if (width > MAX_DIMENSION || height > MAX_DIMENSION) {
       return {
         valid: false,
-        error: `Dimensiunile imaginii (${width}x${height}) depășesc limita de siguranță de ${MAX_DIMENSION}px.`,
+        error: `Image dimensions (${width}x${height}) exceed the safety limit of ${MAX_DIMENSION}px.`,
       };
     }
     return { valid: true, format: "png", extension: ".png", mime: "image/png", width, height };
@@ -341,7 +341,7 @@ export function validateImageBuffer(buffer: Buffer): {
     buffer.toString("ascii", 8, 12) === "WEBP"
   ) {
     if (buffer.length < 30) {
-      return { valid: false, error: "Fișierul WebP este trunchiat sau incomplet." };
+      return { valid: false, error: "WebP file is truncated or incomplete." };
     }
     const chunkType = buffer.toString("ascii", 12, 16);
     let width = 0;
@@ -356,7 +356,7 @@ export function validateImageBuffer(buffer: Buffer): {
     if ((width > 0 && width > MAX_DIMENSION) || (height > 0 && height > MAX_DIMENSION)) {
       return {
         valid: false,
-        error: `Dimensiunile imaginii WebP (${width}x${height}) depășesc limita de ${MAX_DIMENSION}px.`,
+        error: `WebP image dimensions (${width}x${height}) exceed the limit of ${MAX_DIMENSION}px.`,
       };
     }
     return { valid: true, format: "webp", extension: ".webp", mime: "image/webp", width, height };
@@ -372,6 +372,6 @@ export function validateImageBuffer(buffer: Buffer): {
 
   return {
     valid: false,
-    error: "Semnătura binară a fișierului nu corespunde unui format de imagine permis (JPEG, PNG, WEBP, AVIF).",
+    error: "Binary signature does not match an allowed image format (JPEG, PNG, WEBP, AVIF).",
   };
 }

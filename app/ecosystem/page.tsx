@@ -8,11 +8,19 @@ import { insuranceDivisions, insuranceOverview } from "@/lib/insuranceData";
 import { SectionHeader, EditorialText, CTASection, InsightPanel } from "@/components/editorial";
 
 export const metadata: Metadata = {
-  title: "Ecosistem Integrat & Arhitectură Operațională — Cristian Văduva",
+  title: "Integrated Ecosystem & Operating Infrastructure — Cristian Văduva",
   description:
-    "Rețeaua integrată de servicii imobiliare, consultanță strategică, finanțare și protecție a patrimoniului coordonată de Cristian Văduva.",
+    "Integrated network of prime real estate platforms, strategic advisory, asset financing, and wealth protection coordinated by Cristian Văduva.",
   alternates: {
     canonical: "https://executive.cristianvaduva.com/ecosystem",
+  },
+  openGraph: {
+    title: "Integrated Ecosystem & Operating Infrastructure | Cristian Văduva",
+    description:
+      "Integrated network of prime real estate platforms, strategic advisory, and wealth protection coordinated by Cristian Văduva.",
+    url: "https://executive.cristianvaduva.com/ecosystem",
+    type: "website",
+    locale: "en_US",
   },
 };
 
@@ -276,12 +284,12 @@ export default function EcosystemPage() {
         <CTASection
           eyebrow="SYSTEM INTEGRATION"
           title="Collaborate on Infrastructure or Propose a Strategic Alliance."
-          description="Fie că doriți acces la catalogul de proprietăți HomeFind, prezentarea unei proprietăți reprezentative sau analizarea soluțiilor de asigurare și protecție a activelor prin parteneriatul cu Generali România, dialogul este direct și confidențial."
-          primaryActionText="SOLICITĂ O DISCUȚIE STRATEGICĂ"
+          description="Whether accessing the HomeFind curated property catalogue, presenting a signature property, or structuring asset protection solutions via our Generali România partnership, our dialogue is direct and confidential."
+          primaryActionText="REQUEST STRATEGIC CONSULTATION"
           primaryActionHref="/contact"
           secondaryActionText="WHATSAPP (+43 650 953 6345)"
           secondaryActionHref="https://wa.me/436509536345"
-          disclaimer="Toate datele și comunicările sunt procesate sub standarde europene de protecție a datelor și confidențialitate contractuală (NDA)."
+          disclaimer="All communications and data are processed under strict European data privacy standards (GDPR) and contractual non-disclosure agreements (NDA)."
         />
       </main>
 

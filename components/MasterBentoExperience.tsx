@@ -118,7 +118,7 @@ export default function MasterBentoExperience() {
     } catch {
       window.open(
         `https://wa.me/436509536345?text=${encodeURIComponent(
-          `Bună ziua Cristian, mă numesc ${formName} (${formEmail}, ${formPhone}). Solicitare: ${formInterest}. Detalii: ${formMessage}`
+          `Hello Cristian, my name is ${formName} (${formEmail}, ${formPhone}). Request: ${formInterest}. Details: ${formMessage}`
         )}`,
         "_blank"
       );
@@ -160,7 +160,7 @@ export default function MasterBentoExperience() {
 
                 {/* Core Synthesis */}
                 <p className="text-base sm:text-lg text-neutral-300 font-light leading-relaxed max-w-2xl">
-                  Consultanță executivă și reprezentare privată pentru achiziții imobiliare de elită, structuri de protecție a capitalului și tranzacții off-market în principalele hub-uri europene.
+                  Executive advisory and private representation for premier real estate acquisitions, capital protection structures, and off-market transactions across major European corridors.
                 </p>
               </div>
 
@@ -173,7 +173,7 @@ export default function MasterBentoExperience() {
                     rel="noopener noreferrer"
                     className="px-7 py-3.5 rounded-full bg-[#B89B72] hover:bg-[#C9AE85] text-black font-semibold text-xs font-mono uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg shadow-[#B89B72]/20 group cursor-pointer"
                   >
-                    <span>Consultanță Privată Directă</span>
+                    <span>Direct Private Consultation</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </a>
 
@@ -182,7 +182,7 @@ export default function MasterBentoExperience() {
                     className="px-6 py-3.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/15 text-white font-medium text-xs font-mono uppercase tracking-wider transition-all flex items-center gap-2 backdrop-blur-md"
                   >
                     <ImageIcon className="w-4 h-4 text-[#B89B72]" />
-                    <span>Galeria Foto</span>
+                    <span>Photo Gallery</span>
                   </Link>
 
                   <Link
@@ -197,16 +197,16 @@ export default function MasterBentoExperience() {
                 {/* Sub-Metric Badges */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-4 border-t border-white/10 text-xs font-mono">
                   <div className="p-3 rounded-2xl bg-white/[0.02] border border-white/5">
-                    <span className="text-neutral-400 text-[10px] uppercase block">Piață Principală</span>
-                    <span className="font-semibold text-white mt-0.5 block">București · Monaco</span>
+                    <span className="text-neutral-400 text-[10px] uppercase block">Primary Markets</span>
+                    <span className="font-semibold text-white mt-0.5 block">Bucharest · Monaco</span>
                   </div>
                   <div className="p-3 rounded-2xl bg-white/[0.02] border border-white/5">
-                    <span className="text-neutral-400 text-[10px] uppercase block">Parteneriat</span>
-                    <span className="font-semibold text-white mt-0.5 block">Generali România</span>
+                    <span className="text-neutral-400 text-[10px] uppercase block">Partnership</span>
+                    <span className="font-semibold text-white mt-0.5 block">Generali Romania</span>
                   </div>
                   <div className="p-3 rounded-2xl bg-white/[0.02] border border-white/5 col-span-2 sm:col-span-1">
-                    <span className="text-neutral-400 text-[10px] uppercase block">Educație</span>
-                    <span className="font-semibold text-white mt-0.5 block">6 Diplome & Master</span>
+                    <span className="text-neutral-400 text-[10px] uppercase block">Education</span>
+                    <span className="font-semibold text-white mt-0.5 block">6 Degrees & Master&#39;s</span>
                   </div>
                 </div>
               </div>
@@ -236,7 +236,7 @@ export default function MasterBentoExperience() {
                   {heroPhoto?.title || "Executive Visual Monograph"}
                 </div>
                 <p className="text-xs sm:text-sm text-neutral-300 font-light line-clamp-2">
-                  {heroPhoto?.caption || "Reprezentare și arhitectură de capital în Europa."}
+                  {heroPhoto?.caption || "Representation and capital architecture across Europe."}
                 </p>
               </div>
             </div>
@@ -259,29 +259,29 @@ export default function MasterBentoExperience() {
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#B89B72]">
-                    CADRAN 02 / PROFIL & VIZIUNE
+                    QUADRANT 02 / PROFILE & VISION
                   </span>
                   <Sparkles className="w-4 h-4 text-[#B89B72]" />
                 </div>
 
                 <h2 className="text-2xl sm:text-3xl font-semibold text-white tracking-tight leading-snug">
-                  Rigoare Strategică & Integritate de Decizie
+                  Strategic Rigor & Decision Integrity
                 </h2>
 
                 <div className="space-y-4 text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
                   <p>
-                    Cristian Văduva activează la intersecția dintre tranzacțiile imobiliare de mare anvergură, protecția activelor și plasamentele strategice de capital.
+                    Cristian Văduva operates at the intersection of high-value real estate transactions, asset protection, and strategic capital allocation.
                   </p>
                   <p>
-                    Cu o fundație academică multidisciplinară (Economie, Drept și Ecologie) și masterate specializate în Management Financiar și Securitatea Informației, fiecare mandat de achiziție sau vânzare beneficiază de o analiză exhaustivă de risc, randament și confidențialitate.
+                    With a multidisciplinary academic foundation (Economics, Law, and Ecology) and specialized master&#39;s degrees in Financial Management and Information Security, each acquisition or sale mandate benefits from thorough risk, return, and confidentiality analysis.
                   </p>
                 </div>
               </div>
 
               <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono">
-                <span className="text-neutral-400">Perspectivă Internațională</span>
+                <span className="text-neutral-400">International Perspective</span>
                 <Link href="/about" className="text-[#B89B72] hover:underline flex items-center gap-1">
-                  Citește Biografia →
+                  Read Biography →
                 </Link>
               </div>
             </div>
@@ -291,38 +291,38 @@ export default function MasterBentoExperience() {
               <div className="space-y-6 relative z-10">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#B89B72]">
-                    CADRAN 03 / LUXURY REAL ESTATE
+                    QUADRANT 03 / LUXURY REAL ESTATE
                   </span>
                   <Building2 className="w-4 h-4 text-[#B89B72]" />
                 </div>
 
                 <div className="space-y-2">
                   <h2 className="text-2xl sm:text-3xl font-semibold text-white tracking-tight">
-                    Monaco · Dubai · București · Europa
+                    Monaco · Dubai · Bucharest · Europe
                   </h2>
                   <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
-                    Reprezentare exclusivă pentru cumpărători și vânzători de reședințe de lux, proprietăți istorice și terenuri de dezvoltare strategică.
+                    Exclusive representation for buyers and sellers of luxury residences, heritage properties, and strategic development land.
                   </p>
                 </div>
 
                 {/* 3 Pillars Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                   <div className="p-4 rounded-2xl bg-white/[0.03] border border-white/5 space-y-1">
-                    <span className="text-[10px] font-mono text-[#B89B72] uppercase">București Prime</span>
+                    <span className="text-[10px] font-mono text-[#B89B72] uppercase">Bucharest Prime</span>
                     <h3 className="text-sm font-semibold text-white">Herăstrău · Primăverii</h3>
-                    <p className="text-[11px] text-neutral-400 font-light">Penthouse-uri și vile istorice</p>
+                    <p className="text-[11px] text-neutral-400 font-light">Penthouses and historic estates</p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-white/[0.03] border border-white/5 space-y-1">
                     <span className="text-[10px] font-mono text-[#B89B72] uppercase">Monaco Riviera</span>
                     <h3 className="text-sm font-semibold text-white">Monte Carlo · Côte d&#39;Azur</h3>
-                    <p className="text-[11px] text-neutral-400 font-light">Tranzacții transfrontaliere</p>
+                    <p className="text-[11px] text-neutral-400 font-light">Cross-border transactions</p>
                   </div>
 
                   <div className="p-4 rounded-2xl bg-white/[0.03] border border-white/5 space-y-1">
                     <span className="text-[10px] font-mono text-[#B89B72] uppercase">Dubai Hub</span>
                     <h3 className="text-sm font-semibold text-white">Palm · Downtown</h3>
-                    <p className="text-[11px] text-neutral-400 font-light">Portofolii de investiții UHNW</p>
+                    <p className="text-[11px] text-neutral-400 font-light">UHNW investment portfolios</p>
                   </div>
                 </div>
               </div>
@@ -330,7 +330,7 @@ export default function MasterBentoExperience() {
               <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono relative z-10">
                 <span className="text-neutral-400">Buyer & Seller Representation</span>
                 <Link href="/real-estate" className="text-[#B89B72] hover:underline flex items-center gap-1">
-                  Explorează Portofoliul →
+                  Explore Portfolio →
                 </Link>
               </div>
             </div>
@@ -353,38 +353,38 @@ export default function MasterBentoExperience() {
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#B89B72]">
-                    CADRAN 04 / PROTECȚIE & CAPITAL
+                    QUADRANT 04 / CAPITAL & PROTECTION
                   </span>
                   <ShieldCheck className="w-4 h-4 text-[#B89B72]" />
                 </div>
 
                 <div className="space-y-3">
                   <h3 className="text-2xl font-semibold text-white">
-                    Asset Protection & Parteneriat Generali România
+                    Asset Protection & Generali Romania Partnership
                   </h3>
                   <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
-                    Structurare avansată de asigurări de bunuri și protecție a patrimoniului imobiliar pentru investitori și deținători de active de mare valoare.
+                    Advanced structuring of property insurance and asset protection for investors and high-value asset holders.
                   </p>
                 </div>
 
                 <ul className="space-y-2.5 text-xs sm:text-sm text-neutral-300 font-light">
                   <li className="flex items-center gap-2.5">
                     <CheckCircle className="w-4 h-4 text-[#B89B72] shrink-0" />
-                    <span>Asigurări complexe de proprietăți rezidențiale și comerciale</span>
+                    <span>Comprehensive coverage for prime residential and commercial assets</span>
                   </li>
                   <li className="flex items-center gap-2.5">
                     <CheckCircle className="w-4 h-4 text-[#B89B72] shrink-0" />
-                    <span>Consultanță de reducere a riscului și securitate a investiției</span>
+                    <span>Risk mitigation advisory and institutional investment security</span>
                   </li>
                   <li className="flex items-center gap-2.5">
                     <CheckCircle className="w-4 h-4 text-[#B89B72] shrink-0" />
-                    <span>Planificare de continuitate pentru capitalul privat</span>
+                    <span>Continuity planning and strategic preservation for private wealth</span>
                   </li>
                 </ul>
               </div>
 
               <div className="pt-6 border-t border-white/10 text-xs font-mono text-neutral-400">
-                Soluții Strategice Generali
+                Generali Strategic Solutions
               </div>
             </div>
 
@@ -393,35 +393,35 @@ export default function MasterBentoExperience() {
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-mono uppercase tracking-[0.25em] text-[#B89B72]">
-                    CADRAN 05 / STUDII & EXPERIENȚĂ
+                    QUADRANT 05 / ACADEMIC RIGOR & EXPERIENCE
                   </span>
                   <GraduationCap className="w-4 h-4 text-[#B89B72]" />
                 </div>
 
                 <div className="space-y-3">
                   <h3 className="text-2xl font-semibold text-white">
-                    Fundație Academică Multidisciplinară
+                    Multidisciplinary Academic Foundation
                   </h3>
                   <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
-                    Trei diplome de licență și trei masterate universitare ce completează expertiza pe piața imobiliară:
+                    Three bachelor&#39;s degrees and three university master&#39;s degrees supporting real estate market expertise:
                   </p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                   <div className="p-4 rounded-2xl bg-white/[0.03] border border-white/5 space-y-1">
-                    <div className="font-semibold text-white">Licențe Universitare</div>
-                    <div className="text-neutral-400 font-light">Economie · Drept · Ecologie</div>
+                    <div className="font-semibold text-white">Bachelor&#39;s Degrees</div>
+                    <div className="text-neutral-400 font-light">Economics · Law · Ecology</div>
                   </div>
                   <div className="p-4 rounded-2xl bg-white/[0.03] border border-white/5 space-y-1">
-                    <div className="font-semibold text-white">Masterate</div>
-                    <div className="text-neutral-400 font-light">Management Financiar · Impact Mediu · Securitate Privată</div>
+                    <div className="font-semibold text-white">Master&#39;s Degrees</div>
+                    <div className="text-neutral-400 font-light">Financial Management · Environmental Impact · Private Security</div>
                   </div>
                 </div>
               </div>
 
               <div className="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono text-neutral-400">
-                <span>Traiectorie: Madrid · Amiens · Malta</span>
-                <span className="text-[#B89B72]">Rigoare & Guvernanță</span>
+                <span>Trajectory: Madrid · Amiens · Malta</span>
+                <span className="text-[#B89B72]">Rigor & Governance</span>
               </div>
             </div>
 
@@ -440,13 +440,13 @@ export default function MasterBentoExperience() {
             <div className="space-y-3 max-w-2xl">
               <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-[#B89B72]">
                 <ImageIcon className="w-3.5 h-3.5" />
-                <span>CADRAN 06 / ARHIVĂ FOTOGRAFICĂ</span>
+                <span>QUADRANT 06 / PHOTOGRAPHIC ARCHIVE</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">
-                Galeria Vizuală & Portrete Oficiale
+                Visual Gallery & Official Portraits
               </h2>
               <p className="text-xs sm:text-sm text-neutral-400 font-light">
-                Momente captate din activitatea de consultanță executivă, arhitectură și reședințe de lux.
+                Moments captured from executive advisory engagements, architecture, and luxury estates.
               </p>
             </div>
 
@@ -456,14 +456,14 @@ export default function MasterBentoExperience() {
                 className="px-4 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono uppercase tracking-wider text-neutral-300 flex items-center gap-2 transition-all"
               >
                 <Lock className="w-3.5 h-3.5 text-[#B89B72]" />
-                <span>Încarcă Poze (Admin)</span>
+                <span>Upload Media (Admin)</span>
               </Link>
 
               <Link
                 href="/gallery"
                 className="px-5 py-2.5 rounded-2xl bg-[#B89B72] hover:bg-[#C9AE85] text-black text-xs font-mono uppercase tracking-wider font-semibold flex items-center gap-2 transition-all shadow-lg shadow-[#B89B72]/20"
               >
-                <span>Toată Galeria</span>
+                <span>Complete Gallery</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -520,13 +520,13 @@ export default function MasterBentoExperience() {
             <div className="space-y-3 max-w-2xl">
               <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-red-400">
                 <YoutubeIcon className="w-3.5 h-3.5" />
-                <span>CADRAN 07 / YOUTUBE TV AUTO-IMPORT</span>
+                <span>QUADRANT 07 / YOUTUBE TV INTELLIGENCE</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">
                 Cristian Văduva Video Journal
               </h2>
               <p className="text-xs sm:text-sm text-neutral-400 font-light">
-                Episoade exclusive, analize de piață și tururi imobiliare importate automat de pe canalul oficial.
+                Exclusive episodes, market intelligence, and property briefings synchronized from the official channel.
               </p>
             </div>
 
@@ -537,7 +537,7 @@ export default function MasterBentoExperience() {
               className="px-5 py-2.5 rounded-2xl bg-red-600 hover:bg-red-700 text-white font-semibold text-xs font-mono uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg shadow-red-600/20"
             >
               <YoutubeIcon className="w-4 h-4" />
-              <span>Canal @CristianVaduvaCV</span>
+              <span>Channel @CristianVaduvaCV</span>
             </a>
           </div>
 
@@ -565,7 +565,7 @@ export default function MasterBentoExperience() {
                 </div>
 
                 <div className="p-6 sm:p-8 space-y-2">
-                  <div className="text-[10px] font-mono text-red-400 uppercase">Episod Recomandat</div>
+                  <div className="text-[10px] font-mono text-red-400 uppercase">Featured Episode</div>
                   <h3 className="text-lg sm:text-xl font-semibold text-white group-hover:text-red-400 transition-colors line-clamp-2">
                     {heroVideo.title}
                   </h3>
@@ -606,7 +606,7 @@ export default function MasterBentoExperience() {
                 href="/tv"
                 className="p-4 rounded-2xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 flex items-center justify-between text-xs font-mono uppercase tracking-wider text-neutral-300 hover:text-white transition-all"
               >
-                <span>Deschide Studio Video Complet ({videos.length}+)</span>
+                <span>Open Full Video Studio ({videos.length}+)</span>
                 <ArrowRight className="w-4 h-4 text-[#B89B72]" />
               </Link>
             </div>
@@ -625,14 +625,14 @@ export default function MasterBentoExperience() {
             <div className="space-y-3 max-w-2xl">
               <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-[#B89B72]">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>CADRAN 08 / ECOSISTEM INTEGRAT</span>
+                <span>QUADRANT 08 / INTEGRATED ECOSYSTEM</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">
-                Platforme & Divizii Conectate
+                Connected Platforms & Divisions
               </h2>
             </div>
             <div className="text-xs font-mono text-neutral-400">
-              Surse: cristianvaduva.com · aixluxury.com
+              Direct Platforms: cristianvaduva.com · aixluxury.com
             </div>
           </div>
 
@@ -648,19 +648,19 @@ export default function MasterBentoExperience() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <Sparkles className="w-5 h-5 text-[#B89B72]" />
-                  <span className="text-[10px] font-mono text-[#B89B72] uppercase px-2.5 py-1 rounded-full bg-white/5">Brand Principal</span>
+                  <span className="text-[10px] font-mono text-[#B89B72] uppercase px-2.5 py-1 rounded-full bg-white/5">Principal Brand</span>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white group-hover:text-[#B89B72] transition-colors flex items-center justify-between">
                     CristianVaduva.com <ArrowUpRight className="w-4 h-4" />
                   </h3>
                   <p className="text-xs text-neutral-400 font-light mt-1">
-                    Prezența digitală centrală și consultanță executivă.
+                    Central digital presence and executive advisory.
                   </p>
                 </div>
               </div>
               <div className="pt-4 border-t border-white/10 text-xs font-mono text-neutral-400 mt-6">
-                Vizitează site-ul →
+                Visit Platform →
               </div>
             </a>
 
@@ -681,12 +681,12 @@ export default function MasterBentoExperience() {
                     AiXLuxury.com <ArrowUpRight className="w-4 h-4" />
                   </h3>
                   <p className="text-xs text-neutral-400 font-light mt-1">
-                    Portofoliu imobiliar ultra-prime și lifestyle premium.
+                    Ultra-prime real estate portfolio and premium lifestyle.
                   </p>
                 </div>
               </div>
               <div className="pt-4 border-t border-white/10 text-xs font-mono text-neutral-400 mt-6">
-                Vizitează site-ul →
+                Visit Platform →
               </div>
             </a>
 
@@ -707,12 +707,12 @@ export default function MasterBentoExperience() {
                     HomeFind <ArrowUpRight className="w-4 h-4" />
                   </h3>
                   <p className="text-xs text-neutral-400 font-light mt-1">
-                    Platformă de căutare imobiliară și identificare proprietăți.
+                    AI-assisted property acquisition and search intelligence.
                   </p>
                 </div>
               </div>
               <div className="pt-4 border-t border-white/10 text-xs font-mono text-neutral-400 mt-6">
-                Vizitează site-ul →
+                Visit Platform →
               </div>
             </a>
 
@@ -730,15 +730,15 @@ export default function MasterBentoExperience() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white group-hover:text-[#B89B72] transition-colors flex items-center justify-between">
-                    Subvenții <ArrowUpRight className="w-4 h-4" />
+                    Grants & Subsidies <ArrowUpRight className="w-4 h-4" />
                   </h3>
                   <p className="text-xs text-neutral-400 font-light mt-1">
-                    Platformă de analiză a fondurilor și programelor guvernamentale.
+                    Analysis platform for government grant programs and development funds.
                   </p>
                 </div>
               </div>
               <div className="pt-4 border-t border-white/10 text-xs font-mono text-neutral-400 mt-6">
-                Vizitează site-ul →
+                Visit Platform →
               </div>
             </a>
 
@@ -752,7 +752,7 @@ export default function MasterBentoExperience() {
                 <div>
                   <h3 className="text-lg font-semibold text-white">AiX OS Intelligence</h3>
                   <p className="text-xs text-neutral-400 font-light mt-1">
-                    Analiză în timp real a indicatorilor imobiliari și a randamentelor.
+                    Real-time analytics for real estate indicators and asset yields.
                   </p>
                 </div>
               </div>
@@ -766,12 +766,12 @@ export default function MasterBentoExperience() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <ShieldCheck className="w-5 h-5 text-[#B89B72]" />
-                  <span className="text-[10px] font-mono text-[#B89B72] uppercase px-2.5 py-1 rounded-full bg-white/5">Parteneriat</span>
+                  <span className="text-[10px] font-mono text-[#B89B72] uppercase px-2.5 py-1 rounded-full bg-white/5">Partnership</span>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white">Insurance & Protection</h3>
                   <p className="text-xs text-neutral-400 font-light mt-1">
-                    Protecție de active în parteneriat cu Generali România.
+                    Asset protection and risk structuring with Generali Romania.
                   </p>
                 </div>
               </div>
@@ -795,19 +795,19 @@ export default function MasterBentoExperience() {
             <div className="space-y-3 max-w-2xl">
               <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-[#B89B72]">
                 <Mail className="w-3.5 h-3.5" />
-                <span>CADRAN 09 / DIALOG & CONSULTANȚĂ</span>
+                <span>QUADRANT 09 / DIRECT INTAKE & ADVISORY</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">
-                Contact & Programare Privată
+                Contact & Private Appointment
               </h2>
               <p className="text-xs sm:text-sm text-neutral-400 font-light">
-                Comunicați direct prin canalele securizate sau completați formularul de mai jos.
+                Connect directly through verified channels or submit an advisory inquiry below.
               </p>
             </div>
 
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono text-[#B89B72]">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>DISCREȚIE STRICTĂ</span>
+              <span>STRICT CONFIDENTIALITY</span>
             </div>
           </div>
 
@@ -816,7 +816,7 @@ export default function MasterBentoExperience() {
             {/* Verified Contacts List (5 Cols) */}
             <div className="lg:col-span-5 bg-[#111214] border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4">
               <span className="text-xs font-mono uppercase tracking-wider text-neutral-400 block mb-2">
-                Canale Oficiale Verificate
+                Verified Official Channels
               </span>
 
               {/* WhatsApp */}
@@ -871,7 +871,7 @@ export default function MasterBentoExperience() {
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[10px] font-mono text-neutral-400 uppercase">E-mail</div>
+                    <div className="text-[10px] font-mono text-neutral-400 uppercase">Email</div>
                     <div className="text-xs font-semibold text-white group-hover:text-[#B89B72] transition-colors">
                       cristianvaduva@duck.com
                     </div>
@@ -892,7 +892,7 @@ export default function MasterBentoExperience() {
                     <YoutubeIcon className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[10px] font-mono text-neutral-400 uppercase">Canal YouTube</div>
+                    <div className="text-[10px] font-mono text-neutral-400 uppercase">YouTube Channel</div>
                     <div className="text-xs font-semibold text-white group-hover:text-red-400 transition-colors">
                       @CristianVaduvaCV
                     </div>
@@ -927,71 +927,71 @@ export default function MasterBentoExperience() {
             <div className="lg:col-span-7 bg-[#111214] border border-white/10 rounded-3xl p-6 sm:p-8 space-y-6">
               <div className="space-y-1">
                 <h3 className="text-xl font-semibold text-white">
-                  Formular de Inițiere Mandat
+                  Mandate Intake Form
                 </h3>
                 <p className="text-xs text-neutral-400 font-light">
-                  Transmiteți parametrii căutării sau cererii dumneavoastră.
+                  Submit the parameters of your search or advisory inquiry.
                 </p>
               </div>
 
               <form onSubmit={handleFormSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono uppercase text-neutral-300">Nume *</label>
+                    <label className="text-xs font-mono uppercase text-neutral-300">Full Name *</label>
                     <input
                       type="text"
                       value={formName}
                       onChange={(e) => setFormName(e.target.value)}
                       required
-                      placeholder="Numele dumneavoastră"
+                      placeholder="Your full name"
                       className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-2xl text-white text-xs focus:outline-none focus:border-[#B89B72]"
                     />
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono uppercase text-neutral-300">E-mail *</label>
+                    <label className="text-xs font-mono uppercase text-neutral-300">Email *</label>
                     <input
                       type="email"
                       value={formEmail}
                       onChange={(e) => setFormEmail(e.target.value)}
                       required
-                      placeholder="adresa@email.com"
+                      placeholder="name@organization.com"
                       className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-2xl text-white text-xs focus:outline-none focus:border-[#B89B72]"
                     />
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono uppercase text-neutral-300">Telefon</label>
+                    <label className="text-xs font-mono uppercase text-neutral-300">Phone Number</label>
                     <input
                       type="tel"
                       value={formPhone}
                       onChange={(e) => setFormPhone(e.target.value)}
-                      placeholder="+40 7XX XXX XXX"
+                      placeholder="+40 / +43 / International"
                       className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-2xl text-white text-xs focus:outline-none focus:border-[#B89B72]"
                     />
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-mono uppercase text-neutral-300">Domeniu Interes</label>
+                    <label className="text-xs font-mono uppercase text-neutral-300">Area of Interest</label>
                     <select
                       value={formInterest}
                       onChange={(e) => setFormInterest(e.target.value)}
                       className="w-full px-4 py-3 bg-[#1A1A1C] border border-white/10 rounded-2xl text-white text-xs focus:outline-none focus:border-[#B89B72]"
                     >
-                      <option value="Luxury Acquisition">Achiziție Imobiliară de Lux</option>
-                      <option value="Seller Representation">Reprezentare Vânzare</option>
-                      <option value="Asset Protection">Protecție Active & Generali</option>
-                      <option value="Capital Placement">Plasamente de Capital</option>
+                      <option value="Luxury Acquisition">Luxury Real Estate Acquisition</option>
+                      <option value="Seller Representation">Seller Representation</option>
+                      <option value="Asset Protection">Asset Protection & Generali</option>
+                      <option value="Capital Placement">Strategic Capital Placement</option>
                     </select>
                   </div>
 
                   <div className="sm:col-span-2 space-y-1.5">
-                    <label className="text-xs font-mono uppercase text-neutral-300">Detalii / Mesaj</label>
+                    <label className="text-xs font-mono uppercase text-neutral-300">Mandate Details / Message</label>
                     <textarea
                       value={formMessage}
                       onChange={(e) => setFormMessage(e.target.value)}
                       rows={3}
-                      placeholder="Detalii privitoare la proprietate sau solicitare..."
+                      placeholder="Details regarding the property or advisory requirement..."
                       className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-2xl text-white text-xs focus:outline-none focus:border-[#B89B72] resize-none"
                     />
                   </div>
@@ -1000,7 +1000,7 @@ export default function MasterBentoExperience() {
                 {formSubmitted && (
                   <div className="p-3.5 rounded-xl bg-green-500/10 border border-green-500/30 text-green-400 text-xs flex items-center gap-2">
                     <CheckCircle className="w-4 h-4" />
-                    <span>Mesajul a fost transmis. Cristian Văduva vă va contacta în cel mai scurt timp.</span>
+                    <span>Your inquiry has been submitted. Cristian Văduva will contact you shortly.</span>
                   </div>
                 )}
 
@@ -1009,7 +1009,7 @@ export default function MasterBentoExperience() {
                   disabled={formLoading}
                   className="w-full py-3.5 rounded-2xl bg-[#B89B72] hover:bg-[#C9AE85] text-black font-semibold text-xs font-mono uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#B89B72]/20 cursor-pointer disabled:opacity-50"
                 >
-                  {formLoading ? "Se transmite..." : "Transmite Solicitarea"}
+                  {formLoading ? "Submitting..." : "Submit Advisory Inquiry"}
                 </button>
               </form>
             </div>

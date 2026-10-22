@@ -34,12 +34,12 @@ export default function ArchitecturalHero() {
             {/* Headline with Apple Typographic Scale */}
             <div className="space-y-3">
               <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[4.75rem] text-[#F5F4EF] leading-[1.02] tracking-tight font-normal">
-                Investiții imobiliare. <br />
-                <span className="text-[#A97F60] italic font-light">Rigoare strategică.</span>
+                Real estate investment. <br />
+                <span className="text-[#A97F60] italic font-light">Strategic rigor.</span>
               </h1>
 
               <p className="font-sans text-base sm:text-lg lg:text-xl text-[#B8C2CF] font-light max-w-xl leading-relaxed pt-2">
-                Consultanță strategică, structurare de capital și acces off-market pentru proprietăți de mare valoare în București, Monaco și Dubai.
+                Strategic advisory, capital structuring, and off-market access for high-value properties across Bucharest, Monaco, and Dubai.
               </p>
             </div>
 
@@ -49,7 +49,7 @@ export default function ArchitecturalHero() {
                 href="/programare"
                 className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[48px]"
               >
-                <span>{t.hero.ctaConsultation || "SOLICITĂ CONSULTANȚĂ"}</span>
+                <span>{t.hero.ctaConsultation || "REQUEST CONSULTATION"}</span>
                 <ArrowUpRight className="w-4 h-4 text-[#07090D]" />
               </Link>
 
@@ -57,7 +57,7 @@ export default function ArchitecturalHero() {
                 href="/real-estate/properties"
                 className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
               >
-                <span>{t.hero.exploreCatalog || "EXPLOREAZĂ PORTOFOLIUL"}</span>
+                <span>{t.hero.exploreCatalog || "EXPLORE PORTFOLIO"}</span>
                 <ArrowRight className="w-4 h-4 text-[#93C8FF]" />
               </Link>
             </div>
@@ -81,11 +81,11 @@ export default function ArchitecturalHero() {
               {/* Minimal Clean Card Label (Zero technical camera metadata) */}
               <div className="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-[#07090D]/85 backdrop-blur-xl border border-white/[0.1] space-y-1">
                 <span className="font-mono text-[9px] uppercase tracking-[0.24em] text-[#A97F60] font-semibold block">
-                  CONSILIER EXECUTIV & INVESTITOR
+                  EXECUTIVE ADVISOR & INVESTOR
                 </span>
                 <div className="font-serif text-lg text-[#F5F4EF] font-normal flex items-center justify-between">
                   <span>Cristian Văduva</span>
-                  <span className="font-sans text-[11px] text-[#93C8FF] font-medium tracking-wide">BUCUREȘTI · MONACO · DUBAI</span>
+                  <span className="font-sans text-[11px] text-[#93C8FF] font-medium tracking-wide">BUCHAREST · MONACO · DUBAI</span>
                 </div>
               </div>
             </div>
@@ -98,28 +98,28 @@ export default function ArchitecturalHero() {
       <div className="site-container relative z-10 w-full pt-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 border-t border-white/[0.08] pt-6 font-mono text-xs text-[#86868B]">
           <div className="space-y-1">
-            <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">ARIE DE ACȚIUNE</span>
-            <span className="text-[#F5F4EF] font-sans text-sm block">București · Monaco · Dubai</span>
-            <span className="text-[11px] text-[#647082] block">Rezidențial Prime & Investiții</span>
+            <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">GEOGRAPHIC FOOTPRINT</span>
+            <span className="text-[#F5F4EF] font-sans text-sm block">Bucharest · Monaco · Dubai</span>
+            <span className="text-[11px] text-[#647082] block">Prime Residential & Capital Placements</span>
           </div>
 
           <div className="space-y-1">
-            <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">ALIANȚĂ INTERNAȚIONALĂ</span>
+            <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">INTERNATIONAL ALLIANCE</span>
             <span className="text-[#F5F4EF] font-sans text-sm block">Chestertons Global Network</span>
-            <span className="text-[11px] text-[#647082] block">Parteneriate & Mandate Private</span>
+            <span className="text-[11px] text-[#647082] block">Strategic Partnerships & Private Mandates</span>
           </div>
 
           <div className="space-y-1">
-            <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">STANDARDE PROFESIONALE</span>
-            <span className="text-[#F5F4EF] font-sans text-sm block">Consultanță Privată Dedicată</span>
-            <span className="text-[11px] text-[#647082] block">Acorduri Bilaterale NDA la Cerere</span>
+            <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">PROFESSIONAL STANDARDS</span>
+            <span className="text-[#F5F4EF] font-sans text-sm block">Dedicated Private Advisory</span>
+            <span className="text-[11px] text-[#647082] block">Bilateral NDA Protocols upon Request</span>
           </div>
 
           <div className="space-y-1">
-            <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">PORTOFOLIU SELECTAT</span>
-            <span className="text-[#F5F4EF] font-sans text-sm block">Platforma HomeFind</span>
+            <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold">CURATED PORTFOLIO</span>
+            <span className="text-[#F5F4EF] font-sans text-sm block">HomeFind Network Platform</span>
             <Link href="/real-estate/properties" className="text-[11px] text-[#93C8FF] hover:underline block font-sans">
-              Explorează selecția de proprietăți →
+              Explore property selection →
             </Link>
           </div>
         </div>

@@ -24,9 +24,9 @@ interface ClosingFrameProps {
 }
 
 export default function ClosingFrame({
-  category = "CONCLUZIE & ENGAGEMENT PRIVAT",
-  title = "Sunteți pregătit să discutați despre următoarea dumneavoastră decizie imobiliară?",
-  description = "Fiecare mandat este condus personal de Cristian Văduva. Oferim o analiză prealabilă confidențială de 20 de minute pentru a evalua compatibilitatea proiectului cu standardele noastre de lucru.",
+  category = "CONCLUSION & PRIVATE ENGAGEMENT",
+  title = "Are you prepared to discuss your next strategic real estate decision?",
+  description = "Every mandate is led personally by Cristian Văduva. We provide an initial confidential 20-minute preliminary review to evaluate project compatibility with our representation standards.",
   primaryCtaText,
   primaryCtaHref,
   primaryAction,
@@ -37,9 +37,9 @@ export default function ClosingFrame({
   imageSrc = "/residence/terrace.png",
   className = "",
 }: ClosingFrameProps) {
-  const pText = primaryAction?.label || primaryCtaText || "SOLICITĂ DISCUȚIE (20 MIN)";
+  const pText = primaryAction?.label || primaryCtaText || "REQUEST CONSULTATION (20 MIN)";
   const pHref = primaryAction?.href || primaryCtaHref || "/programare";
-  const sText = secondaryAction?.label || secondaryCtaText || "CUM LUCREZ: METODOLOGIE & ETAPE";
+  const sText = secondaryAction?.label || secondaryCtaText || "ADVISORY PROTOCOL: METHODOLOGY & PHASES";
   const sHref = secondaryAction?.href || secondaryCtaHref || "/cum-lucrez";
   return (
     <section
@@ -99,7 +99,7 @@ export default function ClosingFrame({
         <div className="pt-8 border-t border-white/[0.08] flex flex-wrap items-center justify-between gap-4 font-mono text-[10px] text-[#647082] uppercase tracking-wider">
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />
-            <span>CONFIDENȚIALITATE STRICTĂ (ACORD NDA DISPONIBIL LA CERERE)</span>
+            <span>STRICT CONFIDENTIALITY (BILATERAL NDA AVAILABLE ON REQUEST)</span>
           </div>
 
           <div className="flex items-center gap-4 text-[#8A95A5]">
@@ -111,7 +111,7 @@ export default function ClosingFrame({
               <span>{phoneText}</span>
             </a>
             <span>·</span>
-            <span>BUCUREȘTI · VIENA · LONDRA</span>
+            <span>BUCHAREST · VIENNA · LONDON</span>
           </div>
         </div>
       </div>

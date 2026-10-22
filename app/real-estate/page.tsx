@@ -26,9 +26,15 @@ import {
 
 export const metadata: Metadata = {
   title: "Real Estate & Market Hub — Cristian Văduva | HomeFind & AiXLuxury",
-  description: "Consultanță dedicată pentru achiziții rezidențiale de prestigiu, reprezentare unilaterală, verificare cadastrală structurată și proprietăți selectate în București și internațional.",
+  description: "Dedicated advisory for prime residential acquisitions, unilateral representation, structured cadastral audit, and curated properties in Bucharest and international corridors.",
   alternates: {
     canonical: "https://executive.cristianvaduva.com/real-estate",
+  },
+  openGraph: {
+    title: "Real Estate & Market Hub — Cristian Văduva | HomeFind & AiXLuxury",
+    description: "Dedicated advisory for prime residential acquisitions, unilateral representation, structured cadastral audit, and curated properties in Bucharest and international corridors.",
+    locale: "en_US",
+    type: "website",
   },
 };
 

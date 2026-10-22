@@ -111,7 +111,7 @@ export default function AppleVideoShowcase() {
                 Live Channel Auto-Import
               </span>
               <span className="text-[11px] font-mono text-emerald-400 flex items-center gap-1">
-                <CheckCircle2 className="w-3 h-3" /> Sincronizat
+                <CheckCircle2 className="w-3 h-3" /> Synchronized
               </span>
             </div>
 
@@ -119,7 +119,7 @@ export default function AppleVideoShowcase() {
               Cristian Văduva YouTube TV
             </h2>
             <p className="text-sm sm:text-base text-neutral-400 font-light">
-              Episoade exclusive, analize de piață în timp real, tururi de proprietăți ultra-prime și negocieri de capital, importate automat de pe canalul oficial.
+              Exclusive episodes, real-time market analyses, prime property walkthroughs, and capital negotiations, synced automatically from the official channel.
             </p>
           </div>
 
@@ -130,7 +130,7 @@ export default function AppleVideoShowcase() {
               className="px-4 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono uppercase tracking-wider text-neutral-300 flex items-center gap-2 cursor-pointer transition-all"
             >
               <RefreshCw className={`w-3.5 h-3.5 ${isRefreshing ? "animate-spin" : ""}`} />
-              <span>{isRefreshing ? "Se actualizează..." : "Reîmprospătează"}</span>
+              <span>{isRefreshing ? "Updating..." : "Refresh"}</span>
             </button>
 
             <a
@@ -140,7 +140,7 @@ export default function AppleVideoShowcase() {
               className="px-5 py-2.5 rounded-2xl bg-red-600 hover:bg-red-700 text-white text-xs font-mono uppercase tracking-wider font-semibold flex items-center gap-2 transition-all shadow-lg shadow-red-600/20"
             >
               <YoutubeIcon className="w-4 h-4" />
-              <span>Abonează-te @CristianVaduvaCV</span>
+              <span>Subscribe @CristianVaduvaCV</span>
             </a>
           </div>
         </div>
@@ -149,7 +149,7 @@ export default function AppleVideoShowcase() {
         {loading ? (
           <div className="py-20 text-center text-neutral-400">
             <div className="w-8 h-8 border-2 border-red-500 border-t-transparent rounded-full animate-spin mx-auto mb-3" />
-            <p className="font-mono text-xs uppercase tracking-wider">Se încarcă transmisia YouTube...</p>
+            <p className="font-mono text-xs uppercase tracking-wider">Loading YouTube broadcasts...</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -177,7 +177,7 @@ export default function AppleVideoShowcase() {
                   </div>
 
                   <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-xs font-mono uppercase text-[#B89B72]">
-                    Episod Recomandat
+                    Featured Episode
                   </div>
                 </div>
 
@@ -223,7 +223,7 @@ export default function AppleVideoShowcase() {
 
                   <div className="space-y-1.5 min-w-0 flex-1">
                     <span className="text-[10px] font-mono uppercase text-[#B89B72] block">
-                      Video Recente
+                      Recent Episode
                     </span>
                     <h4 className="text-xs sm:text-sm font-medium text-white line-clamp-2 group-hover:text-red-400 transition-colors">
                       {video.title}
@@ -236,7 +236,7 @@ export default function AppleVideoShowcase() {
                 href="/tv"
                 className="p-4 rounded-2xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 flex items-center justify-between text-xs font-mono uppercase tracking-wider text-neutral-300 hover:text-white transition-all group"
               >
-                <span>Deschide Arhiva Video Completă ({videos.length}+ episoade)</span>
+                <span>Open Complete Video Archive ({videos.length}+ episodes)</span>
                 <ExternalLink className="w-4 h-4 text-[#B89B72] group-hover:translate-x-0.5 transition-transform" />
               </Link>
             </div>
@@ -281,7 +281,7 @@ export default function AppleVideoShowcase() {
             {/* Modal Footer */}
             <div className="p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-[#141414]">
               <p className="text-xs sm:text-sm text-neutral-400 font-light line-clamp-2">
-                {selectedVideo.description || "Transmisie oficială Cristian Văduva."}
+                {selectedVideo.description || "Official Cristian Văduva broadcast."}
               </p>
               <a
                 href={selectedVideo.youtubeUrl || `https://www.youtube.com/watch?v=${selectedVideo.youtubeId || selectedVideo.id}`}
@@ -289,7 +289,7 @@ export default function AppleVideoShowcase() {
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-mono uppercase text-white flex items-center gap-2 shrink-0"
               >
-                <span>Deschide pe YouTube</span>
+                <span>Open on YouTube</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>

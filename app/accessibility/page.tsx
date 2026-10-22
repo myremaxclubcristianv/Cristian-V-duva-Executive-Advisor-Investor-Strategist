@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/accessibility",
   },
+  openGraph: {
+    title: "Accessibility Statement — Cristian Văduva",
+    description: "Accessibility standards, assistive technology support, keyboard navigation, and inclusive design commitments on Cristian Văduva digital platforms.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function AccessibilityPage() {

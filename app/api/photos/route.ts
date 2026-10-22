@@ -36,7 +36,7 @@ export async function GET() {
   } catch (error) {
     console.error("[API_PHOTOS_GET_ERROR]", error);
     return NextResponse.json(
-      { success: false, error: "Nu s-au putut încărca fotografiile." },
+      { success: false, error: "Could not load photographs." },
       { status: 500 }
     );
   }
@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
     // 2. Enforce administrative authorization
     if (!verifyAdminRequest(req)) {
       return NextResponse.json(
-        { success: false, error: "Acces neautorizat. Autentificarea este obligatorie." },
+        { success: false, error: "Unauthorized access. Authentication is required." },
         { status: 401 }
       );
     }
@@ -80,14 +80,14 @@ export async function POST(req: NextRequest) {
     if (file && typeof file === "object" && file.size > 0) {
       if (file.size > MAX_FILE_SIZE) {
         return NextResponse.json(
-          { success: false, error: "Dimensiunea fișierului depășește limita maximă de 25MB." },
+          { success: false, error: "File size exceeds the 25MB maximum limit." },
           { status: 400 }
         );
       }
 
       if (file.type && !ALLOWED_MIME_TYPES.includes(file.type.toLowerCase())) {
         return NextResponse.json(
-          { success: false, error: "Formatul fișierului nu este suportat. Folosiți JPG, PNG, WEBP sau AVIF." },
+          { success: false, error: "File format is not supported. Please use JPG, PNG, WEBP, or AVIF." },
           { status: 400 }
         );
       }
@@ -95,7 +95,7 @@ export async function POST(req: NextRequest) {
       const extension = path.extname(file.name).toLowerCase() || ".jpg";
       if (!ALLOWED_EXTENSIONS.includes(extension)) {
         return NextResponse.json(
-          { success: false, error: "Extensia fișierului nu este permisă." },
+          { success: false, error: "File extension is not allowed." },
           { status: 400 }
         );
       }
@@ -107,7 +107,7 @@ export async function POST(req: NextRequest) {
       const binaryValidation = validateImageBuffer(buffer);
       if (!binaryValidation.valid) {
         return NextResponse.json(
-          { success: false, error: binaryValidation.error || "Fișierul încărcat nu este o imagine validă." },
+          { success: false, error: binaryValidation.error || "Uploaded file is not a valid image." },
           { status: 400 }
         );
       }
@@ -150,7 +150,7 @@ export async function POST(req: NextRequest) {
             {
               success: false,
               error:
-                "Stocarea persistentă pentru fotografii noi nu este configurată pe server. Vă rugăm să configurați serviciul de stocare în cloud.",
+                "Persistent storage for new photographs is not configured on the server. Please configure cloud storage.",
             },
             { status: 503 }
           );
@@ -160,7 +160,7 @@ export async function POST(req: NextRequest) {
 
     if (!src) {
       return NextResponse.json(
-        { success: false, error: "Vă rugăm selectați o fotografie validă." },
+        { success: false, error: "Please select a valid photograph." },
         { status: 400 }
       );
     }
@@ -190,7 +190,7 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     console.error("[API_PHOTOS_POST_ERROR]", error);
     return NextResponse.json(
-      { success: false, error: "Eroare internă la salvarea fotografiei." },
+      { success: false, error: "Internal error saving photograph." },
       { status: 500 }
     );
   }

@@ -17,13 +17,13 @@ import ChapterDivider from "@/components/ui/ChapterDivider";
 import ClosingFrame from "@/components/ui/ClosingFrame";
 
 const chapters = [
-  { id: "capitolul-1", num: "01", title: "Definirea Obiectivului de Achiziție" },
-  { id: "capitolul-2", num: "02", title: "Buget Total și Costuri Conexe" },
-  { id: "capitolul-3", num: "03", title: "Verificarea Situației Juridice" },
-  { id: "capitolul-4", num: "04", title: "Auditul Tehnic și Structural" },
-  { id: "capitolul-5", num: "05", title: "Analiza Micro-Zonei & Mediu" },
-  { id: "capitolul-6", num: "06", title: "Negocierea și Structurarea" },
-  { id: "capitolul-7", num: "07", title: "Post-Achiziție & Protecție" },
+  { id: "capitolul-1", num: "01", title: "Defining the Acquisition Objective" },
+  { id: "capitolul-2", num: "02", title: "Total Budget & Ancillary Costs" },
+  { id: "capitolul-3", num: "03", title: "Legal & Title Verification" },
+  { id: "capitolul-4", num: "04", title: "Technical & Structural Audit" },
+  { id: "capitolul-5", num: "05", title: "Micro-Zonal Analysis & Environment" },
+  { id: "capitolul-6", num: "06", title: "Negotiation & Structuring" },
+  { id: "capitolul-7", num: "07", title: "Post-Acquisition & Asset Defense" },
 ];
 
 export default function GhidCumparatorPage() {
@@ -42,15 +42,15 @@ export default function GhidCumparatorPage() {
     setErrorMsg(null);
 
     if (!fullName.trim()) {
-      setErrorMsg("Vă rugăm să introduceți numele complet.");
+      setErrorMsg("Please enter your full name.");
       return;
     }
     if (!email.trim() || !email.includes("@")) {
-      setErrorMsg("Vă rugăm să introduceți o adresă de email validă.");
+      setErrorMsg("Please enter a valid email address.");
       return;
     }
     if (!consentPrivacy) {
-      setErrorMsg("Este necesar consimțământul pentru prelucrarea datelor în vederea transmiterii ghidului.");
+      setErrorMsg("Consent is required to process your details for delivering the dossier.");
       return;
     }
 
@@ -70,7 +70,7 @@ export default function GhidCumparatorPage() {
 
       const data = await res.json();
       if (!res.ok) {
-        throw new Error(data.error || "A apărut o problemă la înregistrare.");
+        throw new Error(data.error || "An issue occurred during submission.");
       }
 
       setSuccess(true);
@@ -78,7 +78,7 @@ export default function GhidCumparatorPage() {
       if (err instanceof Error) {
         setErrorMsg(err.message);
       } else {
-        setErrorMsg("A apărut o problemă neprevăzută.");
+        setErrorMsg("An unexpected error occurred.");
       }
     } finally {
       setLoading(false);
@@ -109,15 +109,15 @@ export default function GhidCumparatorPage() {
           <section className="space-y-8 max-w-4xl border-b border-white/[0.08] pb-14">
             <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase">
               <FileText className="w-3.5 h-3.5 text-[#93C8FF]" />
-              <span>RESURSĂ DE CERCETARE & DILIGENCE TEHNICĂ</span>
+              <span>TECHNICAL RESEARCH & DUE DILIGENCE RESOURCE</span>
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.12]">
-              Dosarul Cumpărătorului: Criterii și Verificări Înainte de Achiziție
+              The Buyer&apos;s Dossier: Pre-Acquisition Criteria & Verification
             </h1>
 
             <p className="font-sans text-lg sm:text-xl text-[#B8C2CF] leading-relaxed font-light">
-              Ghidul metodologic esențial pentru evaluarea proprietăților rezidențiale de mare valoare. 7 capitole structurate pentru a elimina riscurile tehnice, asimetriile informaționale și vulnerabilitățile cadastrale.
+              The essential methodological guide for evaluating prime residential real estate: 7 structured chapters designed to eliminate technical liabilities, informational asymmetries, and cadastral risks.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -126,14 +126,14 @@ export default function GhidCumparatorPage() {
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-[#07090D] font-mono text-xs uppercase tracking-[0.18em] font-semibold hover:bg-[#E1E4EA] transition-colors"
               >
                 <Printer className="w-4 h-4" />
-                <span>TIPĂREȘTE / SALVEAZĂ PDF</span>
+                <span>PRINT / SAVE AS PDF</span>
               </button>
               <a
                 href="#formular-descarcare"
                 className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/[0.15] bg-[#0C1119] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.18em] hover:border-[#93C8FF] transition-colors"
               >
                 <Download className="w-4 h-4 text-[#93C8FF]" />
-                <span>SOLICITĂ TRANSMITERE PE EMAIL</span>
+                <span>REQUEST EMAIL DELIVERY</span>
               </a>
             </div>
           </section>
@@ -143,7 +143,7 @@ export default function GhidCumparatorPage() {
           {/* ======================================================== */}
           <nav aria-label="Index Capitole" className="space-y-3">
             <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#8A95A5] block">
-              NAVIGARE RAPIDĂ ÎN DOSAR (7 CAPITOLE)
+              EXPEDITED DOSSIER NAVIGATION (7 CHAPTERS)
             </span>
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2 font-mono text-xs">
               {chapters.map((ch) => (
@@ -152,7 +152,7 @@ export default function GhidCumparatorPage() {
                   href={`#${ch.id}`}
                   className="p-3 bg-[#0C1119] border border-white/[0.08] hover:border-[#93C8FF] transition-colors group flex flex-col justify-between"
                 >
-                  <span className="text-[10px] text-[#93C8FF] font-semibold block">CAP. {ch.num}</span>
+                  <span className="text-[10px] text-[#93C8FF] font-semibold block">CH. {ch.num}</span>
                   <span className="text-[11px] text-[#8A95A5] group-hover:text-[#F5F4EF] line-clamp-2 leading-snug mt-1 font-sans">
                     {ch.title}
                   </span>
@@ -167,41 +167,41 @@ export default function GhidCumparatorPage() {
           <section className="space-y-16">
             <ChapterDivider
               number="01"
-              category="CORPUL DOSARULUI METODOLOGIC"
-              title="Conținutul Complet al Dosarului de Verificare"
-              subtitle="Specificații practice, riscuri critice și liste de control pentru achiziții prime"
+              category="METHODOLOGICAL DOSSIER BODY"
+              title="Complete Verification Dossier Content"
+              subtitle="Practical specifications, critical vulnerabilities, and due diligence checklists for prime acquisitions"
             />
 
             <div className="space-y-10">
               {/* CAPITOLUL 1 */}
               <div id="capitolul-1" className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-6">
                 <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF] border-b border-white/[0.06] pb-3">
-                  <span className="tracking-widest font-semibold">CAPITOLUL 01</span>
-                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">PREMISE STRATEGICE</span>
+                  <span className="tracking-widest font-semibold">CHAPTER 01</span>
+                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">STRATEGIC FOUNDATIONS</span>
                 </div>
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                  1. Definirea Clară a Obiectivului de Achiziție
+                  1. Clear Definition of the Acquisition Objective
                 </h3>
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  O eroare frecventă în segmentul de lux este amestecarea criteriilor emoționale ale reședinței unifamiliale cu indicatorii financiari ai unei proprietăți de investiție. Definiți clar rolul principal al activului:
+                  A common pitfall in the luxury segment is conflating emotional criteria of a primary residence with the financial metrics of an investment asset. Clearly define the primary role of the asset:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4 pt-2">
                   <div className="p-5 bg-black/40 border border-white/[0.06] space-y-2">
-                    <span className="font-mono text-xs text-[#93C8FF] block font-semibold">01 // REȘEDINȚĂ DE FAMILIE</span>
+                    <span className="font-mono text-xs text-[#93C8FF] block font-semibold">01 // FAMILY RESIDENCE</span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed">
-                      Prioritizați intimitatea, calitatea aerului, securitatea perimetrală, spațiul verde și proximitatea școlilor internaționale.
+                      Prioritize privacy, air quality, perimeter security, green buffer zones, and proximity to international schools.
                     </p>
                   </div>
                   <div className="p-5 bg-black/40 border border-white/[0.06] space-y-2">
-                    <span className="font-mono text-xs text-[#A97F60] block font-semibold">02 // PIED-À-TERRE URBAN</span>
+                    <span className="font-mono text-xs text-[#A97F60] block font-semibold">02 // URBAN PIED-À-TERRE</span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed">
-                      Prioritizați securitatea lock-and-leave, serviciile de concierge, managementul facil al clădirii și accesul rapid la centrul de afaceri.
+                      Prioritize lock-and-leave security, concierge services, streamlined building administration, and rapid access to core business districts.
                     </p>
                   </div>
                   <div className="p-5 bg-black/40 border border-white/[0.06] space-y-2">
-                    <span className="font-mono text-xs text-[#93C8FF] block font-semibold">03 // CONSERVARE CAPITAL</span>
+                    <span className="font-mono text-xs text-[#93C8FF] block font-semibold">03 // CAPITAL PRESERVATION</span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed">
-                      Prioritizați raritatea de neînlocuit a amplasamentului (malul lacului, parc), calitatea semnăturii arhitecturale și rezistența la depreciere.
+                      Prioritize irreplaceable locational scarcity (lakefront, direct park proximity), architectural pedigree, and resilience against market downturns.
                     </p>
                   </div>
                 </div>
@@ -210,31 +210,31 @@ export default function GhidCumparatorPage() {
               {/* CAPITOLUL 2 */}
               <div id="capitolul-2" className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-6">
                 <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF] border-b border-white/[0.06] pb-3">
-                  <span className="tracking-widest font-semibold">CAPITOLUL 02</span>
-                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">ANALIZĂ FINANCIARĂ</span>
+                  <span className="tracking-widest font-semibold">CHAPTER 02</span>
+                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">FINANCIAL SCRUTINY</span>
                 </div>
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                  2. Buget Total și Costuri Conexe de Tranzacție
+                  2. Total Budget & Ancillary Transaction Costs
                 </h3>
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Prețul de achiziție reprezintă doar o parte din alocarea totală de capital. Înainte de a avansa o ofertă fermă, bugetați transparent toate capitolele conexe:
+                  The headline acquisition price represents only a portion of the total capital deployment. Before submitting a binding offer, budget transparently for all ancillary line items:
                 </p>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 font-mono text-xs text-[#8A95A5] pt-2">
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-1">
-                    <span className="text-[#93C8FF] block">ONORARIU NOTARIAL</span>
-                    <p className="text-[#E1E4EA] font-sans text-xs">Conform grilei UNNPR (aprox. 0.5% – 1% din valoare + TVA).</p>
+                    <span className="text-[#93C8FF] block">NOTARIAL FEES</span>
+                    <p className="text-[#E1E4EA] font-sans text-xs">Pursuant to national notarial scales (approx. 0.5% – 1% of transaction value + VAT).</p>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-1">
-                    <span className="text-[#93C8FF] block">TAXĂ ANCPI</span>
-                    <p className="text-[#E1E4EA] font-sans text-xs">0.15% pentru persoane fizice; 0.5% pentru persoane juridice.</p>
+                    <span className="text-[#93C8FF] block">ANCPI REGISTRY FEES</span>
+                    <p className="text-[#E1E4EA] font-sans text-xs">0.15% for individual purchasers; 0.5% for corporate entities.</p>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-1">
-                    <span className="text-[#A97F60] block">AUDIT JURIDIC & TEHNIC</span>
-                    <p className="text-[#E1E4EA] font-sans text-xs">Onorarii pentru avocat Barou și expertiză tehnică atestată.</p>
+                    <span className="text-[#A97F60] block">LEGAL & TECHNICAL AUDIT</span>
+                    <p className="text-[#E1E4EA] font-sans text-xs">Fees for independent Bar counsel and certified structural engineering inspection.</p>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-1">
-                    <span className="text-[#A97F60] block">SERVICII & MENTENANȚĂ</span>
-                    <p className="text-[#E1E4EA] font-sans text-xs">Costuri lunare de administrare complex, mentenanță și pază.</p>
+                    <span className="text-[#A97F60] block">SERVICE CHARGES & RESERVES</span>
+                    <p className="text-[#E1E4EA] font-sans text-xs">Monthly residential complex administration, maintenance reserves, and security services.</p>
                   </div>
                 </div>
               </div>
@@ -242,42 +242,42 @@ export default function GhidCumparatorPage() {
               {/* CAPITOLUL 3 */}
               <div id="capitolul-3" className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-6">
                 <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF] border-b border-white/[0.06] pb-3">
-                  <span className="tracking-widest font-semibold">CAPITOLUL 03</span>
-                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">AUDIT LEGAL & CADASTRAL</span>
+                  <span className="tracking-widest font-semibold">CHAPTER 03</span>
+                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">LEGAL & CADASTRAL AUDIT</span>
                 </div>
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                  3. Verificarea Situației Juridice și a Cărții Funciare
+                  3. Verification of Legal Title & Land Book Records
                 </h3>
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Cele mai mari vulnerabilități financiare survin din vicii juridice sau discordanțe de publicitate imobiliară. Lista minimă de verificat obligatoriu prin avocat:
+                  The greatest financial vulnerabilities arise from unrecorded title encumbrances or cadastral discrepancies. Non-negotiable checklist for legal counsel review:
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 pt-2 font-sans text-xs sm:text-sm text-[#B8C2CF]">
                   <div className="p-4 bg-black/40 border border-white/[0.05] flex items-start gap-3">
                     <CheckCircle2 className="w-4 h-4 text-[#93C8FF] shrink-0 mt-1" />
                     <div>
-                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-1">LANȚUL TITLURILOR DE PROPRIETATE</strong>
-                      Verificarea transmisiunilor succesive pe o perioadă de cel puțin 30 de ani pentru a exclude riscul revendicărilor în baza Legii 10/2001.
+                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-1">TITLE PROVENANCE CHAIN</strong>
+                      Verification of successive conveyances over a minimum 30-year span to rule out historical restitution claims (Law 10/2001).
                     </div>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] flex items-start gap-3">
                     <CheckCircle2 className="w-4 h-4 text-[#93C8FF] shrink-0 mt-1" />
                     <div>
-                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-1">EXTRAS CF DE AUTENTIFICARE</strong>
-                      Verificarea sarcinilor înscrise (ipoteci, privilegii, sechestre, interdicții de înstrăinare sau drepturi de uzufruct).
+                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-1">AUTHENTICATED LAND BOOK EXTRACT</strong>
+                      Auditing active encumbrances (mortgages, liens, legal disputes, alienation prohibitions, or usufruct rights).
                     </div>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] flex items-start gap-3">
                     <CheckCircle2 className="w-4 h-4 text-[#93C8FF] shrink-0 mt-1" />
                     <div>
-                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-1">CONCORDANȚĂ CADASTRALĂ</strong>
-                      Releveul cadastral vizat OCPI trebuie să corespundă 100% cu realitatea din teren. Orice recompartimentare neautorizată atrage sancțiuni.
+                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-1">CADASTRAL CONFORMITY</strong>
+                      Official cadastral survey approved by the land registry (OCPI) must match 100% with physical on-site layout. Unauthorized structural alterations trigger severe sanctions.
                     </div>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] flex items-start gap-3">
                     <CheckCircle2 className="w-4 h-4 text-[#93C8FF] shrink-0 mt-1" />
                     <div>
-                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-1">DREPTURI DE PREEMȚIUNE</strong>
-                      Verificarea dreptului de preemțiune al Ministerului Culturii dacă imobilul este clasat monument istoric sau în zonă de protecție.
+                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-1">STATUTORY PREEMPTION RIGHTS</strong>
+                      Verification of preemption rights held by the Ministry of Culture if the asset is classified as a historical monument or sits in a designated heritage zone.
                     </div>
                   </div>
                 </div>
@@ -286,32 +286,32 @@ export default function GhidCumparatorPage() {
               {/* CAPITOLUL 4 */}
               <div id="capitolul-4" className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-6">
                 <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF] border-b border-white/[0.06] pb-3">
-                  <span className="tracking-widest font-semibold">CAPITOLUL 04</span>
-                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">DILIGENCE TEHNIC</span>
+                  <span className="tracking-widest font-semibold">CHAPTER 04</span>
+                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">TECHNICAL DUE DILIGENCE</span>
                 </div>
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                  4. Auditul Tehnic și Structural al Imobilului
+                  4. Technical & Structural Building Audit
                 </h3>
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Finisajele de lux pot ascunde probleme de execuție structurală sau de izolație. O inspecție fizică realizată de un inginer structurist / expert tehnic atestat trebuie să vizeze:
+                  Luxurious cosmetic finishes often conceal structural defects or moisture issues. A physical inspection conducted by a certified structural engineer / technical expert must examine:
                 </p>
                 <div className="grid sm:grid-cols-3 gap-4 pt-2 font-mono text-xs text-[#8A95A5]">
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-2">
-                    <span className="text-[#93C8FF] block font-semibold">STRUCTURĂ & FIZICĂ</span>
+                    <span className="text-[#93C8FF] block font-semibold">STRUCTURE & PHYSICS</span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed">
-                      Calitatea betonului, lipsa infiltrațiilor la subsoluri/terase și starea hidroizolației acoperișului.
+                      Concrete integrity, absence of moisture/water infiltration in basements or terraces, and roof waterproofing condition.
                     </p>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-2">
-                    <span className="text-[#A97F60] block font-semibold">INSTALAȚII & CLIMATIZARE</span>
+                    <span className="text-[#A97F60] block font-semibold">MEP & CLIMATE SYSTEMS</span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed">
-                      Sisteme VRF/HVAC, pompe de căldură, capacitatea branșamentului electric trifazat și circuite de rezervă.
+                      VRF/HVAC installations, heat pumps, 3-phase electrical connection capacity, and auxiliary emergency backup circuits.
                     </p>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-2">
-                    <span className="text-[#93C8FF] block font-semibold">ACUSTICĂ & EFICIENȚĂ</span>
+                    <span className="text-[#93C8FF] block font-semibold">ACOUSTICS & EFFICIENCY</span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed">
-                      Fonoizolația planșeelor și a pereților despărțitori; coeficientul termic al tâmplăriei exterioare.
+                      Soundproofing across floor slabs and partition walls; thermal performance coefficients of exterior glazed facades.
                     </p>
                   </div>
                 </div>
@@ -320,27 +320,27 @@ export default function GhidCumparatorPage() {
               {/* CAPITOLUL 5 */}
               <div id="capitolul-5" className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-6">
                 <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF] border-b border-white/[0.06] pb-3">
-                  <span className="tracking-widest font-semibold">CAPITOLUL 05</span>
-                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">CONTEXT URBANISTIC</span>
+                  <span className="tracking-widest font-semibold">CHAPTER 05</span>
+                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">URBAN ENVIRONMENT</span>
                 </div>
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                  5. Analiza Micro-Zonei și Factori de Mediu
+                  5. Micro-Zonal Analysis & Environmental Dynamics
                 </h3>
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Proprietatea nu există în vid. Valoarea pe termen lung este dictată de evoluția perimetrului urban imediat:
+                  A property does not exist in isolation. Long-term capital value is determined by the evolution of its immediate urban perimeter:
                 </p>
                 <div className="space-y-3 font-sans text-xs sm:text-sm text-[#B8C2CF]">
                   <div className="p-4 bg-black/40 border border-white/[0.05] flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-[#93C8FF] mt-2 shrink-0" />
-                    <span><strong>Statutul urbanistic adiacent (PUZ/PUD):</strong> Verificați ce se poate construi pe parcelele vecine. Riscul ridicării unui imobil cu înălțime superioară care să obtureze lumina sau intimitatea.</span>
+                    <span><strong>Adjacent zoning status (PUZ/PUD):</strong> Verify building rights on neighboring parcels. Identify the risk of taller developments obstructing natural light or residential privacy.</span>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-[#93C8FF] mt-2 shrink-0" />
-                    <span><strong>Presiunea de trafic și accesibilitatea:</strong> Testați fluxurile de circulație în orele de vârf (dimineața 07:30 - 09:00 și seara 17:30 - 19:30).</span>
+                    <span><strong>Traffic density & vehicular ingress:</strong> Evaluate traffic flows during peak commuter hours (morning 07:30 – 09:00 and evening 17:30 – 19:30).</span>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-[#93C8FF] mt-2 shrink-0" />
-                    <span><strong>Infrastructura de utilități:</strong> Stabilitatea rețelelor locale de alimentare cu apă, canalizare pluvială și presiunea gazului în perioadele de iarnă.</span>
+                    <span><strong>Utility infrastructure:</strong> Stability of local municipal water networks, stormwater drainage capacity, and seasonal winter gas pressures.</span>
                   </div>
                 </div>
               </div>
@@ -348,26 +348,26 @@ export default function GhidCumparatorPage() {
               {/* CAPITOLUL 6 */}
               <div id="capitolul-6" className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-6">
                 <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF] border-b border-white/[0.06] pb-3">
-                  <span className="tracking-widest font-semibold">CAPITOLUL 06</span>
-                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">STRATEGIE CONTRACTUALĂ</span>
+                  <span className="tracking-widest font-semibold">CHAPTER 06</span>
+                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">CONTRACTUAL STRATEGY</span>
                 </div>
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                  6. Negocierea și Structurarea Tranzacției
+                  6. Negotiation & Transaction Structuring
                 </h3>
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  O negociere eficientă nu se bazează pe presiune emoțională, ci pe argumente tehnice derivate din raportul de due diligence:
+                  Effective negotiation relies not on emotional urgency, but on empirical leverage derived from technical due diligence findings:
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 pt-2 font-sans text-xs sm:text-sm text-[#B8C2CF]">
                   <div className="p-5 bg-black/40 border border-white/[0.05] space-y-2">
-                    <strong className="text-[#F5F4EF] font-mono text-xs block text-[#93C8FF]">CLAUZE SUSPENSIVE STRICTE</strong>
+                    <strong className="text-[#F5F4EF] font-mono text-xs block text-[#93C8FF]">STRICT CONDITIONS PRECEDENT</strong>
                     <p className="text-xs text-[#8A95A5] leading-relaxed">
-                      Promisiunea bilaterală de vânzare-cumpărare trebuie să includă condiții suspensive clare legate de auditul juridic, starea tehnică și obținerea finanțării.
+                      The preliminary sale agreement (promisiune) must incorporate precise conditions precedent regarding legal title clearance, technical remediation, and mortgage financing approval.
                     </p>
                   </div>
                   <div className="p-5 bg-black/40 border border-white/[0.05] space-y-2">
-                    <strong className="text-[#F5F4EF] font-mono text-xs block text-[#A97F60]">CALENDAR EȘALONAT DE PLATĂ</strong>
+                    <strong className="text-[#F5F4EF] font-mono text-xs block text-[#A97F60]">STRUCTURED ESCROW MILESTONES</strong>
                     <p className="text-xs text-[#8A95A5] leading-relaxed">
-                      Reținerea unei garanții escrow sau a unei tranșe finale de plată până la predarea efectivă a tuturor documentelor tehnice și procesului-verbal fără obiecțiuni.
+                      Withholding an escrow deposit or final completion tranche until physical delivery of all technical books and acceptance of the handover protocol without objections.
                     </p>
                   </div>
                 </div>
@@ -376,32 +376,32 @@ export default function GhidCumparatorPage() {
               {/* CAPITOLUL 7 */}
               <div id="capitolul-7" className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-6">
                 <div className="flex items-center justify-between font-mono text-xs text-[#93C8FF] border-b border-white/[0.06] pb-3">
-                  <span className="tracking-widest font-semibold">CAPITOLUL 07</span>
-                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">GESTIUNE PATRIMONIALĂ</span>
+                  <span className="tracking-widest font-semibold">CHAPTER 07</span>
+                  <span className="text-[#A97F60] uppercase tracking-widest font-semibold">WEALTH GOVERNANCE</span>
                 </div>
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                  7. Post-Achiziție și Protecția Patrimoniului
+                  7. Post-Acquisition & Asset Defense
                 </h3>
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Finalizarea tranzacției la notar marchează începutul perioadei de administrare responsabilă:
+                  Formal completion before the public notary marks the commencement of disciplined asset administration:
                 </p>
                 <div className="grid sm:grid-cols-3 gap-4 pt-2 font-mono text-xs text-[#8A95A5]">
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-2">
-                    <span className="text-[#93C8FF] block font-semibold">ASIGURARE PATRIMONIALĂ</span>
+                    <span className="text-[#93C8FF] block font-semibold">ASSET DEFENSE POLICY</span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed">
-                      Încheierea unei polițe la valoarea reală de reconstrucție (prin parteneriatul cu Generali România), nu la valoarea impozabilă minimă.
+                      Securing insurance coverage at true reconstruction replacement cost (via our Generali România partnership), rather than statutory minimum values.
                     </p>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-2">
-                    <span className="text-[#A97F60] block font-semibold">FISCALITATE & DECLARAȚII</span>
+                    <span className="text-[#A97F60] block font-semibold">TAX FILING & REGISTRATION</span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed">
-                      Depunerea declarației fiscale în termen de 30 de zile la Direcția de Impozite și Taxe Locale și transferul rolului fiscal.
+                      Submitting the formal fiscal declaration within 30 calendar days to the local tax authority and transferring the municipal tax account.
                     </p>
                   </div>
                   <div className="p-4 bg-black/40 border border-white/[0.05] space-y-2">
-                    <span className="text-[#93C8FF] block font-semibold">CONTRACTE UTILITĂȚI</span>
+                    <span className="text-[#93C8FF] block font-semibold">UTILITY CONTRACT NOVATION</span>
                     <p className="font-sans text-xs text-[#B8C2CF] leading-relaxed">
-                      Preluarea contoarelor și perfectarea noilor contracte de furnizare cu furnizorii acreditați.
+                      Taking meter readings and executing novation agreements with certified utility providers.
                     </p>
                   </div>
                 </div>
@@ -415,9 +415,9 @@ export default function GhidCumparatorPage() {
           <section id="formular-descarcare" className="space-y-6">
             <ChapterDivider
               number="02"
-              category="TRANSMITERE DOSAR PE EMAIL"
-              title="Solicitați Transmiterea Dosarului Complet"
-              subtitle="Introduceți datele pentru a primi versiunea tipăribilă și actualizările metodologice"
+              category="DOSSIER EMAIL DELIVERY"
+              title="Request the Complete Digital Dossier"
+              subtitle="Enter your contact details to receive the printable version and methodological updates"
             />
 
             <div className="p-8 sm:p-12 bg-[#0C1119] border border-white/[0.1] relative">
@@ -432,10 +432,10 @@ export default function GhidCumparatorPage() {
                   </div>
                   <div className="space-y-2">
                     <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                      Dosarul a fost deblocat cu succes
+                      Dossier Successfully Dispatched
                     </h3>
                     <p className="font-sans text-sm text-[#8A95A5] max-w-md mx-auto leading-relaxed">
-                      Vă mulțumim, <strong>{fullName}</strong>. Dosarul a fost transmis către adresa <strong>{email}</strong>. Îl puteți consulta oricând online sau descărca în format PDF.
+                      Thank you, <strong>{fullName}</strong>. The Buyer&apos;s Dossier has been transmitted to <strong>{email}</strong>. You can review it online anytime or download it as a PDF.
                     </p>
                   </div>
                   <div className="pt-4 flex flex-wrap justify-center gap-4">
@@ -444,13 +444,13 @@ export default function GhidCumparatorPage() {
                       className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-[#07090D] font-mono text-xs uppercase tracking-wider font-semibold hover:bg-[#E1E4EA]"
                     >
                       <Printer className="w-4 h-4" />
-                      <span>SALVEAZĂ PDF ACUM</span>
+                      <span>SAVE PDF NOW</span>
                     </button>
                     <Link
                       href="/programare"
                       className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/20 text-[#F5F4EF] font-mono text-xs uppercase tracking-wider hover:border-[#93C8FF]"
                     >
-                      <span>PROGRAMEAZĂ CONVERSAȚIE PRIVATĂ</span>
+                      <span>SCHEDULE PRIVATE CONVERSATION</span>
                     </Link>
                   </div>
                 </div>
@@ -458,10 +458,10 @@ export default function GhidCumparatorPage() {
                 <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto">
                   <div className="space-y-1 text-center sm:text-left">
                     <h3 className="font-serif text-2xl text-[#F5F4EF]">
-                      Formular de Transmitere Dosar
+                      Dossier Request Form
                     </h3>
                     <p className="font-sans text-xs sm:text-sm text-[#8A95A5]">
-                      Datele sunt procesate exclusiv pentru livrarea materialului solicitat.
+                      Data is processed exclusively to deliver the requested material.
                     </p>
                   </div>
 
@@ -475,28 +475,28 @@ export default function GhidCumparatorPage() {
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] block">
-                        Nume Complet <span className="text-[#93C8FF]">*</span>
+                        Full Name <span className="text-[#93C8FF]">*</span>
                       </label>
                       <input
                         type="text"
                         required
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
-                        placeholder="Ex: Alexandru Popescu"
+                        placeholder="e.g., Alexander Smith"
                         className="w-full px-4 py-3 bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                       />
                     </div>
 
                     <div className="space-y-1.5">
                       <label className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] block">
-                        Adresă de Email <span className="text-[#93C8FF]">*</span>
+                        Email Address <span className="text-[#93C8FF]">*</span>
                       </label>
                       <input
                         type="email"
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="adresa@domeniu.ro"
+                        placeholder="name@domain.com"
                         className="w-full px-4 py-3 bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                       />
                     </div>
@@ -504,18 +504,18 @@ export default function GhidCumparatorPage() {
 
                   <div className="space-y-1.5">
                     <label className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] block">
-                      Telefon Mobil (Opțional)
+                      Phone Number (Optional)
                     </label>
                     <input
                       type="tel"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      placeholder="+40 7..."
+                      placeholder="+40 7... or +44 7..."
                       className="w-full px-4 py-3 bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                     />
                   </div>
 
-                  {/* CONSENT SEPARAT GDPR (OBLIGATORIU) */}
+                  {/* CONSENT SEPARAT GDPR (MANDATORY) */}
                   <div className="space-y-3 pt-2 border-t border-white/[0.08]">
                     <label className="flex items-start gap-3 cursor-pointer text-xs text-[#8A95A5] leading-relaxed">
                       <input
@@ -526,11 +526,11 @@ export default function GhidCumparatorPage() {
                         className="mt-1 h-4 w-4 rounded-none bg-black border-white/20 text-[#93C8FF] focus:ring-0 cursor-pointer"
                       />
                       <span>
-                        <strong className="text-[#F5F4EF]">Consimțământ Obligatoriu:</strong> Sunt de acord cu prelucrarea datelor mele cu caracter personal furnizate mai sus în scopul exclusiv de a mi se transmite Dosarul Cumpărătorului, conform <Link href="/privacy" className="text-[#93C8FF] underline">Politicii de Confidențialitate</Link>.
+                        <strong className="text-[#F5F4EF]">Mandatory Consent:</strong> I agree to the processing of my personal data provided above for the sole purpose of transmitting the Buyer&apos;s Dossier, in accordance with the <Link href="/privacy" className="text-[#93C8FF] underline">Privacy Policy</Link>.
                       </span>
                     </label>
 
-                    {/* CONSENT SEPARAT MARKETING (OPȚIONAL) */}
+                    {/* CONSENT SEPARAT MARKETING (OPTIONAL) */}
                     <label className="flex items-start gap-3 cursor-pointer text-xs text-[#8A95A5] leading-relaxed">
                       <input
                         type="checkbox"
@@ -539,7 +539,7 @@ export default function GhidCumparatorPage() {
                         className="mt-1 h-4 w-4 rounded-none bg-black border-white/20 text-[#93C8FF] focus:ring-0 cursor-pointer"
                       />
                       <span>
-                        <strong className="text-[#B8C2CF]">Opțional:</strong> Doresc să primesc actualizări trimestriale din partea Executive privind raportul pieței imobiliare prime din București. Pot revoca acest consimțământ în orice moment.
+                        <strong className="text-[#B8C2CF]">Optional:</strong> I wish to receive quarterly updates from Executive regarding the prime residential property market report. I may revoke this consent at any time.
                       </span>
                     </label>
                   </div>
@@ -550,7 +550,7 @@ export default function GhidCumparatorPage() {
                       disabled={loading}
                       className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#E1E4EA] disabled:opacity-50 transition-colors"
                     >
-                      <span>{loading ? "SE PROCESEAZĂ..." : "SOLICITĂ DOSARUL CUMPĂRĂTORULUI"}</span>
+                      <span>{loading ? "PROCESSING..." : "REQUEST THE BUYER'S DOSSIER"}</span>
                       <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
@@ -564,10 +564,10 @@ export default function GhidCumparatorPage() {
           {/* ======================================================== */}
           <section className="p-6 sm:p-8 bg-white/[0.02] border-l-2 border-[#A97F60] font-sans text-xs text-[#8A95A5] leading-relaxed space-y-1">
             <strong className="text-[#F5F4EF] font-medium block">
-              Delimitare de responsabilitate:
+              Disclaimer:
             </strong>
             <p>
-              Prezentul dosar are un scop strict informativ și educativ. Nu reprezintă o opinie juridică formală și nu ține loc de asistență acordată de un avocat înscris în Barou sau de un evaluator atestat ANEVAR. Pentru fiecare achiziție individuală se recomandă auditarea documentelor de către profesioniști licențiați.
+              This dossier is provided strictly for educational and informational purposes. It does not constitute formal legal counsel and does not replace dedicated representation by a certified Bar attorney or licensed ANEVAR appraiser. For every individual property acquisition, independent documentary audit by licensed practitioners is strongly advised.
             </p>
           </section>
 
@@ -575,15 +575,15 @@ export default function GhidCumparatorPage() {
           {/* HIGH-IMPACT CLOSING FRAME                                */}
           {/* ======================================================== */}
           <ClosingFrame
-            category="03 // ASISTENȚĂ LA ACHIZIȚIE"
-            title="Doriți asistență profesională dedicată pentru o proprietate identificată?"
-            description="Programați o sesiune de 20 de minute cu Cristian Văduva pentru a analiza oportunitatea, a verifica riscurile preliminare și a stabili mandatul de reprezentare."
+            category="03 // ACQUISITION ADVISORY"
+            title="Seeking dedicated professional advisory for an identified property?"
+            description="Schedule an introductory 20-minute consultation with Cristian Văduva to evaluate the opportunity, verify preliminary risks, and structure the representation mandate."
             primaryAction={{
-              label: "PROGRAMEAZĂ CONVERSAȚIE INIȚIALĂ",
+              label: "SCHEDULE INITIAL CONSULTATION",
               href: "/programare",
             }}
             secondaryAction={{
-              label: "CONSULTĂ ETAPELE DE LUCRU",
+              label: "EXAMINE ADVISORY PROCESS",
               href: "/cum-lucrez",
             }}
           />

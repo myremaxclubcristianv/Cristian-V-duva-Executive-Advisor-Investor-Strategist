@@ -19,7 +19,7 @@ export default function CTASection({
   eyebrow = "DIRECT PRINCIPAL COMMUNICATIONS PROTOCOL",
   title = "Initiate a Confidential Strategic Conversation.",
   description = "Every inquiry is evaluated directly by Cristian Văduva under contractual confidentiality (bilateral NDA). We do not maintain junior intake tiers or third-party intermediaries.",
-  primaryActionText = "SOLICITĂ DISCUȚIE (20 MIN)",
+  primaryActionText = "REQUEST CONSULTATION (20 MIN)",
   primaryActionHref = "/programare",
   secondaryActionText = "DIRECT INQUIRY (+43 650 953 6345)",
   secondaryActionHref = "https://wa.me/436509536345",

@@ -24,13 +24,13 @@ export default function MediaInsightsShowcase() {
           <div className="space-y-3 max-w-2xl">
             <div className="inline-flex items-center gap-2.5 font-mono text-[10px] sm:text-xs text-[#93C8FF] uppercase tracking-[0.24em] font-semibold">
               <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />
-              <span>MEDIA OFICIALĂ & ANALIZĂ MACROECONOMICĂ</span>
+              <span>OFFICIAL MEDIA & MACROECONOMIC INTELLIGENCE</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight">
-              Perspective de piață. <span className="text-[#A97F60] italic font-light">Discuții fundamentate.</span>
+              Market Perspectives. <span className="text-[#A97F60] italic font-light">Evidence-based analysis.</span>
             </h2>
             <p className="font-sans text-sm sm:text-base text-[#86868B] font-light leading-relaxed">
-              Comentariu video oficial, analize detaliate privind ciclurile imobiliare și memorii de cercetare publicate periodic.
+              Official broadcasts, in-depth market cycle analyses, and periodic research memoranda.
             </p>
           </div>
 
@@ -39,7 +39,7 @@ export default function MediaInsightsShowcase() {
               href="/media"
               className="apple-action-link text-sm"
             >
-              <span>Arhiva media completă</span>
+              <span>Complete media archive</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -53,7 +53,7 @@ export default function MediaInsightsShowcase() {
             <div className="flex items-center justify-between pb-2">
               <span className="font-mono text-xs uppercase tracking-widest text-[#B8C2CF] flex items-center gap-2">
                 <YoutubeIcon className="w-4 h-4 text-[#FF0000]" />
-                <span>EMISIUNI & INTERVIURI VIDEO</span>
+                <span>BROADCASTS & VIDEO INTERVIEWS</span>
               </span>
               <a
                 href="https://www.youtube.com/@CristianVaduvaCV"
@@ -61,7 +61,7 @@ export default function MediaInsightsShowcase() {
                 rel="noopener noreferrer"
                 className="font-mono text-[11px] text-[#93C8FF] hover:underline"
               >
-                Canalul Oficial YouTube →
+                Official YouTube Channel →
               </a>
             </div>
 
@@ -134,10 +134,10 @@ export default function MediaInsightsShowcase() {
             <div className="flex items-center justify-between pb-2">
               <span className="font-mono text-xs uppercase tracking-widest text-[#B8C2CF] flex items-center gap-2">
                 <FileText className="w-4 h-4 text-[#A97F60]" />
-                <span>MEMORANDUMURI DE CERCETARE</span>
+                <span>RESEARCH MEMORANDA</span>
               </span>
               <Link href="/insights" className="font-mono text-[11px] text-[#93C8FF] hover:underline">
-                Toate Articolele →
+                All Articles →
               </Link>
             </div>
 
@@ -172,7 +172,7 @@ export default function MediaInsightsShowcase() {
                       href={`/insights/${insight.slug}`}
                       className="apple-action-link text-xs"
                     >
-                      <span>Citește analiza completă</span>
+                      <span>Read complete analysis</span>
                       <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>

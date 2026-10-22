@@ -12,7 +12,7 @@ export default function Education() {
   return (
     <section className="py-24 bg-[#FAFAFA]">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold mb-8 text-center">Educație & Experienţă Internaţională</h2>
+        <h2 className="text-3xl font-semibold mb-8 text-center">Education & International Credentials</h2>
         <div className="flex overflow-x-auto gap-8 py-4 px-2">
           {logos.map((logo, i) => (
             <motion.div
@@ -28,7 +28,7 @@ export default function Education() {
           ))}
         </div>
         <p className="mt-8 text-lg text-[#1D1D1F] max-w-2xl text-center mx-auto">
-          Diplomă în Economie, Drept și Ecologie, Masterate în Management Financiar, Impact Mediu și Securitate Privată – studiind în România, Germania și Marea Britanie.
+          Bachelor degrees in Economics, Law, and Ecology; specialized Master&apos;s degrees in Financial Management, Environmental Impact, and Private Security—completed across Romania, Germany, and the United Kingdom.
         </p>
       </div>
     </section>

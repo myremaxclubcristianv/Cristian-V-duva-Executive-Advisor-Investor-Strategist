@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/gdpr",
   },
+  openGraph: {
+    title: "GDPR Rights & Data Subject Requests — Cristian Văduva",
+    description: "Practical guide to exercising your statutory GDPR rights, including access, rectification, erasure, and data portability.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function GDPRPage() {

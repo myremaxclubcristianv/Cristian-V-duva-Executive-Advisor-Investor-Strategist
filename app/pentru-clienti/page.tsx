@@ -17,90 +17,91 @@ import NumberedProcessTimeline, { TimelineStep } from "@/components/ui/NumberedP
 import ClosingFrame from "@/components/ui/ClosingFrame";
 
 export const metadata: Metadata = {
-  title: "Consultanță Imobiliară Premium pentru Clienți Privați | Executive",
+  title: "Private Client Real Estate Advisory & Representation | Executive",
   description:
-    "Servicii de consultanță strategică, reprezentare unilaterală dedicată și due diligence imobiliar pentru achiziția și vânzarea de proprietăți rezidențiale de prestigiu în București și internațional.",
+    "Strategic advisory, dedicated single-party representation, and technical due diligence for prime residential acquisitions and dispositions in Bucharest and internationally.",
   alternates: {
     canonical: "https://executive.cristianvaduva.com/pentru-clienti",
   },
   openGraph: {
-    title: "Consultanță Imobiliară Premium pentru Clienți Privați | Cristian Văduva",
+    title: "Private Client Real Estate Advisory & Representation | Cristian Văduva",
     description:
-      "Orientare strategică independentă pentru decizii de achiziție și vânzare imobiliară premium în București și internațional.",
+      "Independent strategic guidance for high-value acquisition and disposition decisions in Bucharest and global markets.",
     url: "https://executive.cristianvaduva.com/pentru-clienti",
     type: "website",
+    locale: "en_US",
   },
 };
 
 const COMPARISON_ROWS: ComparisonRow[] = [
   {
-    dimension: "Alinierea Interesului",
-    traditional: "Intermediere tranzacțională standard (adesea reprezentare ambiguă între ambele părți).",
-    advisory: "Mandat de reprezentare unilateral scris, apărând exclusiv interesele dumneavoastră.",
-    note: "Fără conflict de interese",
+    dimension: "Interest Alignment",
+    traditional: "Standard dual transactional brokerage (often ambiguous representation between both counterparties).",
+    advisory: "Written unilateral representation mandate, exclusively advocating your strategic and financial interests.",
+    note: "Zero conflict of interest",
   },
   {
-    dimension: "Filtrarea Pieței",
-    traditional: "Promovarea limitată la proprietățile proprii din stoc, fără explorarea întregii piețe.",
-    advisory: "Căutare pe întreaga piață, inclusiv oportunități off-market și analiză obiectivă a dezavantajelor.",
-    note: "Filtrare obiectivă",
+    dimension: "Market Filtering",
+    traditional: "Promotion restricted to internal stock listings, without comprehensive whole-of-market exploration.",
+    advisory: "Whole-of-market search including vetted off-market corridors and objective analysis of asset drawbacks.",
+    note: "Objective screening",
   },
   {
-    dimension: "Verificare & Due Diligence",
-    traditional: "Superficială; se bazează adesea doar pe promisiunile vânzătorului și ale dezvoltatorului.",
-    advisory: "Coordonare formală de due diligence: carte funciară, cadastru, ingineri structuriști atestați, avocați de barou.",
-    note: "Risc structural atenuat",
+    dimension: "Due Diligence & Verification",
+    traditional: "Superficial; frequently reliant on developer brochures or vendor assurances without verification.",
+    advisory: "Formal due diligence coordination: land book registry, cadastral surveys, certified structural engineers, bar attorneys.",
+    note: "Structural risk mitigated",
   },
   {
-    dimension: "Negociere de Preț & Termeni",
-    traditional: "Lipsă de aliniere obiectivă; atenție limitată la optimizarea analitică a costului real de achiziție.",
-    advisory: "Negociere riguroasă pe bază de prețuri reale de închidere (like-for-like), nu pe prețuri de listare.",
-    note: "Economii demonstrate",
+    dimension: "Price & Terms Negotiation",
+    traditional: "Lack of objective alignment; limited analytical focus on optimizing actual net acquisition cost.",
+    advisory: "Rigorous analytical negotiation based on verified closed transactions (like-for-like), not asking prices.",
+    note: "Quantifiable value protection",
   },
   {
-    dimension: "Confidențialitate & Date",
-    traditional: "Datele clientului sunt distribuite adesea informal în grupuri de intermediari.",
-    advisory: "Acord bilateral de confidențialitate (NDA) semnat înainte de partajarea oricărei informații.",
-    note: "Protecție strictă a identității",
+    dimension: "Confidentiality & Data Integrity",
+    traditional: "Client information frequently circulated informally across intermediary networks.",
+    advisory: "Bilateral non-disclosure agreement (NDA) executed prior to sharing any sensitive information.",
+    note: "Strict privacy safeguards",
   },
 ];
 
 const ADVISORY_STEPS: TimelineStep[] = [
   {
     number: "01",
-    stageName: "Consultație Inițială Confidențială",
-    duration: "20 Minute",
-    summary: "O discuție preliminară structurată pentru a stabili obiectivele dumneavoastră patrimoniale și compatibilitatea cu practica noastră.",
-    details: "Clarificăm profilul căutat (locație, buget, arhitectură, termene) sau strategia de lichidare/poziționare a activului deținut.",
-    deliverables: ["Profil de investiție clarificat", "Identificarea cerințelor specifice", "Acord preliminar de confidențialitate"],
+    stageName: "Confidential Initial Consultation",
+    duration: "20 Minutes",
+    summary: "A structured preliminary dialogue to define your portfolio objectives and assess engagement compatibility.",
+    details: "We clarify the target asset profile (location, budget parameters, architectural specifications, delivery timelines) or the exit and positioning strategy for an existing property.",
+    deliverables: ["Clarified investment profile", "Identification of bespoke criteria", "Preliminary non-disclosure agreement"],
     accentBadge: "DIAGNOSTIC",
   },
   {
     number: "02",
-    stageName: "Semnarea Mandatului & Acord NDA",
-    duration: "1–2 Zile",
-    summary: "Formalizarea cadrului juridic de reprezentare și stabilirea modelului de remunerare agreat în scris.",
-    details: "Se definește în mod transparent dacă proiectul va fi remunerat pe bază de retainer, success fee sau model hibrid, conform complexității.",
-    deliverables: ["Contract de mandat bilateral", "Acord de confidențialitate (NDA)", "Protocol de comunicare directă securizată"],
-    accentBadge: "CADRU LEGAL",
+    stageName: "Mandate Execution & Mutual NDA",
+    duration: "1–2 Days",
+    summary: "Formalization of the legal representation framework and transparent written agreement on compensation terms.",
+    details: "We define transparently whether the engagement operates on a retainer, success fee, or hybrid structure based on mandate scope and complexity.",
+    deliverables: ["Bilateral advisory mandate", "Mutual Non-Disclosure Agreement (NDA)", "Secure principal communication protocol"],
+    accentBadge: "LEGAL FRAMEWORK",
   },
   {
     number: "03",
-    stageName: "Scanare Completă & Filtrare Tehnică",
-    duration: "2–4 Săptămâni",
-    summary: "Evaluarea întregii piețe relevante, inclusiv acces la coridoare off-market și rețeaua internațională Chestertons.",
-    details: "Eliminăm activele compromise cadastral, cu litigii sau cu vicii de construire. Prezentăm doar opțiuni validate în amănunt.",
-    deliverables: ["Dosar comparativ like-for-like", "Analiză preț cerut vs. preț estimat de tranzacție", "Selecție privată de vizionări asistate"],
-    accentBadge: "CURATORIAT",
+    stageName: "Whole-Market Scan & Technical Screening",
+    duration: "2–4 Weeks",
+    summary: "Comprehensive assessment of the relevant market, including private off-market corridors and the global Chestertons network.",
+    details: "We filter out assets with encumbrances, planning irregularities, or structural vulnerabilities, presenting only thoroughly validated options.",
+    deliverables: ["Like-for-like comparative dossier", "Asking price vs. estimated transaction value analysis", "Private curated on-site inspections"],
+    accentBadge: "CURATION",
   },
   {
     number: "04",
-    stageName: "Negociere Asistată & Încheiere Notarială",
-    duration: "Finalizare",
-    summary: "Asistență continuă pe parcursul negocierii clauzelor contractuale (SPA) și coordonarea semnării autentice la notar.",
-    details: "Colaborăm cu avocații și notarii dumneavoastră sau vă conectăm cu cabinete de elită pentru auditul formal al titlurilor de proprietate.",
-    deliverables: ["Audit contractual pre-semnare", "Asistență fizică la autentificare notarială", "Protocol de predare-primire a activului"],
-    accentBadge: "EXECUȚIE",
+    stageName: "Assisted Negotiation & Notarial Closing",
+    duration: "Execution Phase",
+    summary: "Continuous advisory throughout contract (SPA) structuring and coordination of solemn notarial execution.",
+    details: "We work directly alongside your legal counsel and notaries or connect you with premier independent practices for formal title audits.",
+    deliverables: ["Pre-closing contract audit", "Principal attendance at notarial authentication", "Formal asset handover protocol"],
+    accentBadge: "EXECUTION",
   },
 ];
 
@@ -122,15 +123,15 @@ export default function PentruClientiPage() {
               <div className="lg:col-span-7 space-y-6 sm:space-y-8">
                 <div className="inline-flex items-center gap-2.5 px-3.5 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase rounded-full">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#93C8FF]" />
-                  <span>CONSULTANȚĂ PRIVATĂ · REPREZENTARE EXCLUSIVĂ</span>
+                  <span>PRIVATE ADVISORY · EXCLUSIVE REPRESENTATION</span>
                 </div>
 
                 <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.08]">
-                  Consultanță și Orientare pentru Decizii Imobiliare de Mare Valoare.
+                  Advisory & Strategic Guidance for High-Value Real Estate Decisions.
                 </h1>
 
                 <p className="font-sans text-base sm:text-lg text-[#B8C2CF] leading-relaxed font-light max-w-2xl">
-                  Executive oferă asistență strategică privată cumpărătorilor și proprietarilor de active rezidențiale de prestigiu. Lucrăm exclusiv pe bază de mandat scris bilateral, eliminând conflictele de interese și oferind o analiză obiectivă, documentată riguros.
+                  Executive provides dedicated private advisory to buyers and owners of prime residential assets. We operate strictly under bilateral written mandates, eliminating conflicts of interest and delivering rigorous, data-driven analysis.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -138,7 +139,7 @@ export default function PentruClientiPage() {
                     href="/programare"
                     className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[48px]"
                   >
-                    <span>SOLICITĂ DISCUȚIE DE 20 MINUTE</span>
+                    <span>SCHEDULE 20-MINUTE CONSULTATION</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
 
@@ -146,23 +147,23 @@ export default function PentruClientiPage() {
                     href="/cum-lucrez"
                     className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
                   >
-                    <span>METODOLOGIE DE LUCRU</span>
+                    <span>ADVISORY METHODOLOGY</span>
                   </Link>
                 </div>
 
                 {/* Key Quick Indicators */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-6 border-t border-white/[0.08] font-mono text-[11px] text-[#8A95A5]">
                   <div>
-                    <span className="text-[#93C8FF] block font-semibold">100% DEDICAT</span>
-                    <span>Reprezentare Unilaterală</span>
+                    <span className="text-[#93C8FF] block font-semibold">100% DEDICATED</span>
+                    <span>Unilateral Representation</span>
                   </div>
                   <div>
-                    <span className="text-[#93C8FF] block font-semibold">ACORD NDA</span>
-                    <span>Confidențialitate formală</span>
+                    <span className="text-[#93C8FF] block font-semibold">MUTUAL NDA</span>
+                    <span>Formal Confidentiality</span>
                   </div>
                   <div>
-                    <span className="text-[#93C8FF] block font-semibold">REȚEA GLOBALĂ</span>
-                    <span>Partener Chestertons</span>
+                    <span className="text-[#93C8FF] block font-semibold">GLOBAL REACH</span>
+                    <span>Chestertons Associate Desk</span>
                   </div>
                 </div>
               </div>
@@ -172,7 +173,7 @@ export default function PentruClientiPage() {
                 <div className="relative aspect-[4/5] bg-black border border-white/[0.12] overflow-hidden group shadow-2xl">
                   <Image
                     src="/media/cristian-vaduva/personal/cristian-vaduva-office-armchair-consultation.png"
-                    alt="Cristian Văduva — Consultanță privată pentru clienți"
+                    alt="Cristian Văduva — Private client real estate consultation"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 42vw"
@@ -181,8 +182,8 @@ export default function PentruClientiPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-80" />
                   <div className="absolute bottom-4 left-4 right-4 p-4 bg-[#07090D]/90 backdrop-blur-md border border-white/10 font-mono text-xs text-[#E1E4EA] flex items-center justify-between">
                     <div>
-                      <span className="text-[#A97F60] uppercase block text-[9px]">CADRAN CONSULTAȚIE</span>
-                      <span className="font-sans font-medium text-xs">Cristian Văduva · Birou București</span>
+                      <span className="text-[#A97F60] uppercase block text-[9px]">CONSULTATION CADRAN</span>
+                      <span className="font-sans font-medium text-xs">Cristian Văduva · Bucharest Office</span>
                     </div>
                     <span className="w-2 h-2 rounded-full bg-[#93C8FF]" />
                   </div>
@@ -191,155 +192,155 @@ export default function PentruClientiPage() {
             </div>
           </section>
 
-          {/* CHAPTER 01 // CELE 3 CAPABILITĂȚI PRINCIPALE */}
+          {/* CHAPTER 01 // THREE STRATEGIC CAPABILITIES */}
           <section className="space-y-12">
             <ChapterDivider
               number="01"
-              category="CAPABILITĂȚI & ASISTENȚĂ PRACTICĂ"
-              title="Trei Direcții de Asistență Strategică pentru Active Prime"
-              description="O abordare structurată concepută pentru a proteja capitalul și timpul decidentului, de la selecția preliminară până la finalizarea formală a tranzacției."
+              category="CAPABILITIES & PRACTICAL ADVISORY"
+              title="Three Strategic Advisory Tracks for Prime Real Estate"
+              description="A structured methodology designed to protect principal capital and time, from initial search filtering through formal completion."
             />
 
             <div className="space-y-10">
               {/* Feature Panel 1: Buyer Advisory */}
               <ArchitecturalFeaturePanel
-                tag="DIRECȚIA 01 // MANDAT DE ACHIZIȚIE (BUYER ADVISORY)"
-                title="Căutare Dedicată & Negociere Exclusivă pentru Cumpărători"
-                description="Definim împreună profilul exact al proprietății dorite, filtrăm întreaga piață publică și identificăm oportunități off-market din rețeaua privată. Evaluăm riscurile ascunse și negociem exclusiv în interesul dumneavoastră financiar și patrimonial."
+                tag="TRACK 01 // BUYER ADVISORY MANDATE"
+                title="Dedicated Search & Exclusive Buyer Representation"
+                description="We define your precise acquisition profile, audit the entire public market, and unlock private off-market opportunities. We evaluate hidden liabilities and negotiate strictly in your financial and wealth protection interest."
                 imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-residence-curved-glass-terrace.png"
-                imageAlt="Reședință privată cu terasă curbată — Achiziții Prime"
-                imageCaption="Proprietate de referință · Zonă rezidențială prime"
+                imageAlt="Private prime residence with curved terrace"
+                imageCaption="Reference property · Prime residential enclave"
                 imagePosition="right"
                 bullets={[
                   {
-                    title: "Filtrare obiectivă fără bias comercial",
-                    desc: "Nu promovăm dezvoltatori anume; recomandăm strict proprietăți care trec testul de valoare.",
+                    title: "Objective whole-market filtering",
+                    desc: "No developer bias; we recommend strictly assets that withstand rigorous valuation scrutiny.",
                   },
                   {
-                    title: "Analiză comparativă like-for-like",
-                    desc: "Raportăm prețul cerut la tranzacții reale încheiate pe același palier de calitate.",
+                    title: "Like-for-like comparative analysis",
+                    desc: "Benchmarking asking prices against verified closed transactions in the same architectural tier.",
                   },
                   {
-                    title: "Negociere asistată de preț și termeni",
-                    desc: "Protejăm capitalul prin structurarea tranșelor și a garanțiilor contractuale.",
+                    title: "Assisted price & terms negotiation",
+                    desc: "Protecting capital through structured milestone payments, warranties, and contractual safeguards.",
                   },
                 ]}
-                ctaText="SOLICITĂ MANDAT DE ACHIZIȚIE"
+                ctaText="REQUEST BUYER MANDATE"
                 ctaHref="/programare"
                 stats={[
-                  { value: "100%", label: "Aliniere Unilaterală" },
-                  { value: "0", label: "Conflicte de Interese" },
-                  { value: "24h", label: "Confirmare Solicitare" },
+                  { value: "100%", label: "Unilateral Alignment" },
+                  { value: "0", label: "Conflicts of Interest" },
+                  { value: "24h", label: "Inquiry Confirmation" },
                 ]}
               />
 
               {/* Feature Panel 2: Seller Advisory (Reversed) */}
               <ArchitecturalFeaturePanel
-                tag="DIRECȚIA 02 // VÂNZARE ASISTATĂ & POZIȚIONARE"
-                title="Pregătirea Dosarului Tehnic & Acces Discret la Cumpărători Calificați"
-                description="Pentru proprietarii de reședințe excepționale, pregătim un dosar de prezentare impecabil din punct de vedere tehnic și juridic, stabilim prețul optim fundamentat pe date reale și gestionăm discret accesul potențialilor cumpărători precalificați."
+                tag="TRACK 02 // SELLER ADVISORY & POSITIONING"
+                title="Technical Dossier Preparation & Discreet Qualified Buyer Access"
+                description="For owners of exceptional residences, we assemble a technically and legally flawless presentation dossier, establish data-backed pricing, and manage discreet access to verified, pre-qualified buyers."
                 imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-development-skytower-inspection.png"
-                imageAlt="Inspecție tehnică și poziționare de proprietate"
-                imageCaption="Audit de conformitate și vizionare asistată"
+                imageAlt="Technical inspection and property positioning"
+                imageCaption="Compliance audit and assisted viewing"
                 imagePosition="left"
                 bullets={[
                   {
-                    title: "Audit prealabil al cărții funciare și cadastrului",
-                    desc: "Rezolvăm eventualele neconcordanțe înainte de prima vizionare a unui cumpărător.",
+                    title: "Pre-sale land book & cadastral audit",
+                    desc: "Resolving title discrepancies and documentation gaps prior to any buyer inspection.",
                   },
                   {
-                    title: "Precalificarea financiară a cumpărătorilor",
-                    desc: "Evităm pierderea timpului cu vizionări de curiozitate; primim doar cumpărători cu fonduri verificate.",
+                    title: "Financial pre-qualification of buyers",
+                    desc: "Eliminating speculative viewings; introducing only buyers with verified financial capability.",
                   },
                   {
-                    title: "Prezentare discretă fără listări spam",
-                    desc: "Păstrăm confidențialitatea adresei și a identității proprietarului prin acorduri stricte.",
+                    title: "Discreet presentation without mass-market listings",
+                    desc: "Protecting property privacy and owner confidentiality through strict non-disclosure protocols.",
                   },
                 ]}
-                ctaText="DISCUTĂ POZIȚIONAREA PROPRIETĂȚII"
+                ctaText="DISCUSS PROPERTY POSITIONING"
                 ctaHref="/programare"
                 stats={[
-                  { value: "Privat", label: "Canal de Prezentare" },
-                  { value: "1:1", label: "Asistență la Vizionări" },
-                  { value: "Riguros", label: "Dosar Tehnic Complet" },
+                  { value: "Private", label: "Distribution Channel" },
+                  { value: "1:1", label: "Viewing Attendance" },
+                  { value: "Rigorous", label: "Technical Dossier" },
                 ]}
               />
 
               {/* Feature Panel 3: Due Diligence Coordination */}
               <ArchitecturalFeaturePanel
-                tag="DIRECȚIA 03 // COORDONARE DUE DILIGENCE"
-                title="Audit Multidisciplinar: Titlu, Urbanism & Calitate Structurală"
-                description="Coordonăm verificarea istoricului complet de proprietate, a conformității urbanistice și a stării tehnice structurale prin intermediul experților independenți atestați (avocați de barou, notari publici, experți tehnici atestați în construcții, evaluatori ANEVAR)."
+                tag="TRACK 03 // DUE DILIGENCE COORDINATION"
+                title="Multidisciplinary Audit: Title, Planning & Structural Integrity"
+                description="We coordinate thorough title provenance, urban planning compliance, and structural engineering audits via certified independent practitioners (bar attorneys, public notaries, certified structural engineers, ANEVAR appraisers)."
                 imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-office-blueprints-underwriting.jpg"
-                imageAlt="Analiză planuri arhitecturale și carte tehnică"
-                imageCaption="Verificare tehnică de specialitate"
+                imageAlt="Architectural blueprint and technical book analysis"
+                imageCaption="Specialized technical verification"
                 imagePosition="right"
                 bullets={[
                   {
-                    title: "Verificare cadastrală și istoric de proprietate",
-                    desc: "Depistarea sarcinilor, ipotecilor, proceselor sau revendicărilor istorice.",
+                    title: "Cadastral and title provenance verification",
+                    desc: "Identifying encumbrances, mortgages, active litigation, or historical restitution claims.",
                   },
                   {
-                    title: "Inspecție tehnică atestată a structurii și instalațiilor",
-                    desc: "Analiza calității execuției, cărții tehnice a construcției și a rezistenței seismice.",
+                    title: "Certified structural and MEP inspection",
+                    desc: "Auditing construction quality, technical logbook records, and seismic resilience.",
                   },
                   {
-                    title: "Asistență până la semnarea actului autentic",
-                    desc: "Colaborare directă cu biroul notarial pentru siguranța deplină a transferului de proprietate.",
+                    title: "Closing support through notarial authentication",
+                    desc: "Working with the notary office to guarantee legal title perfection and secure transfer.",
                   },
                 ]}
-                ctaText="DESCARCĂ DOSARUL CUMPĂRĂTORULUI"
+                ctaText="DOWNLOAD BUYER'S DOSSIER"
                 ctaHref="/ghid-cumparator"
                 stats={[
-                  { value: "7 Etape", label: "Ghid de Verificare" },
-                  { value: "MDLPA", label: "Experți Tehnici Atestați" },
-                  { value: "Barou", label: "Avocați Independenți" },
+                  { value: "7 Stages", label: "Verification Guide" },
+                  { value: "MDLPA", label: "Certified Engineers" },
+                  { value: "Bar", label: "Independent Counsel" },
                 ]}
               />
             </div>
           </section>
 
-          {/* CHAPTER 02 // COMPARAȚIE STRUCTURALĂ: INTERMEDIERE VS. CONSULTANȚĂ */}
+          {/* CHAPTER 02 // STRUCTURAL COMPARISON: BROKERAGE VS. ADVISORY */}
           <section className="space-y-12">
             <ChapterDivider
               number="02"
-              category="ANALIZĂ COMPARATIVĂ DE MODEL"
-              title="De Ce Contează Mandatul Unilateral de Reprezentare"
-              description="Diferențele fundamentale dintre o agenție tranzacțională generalistă și o practică dedicată de consultanță executivă."
+              category="STRUCTURAL MODEL ANALYSIS"
+              title="Why Unilateral Representation Protects Principal Interests"
+              description="The fundamental distinctions between generalist volume brokerage and an executive single-party advisory practice."
             />
 
             <ComparisonMatrix
-              title="Model Tradițional vs. Practica Executive"
-              subtitle="O comparație transparentă între intermedierea imobiliară clasică și reprezentarea exclusivă a clientului privat."
-              traditionalHeader="INTERMEDIERE TRADIȚIONALĂ"
-              advisoryHeader="PRACTICA EXECUTIVE (CRISTIAN VĂDUVA)"
+              title="Traditional Brokerage vs. Executive Advisory Practice"
+              subtitle="A clear comparison between conventional transaction brokering and dedicated private client representation."
+              traditionalHeader="TRADITIONAL BROKERAGE"
+              advisoryHeader="EXECUTIVE PRACTICE (CRISTIAN VĂDUVA)"
               rows={COMPARISON_ROWS}
             />
           </section>
 
-          {/* CHAPTER 03 // PIEȚE ȘI ZONARE */}
+          {/* CHAPTER 03 // GEOGRAPHIC ENCLAVES & GLOBAL REACH */}
           <section className="space-y-12">
             <ChapterDivider
               number="03"
-              category="ARIA GEOGRAFICĂ & SEGMENTE ACOPERITE"
-              title="Piețe Relevante: București Prime & Coridoare Globale"
-              description="Ne concentrăm exclusiv pe segmentele rezidențiale unde calitatea construcției, raritatea urbanistică și valoarea patrimonială justifică o abordare personalizată."
+              category="GEOGRAPHIC REACH & SECTOR FOCUS"
+              title="Prime Bucharest Enclaves & Global Corridors"
+              description="We concentrate exclusively on prime residential segments where architectural quality, urban scarcity, and long-term capital preservation justify a bespoke advisory approach."
             />
 
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Cadran 1: București Prime */}
+              {/* Cadran 1: Bucharest Prime */}
               <div className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-6">
                 <div className="flex items-center gap-2 font-mono text-xs text-[#93C8FF] uppercase tracking-[0.2em]">
                   <Building2 className="w-4 h-4" />
-                  <span>BUCUREȘTI & POLUL REZIDENȚIAL DE NORD</span>
+                  <span>BUCHAREST & NORTHERN RESIDENTIAL CORRIDOR</span>
                 </div>
 
                 <h3 className="font-serif text-2xl text-[#F5F4EF]">
-                  Micro-Piețe Rezidențiale Consacrate
+                  Established Prime Residential Enclaves
                 </h3>
 
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Monitorizăm permanent micro-piețele premium din Capitală, unde densitatea patrimonială și cererea solventă mențin valoarea activelor pe termen lung:
+                  We continuously monitor prime capital micro-markets where architectural heritage and sustained high-net-worth demand preserve asset liquidity:
                 </p>
 
                 <div className="grid grid-cols-2 gap-3 font-mono text-xs text-[#E1E4EA] pt-2">
@@ -347,14 +348,14 @@ export default function PentruClientiPage() {
                   <div className="p-3 bg-black/40 border border-white/[0.05]">Primăverii & Aviatorilor</div>
                   <div className="p-3 bg-black/40 border border-white/[0.05]">Kiseleff & Dorobanți Capitale</div>
                   <div className="p-3 bg-black/40 border border-white/[0.05]">Floreasca & Lacul Tei</div>
-                  <div className="p-3 bg-black/40 border border-white/[0.05]">Pipera Rezidențial (Vile)</div>
-                  <div className="p-3 bg-black/40 border border-white/[0.05]">Proprietăți Istorice / Centru</div>
+                  <div className="p-3 bg-black/40 border border-white/[0.05]">Pipera Residential (Villas)</div>
+                  <div className="p-3 bg-black/40 border border-white/[0.05]">Historic Downtown Estates</div>
                 </div>
 
                 <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-[#8A95A5]">
-                  <span>CATALOG LIVE DISPONIBIL</span>
+                  <span>LIVE CATALOGUE AVAILABLE</span>
                   <Link href="/real-estate/properties" className="text-[#93C8FF] hover:underline flex items-center gap-1">
-                    <span>VEZI 433 PROPRIETĂȚI</span>
+                    <span>VIEW 433 PROPERTIES</span>
                     <span>→</span>
                   </Link>
                 </div>
@@ -364,30 +365,30 @@ export default function PentruClientiPage() {
               <div className="p-8 sm:p-10 bg-[#0C1119] border border-white/[0.08] space-y-6">
                 <div className="flex items-center gap-2 font-mono text-xs text-[#A97F60] uppercase tracking-[0.2em]">
                   <Globe className="w-4 h-4" />
-                  <span>CORIDOARE INTERNAȚIONALE (REȚEAUA CHESTERTONS)</span>
+                  <span>INTERNATIONAL CORRIDORS (CHESTERTONS NETWORK)</span>
                 </div>
 
                 <h3 className="font-serif text-2xl text-[#F5F4EF]">
-                  Acces Direct la Portofoliul Global Partener
+                  Direct Access to Global Associate Portfolios
                 </h3>
 
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Prin afilierea profesională cu rețeaua internațională Chestertons Global, facilităm accesul clienților privați din România direct către birourile locale partenere din marile capitale:
+                  Through our professional affiliation with the Chestertons Global international network, we facilitate direct access for private clients to premier partner desks in major wealth centers:
                 </p>
 
                 <div className="grid grid-cols-2 gap-3 font-mono text-xs text-[#E1E4EA] pt-2">
-                  <div className="p-3 bg-black/40 border border-white/[0.05]">Londra (Prime Central London)</div>
-                  <div className="p-3 bg-black/40 border border-white/[0.05]">Riviera Franceză & Cap d&apos;Ail</div>
-                  <div className="p-3 bg-black/40 border border-white/[0.05]">Monaco (Parteneriate Locale)</div>
-                  <div className="p-3 bg-black/40 border border-white/[0.05]">Dubai & Zona Golfului</div>
-                  <div className="p-3 bg-black/40 border border-white/[0.05]">Madrid & Marbella (Spania)</div>
-                  <div className="p-3 bg-black/40 border border-white/[0.05]">Insulele Baleare (Mallorca)</div>
+                  <div className="p-3 bg-black/40 border border-white/[0.05]">London (Prime Central London)</div>
+                  <div className="p-3 bg-black/40 border border-white/[0.05]">French Riviera & Cap d&apos;Ail</div>
+                  <div className="p-3 bg-black/40 border border-white/[0.05]">Monaco (Local Partner Desks)</div>
+                  <div className="p-3 bg-black/40 border border-white/[0.05]">Dubai & The Gulf Region</div>
+                  <div className="p-3 bg-black/40 border border-white/[0.05]">Madrid & Marbella (Spain)</div>
+                  <div className="p-3 bg-black/40 border border-white/[0.05]">Balearic Islands (Mallorca)</div>
                 </div>
 
                 <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-[#8A95A5]">
-                  <span>REȚEA FONDATĂ LA LONDRA 1805</span>
+                  <span>FOUNDED IN LONDON 1805</span>
                   <Link href="/parteneri" className="text-[#93C8FF] hover:underline flex items-center gap-1">
-                    <span>DETALII PARTENERI</span>
+                    <span>PARTNERSHIP DETAILS</span>
                     <span>→</span>
                   </Link>
                 </div>
@@ -395,13 +396,13 @@ export default function PentruClientiPage() {
             </div>
           </section>
 
-          {/* CHAPTER 04 // CICLUL DE COLABORARE ÎN 4 ETAPE */}
+          {/* CHAPTER 04 // 4-STAGE ADVISORY CYCLE */}
           <section className="space-y-12">
             <ChapterDivider
               number="04"
-              category="METODOLOGIE DE LUCRU"
-              title="Etapele unui Mandat Privat de Consultanță"
-              description="O relație profesională bazată pe claritate totală, etape documentate și termeni agreați transparent prin contract scris bilateral."
+              category="WORKING METHODOLOGY"
+              title="Stages of a Private Advisory Mandate"
+              description="A professional engagement based on absolute transparency, documented milestones, and mutually agreed terms under a bilateral written agreement."
             />
 
             <NumberedProcessTimeline steps={ADVISORY_STEPS} />
@@ -409,12 +410,12 @@ export default function PentruClientiPage() {
 
           {/* CLOSING FRAME */}
           <ClosingFrame
-            category="DEMARARE MANDAT PRIVAT"
-            title="Doriți să discutați despre o achiziție sau o vânzare de proprietate prime?"
-            description="Fiecare mandat este asumat personal de Cristian Văduva. Oferim o sesiune confidențială de 20 de minute pentru a evalua compatibilitatea proiectului dumneavoastră."
-            primaryCtaText="SOLICITĂ DISCUȚIE DE 20 MINUTE"
+            category="COMMENCE PRIVATE MANDATE"
+            title="Ready to discuss a prime acquisition or disposition?"
+            description="Every mandate is personally directed by Cristian Văduva. We invite you to an introductory 20-minute confidential consultation to assess strategic fit."
+            primaryCtaText="SCHEDULE 20-MINUTE CONSULTATION"
             primaryCtaHref="/programare"
-            secondaryCtaText="VEZI METODOLOGIA DE LUCRU"
+            secondaryCtaText="VIEW ADVISORY METHODOLOGY"
             secondaryCtaHref="/cum-lucrez"
             imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-office-armchair-consultation.png"
           />

@@ -12,14 +12,14 @@ export default function AppleExecutiveBento() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-3 max-w-2xl">
             <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-[#B89B72]">
-              <span>CADRANE DE PERFORMANȚĂ & ADVISORY</span>
+              <span>PERFORMANCE & ADVISORY CADRANS</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-white">
-              Arhitectură de Decizie & Expertiză Integrată
+              Decision Architecture & Integrated Practice
             </h2>
           </div>
           <p className="text-sm sm:text-base text-neutral-400 max-w-md font-light">
-            Sinergie unică între tranzacții imobiliare de lux, piețe de capital, asigurări de mare anvergură și analiză academică multidisciplinară.
+            Unique synergy between prime real estate transactions, capital structuring, private wealth protection, and multidisciplinary academic rigor.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function AppleExecutiveBento() {
                   <Building2 className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-mono uppercase tracking-widest text-neutral-400">
-                  CADRAN 01 / TRANZACȚII
+                  CADRAN 01 / TRANSACTIONS
                 </span>
               </div>
 
@@ -43,13 +43,13 @@ export default function AppleExecutiveBento() {
                   Ultra-Prime Real Estate & Off-Market Estates
                 </h3>
                 <p className="text-neutral-300 text-sm sm:text-base font-light leading-relaxed">
-                  Reprezentare exclusivă pentru cumpărători și vânzători de reședințe emblematice, penthouse-uri de colecție și terenuri strategice de dezvoltare în cele mai căutate micro-locații din București (Herăstrău, Primăverii, Kiseleff, Pipera), precum și pe axa Monaco · Dubai.
+                  Exclusive representation for buyers and sellers of landmark residences, trophy penthouses, and strategic development parcels across Bucharest prime enclaves (Herăstrău, Primăverii, Kiseleff, Pipera), alongside the Monaco · Dubai corridor.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                 <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
-                  <div className="text-xs text-neutral-400 font-mono">București</div>
+                  <div className="text-xs text-neutral-400 font-mono">Bucharest</div>
                   <div className="text-sm font-semibold text-white mt-1">Herăstrău · Primăverii</div>
                 </div>
                 <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
@@ -66,7 +66,7 @@ export default function AppleExecutiveBento() {
             <div className="pt-8 flex items-center justify-between border-t border-white/10 mt-8 relative z-10">
               <span className="text-xs text-neutral-400 font-mono">AiXLuxury Portfolio</span>
               <Link href="/real-estate" className="text-xs font-mono text-[#B89B72] hover:underline flex items-center gap-1">
-                Explorează Portofoliul <ArrowRight className="w-3.5 h-3.5" />
+                Explore Portfolio <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
           </div>
@@ -85,31 +85,31 @@ export default function AppleExecutiveBento() {
 
               <div className="space-y-3">
                 <h3 className="text-2xl sm:text-3xl font-semibold text-white">
-                  Asset Protection & Generali Parteneriat
+                  Asset Protection & Generali Partnership
                 </h3>
                 <p className="text-neutral-300 text-sm sm:text-base font-light leading-relaxed">
-                  Consultanță dedicată de protecție a patrimoniului și asigurări complexe pentru investitori și companii, integrând soluții de top oferite în parteneriat cu Generali România.
+                  Dedicated wealth protection advisory and comprehensive risk-transfer mechanisms for investors and family offices, integrated in partnership with Generali Romania.
                 </p>
               </div>
 
               <ul className="space-y-2 pt-2 text-xs sm:text-sm text-neutral-300 font-light">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-[#B89B72] shrink-0" />
-                  <span>Protecția proprietăților și portofoliilor de clădiri</span>
+                  <span>Real estate and building portfolio protection</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-[#B89B72] shrink-0" />
-                  <span>Structuri de garantare și protecție a activelor</span>
+                  <span>Asset preservation and guarantee structures</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-[#B89B72] shrink-0" />
-                  <span>Planificare financiară pentru UHNW Principals</span>
+                  <span>Financial risk planning for UHNW principals</span>
                 </li>
               </ul>
             </div>
 
             <div className="pt-8 border-t border-white/10 mt-8 relative z-10">
-              <span className="text-xs text-neutral-400 font-mono">Securitate Instituțională</span>
+              <span className="text-xs text-neutral-400 font-mono">Institutional Security</span>
             </div>
           </div>
 
@@ -121,35 +121,35 @@ export default function AppleExecutiveBento() {
                   <GraduationCap className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-mono uppercase tracking-widest text-neutral-400">
-                  CADRAN 03 / EDUCAȚIE
+                  CADRAN 03 / ACADEMIC FOUNDATION
                 </span>
               </div>
 
               <div className="space-y-3">
                 <h3 className="text-2xl sm:text-3xl font-semibold text-white">
-                  6 Diplome Universitare & Masterate
+                  6 University & Master&apos;s Degrees
                 </h3>
                 <p className="text-neutral-300 text-sm font-light leading-relaxed">
-                  O perspectivă analitică rară în domeniul imobiliar de lux, îmbinând economia, dreptul și științele aplicate:
+                  A rare multidisciplinary analytical foundation spanning economics, jurisprudence, and applied sciences:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/5 space-y-1">
-                  <div className="font-semibold text-white">Licențe Universitare</div>
-                  <div className="text-neutral-400 font-light">Economie · Drept · Ecologie</div>
+                  <div className="font-semibold text-white">Bachelor&apos;s Degrees</div>
+                  <div className="text-neutral-400 font-light">Economics · Law · Ecology</div>
                 </div>
                 <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/5 space-y-1">
-                  <div className="font-semibold text-white">Masterate & Specializări</div>
-                  <div className="text-neutral-400 font-light">Management Financiar · Securitatea Informației · Evaluare Impact Mediu</div>
+                  <div className="font-semibold text-white">Master&apos;s & Specializations</div>
+                  <div className="text-neutral-400 font-light">Financial Management · Information Security · Environmental Impact Assessment</div>
                 </div>
               </div>
             </div>
 
             <div className="pt-6 border-t border-white/10 mt-6 flex items-center justify-between">
-              <span className="text-xs text-neutral-400 font-mono">Experiență: Madrid · Amiens · Malta</span>
+              <span className="text-xs text-neutral-400 font-mono">Academic Mobility: Madrid · Amiens · Malta</span>
               <Link href="/about" className="text-xs font-mono text-[#B89B72] hover:underline flex items-center gap-1">
-                Biografie Completă <ArrowRight className="w-3.5 h-3.5" />
+                Complete Biography <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
           </div>
@@ -162,16 +162,16 @@ export default function AppleExecutiveBento() {
                   <TrendingUp className="w-6 h-6" />
                 </div>
                 <span className="text-xs font-mono uppercase tracking-widest text-neutral-400">
-                  CADRAN 04 / INTELIGENȚĂ
+                  CADRAN 04 / MARKET INTELLIGENCE
                 </span>
               </div>
 
               <div className="space-y-3">
                 <h3 className="text-2xl sm:text-3xl font-semibold text-white">
-                  Market Pulse & Analiză în Timp Real
+                  Market Pulse & Real-Time Intelligence
                 </h3>
                 <p className="text-neutral-300 text-sm font-light leading-relaxed">
-                  Monitorizare continuă a prețurilor per metru pătrat, a randamentelor de închiriere și a dinamicii tranzacțiilor pe piața imobiliară premium prin canalul oficial de YouTube și platformele AiX.
+                  Continuous surveillance of pricing per square meter, net rental yields, and transaction liquidity across prime real estate markets.
                 </p>
               </div>
 
@@ -179,7 +179,7 @@ export default function AppleExecutiveBento() {
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-red-500 animate-ping" />
                   <div>
-                    <div className="text-xs font-semibold text-white">Canal YouTube Oficial</div>
+                    <div className="text-xs font-semibold text-white">Official YouTube Channel</div>
                     <div className="text-[11px] text-neutral-400 font-mono">@CristianVaduvaCV</div>
                   </div>
                 </div>
@@ -187,20 +187,20 @@ export default function AppleExecutiveBento() {
                   href="/tv"
                   className="px-3.5 py-1.5 rounded-xl bg-red-500/20 hover:bg-red-500/30 text-red-300 text-xs font-mono uppercase transition-colors"
                 >
-                  Vezi Video-uri
+                  Watch Episodes
                 </Link>
               </div>
             </div>
 
             <div className="pt-6 border-t border-white/10 mt-6 flex items-center justify-between">
-              <span className="text-xs text-neutral-400 font-mono">Import Automat Video</span>
+              <span className="text-xs text-neutral-400 font-mono">Official Broadcast Sync</span>
               <a
                 href="https://www.youtube.com/@CristianVaduvaCV"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-mono text-[#B89B72] hover:underline flex items-center gap-1"
               >
-                Abonează-te <ArrowRight className="w-3.5 h-3.5" />
+                Subscribe <ArrowRight className="w-3.5 h-3.5" />
               </a>
             </div>
           </div>

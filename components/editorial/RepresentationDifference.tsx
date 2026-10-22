@@ -49,7 +49,7 @@ export default function RepresentationDifference({
         <div className="border border-white/[0.08] bg-[#0C1119] rounded-3xl overflow-hidden shadow-2xl">
           {/* Table Column Headers (Desktop) */}
           <div className="hidden lg:grid grid-cols-12 border-b border-white/[0.08] bg-[#07090D]/80 px-8 py-5 font-mono text-xs uppercase tracking-wider">
-            <div className="col-span-3 text-[#A97F60] font-semibold">CRITERIU STRATEGIC</div>
+            <div className="col-span-3 text-[#A97F60] font-semibold">STRATEGIC CRITERIA</div>
             <div className="col-span-4 text-[#86868B] flex items-center gap-2 border-l border-white/[0.06] pl-6">
               <AlertTriangle className="w-3.5 h-3.5 text-red-400/80" />
               <span>{t.labelWithout}</span>
@@ -70,7 +70,7 @@ export default function RepresentationDifference({
                 {/* Area Header */}
                 <div className="lg:col-span-3 space-y-1">
                   <span className="font-mono text-[10px] text-[#A97F60] uppercase tracking-[0.2em] font-semibold block">
-                    {`${String(idx + 1).padStart(2, "0")} // CRITERIU`}
+                    {`${String(idx + 1).padStart(2, "0")} // CRITERIA`}
                   </span>
                   <span className="font-serif text-lg text-[#F5F4EF] font-medium block">
                     {item.area}

@@ -8,61 +8,69 @@ import { ServiceItem } from "@/components/editorial/ServiceSection";
 import Section from "@/components/ui/Section";
 
 export const metadata: Metadata = {
-  title: "Consultanță Strategică & Proiecte — Cristian Văduva Executive",
+  title: "Strategic Advisory & Projects — Cristian Văduva Executive",
   description:
-    "Consultanță strategică pentru decizii imobiliare complexe, orientare în selecția activelor și coordonarea colaborărilor profesionale alături de Cristian Văduva.",
+    "Strategic advisory for complex real estate decisions, asset selection guidance, and coordination of professional collaborations with Cristian Văduva.",
   alternates: {
     canonical: "https://executive.cristianvaduva.com/ventures",
+  },
+  openGraph: {
+    title: "Strategic Advisory & Projects | Cristian Văduva",
+    description:
+      "Strategic advisory for complex real estate decisions, asset selection guidance, and institutional coordination.",
+    url: "https://executive.cristianvaduva.com/ventures",
+    type: "website",
+    locale: "en_US",
   },
 };
 
 const ventureServices: ServiceItem[] = [
   {
     number: "01",
-    category: "CONSULTANȚĂ IMOBILIARĂ",
-    title: "Consultanță Strategică pentru Achiziții Rezidențiale",
+    category: "REAL ESTATE ADVISORY",
+    title: "Strategic Advisory for Residential Acquisitions",
     description:
-      "Asistență în analiza oportunităților imobiliare pe piața din București și pe coridoare internaționale, în coordonare cu evaluatori și notari autorizați.",
+      "Advisory support in analyzing real estate opportunities across the Bucharest market and international corridors, in coordination with certified appraisers and notaries.",
     deliverables: [
-      "Verificarea structurată a documentelor disponibile (cărți funciare, certificate de urbanism)",
-      "Analiză comparativă de preț pe criterii like-for-like în aceeași micro-zonă",
-      "Asistență la negocierea termenilor comerciali ai tranzacției",
-      "Coordonarea etapelor tranzacției împreună cu profesioniștii independenți ai părților",
+      "Structured verification of available property documentation (land books, urban planning certificates)",
+      "Comparative like-for-like pricing analysis within the same residential micro-zone",
+      "Assistance with negotiating commercial transaction terms",
+      "Coordination of transaction milestones alongside independent certified specialists",
     ],
     linkHref: "/cum-lucrez",
-    linkText: "CUM LUCREZ ȘI ETAPELE COLABORĂRII",
+    linkText: "HOW I WORK & ENGAGEMENT PHASES",
     external: false,
   },
   {
     number: "02",
-    category: "ECOSISTEM & TEHNOLOGIE",
-    title: "Platforme Digitale & Inteligență Imobiliară",
+    category: "ECOSYSTEM & TECHNOLOGY",
+    title: "Digital Platforms & Real Estate Intelligence",
     description:
-      "Inițiative tehnologice și media dezvoltate în cadrul ecosistemului Cristian Văduva (inclusiv HomeFind) pentru explorarea pieței și prezentarea activelor.",
+      "Proprietary technological and editorial initiatives developed within the Cristian Văduva ecosystem (including HomeFind) for market intelligence and asset presentation.",
     deliverables: [
-      "Catalog centralizat de proprietăți și oportunități rezidențiale documentate",
-      "Producție editorială și monografii detaliate pentru proprietăți reprezentative",
-      "Instrumente de explorare și filtrare a oportunităților de piață",
-      "Integrare cu rețele imobiliare internaționale partenere (Chestertons)",
+      "Centralized catalogue of documented prime residential opportunities",
+      "Editorial monograph production and architectural dossiers for signature properties",
+      "Proprietary screening and filtering tools for residential market intelligence",
+      "Integration with international partner real estate networks (Chestertons)",
     ],
     linkHref: "/parteneri",
-    linkText: "VEZI PARTENERIATELE RELEVANTE",
+    linkText: "EXPLORE INSTITUTIONAL PARTNERSHIPS",
     external: false,
   },
   {
     number: "03",
-    category: "MANDATE DEDICATE",
-    title: "Reprezentare Unilaterală & Confidențialitate Contractuală",
+    category: "DEDICATED MANDATES",
+    title: "Unilateral Representation & Contractual Confidentiality",
     description:
-      "Mandate dedicate de asistență pentru cumpărători sau vânzători, desfășurate sub acorduri bilaterale de confidențialitate (NDA) și cu respectarea conformității KYC/AML.",
+      "Dedicated single-party advisory mandates for buyers or sellers, conducted under bilateral Non-Disclosure Agreements (NDA) and strict KYC/AML statutory compliance.",
     deliverables: [
-      "Reprezentarea exclusivă a intereselor clientului conform mandatului semnat",
-      "Păstrarea confidențialității contractuale asupra termenilor negocierii",
-      "Proceduri conforme de identificare a părților (KYC) și prevenire a spălării banilor (AML)",
-      "Colaborare strânsă cu avocații și consilierii fiscali desemnați de client",
+      "Exclusive fiduciary representation of client interests under executed mandate",
+      "Strict contractual confidentiality safeguarding negotiation terms and strategy",
+      "Statutory Know-Your-Customer (KYC) and Anti-Money Laundering (AML) compliance",
+      "Direct collaboration alongside client-appointed legal counsel and tax advisors",
     ],
     linkHref: "/contact",
-    linkText: "SOLICITĂ O CONVERSAȚIE INIȚIALĂ",
+    linkText: "REQUEST INITIAL BRIEFING",
     external: false,
   },
 ];
@@ -79,27 +87,27 @@ export default function VenturesPage() {
         <section className="py-20 sm:py-28 lg:py-36 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-8 border-b border-white/[0.08]">
           <div className="space-y-4 max-w-3xl">
             <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#93C8FF] font-semibold block">
-              CONSULTANȚĂ & PROIECTE STRATEGICE
+              STRATEGIC ADVISORY & VENTURES
             </span>
             <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] leading-tight break-words">
-              Orientare Strategică în Tranzacții Imobiliare Complexe
+              Strategic Guidance for Complex Real Estate Decisions
             </h1>
             <p className="font-sans text-base sm:text-lg text-[#B8C2CF] font-light leading-relaxed">
-              Consultanță imobiliară independentă, fundamentare analitică și coordonarea proceselor de achiziție alături de specialiști autorizați și parteneri instituționali.
+              Independent real estate advisory, rigorous analytical due diligence, and coordination of acquisition processes alongside certified specialists and institutional partners.
             </p>
           </div>
 
           <div className="pt-6 grid grid-cols-1 sm:grid-cols-3 gap-6 font-mono text-xs text-[#8A95A5] border-t border-white/[0.08]">
             <div className="space-y-1">
-              <span className="text-[#93C8FF] block uppercase text-[10px] font-semibold">CADRU CONTRACTUAL</span>
-              <span className="text-[#F5F4EF] font-sans">Mandate clare · Transparență totală a remunerației</span>
+              <span className="text-[#93C8FF] block uppercase text-[10px] font-semibold">CONTRACTUAL FRAMEWORK</span>
+              <span className="text-[#F5F4EF] font-sans">Clear mandates · Complete compensation transparency</span>
             </div>
             <div className="space-y-1">
-              <span className="text-[#A97F60] block uppercase text-[10px] font-semibold">CONFIDENȚIALITATE</span>
-              <span className="text-[#F5F4EF] font-sans">Acorduri bilaterale NDA · Conformitate KYC</span>
+              <span className="text-[#A97F60] block uppercase text-[10px] font-semibold">CONFIDENTIALITY</span>
+              <span className="text-[#F5F4EF] font-sans">Bilateral NDAs · Statutory KYC compliance</span>
             </div>
             <div className="space-y-1">
-              <span className="text-[#93C8FF] block uppercase text-[10px] font-semibold">PARTENERIATE</span>
+              <span className="text-[#93C8FF] block uppercase text-[10px] font-semibold">PARTNERSHIPS</span>
               <span className="text-[#F5F4EF] font-sans">Chestertons (Global) · Generali România (Agent)</span>
             </div>
           </div>
@@ -109,10 +117,10 @@ export default function VenturesPage() {
         {/* 02 // STRATEGIC OPERATING LINES                          */}
         {/* ======================================================== */}
         <ServiceSection
-          eyebrow="02 // LINII DE SERVICII"
-          badge="MANDATE DEDICATE"
-          title="Consultanță Imobiliară & Coordonare de Proiect"
-          description="Fiecare colaborare este structurată pe baze contractuale clare: definirea exactă a obiectivelor, verificarea documentației și coordonarea cu profesioniști independenți."
+          eyebrow="02 // SERVICE LINES"
+          badge="DEDICATED MANDATES"
+          title="Real Estate Advisory & Project Coordination"
+          description="Every engagement is built on a clear contractual foundation: precise objective definition, documentary verification, and seamless coordination with independent specialists."
           services={ventureServices}
         />
 
@@ -122,46 +130,46 @@ export default function VenturesPage() {
         <section className="py-28 sm:py-36 lg:py-44 bg-[#0C1119] border-t border-b border-white/[0.08]">
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 space-y-16 sm:space-y-20">
             <SectionHeader
-              eyebrow="03 // ANALIZĂ DE PIAȚĂ & INDICATORI"
-              badge="MONITORIZARE FAPTICĂ"
-              title="Indicatori de Piață Fundamentați Factual"
-              description="Date orientative bazate pe monitorizarea registrelor cadastrale oficiale (ANCPI) și a rapoartelor publice de piață."
+              eyebrow="03 // MARKET ANALYSIS & INDICATORS"
+              badge="FACTUAL MONITORING"
+              title="Data-Backed Real Estate Market Indicators"
+              description="Objective market data derived from official land registry records (ANCPI) and published institutional reports."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <InsightPanel
-                category="DINAMICĂ TRANZACȚIONALĂ · BUCUREȘTI"
-                title="Volumul tranzacțiilor imobiliare rezidențiale"
-                metric="Monitorizare ANCPI"
-                change="Date Cadastrale"
+                category="TRANSACTION DYNAMICS · BUCHAREST"
+                title="Residential Transaction Volumes"
+                metric="ANCPI Registry"
+                change="Cadastral Data"
                 trend="neutral"
-                date="Rapoarte Oficiale Lunare"
-                source="Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI)"
-                description="Monitorizarea lunară a volumelor de tranzacționare autentificate notarial pentru a distinge între cererea reală și prețurile de listare promovate pe portaluri."
+                date="Monthly Official Reports"
+                source="National Agency for Cadastre and Land Registration (ANCPI)"
+                description="Monthly monitoring of notarially authenticated transaction volumes to distinguish actual solvent demand from asking prices promoted on advertising portals."
                 actionUrl="/raport-piata"
               />
 
               <InsightPanel
-                category="SEGMENTUL INTERNAȚIONAL"
-                title="Piața rezidențială din Monaco & Coasta de Azur"
-                metric="Statistici IMSEE"
-                change="Date Publice"
+                category="INTERNATIONAL CORRIDOR"
+                title="Monaco & French Riviera Prime Residential Market"
+                metric="IMSEE Statistics"
+                change="Public Data"
                 trend="neutral"
-                date="Rapoarte Anuale IMSEE"
-                source="Institut Monégasque de la Statistique (IMSEE)"
-                description="Observații privind evoluția pieței din Monaco fundamentate pe datele statistice oficiale publicate de autoritățile monégasce. Tratamentul fiscal individual necesită consultanță fiscală autorizată."
+                date="Annual IMSEE Reports"
+                source="Monaco Institute of Statistics and Economic Studies (IMSEE)"
+                description="Observations on Monaco market dynamics grounded in official statistical data published by Monegasque authorities. Individual tax considerations require licensed tax counsel."
                 actionUrl="https://www.imsee.mc/Economie-et-Finances/Immobilier"
               />
 
               <InsightPanel
-                category="PROTECȚIA ACTIVELOR IMOBILIARE"
-                title="Managementul riscului patrimonial"
-                metric="Polițe Dedicate"
-                change="Partener Generali"
+                category="ASSET PROTECTION"
+                title="Real Estate Patrimony Risk Management"
+                metric="Dedicated Policies"
+                change="Generali Partner"
                 trend="neutral"
-                date="Protecție Patrimoniu"
-                source="Partener autorizat Generali România"
-                description="Soluții de transfer al riscului și asigurare a clădirilor de mare valoare la costul real de reconstrucție, în baza contractului de agent Generali România."
+                date="Asset Protection"
+                source="Authorized Partner — Generali România"
+                description="Risk transfer and prime building insurance solutions structured around true replacement cost, under authorized Generali România agency agreement."
                 actionUrl="/parteneri"
               />
             </div>
@@ -169,32 +177,32 @@ export default function VenturesPage() {
         </section>
 
         {/* ======================================================== */}
-        {/* 04 // STANDARDE DE SELECTIE                              */}
+        {/* 04 // SELECTION STANDARDS                                */}
         {/* ======================================================== */}
         <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto space-y-12">
           <div className="p-10 sm:p-16 rounded-3xl border border-white/[0.08] bg-[#0C1119] grid lg:grid-cols-12 gap-10 items-center shadow-2xl relative">
             <div className="lg:col-span-8 space-y-6">
               <div className="flex items-center gap-3 font-mono text-[10px] sm:text-xs uppercase tracking-[0.28em] text-[#93C8FF] font-semibold">
                 <Lock className="w-3.5 h-3.5" />
-                <span>CRITERII DE SELECȚIE ȘI PROCES</span>
+                <span>SELECTION CRITERIA & PROCESS</span>
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#F5F4EF] leading-tight">
-                Decizii Imobiliare Fundamentate pe Documente și Analiză
+                Real Estate Decisions Grounded in Documentation & Analysis
               </h2>
 
               <EditorialText size="base" maxWidth="prose" color="secondary" className="leading-relaxed">
-                Nu promovăm speculații nerealiste sau promisiuni de randament fără bază verificabilă. Fiecare proprietate sau proiect analizat este evaluat din perspectiva calității construcției, a situației juridice și a fezabilității pe termen lung.
+                We do not engage in speculative assertions or unsubstantiated yield claims. Every analyzed property or project is evaluated on construction workmanship, legal title soundness, and long-term capital preservation.
               </EditorialText>
 
               <div className="grid sm:grid-cols-2 gap-4 font-mono text-xs pt-4 border-t border-white/[0.08]">
                 <div className="p-5 rounded-2xl bg-[#1B2028]/80 border border-white/[0.06] space-y-1.5">
-                  <span className="text-[#93C8FF] block text-[10px] uppercase font-semibold">CUM LUCREZ</span>
-                  <span className="text-[#F5F4EF] font-sans">Etape structurate, mandat scris și remunerație transparentă</span>
+                  <span className="text-[#93C8FF] block text-[10px] uppercase font-semibold">HOW I WORK</span>
+                  <span className="text-[#F5F4EF] font-sans">Structured milestones, written bilateral mandate, and transparent fee model</span>
                 </div>
                 <div className="p-5 rounded-2xl bg-[#1B2028]/80 border border-white/[0.06] space-y-1.5">
-                  <span className="text-[#93C8FF] block text-[10px] uppercase font-semibold">CONFIDENȚIALITATE</span>
-                  <span className="text-[#F5F4EF] font-sans">Protecție prin NDA bilateral la cererea părților</span>
+                  <span className="text-[#93C8FF] block text-[10px] uppercase font-semibold">CONFIDENTIALITY</span>
+                  <span className="text-[#F5F4EF] font-sans">Bilateral NDA protection executed prior to sharing sensitive details</span>
                 </div>
               </div>
             </div>
@@ -204,10 +212,10 @@ export default function VenturesPage() {
                 href="/programare"
                 className="btn-apple-pill-primary w-full shadow-xl"
               >
-                <span>SOLICITĂ O DISCUȚIE (20 MIN)</span>
+                <span>SCHEDULE A CONSULTATION (20 MIN)</span>
               </Link>
               <div className="font-mono text-[10px] text-[#8A95A5] uppercase text-center tracking-wider">
-                OPȚIUNE DE SCHIMB NDA ÎN PREALABIL
+                PRIOR MUTUAL NDA EXCHANGE AVAILABLE
               </div>
             </div>
           </div>
@@ -217,14 +225,14 @@ export default function VenturesPage() {
         {/* 05 // PRIVATE CTA                                        */}
         {/* ======================================================== */}
         <CTASection
-          eyebrow="DIALOG CONFIDENȚIAL"
-          title="Doriți să discutați o proprietate sau un mandat de consultanță?"
-          description="Fiecare colaborare debutează cu o discuție inițială pentru clarificarea cerințelor și stabilirea compatibilității cu mandatul Executive."
-          primaryActionText="PROGRAMEAZĂ O CONVERSAȚIE INIȚIALĂ"
+          eyebrow="CONFIDENTIAL DIALOGUE"
+          title="Ready to discuss a property acquisition or advisory mandate?"
+          description="Every collaboration begins with an introductory discussion to clarify requirements and determine alignment with the Executive practice."
+          primaryActionText="SCHEDULE INITIAL CONSULTATION"
           primaryActionHref="/programare"
           secondaryActionText="WHATSAPP (+43 650 953 6345)"
           secondaryActionHref="https://wa.me/436509536345"
-          disclaimer="Toate consultările se desfășoară sub principiul confidențialității contractuale și al conformității cu legislația aplicabilă."
+          disclaimer="All consultations are conducted under contractual confidentiality principles and in compliance with applicable statutory regulations."
         />
       </main>
 

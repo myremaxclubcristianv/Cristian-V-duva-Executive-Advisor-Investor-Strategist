@@ -64,6 +64,7 @@ export async function generateMetadata({
       description: property.description,
       images: ogImages.map((url) => ({ url, alt: property.title })),
       type: "website",
+      locale: "en_US",
     },
     alternates: {
       canonical: `https://executive.cristianvaduva.com/real-estate/properties/${property.id}`,

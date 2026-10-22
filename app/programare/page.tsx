@@ -19,8 +19,8 @@ export default function ProgramarePage() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [consultationType, setConsultationType] = useState("Achiziție rezidențială prime (Buyer Advisory)");
-  const [preferredTimeframe, setPreferredTimeframe] = useState("După-amiaza (14:00 - 18:00)");
+  const [consultationType, setConsultationType] = useState("Prime Residential Acquisition (Buyer Advisory)");
+  const [preferredTimeframe, setPreferredTimeframe] = useState("Afternoon (15:00 - 18:00)");
   const [requestPriorNDA, setRequestPriorNDA] = useState(false);
   const [notes, setNotes] = useState("");
   const [consentPrivacy, setConsentPrivacy] = useState(false);
@@ -34,19 +34,19 @@ export default function ProgramarePage() {
     setErrorMsg(null);
 
     if (!fullName.trim()) {
-      setErrorMsg("Vă rugăm să introduceți numele dumneavoastră.");
+      setErrorMsg("Please enter your full name.");
       return;
     }
     if (!email.trim() || !email.includes("@")) {
-      setErrorMsg("Vă rugăm să introduceți o adresă de email validă.");
+      setErrorMsg("Please enter a valid email address.");
       return;
     }
     if (!phone.trim()) {
-      setErrorMsg("Vă rugăm să introduceți numărul de telefon.");
+      setErrorMsg("Please enter your phone number.");
       return;
     }
     if (!consentPrivacy) {
-      setErrorMsg("Este necesar acordul pentru prelucrarea datelor în vederea confirmării programării.");
+      setErrorMsg("Consent to data processing is required to confirm your consultation schedule.");
       return;
     }
 
@@ -69,7 +69,7 @@ export default function ProgramarePage() {
 
       const data = await res.json();
       if (!res.ok) {
-        throw new Error(data.error || "A apărut o problemă la transmiterea solicitării.");
+        throw new Error(data.error || "An issue occurred while submitting your consultation request.");
       }
 
       setSuccess(true);
@@ -77,7 +77,7 @@ export default function ProgramarePage() {
       if (err instanceof Error) {
         setErrorMsg(err.message);
       } else {
-        setErrorMsg("A apărut o problemă neprevăzută.");
+        setErrorMsg("An unforeseen error occurred.");
       }
     } finally {
       setLoading(false);
@@ -102,15 +102,15 @@ export default function ProgramarePage() {
           <section className="space-y-8 max-w-4xl border-b border-white/[0.08] pb-14">
             <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[10px] sm:text-[11px] tracking-[0.16em] sm:tracking-[0.25em] text-[#A97F60] uppercase max-w-full">
               <Calendar className="w-3.5 h-3.5 text-[#93C8FF] shrink-0" />
-              <span className="truncate sm:overflow-visible">SESIUNE STRATEGICĂ · 20 MINUTE CONFIDENȚIALE</span>
+              <span className="truncate sm:overflow-visible">STRATEGIC SESSION · 20 CONFIDENTIAL MINUTES</span>
             </div>
 
             <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.12] break-words">
-              Programare Conversație Inițială
+              Schedule Initial Consultation
             </h1>
 
             <p className="font-sans text-lg sm:text-xl text-[#B8C2CF] leading-relaxed font-light">
-              O sesiune structurată de 20 de minute pentru a evalua obiectivele dumneavoastră imobiliare și compatibilitatea cu metodologia de lucru Executive. Fără obligații comerciale sau costuri asociate.
+              A structured 20-minute session to evaluate your real estate objectives and compatibility with the Executive advisory methodology. Without commercial pressure or associated fees.
             </p>
           </section>
 
@@ -125,15 +125,15 @@ export default function ProgramarePage() {
                 <div className="relative aspect-[16/10] w-full rounded-2xl bg-[#1B2028] overflow-hidden">
                   <Image
                     src="/media/cristian-vaduva/personal/cristian-vaduva-office-armchair-consultation.png"
-                    alt="Cristian Văduva — Consultanță privată în biroul executiv"
+                    alt="Cristian Văduva — Private advisory in executive office"
                     fill
                     sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-80" />
                   <div className="absolute bottom-3 left-3 right-3 font-mono text-[10px] text-[#8A95A5] flex items-center justify-between">
-                    <span>BIROU EXECUTIVE BUCUREȘTI</span>
-                    <span className="text-[#93C8FF]">DIALOG DIRECT</span>
+                    <span>EXECUTIVE BUCHAREST DESK</span>
+                    <span className="text-[#93C8FF]">DIRECT DIALOGUE</span>
                   </div>
                 </div>
               </div>
@@ -141,28 +141,28 @@ export default function ProgramarePage() {
               {/* Expectations Cadran */}
               <div className="p-6 sm:p-8 rounded-2xl bg-[#0C1119] border border-white/[0.08] space-y-4 shadow-xl">
                 <span className="font-mono text-xs uppercase tracking-wider text-[#93C8FF] font-semibold block">
-                  CE VA AVEA LOC ÎN CELE 20 DE MINUTE:
+                  WHAT OCCURS IN THE 20 MINUTES:
                 </span>
                 <ul className="space-y-4 font-sans text-xs sm:text-sm text-[#8A95A5]">
                   <li className="flex items-start gap-3">
                     <Clock className="w-4 h-4 text-[#93C8FF] shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-0.5">CLARIFICAREA OBIECTIVULUI</strong>
-                      Înțelegerea profilului proprietății căutate sau a activului propus spre valorificare pe termen lung.
+                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-0.5">OBJECTIVE CLARIFICATION</strong>
+                      Understanding the target asset profile or long-term portfolio monetization parameters.
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <ShieldCheck className="w-4 h-4 text-[#93C8FF] shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-0.5">EVALUAREA COMPATIBILITĂȚII</strong>
-                      Verificarea dacă cerințele dumneavoastră se aliniază cu expertiza și aria noastră de acțiune.
+                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-0.5">COMPATIBILITY EVALUATION</strong>
+                      Assessing whether your requirements align with our advisory scope and regional capacity.
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-4 h-4 text-[#93C8FF] shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-0.5">FĂRĂ PRESIUNE COMERCIALĂ</strong>
-                      Conversația este strict analitică. Nu vă vom propune proprietăți nepotrivite sau contracte forțate.
+                      <strong className="text-[#F5F4EF] block font-mono text-xs mb-0.5">ZERO COMMERCIAL PRESSURE</strong>
+                      The discussion is strictly analytical. No unsolicited listings or forced contracts.
                     </div>
                   </li>
                 </ul>
@@ -172,21 +172,21 @@ export default function ProgramarePage() {
               <div className="p-6 rounded-2xl bg-[#0C1119] border border-white/[0.08] space-y-3 shadow-xl">
                 <div className="flex items-center gap-2 text-[#A97F60] font-mono text-xs uppercase tracking-wider">
                   <Lock className="w-4 h-4" />
-                  <span>Opțiunea de Confidențialitate (NDA)</span>
+                  <span>Confidentiality Protocol (Bilateral NDA)</span>
                 </div>
                 <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
-                  Dacă discuția vizează active private sensibile sau proprietăți off-market, puteți bifa opțiunea de a semna un Acord Bilateral de Confidențialitate (NDA) în prealabil, înainte de dezvăluirea datelor particulare.
+                  If your consultation involves sensitive private assets or off-market portfolios, you may opt for a bilateral Non-Disclosure Agreement (NDA) prior to disclosing specific asset parameters.
                 </p>
                 <div className="text-[11px] font-mono text-[#6B7280]">
-                  *Un NDA este o convenție contractuală civilă încheiată în scris între părți.
+                  *An NDA is a formal bilateral contractual agreement executed in writing.
                 </div>
               </div>
 
               {/* Procedură de confirmare */}
               <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/[0.06] space-y-2">
-                <h4 className="font-serif text-sm text-[#F5F4EF]">Confirmare manuală în maximum 24h:</h4>
+                <h4 className="font-serif text-sm text-[#F5F4EF]">Manual confirmation within 24 hours:</h4>
                 <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
-                  Nu utilizăm calendare automate care simulează disponibilități artificiale. Cristian Văduva verifică agenda personală și vă va contacta direct în termen de 24 de ore lucrătoare pentru a stabili data și ora convenită.
+                  We do not use automated booking widgets simulating artificial calendar availability. Cristian Văduva reviews each request personally and will contact you directly within 24 business hours to confirm exact scheduling.
                 </p>
               </div>
             </div>
@@ -201,16 +201,16 @@ export default function ProgramarePage() {
                     </div>
                     <div className="space-y-2">
                       <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                        Solicitare Transmisă cu Succes
+                        Request Submitted Successfully
                       </h3>
                       <p className="font-sans text-sm text-[#8A95A5] max-w-md mx-auto leading-relaxed">
-                        Vă mulțumim, <strong>{fullName}</strong>. Solicitarea dumneavoastră a fost înregistrată. Vă vom contacta la adresa <strong>{email}</strong> sau telefonic în maximum 24 de ore lucrătoare pentru a stabili ora exactă.
+                        Thank you, <strong>{fullName}</strong>. Your request has been recorded. We will contact you at <strong>{email}</strong> or by phone within 24 business hours to confirm exact scheduling.
                       </p>
                     </div>
 
                     {requestPriorNDA && (
                       <div className="p-4 rounded-xl bg-black/40 border border-[#A97F60]/40 font-mono text-xs text-[#A97F60] max-w-md mx-auto">
-                        Ați solicitat semnarea unui acord de confidențialitate (NDA) în prealabil. Draftul acordului va fi transmis înainte de desfășurarea sesiunii.
+                        You requested a bilateral non-disclosure agreement (NDA) in advance. The draft covenant will be provided before the consultation begins.
                       </div>
                     )}
 
@@ -219,13 +219,13 @@ export default function ProgramarePage() {
                         href="/"
                         className="btn-apple-pill-primary shadow-lg"
                       >
-                        <span>ÎNAPOI LA PAGINA PRINCIPALĂ</span>
+                        <span>RETURN TO HOMEPAGE</span>
                       </Link>
                       <Link
                         href="/cum-lucrez"
                         className="btn-apple-pill-secondary"
                       >
-                        <span>CONSULTĂ ETAPELE COLABORĂRII</span>
+                        <span>REVIEW ADVISORY PHASES</span>
                       </Link>
                     </div>
                   </div>
@@ -236,10 +236,10 @@ export default function ProgramarePage() {
                         INTAKE PROTOCOL
                       </span>
                       <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                        Formular de Solicitare Discuție
+                        Consultation Request Form
                       </h3>
                       <p className="font-sans text-xs sm:text-sm text-[#8A95A5]">
-                        Introduceți datele necesare pentru a pregăti conversația.
+                        Provide the parameters required to prepare our strategic discussion.
                       </p>
                     </div>
 
@@ -253,28 +253,28 @@ export default function ProgramarePage() {
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-1.5">
                         <label className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] block">
-                          Nume Complet <span className="text-[#93C8FF]">*</span>
+                          Full Name <span className="text-[#93C8FF]">*</span>
                         </label>
                         <input
                           type="text"
                           required
                           value={fullName}
                           onChange={(e) => setFullName(e.target.value)}
-                          placeholder="Ex: Cristian Ionescu"
+                          placeholder="e.g. Cristian Ionescu"
                           className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                         />
                       </div>
 
                       <div className="space-y-1.5">
                         <label className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] block">
-                          Adresă de Email <span className="text-[#93C8FF]">*</span>
+                          Email Address <span className="text-[#93C8FF]">*</span>
                         </label>
                         <input
                           type="email"
                           required
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
-                          placeholder="nume@exemplu.ro"
+                          placeholder="name@organization.com"
                           className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                         />
                       </div>
@@ -283,70 +283,70 @@ export default function ProgramarePage() {
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="space-y-1.5">
                         <label className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] block">
-                          Număr de Telefon <span className="text-[#93C8FF]">*</span>
+                          Phone Number <span className="text-[#93C8FF]">*</span>
                         </label>
                         <input
                           type="tel"
                           required
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
-                          placeholder="+40 7..."
+                          placeholder="+40 7... / International"
                           className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                         />
                       </div>
 
                       <div className="space-y-1.5">
                         <label className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] block">
-                          Interval Orar Preferat
+                          Preferred Time Window
                         </label>
                         <select
                           value={preferredTimeframe}
                           onChange={(e) => setPreferredTimeframe(e.target.value)}
                           className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                         >
-                          <option value="Dimineața (09:00 - 12:00)">Dimineața (09:00 - 12:00)</option>
-                          <option value="Prânz (12:00 - 15:00)">Prânz (12:00 - 15:00)</option>
-                          <option value="După-amiaza (15:00 - 18:00)">După-amiaza (15:00 - 18:00)</option>
+                          <option value="Morning (09:00 - 12:00)">Morning (09:00 - 12:00)</option>
+                          <option value="Midday (12:00 - 15:00)">Midday (12:00 - 15:00)</option>
+                          <option value="Afternoon (15:00 - 18:00)">Afternoon (15:00 - 18:00)</option>
                         </select>
                       </div>
                     </div>
 
                     <div className="space-y-1.5">
                       <label className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] block">
-                        Subiectul Principal al Conversației
+                        Primary Topic of Discussion
                       </label>
                       <select
                         value={consultationType}
                         onChange={(e) => setConsultationType(e.target.value)}
                         className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans"
                       >
-                        <option value="Achiziție rezidențială prime (Buyer Advisory)">
-                          Mandat de Achiziție Rezidențială Prime (București)
+                        <option value="Prime Residential Acquisition (Buyer Advisory)">
+                          Prime Residential Acquisition Mandate (Bucharest)
                         </option>
-                        <option value="Vânzare asistată & poziționare (Seller Advisory)">
-                          Vânzare Asistată & Poziționare Proprietate De Lux
+                        <option value="Assisted Sale & Luxury Property Positioning (Seller Advisory)">
+                          Assisted Sale & Luxury Property Positioning (Seller Advisory)
                         </option>
-                        <option value="Proprietăți internaționale (Parteneriat Chestertons)">
-                          Achiziție Internațională (Londra, Coasta de Azur, Dubai etc.)
+                        <option value="International Acquisition (Chestertons Network)">
+                          International Acquisition (London, French Riviera, Dubai, etc.)
                         </option>
-                        <option value="Protecție patrimonială / Asigurare de valoare mare">
-                          Consultanță Protecție Clădiri & Bunuri (Generali)
+                        <option value="Asset Protection & High-Value Insurance (Generali)">
+                          Asset Protection & High-Value Insurance Advisory (Generali)
                         </option>
-                        <option value="Alt subiect / Consultanță generală">
-                          Alt subiect de consultanță imobiliară privată
+                        <option value="General Real Estate Advisory & Consultation">
+                          General Private Real Estate Advisory
                         </option>
                       </select>
                     </div>
 
                     <div className="space-y-1.5">
                       <label className="font-mono text-xs uppercase tracking-wider text-[#B8C2CF] block">
-                        Detalii Suplimentare / Context (Opțional)
+                        Additional Mandate Details / Context (Optional)
                       </label>
                       <textarea
                         rows={3}
                         value={notes}
                         onChange={(e) => setNotes(e.target.value)}
-                        placeholder="Menționați pe scurt criteriile cheie (zonă, tip imobil, orizont temporal)..."
+                        placeholder="Briefly outline key criteria (target corridor, asset typology, capital parameters, timeline)..."
                         className="w-full px-4 py-3.5 rounded-xl bg-black/60 border border-white/[0.1] text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] font-sans resize-none"
                       />
                     </div>
@@ -361,7 +361,7 @@ export default function ProgramarePage() {
                           className="mt-1 h-4 w-4 rounded border-white/20 bg-black text-[#A97F60] focus:ring-0 cursor-pointer"
                         />
                         <span>
-                          <strong className="text-[#A97F60]">Solicit Acord de Confidențialitate (NDA) în prealabil:</strong> Doresc transmiterea unui acord bilateral de confidențialitate înainte de a divulga detalii specifice privind activele sau planurile mele.
+                          <strong className="text-[#A97F60]">Request Non-Disclosure Agreement (NDA) in Advance:</strong> Please provide a bilateral confidentiality agreement before specific asset parameters are disclosed.
                         </span>
                       </label>
                     </div>
@@ -377,7 +377,7 @@ export default function ProgramarePage() {
                           className="mt-1 h-4 w-4 rounded border-white/20 bg-black text-[#93C8FF] focus:ring-0 cursor-pointer"
                         />
                         <span>
-                          Sunt de acord cu prelucrarea datelor mele cu caracter personal furnizate în scopul stabilirii și desfășurării conversației inițiale, conform <Link href="/privacy" className="text-[#93C8FF] underline">Politicii de Confidențialitate</Link>. Datele nu sunt înstrăinate către terți.
+                          I agree to the processing of submitted personal data for the purpose of scheduling and conducting the initial consultation, pursuant to the <Link href="/privacy" className="text-[#93C8FF] underline">Privacy Policy</Link>. Data is never transferred to third parties.
                         </span>
                       </label>
                     </div>
@@ -388,13 +388,13 @@ export default function ProgramarePage() {
                         disabled={loading}
                         className="btn-apple-pill-primary w-full shadow-xl"
                       >
-                        <span>{loading ? "SE TRANSMITE..." : "SOLICITĂ PROGRAMAREA CONVERSAȚIEI"}</span>
+                        <span>{loading ? "SUBMITTING REQUEST..." : "REQUEST STRATEGIC CONSULTATION"}</span>
                         <ArrowRight className="w-4 h-4" />
                       </button>
                     </div>
 
                     <div className="font-mono text-[11px] text-[#6B7280] text-center sm:text-left pt-2 border-t border-white/[0.06]">
-                      Canal direct alternativ: <a href="mailto:cristianvaduva@duck.com" className="text-[#93C8FF] underline">cristianvaduva@duck.com</a> · Signal / WhatsApp: <a href="https://wa.me/436509536345" target="_blank" rel="noopener noreferrer" className="text-[#F5F4EF] hover:underline">+43 650 953 6345</a>
+                      Alternative direct channel: <a href="mailto:cristianvaduva@duck.com" className="text-[#93C8FF] underline">cristianvaduva@duck.com</a> · Signal / WhatsApp: <a href="https://wa.me/436509536345" target="_blank" rel="noopener noreferrer" className="text-[#F5F4EF] hover:underline">+43 650 953 6345</a>
                     </div>
                   </form>
                 )}

@@ -59,16 +59,16 @@ export default function SignatureIntakeForm() {
         <div className="w-12 h-12 rounded-full border border-[#93C8FF] flex items-center justify-center mx-auto text-[#93C8FF]">
           <CheckCircle2 className="w-6 h-6" />
         </div>
-        <h4 className="font-serif text-2xl text-[#F5F4EF]">Solicitare Transmisă cu Succes</h4>
+        <h4 className="font-serif text-2xl text-[#F5F4EF]">Inquiry Transmitted Successfully</h4>
         <p className="font-sans text-xs text-[#B8C2CF] max-w-sm mx-auto leading-relaxed">
-          Vă mulțumim. Solicitarea dumneavoastră a fost înregistrată. Cristian Văduva va evalua dosarul și vă va contacta direct în termen de 24 de ore.
+          Thank you. Your inquiry has been registered. Cristian Văduva will review your brief and contact you directly within 24 hours.
         </p>
         <button
           type="button"
           onClick={() => setFormSubmitted(false)}
           className="mt-4 font-mono text-xs text-[#93C8FF] hover:underline tracking-wider uppercase"
         >
-          Transmite o altă solicitare
+          Submit another inquiry
         </button>
       </div>
     );
@@ -93,7 +93,7 @@ export default function SignatureIntakeForm() {
 
       <div className="space-y-1">
         <label htmlFor="signature-form-name" className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
-          Nume / Reprezentant Mandat *
+          Name / Principal or Representative *
         </label>
         <input
           id="signature-form-name"
@@ -101,7 +101,7 @@ export default function SignatureIntakeForm() {
           required
           value={formName}
           onChange={(e) => setFormName(e.target.value)}
-          placeholder="ex. Cristian Popescu"
+          placeholder="e.g. Cristian Popescu"
           className="w-full bg-[#1B2028] border border-white/[0.1] rounded-xl px-4 py-3 font-sans text-sm text-[#F5F4EF] placeholder-white/20 focus:outline-none focus:border-[#93C8FF] transition-colors"
         />
       </div>
@@ -109,7 +109,7 @@ export default function SignatureIntakeForm() {
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="space-y-1">
           <label htmlFor="signature-form-email" className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
-            Adresă de Email Directă *
+            Direct Email Address *
           </label>
           <input
             id="signature-form-email"
@@ -117,14 +117,14 @@ export default function SignatureIntakeForm() {
             required
             value={formEmail}
             onChange={(e) => setFormEmail(e.target.value)}
-            placeholder="principal@exemplu.ro"
+            placeholder="principal@domain.com"
             className="w-full bg-[#1B2028] border border-white/[0.1] rounded-xl px-4 py-3 font-sans text-sm text-[#F5F4EF] placeholder-white/20 focus:outline-none focus:border-[#93C8FF] transition-colors"
           />
         </div>
 
         <div className="space-y-1">
           <label htmlFor="signature-form-phone" className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
-            Telefon / Signal / WhatsApp
+            Phone / Signal / WhatsApp
           </label>
           <input
             id="signature-form-phone"
@@ -139,7 +139,7 @@ export default function SignatureIntakeForm() {
 
       <div className="space-y-1">
         <label htmlFor="signature-mandate-select" className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
-          Tipul de Asistență Solicitat *
+          Requested Advisory Mandate *
         </label>
         <select
           id="signature-mandate-select"
@@ -148,25 +148,25 @@ export default function SignatureIntakeForm() {
           onChange={(e) => setFormInterest(e.target.value)}
           className="w-full bg-[#1B2028] border border-white/[0.1] rounded-xl px-4 py-3 font-sans text-sm text-[#F5F4EF] focus:outline-none focus:border-[#93C8FF] transition-colors"
         >
-          <option value="Buyer representation">Reprezentare Cumpărător (Căutare, audit cadastral, negociere)</option>
-          <option value="Seller representation">Reprezentare Vânzător (Poziționare, promovare privată, tranzacționare)</option>
-          <option value="Investor advisory">Consultanță Investitor (Screening de piață, analiză de randament)</option>
-          <option value="Property sourcing">Sourcing Proprietate (Descoperire off-market pe criterii specifice)</option>
-          <option value="Strategic consultation">Consultanță Strategică (Consiliere imobiliară & capital)</option>
-          <option value="Other">Alt mandat privat dedicat</option>
+          <option value="Buyer representation">Buyer Representation (Acquisition search, title audit, negotiation)</option>
+          <option value="Seller representation">Seller Representation (Asset positioning, private marketing, execution)</option>
+          <option value="Investor advisory">Investor Advisory (Market screening, yield underwriting)</option>
+          <option value="Property sourcing">Property Sourcing (Targeted off-market discovery)</option>
+          <option value="Strategic consultation">Strategic Consultation (Real estate & capital structuring)</option>
+          <option value="Other">Bespoke Private Mandate</option>
         </select>
       </div>
 
       <div className="space-y-1">
         <label htmlFor="signature-form-message" className="font-mono text-[10px] uppercase tracking-widest text-[#B8C2CF]">
-          Note de Sinteză / Criterii Proiect
+          Brief Overview / Mandate Criteria
         </label>
         <textarea
           id="signature-form-message"
           rows={3}
           value={formMessage}
           onChange={(e) => setFormMessage(e.target.value)}
-          placeholder="Precizați tipul proprietății vizate, zona de interes, bugetul orientativ sau orizontul de timp..."
+          placeholder="Specify property typology, target location, indicative budget, or acquisition timeframe..."
           className="w-full bg-[#1B2028] border border-white/[0.1] rounded-xl px-4 py-3 font-sans text-sm text-[#F5F4EF] placeholder-white/20 focus:outline-none focus:border-[#93C8FF] transition-colors resize-none"
         />
       </div>
@@ -182,9 +182,9 @@ export default function SignatureIntakeForm() {
           className="mt-1 h-4 w-4 rounded border-white/20 bg-[#1B2028] text-[#93C8FF] focus:ring-[#93C8FF] cursor-pointer"
         />
         <label htmlFor="signature-gdpr-consent" className="text-[11px] text-[#B8C2CF] leading-relaxed cursor-pointer">
-          Sunt de acord cu prelucrarea datelor transmise pentru a primi un răspuns la solicitare, conform{" "}
+          I consent to the processing of submitted details to receive a direct response, in accordance with the{" "}
           <Link href="/privacy" className="text-[#93C8FF] hover:underline" target="_blank">
-            Politicii de Confidențialitate
+            Privacy Policy
           </Link>.
         </label>
       </div>
@@ -194,12 +194,12 @@ export default function SignatureIntakeForm() {
         disabled={formLoading}
         className="w-full py-3.5 px-6 rounded-full bg-[#F5F4EF] hover:bg-white text-[#07090D] font-sans text-xs uppercase tracking-wider font-semibold transition-all shadow-xl flex items-center justify-center gap-2.5 min-h-[48px]"
       >
-        <span>{formLoading ? "SE TRANSMITE..." : "TRANSMITE SOLICITAREA CONFIDENȚIALĂ"}</span>
+        <span>{formLoading ? "TRANSMITTING..." : "SUBMIT CONFIDENTIAL INQUIRY"}</span>
         <Send className="w-4 h-4 text-[#07090D]" />
       </button>
 
       <div className="font-mono text-[9px] uppercase tracking-wider text-center text-[#86868B]">
-        Discuțiile sunt tratate cu discreție deplină. Acord bilateral NDA la cerere.
+        All communications are held in strict confidence. Bilateral NDA provided upon request.
       </div>
     </form>
   );

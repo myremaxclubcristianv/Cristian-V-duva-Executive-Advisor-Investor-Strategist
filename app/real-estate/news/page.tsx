@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/real-estate/news",
   },
+  openGraph: {
+    title: "Real Estate Intelligence Dispatches — Cristian Văduva",
+    description: "Live real estate news, regulatory updates, and commercial dispatches curated by the Executive Intelligence Desk.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default async function NewsPage() {

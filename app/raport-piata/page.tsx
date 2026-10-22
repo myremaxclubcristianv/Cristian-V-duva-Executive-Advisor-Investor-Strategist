@@ -18,84 +18,85 @@ import ChapterDivider from "@/components/ui/ChapterDivider";
 import ClosingFrame from "@/components/ui/ClosingFrame";
 
 export const metadata: Metadata = {
-  title: "Raport Trimestrial Bucharest Prime | Cadrul Metodologic | Executive",
+  title: "Bucharest Prime Quarterly Report | Methodological Framework | Executive",
   description:
-    "Metodologia transparentă și reproductibilă a raportului trimestrial Bucharest Prime privind piața rezidențială de prestigiu. Analiză like-for-like bazată pe surse ANCPI, INS și date verificate.",
+    "Transparent, reproducible methodology of the Bucharest Prime quarterly residential report. Like-for-like analysis based on ANCPI, INS, and verified transaction records.",
   alternates: {
     canonical: "https://executive.cristianvaduva.com/raport-piata",
   },
   openGraph: {
-    title: "Bucharest Prime Residential Report — Metodologie | Cristian Văduva",
-    description: "Infrastructura de cercetare trimestrială pentru piața rezidențială prime din București.",
+    title: "Bucharest Prime Residential Report — Methodology | Cristian Văduva",
+    description: "Quarterly research infrastructure for the Bucharest prime residential property market.",
     url: "https://executive.cristianvaduva.com/raport-piata",
     type: "website",
+    locale: "en_US",
   },
 };
 
 const methodologyCriteria = [
   {
     number: "01",
-    tag: "TEMPORALITATE",
-    title: "Perioada Analizată și Frecvența de Extragere",
+    tag: "TEMPORALITY",
+    title: "Observation Period & Extraction Frequency",
     description:
-      "Datele sunt agregate pe cicluri trimestriale închise (Q1: 1 ianuarie – 31 martie; Q2: 1 aprilie – 30 iunie; Q3: 1 iulie – 30 septembrie; Q4: 1 octombrie – 31 decembrie). Nu se emit concluzii intermediare bazate pe ferestre incomplete sau eșantioane săptămânale de scurtă durată.",
-    deliverable: "Serii de date trimestriale continue, fără interpolări speculative",
+      "Data is aggregated on closed calendar quarterly cycles (Q1: January 1 – March 31; Q2: April 1 – June 30; Q3: July 1 – September 30; Q4: October 1 – December 31). No interim conclusions are drawn from incomplete windows or short weekly samples.",
+    deliverable: "Continuous quarterly time-series data without speculative interpolations",
   },
   {
     number: "02",
-    tag: "SURSE DE DATE",
-    title: "Surse Oficiale Verificate și Data Extragerii",
+    tag: "DATA PROVENANCE",
+    title: "Verified Official Sources & Extraction Timestamp",
     description:
-      "Datele oficiale de volum sunt preluate din sintezele lunare publicate de Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI). Indicatorii macroeconomici provin de la Institutul Național de Statistică (INS). Prețurile de ofertă sunt extrase din baze de date verificate la o dată fixă de referință (ultima zi a trimestrului).",
-    deliverable: "Protocol de citare complet și timestamping exact al extragerilor",
+      "Official volume data is retrieved from monthly registries published by the National Agency for Cadastre and Land Registration (ANCPI). Macroeconomic indicators originate from the National Institute of Statistics (INS). Asking prices are extracted from verified databases at a fixed reference snapshot date (last business day of the quarter).",
+    deliverable: "Complete citation protocol and precise extraction timestamps",
   },
   {
     number: "03",
-    tag: "DELIMITARE ZONALĂ",
-    title: "Zona Geografică și Criteriile de Includere",
+    tag: "ZONAL BOUNDARIES",
+    title: "Geographic Scope & Inclusion Boundaries",
     description:
-      "Analiza este strict delimitată la enclavele rezidențiale de prestigiu din București: Herăstrău – Șoseaua Nordului, Primăverii, Kiseleff – Aviatorilor, Dorobanți Capitale, Floreasca și zona rezidențială Pipera (exclusiv perimetrul de vile). Sunt excluse proiectele periferice din afara ariei metropolitane nordice.",
-    deliverable: "Hartă topografică de delimitare cadastrală a micro-zonelor prime",
+      "Analysis is strictly delimited to Bucharest's prime residential enclaves: Herăstrău – Șoseaua Nordului, Primăverii, Kiseleff – Aviatorilor, Dorobanți Capitale, Floreasca, and the residential Pipera villa perimeter. Peripheral suburban developments outside the northern prime corridor are excluded.",
+    deliverable: "Cadastral micro-zonal topographic boundary map",
   },
   {
     number: "04",
-    tag: "SEGMENTARE ACTIV",
-    title: "Tipul și Segmentul Proprietăților Monitorizate",
+    tag: "ASSET SEGMENTATION",
+    title: "Monitored Property Class & Segmentation",
     description:
-      "Sunt incluse doar proprietățile rezidențiale de clasă superioară: apartamente penthouse, locuințe de cel puțin 3 camere cu terase generoase, vile individuale și clădiri de patrimoniu reabilitate structural. Se aplică un prag valoric minim de intrare pentru a separa segmentul mass-market de cel prime.",
-    deliverable: "Eșantion omogen strict pe segmentul upper-prime și trofee arhitecturale",
+      "Only upper-tier residential assets are included: penthouses, residences with at least 3 bedrooms and expansive terraces, individual luxury villas, and structurally restored historic estates. A minimum threshold is enforced to separate mass-market stock from the prime segment.",
+    deliverable: "Homogeneous upper-prime and architectural trophy asset sample",
   },
   {
     number: "05",
-    tag: "SEPARARE RIGIDĂ",
-    title: "Preț de Ofertă (Asking) vs. Preț Notarial (Closing)",
+    tag: "RIGID SEPARATION",
+    title: "Asking Price vs. Notarial Closing Price",
     description:
-      "Nu combinăm niciodată prețurile cerute pe portaluri cu prețurile efective de vânzare. Prețul de ofertă (asking price) este tratat exclusiv ca indicator al sentimentului vânzătorilor, în timp ce prețul de tranzacție (closing price) reflectă valoarea validată prin act autentic notarial.",
-    deliverable: "Grafic de dispersie distinct: Asking Price Sentiment vs. Closing Reality",
+      "We strictly decouple advertised portal prices from actual executed sale values. The asking price is treated solely as an indicator of vendor sentiment, while the closing price reflects verified value authenticated by notarial deed.",
+    deliverable: "Bimodal scatter plot: Asking Price Sentiment vs. Closing Reality",
   },
   {
     number: "06",
-    tag: "STANDARDIZARE",
-    title: "Moneda, Suprafața Utilă și Unitatea de Măsură",
+    tag: "STANDARDIZATION",
+    title: "Currency, Net Usable Area & Measurement Units",
     description:
-      "Toate valorile sunt exprimate în Euro (fără TVA, cu mențiune explicită dacă TVA este aplicabil). Suprafața de referință este strict suprafața utilă (conform definiției Legii Locuinței 114/1996), excluzând balcoanele și terasele, care sunt evaluate separat cu coeficienți ponderați specifici.",
-    deliverable: "Metodologie de comparabilitate ca/mp util standardizat pe clasă de activ",
+      "All values are standardized in Euros (exclusive of VAT, with explicit notation where VAT applies). Reference surface is strictly net usable interior area (per Romanian Housing Law 114/1996 specifications), excluding balconies and terraces, which are weighted with specific coefficients.",
+    deliverable: "Standardized €/sqm net usable comparative methodology by asset tier",
   },
   {
     number: "07",
-    tag: "FILTRARE ANOMALII",
-    title: "Tratarea Extremelor și a Listărilor Duplicate",
+    tag: "OUTLIER FILTERING",
+    title: "Treatment of Statistical Outliers & Duplicate Listings",
     description:
-      "Aplicăm filtrare statistică pentru eliminarea valorilor extreme (outliers) care ar distorsiona mediile. Listările duplicate ale aceleiași proprietăți promovate de agenții diferite sunt curățate manual și reduse la un singur identificator unic de activ.",
-    deliverable: "Deduplicare 1-la-1 și izolare statistică a tranzacțiilor atipice",
+      "We apply statistical filtering to eliminate anomalies and distressed sales that distort averages. Duplicate listings of the same property promoted across multiple intermediary brokers are deduplicated and mapped to a single unique asset identifier.",
+    deliverable: "1-to-1 asset deduplication and statistical isolation of non-standard transactions",
   },
   {
     number: "08",
-    tag: "TRANSPARENȚĂ LIMITE",
-    title: "Mărimea Eșantionului și Limitările Analizei",
+    tag: "TRANSPARENCY LIMITS",
+    title: "Sample Size & Analytical Confidence Intervals",
     description:
-      "Segmentul rezidențial de lux din București înregistrează un număr restrâns de tranzacții per trimestru comparativ cu piața de masă. Fiecare ediție va menționa cu exactitate mărimea eșantionului (N) și marja de eroare asociată, fără extrapolări forțate.",
-    deliverable: "Raportare deschisă a limitelor metodologice și a intervalelor de confidență",
+      "Bucharest's luxury residential market generates a restricted volume of quarterly transactions compared to the mass market. Every published edition explicitly states sample size (N) and confidence intervals without forced extrapolations.",
+    deliverable: "Open disclosure of methodological constraints and confidence intervals",
   },
 ];
 
@@ -120,7 +121,7 @@ export default function RaportPiataPage() {
               number="01"
               category="INTELLIGENCE & RESEARCH ARCHITECTURE"
               title="Bucharest Prime Residential Report"
-              subtitle="Cadrul Metodologic Reproductibil"
+              subtitle="Reproducible Methodological Framework"
             />
 
             <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -129,16 +130,16 @@ export default function RaportPiataPage() {
                 <div className="space-y-4">
                   <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase">
                     <BarChart3 className="w-3.5 h-3.5 text-[#93C8FF]" />
-                    <span>CERCETARE RIGUROASĂ · ZERO DATE INVENTATE</span>
+                    <span>RIGOROUS RESEARCH · ZERO FABRICATED DATA</span>
                   </div>
 
                   <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.08]">
-                    Infrastructură analitică pentru piața rezidențială de prestigiu.
+                    Analytical infrastructure for the prime residential market.
                   </h1>
                 </div>
 
                 <p className="font-sans text-base sm:text-lg text-[#B8C2CF] leading-relaxed font-light">
-                  Un cadru metodologic audibil și transparent pentru monitorizarea activelor prime din București. Respingem estimările speculative și prezentăm public specificațiile exacte pe baza cărora este agregat și filtrat eșantionul trimestrial.
+                  An auditable, transparent methodological framework for monitoring prime residential assets in Bucharest. We reject speculative assertions and openly publish the exact specifications used to aggregate and screen our quarterly research sample.
                 </p>
 
                 {/* Calibration Status Badge */}
@@ -146,11 +147,11 @@ export default function RaportPiataPage() {
                   <div className="flex items-center gap-3 font-mono text-xs text-[#8A95A5]">
                     <span className="w-2.5 h-2.5 rounded-full bg-[#A97F60] animate-pulse shrink-0" />
                     <span>
-                      STATUS ACTUAL: <strong className="text-[#F5F4EF]">CALIBRARE METODOLOGICĂ ÎN DESFĂȘURARE</strong>
+                      CURRENT STATUS: <strong className="text-[#F5F4EF]">METHODOLOGICAL CALIBRATION IN PROGRESS</strong>
                     </span>
                   </div>
                   <p className="font-sans text-xs sm:text-sm text-[#8A95A5] leading-relaxed">
-                    Ediția Inaugurală este în curs de agregare a eșantionului de tranzacții. Raportul nu va publica cifre agregate până când nu se atinge pragul de robustețe statistică stabilit în specificațiile de mai jos.
+                    The Inaugural Edition is currently aggregating its transaction sample. The report will not publish aggregated figures until meeting the statistical robustness threshold established in the specifications below.
                   </p>
                 </div>
 
@@ -159,14 +160,14 @@ export default function RaportPiataPage() {
                     href="#criterii"
                     className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-[#07090D] font-mono text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#E1E4EA] transition-colors"
                   >
-                    <span>EXPLOREAZĂ CELE 8 CRITERII</span>
+                    <span>EXPLORE THE 8 CRITERIA</span>
                     <ArrowRight className="w-4 h-4" />
                   </a>
                   <Link
                     href="/ghid-cumparator"
                     className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/[0.15] bg-[#0C1119] text-[#F5F4EF] font-mono text-xs uppercase tracking-[0.2em] hover:border-[#93C8FF] transition-colors"
                   >
-                    <span>DOSARUL CUMPĂRĂTORULUI</span>
+                    <span>BUYER&apos;S DOSSIER</span>
                   </Link>
                 </div>
               </div>
@@ -183,7 +184,7 @@ export default function RaportPiataPage() {
                   <div className="relative aspect-[4/3] w-full bg-[#1B2028] overflow-hidden">
                     <Image
                       src="/media/cristian-vaduva/personal/cristian-vaduva-office-blueprints-underwriting.jpg"
-                      alt="Cristian Văduva — Analiză metodologică și audit de planuri"
+                      alt="Cristian Văduva — Methodological analysis and blueprint audit"
                       fill
                       sizes="(max-width: 1024px) 100vw, 42vw"
                       className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
@@ -192,10 +193,10 @@ export default function RaportPiataPage() {
 
                     <div className="absolute bottom-4 left-4 right-4 p-4 bg-[#07090D]/90 backdrop-blur-md border border-white/[0.1] space-y-1">
                       <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-[#93C8FF] block">
-                        CADRU METODOLOGIC AUDITABIL
+                        AUDITABLE METHODOLOGICAL FRAMEWORK
                       </span>
                       <p className="font-serif text-sm text-[#F5F4EF]">
-                        Analiză like-for-like pe micro-zone și standarde cadastrale omogene.
+                        Like-for-like analysis across micro-zones and homogeneous cadastral standards.
                       </p>
                     </div>
                   </div>
@@ -210,13 +211,13 @@ export default function RaportPiataPage() {
           <section className="space-y-8">
             <div className="space-y-3">
               <span className="font-mono text-xs uppercase tracking-[0.28em] text-[#A97F60] font-semibold block">
-                ARHITECTURA DATELOR
+                DATA ARCHITECTURE
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl text-[#F5F4EF]">
-                Fluxul de Ingestie, Filtrare și Standardizare
+                Ingestion, Screening & Standardization Pipeline
               </h2>
               <p className="font-sans text-sm sm:text-base text-[#8A95A5] max-w-2xl">
-                Cum transformăm datele primare eterogene într-o bază curată, auditabilă și reproductibilă:
+                How we transform heterogeneous raw records into an auditable, reproducible database:
               </p>
             </div>
 
@@ -224,68 +225,68 @@ export default function RaportPiataPage() {
               {/* Step 1 */}
               <div className="p-6 bg-[#0C1119] border border-white/[0.08] space-y-4 relative">
                 <div className="flex items-center justify-between text-[#93C8FF]">
-                  <span className="text-[10px] uppercase tracking-widest font-semibold">ETAPA 01</span>
+                  <span className="text-[10px] uppercase tracking-widest font-semibold">STAGE 01</span>
                   <Database className="w-4 h-4" />
                 </div>
                 <h3 className="font-serif text-lg text-[#F5F4EF] font-normal">
-                  Ingestie Surse Primare
+                  Primary Source Ingestion
                 </h3>
                 <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
-                  Preluare volume oficiale ANCPI, indicatori macroeconomici INS și snapshot-uri ale bazelor de listare la final de trimestru.
+                  Ingestion of official ANCPI transaction volumes, INS macroeconomic metrics, and end-of-quarter listing database snapshots.
                 </p>
                 <div className="pt-2 text-[10px] text-[#93C8FF] border-t border-white/[0.06]">
-                  Surse publice + baze agreate
+                  Public records + agreed databases
                 </div>
               </div>
 
               {/* Step 2 */}
               <div className="p-6 bg-[#0C1119] border border-white/[0.08] space-y-4 relative">
                 <div className="flex items-center justify-between text-[#A97F60]">
-                  <span className="text-[10px] uppercase tracking-widest font-semibold">ETAPA 02</span>
+                  <span className="text-[10px] uppercase tracking-widest font-semibold">STAGE 02</span>
                   <Filter className="w-4 h-4" />
                 </div>
                 <h3 className="font-serif text-lg text-[#F5F4EF] font-normal">
-                  Deduplicare & Outliers
+                  Deduplication & Outliers
                 </h3>
                 <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
-                  Eliminarea anunțurilor multi-broker pentru același imobil și curățarea extremelor statistice (tranzacții forțate sau atipice).
+                  Eliminating multi-broker duplicates for identical properties and scrubbing statistical anomalies (forced or distressed sales).
                 </p>
                 <div className="pt-2 text-[10px] text-[#A97F60] border-t border-white/[0.06]">
-                  1 identificator unic per activ
+                  1 unique identifier per asset
                 </div>
               </div>
 
               {/* Step 3 */}
               <div className="p-6 bg-[#0C1119] border border-white/[0.08] space-y-4 relative">
                 <div className="flex items-center justify-between text-[#93C8FF]">
-                  <span className="text-[10px] uppercase tracking-widest font-semibold">ETAPA 03</span>
+                  <span className="text-[10px] uppercase tracking-widest font-semibold">STAGE 03</span>
                   <Building className="w-4 h-4" />
                 </div>
                 <h3 className="font-serif text-lg text-[#F5F4EF] font-normal">
-                  Filtrare Micro-Zonală
+                  Micro-Zonal Screening
                 </h3>
                 <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
-                  Selectarea strictă a activelor situate în enclavele Herăstrău, Primăverii, Kiseleff, Dorobanți, Floreasca și Pipera Rezidențial.
+                  Strict filtering for properties situated in the Herăstrău, Primăverii, Kiseleff, Dorobanți, Floreasca, and Pipera enclaves.
                 </p>
                 <div className="pt-2 text-[10px] text-[#93C8FF] border-t border-white/[0.06]">
-                  Zero proiecte periferice
+                  Zero peripheral developments
                 </div>
               </div>
 
               {/* Step 4 */}
               <div className="p-6 bg-[#0C1119] border border-white/[0.08] space-y-4 relative">
                 <div className="flex items-center justify-between text-[#A97F60]">
-                  <span className="text-[10px] uppercase tracking-widest font-semibold">ETAPA 04</span>
+                  <span className="text-[10px] uppercase tracking-widest font-semibold">STAGE 04</span>
                   <Scale className="w-4 h-4" />
                 </div>
                 <h3 className="font-serif text-lg text-[#F5F4EF] font-normal">
-                  Raportare Separată
+                  Decoupled Reporting
                 </h3>
                 <p className="font-sans text-xs text-[#8A95A5] leading-relaxed">
-                  Prețul cerut (sentimentul pieței) este ținut rigid separat de prețul autentificat notarial (valoarea validată tranzacționat).
+                  Asking prices (vendor market sentiment) are strictly decoupled from notarial authenticated closing values.
                 </p>
                 <div className="pt-2 text-[10px] text-[#A97F60] border-t border-white/[0.06]">
-                  Asking vs. Closing decuplat
+                  Asking vs. closing decoupled
                 </div>
               </div>
             </div>
@@ -297,9 +298,9 @@ export default function RaportPiataPage() {
           <section id="criterii" className="space-y-12">
             <ChapterDivider
               number="02"
-              category="SPECIFICAȚII METODOLOGICE DETALIATE"
-              title="Arhitectura Cercetării în 8 Criterii"
-              subtitle="Criteriile riguroase aplicate pentru a asigura comparabilitatea datelor"
+              category="DETAILED METHODOLOGICAL SPECIFICATIONS"
+              title="Research Architecture across 8 Criteria"
+              subtitle="Rigorous standards applied to ensure verified data comparability"
             />
 
             <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
@@ -311,7 +312,7 @@ export default function RaportPiataPage() {
                   <div className="space-y-4">
                     <div className="flex items-center justify-between font-mono text-xs">
                       <span className="px-2.5 py-1 bg-white/[0.04] border border-white/[0.08] text-[#93C8FF] tracking-widest font-semibold">
-                        CRITERIUL {criterion.number}
+                        CRITERION {criterion.number}
                       </span>
                       <span className="text-[#A97F60] tracking-widest uppercase font-semibold">
                         {criterion.tag}
@@ -329,7 +330,7 @@ export default function RaportPiataPage() {
 
                   <div className="pt-4 border-t border-white/[0.06] font-mono text-[11px] text-[#B8C2CF] flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#93C8FF] shrink-0 mt-0.5" />
-                    <span><strong>Standard de livrare:</strong> {criterion.deliverable}</span>
+                    <span><strong>Delivery standard:</strong> {criterion.deliverable}</span>
                   </div>
                 </div>
               ))}
@@ -337,15 +338,15 @@ export default function RaportPiataPage() {
           </section>
 
           {/* ======================================================== */}
-          {/* STATUT ȘI DELIMITARE LEGALĂ RIGUROASĂ                    */}
+          {/* STATUS AND RIGOROUS LEGAL DELIMITATION                   */}
           {/* ======================================================== */}
           <section className="p-8 sm:p-10 bg-white/[0.02] border-l-2 border-[#A97F60] font-sans text-xs sm:text-sm text-[#8A95A5] space-y-3 leading-relaxed">
             <div className="flex items-center gap-2 text-[#F5F4EF] font-medium text-base">
               <ShieldAlert className="w-4 h-4 text-[#A97F60]" />
-              <span>Statutul Raportului & Delimitare Legală</span>
+              <span>Report Status & Legal Delimitation</span>
             </div>
             <p>
-              Bucharest Prime Residential Report este o inițiativă privată de cercetare editorială și metodologică a platformei Executive Cristian Văduva. Nu reprezintă un raport emis de o autoritate publică a statului român și nu înlocuiește rapoartele de evaluare atestate ANEVAR sau analizele de risc financiar furnizate de instituții de credit autorizate.
+              The Bucharest Prime Residential Report is an independent editorial and methodological research initiative of the Executive Cristian Văduva platform. It does not constitute an official report issued by a public authority of the Romanian state and does not substitute statutory ANEVAR valuation reports or banking compliance underwriting.
             </p>
           </section>
 
@@ -353,15 +354,15 @@ export default function RaportPiataPage() {
           {/* HIGH-IMPACT CLOSING FRAME                                */}
           {/* ======================================================== */}
           <ClosingFrame
-            category="03 // INIȚIERE DIALOG STRATEGIC"
-            title="Doriți să primiți metodologia completă la publicare?"
-            description="Puteți solicita o discuție directă sau puteți consulta dosarul de criterii tehnice conceput pentru cumpărătorii de proprietăți rezidențiale de mare valoare."
+            category="03 // INITIATE STRATEGIC DIALOGUE"
+            title="Would you like to receive the methodology upon publication?"
+            description="You may request an introductory strategic consultation or examine our technical criteria dossier designed for buyers of high-value residential properties."
             primaryAction={{
-              label: "CONSULTĂ DOSARUL CUMPĂRĂTORULUI",
+              label: "EXAMINE BUYER'S DOSSIER",
               href: "/ghid-cumparator",
             }}
             secondaryAction={{
-              label: "PROGRAMEAZĂ DISCUȚIE STRATEGICĂ",
+              label: "SCHEDULE STRATEGIC CONSULTATION",
               href: "/programare",
             }}
           />

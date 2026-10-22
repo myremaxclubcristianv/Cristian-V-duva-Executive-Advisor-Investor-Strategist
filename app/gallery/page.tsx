@@ -150,17 +150,17 @@ export default function GalleryPage() {
           {loading ? (
             <div className="py-24 text-center text-[#8A95A5]">
               <div className="w-8 h-8 border-2 border-[#93C8FF] border-t-transparent rounded-full animate-spin mx-auto mb-3" />
-              <p className="font-mono text-xs uppercase tracking-wider">Se încarcă arhiva foto completă...</p>
+              <p className="font-mono text-xs uppercase tracking-wider">Loading complete photo monograph archive...</p>
             </div>
           ) : filteredPhotos.length === 0 ? (
             <div className="py-24 text-center text-[#8A95A5] space-y-3">
               <ImageIcon className="w-12 h-12 mx-auto opacity-30 text-[#93C8FF]" />
-              <p className="font-sans text-base text-[#F5F4EF]">Nu există fotografii în această categorie.</p>
+              <p className="font-sans text-base text-[#F5F4EF]">No photographs found in this category.</p>
               <Link
                 href="/admin"
                 className="inline-flex items-center gap-2 text-xs font-mono text-[#93C8FF] hover:underline"
               >
-                <Lock className="w-3.5 h-3.5" /> Adaugă prima fotografie
+                <Lock className="w-3.5 h-3.5" /> Add initial photograph
               </Link>
             </div>
           ) : (

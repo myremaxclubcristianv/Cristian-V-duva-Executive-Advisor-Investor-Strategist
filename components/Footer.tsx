@@ -28,55 +28,55 @@ export default function Footer() {
             </div>
 
             <p className="font-sans text-xs text-[#86868B] font-light max-w-sm leading-relaxed">
-              Consultanță privată dedicată, structurare de capital și achiziții rezidențiale de mare valoare pe coridoarele București, Monaco și Dubai.
+              Dedicated private advisory, capital structuring, and high-value residential acquisitions across Bucharest, Monaco, and Dubai.
             </p>
 
             <div className="pt-2 flex items-center gap-2 text-[11px] font-mono text-[#647082]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />
-              <span>București (Birou Principal) · Viena · Coridoare Globale</span>
+              <span>Bucharest (Headquarters) · Vienna · Global Corridors</span>
             </div>
           </div>
 
-          {/* Col 2: Navigație & Soluții */}
+          {/* Col 2: Navigation & Solutions */}
           <div className="space-y-3">
             <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#F5F4EF] font-semibold block">
-              NAVIGAȚIE
+              NAVIGATION
             </span>
             <ul className="space-y-2.5 font-sans text-xs">
               <li>
                 <Link href="/about" className="hover:text-[#F5F4EF] transition-colors block">
-                  Biografie & Experiență
+                  Biography & Background
                 </Link>
               </li>
               <li>
                 <Link href="/ventures" className="hover:text-[#F5F4EF] transition-colors block">
-                  Consultanță Strategică
+                  Strategic Advisory
                 </Link>
               </li>
               <li>
                 <Link href="/ecosystem" className="hover:text-[#F5F4EF] transition-colors block">
-                  Ecosistem Integrat
+                  Integrated Ecosystem
                 </Link>
               </li>
               <li>
                 <Link href="/real-estate/properties" className="hover:text-[#F5F4EF] transition-colors block">
-                  Portofoliu Proprietăți
+                  Property Portfolio
                 </Link>
               </li>
               <li>
                 <Link href="/pentru-clienti" className="hover:text-[#F5F4EF] transition-colors block">
-                  Pentru Clienți & Mandat
+                  Client Advisory & Mandates
                 </Link>
               </li>
               <li>
                 <Link href="/cum-lucrez" className="hover:text-[#F5F4EF] transition-colors block">
-                  Metodologie de Lucru
+                  Advisory Methodology
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 3: Cercetare & Media */}
+          {/* Col 3: Research & Media */}
           <div className="space-y-3">
             <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#F5F4EF] font-semibold block">
               INTELLIGENCE & MEDIA
@@ -89,36 +89,36 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/media" className="hover:text-[#F5F4EF] transition-colors block">
-                  Arhivă Media & Emisiuni
+                  Media Archive & Broadcasts
                 </Link>
               </li>
               <li>
                 <Link href="/raport-piata" className="hover:text-[#F5F4EF] transition-colors block">
-                  Raport Bucharest Prime
+                  Bucharest Prime Market Report
                 </Link>
               </li>
               <li>
                 <Link href="/ghid-cumparator" className="hover:text-[#F5F4EF] transition-colors block">
-                  Ghidul Cumpărătorului
+                  Buyer&apos;s Due Diligence Guide
                 </Link>
               </li>
               <li>
                 <Link href="/parteneri" className="hover:text-[#F5F4EF] transition-colors block">
-                  Parteneri (Chestertons · Generali)
+                  Partners (Chestertons · Generali)
                 </Link>
               </li>
               <li>
                 <Link href="/studii-de-caz" className="hover:text-[#F5F4EF] transition-colors block">
-                  Studii de Caz Anonimizate
+                  Anonymized Case Studies
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 4: Canale Directe & Confidențialitate */}
+          {/* Col 4: Direct Channels */}
           <div className="space-y-3">
             <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#A97F60] font-semibold block">
-              CANALE DIRECTE
+              DIRECT CHANNELS
             </span>
             <ul className="space-y-2.5 font-sans text-xs">
               <li>
@@ -160,7 +160,7 @@ export default function Footer() {
                   className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-1.5"
                 >
                   <LinkedinIcon className="w-3 h-3 text-[#A97F60]" />
-                  <span>LinkedIn Oficial</span>
+                  <span>Official LinkedIn</span>
                 </a>
               </li>
               <li>
@@ -182,20 +182,20 @@ export default function Footer() {
         {/* Bottom Colophon Bar (Apple Legal Line Standard) */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-2 font-mono text-[10px] text-[#86868B]">
           <div>
-            Copyright © {currentYear} Cristian Văduva. Toate drepturile rezervate.
+            Copyright © {currentYear} Cristian Văduva. All rights reserved.
           </div>
 
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[#647082]">
             <Link href="/privacy" className="hover:text-[#B8C2CF] transition-colors">
-              Confidențialitate
+              Privacy Policy
             </Link>
             <span>·</span>
             <Link href="/terms-of-use" className="hover:text-[#B8C2CF] transition-colors">
-              Termeni de Utilizare
+              Terms of Use
             </Link>
             <span>·</span>
             <Link href="/cookies" className="hover:text-[#B8C2CF] transition-colors">
-              Cookie-uri
+              Cookie Policy
             </Link>
             <span>·</span>
             <Link href="/gdpr" className="hover:text-[#B8C2CF] transition-colors">
@@ -203,11 +203,11 @@ export default function Footer() {
             </Link>
             <span>·</span>
             <Link href="/editorial-policy" className="hover:text-[#B8C2CF] transition-colors">
-              Politică Editorială
+              Editorial Policy
             </Link>
             <span>·</span>
             <Link href="/data-provenance" className="hover:text-[#B8C2CF] transition-colors">
-              Proveniență Date
+              Data Provenance
             </Link>
             <span>·</span>
             <Link href="/disclaimer" className="hover:text-[#B8C2CF] transition-colors">
@@ -216,7 +216,7 @@ export default function Footer() {
             <span>·</span>
             <Link href="/login" className="hover:text-[#93C8FF] transition-colors inline-flex items-center gap-1">
               <Lock className="w-2.5 h-2.5" />
-              <span>Acces Principal</span>
+              <span>Principal Portal</span>
             </Link>
           </div>
         </div>

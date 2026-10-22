@@ -6,7 +6,7 @@ const ECOSYSTEM_PLATFORMS = [
   {
     name: "CristianVaduva.com",
     tagline: "Main Personal Brand & Strategic Advisory",
-    description: "Hub-ul central al brandului personal pentru consultanță imobiliară executivă, achiziții de anvergură și structurare de capital.",
+    description: "Central personal brand hub for executive real estate advisory, large-scale acquisitions, and capital structuring.",
     url: "https://cristianvaduva.com",
     category: "PERSONAL BRAND",
     icon: Sparkles,
@@ -15,7 +15,7 @@ const ECOSYSTEM_PLATFORMS = [
   {
     name: "AiXLuxury.com",
     tagline: "Ultra-Prime Real Estate & Luxury Ecosystem",
-    description: "Platformă și ecosistem dedicat proprietăților de elită din București, Monaco, Dubai și Riviera Franceză, coordonată de Cristian Văduva.",
+    description: "Platform and ecosystem dedicated to prime properties across Bucharest, Monaco, Dubai, and the French Riviera.",
     url: "https://aixluxury.com",
     category: "LUXURY REAL ESTATE",
     icon: Building2,
@@ -24,7 +24,7 @@ const ECOSYSTEM_PLATFORMS = [
   {
     name: "AiX OS & Market Pulse",
     tagline: "Live Real Estate Surveillance & Yield Analytics",
-    description: "Platformă de analiză în timp real a indicatorilor macroeconomici, prețuri per metru pătrat și randamente investiționale.",
+    description: "Real-time surveillance platform analyzing macroeconomic indicators, pricing per square meter, and investment yields.",
     url: "https://os.cristianvaduva.com",
     category: "MARKET INTELLIGENCE",
     icon: Database,
@@ -33,16 +33,16 @@ const ECOSYSTEM_PLATFORMS = [
   {
     name: "HomeFind",
     tagline: "Property Search & Matching Platform",
-    description: "Sistem avansat de căutare a proprietăților și inteligență imobiliară pe piața rezidențială din România.",
+    description: "Advanced property search system and market intelligence for prime residential real estate in Romania.",
     url: "https://homefind.cristianvaduva.com",
     category: "REAL ESTATE TECH",
     icon: Compass,
     badge: "Live Tech",
   },
   {
-    name: "Subvenții",
+    name: "Subsidies & Grants",
     tagline: "Government Programs & Funding Intelligence",
-    description: "Platformă de analiză a fondurilor și programelor structurale de finanțare pentru dezvoltări și investiții durabile.",
+    description: "Analytical platform monitoring EU structural funds and government financing programs for sustainable investment.",
     url: "https://subventii.cristianvaduva.com/",
     category: "FUNDING INTELLIGENCE",
     icon: Globe,
@@ -50,12 +50,12 @@ const ECOSYSTEM_PLATFORMS = [
   },
   {
     name: "Insurance & Asset Protection",
-    tagline: "Partener Generali România",
-    description: "Structurare de protecție a activelor imobiliare și polițe de asigurare pentru proprietăți de mare valoare în parteneriat cu Generali România.",
+    tagline: "Authorized Generali Romania Partner",
+    description: "Real estate wealth protection structuring and high-value property insurance policies in partnership with Generali Romania.",
     url: "https://insurance.cristianvaduva.com",
     category: "ASSET PROTECTION",
     icon: Shield,
-    badge: "Partener Generali",
+    badge: "Generali Partner",
   },
 ];
 
@@ -69,18 +69,18 @@ export default function AppleEcosystemSection() {
           <div className="space-y-3 max-w-2xl">
             <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-[#B89B72]">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>ECOSISTEM INTEGRAT & PLATFORME</span>
+              <span>INTEGRATED ECOSYSTEM & PLATFORMS</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-white">
-              Ecosistemul Cristian Văduva & AiX
+              The Cristian Văduva & AiX Ecosystem
             </h2>
             <p className="text-sm sm:text-base text-neutral-400 font-light">
-              Platformele și diviziile conectate la rețeaua executivă, de la consultanță imobiliară și tehnologie la protecția activelor și fonduri de investiții.
+              Connected platforms and specialized practice divisions, spanning real estate advisory and proptech to wealth protection and capital intelligence.
             </p>
           </div>
 
           <div className="font-mono text-xs text-neutral-400">
-            <span>SURSA DE ADEVĂR: CRISTIANVADUVA.COM · AIXLUXURY.COM</span>
+            <span>OFFICIAL NETWORK: CRISTIANVADUVA.COM · AIXLUXURY.COM</span>
           </div>
         </div>
 
@@ -128,8 +128,8 @@ export default function AppleEcosystemSection() {
                 </div>
 
                 <div className="pt-6 border-t border-white/10 mt-6 flex items-center justify-between text-xs font-mono text-neutral-400">
-                  <span>Accesează Platforma</span>
-                  <span className="text-[#B89B72] group-hover:underline">Explorează →</span>
+                  <span>Access Platform</span>
+                  <span className="text-[#B89B72] group-hover:underline">Explore →</span>
                 </div>
               </a>
             );

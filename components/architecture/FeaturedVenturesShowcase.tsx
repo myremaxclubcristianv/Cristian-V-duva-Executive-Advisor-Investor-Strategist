@@ -18,15 +18,15 @@ export default function FeaturedVenturesShowcase() {
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2.5 font-mono text-[11px] sm:text-xs text-[#A97F60] uppercase tracking-[0.24em] font-semibold">
             <span className="w-1.5 h-1.5 rounded-full bg-[#A97F60]" />
-            <span>ECOSISTEMUL CRISTIAN VĂDUVA</span>
+            <span>THE CRISTIAN VĂDUVA ECOSYSTEM</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.08]">
-            Platforme dedicate. <span className="text-[#A97F60] italic font-light">Un standard riguros de consultanță.</span>
+            Dedicated platforms. <span className="text-[#A97F60] italic font-light">A rigorous advisory standard.</span>
           </h2>
 
           <p className="font-sans text-base sm:text-lg text-[#86868B] font-light leading-relaxed max-w-2xl">
-            Fiecare inițiativă este concepută pentru a rezolva o problemă structurală a pieței de lux — de la selecția riguroasă a proprietăților la structurarea financiară și protecția patrimoniului.
+            Each initiative is designed to address structural challenges in prime markets — from rigorous property selection to financial structuring and asset protection.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export default function FeaturedVenturesShowcase() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/media/cristian-vaduva/personal/cristian-vaduva-residence-curved-glass-terrace.png"
-              alt="HomeFind — Platformă Imobiliară de Prestigiu"
+              alt="HomeFind — Curated Prime Real Estate Platform"
               fill
               sizes="100vw"
               className="object-cover object-center scale-[1.01] group-hover:scale-[1.03] transition-transform duration-1000 opacity-60"
@@ -49,7 +49,7 @@ export default function FeaturedVenturesShowcase() {
           <div className="relative z-10 max-w-2xl space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/[0.08] backdrop-blur-md border border-white/[0.12] font-mono text-[10px] uppercase tracking-[0.2em] text-[#93C8FF]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#93C8FF]" />
-              <span>OPORTUNITĂȚI IMOBILIARE SELECTATE</span>
+              <span>CURATED REAL ESTATE OPPORTUNITIES</span>
             </div>
 
             <div className="space-y-3">
@@ -57,7 +57,7 @@ export default function FeaturedVenturesShowcase() {
                 HomeFind
               </h3>
               <p className="font-sans text-base sm:text-lg text-[#B8C2CF] font-light leading-relaxed">
-                Căutarea imobiliară de prestigiu, structurată transparent. Selecție atentă de proprietăți, fotografii arhitecturale autentice și prezentare orientată spre decizii informate.
+                Prime property discovery, structured transparently. Diligent selection, authentic architectural photography, and intelligence designed for informed capital decisions.
               </p>
             </div>
 
@@ -68,7 +68,7 @@ export default function FeaturedVenturesShowcase() {
                 rel="noopener noreferrer"
                 className="btn-apple-pill-primary inline-flex items-center gap-2"
               >
-                <span>DESCHIDE HOMEFIND</span>
+                <span>OPEN HOMEFIND</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
 
@@ -76,7 +76,7 @@ export default function FeaturedVenturesShowcase() {
                 href="/real-estate/properties"
                 className="apple-action-link text-[#F5F4EF] hover:text-[#93C8FF] text-sm"
               >
-                <span>Vezi selecția din portofoliu</span>
+                <span>View portfolio selection</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -90,20 +90,20 @@ export default function FeaturedVenturesShowcase() {
           <div className="rounded-3xl p-8 sm:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
             <div className="space-y-4 relative z-10">
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#A97F60] font-semibold">
-                STRUCTURARE DE CAPITAL & INVESTIȚII
+                CAPITAL STRUCTURING & INVESTMENT
               </div>
               <h4 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF] font-normal">
                 CV Finance
               </h4>
               <p className="font-sans text-sm sm:text-base text-[#86868B] font-light leading-relaxed">
-                Inginerie financiară și analiză empirică de randament like-for-like. Separăm prețul cerut de valoarea tranzacționată reală și structurăm achizițiile complexe alături de evaluatori atestați.
+                Financial engineering and empirical like-for-like yield analysis. Separating asking prices from realized transaction values and structuring complex acquisitions alongside certified valuation partners.
               </p>
             </div>
 
             <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden border border-white/[0.08] bg-[#07090D]">
               <Image
                 src="/media/cristian-vaduva/personal/cristian-vaduva-office-blueprints-underwriting.jpg"
-                alt="CV Finance — Analiză de capital și underwriting"
+                alt="CV Finance — Capital analysis and underwriting"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
@@ -118,7 +118,7 @@ export default function FeaturedVenturesShowcase() {
                 rel="noopener noreferrer"
                 className="apple-action-link"
               >
-                <span>Explorează serviciile financiare</span>
+                <span>Explore financial services</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -128,20 +128,20 @@ export default function FeaturedVenturesShowcase() {
           <div className="rounded-3xl p-8 sm:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
             <div className="space-y-4 relative z-10">
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#93C8FF] font-semibold">
-                PROTECȚIA PATRIMONIULUI · GENERALI PARTNER
+                ASSET PROTECTION · GENERALI PARTNER
               </div>
               <h4 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF] font-normal">
                 Insurance Advisory
               </h4>
               <p className="font-sans text-sm sm:text-base text-[#86868B] font-light leading-relaxed">
-                Soluții reglementate de transfer de risc patrimonial. Protejăm reședințele de mare valoare, colecțiile private și activele corporative în alianță cu cei mai respectați asigurători internaționali.
+                Regulated private wealth risk-transfer solutions. Safeguarding prime residences, private collections, and corporate holdings in partnership with leading international insurers.
               </p>
             </div>
 
             <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden border border-white/[0.08] bg-[#07090D]">
               <Image
                 src="/media/cristian-vaduva/personal/cristian-vaduva-office-generali-portfolio-protection.png"
-                alt="Insurance Advisory — Protecție patrimonială și transfer de risc"
+                alt="Insurance Advisory — Asset protection and risk transfer"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
@@ -156,7 +156,7 @@ export default function FeaturedVenturesShowcase() {
                 rel="noopener noreferrer"
                 className="apple-action-link"
               >
-                <span>Vezi soluțiile de protecție</span>
+                <span>Explore protection solutions</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -171,20 +171,20 @@ export default function FeaturedVenturesShowcase() {
           <div className="lg:col-span-7 rounded-3xl p-8 sm:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
             <div className="space-y-4 relative z-10 max-w-xl">
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#A97F60] font-semibold">
-                CORIDOARE GLOBALE · CHESTERTONS ALLIANCE
+                GLOBAL CORRIDORS · CHESTERTONS ALLIANCE
               </div>
               <h4 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-[#F5F4EF] font-normal">
                 Dubai & Monaco International
               </h4>
               <p className="font-sans text-sm sm:text-base text-[#86868B] font-light leading-relaxed">
-                Consultanță strategică pentru tranzacții transfrontaliere în centre financiare globale: Dubai, Monaco, Marbella și Miami. Conexiune directă cu birourile locale din rețeaua internațională Chestertons.
+                Strategic advisory for cross-border acquisitions across global financial capitals: Dubai, Monaco, Marbella, and Miami. Direct liaison with local Chestertons international network desks.
               </p>
             </div>
 
             <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-white/[0.08] bg-[#07090D]">
               <Image
                 src="/media/cristian-vaduva/personal/cristian-vaduva-development-skytower-inspection.png"
-                alt="Dubai & Monaco International — Active imobiliare globale"
+                alt="Dubai & Monaco International — Global prime real estate"
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"
                 className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
@@ -199,7 +199,7 @@ export default function FeaturedVenturesShowcase() {
                 rel="noopener noreferrer"
                 className="apple-action-link"
               >
-                <span>Descoperă rețeaua internațională</span>
+                <span>Explore international network</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -209,20 +209,20 @@ export default function FeaturedVenturesShowcase() {
           <div className="lg:col-span-5 rounded-3xl p-8 sm:p-12 border border-white/[0.08] bg-[#0C1119] flex flex-col justify-between gap-8 group hover:border-white/[0.2] transition-all duration-300 relative overflow-hidden">
             <div className="space-y-4 relative z-10">
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#93C8FF] font-semibold">
-                ARHITECTURĂ & DEZVOLTARE
+                ARCHITECTURE & DEVELOPMENT
               </div>
               <h4 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF] font-normal">
                 Constructions Advisory
               </h4>
               <p className="font-sans text-sm sm:text-base text-[#86868B] font-light leading-relaxed">
-                Dezvoltare rezidențială contemporană, materiale durabile și management de proiect de precizie. Standarde constructive fără compromisuri pentru reședințe de colecție.
+                Contemporary residential development, durable materials, and precision project management. Uncompromising construction standards for landmark private residences.
               </p>
             </div>
 
             <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-white/[0.08] bg-[#07090D]">
               <Image
                 src="/media/cristian-vaduva/personal/cristian-vaduva-development-curved-balcony-armani.png"
-                alt="Constructions Advisory — Construcții și dezvoltare de lux"
+                alt="Constructions Advisory — Prime construction and development"
                 fill
                 sizes="(max-width: 1024px) 100vw, 42vw"
                 className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
@@ -237,7 +237,7 @@ export default function FeaturedVenturesShowcase() {
                 rel="noopener noreferrer"
                 className="apple-action-link"
               >
-                <span>Accesează Constructions Advisory</span>
+                <span>Access Constructions Advisory</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>

@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/cookies",
   },
+  openGraph: {
+    title: "Cookie Policy & Technical Storage — Cristian Văduva",
+    description: "Transparent inventory of cookies and local browser storage technologies used across Cristian Văduva platforms.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function CookiesPage() {

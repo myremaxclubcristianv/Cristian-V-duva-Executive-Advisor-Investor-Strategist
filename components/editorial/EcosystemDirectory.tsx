@@ -219,7 +219,7 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
           role: "Sovereign Real Estate & Private Investment Editorial",
           category: "Flagship Monograph",
           description:
-            "Platforma privată de consultanță executivă, portofoliu imobiliar selectat și reprezentare dedicată.",
+            "Private executive advisory desk, curated property portfolio, and dedicated client representation.",
           icon: Sparkles,
           tag: "ACTIVE FLAGSHIP",
           isCurrent: true,
@@ -278,7 +278,7 @@ export default function EcosystemDirectory({ className = "" }: EcosystemDirector
             <div className="p-4 border border-[#A97F60]/20 bg-[#A97F60]/5 space-y-1">
               <span className="text-[10px] text-[#A97F60] uppercase tracking-wider block">QUADRANT 02</span>
               <span className="text-[#F5F4EF] font-bold block">FINANCING</span>
-              <span className="text-[10px] text-[#8A95A5]">CV Finance · Subvenții (Granturi)</span>
+              <span className="text-[10px] text-[#8A95A5]">CV Finance · Subsidies & Grants</span>
             </div>
 
             <div className="p-4 border border-white/[0.1] bg-white/[0.02] space-y-1">

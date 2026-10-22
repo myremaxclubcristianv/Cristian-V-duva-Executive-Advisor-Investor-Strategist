@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json(
         {
           success: false,
-          error: `Prea multe încercări eșuate. Accesul este temporar blocat pentru ${rateLimit.retryAfterSeconds || 900} secunde.`,
+          error: `Too many failed attempts. Access is temporarily locked for ${rateLimit.retryAfterSeconds || 900} seconds.`,
         },
         { status: 429 }
       );
@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
     const rawText = await req.text();
     if (rawText.length > 5000) {
       return NextResponse.json(
-        { success: false, error: "Cerere invalidă." },
+        { success: false, error: "Payload too large." },
         { status: 413 }
       );
     }
@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
       body = JSON.parse(rawText);
     } catch {
       return NextResponse.json(
-        { success: false, error: "Format payload invalid." },
+        { success: false, error: "Invalid request payload." },
         { status: 400 }
       );
     }
@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
     const enteredPass = (password || "").trim();
     if (!enteredPass) {
       return NextResponse.json(
-        { success: false, error: "Codul de securitate este obligatoriu." },
+        { success: false, error: "Security passcode is required." },
         { status: 400 }
       );
     }
@@ -77,7 +77,7 @@ export async function POST(req: NextRequest) {
       // Introduce defensive artificial delay against timing attacks and automated brute-force
       await new Promise((resolve) => setTimeout(resolve, 600));
       return NextResponse.json(
-        { success: false, error: "Cod de acces incorect. Vă rugăm să reîncercați." },
+        { success: false, error: "Incorrect passcode. Please try again." },
         { status: 401 }
       );
     }
@@ -90,7 +90,7 @@ export async function POST(req: NextRequest) {
     if (!sessionToken) {
       console.error("[AUTH_LOGIN_ERROR] Dedicated ADMIN_SECRET_KEY is not configured or insufficient.");
       return NextResponse.json(
-        { success: false, error: "Serviciul de autentificare nu este configurat." },
+        { success: false, error: "Authentication service is not configured." },
         { status: 500 }
       );
     }

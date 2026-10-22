@@ -11,11 +11,11 @@ export default function EditorialInterruption() {
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-black/[0.08] pb-4 font-mono text-xs uppercase tracking-[0.24em] text-[#86868B]">
           <div className="flex items-center gap-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#1D1D1F]" />
-            <span className="font-semibold text-[#1D1D1F]">CONSULTANȚA DEDICATĂ</span>
+            <span className="font-semibold text-[#1D1D1F]">DEDICATED ADVISORY</span>
             <span className="text-black/20">/</span>
-            <span>REPREZENTARE DEDICATĂ</span>
+            <span>MANDATE REPRESENTATION</span>
           </div>
-          <span className="text-[#86868B]">BUCUREȘTI · MONACO · DUBAI</span>
+          <span className="text-[#86868B]">BUCHAREST · MONACO · DUBAI</span>
         </div>
 
         {/* Master Editorial Thesis: 12-Column Spread */}
@@ -25,29 +25,29 @@ export default function EditorialInterruption() {
           <div className="lg:col-span-5 space-y-8">
             <div className="space-y-3">
               <span className="font-mono text-[10px] uppercase tracking-[0.26em] text-[#A97F60] font-semibold block">
-                PRINCIPIU FUNDAMENTAL
+                CORE PRINCIPLE
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#1D1D1F] leading-[1.06] tracking-tight font-normal">
-                În tranzacțiile de mare valoare, asimetria de informație este cel mai mare risc.
+                In high-value transactions, information asymmetry is the single greatest risk.
               </h2>
             </div>
 
             <p className="font-sans text-base sm:text-lg text-[#515154] font-light leading-relaxed">
-              Tranzacțiile imobiliare complexe necesită o poziționare clară și fără ambiguități. Biroul Executive operează pe bază de mandat dedicat: acționăm exclusiv în interesul părții pe care o reprezentăm — vânzător, cumpărător sau investitor, conform cadrului contractual agreat.
+              Complex property transactions demand unambiguous alignment. The Executive practice operates strictly on a dedicated mandate basis: we act exclusively in the interest of the party we represent — buyer, seller, or investor — under a clearly defined contractual framework.
             </p>
 
             <div className="pt-4 border-t border-black/[0.08] space-y-3 font-mono text-xs">
               <div className="flex justify-between items-center py-2 border-b border-black/[0.06]">
-                <span className="text-[#86868B] uppercase text-[10px] tracking-wider">CADRU DE LUCRU</span>
-                <span className="font-sans font-medium text-[#1D1D1F]">Reprezentare pe Bază de Mandat</span>
+                <span className="text-[#86868B] uppercase text-[10px] tracking-wider">ENGAGEMENT MODEL</span>
+                <span className="font-sans font-medium text-[#1D1D1F]">Mandate-Based Representation</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-black/[0.06]">
-                <span className="text-[#86868B] uppercase text-[10px] tracking-wider">CONFIDENȚIALITATE</span>
-                <span className="font-sans font-medium text-[#1D1D1F]">Acord Bilateral (NDA) la Cerere</span>
+                <span className="text-[#86868B] uppercase text-[10px] tracking-wider">CONFIDENTIALITY</span>
+                <span className="font-sans font-medium text-[#1D1D1F]">Bilateral NDA upon Request</span>
               </div>
               <div className="flex justify-between items-center py-2">
-                <span className="text-[#86868B] uppercase text-[10px] tracking-wider">ALINIERE STRATEGICĂ</span>
-                <span className="font-sans font-medium text-[#1D1D1F]">Stabilită prin Contract de Mandat</span>
+                <span className="text-[#86868B] uppercase text-[10px] tracking-wider">STRATEGIC ALIGNMENT</span>
+                <span className="font-sans font-medium text-[#1D1D1F]">Defined by Mandate Contract</span>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ export default function EditorialInterruption() {
                 href="/pentru-clienti"
                 className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#1D1D1F] text-[#F5F4EF] hover:bg-black font-sans text-xs uppercase tracking-wider font-semibold transition-all shadow-md group"
               >
-                <span>CONSULTĂ DETALIILE MANDATULUI</span>
+                <span>EXPLORE MANDATE DETAILS</span>
                 <ArrowRight className="w-3.5 h-3.5 text-[#F5F4EF] transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
@@ -69,19 +69,19 @@ export default function EditorialInterruption() {
             <div className="pb-8 border-b border-black/[0.08] space-y-3">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-xs text-[#A97F60] font-semibold tracking-widest uppercase">
-                  01 // ACHIZIȚIE REZIDENȚIALĂ PRIME (BUYER ADVISORY)
+                  01 // PRIME RESIDENTIAL ACQUISITION (BUYER ADVISORY)
                 </span>
                 <Building2 className="w-4 h-4 text-black/40" />
               </div>
               <h3 className="font-serif text-2xl sm:text-3xl text-[#1D1D1F] font-normal">
-                Reprezentare Exclusivă la Cumpărare & Acces Off-Market
+                Exclusive Buyer Representation & Off-Market Access
               </h3>
               <p className="font-sans text-sm sm:text-base text-[#515154] font-light leading-relaxed">
-                Identificarea proprietăților ce nu apar pe portalurile publice, negociere pe baza valorii reale de piață și coordonarea procesului alături de notari și avocați de prestigiu.
+                Identifying discreet assets absent from public portals, evidence-based negotiation on true market value, and seamless coordination alongside leading legal and notary partners.
               </p>
               <div className="pt-2">
                 <Link href="/pentru-clienti" className="inline-flex items-center gap-1.5 text-xs font-sans font-medium text-[#0066CC] hover:underline">
-                  <span>Detalii reprezentare cumpărător</span>
+                  <span>Buyer advisory details</span>
                   <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
@@ -91,19 +91,19 @@ export default function EditorialInterruption() {
             <div className="pb-8 border-b border-black/[0.08] space-y-3">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-xs text-[#A97F60] font-semibold tracking-widest uppercase">
-                  02 // AUDIT TEHNIC, CADASTRAL ȘI URBANISTIC
+                  02 // TECHNICAL, CADASTRAL & ZONING AUDIT
                 </span>
                 <TrendingUp className="w-4 h-4 text-black/40" />
               </div>
               <h3 className="font-serif text-2xl sm:text-3xl text-[#1D1D1F] font-normal">
-                Diligence Structurat & Verificare Titlu
+                Structured Due Diligence & Title Verification
               </h3>
               <p className="font-sans text-sm sm:text-base text-[#515154] font-light leading-relaxed">
-                Verificarea istoricului de proprietate pe 30 de ani, concordanța releveelor cadastrale, analiza structurii de rezistență prin experți tehnici atestați în construcții și evaluarea riscurilor urbanistice vecine (PUZ/PUD).
+                Comprehensive 30-year chain of title review, cadastral survey verification, structural engineering inspections by certified technical experts, and adjacent zoning risk assessment (PUZ/PUD).
               </p>
               <div className="pt-2">
                 <Link href="/ghid-cumparator" className="inline-flex items-center gap-1.5 text-xs font-sans font-medium text-[#0066CC] hover:underline">
-                  <span>Consultă criteriile de audit</span>
+                  <span>Review audit criteria</span>
                   <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
@@ -113,19 +113,19 @@ export default function EditorialInterruption() {
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-xs text-[#A97F60] font-semibold tracking-widest uppercase">
-                  03 // ASIGURARE PATRIMONIALĂ & TRANSFER DE RISC
+                  03 // ASSET PROTECTION & RISK TRANSFER
                 </span>
                 <ShieldCheck className="w-4 h-4 text-black/40" />
               </div>
               <h3 className="font-serif text-2xl sm:text-3xl text-[#1D1D1F] font-normal">
-                Protecția Clădirilor la Valoare Reală de Reconstrucție
+                Prime Building Coverage at Full Reconstruction Value
               </h3>
               <p className="font-sans text-sm sm:text-base text-[#515154] font-light leading-relaxed">
-                În calitate de agent autorizat Generali România, structurăm polițe dedicate pentru proprietăți de mare valoare, asigurând acoperirea costurilor de reconstrucție și răspundere civilă.
+                As an authorized agent of Generali Romania, we structure tailored coverage for high-value properties, safeguarding replacement costs, structural liabilities, and civil liability.
               </p>
               <div className="pt-2">
                 <Link href="/parteneri" className="inline-flex items-center gap-1.5 text-xs font-sans font-medium text-[#0066CC] hover:underline">
-                  <span>Parteneriatul Generali România</span>
+                  <span>Generali Romania partnership</span>
                   <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>

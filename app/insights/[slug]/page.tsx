@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: InsightDetailPageProps): Prom
 
   if (!article) {
     return {
-      title: "Articol Negăsit — Cristian Văduva",
+      title: "Article Not Found — Cristian Văduva",
     };
   }
 
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: InsightDetailPageProps): Prom
       type: "article",
       publishedTime: article.publicationDate,
       authors: [article.author],
-      locale: "ro_RO",
+      locale: "en_US",
       siteName: "Cristian Văduva — Executive",
       images: [
         {
@@ -96,7 +96,7 @@ export default async function InsightDetailPage({ params }: InsightDetailPagePro
               className="hover:text-[#93C8FF] transition-colors inline-flex items-center gap-1.5"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
-              <span>Toate perspectivele</span>
+              <span>All Perspectives</span>
             </Link>
             <span>/</span>
             <span className="text-[#A97F60] uppercase tracking-wider">{article.category}</span>
@@ -152,17 +152,17 @@ export default async function InsightDetailPage({ params }: InsightDetailPagePro
               {article.content}
             </p>
             <p>
-              Abordarea strategică în alocarea de capital imobiliar impune o distincție clară între evaluările speculative ale pieței deschise și tranzacțiile reale înregistrate în arhivele notariale. În ciclurile caracterizate de volatilitate macroeconomică și rate variabile ale dobânzilor, stabilitatea pe termen lung a randamentului este asigurată prin selecția activelor cu poziționare unică, integritate cadastrală dovedită și calitate constructivă superioară.
+              A disciplined strategy in real estate capital allocation requires a clear distinction between speculative open-market valuations and confirmed transactions registered in notary archives. In economic cycles characterized by macro volatility and fluctuating interest rates, long-term yield resilience is secured by identifying assets with rare geographic positioning, unassailable cadastral title, and superior structural engineering.
             </p>
             <p>
-              Fiecare decizie de investiție presupune un proces riguros de due diligence tehnic, juridic și urbanistic, eliminând riscurile asociate viciilor ascunse sau modificărilor legislative nefavorabile. În acest context, consultanța dedicată oferă claritatea necesară pentru conservarea și multiplicarea sustenabilă a capitalului.
+              Every investment decision demands comprehensive technical, legal, and urban planning due diligence—mitigating risks from latent defects or evolving fiscal frameworks. Retained advisory provides private principals with the analytical clarity required for multi-generational wealth preservation and sustained capital defense.
             </p>
           </section>
 
           {/* Article Footer & Author Signature */}
           <footer className="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6 font-mono text-xs text-[#86868B]">
             <div className="space-y-1">
-              <span className="text-[#A97F60] uppercase tracking-wider block font-semibold">Autor & Analiză</span>
+              <span className="text-[#A97F60] uppercase tracking-wider block font-semibold">Author & Research</span>
               <span className="text-[#F5F4EF] text-sm font-sans">{article.author} — Executive Advisor</span>
             </div>
 
@@ -172,13 +172,13 @@ export default async function InsightDetailPage({ params }: InsightDetailPagePro
                 className="btn-apple-pill-secondary inline-flex items-center gap-2"
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
-                <span>Toate analizele</span>
+                <span>All Analyses</span>
               </Link>
               <Link
                 href="/programare"
                 className="btn-apple-pill-primary inline-flex items-center gap-2"
               >
-                <span>Dialog direct</span>
+                <span>Direct Consultation</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -189,10 +189,10 @@ export default async function InsightDetailPage({ params }: InsightDetailPagePro
             <aside className="pt-16 border-t border-white/[0.08] space-y-8">
               <div className="space-y-2">
                 <span className="font-mono text-[10px] text-[#A97F60] uppercase tracking-[0.24em] font-semibold">
-                  CERCETARE CONEXĂ
+                  RELATED RESEARCH
                 </span>
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                  Alte analize din aceeași serie
+                  Further Analyses in This Series
                 </h3>
               </div>
 
@@ -223,14 +223,14 @@ export default async function InsightDetailPage({ params }: InsightDetailPagePro
         {/* CTA Banner */}
         <div className="site-container max-w-4xl mx-auto pt-20">
           <CTASection
-            eyebrow="AUDIT & DUE DILIGENCE DE SPECIALITATE"
-            title="Solicitați o analiză personalizată pentru activele dumneavoastră."
-            description="Oferim evaluări exhaustive de risc, verificare cadastrală și asistență strategică pentru achiziții și vânzări imobiliare de mare valoare."
-            primaryActionText="PROGRAMEAZĂ O CONSULTAȚIE"
+            eyebrow="COMMISSIONED AUDIT & TECHNICAL DUE DILIGENCE"
+            title="Commission a Tailored Intelligence Audit for Your Assets"
+            description="We deliver exhaustive risk assessments, cadastral stress-testing, and strategic advisory for prime property transactions and sovereign wealth allocations."
+            primaryActionText="SCHEDULE A PRIVATE CONSULTATION"
             primaryActionHref="/programare"
-            secondaryActionText="CONTACT DIRECT"
+            secondaryActionText="DIRECT CONTACT"
             secondaryActionHref="mailto:cristianvaduva@duck.com"
-            disclaimer="Toate informațiile și analizele sunt furnizate sub clauză strictă de confidențialitate profesională."
+            disclaimer="All proprietary analyses and dossiers are provided under strict professional non-disclosure covenants."
           />
         </div>
       </main>

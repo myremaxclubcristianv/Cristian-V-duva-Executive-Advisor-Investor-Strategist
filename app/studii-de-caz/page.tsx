@@ -12,46 +12,47 @@ import ChapterDivider from "@/components/ui/ChapterDivider";
 import ClosingFrame from "@/components/ui/ClosingFrame";
 
 export const metadata: Metadata = {
-  title: "Studii de Caz & Cadrul Metodologic al Mandatelor | Executive",
+  title: "Case Studies & Advisory Mandate Framework | Executive",
   description:
-    "Cadrul de analiză și structura metodologică aplicată în mandatele de consultanță imobiliară premium. Publicarea studiilor de caz reale respectă confidențialitatea strictă și acordul scris bilateral al clienților.",
+    "Analytical framework and methodological structure applied in prime real estate advisory mandates. Case study disclosures strictly adhere to client confidentiality and bilateral NDA protocols.",
   alternates: {
     canonical: "https://executive.cristianvaduva.com/studii-de-caz",
   },
   openGraph: {
-    title: "Studii de Caz & Cadru Metodologic | Cristian Văduva",
+    title: "Case Studies & Methodological Framework | Cristian Văduva",
     description:
-      "Anatomia unui mandat structurat de consultanță imobiliară privată și politica riguroasă de confidențialitate a clienților.",
+      "The anatomy of a structured private real estate advisory mandate and client confidentiality policies.",
     url: "https://executive.cristianvaduva.com/studii-de-caz",
     type: "website",
+    locale: "en_US",
   },
 };
 
 const ANATOMY_POINTS = [
   {
     num: "01",
-    title: "Situația Inițială & Profil",
-    desc: "Obiectivul clientului (locuință primară, plasament de capital, vânzare de patrimoniu), constrângerile de timp și criteriile obligatorii.",
+    title: "Initial Brief & Profile",
+    desc: "Client objective definition (primary residence, capital placement, legacy asset disposition), timeline constraints, and non-negotiable parameters.",
   },
   {
     num: "02",
-    title: "Diagnostic & Due Diligence",
-    desc: "Verificarea istoricului de proprietate, a conformității cadastrale, a expertizei tehnice de rezistență și a stării juridice a cărții funciare.",
+    title: "Diagnosis & Due Diligence",
+    desc: "Title provenance verification, cadastral conformity audit, certified structural engineering assessment, and land book registry legal review.",
   },
   {
     num: "03",
-    title: "Strategia de Mandat",
-    desc: "Definirea modelului de abordare: scanare pe întreaga piață, identificare off-market sau poziționare discretă de vânzare.",
+    title: "Mandate Strategy",
+    desc: "Formulation of the engagement approach: exhaustive whole-market screening, off-market corridor access, or discreet asset positioning.",
   },
   {
     num: "04",
-    title: "Negocierea & Execuția",
-    desc: "Structurarea poziției financiare pe bază de date like-for-like, negocierea clauzelor suspensive și optimizarea termenilor de plată.",
+    title: "Negotiation & Execution",
+    desc: "Structuring the financial positioning based on verified like-for-like data, negotiating conditions precedent, and optimizing payment schedules.",
   },
   {
     num: "05",
-    title: "Concluzie & Valoare Creată",
-    desc: "Finalizarea actului autentic la biroul notarial, transferul fără riscuri juridice și economiile demonstrate prin audit.",
+    title: "Completion & Value Realized",
+    desc: "Solemn execution before the public notary, risk-free title transfer, and quantifiable value protected through pre-closing audits.",
   },
 ];
 
@@ -71,15 +72,15 @@ export default function StudiiDeCazPage() {
             <div className="max-w-4xl space-y-6 sm:space-y-8">
               <div className="inline-flex items-center gap-2.5 px-3.5 py-1 bg-white/[0.03] border border-white/[0.08] font-mono text-[11px] tracking-[0.25em] text-[#A97F60] uppercase rounded-full">
                 <FileText className="w-3.5 h-3.5 text-[#93C8FF]" />
-                <span>METODOLOGIE & MANDATE DOCUMENTATE</span>
+                <span>METHODOLOGY & DOCUMENTED MANDATES</span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F5F4EF] font-normal tracking-tight leading-[1.08]">
-                Studii de Caz: Cadrul Metodologic de Analiză
+                Case Studies: Methodological Analysis Framework
               </h1>
 
               <p className="font-sans text-base sm:text-lg text-[#B8C2CF] leading-relaxed font-light max-w-3xl">
-                Fiecare mandat imobiliar administrat de Executive urmează o procedură riguroasă de analiză tehnică, due diligence multidisciplinar și negociere strategică. Respectând acordurile stricte de confidențialitate (NDA), prezentăm aici arhitectura metodologică prin care gestionăm deciziile de anvergură.
+                Every real estate mandate directed by Executive follows a structured protocol of technical scrutiny, multidisciplinary due diligence, and disciplined strategic negotiation. In strict compliance with mutual Non-Disclosure Agreements (NDA), we present the methodological architecture through which high-stakes decisions are managed.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -87,7 +88,7 @@ export default function StudiiDeCazPage() {
                   href="/programare"
                   className="btn-apple-pill-primary inline-flex items-center gap-2 min-h-[48px]"
                 >
-                  <span>SOLICITĂ DISCUȚIE DE 20 MINUTE</span>
+                  <span>SCHEDULE 20-MINUTE CONSULTATION</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
 
@@ -95,7 +96,7 @@ export default function StudiiDeCazPage() {
                   href="/cum-lucrez"
                   className="btn-apple-pill-secondary inline-flex items-center gap-2 min-h-[48px]"
                 >
-                  <span>METODOLOGIE & ETAPE DE LUCRU</span>
+                  <span>ADVISORY METHODOLOGY & STAGES</span>
                 </Link>
               </div>
             </div>
@@ -109,28 +110,28 @@ export default function StudiiDeCazPage() {
               </div>
               <div className="space-y-4 max-w-3xl">
                 <span className="font-mono text-xs uppercase tracking-[0.24em] text-[#A97F60] font-semibold block">
-                  POLITICĂ DE CONFORMITATE FACTUALĂ & CONFIDENȚIALITATE (NDA)
+                  FACTUAL COMPLIANCE & CONFIDENTIALITY (NDA) POLICY
                 </span>
                 <h2 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                  Publicarea Responsabilă a Datelor: Zero Fictivitate
+                  Responsible Data Disclosure: Zero Fabricated Metrics
                 </h2>
                 <p className="font-sans text-sm sm:text-base text-[#8A95A5] leading-relaxed">
-                  Refuzăm categoric practica răspândită pe piață de a inventa tranzacții fictive, cumpărători imaginari, discounturi exagerate sau testimoniale fabricate. Mandatele imobiliare gestionate de Cristian Văduva implică patrimonii private și sunt protejate prin acorduri bilaterale de confidențialitate (NDA).
+                  We strictly reject the widespread market practice of presenting fictitious transactions, imaginary buyers, inflated discount claims, or manufactured testimonials. Real estate mandates directed by Cristian Văduva involve private wealth and are legally shielded by mutual Non-Disclosure Agreements (NDA).
                 </p>
                 <p className="font-sans text-sm text-[#8A95A5] leading-relaxed">
-                  Cazurile documentate sunt publicate exclusiv după finalizarea tranzacției, anonimizarea completă a tuturor datelor prin care părțile ar putea fi identificate indirect și obținerea consimțământului scris al fiecărui client în parte.
+                  Documented cases are published exclusively after transaction completion, full anonymization of all identifying parameters, and receipt of explicit written authorization from each contracting principal.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* CHAPTER 01 // ANATOMIA ÎN 5 PUNCTE */}
+          {/* CHAPTER 01 // 5-POINT ANATOMY */}
           <section className="space-y-12">
             <ChapterDivider
               number="01"
-              category="ARHITECTURĂ DE EVALUARE"
-              title="Anatomia în 5 Puncte a Fiecărui Mandat Documentat"
-              description="Standardul riguros după care este structurat fiecare dosar de consultanță pentru a garanta decizii sigure și verificate tehnic."
+              category="VALUATION ARCHITECTURE"
+              title="The 5-Point Anatomy of a Documented Mandate"
+              description="The rigorous framework governing every advisory dossier to ensure technically validated, risk-free property decisions."
             />
 
             <div className="grid md:grid-cols-5 gap-4">
@@ -155,13 +156,13 @@ export default function StudiiDeCazPage() {
             </div>
           </section>
 
-          {/* CHAPTER 02 // 3 STUDII CADRU WIREFRAME */}
+          {/* CHAPTER 02 // 3 FRAMEWORK SCENARIOS */}
           <section className="space-y-12">
             <ChapterDivider
               number="02"
-              category="CADRUL ILUSTRATIV DE MANDAT"
-              title="Trei Scenarii Cadru de Asistență Strategică"
-              description="Structurate pe baza metodologiei noastre operaționale, marcate transparent în curs de autorizare formală de către clienți."
+              category="ILLUSTRATIVE MANDATE FRAMEWORKS"
+              title="Three Strategic Advisory Framework Scenarios"
+              description="Structured upon our operational methodology, transparently marked as pending formal client publication authorization."
             />
 
             <div className="space-y-10">
@@ -170,37 +171,37 @@ export default function StudiiDeCazPage() {
                 <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.06] pb-6">
                   <div className="space-y-1">
                     <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#93C8FF] block">
-                      SCENARIUL CADRU 01 // MANDAT DE ACHIZIȚIE
+                      FRAMEWORK SCENARIO 01 // ACQUISITION MANDATE
                     </span>
                     <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                      Achiziție Penthouse Rezidențial Prime · Zona Herăstrău
+                      Prime Residential Penthouse Acquisition · Herăstrău Enclave
                     </h3>
                   </div>
 
                   <span className="px-3 py-1 bg-white/[0.03] border border-white/[0.1] font-mono text-[10px] text-[#A97F60] uppercase tracking-wider">
-                    ÎN CURS DE AUTORIZARE CLIENT (NDA)
+                    PENDING CLIENT AUTHORIZATION (NDA)
                   </span>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6 font-sans text-xs sm:text-sm text-[#8A95A5]">
                   <div className="space-y-2 p-5 bg-black/40 border border-white/[0.04]">
-                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">PROVOCARE IDENTIFICATĂ</span>
+                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">IDENTIFIED CHALLENGE</span>
                     <p className="leading-relaxed">
-                      Căutare pe o piață restrânsă cu discrepanțe masive între prețurile cerute pe portaluri și calitatea reală a cărților tehnice.
+                      Navigating a thin market characterized by wide disparities between advertised portal asking prices and actual technical book quality.
                     </p>
                   </div>
 
                   <div className="space-y-2 p-5 bg-black/40 border border-white/[0.04]">
-                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">INTERVENȚIE EXECUTIVE</span>
+                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">EXECUTIVE INTERVENTION</span>
                     <p className="leading-relaxed">
-                      Scanare off-market, inspecție tehnică a teraselor și instalațiilor, corelarea valorii pe bază de tranzacții reale recente like-for-like.
+                      Off-market scanning, certified structural and terrace MEP inspection, and like-for-like valuation benchmarking against recent closed transactions.
                     </p>
                   </div>
 
                   <div className="space-y-2 p-5 bg-black/40 border border-white/[0.04]">
-                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">REZULTAT & PROTECȚIE</span>
+                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">OUTCOME & PROTECTION</span>
                     <p className="leading-relaxed">
-                      Optimizare negociată a clauzelor antecontractului, remedierea pe cheltuiala vânzătorului a viciilor minore și transfer notarial sigur.
+                      Pre-contract warranty restructuring, vendor-funded remediation of minor defects, and secure solemn notarial conveyance.
                     </p>
                   </div>
                 </div>
@@ -211,37 +212,37 @@ export default function StudiiDeCazPage() {
                 <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.06] pb-6">
                   <div className="space-y-1">
                     <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#93C8FF] block">
-                      SCENARIUL CADRU 02 // VÂNZARE ASISTATĂ
+                      FRAMEWORK SCENARIO 02 // SELLER ADVISORY
                     </span>
                     <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                      Poziționare & Vânzare Discretă Proprietate Individuală · Pipera
+                      Discreet Positioning & Disposition of Prime Estate · Pipera Enclave
                     </h3>
                   </div>
 
                   <span className="px-3 py-1 bg-white/[0.03] border border-white/[0.1] font-mono text-[10px] text-[#A97F60] uppercase tracking-wider">
-                    ÎN CURS DE AUTORIZARE CLIENT (NDA)
+                    PENDING CLIENT AUTHORIZATION (NDA)
                   </span>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6 font-sans text-xs sm:text-sm text-[#8A95A5]">
                   <div className="space-y-2 p-5 bg-black/40 border border-white/[0.04]">
-                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">PROVOCARE IDENTIFICATĂ</span>
+                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">IDENTIFIED CHALLENGE</span>
                     <p className="leading-relaxed">
-                      Proprietate de mare valoare cu istoric de listare publică necoordonată de către multiple agenții, generând confuzie de preț.
+                      High-value residence suffering from uncoordinated multi-broker listings across public portals, eroding pricing credibility.
                     </p>
                   </div>
 
                   <div className="space-y-2 p-5 bg-black/40 border border-white/[0.04]">
-                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">INTERVENȚIE EXECUTIVE</span>
+                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">EXECUTIVE INTERVENTION</span>
                     <p className="leading-relaxed">
-                      Retragerea tuturor anunțurilor spam, refacerea dosarului cadastral, realizarea unui dosar tehnic de prezentare impecabil.
+                      Immediate termination of conflicting listings, cadastral dossier rectification, and assembly of an institutional-grade technical presentation book.
                     </p>
                   </div>
 
                   <div className="space-y-2 p-5 bg-black/40 border border-white/[0.04]">
-                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">REZULTAT & PROTECȚIE</span>
+                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">OUTCOME & PROTECTION</span>
                     <p className="leading-relaxed">
-                      Acces selectat doar pentru cumpărători precalificați financiar, eliminarea vizionărilor inutile și închidere la preț corect.
+                      Curated viewings restricted to financially pre-screened buyers, elimination of speculative viewings, and closing at verified fair value.
                     </p>
                   </div>
                 </div>
@@ -252,37 +253,37 @@ export default function StudiiDeCazPage() {
                 <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.06] pb-6">
                   <div className="space-y-1">
                     <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-[#93C8FF] block">
-                      SCENARIUL CADRU 03 // AUDIT DUE DILIGENCE
+                      FRAMEWORK SCENARIO 03 // DUE DILIGENCE AUDIT
                     </span>
                     <h3 className="font-serif text-2xl sm:text-3xl text-[#F5F4EF]">
-                      Restructurare & Securizare Patrimoniu Imobiliar Istoric
+                      Restructuring & Legal Clearance of Historic Architectural Estate
                     </h3>
                   </div>
 
                   <span className="px-3 py-1 bg-white/[0.03] border border-white/[0.1] font-mono text-[10px] text-[#A97F60] uppercase tracking-wider">
-                    ÎN CURS DE AUTORIZARE CLIENT (NDA)
+                    PENDING CLIENT AUTHORIZATION (NDA)
                   </span>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-6 font-sans text-xs sm:text-sm text-[#8A95A5]">
                   <div className="space-y-2 p-5 bg-black/40 border border-white/[0.04]">
-                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">PROVOCARE IDENTIFICATĂ</span>
+                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">IDENTIFIED CHALLENGE</span>
                     <p className="leading-relaxed">
-                      Imobil istoric central cu suprapuneri cadastrale, servituți vechi nereglementate și riscuri de consolidare structurală.
+                      Historic downtown property burdened with cadastral boundary overlaps, unrecorded archaic easements, and structural consolidation questions.
                     </p>
                   </div>
 
                   <div className="space-y-2 p-5 bg-black/40 border border-white/[0.04]">
-                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">INTERVENȚIE EXECUTIVE</span>
+                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">EXECUTIVE INTERVENTION</span>
                     <p className="leading-relaxed">
-                      Coordonarea cabinetelor de avocatură pentru clarificarea sarcinilor, inspecție tehnică structurală de specialitate și reevaluare de piață ANEVAR.
+                      Coordinating independent legal counsel to clear title encumbrances, certified structural engineering audits, and ANEVAR valuation modeling.
                     </p>
                   </div>
 
                   <div className="space-y-2 p-5 bg-black/40 border border-white/[0.04]">
-                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">REZULTAT & PROTECȚIE</span>
+                    <span className="font-mono text-[10px] text-[#93C8FF] uppercase block">OUTCOME & PROTECTION</span>
                     <p className="leading-relaxed">
-                      Dosar de proprietate complet curățat de sarcini juridice, permițând cumpărătorului o investiție sigură pe termen lung.
+                      Delivery of a legally scrubbed property dossier, enabling a secure long-term capital placement for the purchasing principal.
                     </p>
                   </div>
                 </div>
@@ -292,12 +293,12 @@ export default function StudiiDeCazPage() {
 
           {/* CLOSING FRAME */}
           <ClosingFrame
-            category="AUDIT & DECIZIE STRUCTURATĂ"
-            title="Doriți o evaluare obiectivă pentru o proprietate sau un portofoliu?"
-            description="Programați o primă conversație confidențială de 20 de minute. Stabilim împreună dacă proiectul dumneavoastră se încadrează în standardele noastre de lucru."
-            primaryCtaText="SOLICITĂ DISCUȚIE (20 MIN)"
+            category="AUDIT & STRUCTURED DECISION"
+            title="Seeking an objective appraisal for a property or private portfolio?"
+            description="Schedule an introductory 20-minute confidential consultation. We will determine whether your transaction parameters align with our advisory standards."
+            primaryCtaText="SCHEDULE CONSULTATION (20 MIN)"
             primaryCtaHref="/programare"
-            secondaryCtaText="CUM LUCREZ: METODOLOGIE & ETAPE"
+            secondaryCtaText="HOW I WORK: PROCESS & PHASES"
             secondaryCtaHref="/cum-lucrez"
             imageSrc="/media/cristian-vaduva/personal/cristian-vaduva-office-armchair-consultation.png"
           />

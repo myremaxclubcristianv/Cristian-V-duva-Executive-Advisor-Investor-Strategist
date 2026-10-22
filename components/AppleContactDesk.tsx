@@ -40,7 +40,7 @@ export default function AppleContactDesk() {
         // Fallback open direct WhatsApp if API response is not ok
         window.open(
           `https://wa.me/436509536345?text=${encodeURIComponent(
-            `Bună ziua Cristian, mă numesc ${name} (${email}, ${phone}). Interes: ${intent}. Mesaj: ${message}`
+            `Hello Cristian, my name is ${name} (${email}, ${phone}). Mandate interest: ${intent}. Brief: ${message}`
           )}`,
           "_blank"
         );
@@ -49,7 +49,7 @@ export default function AppleContactDesk() {
     } catch {
       window.open(
         `https://wa.me/436509536345?text=${encodeURIComponent(
-          `Bună ziua Cristian, mă numesc ${name} (${email}, ${phone}). Interes: ${intent}. Mesaj: ${message}`
+          `Hello Cristian, my name is ${name} (${email}, ${phone}). Mandate interest: ${intent}. Brief: ${message}`
         )}`,
         "_blank"
       );
@@ -68,19 +68,19 @@ export default function AppleContactDesk() {
           <div className="space-y-3 max-w-2xl">
             <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-[#B89B72]">
               <MessageSquare className="w-3.5 h-3.5" />
-              <span>DESK DE CONTACT & CONSULTANȚĂ PRIVATĂ</span>
+              <span>CONTACT DESK & PRIVATE ADVISORY</span>
             </div>
             <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-white">
-              Inițiați un Dialog Strategic
+              Initiate a Strategic Dialogue
             </h2>
             <p className="text-sm sm:text-base text-neutral-400 font-light">
-              Canale de comunicare directă și securizată pentru achiziții imobiliare de anvergură, parteneriate de capital și consultanță privată.
+              Direct and confidential communication channels for prime real estate acquisitions, capital advisory, and private representation.
             </p>
           </div>
 
           <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono text-[#B89B72]">
             <ShieldCheck className="w-4 h-4 text-[#B89B72]" />
-            <span>CONFIDENȚIALITATE STRICTĂ UHNW</span>
+            <span>STRICT UHNW CONFIDENTIALITY</span>
           </div>
         </div>
 
@@ -91,10 +91,10 @@ export default function AppleContactDesk() {
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-[#121212] border border-white/10 rounded-3xl p-6 sm:p-8 space-y-6">
               <h3 className="text-xl font-semibold text-white">
-                Conturi & Contacte Oficiale
+                Verified Official Channels
               </h3>
               <p className="text-xs text-neutral-400 font-light leading-relaxed">
-                Verificați întotdeauna canalele oficiale Cristian Văduva pentru tranzacții și corespondență securizată.
+                Verify official Cristian Văduva communication channels for all secure transactions and direct advisory correspondence.
               </p>
 
               {/* Direct Channels */}
@@ -152,7 +152,7 @@ export default function AppleContactDesk() {
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs font-mono uppercase text-neutral-400">E-mail Executiv</div>
+                      <div className="text-xs font-mono uppercase text-neutral-400">Executive Email</div>
                       <div className="text-sm font-semibold text-white group-hover:text-[#B89B72] transition-colors">
                         cristianvaduva@duck.com
                       </div>
@@ -173,7 +173,7 @@ export default function AppleContactDesk() {
                       <YoutubeIcon className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs font-mono uppercase text-neutral-400">Canal YouTube</div>
+                      <div className="text-xs font-mono uppercase text-neutral-400">YouTube Channel</div>
                       <div className="text-sm font-semibold text-white group-hover:text-red-400 transition-colors">
                         @CristianVaduvaCV
                       </div>
@@ -233,13 +233,13 @@ export default function AppleContactDesk() {
             <div className="space-y-2 border-b border-white/10 pb-6">
               <div className="inline-flex items-center gap-1.5 text-xs font-mono uppercase text-[#B89B72]">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>FORMULAR DE INTENȚIE STRATEGICĂ</span>
+                <span>STRATEGIC INTAKE DESK</span>
               </div>
               <h3 className="text-2xl font-semibold text-white">
-                Programare Consultanță Executivă
+                Schedule Executive Consultation
               </h3>
               <p className="text-xs sm:text-sm text-neutral-400 font-light">
-                Completați datele de mai jos pentru a stabili o discuție privată cu Cristian Văduva.
+                Complete the brief below to schedule a private advisory consultation with Cristian Văduva.
               </p>
             </div>
 
@@ -249,14 +249,14 @@ export default function AppleContactDesk() {
                 {/* Name */}
                 <div className="space-y-2">
                   <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                    Nume & Prenume *
+                    Full Name *
                   </label>
                   <input
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
-                    placeholder="Ex: Alexandru Popescu"
+                    placeholder="e.g. Alexandru Popescu"
                     className="w-full px-4 py-3 bg-black/50 border border-white/15 rounded-2xl text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-[#B89B72]"
                   />
                 </div>
@@ -264,7 +264,7 @@ export default function AppleContactDesk() {
                 {/* Email */}
                 <div className="space-y-2">
                   <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                    Adresă E-mail *
+                    Email Address *
                   </label>
                   <input
                     type="email"
@@ -279,7 +279,7 @@ export default function AppleContactDesk() {
                 {/* Phone */}
                 <div className="space-y-2">
                   <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                    Telefon / WhatsApp
+                    Phone / WhatsApp
                   </label>
                   <input
                     type="tel"
@@ -293,31 +293,31 @@ export default function AppleContactDesk() {
                 {/* Intent Type */}
                 <div className="space-y-2">
                   <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                    Obiectiv / Domeniu de Interes
+                    Mandate Objective / Area of Interest
                   </label>
                   <select
                     value={intent}
                     onChange={(e) => setIntent(e.target.value)}
                     className="w-full px-4 py-3 bg-[#1A1A1A] border border-white/15 rounded-2xl text-white text-sm focus:outline-none focus:border-[#B89B72]"
                   >
-                    <option value="Acquisition">Achiziție Proprietate de Lux (București / Monaco)</option>
-                    <option value="Seller">Vânzare / Reprezentare Exclusivă</option>
-                    <option value="Capital">Investiții & Structurare de Capital</option>
-                    <option value="Insurance">Protecție Active & Generali Parteneriat</option>
-                    <option value="Advisory">Consultanță Strategică Generală</option>
+                    <option value="Acquisition">Prime Real Estate Acquisition (Bucharest / Monaco)</option>
+                    <option value="Seller">Seller Mandate / Exclusive Representation</option>
+                    <option value="Capital">Investment & Capital Structuring</option>
+                    <option value="Insurance">Asset Protection & Generali Partnership</option>
+                    <option value="Advisory">General Strategic Advisory</option>
                   </select>
                 </div>
 
                 {/* Message */}
                 <div className="sm:col-span-2 space-y-2">
                   <label className="text-xs font-mono uppercase tracking-wider text-neutral-300">
-                    Detalii Solicitare
+                    Inquiry Details
                   </label>
                   <textarea
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     rows={4}
-                    placeholder="Descrieți succint contextul tranzacției sau parametrii căutării..."
+                    placeholder="Briefly outline transaction parameters, asset typology, or search criteria..."
                     className="w-full px-4 py-3 bg-black/50 border border-white/15 rounded-2xl text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-[#B89B72] resize-none"
                   />
                 </div>
@@ -327,7 +327,7 @@ export default function AppleContactDesk() {
               {success && (
                 <div className="p-4 rounded-2xl bg-green-500/10 border border-green-500/30 text-green-400 text-sm flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5" />
-                  <span>Solicitarea dumneavoastră a fost trimisă cu succes. Veți fi contactat în cel mai scurt timp.</span>
+                  <span>Your inquiry has been submitted successfully. You will be contacted shortly.</span>
                 </div>
               )}
 
@@ -340,7 +340,7 @@ export default function AppleContactDesk() {
                   <span className="inline-block animate-spin w-4 h-4 border-2 border-black border-t-transparent rounded-full" />
                 ) : (
                   <>
-                    <span>Transmite Solicitarea de Consultanță</span>
+                    <span>Submit Advisory Inquiry</span>
                     <Send className="w-4 h-4" />
                   </>
                 )}

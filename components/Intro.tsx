@@ -13,9 +13,9 @@ export default function Intro() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-semibold mb-4">Identitate • Poveste</h2>
+          <h2 className="text-3xl font-semibold mb-4">Identity & Background</h2>
           <p className="text-lg text-[#1D1D1F] leading-relaxed max-w-prose">
-            Cristian Văduva activează la intersecţia dintre tranzacţiile imobiliare de mare anvergură, protecţia activelor şi plasamentele strategice de capital. Cu o fundație academică multidisciplinară și masterate specializate, fiecare mandat oferă analiza completă a riscului, randamentului și confidenţialităţii.
+            Cristian Văduva operates at the intersection of prime real estate acquisitions, capital protection, and strategic wealth allocation. With a multidisciplinary academic foundation and specialized master&apos;s degrees, each mandate is executed with comprehensive risk, return, and confidentiality underwriting.
           </p>
         </motion.div>
         {/* Right: Image */}

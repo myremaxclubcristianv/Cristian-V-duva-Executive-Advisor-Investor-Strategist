@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
     // 1. Rate Limiting Check
     if (isRateLimited(clientIp)) {
       return NextResponse.json(
-        { error: "Prea multe solicitări. Vă rugăm să încercați din nou mai târziu." },
+        { error: "Too many requests. Please try again later." },
         { status: 429 }
       );
     }
@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     // 3. Server-side Validations
     if (!body.fullName || typeof body.fullName !== "string" || body.fullName.trim().length < 2) {
       return NextResponse.json(
-        { error: "Vă rugăm să introduceți numele complet." },
+        { error: "Please enter your full name." },
         { status: 400 }
       );
     }
@@ -64,21 +64,21 @@ export async function POST(req: NextRequest) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!body.email || typeof body.email !== "string" || !emailRegex.test(body.email.trim())) {
       return NextResponse.json(
-        { error: "Vă rugăm să introduceți o adresă de email validă." },
+        { error: "Please enter a valid email address." },
         { status: 400 }
       );
     }
 
     if (!body.phone || typeof body.phone !== "string" || body.phone.trim().length < 6) {
       return NextResponse.json(
-        { error: "Vă rugăm să furnizați un număr de telefon valid pentru confirmarea orei." },
+        { error: "Please provide a valid telephone number for consultation confirmation." },
         { status: 400 }
       );
     }
 
     if (!body.consentPrivacy) {
       return NextResponse.json(
-        { error: "Este necesar consimțământul pentru prelucrarea datelor în vederea stabilirii programării." },
+        { error: "Consent for data processing is required to schedule a consultation." },
         { status: 400 }
       );
     }
@@ -144,7 +144,7 @@ export async function POST(req: NextRequest) {
       {
         success: true,
         message:
-          "Solicitarea dumneavoastră a fost înregistrată. Cristian Văduva o va analiza personal și vă va contacta pentru confirmarea manuală a intervalului orar în termen de maximum 24 de ore lucrătoare.",
+          "Your request has been received. Cristian Văduva will review your submission and contact you directly to confirm the consultation timeframe within 24 business hours.",
         deliveryStatus: {
           database: persistedInDatabase,
           notification: dispatchedViaTelegram,

@@ -171,7 +171,7 @@ export default function PropertiesCatalog() {
               phase={
                 current.id === "prop-pipera-villas"
                   ? "COMPLETED RESIDENTIAL MASTERPLAN · IMMEDIATE OCCUPANCY"
-                  : "ACTIVE DEVELOPMENT · SPECIFICAȚII TEHNICE DEZVOLTATOR"
+                  : "ACTIVE DEVELOPMENT · DEVELOPER TECHNICAL SPECIFICATIONS"
               }
               unitsSummary={
                 current.id === "prop-pipera-villas"
@@ -408,7 +408,7 @@ export default function PropertiesCatalog() {
           <span className="w-1.5 h-1.5 bg-[#93C8FF] rounded-full" />
           <span>Exhibiting </span>
           <span className="text-[#93C8FF] font-semibold">{filteredProperties.length}</span>
-          <span> proprietăți din portofoliu</span>
+          <span> portfolio properties</span>
           {activeCategory !== "all" && (
             <span> in <span className="text-[#F5F4EF] uppercase">{activeCategory}</span></span>
           )}

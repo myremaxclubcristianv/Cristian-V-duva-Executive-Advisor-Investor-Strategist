@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/real-estate/market",
   },
+  openGraph: {
+    title: "Market Intelligence & Capital Analytics — Cristian Văduva",
+    description: "Real-time European market intelligence, macroeconomic indicators, and institutional real estate capital analysis.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function MarketPage() {

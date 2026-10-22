@@ -13,11 +13,11 @@ export default function SignatureClosing() {
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.08] pb-6 font-mono text-xs uppercase tracking-[0.24em] text-[#A97F60]">
           <div className="flex items-center gap-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#A97F60]" />
-            <span className="text-[#F5F4EF] font-semibold">CONVERSAȚIE PRIVATĂ</span>
+            <span className="text-[#F5F4EF] font-semibold">PRIVATE ENGAGEMENT</span>
             <span className="text-white/20">/</span>
-            <span>ACCES DIRECT FONDATOR</span>
+            <span>DIRECT FOUNDER ACCESS</span>
           </div>
-          <span className="text-[#86868B]">CANAL CONFIDENȚIAL CRISTIAN VĂDUVA</span>
+          <span className="text-[#86868B]">CONFIDENTIAL CHANNEL · CRISTIAN VĂDUVA</span>
         </div>
 
         {/* Closing Composition: Left Monumental Statement & Coordinates, Right Intake Form */}
@@ -27,15 +27,15 @@ export default function SignatureClosing() {
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-3">
               <span className="font-mono text-[10px] uppercase tracking-[0.26em] text-[#A97F60] block font-semibold">
-                DIALOG STRATEGIC PRELIMINAR
+                PRELIMINARY STRATEGIC DIALOGUE
               </span>
               <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#F5F4EF] leading-[1.04] tracking-tight font-normal">
-                Inițiați o conversație confidențială direct cu Cristian Văduva.
+                Initiate a confidential conversation directly with Cristian Văduva.
               </h2>
             </div>
 
             <p className="font-sans text-base sm:text-lg text-[#86868B] font-light max-w-xl leading-relaxed">
-              Fiecare solicitare este evaluată personal de Cristian Văduva, cu maximă discreție. Acordurile de confidențialitate pot fi convenite și semnate separat, atunci când este necesar. Nu menținem dispecerate comerciale intermediare.
+              Each inquiry is reviewed personally by Cristian Văduva with complete discretion. Bilateral non-disclosure agreements (NDAs) are executed prior to data exchange whenever required. We do not operate intermediary sales dispatch desks.
             </p>
 
             {/* Direct Channels */}
@@ -51,7 +51,7 @@ export default function SignatureClosing() {
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-[#86868B] block text-[10px] uppercase tracking-wider">COMUNICARE DIRECTĂ & WHATSAPP</span>
+                    <span className="text-[#86868B] block text-[10px] uppercase tracking-wider">DIRECT COMMUNICATION & WHATSAPP</span>
                     <span className="text-[#F5F4EF] font-sans font-medium">+43 650 953 6345</span>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function SignatureClosing() {
               <div className="p-4 rounded-2xl border border-white/[0.06] bg-[#0C1119] text-[#86868B] text-xs leading-relaxed flex items-start gap-3">
                 <ShieldCheck className="w-4 h-4 text-[#A97F60] mt-0.5 shrink-0" />
                 <span>
-                  Discuțiile sunt tratate cu discreție profesională deplină. Acord bilateral NDA la cerere înainte de schimbul de date private.
+                  All discussions are held in complete professional confidence. Bilateral NDA executed on request prior to exchanging sensitive asset or transaction data.
                 </span>
               </div>
             </div>
@@ -73,9 +73,9 @@ export default function SignatureClosing() {
               <div className="flex items-center justify-between border-b border-white/[0.08] pb-4">
                 <span className="font-mono text-xs uppercase tracking-[0.24em] text-[#A97F60] font-semibold flex items-center gap-2">
                   <Lock className="w-3.5 h-3.5" />
-                  <span>TRANSMITERE SOLICITARE</span>
+                  <span>DIRECT INQUIRY DESK</span>
                 </span>
-                <span className="font-mono text-[10px] text-[#86868B]">DISCREȚIE PROFESIONALĂ</span>
+                <span className="font-mono text-[10px] text-[#86868B]">PROFESSIONAL DISCRETION</span>
               </div>
 
               <SignatureIntakeForm />

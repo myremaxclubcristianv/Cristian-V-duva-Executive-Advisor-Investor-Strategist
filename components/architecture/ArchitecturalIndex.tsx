@@ -33,10 +33,10 @@ const INDEX_ITEMS: IndexItem[] = [
     title: "Strategic Property Advisory & Acquisition Coordination",
     category: "PROPERTY ADVISORY",
     description:
-      "Consultanță strategică pentru tranzacții imobiliare complexe, asistență în analiza financiară și coordonarea cu specialiști externi și instituții financiare.",
+      "Strategic advisory for complex real estate transactions, financial underwriting, and coordination with independent certified specialists and lending institutions.",
     href: "/cum-lucrez",
-    jurisdiction: "București · Piețe Internaționale",
-    metrics: "Analiză Financiară · Mandate Dedicate",
+    jurisdiction: "Bucharest · International Markets",
+    metrics: "Financial Underwriting · Dedicated Mandates",
   },
   {
     id: "idx-security",
@@ -44,10 +44,10 @@ const INDEX_ITEMS: IndexItem[] = [
     title: "Asset Protection & Risk Advisory",
     category: "RISK MANAGEMENT",
     description:
-      "Consultanță privind protecția patrimoniului imobiliar și evaluarea riscurilor, în parteneriat autorizat cu Generali România.",
+      "Advisory on real estate wealth protection and risk engineering, in authorized partnership with Generali Romania.",
     href: "/parteneri",
-    jurisdiction: "Conformitate UE · Standarde Contractuale",
-    metrics: "Protecție Patrimonială · Confidențialitate",
+    jurisdiction: "EU Compliance · Contractual Standards",
+    metrics: "Wealth Protection · Strict Discretion",
   },
   {
     id: "idx-ventures",
@@ -175,7 +175,7 @@ export default function ArchitecturalIndex() {
         {/* Index Bottom Metadata */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-wider text-[#8A95A5] pt-4">
           <div>DIRECT ADVISORY & PROPERTY PORTFOLIO</div>
-          <div className="text-[#93C8FF]">CONFIDENȚIALITATE CONTRACTUALĂ (NDA) · DUE DILIGENCE STRUCTURAT</div>
+          <div className="text-[#93C8FF]">CONTRACTUAL CONFIDENTIALITY (NDA) · STRUCTURED DUE DILIGENCE</div>
         </div>
       </div>
     </section>

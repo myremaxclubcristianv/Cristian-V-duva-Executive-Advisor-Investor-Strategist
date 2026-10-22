@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://executive.cristianvaduva.com/terms-of-use",
   },
+  openGraph: {
+    title: "Terms of Use — Cristian Văduva",
+    description: "Terms and conditions governing the access and usage of Cristian Văduva and AiX Media digital platforms.",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function TermsOfUsePage() {
