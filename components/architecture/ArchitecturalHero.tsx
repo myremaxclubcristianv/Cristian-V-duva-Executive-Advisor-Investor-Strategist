@@ -46,6 +46,7 @@ export default function ArchitecturalHero() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2 w-full sm:w-auto min-w-0">
               <Link
                 href="/programare"
+                prefetch={false}
                 className="btn-apple-pill-primary inline-flex items-center justify-center gap-2 min-h-[48px] px-5 sm:px-6 py-3.5 text-xs uppercase tracking-wider font-semibold text-center"
               >
                 <span>{t.hero.ctaConsultation || "REQUEST CONSULTATION"}</span>
@@ -54,6 +55,7 @@ export default function ArchitecturalHero() {
 
               <Link
                 href="/real-estate/properties"
+                prefetch={false}
                 className="btn-apple-pill-secondary inline-flex items-center justify-center gap-2 min-h-[48px] px-5 sm:px-6 py-3.5 text-xs uppercase tracking-wider font-semibold border border-white/15 bg-white/[0.04] hover:bg-white/[0.08] text-[#F5F4EF] rounded-full transition-colors text-center"
               >
                 <span>{t.hero.exploreCatalog || "EXPLORE PORTFOLIO"}</span>
@@ -129,7 +131,11 @@ export default function ArchitecturalHero() {
           <div className="space-y-1 min-w-0">
             <span className="text-[10px] uppercase tracking-wider text-[#A97F60] block font-semibold truncate">CURATED PORTFOLIO</span>
             <span className="text-[#F5F4EF] font-sans text-sm block">HomeFind Network Platform</span>
-            <Link href="/real-estate/properties" className="text-[11px] text-[#93C8FF] hover:underline block font-sans min-h-[32px] flex items-center">
+            <Link
+              href="/real-estate/properties"
+              prefetch={false}
+              className="text-[11px] text-[#93C8FF] hover:underline block font-sans min-h-[32px] flex items-center"
+            >
               Explore property selection →
             </Link>
           </div>
