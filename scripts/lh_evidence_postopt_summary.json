@@ -1,0 +1,369 @@
+{
+  "timestamp": "2026-10-23T10:17:46.591Z",
+  "targetUrl": "https://executive.cristianvaduva.com/",
+  "deployedCommit": "77da185",
+  "runs": [
+    {
+      "run": 1,
+      "cacheState": "Cold (First pass)",
+      "scores": {
+        "perf": 94,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 100
+      },
+      "vitals": {
+        "fcp_ms": 1412,
+        "lcp_ms": 2987,
+        "tbt_ms": 45,
+        "cls": 0,
+        "si_ms": 3008
+      },
+      "lcpElement": {
+        "selector": "div.lg:col-span-5 > div.relative > picture.absolute > img.w-full",
+        "snippet": "<img src=\"/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600…\" alt=\"Cristian Văduva — Executive Advisor &amp; Investor\" width=\"800\" height=\"800\" fetchpriority=\"high\" decoding=\"sync\" class=\"w-full h-full object-cover object-top scale-[1.01] group-hover:scale-[1.03…\">",
+        "boundingRect": {
+          "top": 455,
+          "bottom": 882,
+          "left": 35,
+          "right": 377,
+          "width": 341,
+          "height": 427
+        }
+      },
+      "lcpSubparts": {
+        "ttfb_ms": 221,
+        "resourceLoadDelay_ms": 36,
+        "resourceLoadDuration_ms": 225,
+        "elementRenderDelay_ms": 1047
+      },
+      "heroImageRequests": [
+        {
+          "url": "cristian-vaduva-portrait-studio-formal-600w.webp",
+          "statusCode": 200,
+          "priority": "High",
+          "transferSize": 25973,
+          "resourceSize": 25696,
+          "mimeType": "image/webp",
+          "startTime": 257,
+          "endTime": 481,
+          "duration": 224,
+          "initiator": "unknown"
+        }
+      ],
+      "stylesheets": [
+        {
+          "file": "3pk9qliu5343i.css",
+          "transferSize": 1561,
+          "startTime": 261,
+          "endTime": 462,
+          "duration": 202
+        },
+        {
+          "file": "3s2v_res8wb14.css",
+          "transferSize": 21369,
+          "startTime": 261,
+          "endTime": 503,
+          "duration": 242
+        }
+      ],
+      "fontsSummary": {
+        "count": 6,
+        "totalBytes": 113716
+      }
+    },
+    {
+      "run": 2,
+      "cacheState": "Warm (Subsequent pass)",
+      "scores": {
+        "perf": 94,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 100
+      },
+      "vitals": {
+        "fcp_ms": 1394,
+        "lcp_ms": 3044,
+        "tbt_ms": 23,
+        "cls": 0,
+        "si_ms": 2244
+      },
+      "lcpElement": {
+        "selector": "div.lg:col-span-5 > div.relative > picture.absolute > img.w-full",
+        "snippet": "<img src=\"/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600…\" alt=\"Cristian Văduva — Executive Advisor &amp; Investor\" width=\"800\" height=\"800\" fetchpriority=\"high\" decoding=\"sync\" class=\"w-full h-full object-cover object-top scale-[1.01] group-hover:scale-[1.03…\">",
+        "boundingRect": {
+          "top": 455,
+          "bottom": 882,
+          "left": 35,
+          "right": 377,
+          "width": 341,
+          "height": 427
+        }
+      },
+      "lcpSubparts": {
+        "ttfb_ms": 210,
+        "resourceLoadDelay_ms": 602,
+        "resourceLoadDuration_ms": 476,
+        "elementRenderDelay_ms": 29
+      },
+      "heroImageRequests": [
+        {
+          "url": "cristian-vaduva-portrait-studio-formal-600w.webp",
+          "statusCode": 200,
+          "priority": "High",
+          "transferSize": 26019,
+          "resourceSize": 25696,
+          "mimeType": "image/webp",
+          "startTime": 813,
+          "endTime": 1288,
+          "duration": 475,
+          "initiator": "unknown"
+        }
+      ],
+      "stylesheets": [
+        {
+          "file": "3pk9qliu5343i.css",
+          "transferSize": 1560,
+          "startTime": 817,
+          "endTime": 998,
+          "duration": 182
+        },
+        {
+          "file": "3s2v_res8wb14.css",
+          "transferSize": 20477,
+          "startTime": 817,
+          "endTime": 1093,
+          "duration": 275
+        }
+      ],
+      "fontsSummary": {
+        "count": 6,
+        "totalBytes": 112882
+      }
+    },
+    {
+      "run": 3,
+      "cacheState": "Warm (Subsequent pass)",
+      "scores": {
+        "perf": 96,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 100
+      },
+      "vitals": {
+        "fcp_ms": 1275,
+        "lcp_ms": 2775,
+        "tbt_ms": 16,
+        "cls": 0,
+        "si_ms": 1275
+      },
+      "lcpElement": {
+        "selector": "div.lg:col-span-5 > div.relative > picture.absolute > img.w-full",
+        "snippet": "<img src=\"/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600…\" alt=\"Cristian Văduva — Executive Advisor &amp; Investor\" width=\"800\" height=\"800\" fetchpriority=\"high\" decoding=\"sync\" class=\"w-full h-full object-cover object-top scale-[1.01] group-hover:scale-[1.03…\">",
+        "boundingRect": {
+          "top": 455,
+          "bottom": 882,
+          "left": 35,
+          "right": 377,
+          "width": 341,
+          "height": 427
+        }
+      },
+      "lcpSubparts": {
+        "ttfb_ms": 207,
+        "resourceLoadDelay_ms": 26,
+        "resourceLoadDuration_ms": 91,
+        "elementRenderDelay_ms": 153
+      },
+      "heroImageRequests": [
+        {
+          "url": "cristian-vaduva-portrait-studio-formal-600w.webp",
+          "statusCode": 200,
+          "priority": "High",
+          "transferSize": 25956,
+          "resourceSize": 25696,
+          "mimeType": "image/webp",
+          "startTime": 233,
+          "endTime": 323,
+          "duration": 90,
+          "initiator": "unknown"
+        }
+      ],
+      "stylesheets": [
+        {
+          "file": "3pk9qliu5343i.css",
+          "transferSize": 2368,
+          "startTime": 237,
+          "endTime": 325,
+          "duration": 88
+        },
+        {
+          "file": "3s2v_res8wb14.css",
+          "transferSize": 20560,
+          "startTime": 238,
+          "endTime": 384,
+          "duration": 146
+        }
+      ],
+      "fontsSummary": {
+        "count": 6,
+        "totalBytes": 112866
+      }
+    },
+    {
+      "run": 4,
+      "cacheState": "Warm (Subsequent pass)",
+      "scores": {
+        "perf": 93,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 100
+      },
+      "vitals": {
+        "fcp_ms": 1459,
+        "lcp_ms": 3109,
+        "tbt_ms": 33,
+        "cls": 0,
+        "si_ms": 2960
+      },
+      "lcpElement": {
+        "selector": "div.lg:col-span-5 > div.relative > picture.absolute > img.w-full",
+        "snippet": "<img src=\"/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600…\" alt=\"Cristian Văduva — Executive Advisor &amp; Investor\" width=\"800\" height=\"800\" fetchpriority=\"high\" decoding=\"sync\" class=\"w-full h-full object-cover object-top scale-[1.01] group-hover:scale-[1.03…\">",
+        "boundingRect": {
+          "top": 455,
+          "bottom": 882,
+          "left": 35,
+          "right": 377,
+          "width": 341,
+          "height": 427
+        }
+      },
+      "lcpSubparts": {
+        "ttfb_ms": 216,
+        "resourceLoadDelay_ms": 19,
+        "resourceLoadDuration_ms": 218,
+        "elementRenderDelay_ms": 1087
+      },
+      "heroImageRequests": [
+        {
+          "url": "cristian-vaduva-portrait-studio-formal-600w.webp",
+          "statusCode": 200,
+          "priority": "High",
+          "transferSize": 25990,
+          "resourceSize": 25696,
+          "mimeType": "image/webp",
+          "startTime": 236,
+          "endTime": 453,
+          "duration": 218,
+          "initiator": "unknown"
+        }
+      ],
+      "stylesheets": [
+        {
+          "file": "3pk9qliu5343i.css",
+          "transferSize": 1528,
+          "startTime": 238,
+          "endTime": 318,
+          "duration": 79
+        },
+        {
+          "file": "3s2v_res8wb14.css",
+          "transferSize": 20479,
+          "startTime": 239,
+          "endTime": 520,
+          "duration": 282
+        }
+      ],
+      "fontsSummary": {
+        "count": 6,
+        "totalBytes": 112863
+      }
+    },
+    {
+      "run": 5,
+      "cacheState": "Warm (Subsequent pass)",
+      "scores": {
+        "perf": 93,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 100
+      },
+      "vitals": {
+        "fcp_ms": 1936,
+        "lcp_ms": 2836,
+        "tbt_ms": 3,
+        "cls": 0,
+        "si_ms": 3527
+      },
+      "lcpElement": {
+        "selector": "div.lg:col-span-5 > div.relative > picture.absolute > img.w-full",
+        "snippet": "<img src=\"/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600…\" alt=\"Cristian Văduva — Executive Advisor &amp; Investor\" width=\"800\" height=\"800\" fetchpriority=\"high\" decoding=\"sync\" class=\"w-full h-full object-cover object-top scale-[1.01] group-hover:scale-[1.03…\">",
+        "boundingRect": {
+          "top": 455,
+          "bottom": 882,
+          "left": 35,
+          "right": 377,
+          "width": 341,
+          "height": 427
+        }
+      },
+      "lcpSubparts": {
+        "ttfb_ms": 633,
+        "resourceLoadDelay_ms": 23,
+        "resourceLoadDuration_ms": 2496,
+        "elementRenderDelay_ms": 10
+      },
+      "heroImageRequests": [
+        {
+          "url": "cristian-vaduva-portrait-studio-formal-600w.webp",
+          "statusCode": 200,
+          "priority": "High",
+          "transferSize": 25995,
+          "resourceSize": 25696,
+          "mimeType": "image/webp",
+          "startTime": 656,
+          "endTime": 3151,
+          "duration": 2495,
+          "initiator": "unknown"
+        }
+      ],
+      "stylesheets": [
+        {
+          "file": "3pk9qliu5343i.css",
+          "transferSize": 1562,
+          "startTime": 659,
+          "endTime": 1290,
+          "duration": 631
+        },
+        {
+          "file": "3s2v_res8wb14.css",
+          "transferSize": 21388,
+          "startTime": 659,
+          "endTime": 1289,
+          "duration": 631
+        }
+      ],
+      "fontsSummary": {
+        "count": 6,
+        "totalBytes": 112851
+      }
+    }
+  ],
+  "analysis": {
+    "overallPerfMedian": 94,
+    "overallLcpMedian_ms": 2987,
+    "coldLcp_ms": 2987,
+    "warmLcpMedian_ms": 2940,
+    "lcpRange_ms": "2775 - 3109"
+  },
+  "desktop": {
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "fcp_ms": 409,
+    "lcp_ms": 649,
+    "tbt_ms": 0,
+    "cls": 0
+  }
+}
