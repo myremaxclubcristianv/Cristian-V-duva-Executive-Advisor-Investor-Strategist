@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight, Maximize2, X, MapPin, ShieldCheck } from "lucide-react";
+import { ChevronLeft, ChevronRight, Maximize2, X, MapPin, ShieldCheck, Building2 } from "lucide-react";
 
 interface PropertyGalleryViewerProps {
   images: string[];
@@ -19,9 +19,11 @@ export default function PropertyGalleryViewer({
 }: PropertyGalleryViewerProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [erroredImages, setErroredImages] = useState<Record<number, boolean>>({});
 
-  const total = images.length;
-  const currentImage = images[activeIndex] || images[0];
+  const validImages = images && images.length > 0 ? images : ["/images/architecture/hero-monument.jpg"];
+  const total = validImages.length;
+  const currentImage = validImages[activeIndex] || validImages[0];
 
   const handlePrev = (e?: React.MouseEvent) => {
     e?.stopPropagation();
@@ -46,6 +48,8 @@ export default function PropertyGalleryViewer({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [lightboxOpen, total]);
 
+  const hasCurrentError = erroredImages[activeIndex];
+
   return (
     <div className="space-y-4">
       {/* Primary Stage */}
@@ -59,15 +63,31 @@ export default function PropertyGalleryViewer({
         <span className="absolute bottom-3 left-3 w-3 h-3 border-b border-l border-white/40 pointer-events-none z-10" />
         <span className="absolute bottom-3 right-3 w-3 h-3 border-b border-r border-white/40 pointer-events-none z-10" />
 
-        <Image
-          src={currentImage}
-          alt={`${title} — Photograph ${activeIndex + 1}`}
-          fill
-          priority
-          fetchPriority="high"
-          sizes="(max-width: 1024px) 100vw, 80vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-102"
-        />
+        {hasCurrentError ? (
+          <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-[#0C1119] border border-white/10 space-y-3">
+            <div className="w-12 h-12 rounded-full bg-white/[0.04] border border-white/10 flex items-center justify-center">
+              <Building2 className="w-5 h-5 text-[#93C8FF]" />
+            </div>
+            <div className="space-y-1">
+              <span className="font-mono text-[9px] uppercase tracking-[0.24em] text-[#A97F60] font-semibold block">
+                ARCHITECTURAL ARCHIVE
+              </span>
+              <p className="font-serif text-base text-[#F5F4EF]">{title}</p>
+              <span className="font-mono text-xs text-[#8A95A5]">{location}</span>
+            </div>
+          </div>
+        ) : (
+          <Image
+            src={currentImage}
+            alt={`${title} — Photograph ${activeIndex + 1}`}
+            fill
+            priority
+            fetchPriority="high"
+            sizes="(max-width: 1024px) 100vw, 80vw"
+            className="object-cover transition-transform duration-700 group-hover:scale-102"
+            onError={() => setErroredImages((prev) => ({ ...prev, [activeIndex]: true }))}
+          />
+        )}
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#07090D]/90 via-transparent to-black/20 pointer-events-none" />
 
@@ -204,15 +224,24 @@ export default function PropertyGalleryViewer({
 
           {/* Lightbox Main Stage */}
           <div className="relative flex-1 w-full my-4 flex items-center justify-center">
-            <div className="relative w-full h-full max-h-[75vh]">
-              <Image
-                src={currentImage}
-                alt={`${title} full size photograph ${activeIndex + 1}`}
-                fill
-                sizes="100vw"
-                className="object-contain"
-                priority
-              />
+            <div className="relative w-full h-full max-h-[75vh] flex items-center justify-center">
+              {hasCurrentError ? (
+                <div className="p-8 text-center space-y-3 bg-[#0C1119] border border-white/10 rounded-2xl max-w-md">
+                  <Building2 className="w-8 h-8 text-[#93C8FF] mx-auto" />
+                  <p className="font-serif text-lg text-[#F5F4EF]">{title}</p>
+                  <p className="font-mono text-xs text-[#8A95A5]">Architectural Monograph Photograph {activeIndex + 1} of {total}</p>
+                </div>
+              ) : (
+                <Image
+                  src={currentImage}
+                  alt={`${title} full size photograph ${activeIndex + 1}`}
+                  fill
+                  sizes="100vw"
+                  className="object-contain"
+                  priority
+                  onError={() => setErroredImages((prev) => ({ ...prev, [activeIndex]: true }))}
+                />
+              )}
             </div>
 
             {total > 1 && (

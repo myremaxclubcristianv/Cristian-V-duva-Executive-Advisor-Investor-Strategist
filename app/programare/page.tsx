@@ -394,7 +394,7 @@ export default function ProgramarePage() {
                     </div>
 
                     <div className="font-mono text-[11px] text-[#6B7280] text-center sm:text-left pt-2 border-t border-white/[0.06]">
-                      Alternative direct channel: <a href="mailto:cristianvaduva@duck.com" className="text-[#93C8FF] underline">cristianvaduva@duck.com</a> · Signal / WhatsApp: <a href="https://wa.me/436509536345" target="_blank" rel="noopener noreferrer" className="text-[#F5F4EF] hover:underline">+43 650 953 6345</a>
+                      Alternative direct channel: <a href="mailto:contact@cristianvaduva.com" className="text-[#93C8FF] underline">contact@cristianvaduva.com</a> · Signal / WhatsApp: <a href="https://wa.me/436509536345" target="_blank" rel="noopener noreferrer" className="text-[#F5F4EF] hover:underline">+43 650 953 6345</a>
                     </div>
                   </form>
                 )}

@@ -123,11 +123,11 @@ export default function Footer() {
             <ul className="space-y-1.5 font-sans text-xs">
               <li>
                 <a
-                  href="mailto:cristianvaduva@duck.com"
+                  href="mailto:contact@cristianvaduva.com"
                   className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-2 py-1 min-h-[36px]"
                 >
                   <Mail className="w-3.5 h-3.5 text-[#A97F60]" />
-                  <span>cristianvaduva@duck.com</span>
+                  <span>contact@cristianvaduva.com</span>
                 </a>
               </li>
               <li>
@@ -154,7 +154,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/in/cristianvaduva"
+                  href="https://www.linkedin.com/in/cristianvăduva"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-2 py-1 min-h-[36px]"
@@ -165,7 +165,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.youtube.com/@CristianVaduvaCV"
+                  href="https://youtube.com/@CristianVaduvaCV"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#F5F4EF] transition-colors inline-flex items-center gap-2 py-1 min-h-[36px]"

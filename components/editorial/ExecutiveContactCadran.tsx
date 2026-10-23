@@ -83,7 +83,7 @@ export default function ExecutiveContactCadran({
     {
       name: "LinkedIn",
       handle: "Cristian Văduva",
-      url: "https://linkedin.com/in/cristianvăduva",
+      url: "https://www.linkedin.com/in/cristianvăduva",
       icon: LinkedinIcon,
     },
     {
@@ -163,11 +163,11 @@ export default function ExecutiveContactCadran({
                     CONFIDENTIAL INBOX
                   </span>
                   <a
-                    href="mailto:cristianvaduva@duck.com"
+                    href="mailto:contact@cristianvaduva.com"
                     className="font-mono text-sm sm:text-base text-[#F5F4EF] hover:text-[#93C8FF] flex items-center gap-2 transition-colors"
                   >
                     <Mail className="w-4 h-4 text-[#93C8FF]" />
-                    <span>cristianvaduva@duck.com</span>
+                    <span>contact@cristianvaduva.com</span>
                   </a>
                 </div>
 

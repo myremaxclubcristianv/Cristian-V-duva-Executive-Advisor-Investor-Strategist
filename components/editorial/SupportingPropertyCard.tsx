@@ -26,6 +26,8 @@ export default function SupportingPropertyCard({
 
   const isConcept = property.status === "Architectural Concept" || property.id === "prop-royal-mansion" || property.id === "prop-monaco-coast";
 
+  const heroSrc = property.heroImage && property.heroImage.trim() !== "" ? property.heroImage : "/images/architecture/hero-monument.jpg";
+
   return (
     <article
       className={`relative rounded-2xl border border-white/[0.08] bg-[#0C1119] hover:border-white/[0.22] hover:bg-[#121721] transition-all duration-300 flex flex-col justify-between overflow-hidden group shadow-xl hover:-translate-y-1 ${className}`}
@@ -35,7 +37,7 @@ export default function SupportingPropertyCard({
         <div className="relative aspect-[16/10] w-full bg-[#121721] overflow-hidden border-b border-white/[0.06]">
           <Link href={`/real-estate/properties/${property.id}`} prefetch={false} className="block relative w-full h-full">
             <Image
-              src={property.heroImage}
+              src={heroSrc}
               alt={property.title}
               fill
               loading="lazy"

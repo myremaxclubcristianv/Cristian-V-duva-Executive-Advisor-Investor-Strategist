@@ -5,16 +5,18 @@ const structuredData = {
   "jobTitle": "Executive Advisor · Investor · Strategist",
   "description": "Independent, mandate-based real estate advisory, property sourcing and transaction strategy across Romania and selected international markets.",
   "url": "https://executive.cristianvaduva.com",
-  "email": "mailto:cristianvaduva@duck.com",
+  "email": "mailto:contact@cristianvaduva.com",
   "telephone": "+43 650 953 6345",
   "sameAs": [
-    "https://linkedin.com/in/cristianvaduva",
-    "https://www.youtube.com/@CristianVaduvaCV",
+    "https://www.linkedin.com/in/cristianvăduva",
+    "https://youtube.com/@CristianVaduvaCV",
     "https://t.me/CristianVaduva",
     "https://t.me/capitalinvestcristianvaduva",
     "https://wa.me/436509536345",
     "https://www.facebook.com/CristianVaduvaCV",
     "https://instagram.com/cristian_vaduva_cristianv",
+    "https://linktr.ee/cristianvaduvarealestate",
+    "https://cristianvaduva.com"
   ],
   "knowsAbout": [
     "Real Estate Advisory",

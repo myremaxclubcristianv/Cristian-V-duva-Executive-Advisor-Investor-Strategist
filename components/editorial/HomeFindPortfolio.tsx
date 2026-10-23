@@ -39,17 +39,20 @@ export default function HomeFindPortfolio({
   const showBuy = activeTab === "all" || activeTab === "buy";
   const showRent = activeTab === "all" || activeTab === "rent";
 
-  const renderCard = (prop: HomeFindListingItem) => (
-    <div
-      key={prop.id}
-      className="flex flex-col justify-between rounded-2xl border border-white/[0.08] bg-[#0C1119] hover:border-white/[0.22] transition-all duration-300 relative group overflow-hidden shadow-xl hover:-translate-y-1"
-    >
-      <div>
-        {/* Image Aperture */}
-        <div className="relative w-full aspect-[4/3] bg-[#121721] overflow-hidden border-b border-white/[0.06]">
-          <Image
-            src={prop.image}
-            alt={prop.title}
+  const renderCard = (prop: HomeFindListingItem) => {
+    const cardImg = prop.image && prop.image.trim() !== "" ? prop.image : "/images/architecture/hero-monument.jpg";
+
+    return (
+      <div
+        key={prop.id}
+        className="flex flex-col justify-between rounded-2xl border border-white/[0.08] bg-[#0C1119] hover:border-white/[0.22] transition-all duration-300 relative group overflow-hidden shadow-xl hover:-translate-y-1"
+      >
+        <div>
+          {/* Image Aperture */}
+          <div className="relative w-full aspect-[4/3] bg-[#121721] overflow-hidden border-b border-white/[0.06]">
+            <Image
+              src={cardImg}
+              alt={prop.title}
             fill
             loading="lazy"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -135,7 +138,8 @@ export default function HomeFindPortfolio({
         </Link>
       </div>
     </div>
-  );
+    );
+  };
 
   return (
     <section
@@ -174,8 +178,9 @@ export default function HomeFindPortfolio({
         </div>
 
         {/* Category Filter Tabs (Apple Segmented Pill Control) */}
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <div className="inline-flex max-w-full overflow-x-auto p-1 rounded-full bg-white/[0.06] border border-white/[0.1] gap-1" role="tablist" aria-label="Transaction Type">
+        <div className="flex flex-wrap items-center justify-between gap-4 w-full min-w-0">
+          <div className="w-full sm:w-auto overflow-x-auto no-scrollbar py-0.5">
+            <div className="inline-flex p-1 rounded-full bg-white/[0.06] border border-white/[0.1] gap-1" role="tablist" aria-label="Transaction Type">
             <button
               type="button"
               role="tab"
@@ -229,6 +234,7 @@ export default function HomeFindPortfolio({
                 {homefindRentProperties.length}
               </span>
             </button>
+            </div>
           </div>
 
           <span className="font-mono text-[10px] text-[#86868B] uppercase tracking-wider hidden lg:inline">

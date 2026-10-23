@@ -86,16 +86,18 @@ const jsonLd = {
       "description": "Strategic real estate advisory, asset selection, and transaction structuring across Romania and select international markets.",
       "url": "https://executive.cristianvaduva.com/",
       "image": "https://executive.cristianvaduva.com/media/cristian-vaduva/personal/cristian-vaduva-portrait-navy-suit.jpg",
-      "email": "mailto:cristianvaduva@duck.com",
+      "email": "mailto:contact@cristianvaduva.com",
       "telephone": "+43 650 953 6345",
       "sameAs": [
-        "https://linkedin.com/in/cristianvaduva",
-        "https://www.youtube.com/@CristianVaduvaCV",
+        "https://www.linkedin.com/in/cristianvăduva",
+        "https://youtube.com/@CristianVaduvaCV",
         "https://t.me/CristianVaduva",
         "https://t.me/capitalinvestcristianvaduva",
         "https://wa.me/436509536345",
         "https://www.facebook.com/CristianVaduvaCV",
-        "https://instagram.com/cristian_vaduva_cristianv"
+        "https://instagram.com/cristian_vaduva_cristianv",
+        "https://linktr.ee/cristianvaduvarealestate",
+        "https://cristianvaduva.com"
       ],
       "knowsAbout": [
         "Strategic Real Estate Advisory",

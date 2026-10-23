@@ -1,40 +1,63 @@
 import { SocialLink } from "./types";
 
+export const VERIFIED_SOCIAL_LINKS = {
+  linkedin: "https://www.linkedin.com/in/cristianvăduva",
+  linkedinEncoded: "https://www.linkedin.com/in/cristianv%C4%83duva",
+  youtube: "https://youtube.com/@CristianVaduvaCV",
+  whatsapp: "https://wa.me/436509536345",
+  telegramDirect: "https://t.me/CristianVaduva",
+  telegramChannel: "https://t.me/capitalinvestcristianvaduva",
+  instagram: "https://instagram.com/cristian_vaduva_cristianv",
+  facebook: "https://www.facebook.com/CristianVaduvaCV",
+  linktree: "https://linktr.ee/cristianvaduvarealestate",
+  tiktok: "https://www.tiktok.com/@cristianvaduvacv",
+  threads: "https://www.threads.net/@cristian_vaduva_cristianv",
+  email: "contact@cristianvaduva.com",
+  phoneAustria: "+43 650 953 6345",
+  phoneRomania: "+40 767 110 439",
+  canonicalSite: "https://cristianvaduva.com",
+} as const;
+
 export const socialLinks: SocialLink[] = [
   {
     platform: "linkedin",
-    url: "https://linkedin.com/in/cristianvaduva",
+    url: VERIFIED_SOCIAL_LINKS.linkedin,
     displayName: "LinkedIn / Cristian Văduva",
   },
   {
     platform: "youtube",
-    url: "https://www.youtube.com/@CristianVaduvaCV",
+    url: VERIFIED_SOCIAL_LINKS.youtube,
     displayName: "Official YouTube Channel",
   },
   {
     platform: "whatsapp",
-    url: "https://wa.me/436509536345",
+    url: VERIFIED_SOCIAL_LINKS.whatsapp,
     displayName: "WhatsApp / Direct Desk",
   },
   {
     platform: "telegram",
-    url: "https://t.me/CristianVaduva",
+    url: VERIFIED_SOCIAL_LINKS.telegramDirect,
     displayName: "Telegram / Direct",
   },
   {
     platform: "telegram-channel",
-    url: "https://t.me/capitalinvestcristianvaduva",
+    url: VERIFIED_SOCIAL_LINKS.telegramChannel,
     displayName: "Telegram / Capital Invest",
   },
   {
     platform: "instagram",
-    url: "https://instagram.com/cristian_vaduva_cristianv",
+    url: VERIFIED_SOCIAL_LINKS.instagram,
     displayName: "Instagram / @cristian_vaduva_cristianv",
   },
   {
     platform: "facebook",
-    url: "https://www.facebook.com/CristianVaduvaCV",
+    url: VERIFIED_SOCIAL_LINKS.facebook,
     displayName: "Facebook / CristianVaduvaCV",
+  },
+  {
+    platform: "linktree",
+    url: VERIFIED_SOCIAL_LINKS.linktree,
+    displayName: "Linktree / Verified Directory",
   },
 ];
 

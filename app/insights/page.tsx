@@ -140,7 +140,7 @@ export default function InsightsPage() {
           primaryActionText="REQUEST PROJECT AUDIT"
           primaryActionHref="/programare"
           secondaryActionText="DIRECT CONTACT"
-          secondaryActionHref="mailto:cristianvaduva@duck.com"
+          secondaryActionHref="mailto:contact@cristianvaduva.com"
           disclaimer="All intelligence reports and dossiers are delivered under contractual non-disclosure covenants."
         />
       </main>

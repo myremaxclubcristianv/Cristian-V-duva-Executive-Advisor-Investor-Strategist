@@ -371,7 +371,7 @@ export default function RealEstateHubPage() {
           primaryActionText="SCHEDULE A PRIVATE CONSULTATION"
           primaryActionHref="/programare"
           secondaryActionText="DIRECT CONTACT"
-          secondaryActionHref="mailto:cristianvaduva@duck.com"
+          secondaryActionHref="mailto:contact@cristianvaduva.com"
         />
       </main>
 

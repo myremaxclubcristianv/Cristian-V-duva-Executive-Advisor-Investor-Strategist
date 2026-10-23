@@ -184,7 +184,7 @@ export default function AppleContactDesk() {
 
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com/in/cristianvaduva"
+                  href="https://www.linkedin.com/in/cristianvăduva"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 rounded-2xl bg-white/[0.03] hover:bg-blue-500/10 border border-white/10 hover:border-blue-500/30 flex items-center justify-between group transition-all"
@@ -196,7 +196,7 @@ export default function AppleContactDesk() {
                     <div>
                       <div className="text-xs font-mono uppercase text-neutral-400">LinkedIn Profile</div>
                       <div className="text-sm font-semibold text-white group-hover:text-blue-400 transition-colors">
-                        cristianvaduva
+                        Cristian Văduva
                       </div>
                     </div>
                   </div>

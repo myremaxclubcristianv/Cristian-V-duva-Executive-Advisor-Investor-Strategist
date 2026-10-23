@@ -903,7 +903,7 @@ export default function MasterBentoExperience() {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com/in/cristianvaduva"
+                href="https://www.linkedin.com/in/cristianvăduva"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-2xl bg-white/[0.02] hover:bg-blue-500/10 border border-white/5 hover:border-blue-500/30 flex items-center justify-between group transition-all"
@@ -915,7 +915,7 @@ export default function MasterBentoExperience() {
                   <div>
                     <div className="text-[10px] font-mono text-neutral-400 uppercase">LinkedIn</div>
                     <div className="text-xs font-semibold text-white group-hover:text-blue-400 transition-colors">
-                      cristianvaduva
+                      Cristian Văduva
                     </div>
                   </div>
                 </div>

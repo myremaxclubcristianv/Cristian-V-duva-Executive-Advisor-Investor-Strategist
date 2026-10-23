@@ -229,7 +229,7 @@ export default async function InsightDetailPage({ params }: InsightDetailPagePro
             primaryActionText="SCHEDULE A PRIVATE CONSULTATION"
             primaryActionHref="/programare"
             secondaryActionText="DIRECT CONTACT"
-            secondaryActionHref="mailto:cristianvaduva@duck.com"
+            secondaryActionHref="mailto:contact@cristianvaduva.com"
             disclaimer="All proprietary analyses and dossiers are provided under strict professional non-disclosure covenants."
           />
         </div>
