@@ -8,14 +8,13 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "600"],
+  weight: ["400"],
 });
 
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -135,6 +134,22 @@ export default function RootLayout({
         className={`${manrope.variable} ${cormorant.variable} ${jetbrainsMono.variable} h-full antialiased dark`}
       >
         <head>
+          <link
+            rel="preload"
+            as="image"
+            href="/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600w.webp"
+            type="image/webp"
+            media="(max-width: 640px)"
+            fetchPriority="high"
+          />
+          <link
+            rel="preload"
+            as="image"
+            href="/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal.webp"
+            type="image/webp"
+            media="(min-width: 641px)"
+            fetchPriority="high"
+          />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

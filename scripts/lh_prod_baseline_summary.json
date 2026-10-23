@@ -1,0 +1,70 @@
+[
+  {
+    "run": 1,
+    "perf": 98,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "fcp": 1282.9315000000001,
+    "lcp": 2032.9315000000001,
+    "tbt": 20,
+    "cls": 0,
+    "si": 3343.2679939992186,
+    "lcpBreakdown": [
+      {
+        "phase": "TTFB",
+        "timing": 1705.865999938965,
+        "percent": "84%"
+      },
+      {
+        "phase": "Load Delay",
+        "timing": 62.17098671687609,
+        "percent": "3%"
+      },
+      {
+        "phase": "Load Time",
+        "timing": 217.26154427523988,
+        "percent": "11%"
+      },
+      {
+        "phase": "Render Delay",
+        "timing": 47.63296906891924,
+        "percent": "2%"
+      }
+    ]
+  },
+  {
+    "run": 2,
+    "perf": 74,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "fcp": 2680.951,
+    "lcp": 4030.951,
+    "tbt": 19.5,
+    "cls": 0,
+    "si": 9920.726983998084,
+    "lcpBreakdown": [
+      {
+        "phase": "TTFB",
+        "timing": 2080.951,
+        "percent": "52%"
+      },
+      {
+        "phase": "Load Delay",
+        "timing": 0,
+        "percent": "0%"
+      },
+      {
+        "phase": "Load Time",
+        "timing": 840.8699127579926,
+        "percent": "21%"
+      },
+      {
+        "phase": "Render Delay",
+        "timing": 1109.1300872420074,
+        "percent": "28%"
+      }
+    ]
+  }
+]

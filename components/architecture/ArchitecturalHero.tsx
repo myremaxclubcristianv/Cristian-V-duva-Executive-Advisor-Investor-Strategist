@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, ArrowRight, ShieldCheck, MapPin } from "lucide-react";
 import { useTranslation, useLocale } from "@/app/context/LocaleContext";
@@ -67,15 +66,22 @@ export default function ArchitecturalHero() {
           {/* Right Column: High-Impact Editorial Portrait (5 cols) */}
           <div className="lg:col-span-5 relative w-full min-w-0 pt-2 lg:pt-0">
             <div className="relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] w-full max-w-[340px] xs:max-w-md mx-auto rounded-3xl overflow-hidden border border-white/[0.12] bg-[#0C1119] shadow-2xl shadow-black/80 group">
-              <Image
-                src="/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal.jpg"
-                alt="Cristian Văduva — Executive Advisor & Investor"
-                fill
-                priority
-                fetchPriority="high"
-                sizes="(max-width: 480px) 92vw, (max-width: 640px) 448px, (max-width: 1024px) 420px, 480px"
-                className="object-cover object-top scale-[1.01] group-hover:scale-[1.03] transition-transform duration-1000"
-              />
+              <picture className="absolute inset-0 w-full h-full">
+                <source
+                  type="image/webp"
+                  srcSet="/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600w.webp 600w, /media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal.webp 800w"
+                  sizes="(max-width: 640px) 92vw, 420px"
+                />
+                <img
+                  src="/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600w.webp"
+                  alt="Cristian Văduva — Executive Advisor & Investor"
+                  width={800}
+                  height={800}
+                  fetchPriority="high"
+                  decoding="sync"
+                  className="w-full h-full object-cover object-top scale-[1.01] group-hover:scale-[1.03] transition-transform duration-1000"
+                />
+              </picture>
               <div className="absolute inset-0 bg-gradient-to-t from-[#07090D] via-transparent to-transparent opacity-85 pointer-events-none" />
 
               {/* Minimal Clean Card Label */}
