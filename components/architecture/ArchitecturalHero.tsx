@@ -68,9 +68,14 @@ export default function ArchitecturalHero() {
             <div className="relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] w-full max-w-[340px] xs:max-w-md mx-auto rounded-3xl overflow-hidden border border-white/[0.12] bg-[#0C1119] shadow-2xl shadow-black/80 group">
               <picture className="absolute inset-0 w-full h-full">
                 <source
+                  media="(max-width: 640px)"
                   type="image/webp"
-                  srcSet="/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600w.webp 600w, /media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal.webp 800w"
-                  sizes="(max-width: 640px) 92vw, 420px"
+                  srcSet="/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600w.webp"
+                />
+                <source
+                  media="(min-width: 641px)"
+                  type="image/webp"
+                  srcSet="/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal.webp"
                 />
                 <img
                   src="/media/cristian-vaduva/personal/cristian-vaduva-portrait-studio-formal-600w.webp"
